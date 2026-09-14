@@ -16,6 +16,11 @@ Die Schülerausgaben liegen als neu gesetzte A5-PDFs mit durchgehend mindestens 
 
 Keine HTML-Schülerseiten oder Verweise auf iPads vorsehen. Der Kontroll-Kiosk bleibt für die spätere Umsetzung eingeplant: „Tipp“ oder „Lösung“ wählen, Blattnummer eingeben, offline am Raum-Laptop nutzbar. Er darf erst als verfügbar verlinkt werden, wenn er mit den tatsächlichen Aufgaben und Lösungen erstellt ist.
 
+## Verbindliche Definition: Lernbuddy
+Der Lernbuddy ist **keine Fachaufgabe und kein zusätzliches Arbeitsblatt**, sondern eine **wiederverwendbare laminierte Tischvorlage** für selbstreguliertes Lernen. Das aktuelle **A5-Arbeitsblatt liegt in der freien Mitte**. Der Lernbuddy bildet den Rahmen darum: **Planung oben, Durchführung seitlich, Reflexion unten**. Rechts- und Linkshändervariante unterscheiden sich nur durch die Seite des Durchführungs-/Strategiebereichs. Strategiekarten werden an der vorgesehenen Seitenkante angelegt.
+
+Für die Materialproduktion gilt: **Jedes A5-Arbeitsblatt wird in der Mitte des vorhandenen Lernbuddys bearbeitet; kein neues Arbeitsblatt darf den Lernbuddy nachbauen oder durch eigene Planungs-, Durchführungs- und Reflexionsfelder ersetzen.** Ein kurzer „Lernbuddy-Fokus“ auf einem Fachblatt darf auf einen Bereich des Rahmens verweisen. Der vollständige SRL-Zyklus muss nicht für jedes einzelne Blatt neu gestartet werden; ein Zyklus kann mehrere fachlich zusammenhängende Blätter umfassen. Die Reflexion wird vor dem Abwischen kurz ins Heft übertragen. Siehe auch [verbindliche Produktionsregeln](skill.md).
+
 Der frühere Generator `tools/generate_schritt2.py` und die A4-Schülerdateien bleiben archivierte Vorfassungen. Der aktuelle Generator ist `tools/generate_a5.py`. Nicht durch Skalierung zu A5 machen: Schriftgrößen und Umbrüche neu setzen, bei Bedarf zusätzliche Seiten. Lehrkraftdokumente dürfen weiterhin A4 oder HTML sein.
 
 ## Verbindliche Entscheidungen
@@ -31,14 +36,14 @@ Der frühere Generator `tools/generate_schritt2.py` und die A4-Schülerdateien b
 - [Projektgrundlage und Anforderungen](planung/Projektgrundlage.md)
 - [Reihenplanung: acht Doppelstunden](planung/Reihenplanung_8_Doppelstunden.md)
 
-## Schritt 2: Lernweg und Lernbuddy
+## Schritt 2: Lernweg und Lernbuddy-Anwendung
 - [Mein Lernweg, 3 Seiten A5 (PDF)](materialien/lernweg/Mein_Lernweg_Zootiere_A5.pdf)
 - [Optionale Ziel- und Reflexionshilfe (PDF)](materialien/lernweg/Lernbuddy_Zielhilfe_Zootiere_A5.pdf)
 - [Kurzbeobachtung für Lehrkräfte (PDF)](materialien/lehrkraft/Beobachtung_Lernbuddy_A4.pdf)
 - [Konkrete Anwendung, Prüfpunkte und Druckhinweise](materialien/lehrkraft/Lernbuddy_Anwendung.md)
 - [Bearbeitbare PDF-Quelle](tools/generate_a5.py)
 
-Die Materialien aus Schritt 2 wurden als A5-PDFs mit mindestens 14 pt neu gesetzt und geprüft. Aufgaben 1–10 liegen seit Schritt 4 vor. Vollständige Prüfungen folgen in Schritt 5. Tierpakete und Checkliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert weiterverwendet.
+Die Materialien aus Schritt 2 wurden als A5-PDFs mit mindestens 14 pt neu gesetzt und geprüft. Aufgaben 1–10 liegen seit Schritt 4 vor. Vollständige Prüfungen folgen in Schritt 5. Tierpakete und Checkliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert als laminierter Tischrahmen weiterverwendet; die A5-Aufgabe liegt beim Arbeiten in seiner freien Mitte. Die Zielhilfe ist nur ein optionales Nachschlageblatt und **nicht** der Lernbuddy.
 
 ## Material-Cockpit
 Die [Startseite](index.html) zeigt die neuen A5-PDFs und den Lehrkraftbogen mit Öffnen- und Downloadlinks sowie die drei Planungsdokumente als aufklappbare Leseansichten. Ausstehende Materialien sind ohne Downloadlinks gekennzeichnet.
