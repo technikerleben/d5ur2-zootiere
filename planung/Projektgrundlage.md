@@ -1,6 +1,13 @@
 # Projektgrundlage · Zootiere
 Stand: 14. September 2026
 
+## Verbindliche Präzisierung der Ausgabeformate
+Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
+
+Die bisherigen A4-Schüler-PDFs und HTML-Tierseiten sind Vorfassungen und noch keine passenden Schülerausgaben. Die Umstellung auf A5-PDF mit mindestens 14 pt sowie die visuelle Druckprüfung stehen aus.
+
+Lehrkraftdokumente und das Cockpit dürfen weiterhin HTML oder A4 verwenden. Bilder für Schülerausgaben müssen im PDF enthalten sein; kein Netzladen beim Lernen. Druck auf A4 ist nur als Druckbogen mit zwei A5-Seiten in Originalgröße zulässig, ohne Skalierung. Die fachlichen Inhalte bleiben erhalten.
+
 ## 1. Auftrag und Zeitrahmen
 Deutsch, Jahrgang 5, Klasse 5.3. Vier Wochen mit je zwei Doppelstunden à 90 Minuten ergeben 720 Minuten bzw. 16 Unterrichtsstunden. Die im bereitgestellten schulinternen Lehrplanauszug vorgesehene Reihe umfasst 20 Unterrichtsstunden. Die Kürzung betrifft vor allem zusätzliche Recherche, wiederholte Schreibdurchgänge und längere Präsentationen.
 
@@ -124,7 +131,7 @@ Textleistung und SRL-Anwendung getrennt rückmelden. Tempo, Zahl erledigter Kart
 ## 10. Material- und Qualitätsrahmen
 Geplant: zehn A5-Aufgaben, drei Merkblätter, vier kurze fachliche Inputs, Tierpakete, Papierlernweg, Kindercheckliste, Bewertungsraster, Probe- und Lernerfolgskontrolle, Tipps und Lösungen. Vorhandenen Lernbuddy und passende allgemeine Strategiekarten weiterverwenden.
 
-Schüleraufträge in einfacher, deutlicher Du-Form. Arbeitsort ausdrücklich nennen. A5-Aufgaben mit gut sichtbarer Blattnummer, mindestens 12 pt und möglichst 14 pt. Längere Texte ins Heft. Spätere Gestaltung im bekannten Design der 5.3, druckbewusst und gut lesbar.
+Schüleraufträge ausschließlich als A5-PDF in einfacher, deutlicher Du-Form. Arbeitsort ausdrücklich nennen. A5-Aufgaben mit gut sichtbarer Blattnummer, durchgehend mindestens 14 pt. Längere Texte ins Heft. Spätere Gestaltung im bekannten Design der 5.3, druckbewusst und gut lesbar.
 
 Vor Freigabe: Fachinformationen, Material-Auftrag-Passung, Zeitumfang, Übereinstimmung aller Kriterien und Lösungen sowie Druckansichten und Links prüfen. Unterrichtserprobung kann diese Planung verändern.
 

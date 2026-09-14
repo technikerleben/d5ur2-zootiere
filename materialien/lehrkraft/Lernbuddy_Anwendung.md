@@ -2,14 +2,19 @@
 
 Schritt 2 · Deutsch 5.3 · Zootiere
 
+## Verbindliches Ausgabeformat
+Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
+
+Die bisherigen A4-Schüler-PDFs und HTML-Tierseiten sind Vorfassungen und noch keine passenden Schülerausgaben. Die Umstellung auf A5-PDF mit mindestens 14 pt sowie die visuelle Druckprüfung stehen aus.
+
 ## Voraussetzung und Materialstatus
 Der Lernbuddy und die SRL-Elemente wurden außerhalb von Deutsch eingeführt. Hier werden sie angewendet, nicht neu eingeführt. Den vorhandenen laminierten Lernbuddy einschließlich seiner Felder und Strategiekarten weiterverwenden. Die neue Zielhilfe ist ein optionales Nachschlageblatt, kein neuer Lernbuddy und kein zusätzlich auszufüllendes Formular.
 
-Der Papierlernweg umfasst zwei A4-Seiten. Aufgaben 1–10 sowie Probe- und Lernerfolgskontrolle sind verbindlich geplant, aber noch nicht erstellt. Tierpakete und Kindercheckliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg erst zusammen mit den zugehörigen Materialien im Unterricht ausgeben. Keine nicht vorhandenen Materialien als bereits verfügbar ankündigen. Das Fischotter-Materialpaket liegt seit Schritt 3 vor; Modellabschnitte folgen in Schritt 4.
+Der Papierlernweg wird als mehrseitiges A5-PDF neu gesetzt. Die bisherige zweiseitige A4-Datei bleibt nur als Vorfassung erhalten. Aufgaben 1–10 sowie Probe- und Lernerfolgskontrolle sind verbindlich geplant, aber noch nicht erstellt. Tierpakete und Kindercheckliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg erst zusammen mit den zugehörigen Materialien im Unterricht ausgeben. Keine nicht vorhandenen Materialien als bereits verfügbar ankündigen. Das Fischotter-Materialpaket liegt seit Schritt 3 vor; Modellabschnitte folgen in Schritt 4.
 
-## Ausgeben und drucken
-- [Lernweg, zwei Seiten A4](../lernweg/Mein_Lernweg_Zootiere_A4.pdf): pro Kind ein Exemplar, bei Bedarf doppelseitig, tatsächliche Größe.
-- [Ziel- und Reflexionshilfe, eine Seite A4](../lernweg/Lernbuddy_Zielhilfe_Zootiere_A4.pdf): wenige Exemplare an der Materialtheke; individuell bei Bedarf. Keine Pflichtkopie für jedes Kind.
+## Vorfassungen zur Einsicht – noch nicht als Schülerausgabe drucken
+- [Lernweg, zwei Seiten A4](../lernweg/Mein_Lernweg_Zootiere_A4.pdf): bisherige A4-Vorfassung; muss als A5 mit mindestens 14 pt neu gesetzt werden.
+- [Ziel- und Reflexionshilfe, eine Seite A4](../lernweg/Lernbuddy_Zielhilfe_Zootiere_A4.pdf): bisherige A4-Vorfassung; vor Ausgabe als A5 mit mindestens 14 pt neu setzen. Keine Pflichtkopie für jedes Kind.
 - [Kurzbeobachtung, eine Seite A4](Beobachtung_Lernbuddy_A4.pdf): ausschließlich für Lehrkräfte; nicht als Schüler-Selbstauskunft.
 - Vorhandener Lernbuddy, Heft und später die passende A5-Aufgabe. Keine zweite tägliche Planung auf dem Lernweg eintragen lassen.
 

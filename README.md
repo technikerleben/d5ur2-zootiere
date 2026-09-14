@@ -9,6 +9,15 @@ Die zweite Deutschreihe der Klasse 5.3 knüpft organisatorisch an [Wunschbriefe]
 
 **SRL-Transferziel:** Ich nutze meinen bekannten Lernbuddy, um meine Arbeit zu planen, meinen Weg zu prüfen und einen nächsten Lernschritt abzuleiten.
 
+## Verbindliche Ausgabeformate – korrigiert
+Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
+
+Die bisherigen A4-Schüler-PDFs und HTML-Tierseiten sind Vorfassungen und noch keine passenden Schülerausgaben. Die Umstellung auf A5-PDF mit mindestens 14 pt sowie die visuelle Druckprüfung stehen aus.
+
+Keine HTML-Schülerseiten oder Verweise auf iPads vorsehen. Der Kontroll-Kiosk bleibt für die spätere Umsetzung eingeplant: „Tipp“ oder „Lösung“ wählen, Blattnummer eingeben, offline am Raum-Laptop nutzbar. Er darf erst als verfügbar verlinkt werden, wenn er mit den tatsächlichen Aufgaben und Lösungen erstellt ist.
+
+Die bisherigen PDF-Generatoren und A4-Dateien sind Vorfassungen. Nicht durch Skalierung zu A5 machen: Schriftgrößen und Umbrüche neu setzen, bei Bedarf zusätzliche Seiten. Lehrkraftdokumente dürfen weiterhin A4 oder HTML sein.
+
 ## Verbindliche Entscheidungen
 - Die SRL-Elemente und der Lernbuddy werden außerhalb des Deutschunterrichts eingeführt. Deutsch dient ihrer bewussten Anwendung und Übung; keine eigene SRL-Einführungssequenz.
 - Der Fischotter ist das gemeinsame Beispieltier für Inputs, Modelltexte und Hilfen. Fachliche Darstellungen dürfen nicht mit dem Seeotter verwechselt werden.
@@ -29,7 +38,7 @@ Die zweite Deutschreihe der Klasse 5.3 knüpft organisatorisch an [Wunschbriefe]
 - [Konkrete Anwendung, Prüfpunkte und Druckhinweise](materialien/lehrkraft/Lernbuddy_Anwendung.md)
 - [Bearbeitbare PDF-Quelle](tools/generate_schritt2.py)
 
-Die Druckseiten aus Schritt 2 sind vorhanden und visuell geprüft. Die darauf genannten Aufgaben 1–10 und Prüfungen folgen in den nächsten Schritten. Tierpakete und Checkliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert weiterverwendet.
+Die bisherigen A4-Druckseiten aus Schritt 2 wurden visuell geprüft, entsprechen aber nicht der nun verbindlichen A5-Vorgabe und benötigen einen Neusatz. Die darauf genannten Aufgaben 1–10 und Prüfungen folgen in den nächsten Schritten. Tierpakete und Checkliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert weiterverwendet.
 
 ## Material-Cockpit
 Die [Startseite](index.html) zeigt alle drei vorhandenen PDFs mit Öffnen- und Downloadlinks sowie die drei Planungsdokumente als aufklappbare Leseansichten. Ausstehende Materialien sind ohne Downloadlinks gekennzeichnet.
@@ -65,6 +74,6 @@ Die Lernerfolgskontrolle liegt innerhalb der acht Doppelstunden. Ein gemeinsamer
 
 Die fünf Tiertexte umfassen jeweils 87–94 Wörter. Jede Seite enthält Foto, Sachtext, Wörterhilfe und eine zuschaltbare Zeilenansicht mit identischen Informationen. Die Fotos stammen aus geprüften Commons-Dateibeschreibungen; Lizenz und Urheber sind angegeben. Sie werden extern geladen und benötigen Internet.
 
-Die Seiten besitzen eine A4-Druckansicht und einen Druckknopf. Separate PDF-Dateien wurden in diesem Schritt nicht erzeugt, da keine Arbeitsumgebung verfügbar war. Browser-, Bildausschnitt- und Druckansichten sind noch visuell zu prüfen; dieser Status steht auch im Cockpit. Quellenzuordnung, Texte, Kriterienübereinstimmung und interne Links sind geprüft.
+Die Tierseiten und Kindercheckliste bleiben ausschließlich Lehrkraft-Vorschauen; ihre Schüler-Druckfunktion ist bis zum A5-PDF-Neusatz deaktiviert. Separate PDF-Dateien wurden in diesem Schritt nicht erzeugt, da keine Arbeitsumgebung verfügbar war. Browser-, Bildausschnitt- und Druckansichten sind noch visuell zu prüfen; dieser Status steht auch im Cockpit. Quellenzuordnung, Texte, Kriterienübereinstimmung und interne Links sind geprüft.
 
 Generierung der Tierseiten: `node tools/generate_tierpakete.mjs`. Die Renderfunktion wurde in Code Mode ausgeführt; der Node-Dateizugriff konnte ohne Arbeitsumgebung nicht ausgeführt werden. CSS und Kriterienseiten bei Inhaltsänderungen gemeinsam pflegen. Schritte 4 und 5 müssen die jetzt konkretisierten gemeinsamen Anforderungen übernehmen.

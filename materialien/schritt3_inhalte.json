@@ -352,9 +352,19 @@
     "Nahrung"
   ],
   "status": {
-    "html": "erstellt",
-    "pdf": "noch nicht erzeugt",
+    "html": "Lehrkraft-Vorschau, keine Schülerausgabe",
+    "pdf": "A5-PDFs mit mindestens 14 pt noch zu erstellen",
     "visualReview": "ausstehend; Arbeitsumgebung nicht verfügbar",
     "sources": "am 14.09.2026 geprüft"
+  },
+  "outputRequirements": {
+    "studentFormat": "PDF",
+    "studentPageSize": "A5",
+    "studentMinimumFontPt": 14,
+    "includesCaptionsAndNotes": true,
+    "studentDevices": "keine iPads",
+    "studentDigitalException": "Kontroll-Kiosk auf Raum-Laptop",
+    "webAudience": "nur Lehrkräfte",
+    "imagesEmbedded": true
   }
 }
