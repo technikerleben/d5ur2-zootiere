@@ -12,11 +12,11 @@ Die zweite Deutschreihe der Klasse 5.3 knüpft organisatorisch an [Wunschbriefe]
 ## Verbindliche Ausgabeformate – korrigiert
 Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
 
-Die bisherigen A4-Schüler-PDFs und HTML-Tierseiten sind Vorfassungen und noch keine passenden Schülerausgaben. Die Umstellung auf A5-PDF mit mindestens 14 pt sowie die visuelle Druckprüfung stehen aus.
+Die Schülerausgaben liegen als neu gesetzte A5-PDFs mit durchgehend mindestens 14 pt vor. Seitenformat, Schriftgrößen und Textgrenzen sind technisch geprüft; alle Einzelseiten wurden als gerenderte Übersicht visuell geprüft. Die alten A4-Dateien bleiben nur als Archiv erhalten.
 
 Keine HTML-Schülerseiten oder Verweise auf iPads vorsehen. Der Kontroll-Kiosk bleibt für die spätere Umsetzung eingeplant: „Tipp“ oder „Lösung“ wählen, Blattnummer eingeben, offline am Raum-Laptop nutzbar. Er darf erst als verfügbar verlinkt werden, wenn er mit den tatsächlichen Aufgaben und Lösungen erstellt ist.
 
-Die bisherigen PDF-Generatoren und A4-Dateien sind Vorfassungen. Nicht durch Skalierung zu A5 machen: Schriftgrößen und Umbrüche neu setzen, bei Bedarf zusätzliche Seiten. Lehrkraftdokumente dürfen weiterhin A4 oder HTML sein.
+Der frühere Generator `tools/generate_schritt2.py` und die A4-Schülerdateien bleiben archivierte Vorfassungen. Der aktuelle Generator ist `tools/generate_a5.py`. Nicht durch Skalierung zu A5 machen: Schriftgrößen und Umbrüche neu setzen, bei Bedarf zusätzliche Seiten. Lehrkraftdokumente dürfen weiterhin A4 oder HTML sein.
 
 ## Verbindliche Entscheidungen
 - Die SRL-Elemente und der Lernbuddy werden außerhalb des Deutschunterrichts eingeführt. Deutsch dient ihrer bewussten Anwendung und Übung; keine eigene SRL-Einführungssequenz.
@@ -32,16 +32,16 @@ Die bisherigen PDF-Generatoren und A4-Dateien sind Vorfassungen. Nicht durch Ska
 - [Reihenplanung: acht Doppelstunden](planung/Reihenplanung_8_Doppelstunden.md)
 
 ## Schritt 2: Lernweg und Lernbuddy
-- [Mein Lernweg, 2 Seiten A4 (PDF)](materialien/lernweg/Mein_Lernweg_Zootiere_A4.pdf)
-- [Optionale Ziel- und Reflexionshilfe (PDF)](materialien/lernweg/Lernbuddy_Zielhilfe_Zootiere_A4.pdf)
+- [Mein Lernweg, 3 Seiten A5 (PDF)](materialien/lernweg/Mein_Lernweg_Zootiere_A5.pdf)
+- [Optionale Ziel- und Reflexionshilfe (PDF)](materialien/lernweg/Lernbuddy_Zielhilfe_Zootiere_A5.pdf)
 - [Kurzbeobachtung für Lehrkräfte (PDF)](materialien/lehrkraft/Beobachtung_Lernbuddy_A4.pdf)
 - [Konkrete Anwendung, Prüfpunkte und Druckhinweise](materialien/lehrkraft/Lernbuddy_Anwendung.md)
-- [Bearbeitbare PDF-Quelle](tools/generate_schritt2.py)
+- [Bearbeitbare PDF-Quelle](tools/generate_a5.py)
 
-Die bisherigen A4-Druckseiten aus Schritt 2 wurden visuell geprüft, entsprechen aber nicht der nun verbindlichen A5-Vorgabe und benötigen einen Neusatz. Die darauf genannten Aufgaben 1–10 und Prüfungen folgen in den nächsten Schritten. Tierpakete und Checkliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert weiterverwendet.
+Die Materialien aus Schritt 2 wurden als A5-PDFs mit mindestens 14 pt neu gesetzt und geprüft. Die darauf genannten Aufgaben 1–10 und Prüfungen folgen in den nächsten Schritten. Tierpakete und Checkliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert weiterverwendet.
 
 ## Material-Cockpit
-Die [Startseite](index.html) zeigt alle drei vorhandenen PDFs mit Öffnen- und Downloadlinks sowie die drei Planungsdokumente als aufklappbare Leseansichten. Ausstehende Materialien sind ohne Downloadlinks gekennzeichnet.
+Die [Startseite](index.html) zeigt die neuen A5-PDFs und den Lehrkraftbogen mit Öffnen- und Downloadlinks sowie die drei Planungsdokumente als aufklappbare Leseansichten. Ausstehende Materialien sind ohne Downloadlinks gekennzeichnet.
 
 Das Cockpit ist eine statische HTML-Datei ohne Build-Schritt und ohne externe Laufzeit-Abhängigkeiten. Das Vercel-Deployment übernimmt der Nutzer; es werden keine Vercel-Einstellungen verändert.
 
@@ -52,7 +52,7 @@ Prüfstand: Alle lokalen Links und Anker mit dem Repository-Inhalt abgeglichen. 
 ## Weitere Erstellungsschritte
 1. **Abgeschlossen:** Projektgrundlage, Kernanforderungen, Reihenplanung und Hilfenprinzipien.
 2. **Abgeschlossen:** Papierlernweg, optionale Zielhilfe, Anwendungshinweise und Kurzbeobachtung.
-3. **Inhalte erstellt:** Fünf Tierpakete, Kindercheckliste und beschreibendes Bewertungsraster als HTML; separate PDFs und visuelle Druckprüfung ausstehend.
+3. **Erstellt und geprüft:** Fünf Tierpakete und Kindercheckliste als A5-PDF mit mindestens 14 pt; HTML-Ansichten und Bewertungsraster für Lehrkräfte.
 4. **Als Nächstes:** Aufgaben, Merkblätter, Lösungen und fachliche Inputs erstellen.
 5. Probe- und Lernerfolgskontrolle einschließlich Rückmeldungen ausarbeiten.
 6. Druckgestaltung, HTML-Inputs, Lehrkraft-Cockpit, Kontroll-Kiosk und Vertretungshinweise erstellen.
@@ -74,6 +74,23 @@ Die Lernerfolgskontrolle liegt innerhalb der acht Doppelstunden. Ein gemeinsamer
 
 Die fünf Tiertexte umfassen jeweils 87–94 Wörter. Jede Seite enthält Foto, Sachtext, Wörterhilfe und eine zuschaltbare Zeilenansicht mit identischen Informationen. Die Fotos stammen aus geprüften Commons-Dateibeschreibungen; Lizenz und Urheber sind angegeben. Sie werden extern geladen und benötigen Internet.
 
-Die Tierseiten und Kindercheckliste bleiben ausschließlich Lehrkraft-Vorschauen; ihre Schüler-Druckfunktion ist bis zum A5-PDF-Neusatz deaktiviert. Separate PDF-Dateien wurden in diesem Schritt nicht erzeugt, da keine Arbeitsumgebung verfügbar war. Browser-, Bildausschnitt- und Druckansichten sind noch visuell zu prüfen; dieser Status steht auch im Cockpit. Quellenzuordnung, Texte, Kriterienübereinstimmung und interne Links sind geprüft.
+Die HTML-Tierseiten und die HTML-Checkliste dienen ausschließlich Lehrkräften. Die A5-PDFs sind die Schülerausgabe. Fotos sind eingebettet. Format, Schriftgrößen und Textgrenzen sind automatisiert geprüft; alle Einzelseiten wurden in einer gerenderten Übersicht visuell geprüft.
 
 Generierung der Tierseiten: `node tools/generate_tierpakete.mjs`. Die Renderfunktion wurde in Code Mode ausgeführt; der Node-Dateizugriff konnte ohne Arbeitsumgebung nicht ausgeführt werden. CSS und Kriterienseiten bei Inhaltsänderungen gemeinsam pflegen. Schritte 4 und 5 müssen die jetzt konkretisierten gemeinsamen Anforderungen übernehmen.
+
+## A5-Druckausgaben
+
+[Gemeinsames Schüler-Druckpaket, 13 Seiten](materialien/Schuelermaterial_Zootiere_A5.pdf). Enthält Lernweg (3), optionale Zielhilfe (2), Kindercheckliste (2) und die Grundmaterialien zu Fischotter, Erdmännchen und Rotem Panda (je 2 Seiten). Die Einzel-Tierpakete enthalten zusätzlich je eine Lesehilfe mit identischem Text auf Seite 3. Waschbär und Biber bleiben separat als Prüfungsreserve.
+
+- [Mein_Lernweg_Zootiere_A5.pdf](materialien/lernweg/Mein_Lernweg_Zootiere_A5.pdf) · 3 Seiten
+- [Lernbuddy_Zielhilfe_Zootiere_A5.pdf](materialien/lernweg/Lernbuddy_Zielhilfe_Zootiere_A5.pdf) · 2 Seiten
+- [Kindercheckliste_A5.pdf](materialien/bewertung/Kindercheckliste_A5.pdf) · 2 Seiten
+- [fischotter_A5.pdf](materialien/tierpakete/fischotter_A5.pdf) · 3 Seiten
+- [erdmaennchen_A5.pdf](materialien/tierpakete/erdmaennchen_A5.pdf) · 3 Seiten
+- [roter-panda_A5.pdf](materialien/tierpakete/roter-panda_A5.pdf) · 3 Seiten
+- [waschbaer_A5.pdf](materialien/tierpakete/waschbaer_A5.pdf) · 3 Seiten
+- [biber_A5.pdf](materialien/tierpakete/biber_A5.pdf) · 3 Seiten
+
+Druck: A5 bei 100 %; bei zwei A5-Seiten auf A4 keine Verkleinerung. Das Sammelpaket hat fortlaufende Dokumentteile ohne automatisch eingefügte Leerseiten; für Duplex bei Bedarf die Einzeldateien nutzen.
+
+Erzeugung: `python tools/generate_a5.py`; benötigt ReportLab, PyMuPDF, Pillow und DejaVu Sans. Der Generator prüft Seitenmaße, Mindestschriftgröße und Textgrenzen. [Prüfbericht](materialien/A5_Pruefbericht.json). Bildnachweise und verlinkte Lizenzen stehen in den PDFs, ausführliche Nachweise in der Lehrkraft-Quellenseite. Aufgaben 1–10, vollständige Prüfungen und Kontroll-Kiosk folgen weiterhin in den geplanten nächsten Schritten.

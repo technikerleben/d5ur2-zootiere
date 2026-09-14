@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "a5": true,
+      "bytes": 47294,
+      "minimumFontPt": 14,
+      "pages": 3,
+      "path": "materialien/lernweg/Mein_Lernweg_Zootiere_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 46039,
+      "minimumFontPt": 14,
+      "pages": 2,
+      "path": "materialien/lernweg/Lernbuddy_Zielhilfe_Zootiere_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 46533,
+      "minimumFontPt": 14,
+      "pages": 2,
+      "path": "materialien/bewertung/Kindercheckliste_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 265518,
+      "minimumFontPt": 14,
+      "pages": 3,
+      "path": "materialien/tierpakete/fischotter_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 202996,
+      "minimumFontPt": 14,
+      "pages": 3,
+      "path": "materialien/tierpakete/erdmaennchen_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 123705,
+      "minimumFontPt": 14,
+      "pages": 3,
+      "path": "materialien/tierpakete/roter-panda_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 220330,
+      "minimumFontPt": 14,
+      "pages": 3,
+      "path": "materialien/tierpakete/waschbaer_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 248575,
+      "minimumFontPt": 14,
+      "pages": 3,
+      "path": "materialien/tierpakete/biber_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 679128,
+      "minimumFontPt": 14,
+      "pages": 13,
+      "path": "materialien/Schuelermaterial_Zootiere_A5.pdf"
+    }
+  ],
+  "visualReview": "Alle Einzelseiten als gerenderte Übersicht geprüft; Seitenmaße, Textgrenzen und Mindestschriftgröße automatisiert geprüft."
+}

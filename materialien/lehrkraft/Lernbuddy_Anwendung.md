@@ -5,16 +5,16 @@ Schritt 2 · Deutsch 5.3 · Zootiere
 ## Verbindliches Ausgabeformat
 Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
 
-Die bisherigen A4-Schüler-PDFs und HTML-Tierseiten sind Vorfassungen und noch keine passenden Schülerausgaben. Die Umstellung auf A5-PDF mit mindestens 14 pt sowie die visuelle Druckprüfung stehen aus.
+Die Schülerausgaben liegen als neu gesetzte A5-PDFs mit durchgehend mindestens 14 pt vor. Seitenformat, Schriftgrößen und Textgrenzen sind technisch geprüft; alle Einzelseiten wurden als gerenderte Übersicht visuell geprüft. Die alten A4-Dateien bleiben nur als Archiv erhalten.
 
 ## Voraussetzung und Materialstatus
 Der Lernbuddy und die SRL-Elemente wurden außerhalb von Deutsch eingeführt. Hier werden sie angewendet, nicht neu eingeführt. Den vorhandenen laminierten Lernbuddy einschließlich seiner Felder und Strategiekarten weiterverwenden. Die neue Zielhilfe ist ein optionales Nachschlageblatt, kein neuer Lernbuddy und kein zusätzlich auszufüllendes Formular.
 
-Der Papierlernweg wird als mehrseitiges A5-PDF neu gesetzt. Die bisherige zweiseitige A4-Datei bleibt nur als Vorfassung erhalten. Aufgaben 1–10 sowie Probe- und Lernerfolgskontrolle sind verbindlich geplant, aber noch nicht erstellt. Tierpakete und Kindercheckliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg erst zusammen mit den zugehörigen Materialien im Unterricht ausgeben. Keine nicht vorhandenen Materialien als bereits verfügbar ankündigen. Das Fischotter-Materialpaket liegt seit Schritt 3 vor; Modellabschnitte folgen in Schritt 4.
+Der Papierlernweg liegt auf drei A5-Seiten vor. Die bisherige A4-Datei bleibt als Archiv erhalten. Aufgaben 1–10 sowie Probe- und Lernerfolgskontrolle sind verbindlich geplant, aber noch nicht erstellt. Tierpakete und Kindercheckliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg erst zusammen mit den zugehörigen Materialien im Unterricht ausgeben. Keine nicht vorhandenen Materialien als bereits verfügbar ankündigen. Das Fischotter-Materialpaket liegt seit Schritt 3 vor; Modellabschnitte folgen in Schritt 4.
 
-## Vorfassungen zur Einsicht – noch nicht als Schülerausgabe drucken
-- [Lernweg, zwei Seiten A4](../lernweg/Mein_Lernweg_Zootiere_A4.pdf): bisherige A4-Vorfassung; muss als A5 mit mindestens 14 pt neu gesetzt werden.
-- [Ziel- und Reflexionshilfe, eine Seite A4](../lernweg/Lernbuddy_Zielhilfe_Zootiere_A4.pdf): bisherige A4-Vorfassung; vor Ausgabe als A5 mit mindestens 14 pt neu setzen. Keine Pflichtkopie für jedes Kind.
+## Druckmaterial
+- [Lernweg, drei Seiten A5](../lernweg/Mein_Lernweg_Zootiere_A5.pdf): A5, mindestens 14 pt; in tatsächlicher Größe drucken.
+- [Ziel- und Reflexionshilfe, zwei Seiten A5](../lernweg/Lernbuddy_Zielhilfe_Zootiere_A5.pdf): A5, mindestens 14 pt; optionale Hilfe. Keine Pflichtkopie für jedes Kind.
 - [Kurzbeobachtung, eine Seite A4](Beobachtung_Lernbuddy_A4.pdf): ausschließlich für Lehrkräfte; nicht als Schüler-Selbstauskunft.
 - Vorhandener Lernbuddy, Heft und später die passende A5-Aufgabe. Keine zweite tägliche Planung auf dem Lernweg eintragen lassen.
 
@@ -70,4 +70,4 @@ Bei Doppelbesetzung führt eine Lehrkraft die fachliche Orientierung, die andere
 Diese Anwendungshilfe gilt für Lernzeiten. Die konkrete Lernbuddy-Nutzung und weitere Hilfen in der Lernerfolgskontrolle sind noch festzulegen. Keine Partnerhilfe und kein Kiosk in der Arbeit. Keine ausgefüllten inhaltlichen Hilfen ungeprüft übernehmen. In der Probearbeit gemeinsame Hilfen zuerst nutzen und zusätzliche Unterstützung getrennt festhalten.
 
 ## Technik und weiterer Stand
-PDF-Erzeugung: `python tools/generate_schritt2.py` (ReportLab und DejaVu-Schriften). Die editierbare Quelle liegt im Generator. Ausgaben und Quelltext gemeinsam aktualisieren und die Druckansicht prüfen. Der Nutzer übernimmt das Vercel-Deployment. Dieser Schritt ändert keine Deployment-Konfiguration und erstellt noch kein Lehrkraft-Cockpit.
+PDF-Erzeugung: `python tools/generate_a5.py` (ReportLab und DejaVu-Schriften). Die editierbare Quelle liegt im Generator. Ausgaben und Quelltext gemeinsam aktualisieren und die Druckansicht prüfen. Der Nutzer übernimmt das Vercel-Deployment. Das vorhandene Lehrkraft-Cockpit verlinkt die aktuellen A5-PDFs; die Deployment-Konfiguration bleibt unverändert.

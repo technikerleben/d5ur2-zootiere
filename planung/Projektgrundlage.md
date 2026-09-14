@@ -4,7 +4,7 @@ Stand: 14. September 2026
 ## Verbindliche Präzisierung der Ausgabeformate
 Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
 
-Die bisherigen A4-Schüler-PDFs und HTML-Tierseiten sind Vorfassungen und noch keine passenden Schülerausgaben. Die Umstellung auf A5-PDF mit mindestens 14 pt sowie die visuelle Druckprüfung stehen aus.
+Die Schülerausgaben liegen als neu gesetzte A5-PDFs mit durchgehend mindestens 14 pt vor. Seitenformat, Schriftgrößen und Textgrenzen sind technisch geprüft; alle Einzelseiten wurden als gerenderte Übersicht visuell geprüft. Die alten A4-Dateien bleiben nur als Archiv erhalten.
 
 Lehrkraftdokumente und das Cockpit dürfen weiterhin HTML oder A4 verwenden. Bilder für Schülerausgaben müssen im PDF enthalten sein; kein Netzladen beim Lernen. Druck auf A4 ist nur als Druckbogen mit zwei A5-Seiten in Originalgröße zulässig, ohne Skalierung. Die fachlichen Inhalte bleiben erhalten.
 
@@ -141,4 +141,4 @@ Vor Freigabe: Fachinformationen, Material-Auftrag-Passung, Zeitumfang, Übereins
 - [Unterrichtshinweise Wunschbriefe](https://github.com/technikerleben/d5ur1-wunschbriefe/blob/main/materialien/lehrkraft/Hinweise_Unterricht_Fassung3.md).
 - Nutzerfestlegungen dieser Planung: SRL-Einführung außerhalb von Deutsch, Fischotter als Beispieltier.
 
-Dies ist die fachlich-organisatorische Grundlage für die Materialerstellung. Tierpakete, Quellen und beschreibende Kriterien liegen seit Schritt 3 als HTML-Material vor. Die Aufgaben 1–10, konkrete Prüfungshilfen und Punkteverteilung folgen in späteren Schritten. Separate PDFs zu Schritt 3 und deren visuelle Druckprüfung stehen noch aus.
+Dies ist die fachlich-organisatorische Grundlage für die Materialerstellung. Tierpakete, Quellen und beschreibende Kriterien liegen seit Schritt 3 als HTML-Material vor. Die Aufgaben 1–10, konkrete Prüfungshilfen und Punkteverteilung folgen in späteren Schritten. Die A5-Schüler-PDFs zu Schritt 3 sind erstellt und geprüft.

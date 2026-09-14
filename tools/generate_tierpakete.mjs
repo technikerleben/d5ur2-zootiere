@@ -6,8 +6,8 @@ const data=JSON.parse(readFileSync(resolve(root,'materialien/schritt3_inhalte.js
 function renderPack(a){
 const esc=s=>String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 return `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(a.name)} · Tiermaterial · Deutsch 5.3</title><link rel="stylesheet" href="../schritt3.css"></head><body>
-<nav class="toolbar" aria-label="Materialnavigation"><a href="../../index.html#tiermaterial">Zum Cockpit</a><button id="reading" aria-pressed="false">Vorschau der Lesehilfe</button><button id="print" disabled>A5-Schüler-PDF folgt</button></nav>
-<p class="screen-note">${esc(a.role)} · Nur Lehrkraft-Vorschau. Schülerausgabe: A5-PDF mit mindestens 14 pt, noch zu erstellen. Keine Nutzung dieser Webseite durch Lernende.</p>
+<nav class="toolbar" aria-label="Materialnavigation"><a href="../../index.html#tiermaterial">Zum Cockpit</a><button id="reading" aria-pressed="false">Vorschau der Lesehilfe</button><a href="${a.id}_A5.pdf">A5-Schüler-PDF öffnen</a></nav>
+<p class="screen-note">${esc(a.role)} · Nur Lehrkraft-Vorschau. Schülerausgabe: fertiges A5-PDF mit mindestens 14 pt und eingebettetem Foto. Keine Nutzung dieser Webseite durch Lernende.</p>
 <main class="sheet"><header><p class="eyebrow">DEUTSCH 5.3 · ZOOTIERE · MATERIAL</p><h1>${esc(a.name)}</h1><p class="latin">${esc(a.latin)}</p></header>
 <figure><img id="animalphoto" src="${a.image}" alt="Foto: ${esc(a.name)}" referrerpolicy="no-referrer"><figcaption>Foto: ${esc(a.author)} · <a href="${a.imagePage}">Bildquelle</a> · <a href="${a.licenseUrl}">${a.license}</a> · unverändert, verkleinert angezeigt.</figcaption></figure>
 <p class="loadstatus screen-note" id="image-status" role="status">Bild wird geladen.</p>
@@ -20,7 +20,7 @@ const img=document.getElementById('animalphoto'), status=document.getElementById
 function ready(){status.textContent=img.naturalWidth?'Foto geladen.':'Foto konnte nicht geladen werden. Öffne die Bildquelle und prüfe deine Internetverbindung.';}
 img.addEventListener('load',ready);img.addEventListener('error',ready);if(img.complete)ready();
 document.getElementById('reading').addEventListener('click',function(){const on=document.body.classList.toggle('reading-help');this.setAttribute('aria-pressed',String(on));this.textContent=on?'Lesehilfe ausschalten':'Vorschau der Lesehilfe';});
-document.getElementById('print').addEventListener('click',()=>{if(!img.complete||!img.naturalWidth){status.textContent='Bitte warte, bis das Foto geladen ist. Falls es nicht lädt, öffne die Bildquelle und lade diese Seite erneut.';return;}window.print();});
+
 </script></body></html>`;
 }
 mkdirSync(resolve(root,'materialien/tierpakete'),{recursive:true});

@@ -4,7 +4,7 @@ Stand: 14. September 2026
 ## Materialvorgabe
 Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
 
-Die bisherigen A4-Schüler-PDFs und HTML-Tierseiten sind Vorfassungen und noch keine passenden Schülerausgaben. Die Umstellung auf A5-PDF mit mindestens 14 pt sowie die visuelle Druckprüfung stehen aus.
+Die Schülerausgaben liegen als neu gesetzte A5-PDFs mit durchgehend mindestens 14 pt vor. Seitenformat, Schriftgrößen und Textgrenzen sind technisch geprüft; alle Einzelseiten wurden als gerenderte Übersicht visuell geprüft. Die alten A4-Dateien bleiben nur als Archiv erhalten.
 
 ## Rahmen und Ziel
 Vier Wochen, jeweils zwei Doppelstunden à 90 Minuten. Die Lernerfolgskontrolle ist im Zeitrahmen enthalten. Verbindliche Anforderungen und Hilfenprinzipien stehen in der [Projektgrundlage](Projektgrundlage.md).
