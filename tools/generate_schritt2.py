@@ -1,5 +1,10 @@
-"""Generate step-2 print materials. Requires reportlab; fonts from system DejaVu.
-Run from any directory: python tools/generate_schritt2.py
+"""ARCHIV: frühere Schritt-2-Druckmaterialien.
+
+Nicht für neue Schülerausgaben verwenden. Aktuelle A5-Ausgaben werden mit
+tools/generate_a5.py erzeugt. Verbindlich: Der Lernbuddy ist eine laminierte
+Tischvorlage; das A5-Arbeitsblatt liegt in seiner freien Mitte.
+
+Requires reportlab; fonts from system DejaVu.
 """
 from pathlib import Path
 from reportlab.pdfgen import canvas
@@ -82,7 +87,7 @@ def help_sheet():
         para(c,n,46,y,width=106,size=12,bold=True);para(c,t,155,y,width=394,size=12);y+=27
     para(c,'Prüfe kurz deine Energie und mögliche Ablenker. Was hilft dir, anzufangen?',46,420,size=12)
     section(c,'2 · Durchführung',471,color=ORANGE)
-    para(c,'Lege die Aufgabe an deinen Lernbuddy. Nutze eine passende Strategie. Prüfe zwischendurch: Hilft dein Weg dir, dein Ziel zu erreichen?',46,502,size=13)
+    para(c,'Lege das Arbeitsblatt in die freie Mitte deines Lernbuddys. Nutze eine passende Strategie. Prüfe zwischendurch: Hilft dein Weg dir, dein Ziel zu erreichen?',46,502,size=13)
     para(c,'Wenn du feststeckst: Lies den Auftrag erneut. Nutze ein Beispiel oder eine Hilfe. Frage ein anderes Kind, dann die Lehrkraft. Wenn du überfordert bist, darfst du direkt die Lehrkraft fragen.',46,564,size=12)
     section(c,'3 · Reflexion',650,color=MINT)
     para(c,'Zeige eine gelungene Stelle. Schreibe vor dem Abwischen kurz ins Heft:',46,680,size=13)
