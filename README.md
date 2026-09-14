@@ -31,7 +31,14 @@ Die zweite Deutschreihe der Klasse 5.3 knüpft organisatorisch an [Wunschbriefe]
 
 Die Druckseiten aus Schritt 2 sind vorhanden und visuell geprüft. Die darauf genannten Aufgaben 1–10, Tierpakete, Checkliste und Prüfungen folgen in den nächsten Schritten. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert weiterverwendet.
 
-Das Vercel-Deployment übernimmt der Nutzer. Deployment-Konfiguration und Cockpit wurden in Schritt 2 nicht verändert.
+## Material-Cockpit
+Die [Startseite](index.html) zeigt alle drei vorhandenen PDFs mit Öffnen- und Downloadlinks sowie die drei Planungsdokumente als aufklappbare Leseansichten. Ausstehende Materialien sind ohne Downloadlinks gekennzeichnet.
+
+Das Cockpit ist eine statische HTML-Datei ohne Build-Schritt und ohne externe Laufzeit-Abhängigkeiten. Das Vercel-Deployment übernimmt der Nutzer; es werden keine Vercel-Einstellungen verändert.
+
+Pflege: Bei neuen Materialien die Downloadkarten, den Bearbeitungsstand und die Liste ausstehender Materialien in `index.html` anpassen. Bei Änderungen an den drei Markdown-Planungen die eingebetteten Leseansichten ebenfalls aktualisieren: Sie sind eine Momentaufnahme und werden nicht automatisch geladen. Vor Veröffentlichung lokale Dateilinks und Abschnittsanker prüfen.
+
+Prüfstand: Alle lokalen Links und Anker mit dem Repository-Inhalt abgeglichen. Eine visuelle Browserprüfung und die Prüfung der konkreten Vercel-Adresse stehen noch aus, da die Arbeitsumgebung beim Erstellen nicht verfügbar war.
 
 ## Weitere Erstellungsschritte
 1. **Abgeschlossen:** Projektgrundlage, Kernanforderungen, Reihenplanung und Hilfenprinzipien.
