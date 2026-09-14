@@ -15,8 +15,10 @@ SRL-Transferziel: „Ich nutze meinen bekannten Lernbuddy, um meine Arbeit zu pl
 
 **Voraussetzung:** Lernbuddy und SRL-Elemente wurden außerhalb von Deutsch eingeführt. Die folgenden Hinweise sind Anwendungsanlässe, kein Einführungscurriculum.
 
+**Physische Nutzung:** Der Lernbuddy ist die laminierte Tischvorlage um die aktuelle Lernaufgabe. Das A5-Arbeitsblatt liegt in der freien Mitte; Planung befindet sich oben, Durchführung seitlich und Reflexion unten. Rechts-/Linkshändervarianten spiegeln nur die Durchführungsseite. Das Fachblatt selbst bekommt keinen zweiten SRL-Rahmen.
+
 ## Wiederkehrende Unterrichtsorganisation
-Kurzer fachlicher Einstieg bzw. Input nach Bedarf → Planung mit bekanntem Lernbuddy → fachliche Durchführung mit passender Hilfe und kurzem Zwischenstopp → Reflexion am Ergebnis und kurzer Eintrag ins Heft.
+Kurzer fachlicher Einstieg bzw. Input nach Bedarf → A5-Aufgabe in die freie Mitte des bekannten Lernbuddys legen und oben planen → fachliche Durchführung auf dem Blatt bzw. im Heft mit seitlichem Strategiebereich und kurzem Zwischenstopp → Reflexion unten am Lernbuddy und kurzer Eintrag ins Heft vor dem Abwischen.
 
 Die Reflexion erhält einen gesicherten Abschlussplatz. Die letzte Reflexion eröffnet die nächste Planung. An Tagen mit Input findet die fachliche Zielwahl nach der gemeinsamen Orientierung statt. Ein freiwilliger offener Anfang kann kurz hinzukommen, wenn Material vorhanden ist; er ist für diese Planung nicht notwendig.
 
@@ -173,7 +175,7 @@ Eine Lehrkraft begleitet den fachlichen Schwerpunkt, die andere beobachtet an we
 
 ## Prioritäten bei Zeitknappheit
 1. Erhalten: Informationen auswerten, mindestens einen vollständigen Übungstext schreiben und prüfen, Probearbeit mit Rückmeldung, gezielte Weiterarbeit, Lernerfolgskontrolle.
-2. Erhalten: kurze Planung und Reflexion mit dem bekannten Lernbuddy; nicht regelmäßig zugunsten weiterer Aufgaben streichen.
+2. Erhalten: kurze Planung und Reflexion mit dem bekannten Lernbuddy-Rahmen; nicht regelmäßig zugunsten weiterer Aufgaben streichen. Das jeweils bearbeitete A5-Blatt liegt dabei in der freien Mitte.
 3. Kürzen: Zahl ähnlicher Sprachübungen, Zahl der Übungstiere, zusätzliche Abschriften und Präsentationsumfang.
 4. Entfallen zuerst: freiwillige Gestaltung, umfangreiche Projekte und zusätzliche Recherche.
 
