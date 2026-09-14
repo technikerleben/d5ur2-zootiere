@@ -10,16 +10,28 @@ Die Schülerausgaben liegen als neu gesetzte A5-PDFs mit durchgehend mindestens 
 ## Voraussetzung und Materialstatus
 Der Lernbuddy und die SRL-Elemente wurden außerhalb von Deutsch eingeführt. Hier werden sie angewendet, nicht neu eingeführt. Den vorhandenen laminierten Lernbuddy einschließlich seiner Felder und Strategiekarten weiterverwenden. Die neue Zielhilfe ist ein optionales Nachschlageblatt, kein neuer Lernbuddy und kein zusätzlich auszufüllendes Formular.
 
+## Was der Lernbuddy physisch ist
+Der Lernbuddy ist eine **laminierte Tischvorlage, die das aktuelle A5-Arbeitsblatt umrahmt**. In der großen freien Fläche in der Mitte liegt beim Arbeiten die jeweilige Lernaufgabe.
+
+- **oben:** Planung mit Ziel, Energie, Ablenkern und Start-Hilfe,
+- **seitlich:** Durchführung, Strategien, Lösungsleiter sowie „Ich stecke fest / So komme ich weiter“,
+- **unten:** Reflexion mit Rückblick, Erfolg und nächstem Schritt,
+- **Außenkante:** Platz zum Anlegen einer Strategiekarte.
+
+Es gibt eine Rechts- und eine Linkshändervariante. Dabei liegt der seitliche Durchführungs-/Strategiebereich jeweils auf der anderen Seite; die SRL-Funktion ist identisch.
+
+**Wichtig für alle weiteren Materialien:** Der Lernbuddy ist nicht das A5-Arbeitsblatt. Das Fachblatt kommt in seine Mitte. Deshalb keine neue Aufgabe mit einem zweiten Planungs-/Durchführungs-/Reflexionsrahmen gestalten und keine zusätzliche „Lernbuddy-Seite“ als Pflichtformular erzeugen.
+
 Der Papierlernweg liegt auf drei A5-Seiten vor. Die bisherige A4-Datei bleibt als Archiv erhalten. Aufgaben 1–10 sind als A5-PDF erstellt. Probe- und Lernerfolgskontrolle folgen in Schritt 5. Tierpakete und Kindercheckliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg erst zusammen mit den zugehörigen Materialien im Unterricht ausgeben. Keine nicht vorhandenen Materialien als bereits verfügbar ankündigen. Das Fischotter-Materialpaket liegt seit Schritt 3 vor; Modellabschnitte sind in den fachlichen Inputs aus Schritt 4 enthalten.
 
 ## Druckmaterial
 - [Lernweg, drei Seiten A5](../lernweg/Mein_Lernweg_Zootiere_A5.pdf): A5, mindestens 14 pt; in tatsächlicher Größe drucken.
 - [Ziel- und Reflexionshilfe, zwei Seiten A5](../lernweg/Lernbuddy_Zielhilfe_Zootiere_A5.pdf): A5, mindestens 14 pt; optionale Hilfe. Keine Pflichtkopie für jedes Kind.
 - [Kurzbeobachtung, eine Seite A4](Beobachtung_Lernbuddy_A4.pdf): ausschließlich für Lehrkräfte; nicht als Schüler-Selbstauskunft.
-- Vorhandener Lernbuddy, Heft und später die passende A5-Aufgabe. Keine zweite tägliche Planung auf dem Lernweg eintragen lassen.
+- Vorhandener Lernbuddy, Heft und die passende A5-Aufgabe. Die A5-Aufgabe liegt während der Bearbeitung in der freien Mitte des Lernbuddys. Keine zweite tägliche Planung auf dem Lernweg eintragen lassen.
 
 ## Unterschiedliche Funktionen
-Lernweg = Orientierung über die Reihe. Lernbuddy = Steuerung der aktuellen Lernphase. Schreibplan = inhaltlicher Aufbau des Textes. Kindercheckliste = Prüfung der Textqualität. Ein Haken auf dem Lernweg bedeutet bearbeitet und geprüft, nicht automatisch sicher beherrscht. Die kurzen Prüfpunkte zeigen Können am Ergebnis; keine Haken zählen oder in Noten umrechnen.
+Lernweg = Orientierung über die Reihe. Lernbuddy = physischer, wiederverwendbarer Tischrahmen zur Steuerung der aktuellen Lernphase. Schreibplan = inhaltlicher Aufbau des Textes. Kindercheckliste = Prüfung der Textqualität. Ein Haken auf dem Lernweg bedeutet bearbeitet und geprüft, nicht automatisch sicher beherrscht. Die kurzen Prüfpunkte zeigen Können am Ergebnis; keine Haken zählen oder in Noten umrechnen.
 
 ## Wiederkehrender Ablauf
 ### Planung
@@ -28,7 +40,7 @@ Nach der fachlichen Orientierung letzte Reflexion im Heft öffnen. Ein Ziel mit 
 Lehrkraftimpuls: „Was möchtest du heute besser können? Zeige die passende Aufgabe.“ Bei „Blatt 4 schaffen“ nachfragen: „Was lernst du auf Blatt 4?“ Zielhilfe darf vorgelesen werden. Nicht jedes angebotene Ziel muss abgeschrieben werden; Stichwörter genügen.
 
 ### Durchführung
-Aufgabe anlegen, passende vorhandene Strategie nutzen, Arbeitsschritte klären. Ein gemeinsamer Zwischenstopp pro längerer Lernphase genügt: „Hilft dein Weg dir gerade? Was brauchst du als Nächstes?“ Keine zusätzlichen schriftlichen Zwischenprotokolle.
+Das aktuelle A5-Arbeitsblatt in die freie Mitte des Lernbuddys legen, passende vorhandene Strategie nutzen und die Arbeitsschritte klären. Ein gemeinsamer Zwischenstopp pro längerer Lernphase genügt: „Hilft dein Weg dir gerade? Was brauchst du als Nächstes?“ Keine zusätzlichen schriftlichen Zwischenprotokolle.
 
 Die vorhandene Hilfekette bleibt bestehen. Kiosk erst nennen und einsetzen, wenn er tatsächlich bereitsteht; bis dahin Beispiel, Merkblatt oder analoge Hilfe. Partnerhilfe gilt beim Üben. Bei Überforderung darf unmittelbar die Lehrkraft unterstützen. Nicht jedes Kind muss eine Schwierigkeit oder einen Hilfebedarf dokumentieren, wenn keiner auftritt.
 
@@ -37,7 +49,7 @@ Vor Stundenende Schreibzeit bewusst beenden. Das Kind zeigt einen Beleg: eine pa
 
 Beim nächsten Planen wird dieser Eintrag tatsächlich genutzt. Beispiel ohne Tierdaten: „Meine Sätze sind verständlich. Als Nächstes ordne ich sie.“ Daraus folgt die Arbeit am Aufbau, nicht automatisch die nächste Blattnummer. Bei nicht erreichtem Ziel: kleinere Teilaufgabe oder andere Hilfe vereinbaren. Bei sicherem Ergebnis: Wiederholung reduzieren oder freiwilliges Angebot wählen.
 
-Ein vollständiger Durchgang pro zusammenhängender Lernphase reicht. Den Buddy nicht nach jedem kleinen Arbeitsblatt neu beginnen. Keine SRL-Einführungspräsentation oder neue Pflichtstrategie in diese Reihe aufnehmen.
+Jedes A5-Arbeitsblatt liegt beim Bearbeiten in der freien Mitte des Lernbuddys. Ein vollständiger SRL-Durchgang pro zusammenhängender Lernphase reicht trotzdem; den Zyklus nicht nach jedem kleinen Arbeitsblatt neu beginnen. Keine SRL-Einführungspräsentation oder neue Pflichtstrategie in diese Reihe aufnehmen.
 
 ## Zuordnung für die acht Doppelstunden
 | Doppelstunde | Bewusste Anwendung | Möglicher Impuls | Beobachtbarer Beleg |
