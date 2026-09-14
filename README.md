@@ -1,7 +1,7 @@
 # Deutsch 5 · Zootiere
 ## Genau hinsehen, verständlich beschreiben
 
-Stand: 14. September 2026 · Schritt 1: Projektgrundlage und Reihenplanung
+Stand: 14. September 2026 · Schritte 1–2: Grundlagen, Lernweg und Lernbuddy-Anwendung
 
 Die zweite Deutschreihe der Klasse 5.3 knüpft organisatorisch an [Wunschbriefe](https://github.com/technikerleben/d5ur1-wunschbriefe) an. Zeitraum: vier Wochen mit jeweils zwei Doppelstunden, insgesamt acht Doppelstunden bzw. 16 Unterrichtsstunden à 45 Minuten.
 
@@ -22,12 +22,21 @@ Die zweite Deutschreihe der Klasse 5.3 knüpft organisatorisch an [Wunschbriefe]
 - [Projektgrundlage und Anforderungen](planung/Projektgrundlage.md)
 - [Reihenplanung: acht Doppelstunden](planung/Reihenplanung_8_Doppelstunden.md)
 
-Diese Dateien enthalten die Arbeitsgrundlage für die weitere Materialerstellung, noch keine druckfertigen Schüleraufgaben oder ausgearbeiteten Prüfungen.
+## Schritt 2: Lernweg und Lernbuddy
+- [Mein Lernweg, 2 Seiten A4 (PDF)](materialien/lernweg/Mein_Lernweg_Zootiere_A4.pdf)
+- [Optionale Ziel- und Reflexionshilfe (PDF)](materialien/lernweg/Lernbuddy_Zielhilfe_Zootiere_A4.pdf)
+- [Kurzbeobachtung für Lehrkräfte (PDF)](materialien/lehrkraft/Beobachtung_Lernbuddy_A4.pdf)
+- [Konkrete Anwendung, Prüfpunkte und Druckhinweise](materialien/lehrkraft/Lernbuddy_Anwendung.md)
+- [Bearbeitbare PDF-Quelle](tools/generate_schritt2.py)
+
+Die Druckseiten aus Schritt 2 sind vorhanden und visuell geprüft. Die darauf genannten Aufgaben 1–10, Tierpakete, Checkliste und Prüfungen folgen in den nächsten Schritten. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert weiterverwendet.
+
+Das Vercel-Deployment übernimmt der Nutzer. Deployment-Konfiguration und Cockpit wurden in Schritt 2 nicht verändert.
 
 ## Weitere Erstellungsschritte
 1. **Abgeschlossen:** Projektgrundlage, Kernanforderungen, Reihenplanung und Hilfenprinzipien.
-2. **Als Nächstes:** Papierlernweg und bewusste Nutzung des bereits eingeführten Lernbuddys konkretisieren.
-3. Tiermaterialpakete recherchieren und Kindercheckliste sowie Bewertungsraster ausarbeiten.
+2. **Abgeschlossen:** Papierlernweg, optionale Zielhilfe, Anwendungshinweise und Kurzbeobachtung.
+3. **Als Nächstes:** Tiermaterialpakete recherchieren und Kindercheckliste sowie Bewertungsraster ausarbeiten.
 4. Aufgaben, Merkblätter, Lösungen und fachliche Inputs erstellen.
 5. Probe- und Lernerfolgskontrolle einschließlich Rückmeldungen ausarbeiten.
 6. Druckgestaltung, HTML-Inputs, Lehrkraft-Cockpit, Kontroll-Kiosk und Vertretungshinweise erstellen.
