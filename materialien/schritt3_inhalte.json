@@ -1,0 +1,360 @@
+{
+  "stand": "2026-09-14",
+  "scope": "Schritt 3: Tiermaterialpakete und gemeinsame Kriterien",
+  "animals": [
+    {
+      "author": "Dave Pape",
+      "features": [
+        "lang gestreckter Körper / kurze Beine",
+        "dunkelbraune Oberseite / hellere Unterseite",
+        "breiter, flacher Kopf / lange Tasthaare",
+        "kräftiger Schwanz / Schwimmhäute"
+      ],
+      "food": "vor allem Fische; auch Frösche und Krebse",
+      "glossary": [
+        [
+          "Rumpf",
+          "Körper ohne Kopf, Beine und Schwanz"
+        ],
+        [
+          "Tasthaare",
+          "Haare, mit denen das Tier Berührungen wahrnimmt"
+        ],
+        [
+          "Schwimmhäute",
+          "Haut zwischen den Zehen"
+        ]
+      ],
+      "habitat": "Flüsse und Seen mit geschützten Ufern",
+      "id": "fischotter",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Lutra_lutra_1_-_Otter%2C_Owl%2C_and_Wildlife_Park.jpg/960px-Lutra_lutra_1_-_Otter%2C_Owl%2C_and_Wildlife_Park.jpg",
+      "imagePage": "https://commons.wikimedia.org/wiki/File:Lutra_lutra_1_-_Otter,_Owl,_and_Wildlife_Park.jpg",
+      "latin": "Lutra lutra",
+      "license": "Public Domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Lutra_lutra_1_-_Otter,_Owl,_and_Wildlife_Park.jpg",
+      "measure": "Kopf und Rumpf zusammen etwa 60–90 cm; Schwanz zusätzlich",
+      "name": "Fischotter",
+      "role": "Gemeinsames Beispieltier",
+      "sentences": [
+        "Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern.",
+        "Er gehört zu den Mardern.",
+        "Sein Körper ist lang gestreckt, seine Beine sind kurz.",
+        "Das dichte Fell ist oben dunkelbraun und an der Unterseite heller.",
+        "Sein Kopf ist breit und flach.",
+        "An der Schnauze sitzen lange Tasthaare.",
+        "Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang; der Schwanz kommt noch dazu.",
+        "Der kräftige Schwanz hilft ihm beim Steuern im Wasser.",
+        "Zwischen den Zehen hat er Schwimmhäute.",
+        "Er frisst vor allem Fische, aber auch Frösche und Krebse."
+      ],
+      "sources": [
+        [
+          "Deutsche Wildtier Stiftung",
+          "https://www.deutschewildtierstiftung.de/wildtiere/fischotter"
+        ],
+        [
+          "BUND Naturschutz",
+          "https://www.bund-naturschutz.de/tiere-in-bayern/fischotter/steckbrief"
+        ]
+      ]
+    },
+    {
+      "author": "Bernard DUPONT",
+      "features": [
+        "schlanker Körper",
+        "hellbraunes bis graubraunes Fell / dunklere Rückenstreifen",
+        "dunkle Flecken um die Augen",
+        "langer, schmaler Schwanz / lange Krallen"
+      ],
+      "food": "vor allem Insekten; auch Spinnen und kleine Eidechsen",
+      "glossary": [
+        [
+          "Mangusten",
+          "eine Familie von Raubtieren"
+        ],
+        [
+          "Rumpf",
+          "Körper ohne Kopf, Beine und Schwanz"
+        ],
+        [
+          "Bau",
+          "unterirdisches Versteck mit Gängen"
+        ]
+      ],
+      "habitat": "trockenes Gras- und Buschland im südlichen Afrika",
+      "id": "erdmaennchen",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Meerkat_%28Suricata_suricatta%29_sentinel_..._%2851654080983%29.jpg/500px-Meerkat_%28Suricata_suricatta%29_sentinel_..._%2851654080983%29.jpg",
+      "imagePage": "https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_sentinel_..._(51654080983).jpg",
+      "latin": "Suricata suricatta",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "measure": "Kopf und Rumpf zusammen etwa 25–29 cm; Schwanz zusätzlich",
+      "name": "Erdmännchen",
+      "role": "Übungstier zur Auswahl",
+      "sentences": [
+        "Das Erdmännchen lebt im trockenen Gras- und Buschland im südlichen Afrika.",
+        "Es gehört zu den Mangusten.",
+        "Die Tiere leben in Gruppen und nutzen unterirdische Baue.",
+        "Ein Erdmännchen hat einen schlanken Körper.",
+        "Sein Fell ist hellbraun bis graubraun; auf dem Rücken liegen dunklere Streifen.",
+        "Um die Augen sind dunkle Flecken zu erkennen.",
+        "Kopf und Rumpf sind zusammen etwa 25 bis 29 Zentimeter lang; der Schwanz kommt noch dazu.",
+        "Der Schwanz ist lang und schmal.",
+        "An den Pfoten sitzen lange Krallen, die beim Graben helfen.",
+        "Es frisst vor allem Insekten, aber auch Spinnen und kleine Eidechsen."
+      ],
+      "sources": [
+        [
+          "Zoo Zürich",
+          "https://www.zoo.ch/de/naturschutz-tiere/tier-pflanzenlexikon/erdmaennchen"
+        ],
+        [
+          "San Diego Zoo Wildlife Alliance",
+          "https://animals.sandiegozoo.org/animals/meerkat"
+        ],
+        [
+          "Animal Diversity Web",
+          "https://animaldiversity.org/accounts/Suricata_suricatta/"
+        ]
+      ]
+    },
+    {
+      "author": "Brunswyk",
+      "features": [
+        "rötlich braunes Rückenfell",
+        "dunkle bis schwarze Beine und Bauch",
+        "helle Gesichtsbereiche",
+        "langer, buschiger Schwanz mit Ringen"
+      ],
+      "food": "hauptsächlich Bambus; auch Beeren und Eier",
+      "glossary": [
+        [
+          "Rumpf",
+          "Körper ohne Kopf, Beine und Schwanz"
+        ],
+        [
+          "Bambus",
+          "eine Pflanze mit festen Halmen"
+        ],
+        [
+          "Dämmerung",
+          "Zeit zwischen Tageslicht und Dunkelheit"
+        ]
+      ],
+      "habitat": "Bergwälder Asiens mit Bambus",
+      "id": "roter-panda",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Ailurus_fulgens_RoterPanda_LesserPanda.jpg",
+      "imagePage": "https://commons.wikimedia.org/wiki/File:Ailurus_fulgens_RoterPanda_LesserPanda.jpg",
+      "latin": "Ailurus fulgens",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "measure": "Kopf und Rumpf zusammen etwa 60 cm; Schwanz zusätzlich",
+      "name": "Roter Panda",
+      "role": "Übungstier zur Auswahl",
+      "sentences": [
+        "Der Rote Panda wird auch Kleiner Panda genannt.",
+        "Er lebt in Bergwäldern Asiens, in denen Bambus wächst.",
+        "Sein Fell ist am Rücken rötlich braun.",
+        "Beine und Bauch sind dunkel bis schwarz.",
+        "Im Gesicht hat er helle, fast weiße Bereiche.",
+        "Kopf und Rumpf sind zusammen etwa 60 Zentimeter lang; der Schwanz kommt noch dazu.",
+        "Sein langer, buschiger Schwanz hat hellere und dunklere Ringe.",
+        "Beim Klettern helfen ihm Krallen und der Schwanz.",
+        "Er frisst hauptsächlich Bambus, daneben zum Beispiel Beeren und Eier.",
+        "Der Rote Panda ist besonders in der Dämmerung und nachts aktiv."
+      ],
+      "sources": [
+        [
+          "Zoo Zürich",
+          "https://www.zoo.ch/de/naturschutz-tiere/tier-pflanzenlexikon/kleiner-panda"
+        ],
+        [
+          "San Diego Zoo Wildlife Alliance",
+          "https://animals.sandiegozoo.org/animals/red-panda"
+        ]
+      ]
+    },
+    {
+      "author": "BS Thurner Hof",
+      "features": [
+        "kräftiger, gedrungener Körper",
+        "meist graubraunes Fell",
+        "schwarze Gesichtsmaske",
+        "buschiger Schwanz mit dunklen Ringen / fünf Zehen"
+      ],
+      "food": "pflanzlich und tierisch, z. B. Früchte, Nüsse, Insekten, Frösche",
+      "glossary": [
+        [
+          "gedrungen",
+          "eher kurz und kräftig gebaut"
+        ],
+        [
+          "Zeichnung",
+          "Muster auf dem Fell"
+        ],
+        [
+          "Vorderpfoten",
+          "die beiden vorderen Pfoten"
+        ]
+      ],
+      "habitat": "Wälder mit Gewässern; auch Städte",
+      "id": "waschbaer",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Procyon_lotor_7_-_am_Wasser.jpg/500px-Procyon_lotor_7_-_am_Wasser.jpg",
+      "imagePage": "https://commons.wikimedia.org/wiki/File:Procyon_lotor_7_-_am_Wasser.jpg",
+      "latin": "Procyon lotor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "measure": "häufig etwa 6–7 kg",
+      "name": "Waschbär",
+      "role": "Materialreserve für die Probearbeit",
+      "sentences": [
+        "Der Waschbär stammt ursprünglich aus Nordamerika.",
+        "Er lebt gern in Wäldern mit Gewässern, kommt aber auch in Städten vor.",
+        "Sein Körper ist kräftig und wirkt gedrungen.",
+        "Das Fell ist meist graubraun.",
+        "Um seine Augen liegt eine schwarze Zeichnung, die wie eine Maske aussieht.",
+        "Der buschige Schwanz hat mehrere dunkle Ringe.",
+        "Ein erwachsener Waschbär wiegt häufig etwa sechs bis sieben Kilogramm.",
+        "An jeder Pfote sitzen fünf Zehen.",
+        "Mit den Vorderpfoten kann er Nahrung geschickt greifen.",
+        "Er frisst pflanzliche und tierische Nahrung, zum Beispiel Früchte, Nüsse, Insekten und Frösche."
+      ],
+      "sources": [
+        [
+          "Animal Diversity Web",
+          "https://animaldiversity.org/accounts/Procyon_lotor/"
+        ],
+        [
+          "NABU",
+          "https://www.nabu.de/tiere-und-pflanzen/saeugetiere/sonstige-saeugetiere/18751.html"
+        ]
+      ]
+    },
+    {
+      "author": "Tomas Čekanavičius",
+      "features": [
+        "kräftiger Körper / kurze Beine",
+        "dichtes braunes Fell",
+        "kleine Ohren / stumpfe Schnauze",
+        "breiter, flacher Schwanz / Schwimmhäute an Hinterfüßen / orange Zahnvorderseiten"
+      ],
+      "food": "Pflanzen, z. B. Blätter, junge Triebe und Rinde",
+      "glossary": [
+        [
+          "Triebe",
+          "junge Teile einer Pflanze"
+        ],
+        [
+          "Kelle",
+          "Name für den breiten Biberschwanz"
+        ],
+        [
+          "Schneidezähne",
+          "die vorderen Zähne zum Abbeißen und Nagen"
+        ]
+      ],
+      "habitat": "Flüsse und Seen",
+      "id": "biber",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Castor_fiber.jpg",
+      "imagePage": "https://commons.wikimedia.org/wiki/File:Castor_fiber.jpg",
+      "latin": "Castor fiber",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "measure": "etwa 13–35 kg",
+      "name": "Europäischer Biber",
+      "role": "Materialreserve für die Lernerfolgskontrolle",
+      "sentences": [
+        "Der Europäische Biber lebt an Flüssen und Seen.",
+        "Er ist ein Nagetier und ernährt sich von Pflanzen.",
+        "Er frisst zum Beispiel Blätter, junge Triebe und Rinde.",
+        "Sein Körper ist kräftig und hat kurze Beine.",
+        "Das dichte Fell ist braun.",
+        "Am Kopf sitzen kleine Ohren und eine stumpfe Schnauze.",
+        "Ein erwachsener Biber kann etwa 13 bis 35 Kilogramm wiegen.",
+        "Sein breiter, flacher Schwanz ist kaum behaart und mit Schuppen bedeckt.",
+        "Dieser Schwanz heißt auch Kelle.",
+        "Zwischen den Zehen der Hinterfüße liegen Schwimmhäute.",
+        "Die großen Schneidezähne sind auf der Vorderseite orange gefärbt."
+      ],
+      "sources": [
+        [
+          "Deutsche Wildtier Stiftung",
+          "https://www.deutschewildtierstiftung.de/wildtiere/biber"
+        ],
+        [
+          "Animal Diversity Web",
+          "https://animaldiversity.org/accounts/Castor_fiber/"
+        ]
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "child": "Nenne das Tier. Ergänze eine Größen- oder Gewichtsangabe, den Lebensraum und die Nahrung. Prüfe deine Angaben am Material.",
+      "id": "K1",
+      "need": "Mehrere geforderte Angaben fehlen, sind erfunden oder widersprechen dem Material.",
+      "next": "Markiere Tiername, Maßangabe, Lebensraum und Nahrung im Material.",
+      "partial": "Ein Teil der geforderten Angaben fehlt oder ist ungenau; das Material wird erkennbar genutzt.",
+      "secure": "Tier benannt; Größen- oder Gewichtsangabe, Lebensraum und Nahrung passend und richtig aus dem Material übernommen.",
+      "title": "Passende Informationen"
+    },
+    {
+      "child": "Beschreibe mindestens vier verschiedene äußere Merkmale genau. Beschreibe nicht nur, ob du das Tier schön findest.",
+      "id": "K2",
+      "need": "Höchstens ein konkretes Merkmal; überwiegend Wertungen oder unzutreffende Angaben.",
+      "next": "Wähle vier sichtbare oder im Text genannte Merkmale aus.",
+      "partial": "Zwei bis drei genaue Merkmale oder mehrere noch sehr allgemeine Angaben.",
+      "secure": "Mindestens vier unterscheidbare äußere Merkmale werden richtig und konkret beschrieben.",
+      "title": "Genaues Aussehen"
+    },
+    {
+      "child": "Beginne mit dem Tiernamen und einem Überblick. Ordne Einzelheiten sinnvoll. Schreibe zusammengehörige Informationen zusammen.",
+      "id": "K3",
+      "need": "Informationen ungeordnet; eine nachvollziehbare Reihenfolge fehlt weitgehend.",
+      "next": "Ordne deine Stichwörter: Überblick – Aussehen – Lebensraum und Nahrung.",
+      "partial": "Grundordnung erkennbar, aber einzelne Sprünge oder vermeidbare Wiederholungen.",
+      "secure": "Überblick am Anfang; zusammengehörige Merkmale und Angaben sinnvoll gebündelt.",
+      "title": "Klarer Aufbau"
+    },
+    {
+      "child": "Schreibe sachlich und im Präsens. Nutze passende Nomen, Adjektive und Fachwörter, die du verstehst.",
+      "id": "K4",
+      "need": "Überwiegend erzählend oder wertend; häufig unpassende Wörter oder Zeitformen.",
+      "next": "Ersetze ungenaue Wörter. Prüfe die Verben: Sie sollen im Präsens stehen.",
+      "partial": "Mehrfach ungenaue Wörter, Wertungen oder Zeitwechsel; insgesamt noch sachlich verständlich.",
+      "secure": "Weitgehend sachlich und im Präsens; treffende Bezeichnungen statt pauschaler Wörter.",
+      "title": "Sachliche und genaue Sprache"
+    },
+    {
+      "child": "Schreibe einen zusammenhängenden Text in vollständigen Sätzen. Lies ihn leise vor. Kannst du jeden Satz gut verstehen?",
+      "id": "K5",
+      "need": "Überwiegend Stichwörter, Satzstücke oder schwer verständliche Satzverbindungen.",
+      "next": "Sprich einen Satz zuerst vollständig. Schreibe ihn dann auf.",
+      "partial": "Einzelne Satzstücke oder unklare Bezüge erschweren das Lesen.",
+      "secure": "Vollständige, überwiegend grammatisch verständliche Sätze; Bezüge zwischen den Sätzen sind klar.",
+      "title": "Verständliche Sätze"
+    },
+    {
+      "child": "Prüfe Satzanfänge, Nomen und Satzschlusszeichen. Vergleiche schwierige Tierwörter mit dem Material.",
+      "id": "K6",
+      "need": "Viele grundlegende Fehler erschweren das Lesen deutlich.",
+      "next": "Prüfe nacheinander: Satzanfänge, Nomen, Satzschlusszeichen.",
+      "partial": "Wiederholte Fehler bei geübten Schreibungen oder Satzschlusszeichen; Lesbarkeit bleibt erhalten.",
+      "secure": "Geübte Rechtschreibung und Satzgrenzen überwiegend sicher; einzelne Fehler dürfen bleiben.",
+      "title": "Rechtschreibung und Satzzeichen"
+    }
+  ],
+  "requirements": [
+    "Tiername",
+    "mindestens vier verschiedene äußere Merkmale",
+    "eine Größen- oder Gewichtsangabe",
+    "Lebensraum",
+    "Nahrung"
+  ],
+  "status": {
+    "html": "erstellt",
+    "pdf": "noch nicht erzeugt",
+    "visualReview": "ausstehend; Arbeitsumgebung nicht verfügbar",
+    "sources": "am 14.09.2026 geprüft"
+  }
+}

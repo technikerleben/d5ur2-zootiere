@@ -5,7 +5,7 @@ Schritt 2 · Deutsch 5.3 · Zootiere
 ## Voraussetzung und Materialstatus
 Der Lernbuddy und die SRL-Elemente wurden außerhalb von Deutsch eingeführt. Hier werden sie angewendet, nicht neu eingeführt. Den vorhandenen laminierten Lernbuddy einschließlich seiner Felder und Strategiekarten weiterverwenden. Die neue Zielhilfe ist ein optionales Nachschlageblatt, kein neuer Lernbuddy und kein zusätzlich auszufüllendes Formular.
 
-Der Papierlernweg umfasst zwei A4-Seiten. Aufgaben 1–10, Tierpakete, Kindercheckliste, Probe- und Lernerfolgskontrolle sind damit verbindlich geplant, aber noch nicht erstellt. Den Lernweg erst zusammen mit den zugehörigen Materialien im Unterricht ausgeben. Keine nicht vorhandenen Materialien als bereits verfügbar ankündigen. Fischotterbeispiele entstehen in den folgenden Schritten.
+Der Papierlernweg umfasst zwei A4-Seiten. Aufgaben 1–10 sowie Probe- und Lernerfolgskontrolle sind verbindlich geplant, aber noch nicht erstellt. Tierpakete und Kindercheckliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg erst zusammen mit den zugehörigen Materialien im Unterricht ausgeben. Keine nicht vorhandenen Materialien als bereits verfügbar ankündigen. Das Fischotter-Materialpaket liegt seit Schritt 3 vor; Modellabschnitte folgen in Schritt 4.
 
 ## Ausgeben und drucken
 - [Lernweg, zwei Seiten A4](../lernweg/Mein_Lernweg_Zootiere_A4.pdf): pro Kind ein Exemplar, bei Bedarf doppelseitig, tatsächliche Größe.

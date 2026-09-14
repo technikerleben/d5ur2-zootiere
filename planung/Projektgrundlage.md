@@ -46,7 +46,7 @@ Die digitale Medienkompetenz des Lehrplanauszugs wird damit nicht vollständig i
 
 Ein Steckbrief ist eine Planungshilfe, nicht das fertige Zielprodukt. Eine reine Stichwortliste ersetzt den zusammenhängenden Text nicht.
 
-Es wird keine pauschale Mindestwortzahl festgelegt. Konkrete Pflichtinformationen werden erst mit dem Materialpaket definiert, damit Anforderungen vollständig aus dem Material erfüllbar sind. Textlänge allein ist kein Qualitätsmerkmal.
+Es wird keine pauschale Mindestwortzahl festgelegt. Für die vollständige Beschreibung sind nun vereinbart: Tiername, mindestens vier unterscheidbare äußere Merkmale, eine Größen- oder Gewichtsangabe, Lebensraum und Nahrung. Alle Angaben müssen aus dem Material erfüllbar sein. Die gemeinsamen Kriterien K1–K6 stehen in der Kindercheckliste und im beschreibenden Bewertungsraster aus Schritt 3. Eine Punktegewichtung folgt erst mit dem Prüfungspaket. Textlänge allein ist kein Qualitätsmerkmal.
 
 Mögliche weiterführende Leistungen: besonders genaue Auswahl und Verknüpfung von Informationen, klare Abgrenzung ähnlicher Tiere, eigenständige präzise Formulierungen. Zusätzliche Fachanforderungen dürfen nicht erst in der Prüfung auftauchen.
 
@@ -64,7 +64,7 @@ Vor Erstellung der Tierpakete:
 - Beobachtbare Merkmale und aus Texten entnommene Angaben kennzeichnen.
 - Quellen und Bildnachweise dokumentieren.
 
-Weitere Übungstiere sind noch auszuwählen. Probe- und Lernerfolgskontrolle verwenden andere Tiere als den gemeinsam ausführlich behandelten Fischotter. Geprüft wird der Transfer, nicht das Erinnern eines Mustertextes. Die zum Schreiben benötigten Tierinformationen stehen im Prüfungsmaterial.
+Erdmännchen und Roter Panda sind als Übungstiere ausgewählt. Waschbär und Europäischer Biber bilden die Materialreserve für Probearbeit und Lernerfolgskontrolle. Probe- und Lernerfolgskontrolle verwenden andere Tiere als den gemeinsam ausführlich behandelten Fischotter. Geprüft wird der Transfer, nicht das Erinnern eines Mustertextes. Die zum Schreiben benötigten Tierinformationen stehen im Prüfungsmaterial.
 
 ## 6. Lernorganisation und Verbindlichkeit
 Lernweg: **Input → Übung → Vertiefung → Probearbeit → Projekte → Lernerfolgskontrolle (Arbeit)**.
@@ -134,4 +134,4 @@ Vor Freigabe: Fachinformationen, Material-Auftrag-Passung, Zeitumfang, Übereins
 - [Unterrichtshinweise Wunschbriefe](https://github.com/technikerleben/d5ur1-wunschbriefe/blob/main/materialien/lehrkraft/Hinweise_Unterricht_Fassung3.md).
 - Nutzerfestlegungen dieser Planung: SRL-Einführung außerhalb von Deutsch, Fischotter als Beispieltier.
 
-Dies ist die fachlich-organisatorische Grundlage für die Materialerstellung. Tierquellen, fertige Schüleraufgaben, konkrete Prüfungshilfen und Punkteverteilung folgen in späteren Schritten.
+Dies ist die fachlich-organisatorische Grundlage für die Materialerstellung. Tierpakete, Quellen und beschreibende Kriterien liegen seit Schritt 3 als HTML-Material vor. Die Aufgaben 1–10, konkrete Prüfungshilfen und Punkteverteilung folgen in späteren Schritten. Separate PDFs zu Schritt 3 und deren visuelle Druckprüfung stehen noch aus.
