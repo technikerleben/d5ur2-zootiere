@@ -21,6 +21,11 @@ Die Reihe führt zu einer sachlichen, materialgestützten Tierbeschreibung. Ein 
 
 Kurze fachbezogene Erinnerungen an den Lernbuddy sind möglich. Sie ersetzen keine außerhalb dieser Reihe stattfindende Einführung. Die vorhandene Vorlage wird weiterverwendet, nicht durch ein neues Steuerungsblatt ersetzt.
 
+### Verbindliche Begriffsdefinition
+Der **Lernbuddy ist eine wiederverwendbare, laminierte Tischvorlage**. Das aktuelle **A5-Arbeitsblatt liegt in der freien Mitte**. Der Rahmen um das Blatt enthält **Planung oben, Durchführung seitlich und Reflexion unten**. In der Rechts- und Linkshändervariante wechselt die Seite des Durchführungs-/Strategiebereichs; die Funktion bleibt gleich. Strategiekarten werden an der vorgesehenen Seitenkante angelegt.
+
+Der Lernbuddy ist damit **kein eigenes Facharbeitsblatt, kein Lernweg und kein zusätzlicher Reflexionsbogen**. Jedes Facharbeitsblatt wird auf/in der freien Mitte des Lernbuddys bearbeitet. Der SRL-Zyklus kann mehrere zusammenhängende Arbeitsblätter umfassen und wird nicht automatisch mit jeder neuen Blattnummer neu gestartet.
+
 ## 3. Bezug zum bereitgestellten schulinternen Lehrplan
 Grundlage: Nutzeranhang „Matrix schulinternen Lehrplan“, Thema „Ein Besuch im Zoo – Auf Basis von Material berichten“, Jahrgang 5. Im Auszug ist als Abschlussziel „Tiere sachlich beschreiben (Aufgabentyp 2)“ genannt. Die Planung konzentriert sich entsprechend auf die materialgestützte Tierbeschreibung, nicht auf einen Erlebnisbericht über einen Zoobesuch.
 
@@ -85,11 +90,11 @@ Die Abfolge gibt Orientierung, ist aber keine Pflichtkette aller Einzelaufgaben.
 - Lernerfolgskontrolle: innerhalb des Vierwochenrahmens eingeplant.
 
 Lernweg = Orientierung über die Reihe.
-Lernbuddy = Steuerung der aktuellen Lernphase.
+Lernbuddy = wiederverwendbarer physischer Tischrahmen zur Steuerung der aktuellen Lernphase; das A5-Arbeitsblatt liegt in seiner freien Mitte.
 Schreibplan = fachliche Ordnung des Textes.
 Checkliste = Prüfung des Textprodukts.
 
-Diese Funktionen nicht in mehrfach auszufüllenden Formularen verdoppeln.
+Diese Funktionen nicht in mehrfach auszufüllenden Formularen verdoppeln. Insbesondere keine Fachaufgabe mit einem zweiten Rahmen aus Planung, Durchführung und Reflexion gestalten.
 
 ## 7. Bekannten Lernbuddy bewusst nutzen
 Phasen: **Planung → Durchführung → Reflexion**.
@@ -129,7 +134,7 @@ In der Probearbeit erste Fassung und zusätzliche Unterstützung unterscheiden; 
 Textleistung und SRL-Anwendung getrennt rückmelden. Tempo, Zahl erledigter Karten, Projekteilnahme, ausgefüllte Buddy-Felder und Reflexionslänge ergeben keine zusätzlichen Textpunkte. Ein bereits gelungener Text muss nicht künstlich verändert werden.
 
 ## 10. Material- und Qualitätsrahmen
-Geplant: zehn A5-Aufgaben, drei Merkblätter, vier kurze fachliche Inputs, Tierpakete, Papierlernweg, Kindercheckliste, Bewertungsraster, Probe- und Lernerfolgskontrolle, Tipps und Lösungen. Vorhandenen Lernbuddy und passende allgemeine Strategiekarten weiterverwenden.
+Geplant: zehn A5-Aufgaben, drei Merkblätter, vier kurze fachliche Inputs, Tierpakete, Papierlernweg, Kindercheckliste, Bewertungsraster, Probe- und Lernerfolgskontrolle, Tipps und Lösungen. Vorhandenen Lernbuddy als laminierten Tischrahmen und passende allgemeine Strategiekarten weiterverwenden. Neue A5-Aufgaben müssen in die freie Mitte passen und dürfen die SRL-Rahmenfunktionen nicht auf dem Arbeitsblatt duplizieren.
 
 Schüleraufträge ausschließlich als A5-PDF in einfacher, deutlicher Du-Form. Arbeitsort ausdrücklich nennen. A5-Aufgaben mit gut sichtbarer Blattnummer, durchgehend mindestens 14 pt. Längere Texte ins Heft. Spätere Gestaltung im bekannten Design der 5.3, druckbewusst und gut lesbar.
 
