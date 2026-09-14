@@ -166,7 +166,7 @@ Die Reflexion erhält einen gesicherten Abschlussplatz. Die letzte Reflexion er�
 | 9 | Prüfen und überarbeiten | Doppelstunde 5 |
 | 10 | Gezielte Weiterarbeit nach Rückmeldung | Doppelstunde 7 |
 
-Die Blattnummern sind Planungsnummern, noch keine vorhandenen Dateien. Probearbeit und Lernerfolgskontrolle erhalten eigene Pakete. Der individuelle Übungsumfang richtet sich nach dem gezeigten Bedarf.
+Die Aufgabenblätter 1–10 liegen seit Schritt 4 als A5-PDF vor. Die Blattnummer entspricht der PDF-Seite. Probearbeit und Lernerfolgskontrolle erhalten eigene Pakete. Der individuelle Übungsumfang richtet sich nach dem gezeigten Bedarf.
 
 ## Teamteaching, wenn verfügbar
 Eine Lehrkraft begleitet den fachlichen Schwerpunkt, die andere beobachtet an wechselnden Kindern die Anwendung des Lernbuddys und unterstützt kurze Ziel- oder Reflexionsgespräche. Rollen wechseln. Die Reihe muss auch mit einer Lehrkraft durchführbar bleiben.

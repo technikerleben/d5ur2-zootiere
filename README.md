@@ -1,7 +1,7 @@
 # Deutsch 5 · Zootiere
 ## Genau hinsehen, verständlich beschreiben
 
-Stand: 14. September 2026 · Schritte 1–3: Grundlagen, Lernweg, Tiermaterial und Kriterien
+Stand: 14. September 2026 · Schritte 1–4: Grundlagen, Lernweg, Tiermaterial, Aufgaben und Inputs
 
 Die zweite Deutschreihe der Klasse 5.3 knüpft organisatorisch an [Wunschbriefe](https://github.com/technikerleben/d5ur1-wunschbriefe) an. Zeitraum: vier Wochen mit jeweils zwei Doppelstunden, insgesamt acht Doppelstunden bzw. 16 Unterrichtsstunden à 45 Minuten.
 
@@ -38,7 +38,7 @@ Der frühere Generator `tools/generate_schritt2.py` und die A4-Schülerdateien b
 - [Konkrete Anwendung, Prüfpunkte und Druckhinweise](materialien/lehrkraft/Lernbuddy_Anwendung.md)
 - [Bearbeitbare PDF-Quelle](tools/generate_a5.py)
 
-Die Materialien aus Schritt 2 wurden als A5-PDFs mit mindestens 14 pt neu gesetzt und geprüft. Die darauf genannten Aufgaben 1–10 und Prüfungen folgen in den nächsten Schritten. Tierpakete und Checkliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert weiterverwendet.
+Die Materialien aus Schritt 2 wurden als A5-PDFs mit mindestens 14 pt neu gesetzt und geprüft. Aufgaben 1–10 liegen seit Schritt 4 vor. Vollständige Prüfungen folgen in Schritt 5. Tierpakete und Checkliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg gemeinsam mit den zugehörigen Materialien ausgeben. Der bekannte Lernbuddy wird unverändert weiterverwendet.
 
 ## Material-Cockpit
 Die [Startseite](index.html) zeigt die neuen A5-PDFs und den Lehrkraftbogen mit Öffnen- und Downloadlinks sowie die drei Planungsdokumente als aufklappbare Leseansichten. Ausstehende Materialien sind ohne Downloadlinks gekennzeichnet.
@@ -53,8 +53,8 @@ Prüfstand: Alle lokalen Links und Anker mit dem Repository-Inhalt abgeglichen. 
 1. **Abgeschlossen:** Projektgrundlage, Kernanforderungen, Reihenplanung und Hilfenprinzipien.
 2. **Abgeschlossen:** Papierlernweg, optionale Zielhilfe, Anwendungshinweise und Kurzbeobachtung.
 3. **Erstellt und geprüft:** Fünf Tierpakete und Kindercheckliste als A5-PDF mit mindestens 14 pt; HTML-Ansichten und Bewertungsraster für Lehrkräfte.
-4. **Als Nächstes:** Aufgaben, Merkblätter, Lösungen und fachliche Inputs erstellen.
-5. Probe- und Lernerfolgskontrolle einschließlich Rückmeldungen ausarbeiten.
+4. **Abgeschlossen:** Zehn A5-Aufgaben, drei Merkblätter, getrennte Tipps und Lösungen sowie vier fachliche HTML-Inputs.
+5. **Als Nächstes:** Probe- und Lernerfolgskontrolle einschließlich Rückmeldungen ausarbeiten.
 6. Druckgestaltung, HTML-Inputs, Lehrkraft-Cockpit, Kontroll-Kiosk und Vertretungshinweise erstellen.
 7. Gesamtprüfung und spätere Anpassung nach Unterrichtserprobung.
 
@@ -76,7 +76,7 @@ Die fünf Tiertexte umfassen jeweils 87–94 Wörter. Jede Seite enthält Foto, 
 
 Die HTML-Tierseiten und die HTML-Checkliste dienen ausschließlich Lehrkräften. Die A5-PDFs sind die Schülerausgabe. Fotos sind eingebettet. Format, Schriftgrößen und Textgrenzen sind automatisiert geprüft; alle Einzelseiten wurden in einer gerenderten Übersicht visuell geprüft.
 
-Generierung der Tierseiten: `node tools/generate_tierpakete.mjs`. Die Renderfunktion wurde in Code Mode ausgeführt; der Node-Dateizugriff konnte ohne Arbeitsumgebung nicht ausgeführt werden. CSS und Kriterienseiten bei Inhaltsänderungen gemeinsam pflegen. Schritte 4 und 5 müssen die jetzt konkretisierten gemeinsamen Anforderungen übernehmen.
+Generierung der Tierseiten: `node tools/generate_tierpakete.mjs`. Die Renderfunktion wurde in Code Mode ausgeführt; der Node-Dateizugriff konnte ohne Arbeitsumgebung nicht ausgeführt werden. CSS und Kriterienseiten bei Inhaltsänderungen gemeinsam pflegen. Schritt 4 greift die gemeinsamen Anforderungen auf; Schritt 5 muss sie für die Prüfungen beibehalten.
 
 ## A5-Druckausgaben
 
@@ -93,4 +93,18 @@ Generierung der Tierseiten: `node tools/generate_tierpakete.mjs`. Die Renderfunk
 
 Druck: A5 bei 100 %; bei zwei A5-Seiten auf A4 keine Verkleinerung. Das Sammelpaket hat fortlaufende Dokumentteile ohne automatisch eingefügte Leerseiten; für Duplex bei Bedarf die Einzeldateien nutzen.
 
-Erzeugung: `python tools/generate_a5.py`; benötigt ReportLab, PyMuPDF, Pillow und DejaVu Sans. Der Generator prüft Seitenmaße, Mindestschriftgröße und Textgrenzen. [Prüfbericht](materialien/A5_Pruefbericht.json). Bildnachweise und verlinkte Lizenzen stehen in den PDFs, ausführliche Nachweise in der Lehrkraft-Quellenseite. Aufgaben 1–10, vollständige Prüfungen und Kontroll-Kiosk folgen weiterhin in den geplanten nächsten Schritten.
+Erzeugung: `python tools/generate_a5.py`; benötigt ReportLab, PyMuPDF, Pillow und DejaVu Sans. Der Generator prüft Seitenmaße, Mindestschriftgröße und Textgrenzen. [Prüfbericht](materialien/A5_Pruefbericht.json). Bildnachweise und verlinkte Lizenzen stehen in den PDFs, ausführliche Nachweise in der Lehrkraft-Quellenseite. Aufgaben 1–10, Merkblätter, Tipps, Lösungen und Inputs liegen seit Schritt 4 vor. Vollständige Prüfungen und Kontroll-Kiosk folgen in den nächsten Schritten.
+
+## Schritt 4: Aufgaben und fachliche Inputs
+
+- [Aufgaben_1-10_A5.pdf](materialien/schritt4/Aufgaben_1-10_A5.pdf) · 10 Seiten
+- [Merkblaetter_1-3_A5.pdf](materialien/schritt4/Merkblaetter_1-3_A5.pdf) · 3 Seiten
+- [Tipps_1-10_A5.pdf](materialien/schritt4/Tipps_1-10_A5.pdf) · 10 Seiten
+- [Loesungen_1-10_A5.pdf](materialien/schritt4/Loesungen_1-10_A5.pdf) · 10 Seiten
+- [Vier fachliche Inputs für Lehrkräfte](inputs/Zootiere_Inputs.html)
+- [Einsatzhinweise](materialien/lehrkraft/Schritt4_Einsatz.html)
+- [Bearbeitbare Inhalte](materialien/schritt4_inhalte.json)
+
+Alle 33 Schülerseiten: A5, mindestens 14 pt. Aufgaben, Tipps und Lösungen jeweils mit passender Blattnummer. Der Lernbuddy wird bewusst angewendet; die Reflexion geht vor dem Abwischen ins Heft. Blatt 10 wird erst nach der noch zu erstellenden Probearbeit eingesetzt. Die HTML-Inputs bedient ausschließlich die Lehrkraft am Beamer. Kein zusätzliches Schülergerät erforderlich.
+
+Die neuen PDFs ergänzen das bestehende 13-seitige Grundpaket; es wurde nicht überschrieben. Tipps und Lösungen nur nach Bedarf und getrennt bereitstellen. PDF-Seiten, Textgrenzen und Schriftgrößen geprüft; Präsentationsnavigation und Antwortanzeige im Browser geprüft. Generator: `python tools/generate_schritt4.py`.

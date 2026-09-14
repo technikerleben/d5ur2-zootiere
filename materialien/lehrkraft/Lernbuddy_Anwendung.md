@@ -10,7 +10,7 @@ Die Schülerausgaben liegen als neu gesetzte A5-PDFs mit durchgehend mindestens 
 ## Voraussetzung und Materialstatus
 Der Lernbuddy und die SRL-Elemente wurden außerhalb von Deutsch eingeführt. Hier werden sie angewendet, nicht neu eingeführt. Den vorhandenen laminierten Lernbuddy einschließlich seiner Felder und Strategiekarten weiterverwenden. Die neue Zielhilfe ist ein optionales Nachschlageblatt, kein neuer Lernbuddy und kein zusätzlich auszufüllendes Formular.
 
-Der Papierlernweg liegt auf drei A5-Seiten vor. Die bisherige A4-Datei bleibt als Archiv erhalten. Aufgaben 1–10 sowie Probe- und Lernerfolgskontrolle sind verbindlich geplant, aber noch nicht erstellt. Tierpakete und Kindercheckliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg erst zusammen mit den zugehörigen Materialien im Unterricht ausgeben. Keine nicht vorhandenen Materialien als bereits verfügbar ankündigen. Das Fischotter-Materialpaket liegt seit Schritt 3 vor; Modellabschnitte folgen in Schritt 4.
+Der Papierlernweg liegt auf drei A5-Seiten vor. Die bisherige A4-Datei bleibt als Archiv erhalten. Aufgaben 1–10 sind als A5-PDF erstellt. Probe- und Lernerfolgskontrolle folgen in Schritt 5. Tierpakete und Kindercheckliste sind seit Schritt 3 als HTML-Material vorhanden. Den Lernweg erst zusammen mit den zugehörigen Materialien im Unterricht ausgeben. Keine nicht vorhandenen Materialien als bereits verfügbar ankündigen. Das Fischotter-Materialpaket liegt seit Schritt 3 vor; Modellabschnitte sind in den fachlichen Inputs aus Schritt 4 enthalten.
 
 ## Druckmaterial
 - [Lernweg, drei Seiten A5](../lernweg/Mein_Lernweg_Zootiere_A5.pdf): A5, mindestens 14 pt; in tatsächlicher Größe drucken.

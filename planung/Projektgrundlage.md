@@ -141,4 +141,4 @@ Vor Freigabe: Fachinformationen, Material-Auftrag-Passung, Zeitumfang, Übereins
 - [Unterrichtshinweise Wunschbriefe](https://github.com/technikerleben/d5ur1-wunschbriefe/blob/main/materialien/lehrkraft/Hinweise_Unterricht_Fassung3.md).
 - Nutzerfestlegungen dieser Planung: SRL-Einführung außerhalb von Deutsch, Fischotter als Beispieltier.
 
-Dies ist die fachlich-organisatorische Grundlage für die Materialerstellung. Tierpakete, Quellen und beschreibende Kriterien liegen seit Schritt 3 als HTML-Material vor. Die Aufgaben 1–10, konkrete Prüfungshilfen und Punkteverteilung folgen in späteren Schritten. Die A5-Schüler-PDFs zu Schritt 3 sind erstellt und geprüft.
+Dies ist die fachlich-organisatorische Grundlage für die Materialerstellung. Tierpakete, Quellen und beschreibende Kriterien liegen seit Schritt 3 als HTML-Material vor. Die Aufgaben 1–10, Merkblätter, Tipps, Lösungen und fachlichen Inputs liegen seit Schritt 4 vor. Prüfungshilfen und Punkteverteilung folgen in Schritt 5. Die A5-Schüler-PDFs zu Schritt 3 sind erstellt und geprüft.

@@ -1,0 +1,41 @@
+{
+  "pdf": [
+    {
+      "a5": true,
+      "bytes": 58208,
+      "minimumFontPt": 14,
+      "pages": 10,
+      "path": "materialien/schritt4/Aufgaben_1-10_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 48271,
+      "minimumFontPt": 14,
+      "pages": 3,
+      "path": "materialien/schritt4/Merkblaetter_1-3_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 55250,
+      "minimumFontPt": 14,
+      "pages": 10,
+      "path": "materialien/schritt4/Tipps_1-10_A5.pdf"
+    },
+    {
+      "a5": true,
+      "bytes": 57201,
+      "minimumFontPt": 14,
+      "pages": 10,
+      "path": "materialien/schritt4/Loesungen_1-10_A5.pdf"
+    }
+  ],
+  "visual": "Alle 33 Seiten in gerenderter Übersicht geprüft.",
+  "presentation": {
+    "slides": 16,
+    "reveal": true,
+    "reset": true,
+    "boundaries": true,
+    "mobileHorizontalOverflow": false,
+    "pageErrors": []
+  }
+}
