@@ -124,7 +124,7 @@ def buddy():
  d.p('Prüfe deine Energie und mögliche Ablenker. Was hilft dir, anzufangen?',size=14)
  d.page('Dein Lernbuddy','ARBEITEN & ZURÜCKBLICKEN')
  d.section('Durchführung')
- d.p('Lege die Aufgabe an deinen Lernbuddy. Nutze eine passende Strategie.')
+ d.p('Lege das A5-Arbeitsblatt in die freie Mitte deines Lernbuddys. Nutze eine passende Strategie.')
  d.p('Prüfe zwischendurch: Hilft dein Weg dir, dein Ziel zu erreichen?')
  d.p('Wenn du feststeckst: Lies den Auftrag erneut. Nutze ein Beispiel oder eine Hilfe. Frage ein anderes Kind, dann die Lehrkraft.')
  d.p('Wenn du überfordert bist, darfst du direkt die Lehrkraft fragen.',gap=18)
