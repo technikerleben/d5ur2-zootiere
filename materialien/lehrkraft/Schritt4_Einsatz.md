@@ -31,9 +31,11 @@ Die kurzen Inputs sind für ungefähr 5–10 Minuten gedacht, kein vollständige
 
 ## Lernbuddy bewusst anwenden
 
+Der Lernbuddy ist die laminierte Tischvorlage **um** die Fachaufgabe. Lege das aktuelle A5-Arbeitsblatt in die freie Mitte. Planung findet oben am Rahmen statt, die Durchführung wird über den seitlichen Bereich begleitet, die Reflexion liegt unten. Rechts- und Linkshändervariante spiegeln nur die seitliche Durchführungs-/Strategieseite.
+
 Planung: Letzte Reflexion lesen, fachliches Ziel und passenden Auftrag wählen. Durchführung: Einen kurzen Zwischenstopp nutzen, um Weg und Hilfen zu prüfen. Reflexion: Ergebnisbeleg zeigen, nächsten Schritt benennen und vor dem Abwischen ins Heft übertragen.
 
-Die kurzen Hinweise auf den Aufgabenblättern setzen jeweils einen Schwerpunkt. Sie verlangen keinen neuen Zyklus pro Blatt. Ein Zyklus pro zusammenhängender Lernphase reicht. Keine erneute SRL-Einführung, kein zusätzlicher Reflexionsbogen.
+Die kurzen Hinweise auf den Aufgabenblättern sind nur **Lernbuddy-Foki**: Sie verweisen auf einen Teil des vorhandenen Rahmens und bauen ihn nicht nach. Jedes Blatt wird in der Mitte des Lernbuddys bearbeitet; trotzdem ist kein neuer Zyklus pro Blatt nötig. Ein Zyklus pro zusammenhängender Lernphase reicht. Keine erneute SRL-Einführung, kein zusätzlicher Reflexionsbogen.
 
 Bei Teamteaching kann eine Lehrkraft den fachlichen Input führen, während die andere gezielt Zielwahl, Hilfennutzung oder einen Ergebnisbeleg beobachtet. Nach dem Input Rollen oder Gruppen nach Bedarf wechseln.
 
