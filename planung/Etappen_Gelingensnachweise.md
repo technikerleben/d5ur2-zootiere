@@ -75,13 +75,21 @@ Der bereits geschriebene Übungstext dient als Nachweis. Das Kind zeigt ausgewä
 - SRL bleibt getrennt: Planung – Ziel wählen; Durchführung – Strategie prüfen; Reflexion – Beleg und nächsten Schritt zeigen. Reflexion vor dem Abwischen ins Heft übertragen. Ein Zyklus kann mehrere Fachblätter umfassen.
 - Den dritten Nachweis während der Arbeitsphase gestaffelt durchführen. Bei 26 Kindern sind 3–5 Minuten je Kind kein gemeinsamer kurzer Abschluss; Textsichtung vorbereiten und Gespräche auf Doppelstunden 4–5 verteilen, im Teamteaching aufteilen.
 - Danach bleibt der Ablauf erhalten: Doppelstunde 6 Probearbeit, Doppelstunde 7 gezielte Weiterarbeit mit Blatt 10, Doppelstunde 8 Lernerfolgskontrolle. Waschbär und Biber bleiben Prüfungsreserve.
-- Status: Die Etappen und Nachweiskonzepte sind beschlossen. Nachweiskarten, parallele Wiederholungsaufgaben, individuelle Förderfassungen und Erwartungshorizonte sind noch zu erstellen. Die vorhandenen Übungsblätter und PDFs bleiben erhalten.
+- Status: Nachweise 1–2 mit Varianten A/B und Erwartungshorizonten sowie Gesprächsleitfaden 3 sind erstellt und geprüft. Individuelle Förderfassungen, Schüler-Raster und angepasster Lernweg sind noch zu erstellen. Die vorhandenen Übungsblätter und PDFs bleiben erhalten.
 
 ## Nächste Produktionsschritte
 
-1. Nachweise 1–2 als A5-Karten mit mindestens 14 pt, Erwartungshorizonten und je einem kurzen Wiederholungsnachweis erstellen; Nachweis 3 als kurzen Lehrkraft-Gesprächsleitfaden ausarbeiten.
+1. **Erledigt:** Nachweise 1–2 als A5-Karten mit mindestens 14 pt, Erwartungshorizonten und je einem kurzen Wiederholungsnachweis erstellen; Nachweis 3 als kurzen Lehrkraft-Gesprächsleitfaden ausarbeiten.
 2. Förderfassungen anhand individuell ausgewählter Ziele vorbereiten. Schülerfassung des Kompetenzrasters und Lernweg als A5-PDF mit den Etappen ergänzen; keine SRL-Felder duplizieren.
 3. Probe- und Lernerfolgskontrolle mit Rückmeldung ausarbeiten. Bearbeitungszeit, erlaubte Hilfen und Terminorganisation vorher festlegen. Punkte und Noten nicht automatisch aus den Standards ableiten.
 4. Kontroll-Kiosk mit den vorhandenen Übungstipps und Lösungen erstellen; Prüfungen und Gelingensnachweise nicht als Lösungen dort veröffentlichen. Freiwillige Angebote, Vertretungshinweise und Gesamtprüfung ergänzen.
 
 [Kompetenzraster](Kompetenzraster_4_Standards.md)
+
+
+## Verfügbare Materialien
+
+- [Schülerkarten A/B, A5](../materialien/gelingensnachweise/GN1_GN2_Schuelerkarten_A5.pdf)
+- [Erwartungshorizonte](../materialien/gelingensnachweise/GN1_GN2_Erwartungshorizonte_Lehrkraft_A4.pdf)
+- [Gesprächsleitfaden 3](../materialien/gelingensnachweise/GN3_Gespraechsleitfaden_Lehrkraft_A4.pdf)
+- [Einsatz und Einzeldateien](../materialien/gelingensnachweise/README.md)

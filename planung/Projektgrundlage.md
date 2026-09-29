@@ -4,7 +4,7 @@
 
 Verbindlich sind sechs Kriterien K1–K6 mit Förderstandard (individuelle Ziele), Mindeststandard, Regelstandard und Leistungsstandard. Drei kurze, unbenotete Gelingensnachweise schließen die Etappen ab: Informationen finden und ordnen (Doppelstunden 1–2), genaue Sätze formulieren (Doppelstunde 3), einen Text schreiben und prüfen (Doppelstunden 4–5). Für die Weiterarbeit gilt das Kernziel der Etappe auf Mindeststandard bzw. das individuell vereinbarte Förderziel; höhere Standards sind keine Zugangshürden. Fachliche Leistung und Lernbuddy-Anwendung bleiben getrennt. Bei Lücken: passende Teilübung und kurzer erneuter Nachweis.
 
-Die Planung ist beschlossen. Konkrete Nachweiskarten, Förderfassungen und die Schülerfassung des Rasters sind noch zu erstellen; bestehende PDFs wurden nicht neu erzeugt.
+Nachweise 1–2 liegen als A5-Karten in den Varianten A/B mit Erwartungshorizonten vor; für Nachweis 3 gibt es einen Gesprächsleitfaden mit Kurzprotokoll. Individuelle Förderfassungen, Schüler-Raster und die Etappenkennzeichnung im Lernweg folgen noch. Die bisherigen Übungs-PDFs bleiben unverändert.
 
 - [Kompetenzraster mit vier Standards](Kompetenzraster_4_Standards.md)
 - [Etappen und Gelingensnachweise](Etappen_Gelingensnachweise.md)
@@ -157,3 +157,4 @@ Vor Freigabe: Fachinformationen, Material-Auftrag-Passung, Zeitumfang, Übereins
 - Nutzerfestlegungen dieser Planung: SRL-Einführung außerhalb von Deutsch, Fischotter als Beispieltier.
 
 Dies ist die fachlich-organisatorische Grundlage für die Materialerstellung. Tierpakete, Quellen und beschreibende Kriterien liegen seit Schritt 3 als HTML-Material vor. Die Aufgaben 1–10, Merkblätter, Tipps, Lösungen und fachlichen Inputs liegen seit Schritt 4 vor. Prüfungshilfen und Punkteverteilung folgen in Schritt 5. Die A5-Schüler-PDFs zu Schritt 3 sind erstellt und geprüft.
+

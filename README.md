@@ -4,7 +4,7 @@
 
 Verbindlich sind sechs Kriterien K1–K6 mit Förderstandard (individuelle Ziele), Mindeststandard, Regelstandard und Leistungsstandard. Drei kurze, unbenotete Gelingensnachweise schließen die Etappen ab: Informationen finden und ordnen (Doppelstunden 1–2), genaue Sätze formulieren (Doppelstunde 3), einen Text schreiben und prüfen (Doppelstunden 4–5). Für die Weiterarbeit gilt das Kernziel der Etappe auf Mindeststandard bzw. das individuell vereinbarte Förderziel; höhere Standards sind keine Zugangshürden. Fachliche Leistung und Lernbuddy-Anwendung bleiben getrennt. Bei Lücken: passende Teilübung und kurzer erneuter Nachweis.
 
-Die Planung ist beschlossen. Konkrete Nachweiskarten, Förderfassungen und die Schülerfassung des Rasters sind noch zu erstellen; bestehende PDFs wurden nicht neu erzeugt.
+Nachweise 1–2 liegen als A5-Karten in den Varianten A/B mit Erwartungshorizonten vor; für Nachweis 3 gibt es einen Gesprächsleitfaden mit Kurzprotokoll. Individuelle Förderfassungen, Schüler-Raster und die Etappenkennzeichnung im Lernweg folgen noch. Die bisherigen Übungs-PDFs bleiben unverändert.
 
 - [Kompetenzraster mit vier Standards](planung/Kompetenzraster_4_Standards.md)
 - [Etappen und Gelingensnachweise](planung/Etappen_Gelingensnachweise.md)
@@ -69,7 +69,7 @@ Prüfstand: Alle lokalen Links und Anker mit dem Repository-Inhalt abgeglichen. 
 2. **Abgeschlossen:** Papierlernweg, optionale Zielhilfe, Anwendungshinweise und Kurzbeobachtung.
 3. **Erstellt und geprüft:** Fünf Tierpakete und Kindercheckliste als A5-PDF mit mindestens 14 pt; HTML-Ansichten und Bewertungsraster für Lehrkräfte.
 4. **Abgeschlossen:** Zehn A5-Aufgaben, drei Merkblätter, getrennte Tipps und Lösungen sowie vier fachliche HTML-Inputs.
-5. **Als Nächstes:** Gelingensnachweise und Förderfassungen konkretisieren, Schüler-Raster und Lernweg ergänzen; anschließend Probe- und Lernerfolgskontrolle einschließlich Rückmeldungen ausarbeiten.
+5. **Teilweise umgesetzt:** Gelingensnachweise 1–3 erstellt; als Nächstes Förderfassungen konkretisieren, Schüler-Raster und Lernweg ergänzen; anschließend Probe- und Lernerfolgskontrolle einschließlich Rückmeldungen ausarbeiten.
 6. Druckgestaltung, HTML-Inputs, Lehrkraft-Cockpit, Kontroll-Kiosk und Vertretungshinweise erstellen.
 7. Gesamtprüfung und spätere Anpassung nach Unterrichtserprobung.
 
@@ -123,3 +123,15 @@ Erzeugung: `python tools/generate_a5.py`; benötigt ReportLab, PyMuPDF, Pillow u
 Alle 33 Schülerseiten: A5, mindestens 14 pt. Aufgaben, Tipps und Lösungen jeweils mit passender Blattnummer. Der Lernbuddy wird bewusst angewendet; die Reflexion geht vor dem Abwischen ins Heft. Blatt 10 wird erst nach der noch zu erstellenden Probearbeit eingesetzt. Die HTML-Inputs bedient ausschließlich die Lehrkraft am Beamer. Kein zusätzliches Schülergerät erforderlich.
 
 Die neuen PDFs ergänzen das bestehende 13-seitige Grundpaket; es wurde nicht überschrieben. Tipps und Lösungen nur nach Bedarf und getrennt bereitstellen. PDF-Seiten, Textgrenzen und Schriftgrößen geprüft; Präsentationsnavigation und Antwortanzeige im Browser geprüft. Generator: `python tools/generate_schritt4.py`.
+
+
+## Gelingensnachweise: druckfertige Ergänzung
+
+- [Schülerkarten 1A, 1B, 2A und 2B – A5, 6 Seiten](materialien/gelingensnachweise/GN1_GN2_Schuelerkarten_A5.pdf)
+- [Erwartungshorizonte und Einsatz – Lehrkraft, A4, 5 Seiten](materialien/gelingensnachweise/GN1_GN2_Erwartungshorizonte_Lehrkraft_A4.pdf)
+- [Gesprächsleitfaden 3 mit Kurzprotokoll – Lehrkraft, A4, 2 Seiten](materialien/gelingensnachweise/GN3_Gespraechsleitfaden_Lehrkraft_A4.pdf)
+- [Einzeldateien, Druckhinweise und Bildquelle](materialien/gelingensnachweise/README.md)
+
+Nachweis 1: Informationen aus Bild und Text zum Fischotter entnehmen und ordnen. Nachweis 2: drei sachliche Sätze bilden und einen Satz verbessern. A dient dem ersten Versuch, B dem erneuten Nachweis nach gezielter Übung. Nachweis 3 nutzt den bereits vorhandenen Übungstext. Unbenotet, ohne Punkteschema; vereinbarte Hilfen dokumentieren. Lernbuddy-Nutzung getrennt rückmelden.
+
+Sechs Schülerseiten: A5 hoch, mindestens 14 pt, Graustufen, 15 mm linker Rand. Technische und visuelle PDF-Prüfung abgeschlossen. Generator: `python tools/generate_gelingensnachweise.py`. Die Nachweise und ihre Lösungen gehören nicht in den Kontroll-Kiosk. Förderfassungen sind noch nicht enthalten.

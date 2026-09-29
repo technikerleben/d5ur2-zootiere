@@ -1,0 +1,51 @@
+[
+  {
+    "path": "materialien/gelingensnachweise/GN1_A_Tierdetektiv_A5.pdf",
+    "pages": 2,
+    "student": true,
+    "minimumFontPt": 14.0,
+    "bytes": 275582
+  },
+  {
+    "path": "materialien/gelingensnachweise/GN1_B_Tierdetektiv_A5.pdf",
+    "pages": 2,
+    "student": true,
+    "minimumFontPt": 14.0,
+    "bytes": 275560
+  },
+  {
+    "path": "materialien/gelingensnachweise/GN2_A_Genaue_Saetze_A5.pdf",
+    "pages": 1,
+    "student": true,
+    "minimumFontPt": 14.0,
+    "bytes": 44937
+  },
+  {
+    "path": "materialien/gelingensnachweise/GN2_B_Genaue_Saetze_A5.pdf",
+    "pages": 1,
+    "student": true,
+    "minimumFontPt": 14.0,
+    "bytes": 44943
+  },
+  {
+    "path": "materialien/gelingensnachweise/GN1_GN2_Schuelerkarten_A5.pdf",
+    "pages": 6,
+    "student": true,
+    "minimumFontPt": 14.0,
+    "bytes": 321620
+  },
+  {
+    "path": "materialien/gelingensnachweise/GN1_GN2_Erwartungshorizonte_Lehrkraft_A4.pdf",
+    "pages": 5,
+    "student": false,
+    "minimumFontPt": 14.0,
+    "bytes": 160119
+  },
+  {
+    "path": "materialien/gelingensnachweise/GN3_Gespraechsleitfaden_Lehrkraft_A4.pdf",
+    "pages": 2,
+    "student": false,
+    "minimumFontPt": 14.0,
+    "bytes": 89610
+  }
+]

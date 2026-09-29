@@ -1,6 +1,6 @@
 {
   "stand": "2026-09-29",
-  "status": "Planung beschlossen; Nachweiskarten und Schüler-PDF-Raster ausstehend",
+  "status": "Status: Nachweise 1–2 mit Varianten A/B und Erwartungshorizonten sowie Gesprächsleitfaden 3 sind erstellt und geprüft. Individuelle Förderfassungen, Schüler-Raster und angepasster Lernweg sind noch zu erstellen. Die vorhandenen Übungsblätter und PDFs bleiben erhalten.",
   "levels": [
     "Förderstandard – individuelle Ziele",
     "Mindeststandard",
@@ -146,6 +146,12 @@
     "SRL bleibt getrennt: Planung – Ziel wählen; Durchführung – Strategie prüfen; Reflexion – Beleg und nächsten Schritt zeigen. Reflexion vor dem Abwischen ins Heft übertragen. Ein Zyklus kann mehrere Fachblätter umfassen.",
     "Den dritten Nachweis während der Arbeitsphase gestaffelt durchführen. Bei 26 Kindern sind 3–5 Minuten je Kind kein gemeinsamer kurzer Abschluss; Textsichtung vorbereiten und Gespräche auf Doppelstunden 4–5 verteilen, im Teamteaching aufteilen.",
     "Danach bleibt der Ablauf erhalten: Doppelstunde 6 Probearbeit, Doppelstunde 7 gezielte Weiterarbeit mit Blatt 10, Doppelstunde 8 Lernerfolgskontrolle. Waschbär und Biber bleiben Prüfungsreserve.",
-    "Status: Die Etappen und Nachweiskonzepte sind beschlossen. Nachweiskarten, parallele Wiederholungsaufgaben, individuelle Förderfassungen und Erwartungshorizonte sind noch zu erstellen. Die vorhandenen Übungsblätter und PDFs bleiben erhalten."
-  ]
+    "Status: Nachweise 1–2 mit Varianten A/B und Erwartungshorizonten sowie Gesprächsleitfaden 3 sind erstellt und geprüft. Individuelle Förderfassungen, Schüler-Raster und angepasster Lernweg sind noch zu erstellen. Die vorhandenen Übungsblätter und PDFs bleiben erhalten."
+  ],
+  "resources": {
+    "student_cards": "gelingensnachweise/GN1_GN2_Schuelerkarten_A5.pdf",
+    "expectations": "gelingensnachweise/GN1_GN2_Erwartungshorizonte_Lehrkraft_A4.pdf",
+    "conversation_3": "gelingensnachweise/GN3_Gespraechsleitfaden_Lehrkraft_A4.pdf",
+    "source": "../tools/generate_gelingensnachweise.py"
+  }
 }
