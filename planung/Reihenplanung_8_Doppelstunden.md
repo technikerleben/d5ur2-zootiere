@@ -1,4 +1,14 @@
 # Reihenplanung · Acht Doppelstunden
+
+## Ergänzung vom 29.09.2026: Kompetenzraster und Etappen
+
+Verbindlich sind sechs Kriterien K1–K6 mit Förderstandard (individuelle Ziele), Mindeststandard, Regelstandard und Leistungsstandard. Drei kurze, unbenotete Gelingensnachweise schließen die Etappen ab: Informationen finden und ordnen (Doppelstunden 1–2), genaue Sätze formulieren (Doppelstunde 3), einen Text schreiben und prüfen (Doppelstunden 4–5). Für die Weiterarbeit gilt das Kernziel der Etappe auf Mindeststandard bzw. das individuell vereinbarte Förderziel; höhere Standards sind keine Zugangshürden. Fachliche Leistung und Lernbuddy-Anwendung bleiben getrennt. Bei Lücken: passende Teilübung und kurzer erneuter Nachweis.
+
+Die Planung ist beschlossen. Konkrete Nachweiskarten, Förderfassungen und die Schülerfassung des Rasters sind noch zu erstellen; bestehende PDFs wurden nicht neu erzeugt.
+
+- [Kompetenzraster mit vier Standards](Kompetenzraster_4_Standards.md)
+- [Etappen und Gelingensnachweise](Etappen_Gelingensnachweise.md)
+
 Stand: 14. September 2026
 
 ## Materialvorgabe
@@ -49,7 +59,7 @@ Die Reflexion erhält einen gesicherten Abschlussplatz. Die letzte Reflexion er�
 - Kurzen Fischotter-Sachtext lesen; relevante Informationen markieren.
 - Stichwörter unter passenden Überschriften sammeln. Keine unbekannten Tierdaten aus Vorwissen voraussetzen.
 - Bild und Text an ausgewählten Angaben abgleichen.
-- Kurzer mündlicher Prüfpunkt: eine Information zeigen und ihre Quelle nennen.
+- Gelingensnachweis 1 „Tierdetektiv“ (5–8 Minuten) ersetzt den bisherigen Prüfpunkt: Informationen finden, Quellen zeigen und Stichwörter ordnen.
 
 **Anwendung Lernbuddy:** Passende Lesestrategie nutzen; einen Ablenker berücksichtigen, soweit für die aktuelle Arbeit relevant.
 
@@ -66,7 +76,7 @@ Die Reflexion erhält einen gesicherten Abschlussplatz. Die letzte Reflexion er�
 - Nach kurzem Abgleich zwischen zwei passenden Übungsschwerpunkten wählen: Wortschatz oder Satzbildung.
 - Aus Stichwörtern sachliche Sätze bilden; kleine Wortbildungsübungen unmittelbar dafür nutzen.
 - Hilfen und Strategiekarte einsetzen.
-- Ein verbessertes Beispiel zeigen; begründen, wodurch es genauer geworden ist.
+- Gelingensnachweis 2 „Aus Stichwörtern werden Sätze“ (5–8 Minuten): drei Aussagen formulieren und einen vorbereiteten Satz verbessern.
 
 **Anwendung Lernbuddy:** Hilfekette bewusst nutzen und im Zwischenstopp prüfen, ob die gewählte Hilfe wirkt.
 
@@ -100,7 +110,7 @@ Die Reflexion erhält einen gesicherten Abschlussplatz. Die letzte Reflexion er�
 - Kurze Anwendungserinnerung: Fischotter-Modellabschnitt anhand der bekannten Kriterien prüfen.
 - Eigenen Text selbst prüfen; anschließend Partnerfeedback zu einem begrenzten Kriterium.
 - Nötige Stellen überarbeiten; gelungene Stellen beibehalten.
-- Kurzer Kompetenzhalt mit Lehrkraft: eine gelungene Stelle und einen weiteren Bedarf zeigen.
+- Gelingensnachweis 3 „Mein Text zeigt es“: vorhandenen Übungstext anhand K1–K6 prüfen und Belege erläutern; kein zusätzlicher Aufsatz. Textsichtung und Gespräche gestaffelt in den Arbeitsphasen der Doppelstunden 4–5 durchführen.
 - Ablauf und festgelegte Hilfen der Probearbeit transparent machen.
 
 **Anwendung Lernbuddy:** Reflexion durch einen Beleg stützen und einen fachlichen nächsten Schritt festhalten.

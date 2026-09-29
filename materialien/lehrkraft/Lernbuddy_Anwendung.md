@@ -1,5 +1,15 @@
 # Lernweg und Lernbuddy anwenden
 
+## Ergänzung vom 29.09.2026: Kompetenzraster und Etappen
+
+Verbindlich sind sechs Kriterien K1–K6 mit Förderstandard (individuelle Ziele), Mindeststandard, Regelstandard und Leistungsstandard. Drei kurze, unbenotete Gelingensnachweise schließen die Etappen ab: Informationen finden und ordnen (Doppelstunden 1–2), genaue Sätze formulieren (Doppelstunde 3), einen Text schreiben und prüfen (Doppelstunden 4–5). Für die Weiterarbeit gilt das Kernziel der Etappe auf Mindeststandard bzw. das individuell vereinbarte Förderziel; höhere Standards sind keine Zugangshürden. Fachliche Leistung und Lernbuddy-Anwendung bleiben getrennt. Bei Lücken: passende Teilübung und kurzer erneuter Nachweis.
+
+Die Planung ist beschlossen. Konkrete Nachweiskarten, Förderfassungen und die Schülerfassung des Rasters sind noch zu erstellen; bestehende PDFs wurden nicht neu erzeugt.
+
+- [Kompetenzraster mit vier Standards](../../planung/Kompetenzraster_4_Standards.md)
+- [Etappen und Gelingensnachweise](../../planung/Etappen_Gelingensnachweise.md)
+
+
 Schritt 2 · Deutsch 5.3 · Zootiere
 
 ## Verbindliches Ausgabeformat

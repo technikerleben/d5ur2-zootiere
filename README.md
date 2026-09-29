@@ -1,7 +1,17 @@
 # Deutsch 5 · Zootiere
+
+## Ergänzung vom 29.09.2026: Kompetenzraster und Etappen
+
+Verbindlich sind sechs Kriterien K1–K6 mit Förderstandard (individuelle Ziele), Mindeststandard, Regelstandard und Leistungsstandard. Drei kurze, unbenotete Gelingensnachweise schließen die Etappen ab: Informationen finden und ordnen (Doppelstunden 1–2), genaue Sätze formulieren (Doppelstunde 3), einen Text schreiben und prüfen (Doppelstunden 4–5). Für die Weiterarbeit gilt das Kernziel der Etappe auf Mindeststandard bzw. das individuell vereinbarte Förderziel; höhere Standards sind keine Zugangshürden. Fachliche Leistung und Lernbuddy-Anwendung bleiben getrennt. Bei Lücken: passende Teilübung und kurzer erneuter Nachweis.
+
+Die Planung ist beschlossen. Konkrete Nachweiskarten, Förderfassungen und die Schülerfassung des Rasters sind noch zu erstellen; bestehende PDFs wurden nicht neu erzeugt.
+
+- [Kompetenzraster mit vier Standards](planung/Kompetenzraster_4_Standards.md)
+- [Etappen und Gelingensnachweise](planung/Etappen_Gelingensnachweise.md)
+
 ## Genau hinsehen, verständlich beschreiben
 
-Stand: 14. September 2026 · Schritte 1–4: Grundlagen, Lernweg, Tiermaterial, Aufgaben und Inputs
+Stand: 29. September 2026 · Schritte 1–4: Grundlagen, Lernweg, Tiermaterial, Aufgaben und Inputs
 
 Die zweite Deutschreihe der Klasse 5.3 knüpft organisatorisch an [Wunschbriefe](https://github.com/technikerleben/d5ur1-wunschbriefe) an. Zeitraum: vier Wochen mit jeweils zwei Doppelstunden, insgesamt acht Doppelstunden bzw. 16 Unterrichtsstunden à 45 Minuten.
 
@@ -59,7 +69,7 @@ Prüfstand: Alle lokalen Links und Anker mit dem Repository-Inhalt abgeglichen. 
 2. **Abgeschlossen:** Papierlernweg, optionale Zielhilfe, Anwendungshinweise und Kurzbeobachtung.
 3. **Erstellt und geprüft:** Fünf Tierpakete und Kindercheckliste als A5-PDF mit mindestens 14 pt; HTML-Ansichten und Bewertungsraster für Lehrkräfte.
 4. **Abgeschlossen:** Zehn A5-Aufgaben, drei Merkblätter, getrennte Tipps und Lösungen sowie vier fachliche HTML-Inputs.
-5. **Als Nächstes:** Probe- und Lernerfolgskontrolle einschließlich Rückmeldungen ausarbeiten.
+5. **Als Nächstes:** Gelingensnachweise und Förderfassungen konkretisieren, Schüler-Raster und Lernweg ergänzen; anschließend Probe- und Lernerfolgskontrolle einschließlich Rückmeldungen ausarbeiten.
 6. Druckgestaltung, HTML-Inputs, Lehrkraft-Cockpit, Kontroll-Kiosk und Vertretungshinweise erstellen.
 7. Gesamtprüfung und spätere Anpassung nach Unterrichtserprobung.
 

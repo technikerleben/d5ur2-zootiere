@@ -1,4 +1,14 @@
 # Projektgrundlage · Zootiere
+
+## Ergänzung vom 29.09.2026: Kompetenzraster und Etappen
+
+Verbindlich sind sechs Kriterien K1–K6 mit Förderstandard (individuelle Ziele), Mindeststandard, Regelstandard und Leistungsstandard. Drei kurze, unbenotete Gelingensnachweise schließen die Etappen ab: Informationen finden und ordnen (Doppelstunden 1–2), genaue Sätze formulieren (Doppelstunde 3), einen Text schreiben und prüfen (Doppelstunden 4–5). Für die Weiterarbeit gilt das Kernziel der Etappe auf Mindeststandard bzw. das individuell vereinbarte Förderziel; höhere Standards sind keine Zugangshürden. Fachliche Leistung und Lernbuddy-Anwendung bleiben getrennt. Bei Lücken: passende Teilübung und kurzer erneuter Nachweis.
+
+Die Planung ist beschlossen. Konkrete Nachweiskarten, Förderfassungen und die Schülerfassung des Rasters sind noch zu erstellen; bestehende PDFs wurden nicht neu erzeugt.
+
+- [Kompetenzraster mit vier Standards](Kompetenzraster_4_Standards.md)
+- [Etappen und Gelingensnachweise](Etappen_Gelingensnachweise.md)
+
 Stand: 14. September 2026
 
 ## Verbindliche Präzisierung der Ausgabeformate
