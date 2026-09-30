@@ -1,16 +1,10 @@
 # Lernweg und Lernbuddy anwenden
 
-## Ergänzung vom 29.09.2026: Kompetenzraster und Etappen
+## Verbindliche Ergänzung vom 30.09.2026
 
-Verbindlich sind sechs Kriterien K1–K6 mit Förderstandard (individuelle Ziele), Mindeststandard, Regelstandard und Leistungsstandard. Drei kurze, unbenotete Gelingensnachweise schließen die Etappen ab: Informationen finden und ordnen (Doppelstunden 1–2), genaue Sätze formulieren (Doppelstunde 3), einen Text schreiben und prüfen (Doppelstunden 4–5). Für die Weiterarbeit gilt das Kernziel der Etappe auf Mindeststandard bzw. das individuell vereinbarte Förderziel; höhere Standards sind keine Zugangshürden. Fachliche Leistung und Lernbuddy-Anwendung bleiben getrennt. Bei Lücken: passende Teilübung und kurzer erneuter Nachweis.
+[SRL-Standard](../../planung/SRL_Standard.md) und [Etappenplanung](../../planung/Etappen_Gelingensnachweise.md) gelten: Pflichtblätter im eigenen Tempo, freiwillige Vertiefungen, Wechsel ab 80 %, letzte Etappe mit Probearbeit, Feedback und Projekt-/Wiederholungswahl, zwei Klassenarbeitstermine. Lernbuddy-Zielwahl bedeutet Auswahl des nächsten Arbeitsschritts und der Hilfe innerhalb des Pflichtkerns; sie hebt die Pflichtblätter nicht auf.
 
-Nachweise 1–2 liegen als A5-Karten in den Varianten A/B mit Erwartungshorizonten vor; für Nachweis 3 gibt es einen Gesprächsleitfaden mit Kurzprotokoll. Individuelle Förderfassungen, Schüler-Raster und die Etappenkennzeichnung im Lernweg folgen noch. Die bisherigen Übungs-PDFs bleiben unverändert.
-
-- [Kompetenzraster mit vier Standards](../../planung/Kompetenzraster_4_Standards.md)
-- [Etappen und Gelingensnachweise](../../planung/Etappen_Gelingensnachweise.md)
-
-
-Schritt 2 · Deutsch 5.3 · Zootiere
+Die nachfolgenden bisherigen Anwendungshinweise sind nur insoweit weiter nutzbar, wie sie dieser Regel entsprechen. Alte PDF-Lernwege sind vor neuer Ausgabe anzupassen.
 
 ## Verbindliches Ausgabeformat
 Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
@@ -93,4 +87,5 @@ Diese Anwendungshilfe gilt für Lernzeiten. Die konkrete Lernbuddy-Nutzung und w
 
 ## Technik und weiterer Stand
 PDF-Erzeugung: `python tools/generate_a5.py` (ReportLab und DejaVu-Schriften). Die editierbare Quelle liegt im Generator. Ausgaben und Quelltext gemeinsam aktualisieren und die Druckansicht prüfen. Der Nutzer übernimmt das Vercel-Deployment. Das vorhandene Lehrkraft-Cockpit verlinkt die aktuellen A5-PDFs; die Deployment-Konfiguration bleibt unverändert.
+
 

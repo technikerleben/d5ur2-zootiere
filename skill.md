@@ -5,7 +5,7 @@ description: Materialien der Deutschreihe Zootiere in Klasse 5.3 planen, erstell
 
 # Deutsch 5 · Zootiere · Produktionsregeln
 
-Stand: 14. September 2026
+Stand: 30. September 2026
 
 ## Verbindliche Definition: Lernbuddy
 
@@ -48,9 +48,18 @@ Kindercheckliste = Prüfung der Textqualität.
 - Keine iPads für Lernende. Online-Ressourcen sind für Lehrkräfte.
 - Einzige digitale Schüleranwendung: Kontroll-Kiosk auf einem Laptop im Raum.
 - Fischotter ist das gemeinsame Beispieltier.
-- Der fachliche Lernweg lautet: **Input → Übung → Vertiefung → Probearbeit → Projekte → Lernerfolgskontrolle**.
+- Verbindlicher Lernweg: **Etappen mit Startinput + identischem Merkblatt → Pflichtübungen mit freiwilligen Vertiefungen → Gelingensnachweis ab 80 %; letzte Etappe endet mit Probearbeit → Feedback → Projekte / Wiederholung / Vertiefungen → Klassenarbeit mit mindestens zwei Wahlterminen**.
+- Individuelles Tempo ermöglichen. Pflichtblätter nicht allgemein zur Auswahl stellen.
+- Startinput und Merkblatt aus derselben fachlichen Inhaltsquelle erzeugen (Aussagen, Beispiele, Reihenfolge, gesicherte Antworten 1:1).
+- Je Etappe fünf vorab definierte Kompetenzindikatoren verwenden: vier von fünf ermöglichen den Wechsel. Unter 80 % gezielte Übung und erneuter Nachweis; Förderziele individuell festlegen.
+- Bisheriges GN3-Gespräch als Übungsfeedback führen; Probearbeit ist Abschluss von Etappe 3.
+- Zwei Wahltermine innerhalb des Reihenzeitraums planen; nach frühem Termin Projektarbeit ermöglichen.
 - Vertiefungen und Projekte sind freiwillig; die Probearbeit ist verpflichtend und unbenotet.
 - Fachliche Leistung und SRL-Anwendung getrennt rückmelden.
+
+## Vorrang der aktuellen Planung
+
+[SRL-Standard](planung/SRL_Standard.md) ist verbindlich. Widersprechende ältere PDFs und Generatoren sind Vorfassungen. Alte Inhalte erst nach Anpassung erneut freigeben. Planungsstatus und verfügbare Schülerausgabe getrennt ausweisen.
 
 ## Vor Änderungen lesen
 
@@ -60,3 +69,4 @@ Kindercheckliste = Prüfung der Textqualität.
 - [README](README.md)
 
 Bei neuen Materialien zuerst prüfen: **Passt das A5-Blatt in die Mitte des vorhandenen Lernbuddys, ohne dessen SRL-Funktionen zu duplizieren?**
+

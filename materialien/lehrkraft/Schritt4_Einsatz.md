@@ -1,3 +1,7 @@
+# Vorfassung – Einsatz erst nach Anpassung
+
+Stand 30.09.2026: Die nachfolgende alte Stunden-/Materialzuordnung ist überholt. Verbindlich sind [Etappen mit Pflichtkern und freiwilligen Vertiefungen](../../planung/Etappen_Gelingensnachweise.md), die 80-%-Freigabe, Probearbeit als letzter Etappenabschluss und zwei Wahltermine.
+
 # Schritt 4: Aufgaben, Merkblätter und fachliche Inputs
 
 Die Lernenden arbeiten mit A5-PDFs und Heft. Die HTML-Präsentation wird ausschließlich von Lehrkräften bedient und bei Bedarf am Beamer gezeigt. Alle Schülerseiten sind A5 mit mindestens 14 pt.
@@ -66,3 +70,4 @@ Die nach Blattnummer geordneten Tipps und Lösungen sind zugleich die Datenbasis
 Als nächster Arbeitsschritt folgen vollständige Probe- und Lernerfolgskontrolle mit Rückmeldung, Bearbeitungszeit und festgelegten Hilfen. Waschbär und Biber bleiben dafür reserviert. Das vorhandene Druckpaket aus Schritt 3 bleibt erhalten; die neuen Aufgaben und Hilfen werden zusätzlich verlinkt.
 
 Präsentation geprüft: 16 Folien, Antwortanzeige und Rücksetzen, Foliengrenzen sowie schmale Bildschirmansicht; keine JavaScript-Laufzeitfehler. Desktopansicht visuell geprüft.
+

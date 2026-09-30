@@ -1,15 +1,10 @@
 # Projektgrundlage · Zootiere
 
-## Ergänzung vom 29.09.2026: Kompetenzraster und Etappen
+## Verbindlicher Aufbau ab 30.09.2026
 
-Verbindlich sind sechs Kriterien K1–K6 mit Förderstandard (individuelle Ziele), Mindeststandard, Regelstandard und Leistungsstandard. Drei kurze, unbenotete Gelingensnachweise schließen die Etappen ab: Informationen finden und ordnen (Doppelstunden 1–2), genaue Sätze formulieren (Doppelstunde 3), einen Text schreiben und prüfen (Doppelstunden 4–5). Für die Weiterarbeit gilt das Kernziel der Etappe auf Mindeststandard bzw. das individuell vereinbarte Förderziel; höhere Standards sind keine Zugangshürden. Fachliche Leistung und Lernbuddy-Anwendung bleiben getrennt. Bei Lücken: passende Teilübung und kurzer erneuter Nachweis.
+[SRL-Standard](SRL_Standard.md): Individuelle Etappen mit Startinput und identischem Merkblatt, Pflichtübungen mit freiwilligen Vertiefungen und Gelingensnachweisen ab 80 %. Die letzte Etappe endet mit der Probearbeit. Danach Feedback, Wahlprojekte/Wiederholung/Vertiefungen und zwei Wahltermine für die Klassenarbeit. Diese Festlegung ersetzt die frühere Planung vom 29.09.2026.
 
-Nachweise 1–2 liegen als A5-Karten in den Varianten A/B mit Erwartungshorizonten vor; für Nachweis 3 gibt es einen Gesprächsleitfaden mit Kurzprotokoll. Individuelle Förderfassungen, Schüler-Raster und die Etappenkennzeichnung im Lernweg folgen noch. Die bisherigen Übungs-PDFs bleiben unverändert.
-
-- [Kompetenzraster mit vier Standards](Kompetenzraster_4_Standards.md)
-- [Etappen und Gelingensnachweise](Etappen_Gelingensnachweise.md)
-
-Stand: 14. September 2026
+Die bestehende PDF-Sammlung muss teilweise angepasst werden. Fachliche Tierpakete und K1–K6 bleiben nutzbar; der Materialstatus steht im Cockpit.
 
 ## Verbindliche Präzisierung der Ausgabeformate
 Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
@@ -89,22 +84,14 @@ Vor Erstellung der Tierpakete:
 Erdmännchen und Roter Panda sind als Übungstiere ausgewählt. Waschbär und Europäischer Biber bilden die Materialreserve für Probearbeit und Lernerfolgskontrolle. Probe- und Lernerfolgskontrolle verwenden andere Tiere als den gemeinsam ausführlich behandelten Fischotter. Geprüft wird der Transfer, nicht das Erinnern eines Mustertextes. Die zum Schreiben benötigten Tierinformationen stehen im Prüfungsmaterial.
 
 ## 6. Lernorganisation und Verbindlichkeit
-Lernweg: **Input → Übung → Vertiefung → Probearbeit → Projekte → Lernerfolgskontrolle (Arbeit)**.
 
-Die Abfolge gibt Orientierung, ist aber keine Pflichtkette aller Einzelaufgaben.
-- Fachliche Inputs stellen gemeinsame Grundlagen bereit; sichere Kinder benötigen anschließend weniger Wiederholung.
-- Übungen werden anhand des Lernbedarfs vereinbart. Nicht alle Kinder müssen alle zehn vorgesehenen Aufgaben bearbeiten.
-- Mindestens ein vollständiger Übungstext wird geschrieben und anhand der Kriterien geprüft.
-- Vertiefungen und Projekte sind freiwillig und keine Zulassungsvoraussetzung für die Arbeit.
-- Probearbeit: verpflichtend, unbenotet, mit anschließender gezielter Weiterarbeit.
-- Lernerfolgskontrolle: innerhalb des Vierwochenrahmens eingeplant.
+Etappe 1: Informationen finden/ordnen, Pflichtblätter 1–4, GN1. Etappe 2: sachliche Sprache, Pflichtblätter 5–6, GN2. Etappe 3: schreiben/prüfen, Pflichtblätter 7–9, Abschluss durch Probearbeit. Jedes Pflichtblatt enthält einen freiwilligen Vertiefungsabschnitt. Individuelles Tempo mit wiederholten kurzen Startinputs ermöglichen. Inhalt des Startinputs 1:1 als Merkblatt verfügbar machen.
 
-Lernweg = Orientierung über die Reihe.
-Lernbuddy = wiederverwendbarer physischer Tischrahmen zur Steuerung der aktuellen Lernphase; das A5-Arbeitsblatt liegt in seiner freien Mitte.
-Schreibplan = fachliche Ordnung des Textes.
-Checkliste = Prüfung des Textprodukts.
+Für den Etappenwechsel mindestens vier von fünf vorab definierten Kompetenzindikatoren nachweisen. Bei unter 80 % gezielte Nacharbeit und erneuter Beleg. Individuelle Förderziele und vereinbarte Hilfen dokumentieren. Details und Indikatoren: [Etappenplanung](Etappen_Gelingensnachweise.md).
 
-Diese Funktionen nicht in mehrfach auszufüllenden Formularen verdoppeln. Insbesondere keine Fachaufgabe mit einem zweiten Rahmen aus Planung, Durchführung und Reflexion gestalten.
+Nach Feedback zur Probearbeit verschiedene Projekte für Einzel-/Kleingruppenarbeit, Wiederholung oder nachgeholte Vertiefungen anbieten. Blatt 10 unterstützt die gezielte Wiederholung. Zwei Wahltermine für die Klassenarbeit; nach frühem Termin weiter an Projekten arbeiten. [Angebote und Terminwahl](Projekte_und_Terminwahl.md).
+
+Lernweg = Orientierung; Lernbuddy = Tischrahmen; Schreibplan = Inhaltsordnung; Checkliste = Produktprüfung. Keine doppelten SRL-Formulare.
 
 ## 7. Bekannten Lernbuddy bewusst nutzen
 Phasen: **Planung → Durchführung → Reflexion**.
@@ -135,7 +122,7 @@ Erlaubte Hilfen senken nicht automatisch das Leistungsniveau. Differenzierte Les
 Beim Kiosk: eindeutige Lösungen für geschlossene Aufgaben; Kriterien, Teilbeispiele und Prüffragen für eigene Texte. Kein vollständiger Mustertext als einzig richtige Lösung.
 
 ## 9. Prüfung und Rückmeldung
-Vorläufige Planung: ein gemeinsamer Arbeitstermin in Doppelstunde 8. Drei Wahltermine aus der Wunschbrief-Reihe werden nicht automatisch übernommen. Prüfungsdauer und Hilfen werden vor Materialfreigabe festgelegt; die 90 Minuten sind der Stundenrahmen, nicht automatisch die Prüfungszeit.
+Verbindlich sind mindestens zwei Wahltermine: früh in Doppelstunde 7, spät in Doppelstunde 8. Jedes Kind schreibt regulär einmal. Prüfungsdauer, Daten, Wahlfrist und Hilfen werden vor Materialfreigabe festgelegt; 90 Minuten sind der Stundenrahmen, nicht automatisch die Prüfungszeit. Vergleichbare getrennte Prüfungsvarianten und stille parallele Projekt-/Vorbereitungsarbeit einplanen. Feedback zur Probearbeit erfolgt vor der frühen Prüfung.
 
 Probe- und Lernerfolgskontrolle haben vergleichbaren Aufbau, Materialumfang und sprachliche Anforderungen. Benötigte Hilfen werden zuvor im Unterricht erprobt. In der Arbeit keine Partnerhilfe und kein Kontroll-Kiosk. Ob und in welcher neutralen Form Lernbuddy oder Checkliste als Prüfungshilfe genutzt werden, ist vorab einheitlich zu klären; keine ausgefüllten fachlichen Lösungen mitführen. Individuell geltende Anpassungen berücksichtigen.
 
@@ -156,5 +143,6 @@ Vor Freigabe: Fachinformationen, Material-Auftrag-Passung, Zeitumfang, Übereins
 - [Unterrichtshinweise Wunschbriefe](https://github.com/technikerleben/d5ur1-wunschbriefe/blob/main/materialien/lehrkraft/Hinweise_Unterricht_Fassung3.md).
 - Nutzerfestlegungen dieser Planung: SRL-Einführung außerhalb von Deutsch, Fischotter als Beispieltier.
 
-Dies ist die fachlich-organisatorische Grundlage für die Materialerstellung. Tierpakete, Quellen und beschreibende Kriterien liegen seit Schritt 3 als HTML-Material vor. Die Aufgaben 1–10, Merkblätter, Tipps, Lösungen und fachlichen Inputs liegen seit Schritt 4 vor. Prüfungshilfen und Punkteverteilung folgen in Schritt 5. Die A5-Schüler-PDFs zu Schritt 3 sind erstellt und geprüft.
+Dies ist die fachlich-organisatorische Grundlage nach dem neuen Etappenstandard. Ältere Materialien sind damit nicht automatisch freigegeben. Tierpakete, Quellen und beschreibende Kriterien liegen seit Schritt 3 als HTML-Material vor. Die Aufgaben 1–10, Merkblätter, Tipps, Lösungen und fachlichen Inputs liegen seit Schritt 4 vor. Prüfungshilfen und Punkteverteilung folgen in Schritt 5. Die A5-Schüler-PDFs zu Schritt 3 sind erstellt und geprüft.
+
 

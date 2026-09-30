@@ -1,95 +1,71 @@
-# Etappen und Gelingensnachweise · Zootiere
+# Drei Etappen und ihre Gelingensnachweise
 
-Verbindliche Planung vom 29.09.2026. Drei Etappen innerhalb der acht Doppelstunden; kein zusätzlicher Prüfungsblock.
+Stand: 30.09.2026. Verbindlich: [SRL-Standard](SRL_Standard.md). Individuelles Tempo, Pflichtkern mit freiwilligen Vertiefungen und Wechsel ab vier von fünf erreichten Kompetenzindikatoren. Zeitangaben sind Planungsfenster.
 
-## Etappe 1: Ich finde und ordne Informationen.
+## Etappe 1 · Informationen finden und ordnen
 
-- Zeit: Doppelstunden 1–2
-- Material: Blatt 1–4; Merkblätter 1–2; Fischotterpaket
-- Kriterienbezug: K1 und K2 vorbereitend; K3: Ordnen
-- Gelingensnachweis: **Tierdetektiv** (5–8 Minuten)
+**Ziel:** Ich kann ein Tier genau betrachten und Informationen aus Bild und Text ordnen.
 
-Ein kurzer Materialausschnitt zum Fischotter mit Foto: Das Kind zeigt eine Bildinformation, findet Textinformationen und ordnet Stichwörter.
+- Startinput 1 und identisches Merkblatt 1: genaue Beschreibung statt Meinung; sichtbare Merkmale; Bild- und Textbelege; Maße mit Bezug; Informationen ordnen. Die bisherigen Inputs 1/2 werden zu einem kurzen Etappeninput mit Papierfassung zusammengeführt.
+- Pflicht: Blätter 1–4. Jedes Blatt erhält eine ausdrücklich freiwillige Vertiefung.
+- Vertiefungen: eine weitere Wertung präzisieren (1), zwei sichtbare Merkmale genauer unterscheiden (2), eine unbelegbare Behauptung erkennen und begründen (3), eine andere sinnvolle Ordnung erklären (4).
+- Abschluss: GN1 „Tierdetektiv“, etwa 5–8 Minuten nach Auftragsklärung. Erstversuch A, Wiederholung B oder gezielte B-Teilaufgabe. Zeit ist keine Leistungsgrenze.
 
-**Beobachtbare Ergebnisse:**
+| Indikator | Erreicht, wenn … |
+|---|---|
+| E1.1 Merkmale | zwei verschiedene äußere Merkmale richtig und genau benannt sind |
+| E1.2 Quellen | ein Bildbeleg und ein Textbeleg richtig zugeordnet und gezeigt werden |
+| E1.3 Maß | Kopf-Rumpf-Länge mit Einheit und ohne mitgerechneten Schwanz richtig angegeben ist |
+| E1.4 Sachinformationen | Lebensraum und Nahrung dem Text richtig entnommen sind |
+| E1.5 Ordnung | Angaben unter passenden Überschriften stehen |
 
-- Zwei genaue äußere Merkmale benennen.
-- Eine richtige Maßangabe im Text finden.
-- Lebensraum und Nahrung richtig entnehmen.
-- Eine Bildbeobachtung und eine Textinformation unterscheiden und die Fundstellen zeigen.
-- Stichwörter passenden Überschriften zuordnen.
+Vier von fünf → Etappe 2. Offene Ziele: Blatt 2, 3 oder 4 gezielt wiederholen. GN1-Karten bilden eine nutzbare Grundlage; Erwartungshorizont und Freigabe sind noch umzustellen.
 
-**Förderstandard:** Bild-Wort-Zuordnungen; kurze, bei Bedarf vorgelesene Aussagen. Individuell festlegen, welche Informationen gezeigt, benannt oder zugeordnet werden.
+## Etappe 2 · Sachlich und genau formulieren
 
-**Weiterarbeit:** Bei Lücken gezielt Blatt 2, 3 oder 4 bzw. eine passende Teilaufgabe nutzen. Anschließend die betreffende Kompetenz mit einem anderen kurzen Beispiel erneut zeigen.
+**Ziel:** Ich kann genaue Wörter nutzen und verständliche Sätze im Präsens schreiben.
 
-## Etappe 2: Ich formuliere genaue Sätze.
+- Startinput 2 und identisches Merkblatt 2: präzise Wörter statt Wertungen, Fachwörter und Wortzusammensetzungen, vollständige Sätze, Präsens, Satzanfänge/Nomen/Punkte. Grundlage: bisheriger Input 3.
+- Pflicht: Blätter 5–6.
+- Freiwillige Vertiefungen: ein weiteres Fachwort verständlich erklären (5); zwei Sätze mit abwechslungsreichen Satzanfängen verbinden, ohne den Inhalt zu verändern (6).
+- Abschluss: GN2 „Genaue Sätze“, etwa 5–8 Minuten. Drei Sätze bilden und einen Satz verbessern.
 
-- Zeit: Doppelstunde 3
-- Material: Blatt 5–6; Merkblatt 3; Fischotterpaket
-- Kriterienbezug: K4–K6
-- Gelingensnachweis: **Aus Stichwörtern werden Sätze** (5–8 Minuten)
+| Indikator | Erreicht, wenn … |
+|---|---|
+| E2.1 Materialbezug | alle vier Aussagen zu den vorgegebenen Tierinformationen passen |
+| E2.2 Satzbau | alle vier Aussagen als vollständige, verständliche Sätze formuliert sind |
+| E2.3 Präsens | die Verben im Präsens stehen und zum Subjekt passen |
+| E2.4 Sachlichkeit | die Wertung durch eine genaue passende Angabe ersetzt ist |
+| E2.5 Schreibung | Satzanfänge und Nomen groß sowie Satzschlusspunkte in den vier Sätzen gesetzt sind |
 
-Drei kurze Aussagen formulieren und einen vorbereiteten Satz verbessern.
+Vier von fünf → Etappe 3. Offene Ziele: gezielte Teilaufgabe aus Blatt 5/6 und erneuter kurzer Beleg. Keine zusätzliche Hürde durch freiwillige Vertiefungen. Erwartungshorizonte müssen die neue Indikatorenentscheidung eindeutig abbilden; bisherige großzügigere Sammelentscheidung nicht unverändert weiterführen.
 
-**Beobachtbare Ergebnisse:**
+## Etappe 3 · Eine Tierbeschreibung schreiben und prüfen
 
-- Die Aussagen passen zum Material.
-- Die Sätze sind vollständig und verständlich.
-- Die Verben stehen im Präsens.
-- Genaue Beschreibungswörter werden passend verwendet.
-- Satzanfänge und Satzschlusszeichen machen Satzgrenzen erkennbar.
+**Ziel:** Ich kann ein Tier mit Material sachlich, geordnet und verständlich beschreiben.
 
-**Förderstandard:** Zum Beispiel zwei Sätze mit vereinbarten Satzanfängen oder Wortbausteinen ergänzen. Mündliche Vorformulierung ermöglichen und schriftliche Eigenleistung kenntlich machen.
+- Startinput 3 und identisches Merkblatt 3: vollständiger Schreibplan, Übergang zu Sätzen, geordneter Text, Selbstprüfung K1–K6, sinnvolle Überarbeitung. Grundlage: bisheriger Input 4.
+- Pflicht: Blätter 7–9; mindestens ein vollständiger Übungstext zu Erdmännchen oder Rotem Panda.
+- Freiwillige Vertiefungen: zwei sinnvolle Gliederungen vergleichen (7), Satzanfänge/Bezüge gezielt verbessern (8), eine gelungene Überarbeitung begründen (9).
+- Das bisherige „GN3“-Textgespräch wird **Übungsfeedback**, kein weiterer verpflichtender Etappenabschluss.
+- **Abschluss: Probearbeit** mit neuem Tier, anschließend Feedback. Sie ist der dritte Gelingensnachweis und prüft die Gesamtanwendung. Dauer im vorgesehenen Arbeitsfenster vor Materialproduktion festlegen; kein zusätzlicher kurzer GN3 davor.
 
-**Weiterarbeit:** Einen Schwerpunkt aus Blatt 5 oder 6 üben, dann einen neuen kurzen Satz als Nachweis formulieren.
+| Indikator | Erreicht, wenn … |
+|---|---|
+| E3.1 Informationen (K1) | Tiername, richtige Maßangabe mit Bezug, Lebensraum und Nahrung enthalten sind |
+| E3.2 Aussehen (K2) | mindestens vier verschiedene äußere Merkmale richtig beschrieben sind |
+| E3.3 Aufbau (K3) | der Text mit einem Überblick beginnt und zusammengehörige Informationen nachvollziehbar ordnet |
+| E3.4 Sprache (K4/K5) | ein zusammenhängender, überwiegend sachlicher Text im Präsens aus überwiegend vollständigen, verständlichen Sätzen vorliegt |
+| E3.5 Prüfung (K6) | eine Prüfung von Satzanfängen, Nomen und Satzschlüssen am Produkt belegt ist und geübte Schreibungen überwiegend richtig sind |
 
-## Etappe 3: Ich schreibe und prüfe eine Tierbeschreibung.
+Vier von fünf schließen die letzte Etappe ab. Für E3.4/E3.5 konkrete Ankerbeispiele im noch zu erstellenden Erwartungshorizont ausarbeiten; keine automatische Wortzahl- oder Fehlerquotengrenze. Feedback benennt auch das verbleibende offene Ziel. Unter 80 % gezielte Wiederholung und erneuter Teilnachweis vor dem passenden Prüfungstermin.
 
-- Zeit: Doppelstunden 4–5
-- Material: Blatt 7–9; Erdmännchen- oder Panda-Paket; Kindercheckliste
-- Kriterienbezug: K1–K6; Prüfung am Produkt zeigen
-- Gelingensnachweis: **Mein Text zeigt es** (3–5 Minuten Gespräch; vorhandenen Übungstext nutzen)
+## Individuelle Förderziele und Dokumentation
 
-Der bereits geschriebene Übungstext dient als Nachweis. Das Kind zeigt ausgewählte Stellen und erläutert seine Prüfung sowie gegebenenfalls eine Überarbeitung. Kein zusätzlicher Aufsatz.
+Vor dem Nachweis Förderziele, Antwortform und Hilfen vereinbaren. Die 80 % beziehen sich auf diese individuelle Liste; Standardindikatoren nicht ungeprüft für zieldifferent Lernende übernehmen. Kennzeichnen, ob ein Kind zeigt, zuordnet, ergänzt oder selbst formuliert.
 
-**Beobachtbare Ergebnisse:**
+Knapp dokumentieren: Datum, Indikator, gezeigt/noch offen, Beleg, Hilfen, Anteil, nächster Schritt und erneuter Nachweis. Lernbuddy-Nutzung separat rückmelden. Eine fachlich nicht erreichte Kompetenz nicht durch ausgefüllte SRL-Felder ersetzen.
 
-- Tiername, Maßangabe, Lebensraum und Nahrung sind richtig enthalten.
-- Mindestens vier verschiedene äußere Merkmale sind richtig beschrieben.
-- Die Informationen sind nachvollziehbar geordnet.
-- Der Text ist sachlich, überwiegend im Präsens und in verständlichen Sätzen verfasst.
-- Das Kind zeigt eine Prüfung mit K1–K6 und eine nötige Verbesserung oder begründet, weshalb eine geprüfte Stelle bleiben kann.
+## Anschluss
 
-**Förderstandard:** Eine geordnete kleine Tierseite aus eigenen oder ergänzten Sätzen; Umfang und Form aus den individuellen Zielen ableiten. Produkt und Selbstprüfung passend zu diesen Zielen betrachten.
-
-**Weiterarbeit:** Nur den festgestellten Bedarf nacharbeiten. Anschließend eine verbesserte Stelle zeigen; keinen vollständigen zweiten Text verlangen.
-
-## Durchführung und Entscheidungen
-
-- Die Nachweise sind unbenotet und ersetzen Teile der bisherigen Ergebniskontrolle. Sie erzeugen keinen zusätzlichen Prüfungsblock.
-- Für die Weiterarbeit genügt das Kernziel der jeweiligen Etappe auf Mindeststandard beziehungsweise das individuell vereinbarte Förderziel. Regel- und Leistungsstandard sind keine Zugangshürden. In Etappe 1 werden zunächst zwei Merkmale nachgewiesen; vier Merkmale gelten für den vollständigen Zieltext in Etappe 3.
-- Wenn etwas noch nicht gelingt, folgt eine passende Teilübung und ein kurzer erneuter Nachweis. Nicht die ganze Etappe wiederholen. Lehrkraft und Kind halten den nächsten Schritt fest; keine unbegrenzte Warteschleife.
-- Vorlesen, Wortbank oder Satzanfänge werden vorab vereinbart und beim Nachweis festgehalten. Während des Nachweises keine fertige Lösung vorgeben. Der Kontroll-Kiosk dient der Übung, nicht dem Abschreiben im Nachweis.
-- Die aufgeführten Beobachtungen sind Kriterien, noch kein Punkteschema. Es ist keine pauschale 80-Prozent-Regel oder Verrechnung fachlicher Kernziele beschlossen. Konkrete Aufgaben und Erwartungshorizonte müssen das Erreichen des jeweiligen Kernziels transparent machen.
-- SRL bleibt getrennt: Planung – Ziel wählen; Durchführung – Strategie prüfen; Reflexion – Beleg und nächsten Schritt zeigen. Reflexion vor dem Abwischen ins Heft übertragen. Ein Zyklus kann mehrere Fachblätter umfassen.
-- Den dritten Nachweis während der Arbeitsphase gestaffelt durchführen. Bei 26 Kindern sind 3–5 Minuten je Kind kein gemeinsamer kurzer Abschluss; Textsichtung vorbereiten und Gespräche auf Doppelstunden 4–5 verteilen, im Teamteaching aufteilen.
-- Danach bleibt der Ablauf erhalten: Doppelstunde 6 Probearbeit, Doppelstunde 7 gezielte Weiterarbeit mit Blatt 10, Doppelstunde 8 Lernerfolgskontrolle. Waschbär und Biber bleiben Prüfungsreserve.
-- Status: Nachweise 1–2 mit Varianten A/B und Erwartungshorizonten sowie Gesprächsleitfaden 3 sind erstellt und geprüft. Individuelle Förderfassungen, Schüler-Raster und angepasster Lernweg sind noch zu erstellen. Die vorhandenen Übungsblätter und PDFs bleiben erhalten.
-
-## Nächste Produktionsschritte
-
-1. **Erledigt:** Nachweise 1–2 als A5-Karten mit mindestens 14 pt, Erwartungshorizonten und je einem kurzen Wiederholungsnachweis erstellen; Nachweis 3 als kurzen Lehrkraft-Gesprächsleitfaden ausarbeiten.
-2. Förderfassungen anhand individuell ausgewählter Ziele vorbereiten. Schülerfassung des Kompetenzrasters und Lernweg als A5-PDF mit den Etappen ergänzen; keine SRL-Felder duplizieren.
-3. Probe- und Lernerfolgskontrolle mit Rückmeldung ausarbeiten. Bearbeitungszeit, erlaubte Hilfen und Terminorganisation vorher festlegen. Punkte und Noten nicht automatisch aus den Standards ableiten.
-4. Kontroll-Kiosk mit den vorhandenen Übungstipps und Lösungen erstellen; Prüfungen und Gelingensnachweise nicht als Lösungen dort veröffentlichen. Freiwillige Angebote, Vertretungshinweise und Gesamtprüfung ergänzen.
-
-[Kompetenzraster](Kompetenzraster_4_Standards.md)
-
-
-## Verfügbare Materialien
-
-- [Schülerkarten A/B, A5](../materialien/gelingensnachweise/GN1_GN2_Schuelerkarten_A5.pdf)
-- [Erwartungshorizonte](../materialien/gelingensnachweise/GN1_GN2_Erwartungshorizonte_Lehrkraft_A4.pdf)
-- [Gesprächsleitfaden 3](../materialien/gelingensnachweise/GN3_Gespraechsleitfaden_Lehrkraft_A4.pdf)
-- [Einsatz und Einzeldateien](../materialien/gelingensnachweise/README.md)
+Nach der Probearbeit: [Projektangebote](Projekte_und_Terminwahl.md), Wiederholung oder nachgeholte Vertiefungen. Zwei Wahltermine: früh in Doppelstunde 7, spät in Doppelstunde 8; konkrete Organisation siehe [Reihenplanung](Reihenplanung_8_Doppelstunden.md).

@@ -1,3 +1,9 @@
+# Vorfassung – Anpassung erforderlich
+
+Stand 30.09.2026: Der neue SRL-Etappenstandard ist verbindlich. Diese Ausgabe ist eine Vorfassung. Pflichtblätter mit freiwilligen Vertiefungen, identische Input-/Merkblatt-Paare und die 80-%-Auswertung werden noch angepasst. Das bisherige GN3-Gespräch dient nur als Übungsfeedback; die Probearbeit schließt Etappe 3 ab.
+
+[Verbindlicher Standard](../../planung/SRL_Standard.md)
+
 # Gelingensnachweise · Einsatz und Druck
 
 Stand: 29.09.2026. Ergänzung zu den beschlossenen drei Etappen; keine zusätzliche Klassenarbeit.
@@ -35,3 +41,4 @@ Erzeugung: `python tools/generate_gelingensnachweise.py` aus dem Repository-Stam
 ## Bildquelle
 
 Fischotterfoto: Dave Pape, Public Domain. [Original und Rechteangaben bei Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lutra_lutra_1_-_Otter,_Owl,_and_Wildlife_Park.jpg). Verwendet aus dem bestehenden Fischotterpaket; für diese Karten in Graustufen umgewandelt. Lokale Datei: `Fischotter_DavePape_Graustufen.jpg`.
+

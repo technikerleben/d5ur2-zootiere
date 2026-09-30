@@ -1,199 +1,46 @@
 # Reihenplanung · Acht Doppelstunden
 
-## Ergänzung vom 29.09.2026: Kompetenzraster und Etappen
+Stand: 30.09.2026. Vier Wochen, 720 Minuten insgesamt. [Verbindlicher SRL-Standard](SRL_Standard.md). Die Planung ermöglicht unterschiedliche Etappenstände; sie schreibt keinen gemeinsamen Etappenwechsel vor.
 
-Verbindlich sind sechs Kriterien K1–K6 mit Förderstandard (individuelle Ziele), Mindeststandard, Regelstandard und Leistungsstandard. Drei kurze, unbenotete Gelingensnachweise schließen die Etappen ab: Informationen finden und ordnen (Doppelstunden 1–2), genaue Sätze formulieren (Doppelstunde 3), einen Text schreiben und prüfen (Doppelstunden 4–5). Für die Weiterarbeit gilt das Kernziel der Etappe auf Mindeststandard bzw. das individuell vereinbarte Förderziel; höhere Standards sind keine Zugangshürden. Fachliche Leistung und Lernbuddy-Anwendung bleiben getrennt. Bei Lücken: passende Teilübung und kurzer erneuter Nachweis.
+## Ziel und Rahmen
 
-Nachweise 1–2 liegen als A5-Karten in den Varianten A/B mit Erwartungshorizonten vor; für Nachweis 3 gibt es einen Gesprächsleitfaden mit Kurzprotokoll. Individuelle Förderfassungen, Schüler-Raster und die Etappenkennzeichnung im Lernweg folgen noch. Die bisherigen Übungs-PDFs bleiben unverändert.
+Ich kann ein Zootier mithilfe von Bildern und Sachtexten sachlich und geordnet beschreiben. Fischotter ist das Beispieltier; Erdmännchen und Roter Panda sind Übungstiere. Waschbär ist für die Probearbeit reserviert. Biber und eine noch zu erstellende gleichwertige Variante dienen den beiden Klassenarbeitsterminen.
 
-- [Kompetenzraster mit vier Standards](Kompetenzraster_4_Standards.md)
-- [Etappen und Gelingensnachweise](Etappen_Gelingensnachweise.md)
+Je Etappe: Startinput mit identischem Merkblatt, Pflichtblätter mit freiwilligen Vertiefungen, 80-%-Nachweis. Die Probearbeit schließt die letzte Etappe ab. Einführung des Lernbuddys außerhalb von Deutsch; hier bewusste Nutzung des vorhandenen Tischrahmens mit A5-Blatt in der Mitte. Reflexion vor dem Abwischen ins Heft.
 
-Stand: 14. September 2026
+## Zeitfenster
 
-## Materialvorgabe
-Verbindliche Materialvorgabe: Alle Schülerarbeitsblätter werden als A5-PDFs mit mindestens 14 pt Schrift erstellt, einschließlich Übersichten, Tiermaterial und Kindercheckliste. Auch Hinweise und Beschriftungen bleiben mindestens 14 pt; bei Platzmangel entstehen zusätzliche Seiten. Die Lernenden arbeiten auf Papier und im Heft und haben keine iPads. Online-Ressourcen dienen ausschließlich Lehrkräften. Einzige digitale Schüleranwendung ist der Kontroll-Kiosk auf einem Laptop im Raum.
+| Doppelstunde | Planungsfenster und Organisation |
+|---|---|
+| 1 | Gemeinsamer Start und Input/Merkblatt Etappe 1. Pflichtblätter 1–4 beginnen; integrierte freiwillige Vertiefungen. Kurzer Ausgangsbeleg im Heft. |
+| 2 | Etappe 1 fortsetzen; GN1 individuell nach Pflichtkern. Rückmeldung und Wiederholung bei unter 4/5. Für Freigegebene kurzer Startinput Etappe 2; Papiermerkblatt zur Wiederholung. |
+| 3 | Pflichtblätter 5–6, Vertiefungen und GN2. Etappe 1 bei Bedarf mit gezielter Hilfe abschließen. Freigegebene beginnen nach kurzem Input Etappe 3 mit Blatt 7. |
+| 4 | Pflichtblätter 7–9: planen, schreiben und prüfen. Wiederholte Kleingruppeninputs für später startende Kinder; freiwillige Vertiefungen und begleitendes Textfeedback. |
+| 5 | Übungstext und Pflichtkern abschließen. Erstes Probearbeitsfenster für bereite Kinder; parallel leise Pflichtarbeit. Erste Rückmeldungen vorbereiten. Kein zusätzlicher verpflichtender GN3. |
+| 6 | Zweites Probearbeitsfenster, Rückmeldung und gezielte erneute Belege. Bereits rückgemeldete Kinder wählen Projekte, Wiederholung oder Vertiefungen. Früh Schreibende erhalten Feedback und Vorbereitungszeit spätestens vor Ende dieser Doppelstunde. |
+| 7 | Feedback-/Vorbereitungsphase; früher Wahltermin der Klassenarbeit in einem vorab festgelegten Teil der Doppelstunde. Parallel stille Projektarbeit oder Vorbereitung. Danach Projektzeit auch für früh geprüfte Kinder. |
+| 8 | Später Wahltermin der Klassenarbeit. Bereits geprüfte Kinder arbeiten an Projekten; anschließend kurze Präsentation vorhandener Produkte und Reihenreflexion. |
 
-Die Schülerausgaben liegen als neu gesetzte A5-PDFs mit durchgehend mindestens 14 pt vor. Seitenformat, Schriftgrößen und Textgrenzen sind technisch geprüft; alle Einzelseiten wurden als gerenderte Übersicht visuell geprüft. Die alten A4-Dateien bleiben nur als Archiv erhalten.
+Diese Fenster sind keine starren individuellen Fristen. GN1/GN2 und kurze erneute Belege während der Arbeitszeit in angekündigten Abgabefenstern abnehmen. Eine Lehrkraft kann Nachweise gesammelt prüfen, während die übrigen Kinder arbeiten. Bei Bedarf zweite Lehrkraft für kurze Inputs und Feedback nutzen; das Modell muss auch allein durchführbar bleiben.
 
-## Rahmen und Ziel
-Vier Wochen, jeweils zwei Doppelstunden à 90 Minuten. Die Lernerfolgskontrolle ist im Zeitrahmen enthalten. Verbindliche Anforderungen und Hilfenprinzipien stehen in der [Projektgrundlage](Projektgrundlage.md).
+## Rückmeldung vor dem frühen Termin sichern
 
-Fachliches Ziel: „Ich kann ein Zootier mithilfe von Bildern und Sachtexten sachlich und geordnet beschreiben.“
+Die Probearbeit in Doppelstunde 5 außerhalb der Unterrichtszeit bis Doppelstunde 6 sichten. Das zweite Fenster in Doppelstunde 6 so legen, dass nachfolgend mindestens eine Rückmelde- und Übungsphase verfügbar bleibt. Die konkrete Prüfungsdauer ist noch festzulegen. Reicht die Korrekturzeit für einzelne Texte nicht, Rückmeldung bis zum Beginn von Doppelstunde 7 geben und genügend Vorbereitungszeit vor dem späten Termin sichern. Den frühen Termin nur nach tatsächlichem Feedback und Vorbereitung wählen lassen; späterer Termin ist gleichwertig.
 
-SRL-Transferziel: „Ich nutze meinen bekannten Lernbuddy, um meine Arbeit zu planen, meinen Weg zu prüfen und einen nächsten Schritt abzuleiten.“
+Frühes/spätes Klassenarbeitsfenster jeweils innerhalb der 90 Minuten festlegen, nicht automatisch die gesamte Doppelstunde als Prüfungsdauer nutzen. Konkrete Daten, Dauer, Hilfen und Anmeldefrist vor Herstellung der Prüfungspakete klären. Zwei Termine sind verbindlich vorgesehen; ihre genaue Lage innerhalb der Doppelstunden bleibt organisatorisch festzulegen.
 
-**Voraussetzung:** Lernbuddy und SRL-Elemente wurden außerhalb von Deutsch eingeführt. Die folgenden Hinweise sind Anwendungsanlässe, kein Einführungscurriculum.
+## Pflicht, Vertiefung und Projektwahl
 
-**Physische Nutzung:** Der Lernbuddy ist die laminierte Tischvorlage um die aktuelle Lernaufgabe. Das A5-Arbeitsblatt liegt in der freien Mitte; Planung befindet sich oben, Durchführung seitlich und Reflexion unten. Rechts-/Linkshändervarianten spiegeln nur die Durchführungsseite. Das Fachblatt selbst bekommt keinen zweiten SRL-Rahmen.
+Pflichtblätter 1–9 etappenweise bearbeiten. Die Lehrkraft kann eine gleichwertige individuelle Förderfassung vereinbaren; keine allgemeine freie Auswahl zwischen Pflichtblättern. Freiwillige Vertiefungen stehen auf den jeweiligen Blättern und können später nachgeholt werden. Blatt 10 ist nach der Probearbeit eine Wahl-/Wiederholungshilfe, kein zusätzliches Pflichtblatt für alle.
 
-## Wiederkehrende Unterrichtsorganisation
-Kurzer fachlicher Einstieg bzw. Input nach Bedarf → A5-Aufgabe in die freie Mitte des bekannten Lernbuddys legen und oben planen → fachliche Durchführung auf dem Blatt bzw. im Heft mit seitlichem Strategiebereich und kurzem Zwischenstopp → Reflexion unten am Lernbuddy und kurzer Eintrag ins Heft vor dem Abwischen.
+Nach Feedback wählen Kinder Projekt, Wiederholung oder ausgelassene Vertiefung; bei unter 80 % zuerst gezielt nacharbeiten und erneut nachweisen. Drei Projektangebote sind in der [Projektplanung](Projekte_und_Terminwahl.md) beschrieben. Sie stehen allen offen. Während einer Klassenarbeit stille Einzelarbeit, Gruppenabsprachen vorher/nachher. Nach frühem Prüfungstermin verbleibende Zeit für Projekte nutzen.
 
-Die Reflexion erhält einen gesicherten Abschlussplatz. Die letzte Reflexion eröffnet die nächste Planung. An Tagen mit Input findet die fachliche Zielwahl nach der gemeinsamen Orientierung statt. Ein freiwilliger offener Anfang kann kurz hinzukommen, wenn Material vorhanden ist; er ist für diese Planung nicht notwendig.
+## Zeitbudget prüfen
 
-## Woche 1 · Merkmale und Informationen
-### Doppelstunde 1: Genau hinsehen – der Fischotter
-**Fachlicher Schwerpunkt:** Merkmale erkennen und eine sachliche Beschreibung von einer ungenauen oder wertenden Aussage unterscheiden.
+In den 720 Minuten enthalten sein müssen: drei kurze Inputs samt Wiederholungsfenstern, neun kompakte Pflichtblätter, zwei kurze Nachweise, Probearbeit, Feedback und Nacharbeit, echte Projektzeit und beide Prüfungstermine. Keine langen Abschriften und keine mehrfachen vollständigen Übungstexte verlangen. Nach Fertigstellung der Aufgaben die Bearbeitungszeiten erneut gegen dieses Budget prüfen; die Planung ist noch nicht erprobt.
 
-**Ablauf**
-- Foto des Fischotters zeigen; zwei kurze unterschiedlich genaue Beschreibungen vergleichen.
-- Kurze erste Beschreibung als unbenoteten Ausgangsstand verfassen lassen. Keine ausgearbeitete Diagnosebatterie.
-- Input 1: Wozu beschreiben wir? Was hilft einem anderen Kind, sich das Tier vorzustellen?
-- Mit dem bekannten Lernbuddy ein passendes fachliches Ziel wählen; zunächst begrenzte Auswahl anbieten.
-- Sichtbare Merkmale sammeln und ordnen; treffende Aussagen auswählen.
-- Ergebnisse an einzelnen Belegen besprechen und einen nächsten Schritt festhalten.
+Bei anhaltenden Schwierigkeiten spätestens in Doppelstunde 4 Unterstützung und individuelle Ziele überprüfen. Nachweisregel nicht stillschweigend außer Kraft setzen; gleichzeitig keinen automatischen Ausschluss von der Klassenarbeit konstruieren. Bei Zeitkonflikten Pflichtumfang vor Einsatz verkürzen oder gleichwertig differenzieren, statt Kindern zusätzliche unplanbare Arbeit aufzubürden.
 
-**Anwendung Lernbuddy:** Konkretes fachliches Ziel statt bloßer Blattnummer; Abschlussreflexion mit einem sichtbaren Beispiel.
+## Materialfreigabe
 
-**Geplante Materialien:** Fischotterfoto, zwei kurze Beispieltexte, Aufgaben 1/2; Merkblatt 1 zu Merkmalen und Kriterien.
-
-**Ergebnis/Prüfpunkt:** Das Kind kann mehrere sichtbare Merkmale benennen und eine genaue Aussage zeigen.
-
-### Doppelstunde 2: Aus Bild und Text wird eine Informationssammlung
-**Fachlicher Schwerpunkt:** Relevante Informationen finden, Herkunft unterscheiden und in Stichwörtern ordnen.
-
-**Ablauf**
-- Letzte Reflexion aufgreifen.
-- Input 2: „Das sehe ich auf dem Foto“ und „Das erfahre ich aus dem Text“.
-- Kurzen Fischotter-Sachtext lesen; relevante Informationen markieren.
-- Stichwörter unter passenden Überschriften sammeln. Keine unbekannten Tierdaten aus Vorwissen voraussetzen.
-- Bild und Text an ausgewählten Angaben abgleichen.
-- Gelingensnachweis 1 „Tierdetektiv“ (5–8 Minuten) ersetzt den bisherigen Prüfpunkt: Informationen finden, Quellen zeigen und Stichwörter ordnen.
-
-**Anwendung Lernbuddy:** Passende Lesestrategie nutzen; einen Ablenker berücksichtigen, soweit für die aktuelle Arbeit relevant.
-
-**Geplante Materialien:** Fischotterpaket, Aufgaben 3/4; Merkblatt 2 zur Informationsentnahme und zum Schreibplan.
-
-**Ergebnis/Prüfpunkt:** Geordnete, materialgestützte Stichwortsammlung.
-
-## Woche 2 · Sprache und zusammenhängender Text
-### Doppelstunde 3: Treffende Wörter und sachliche Sätze
-**Fachlicher Schwerpunkt:** Nomen, passende Adjektive, ausgewählte Fachausdrücke und Wortzusammensetzungen im Beschreibungskontext; sachliches Präsens.
-
-**Ablauf**
-- Input 3: Ungenaue Formulierungen an Fischotterbeispielen präzisieren.
-- Nach kurzem Abgleich zwischen zwei passenden Übungsschwerpunkten wählen: Wortschatz oder Satzbildung.
-- Aus Stichwörtern sachliche Sätze bilden; kleine Wortbildungsübungen unmittelbar dafür nutzen.
-- Hilfen und Strategiekarte einsetzen.
-- Gelingensnachweis 2 „Aus Stichwörtern werden Sätze“ (5–8 Minuten): drei Aussagen formulieren und einen vorbereiteten Satz verbessern.
-
-**Anwendung Lernbuddy:** Hilfekette bewusst nutzen und im Zwischenstopp prüfen, ob die gewählte Hilfe wirkt.
-
-**Geplante Materialien:** Aufgaben 5/6, Wortbank; Merkblatt 3 zu Sprache und Prüfen.
-
-**Ergebnis/Prüfpunkt:** Sachliche, verständliche Sätze mit treffenden Bezeichnungen.
-
-### Doppelstunde 4: Planen und schreiben
-**Fachlicher Schwerpunkt:** Aus geordneten Informationen eine zusammenhängende Tierbeschreibung verfassen.
-
-**Ablauf**
-- Input 4: Einen knappen Fischotter-Schreibplan und den Übergang zu einem Modellabschnitt betrachten.
-- Eigene Übungstierwahl aus zwei bis drei vorbereiteten Paketen.
-- Material auswerten bzw. vorbereitete Stichwörter prüfen, Schreibplan erstellen und Text verfassen.
-- Umfang des Materials begrenzen, damit Schreibzeit bleibt.
-- Zwischenstopp: Sind Informationen richtig geordnet? Ist mein nächster Schritt klar?
-- Erste Fassung sichern; bei unterschiedlichem Tempo Anfang der folgenden Doppelstunde zum Fertigstellen nutzen.
-
-**Anwendung Lernbuddy:** Fachlichen Auftrag in Schritte teilen und den Fortschritt prüfen. Lernbuddy steuert die Arbeit; der Schreibplan ordnet den Text.
-
-**Geplante Materialien:** Aufgaben 7/8, kurze Übungstierpakete, Schreibplan, bekannte Merkblätter.
-
-**Ergebnis/Prüfpunkt:** Schreibplan und erste zusammenhängende Tierbeschreibung.
-
-## Woche 3 · Prüfen und Standort bestimmen
-### Doppelstunde 5: Prüfen und gezielt überarbeiten
-**Fachlicher Schwerpunkt:** Kriterien am eigenen Text anwenden und sinnvolle Änderungen vornehmen.
-
-**Ablauf**
-- Bei Bedarf erste Fassung fertigstellen.
-- Kurze Anwendungserinnerung: Fischotter-Modellabschnitt anhand der bekannten Kriterien prüfen.
-- Eigenen Text selbst prüfen; anschließend Partnerfeedback zu einem begrenzten Kriterium.
-- Nötige Stellen überarbeiten; gelungene Stellen beibehalten.
-- Gelingensnachweis 3 „Mein Text zeigt es“: vorhandenen Übungstext anhand K1–K6 prüfen und Belege erläutern; kein zusätzlicher Aufsatz. Textsichtung und Gespräche gestaffelt in den Arbeitsphasen der Doppelstunden 4–5 durchführen.
-- Ablauf und festgelegte Hilfen der Probearbeit transparent machen.
-
-**Anwendung Lernbuddy:** Reflexion durch einen Beleg stützen und einen fachlichen nächsten Schritt festhalten.
-
-**Geplante Materialien:** Aufgabe 9, Kindercheckliste, Übungstext und Merkblätter.
-
-**Ergebnis/Prüfpunkt:** Geprüfter Übungstext; ein konkreter Hinweis für die Weiterarbeit.
-
-### Doppelstunde 6: Probearbeit
-**Fachlicher Schwerpunkt:** Bekannten Schreibprozess auf ein neues Tier übertragen.
-
-**Ablauf**
-- Bekannten Ablauf und gemeinsame Hilfen knapp bestätigen.
-- Neues, überschaubares Materialpaket bearbeiten: Informationen auswählen, planen, schreiben, prüfen.
-- Erste Fassung vor zusätzlicher Unterstützung sichern.
-- Kurze Selbsteinschätzung mit Beleg.
-- Lehrkraft sichtet die Texte bis Doppelstunde 7 anhand derselben Kriterien und benennt jeweils einen vorrangigen Übungsbedarf.
-
-**Anwendung Lernbuddy:** Bekannte Arbeitsschritte möglichst eigenständig steuern; zusätzliche Hilfe dokumentieren. Keine neue Strategie unmittelbar vor der Probearbeit einführen.
-
-**Geplante Materialien:** Probearbeitspaket mit neuem Tier, vorab festgelegte Hilfen und Rückmeldebogen.
-
-**Ergebnis/Prüfpunkt:** Unbenotete Transferleistung als Grundlage gezielter Weiterarbeit.
-
-## Woche 4 · Nach Bedarf üben und Leistung zeigen
-### Doppelstunde 7: Mein nächster Lernschritt
-**Fachlicher Schwerpunkt:** Aus Rückmeldung eine passende Übung wählen und deren Nutzen überprüfen.
-
-**Ablauf**
-- Rückmeldung zur Probearbeit lesen bzw. kurz besprechen.
-- Einen Schwerpunkt festlegen: Informationen, Aufbau, Sprache oder Prüfen.
-- Passende vorhandene Aufgabe erneut oder in einer kurzen Transferfassung bearbeiten.
-- Bei Bedarf angeleitete Kleingruppe; für sichere Kinder freiwillige Vertiefung oder kleines Projekt.
-- Am neuen Ergebnis prüfen, ob der vereinbarte Schwerpunkt besser gelingt.
-- Organisation der Lernerfolgskontrolle klären.
-
-**Anwendung Lernbuddy:** Reflexion → neue Planung im tatsächlichen Arbeitsprozess verbinden; Aufgabenwahl anhand eines Bedarfs begründen.
-
-**Geplante Materialien:** Aufgabe 10 als Auswahlhilfe, bekannte Übungen, Rückmeldung; wenige freiwillige Angebote.
-
-**Ergebnis/Prüfpunkt:** Ein belegbarer Fortschritt am gewählten Schwerpunkt, keine Pflicht zur vollständigen Wiederholung aller Aufgaben.
-
-### Doppelstunde 8: Lernerfolgskontrolle und Reihenrückblick
-**Fachlicher Schwerpunkt:** Eigenständige materialgestützte Tierbeschreibung.
-
-**Ablauf**
-- Lernerfolgskontrolle mit neuem Tier und zuvor erprobtem Format.
-- Ausschließlich vorab festgelegte Prüfungshilfen; keine Partnerhilfe und kein Kiosk.
-- Nach Abgabe, soweit der Zeitrahmen reicht: kurzer Rückblick auf die eigene Nutzung des Lernbuddys.
-- Kleine Leseausstellung vorhandener Übungstexte nur, wenn Zeit bleibt. Keine zusätzliche aufwendige Präsentationsrunde.
-
-**Anwendung Lernbuddy:** In der Arbeit nur in der vorab vereinbarten Form. Abschließend die eigene Selbstständigkeit betrachten. Der Rückblick auf die fachlichen Prüfungsergebnisse folgt erst nach Korrektur.
-
-**Geplante Materialien:** Lernerfolgskontrolle, festgelegte Hilfen; bekannte Reflexionssatzanfänge.
-
-**Ergebnis:** Fachliche Leistung und getrennte Rückmeldung zum SRL-Transfer.
-
-## Materialumfang als Arbeitsplanung
-| Aufgaben | Inhalt | Verwendung |
-|---|---|---|
-| 1–2 | Genaue Beschreibungen und sichtbare Merkmale | Doppelstunde 1 |
-| 3–4 | Informationen finden und ordnen | Doppelstunde 2 |
-| 5–6 | Treffende Wörter und sachliche Sätze | Doppelstunde 3, später nach Bedarf |
-| 7–8 | Schreibplan und Tierbeschreibung | Doppelstunde 4 |
-| 9 | Prüfen und überarbeiten | Doppelstunde 5 |
-| 10 | Gezielte Weiterarbeit nach Rückmeldung | Doppelstunde 7 |
-
-Die Aufgabenblätter 1–10 liegen seit Schritt 4 als A5-PDF vor. Die Blattnummer entspricht der PDF-Seite. Probearbeit und Lernerfolgskontrolle erhalten eigene Pakete. Der individuelle Übungsumfang richtet sich nach dem gezeigten Bedarf.
-
-## Teamteaching, wenn verfügbar
-Eine Lehrkraft begleitet den fachlichen Schwerpunkt, die andere beobachtet an wechselnden Kindern die Anwendung des Lernbuddys und unterstützt kurze Ziel- oder Reflexionsgespräche. Rollen wechseln. Die Reihe muss auch mit einer Lehrkraft durchführbar bleiben.
-
-## Prioritäten bei Zeitknappheit
-1. Erhalten: Informationen auswerten, mindestens einen vollständigen Übungstext schreiben und prüfen, Probearbeit mit Rückmeldung, gezielte Weiterarbeit, Lernerfolgskontrolle.
-2. Erhalten: kurze Planung und Reflexion mit dem bekannten Lernbuddy-Rahmen; nicht regelmäßig zugunsten weiterer Aufgaben streichen. Das jeweils bearbeitete A5-Blatt liegt dabei in der freien Mitte.
-3. Kürzen: Zahl ähnlicher Sprachübungen, Zahl der Übungstiere, zusätzliche Abschriften und Präsentationsumfang.
-4. Entfallen zuerst: freiwillige Gestaltung, umfangreiche Projekte und zusätzliche Recherche.
-
-## Noch vor der Prüfungserstellung zu klären
-- Prüfungsdauer innerhalb der Doppelstunde.
-- Einheitliche Hilfen und mögliche neutrale Lernbuddy-Nutzung in der Arbeit.
-- Ob tatsächlich ein gemeinsamer Termin oder ein gesondertes Wahlfenster gewünscht ist.
-- Auswahl und Vergleichbarkeit der zusätzlichen Tierpakete.
-
-Diese offenen Punkte verhindern nicht die Erstellung von Lernweg, Übungsaufgaben und Fischotter-Beispielmaterial.
-
+Die bestehende PDF-Sammlung ist eine Vorfassung der neuen Etappenstruktur. Tierpakete und K1–K6 bleiben fachlich nutzbar. Input-/Merkblatt-Paare, Pflicht-/Vertiefungskennzeichnung, Lernweg, 80-%-Auswertung, Probearbeit, Projekte und zwei Klassenarbeitsvarianten müssen entsprechend neu ausgegeben werden. Im Cockpit Planungsstand und druckfertige Freigabe getrennt zeigen.

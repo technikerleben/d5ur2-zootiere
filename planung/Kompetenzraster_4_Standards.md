@@ -1,5 +1,7 @@
 # Kompetenzraster · Zootiere · Vier Standards
 
+Ergänzung 30.09.2026: K1–K6 und vier Standards bleiben bestehen. Für den Etappenwechsel gilt die 80-%-Regel anhand der fünf [Etappenindikatoren](Etappen_Gelingensnachweise.md), nicht eine Addition der Niveaustufen.
+
 Verbindliche Planungsgrundlage, beschlossen am 29.09.2026. Die sechs Kriterien K1–K6 bleiben erhalten. Der Mindeststandard ist das gemeinsame fachliche Kernziel. Regel- und Leistungsstandard beschreiben höhere Genauigkeit, Zusammenhang und sprachliche Qualität, nicht bloß längere Texte.
 
 | Kompetenz | Förderstandard – individuelle Ziele | Mindeststandard | Regelstandard | Leistungsstandard |
@@ -22,3 +24,4 @@ Verbindliche Planungsgrundlage, beschlossen am 29.09.2026. Die sechs Kriterien K
 - Diese HTML- und Markdown-Fassungen dienen Lehrkräften. Die Schülerfassung als A5-PDF mit mindestens 14 pt ist noch zu erstellen. Bestehende PDFs wurden durch diese Planungsaktualisierung nicht neu erzeugt.
 
 [Etappen und Gelingensnachweise](Etappen_Gelingensnachweise.md) · [Lehrkraftansicht des Rasters](../materialien/bewertung/Kompetenzraster_4_Standards.html)
+
