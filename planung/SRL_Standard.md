@@ -54,4 +54,4 @@ Die neue Struktur ist verbindlich geplant. Die vorhandenen PDFs werden nicht sti
 
 ## Produktionsfortschritt
 
-Etappe 1 ist seit 30.09.2026 nach diesem Standard erstellt und als [separates Paket](../materialien/etappe1/README.md) verfügbar: identischer Input/Merkblatt-Inhalt, Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, GN1 A/B mit 4/5-Auswertung und auswählbare Fördermodule. Die alten Gesamtpakete bleiben Vorfassungen. Etappe 2/3 und weitere Materialien folgen.
+Etappe 1 ist seit 30.09.2026 nach diesem Standard erstellt und als [separates Paket](../materialien/etappe1/README.md) verfügbar: identischer Input/Merkblatt-Inhalt, Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, GN1 A/B mit 4/5-Auswertung und auswählbare Fördermodule. Die alten Gesamtpakete bleiben Vorfassungen. Etappe 2 ist ebenfalls [als geprüftes Materialpaket](../materialien/etappe2/README.md) verfügbar: Input/Merkblatt, Pflichtblätter 5–6 mit Vertiefungen, Tipps/Lösungen, GN2 A/B mit 4/5-Auswertung und Fördermodule. Etappe 3 mit Probearbeit und weitere Materialien folgen.

@@ -1,0 +1,81 @@
+{
+  "files": [
+    {
+      "path": "materialien/etappe2/Merkblatt_2_A5.pdf",
+      "pages": 3,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 47145,
+      "sha256": "4576c9bbd25b6a98cb03d5fd93b3ea50a28bcfbf40ba0377d67c0768449209bf"
+    },
+    {
+      "path": "materialien/etappe2/Pflichtblaetter_5-6_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 46080,
+      "sha256": "d78b5fdc4c0985556d9c582d1dbb3884f8308113281ba7bba9bc77804d8dddce"
+    },
+    {
+      "path": "materialien/etappe2/Tipps_5-6_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 45320,
+      "sha256": "41a943ccd59c9d20ac6bd70f19deb58675f07a8e88c101e74982b0372b395f3c"
+    },
+    {
+      "path": "materialien/etappe2/Loesungen_5-6_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 45233,
+      "sha256": "091d872ff7838ef556164af949532b9628ba1d7d6a3f917cfab55c11531cbbad"
+    },
+    {
+      "path": "materialien/etappe2/GN2_A_A5.pdf",
+      "pages": 1,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 44919,
+      "sha256": "543c72d024caeee1a2cda1a99beee8ffb102bae81c6c344e75b6f2c8e584433f"
+    },
+    {
+      "path": "materialien/etappe2/GN2_B_A5.pdf",
+      "pages": 1,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 44925,
+      "sha256": "5d379bd74d92fa9cb4172e43de0f1509d3c0d526ff297c411210fbe89e21bac7"
+    },
+    {
+      "path": "materialien/etappe2/Foerdermodule_A5.pdf",
+      "pages": 3,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 46754,
+      "sha256": "55987a0e6ee1686dc738eae9fc327a25cde7ef00cadd031c80865c645d6bc8e4"
+    },
+    {
+      "path": "materialien/etappe2/Lehrkraft_Auswertung_A4.pdf",
+      "pages": 4,
+      "student": false,
+      "minimumFontPt": 14.0,
+      "bytes": 51595,
+      "sha256": "732b517773f9866837248cbf0b2b9be72bce193fcbc918fa11d764c0f6655445"
+    },
+    {
+      "path": "materialien/etappe2/Etappe2_Schuelerpaket_A5.pdf",
+      "pages": 5,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 70495,
+      "sha256": "fa71147334ac7b06d5259c35dfa64084724ee385fb27e8109ea844283940ba08"
+    }
+  ],
+  "inputMemoContentParity": true,
+  "sourceSha256": "7f18aa7a05a43abf1098904e6fa8e7edc8adb515c598154d004b2b23e2feb22f",
+  "visualReview": "18 eigenständige PDF-Seiten gerendert und visuell geprüft; GN2 nach Zeilenumbruchkorrektur erneut geprüft. Grundpaket enthält identische Merkblatt-/Übungsseiten.",
+  "htmlNavigation": "9 Abschnitte, Vor/Zurück, Grenzen, Auswahl und Pfeiltasten mit Node geprüft",
+  "browserVisualReview": "offen: keine Browserlaufzeit verfügbar"
+}

@@ -1,6 +1,6 @@
 # Materialmatrix · Schritt 1
 
-Stand: 30.09.2026. **Schritt 1 abgeschlossen: Inhalte, Umfang und Kompetenzabdeckung sind als Produktionsgrundlage festgelegt.** Bearbeitungszeiten sind ungetestete Planungswerte, keine Zeitgrenzen für Kinder. Die neuen Schülerausgaben werden erst in den folgenden Schritten hergestellt.
+Stand: 30.09.2026. **Schritt 1 abgeschlossen: Inhalte, Umfang und Kompetenzabdeckung sind als Produktionsgrundlage festgelegt.** Bearbeitungszeiten sind ungetestete Planungswerte, keine Zeitgrenzen für Kinder. Schülerausgaben für Etappen 1 und 2 sind erstellt; Etappe 3 folgt.
 
 Verbindlich bleiben [SRL-Standard](SRL_Standard.md), [Etappenindikatoren](Etappen_Gelingensnachweise.md) und [Projektangebote](Projekte_und_Terminwahl.md). Diese Matrix konkretisiert den Umfang; sie ersetzt weder individuelle Förderziele noch die spätere Prüfung der druckfertigen Materialien.
 
@@ -17,7 +17,7 @@ Pro Merkblatt vorläufig zwei A5-Seiten; Seitenzahl darf zugunsten identischer I
 | Paar | Verbindlicher Inhalt in dieser Reihenfolge | Modell/gesicherte Antwort | Zeitansatz |
 |---|---|---|---|
 | I1/M1 · Informationen | Beschreibung und Meinung unterscheiden; zwei sichtbare Merkmale; Bild-/Textbelege; Kopf-Rumpf-Maß mit Einheit und Schwanzbezug; Lebensraum/Nahrung; Stichwörter ordnen | Fischotter-Textvergleich A/B; Fotobeleg; markierte Maßangabe; vollständig zugeordnete kleine Stichwortsammlung | 15 Minuten |
-| I2/M2 · Sprache | genaue Wörter statt Wertung; Fachwort/Zusammensetzung; vollständiger Satz; Präsens/Verbform; Großschreibung und Punkt | „schöne Beine“ zu „kurze Beine“; Tasthaare; eine gelöste Wortgruppe; ein vollständig korrigierter Satz | 12 Minuten |
+| I2/M2 · Sprache | genaue Wörter statt Wertung; Fachwort/Zusammensetzung; vollständiger Satz; Präsens/Verbform; Großschreibung und Punkt | „schönes Fell“ zu „oben dunkelbraunes Fell“; Zusammensetzung Fellfarbe; eine gelöste Wortgruppe; ein vollständig korrigierter Satz | 12 Minuten |
 | I3/M3 · Schreiben | vollständiger Plan; vom Stichwort zum Satz; geordneter zusammenhängender Text; Prüfung K1–K6; nötige Überarbeitung oder begründetes Beibehalten | knapper vollständiger Fischotter-Plan; kurzer vollständiger Modelltext mit allen Kernangaben; eine markierte Prüfung/Verbesserung | 12 Minuten |
 
 Bei späterem Etappenstart Input in einer kurzen Kleingruppe wiederholen. Das Papiermerkblatt ermöglicht Nachlesen, ersetzt aber nicht automatisch den vereinbarten Startinput. Wiederholte Inputs während stiller Arbeitsphasen organisieren; dafür flexible Arbeitszeit nutzen.
@@ -40,7 +40,7 @@ Zeitangaben beinhalten Lesen, Bearbeiten und einen kurzen fachlichen Vergleich; 
 
 **Pflichtzeit als Planungswert: 200 Minuten** (Etappe 1: 70; Etappe 2: 45; Etappe 3: 85). Für langsamere Bearbeitung zunächst zusätzlich 40 Minuten im flexiblen Arbeitsbudget vorsehen. Dies ist eine Kapazitätsannahme, keine Obergrenze und keine Zusage, dass jedes Kind damit auskommt. Nach Fertigstellung und Erprobung Aufgaben kürzen oder gleichwertige Förderfassungen vereinbaren, wenn der Umfang nicht trägt.
 
-**Konkreter Überarbeitungsbedarf:** Blatt 3 muss den Schwanzbezug ausdrücklich abfragen. Blatt 6 soll das Verbessern eines sachlich unpassenden Satzes mitüben; bislang überwiegt dort das richtige Abschreiben. Übungen und GN2 dürfen nicht dieselben drei Wortgruppen enthalten: neue Übungssätze mit denselben Operationen, Nachweisvarianten zurückhalten. Die Pflichtmenge bleibt begrenzt, indem vorhandene Teilaufgaben ersetzt und nicht bloß weitere angehängt werden.
+**Bei der Produktion umgesetzt (Etappen 1/2):** Blatt 3 fragt den Schwanzbezug ausdrücklich ab. Blatt 6 übt das Verbessern eines sachlich unpassenden Satzes mit. Übungen und GN2 dürfen nicht dieselben drei Wortgruppen enthalten: neue Übungssätze mit denselben Operationen, Nachweisvarianten zurückhalten. Die Pflichtmenge bleibt begrenzt, indem vorhandene Teilaufgaben ersetzt und nicht bloß weitere angehängt werden.
 
 ## 4. Abdeckung der Gelingensnachweise
 
@@ -119,6 +119,6 @@ Probearbeiten aus DS5 bis DS6 außerhalb der Unterrichtszeit sichten. Texte aus 
 
 ## 9. Produktionsauftrag für den nächsten Schritt
 
-**Etappe 1 hergestellt:** gemeinsame Inhaltsquelle I1/M1, Papiermerkblatt (vier A5-Seiten), Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, Fördermodule und GN1 samt 4/5-Auswertung liegen unter [Etappe 1](../materialien/etappe1/README.md) vor. Als Nächstes Etappe 2; anschließend Etappe 3 mit Probearbeit. Die Schritte 2–4 des Workflows werden damit etappenweise verzahnt.
+**Etappe 1 hergestellt:** gemeinsame Inhaltsquelle I1/M1, Papiermerkblatt (vier A5-Seiten), Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, Fördermodule und GN1 samt 4/5-Auswertung liegen unter [Etappe 1](../materialien/etappe1/README.md) vor. **Etappe 2 ebenfalls hergestellt:** [Input/Merkblatt, Blätter 5–6, Tipps/Lösungen, Fördermodule und GN2 A/B](../materialien/etappe2/README.md). Als Nächstes Etappe 3 mit Probearbeit. Die Schritte 2–4 des Workflows werden damit etappenweise verzahnt.
 
 Vor Freigabe prüfen: gleicher Inhalt in Input/Merkblatt; alle fünf Indikatoren im Pflichtkern geübt; keine identischen Nachweislösungen vorab als Übung ausgeben; lesbare A5-Ausgaben; Blatt-/Lösungsnummern und Links passend; Materialaufwand und Bearbeitungszeit nach Sichtung realistisch. Aktuelle PDF-Vorfassungen bleiben bis zur geprüften Neuausgabe als solche gekennzeichnet.

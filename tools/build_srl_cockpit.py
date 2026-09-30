@@ -65,6 +65,20 @@ body=body.replace('<td>Vier alte Inputs, drei Merkblätter</td><td>Drei inhaltli
 body=body.replace('<td>Fachaufgaben vorhanden</td><td>Pflichtkern und freiwillige Vertiefungen ausweisen</td>','<td>Blätter 1–4 mit Pflicht/Vertiefung erstellt</td><td>Blätter 5–9 entsprechend überarbeiten</td>')
 body=body.replace('<td>Karten A/B vorhanden</td><td>Auswertung auf fünf Indikatoren und 4/5-Freigabe umstellen</td>','<td>GN1 A/B mit 4/5-Auswertung erstellt</td><td>GN2 entsprechend überarbeiten</td>')
 
+# Etappe 2 release; keep the single generation path reproducible.
+body=body.replace('Etappe 1 ist erstellt und als A5-Paket verfügbar. Etappe 2/3,', 'Etappen 1 und 2 sind erstellt und als A5-Pakete verfügbar. Etappe 3,')
+body=body.replace('Schülerausgaben für Etappe 1 sind unten verfügbar; weitere Etappen folgen.', 'Schülerausgaben für Etappen 1 und 2 sind unten verfügbar; Etappe 3 folgt.')
+body=body.replace('Nächster Produktionsschritt: Etappe 2 mit Input/Merkblatt, Pflichtblättern 5–6, Hilfen und GN2.', 'Nächster Produktionsschritt: Etappe 3 mit Input/Merkblatt, Pflichtblättern 7–9 und Probearbeit mit Feedback.')
+body=body.replace('<a href="#materialmatrix">Materialmatrix</a>', '<a href="#etappe2">Etappe 2: Downloads</a><a href="#materialmatrix">Materialmatrix</a>')
+release='<section id="etappe2"><h2>Etappe 2 · erstellt und druckfertig</h2><p>Sachlich und genau formulieren: identischer Input/Merkblatt-Inhalt, Pflichtblätter 5–6 mit freiwilligen Vertiefungen. GN2: vier von fünf Zielen. PDF-Format, Schriftgrößen und gerenderte Seiten geprüft; Unterrichtserprobung steht aus.</p><div class="grid">'
+for title,fn,desc in [('Schülerpaket','Etappe2_Schuelerpaket_A5.pdf','5 Seiten A5: Merkblatt und zwei Pflichtblätter.'),('Startinput','Input_Etappe2.html','9 Abschnitte für Lehrkräfte, gleicher Inhalt wie das Merkblatt.'),('Tipps','Tipps_5-6_A5.pdf','Zwei A5-Seiten, getrennt bereitstellen.'),('Lösungen','Loesungen_5-6_A5.pdf','Zwei A5-Seiten zum Vergleichen.'),('GN2 A','GN2_A_A5.pdf','Eine A5-Seite für den ersten Nachweis.'),('GN2 B','GN2_B_A5.pdf','Eine A5-Seite für erneute Belege nach Übung.'),('Auswertung und Einsatz','Lehrkraft_Auswertung_A4.pdf','Vier Lehrkraftseiten: Kriterien, Lösungen, Kurzprotokoll, Förderhinweise.'),('Fördermodule','Foerdermodule_A5.pdf','Drei A5-Seiten; Ziele und Hilfen individuell vereinbaren.')]:
+ release+=f'<article class="card"><h3>{title}</h3><p>{desc}</p><a href="materialien/etappe2/{fn}">Öffnen</a></article>'
+release+='</div><p>Alle Schülerseiten: mindestens 14 pt, Graustufen, Lochrand. Nachweise und Lösungen separat halten.</p><p><a href="materialien/etappe2/Merkblatt_2_A5.pdf">Merkblatt einzeln</a> · <a href="materialien/etappe2/Pflichtblaetter_5-6_A5.pdf">Pflichtblätter einzeln</a> · <a href="materialien/etappe2/README.md">Einsatz und Druckhinweise</a></p></section>'
+body=body.replace('<section id="etappen">',release+'<section id="etappen">')
+body=body.replace('Etappe 1 als identisches Paar erstellt','Etappen 1/2 als identische Paare erstellt').replace('Paare für Etappe 2/3 herstellen','Paar für Etappe 3 herstellen')
+body=body.replace('Blätter 1–4 mit Pflicht/Vertiefung erstellt','Blätter 1–6 mit Pflicht/Vertiefung erstellt').replace('Blätter 5–9 entsprechend überarbeiten','Blätter 7–9 entsprechend überarbeiten')
+body=body.replace('GN1 A/B mit 4/5-Auswertung erstellt','GN1 und GN2 A/B mit 4/5-Auswertung erstellt').replace('GN2 entsprechend überarbeiten','Probearbeit als letzten Nachweis herstellen')
+
 (r/'index.html').write_text(page('Zootiere · SRL-Etappen und Material-Cockpit',body))
 (r/'README.md').write_text('''# Deutsch 5 · Zootiere
 
@@ -126,4 +140,12 @@ text=text.replace('Nächster Produktionsauftrag: Etappe 1 vollständig herstelle
 text=text.replace('Aufgaben, Merkblätter, Inputs, Lernweg und Nachweisauswertungen sind Vorfassungen und müssen vor erneuter Freigabe angepasst werden.', 'Die alten Gesamtpakete bleiben Vorfassungen. Aktuell ist Etappe 1 unter materialien/etappe1; weitere Etappen, Lernweg und Auswertungen folgen noch.')
 text=text.replace('Noch herzustellen: drei identische Input-/Merkblatt-Paare, Pflichtblätter mit integrierten Vertiefungen, neuer Lernweg und Schüler-Raster, 80-%-Erwartungshorizonte und Förderfassungen, Probearbeit/Feedback, Projekt-PDFs und zwei vergleichbare Klassenarbeitsvarianten.', 'Noch herzustellen: Etappe 2/3 mit identischen Input-/Merkblatt-Paaren, Pflichtblättern mit Vertiefungen, Nachweisen und Förderangeboten, neuer Lernweg und Schüler-Raster, Probearbeit/Feedback, Projekt-PDFs und zwei vergleichbare Klassenarbeitsvarianten.')
 text+='\n## Etappe 1 verfügbar\n\n- [Schülerpaket A5, 9 Seiten](materialien/etappe1/Etappe1_Schuelerpaket_A5.pdf)\n- [Input für Lehrkräfte](materialien/etappe1/Input_Etappe1.html)\n- [Alle Einzeldateien, Tipps, Lösungen, GN1 A/B und Fördermodule](materialien/etappe1/README.md)\n- [Auswertung und Einsatz](materialien/etappe1/Lehrkraft_Auswertung_A4.pdf)\n\nGenerator: `python tools/generate_etappe1.py`. Gemeinsame Inhaltsquelle: `materialien/etappe1/inhalt.json`. Technischer Inhaltsabgleich sowie technische und visuelle PDF-Prüfung abgeschlossen. Die HTML-Navigation wurde technisch geprüft; visuelle Browserprüfung steht noch aus.\n'
+p.write_text(text)
+
+# Extend generated README for Etappe 2.
+p=r/'README.md';text=p.read_text()
+text=text.replace('Etappe 1 ist hergestellt. Nächster Produktionsauftrag: Etappe 2 mit identischem Input/Merkblatt, Pflichtblättern 5–6 und GN2.', 'Etappen 1 und 2 sind hergestellt. Nächster Produktionsauftrag: Etappe 3 mit identischem Input/Merkblatt, Pflichtblättern 7–9 und Probearbeit mit Feedback.')
+text=text.replace('Aktuell ist Etappe 1 unter materialien/etappe1; weitere Etappen, Lernweg und Auswertungen folgen noch.', 'Aktuell sind Etappen 1 und 2 unter materialien/etappe1 und materialien/etappe2; Etappe 3, Lernweg und weitere Auswertungen folgen noch.')
+text=text.replace('Noch herzustellen: Etappe 2/3 mit identischen Input-/Merkblatt-Paaren', 'Noch herzustellen: Etappe 3 mit identischem Input-/Merkblatt-Paar')
+text+='\n## Etappe 2 verfügbar\n\n- [Schülerpaket A5, 5 Seiten](materialien/etappe2/Etappe2_Schuelerpaket_A5.pdf)\n- [Input für Lehrkräfte](materialien/etappe2/Input_Etappe2.html)\n- [Einzeldateien, Tipps, Lösungen, GN2 A/B und Fördermodule](materialien/etappe2/README.md)\n- [Auswertung und Einsatz](materialien/etappe2/Lehrkraft_Auswertung_A4.pdf)\n\nGenerator: `python tools/generate_etappe2.py`. Gemeinsame Inhaltsquelle: `materialien/etappe2/inhalt.json`. PDF-Prüfung und Inhaltsabgleich abgeschlossen; Navigation technisch geprüft, visuelle Browserprüfung noch offen.\n'
 p.write_text(text)

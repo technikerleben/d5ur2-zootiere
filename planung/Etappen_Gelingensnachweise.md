@@ -38,7 +38,7 @@ Vier von fünf → Etappe 2. Offene Ziele: Blatt 2, 3 oder 4 gezielt wiederholen
 | E2.4 Sachlichkeit | die Wertung durch eine genaue passende Angabe ersetzt ist |
 | E2.5 Schreibung | Satzanfänge und Nomen groß sowie Satzschlusspunkte in den vier Sätzen gesetzt sind |
 
-Vier von fünf → Etappe 3. Offene Ziele: gezielte Teilaufgabe aus Blatt 5/6 und erneuter kurzer Beleg. Keine zusätzliche Hürde durch freiwillige Vertiefungen. Erwartungshorizonte müssen die neue Indikatorenentscheidung eindeutig abbilden; bisherige großzügigere Sammelentscheidung nicht unverändert weiterführen.
+Vier von fünf → Etappe 3. Offene Ziele: gezielte Teilaufgabe aus Blatt 5/6 und erneuter kurzer Beleg. Keine zusätzliche Hürde durch freiwillige Vertiefungen. Der aktuelle [Erwartungshorizont zu GN2](../materialien/etappe2/Lehrkraft_Auswertung_A4.pdf) bildet die fünf Entscheidungen ab. [GN2 A/B und Übungen](../materialien/etappe2/README.md) sind erstellt; alte Sammelentscheidungen nicht weiterverwenden.
 
 ## Etappe 3 · Eine Tierbeschreibung schreiben und prüfen
 
