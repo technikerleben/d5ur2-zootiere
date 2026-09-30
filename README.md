@@ -20,7 +20,7 @@ Bei unter 80 % gezielt nacharbeiten und erneut nachweisen. Förderziele vorab in
 
 [Materialmatrix](planung/Materialmatrix.md) mit Input-/Merkblatt-Inhalten, neun Pflichtblättern, freiwilligen Vertiefungen, Hilfen und vollständiger Zuordnung der 15 Etappenindikatoren. Pflichtumfang: rund 200 Minuten als ungetesteter Planungswert. Acht Zeitfenster zu je 90 Minuten sichern Platz für Nachweise, Rückmeldung, Wahlzeit und zwei Klassenarbeitstermine. Die dort angesetzten 45 Prüfungsminuten sind noch keine endgültige Festlegung.
 
-Nächster Produktionsauftrag: Etappe 1 vollständig herstellen – gemeinsamer Input-/Merkblatt-Inhalt, Pflichtblätter 1–4 mit Vertiefungen, Hilfen/Lösungen und GN1 mit 4/5-Freigabe. Neue Schüler-PDFs sind noch nicht erstellt.
+Etappe 1 ist hergestellt. Nächster Produktionsauftrag: Etappe 2 mit identischem Input/Merkblatt, Pflichtblättern 5–6 und GN2.
 
 ## Planung und Cockpit
 
@@ -35,9 +35,9 @@ Nächster Produktionsauftrag: Etappe 1 vollständig herstellen – gemeinsamer I
 
 ## Materialstatus
 
-Planung und Cockpit sind auf den neuen Standard umgestellt. Vorhandene PDFs sind dadurch nicht automatisch neu erstellt. Tierpakete und K1–K6 bleiben fachlich nutzbar. Aufgaben, Merkblätter, Inputs, Lernweg und Nachweisauswertungen sind Vorfassungen und müssen vor erneuter Freigabe angepasst werden. Das Cockpit trennt diese Bereiche sichtbar.
+Planung und Cockpit sind auf den neuen Standard umgestellt. Vorhandene PDFs sind dadurch nicht automatisch neu erstellt. Tierpakete und K1–K6 bleiben fachlich nutzbar. Die alten Gesamtpakete bleiben Vorfassungen. Aktuell ist Etappe 1 unter materialien/etappe1; weitere Etappen, Lernweg und Auswertungen folgen noch. Das Cockpit trennt diese Bereiche sichtbar.
 
-Noch herzustellen: drei identische Input-/Merkblatt-Paare, Pflichtblätter mit integrierten Vertiefungen, neuer Lernweg und Schüler-Raster, 80-%-Erwartungshorizonte und Förderfassungen, Probearbeit/Feedback, Projekt-PDFs und zwei vergleichbare Klassenarbeitsvarianten. Die Projektaufträge sind bereits als Textgrundlage geplant. Kontroll-Kiosk und Vertretungshinweise folgen.
+Noch herzustellen: Etappe 2/3 mit identischen Input-/Merkblatt-Paaren, Pflichtblättern mit Vertiefungen, Nachweisen und Förderangeboten, neuer Lernweg und Schüler-Raster, Probearbeit/Feedback, Projekt-PDFs und zwei vergleichbare Klassenarbeitsvarianten. Die Projektaufträge sind bereits als Textgrundlage geplant. Kontroll-Kiosk und Vertretungshinweise folgen.
 
 Schülerausgaben: A5 hoch, mindestens 14 pt einschließlich Beschriftungen, Graustufen, Lochrand, einfache Du-Form. Längere Texte ins Heft. Keine iPads; Online-Ressourcen für Lehrkräfte. Lernbuddy-Reflexion vor dem Abwischen ins Heft übertragen.
 
@@ -48,3 +48,12 @@ Schülerausgaben: A5 hoch, mindestens 14 pt einschließlich Beschriftungen, Grau
 Die bisherigen PDF-Generatoren `generate_a5.py`, `generate_schritt4.py` und `generate_gelingensnachweise.py` sowie `generate_schritt2.py` sind für die Etappenstruktur zu überarbeiten; ihr unveränderter Aufruf erzeugt Vorfassungen. Vorhandene Prüfberichte gelten nur für die alten Ausgaben und belegen keine Freigabe nach dem neuen Standard. Schüler-PDFs erst nach technischer und visueller Prüfung ersetzen.
 
 Das Cockpit ist statisch und benötigt keinen Build-Schritt auf Vercel. Das Deployment übernimmt der Nutzer. Es werden keine Vercel-Einstellungen verändert.
+
+## Etappe 1 verfügbar
+
+- [Schülerpaket A5, 9 Seiten](materialien/etappe1/Etappe1_Schuelerpaket_A5.pdf)
+- [Input für Lehrkräfte](materialien/etappe1/Input_Etappe1.html)
+- [Alle Einzeldateien, Tipps, Lösungen, GN1 A/B und Fördermodule](materialien/etappe1/README.md)
+- [Auswertung und Einsatz](materialien/etappe1/Lehrkraft_Auswertung_A4.pdf)
+
+Generator: `python tools/generate_etappe1.py`. Gemeinsame Inhaltsquelle: `materialien/etappe1/inhalt.json`. Technischer Inhaltsabgleich sowie technische und visuelle PDF-Prüfung abgeschlossen. Die HTML-Navigation wurde technisch geprüft; visuelle Browserprüfung steht noch aus.

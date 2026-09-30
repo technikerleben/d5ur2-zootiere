@@ -1,6 +1,6 @@
 {
   "stand": "2026-09-30",
-  "status": "Etappenstandard verbindlich geplant; angepasste Schülerausgaben noch in Produktion",
+  "status": "Etappe 1 erstellt und geprüft; Etappe 2/3 und weitere Schülerausgaben folgen",
   "levels": [
     "Förderstandard – individuelle Ziele",
     "Mindeststandard",
@@ -98,7 +98,14 @@
         "Passende Ordnung"
       ],
       "threshold": "4/5",
-      "status": "Karten vorhanden; Auswertung und Pflicht-/Vertiefungsblätter überarbeiten"
+      "status": "Input/Merkblatt, Pflichtblätter 1–4, Vertiefungen, Tipps/Lösungen, GN1 A/B mit 4/5-Auswertung und Fördermodule erstellt",
+      "resources": {
+        "student": "etappe1/Etappe1_Schuelerpaket_A5.pdf",
+        "input": "etappe1/Input_Etappe1.html",
+        "assessmentA": "etappe1/GN1_A_A5.pdf",
+        "assessmentB": "etappe1/GN1_B_A5.pdf",
+        "teacher": "etappe1/Lehrkraft_Auswertung_A4.pdf"
+      }
     },
     {
       "n": 2,

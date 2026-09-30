@@ -19,7 +19,7 @@ Stand: 30.09.2026. Verbindlich: [SRL-Standard](SRL_Standard.md). Individuelles T
 | E1.4 Sachinformationen | Lebensraum und Nahrung dem Text richtig entnommen sind |
 | E1.5 Ordnung | Angaben unter passenden Überschriften stehen |
 
-Vier von fünf → Etappe 2. Offene Ziele: Blatt 2, 3 oder 4 gezielt wiederholen. GN1-Karten bilden eine nutzbare Grundlage; Erwartungshorizont und Freigabe sind noch umzustellen.
+Vier von fünf → Etappe 2. Offene Ziele: Blatt 2, 3 oder 4 gezielt wiederholen. Etappe 1 ist erstellt: [Schülerpaket](../materialien/etappe1/Etappe1_Schuelerpaket_A5.pdf), [Input](../materialien/etappe1/Input_Etappe1.html), [Nachweise und Auswertung](../materialien/etappe1/README.md). GN1 A/B und die Fünf-Indikatoren-Auswertung setzen 4/5 = 80 % um.
 
 ## Etappe 2 · Sachlich und genau formulieren
 
@@ -69,3 +69,4 @@ Knapp dokumentieren: Datum, Indikator, gezeigt/noch offen, Beleg, Hilfen, Anteil
 ## Anschluss
 
 Nach der Probearbeit: [Projektangebote](Projekte_und_Terminwahl.md), Wiederholung oder nachgeholte Vertiefungen. Zwei Wahltermine: früh in Doppelstunde 7, spät in Doppelstunde 8; konkrete Organisation siehe [Reihenplanung](Reihenplanung_8_Doppelstunden.md).
+

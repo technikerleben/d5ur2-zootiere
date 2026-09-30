@@ -119,6 +119,6 @@ Probearbeiten aus DS5 bis DS6 außerhalb der Unterrichtszeit sichten. Texte aus 
 
 ## 9. Produktionsauftrag für den nächsten Schritt
 
-**Als Nächstes Etappe 1 vollständig herstellen:** gemeinsame Inhaltsquelle I1/M1, Papiermerkblatt, Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen und GN1 samt 4/5-Auswertung. Danach Etappe 2; anschließend Etappe 3 mit Probearbeit. Die Schritte 2–4 des Workflows werden damit etappenweise verzahnt.
+**Etappe 1 hergestellt:** gemeinsame Inhaltsquelle I1/M1, Papiermerkblatt (vier A5-Seiten), Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, Fördermodule und GN1 samt 4/5-Auswertung liegen unter [Etappe 1](../materialien/etappe1/README.md) vor. Als Nächstes Etappe 2; anschließend Etappe 3 mit Probearbeit. Die Schritte 2–4 des Workflows werden damit etappenweise verzahnt.
 
 Vor Freigabe prüfen: gleicher Inhalt in Input/Merkblatt; alle fünf Indikatoren im Pflichtkern geübt; keine identischen Nachweislösungen vorab als Übung ausgeben; lesbare A5-Ausgaben; Blatt-/Lösungsnummern und Links passend; Materialaufwand und Bearbeitungszeit nach Sichtung realistisch. Aktuelle PDF-Vorfassungen bleiben bis zur geprüften Neuausgabe als solche gekennzeichnet.

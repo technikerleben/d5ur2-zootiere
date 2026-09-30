@@ -51,3 +51,7 @@ Die neue Struktur ist verbindlich geplant. Die vorhandenen PDFs werden nicht sti
 3. Probearbeit mit fünf Indikatoren, Feedback und Wiederholungsbelegen ausarbeiten; Projektaufträge als A5 ausgeben.
 4. Zwei gleichwertige Klassenarbeitsvarianten, Hilfen, konkrete Dauer und Terminwahl organisieren. Daten erst nach Stundenplanabgleich festlegen.
 5. Cockpit nur auf freigegebene aktuelle Ausgaben verlinken; Vorfassungen deutlich kennzeichnen. Kiosk, Vertretungshinweise und Gesamtprüfung abschließen.
+
+## Produktionsfortschritt
+
+Etappe 1 ist seit 30.09.2026 nach diesem Standard erstellt und als [separates Paket](../materialien/etappe1/README.md) verfügbar: identischer Input/Merkblatt-Inhalt, Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, GN1 A/B mit 4/5-Auswertung und auswählbare Fördermodule. Die alten Gesamtpakete bleiben Vorfassungen. Etappe 2/3 und weitere Materialien folgen.
