@@ -1,6 +1,6 @@
 {
   "stand": "2026-09-30",
-  "status": "Etappen 1 und 2 hergestellt und PDF-geprüft; Etappe 3 mit Probearbeit und Anschlussmaterialien in Produktion",
+  "status": "Alle drei Etappen einschließlich Probearbeit und Feedback hergestellt und PDF-geprüft; Anschlussmaterialien folgen",
   "levels": [
     "Förderstandard – individuelle Ziele",
     "Mindeststandard",
@@ -126,12 +126,12 @@
       "threshold": "4/5",
       "status": "Etappe 2 hergestellt: Input/Merkblatt, Pflichtblätter 5–6, Hilfen, GN2 A/B mit 4/5-Auswertung und Fördermodule; PDF-geprüft, noch nicht unterrichtserprobt",
       "resources": {
-        "overview": "materialien/etappe2/README.md",
-        "package": "materialien/etappe2/Etappe2_Schuelerpaket_A5.pdf",
-        "input": "materialien/etappe2/Input_Etappe2.html",
-        "assessmentA": "materialien/etappe2/GN2_A_A5.pdf",
-        "assessmentB": "materialien/etappe2/GN2_B_A5.pdf",
-        "teacher": "materialien/etappe2/Lehrkraft_Auswertung_A4.pdf"
+        "overview": "etappe2/README.md",
+        "package": "etappe2/Etappe2_Schuelerpaket_A5.pdf",
+        "input": "etappe2/Input_Etappe2.html",
+        "assessmentA": "etappe2/GN2_A_A5.pdf",
+        "assessmentB": "etappe2/GN2_B_A5.pdf",
+        "teacher": "etappe2/Lehrkraft_Auswertung_A4.pdf"
       }
     },
     {
@@ -152,7 +152,16 @@
         "Prüfung K6"
       ],
       "threshold": "4/5",
-      "status": "Probearbeit fehlt; bisheriges GN3 ist begleitendes Übungsfeedback"
+      "status": "Input/Merkblatt, Blätter 7-9, Hilfen, Checkliste, Probearbeit, Feedback, erneute Belege und Fördermodule erstellt; Unterrichtserprobung offen",
+      "resources": {
+        "overview": "etappe3/README.md",
+        "student": "etappe3/Etappe3_Schuelerpaket_A5.pdf",
+        "input": "etappe3/Input_Etappe3.html",
+        "assessment": "etappe3/Probearbeit_Waschbaer_A5.pdf",
+        "feedback": "etappe3/Feedback_Probearbeit_A5.pdf",
+        "repeat": "etappe3/Erneute_Belege_A5.pdf",
+        "teacher": "etappe3/Lehrkraft_Auswertung_A4.pdf"
+      }
     }
   ],
   "rules": [

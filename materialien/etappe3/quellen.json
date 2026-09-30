@@ -1,0 +1,81 @@
+{
+  "basis": "materialien/schritt3_inhalte.json, Stand 14.09.2026",
+  "animals": [
+    {
+      "author": "Dave Pape",
+      "id": "fischotter",
+      "imagePage": "https://commons.wikimedia.org/wiki/File:Lutra_lutra_1_-_Otter,_Owl,_and_Wildlife_Park.jpg",
+      "license": "Public Domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Lutra_lutra_1_-_Otter,_Owl,_and_Wildlife_Park.jpg",
+      "name": "Fischotter",
+      "sources": [
+        [
+          "Deutsche Wildtier Stiftung",
+          "https://www.deutschewildtierstiftung.de/wildtiere/fischotter"
+        ],
+        [
+          "BUND Naturschutz",
+          "https://www.bund-naturschutz.de/tiere-in-bayern/fischotter/steckbrief"
+        ]
+      ]
+    },
+    {
+      "author": "Bernard DUPONT",
+      "id": "erdmaennchen",
+      "imagePage": "https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_sentinel_..._(51654080983).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "name": "Erdmännchen",
+      "sources": [
+        [
+          "Zoo Zürich",
+          "https://www.zoo.ch/de/naturschutz-tiere/tier-pflanzenlexikon/erdmaennchen"
+        ],
+        [
+          "San Diego Zoo Wildlife Alliance",
+          "https://animals.sandiegozoo.org/animals/meerkat"
+        ],
+        [
+          "Animal Diversity Web",
+          "https://animaldiversity.org/accounts/Suricata_suricatta/"
+        ]
+      ]
+    },
+    {
+      "author": "Brunswyk",
+      "id": "roter-panda",
+      "imagePage": "https://commons.wikimedia.org/wiki/File:Ailurus_fulgens_RoterPanda_LesserPanda.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "name": "Roter Panda",
+      "sources": [
+        [
+          "Zoo Zürich",
+          "https://www.zoo.ch/de/naturschutz-tiere/tier-pflanzenlexikon/kleiner-panda"
+        ],
+        [
+          "San Diego Zoo Wildlife Alliance",
+          "https://animals.sandiegozoo.org/animals/red-panda"
+        ]
+      ]
+    },
+    {
+      "author": "BS Thurner Hof",
+      "id": "waschbaer",
+      "imagePage": "https://commons.wikimedia.org/wiki/File:Procyon_lotor_7_-_am_Wasser.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "name": "Waschbär",
+      "sources": [
+        [
+          "Animal Diversity Web",
+          "https://animaldiversity.org/accounts/Procyon_lotor/"
+        ],
+        [
+          "NABU",
+          "https://www.nabu.de/tiere-und-pflanzen/saeugetiere/sonstige-saeugetiere/18751.html"
+        ]
+      ]
+    }
+  ]
+}

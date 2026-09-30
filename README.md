@@ -20,7 +20,7 @@ Bei unter 80 % gezielt nacharbeiten und erneut nachweisen. Förderziele vorab in
 
 [Materialmatrix](planung/Materialmatrix.md) mit Input-/Merkblatt-Inhalten, neun Pflichtblättern, freiwilligen Vertiefungen, Hilfen und vollständiger Zuordnung der 15 Etappenindikatoren. Pflichtumfang: rund 200 Minuten als ungetesteter Planungswert. Acht Zeitfenster zu je 90 Minuten sichern Platz für Nachweise, Rückmeldung, Wahlzeit und zwei Klassenarbeitstermine. Die dort angesetzten 45 Prüfungsminuten sind noch keine endgültige Festlegung.
 
-Etappen 1 und 2 sind hergestellt. Nächster Produktionsauftrag: Etappe 3 mit identischem Input/Merkblatt, Pflichtblättern 7–9 und Probearbeit mit Feedback.
+Alle drei Etappen einschließlich Probearbeit und Feedback sind hergestellt. Nächster Produktionsauftrag: Papier-Lernweg, Schüler-Kompetenzübersicht und Projektangebote mit Wiederholungshilfe.
 
 ## Planung und Cockpit
 
@@ -35,9 +35,9 @@ Etappen 1 und 2 sind hergestellt. Nächster Produktionsauftrag: Etappe 3 mit ide
 
 ## Materialstatus
 
-Planung und Cockpit sind auf den neuen Standard umgestellt. Vorhandene PDFs sind dadurch nicht automatisch neu erstellt. Tierpakete und K1–K6 bleiben fachlich nutzbar. Die alten Gesamtpakete bleiben Vorfassungen. Aktuell sind Etappen 1 und 2 unter materialien/etappe1 und materialien/etappe2; Etappe 3, Lernweg und weitere Auswertungen folgen noch. Das Cockpit trennt diese Bereiche sichtbar.
+Planung und Cockpit sind auf den neuen Standard umgestellt. Vorhandene PDFs sind dadurch nicht automatisch neu erstellt. Tierpakete und K1–K6 bleiben fachlich nutzbar. Die alten Gesamtpakete bleiben Vorfassungen. Aktuell sind alle drei Etappen unter materialien/etappe1 bis materialien/etappe3 verfügbar. Lernweg und weitere Anschlussmaterialien folgen noch. Das Cockpit trennt diese Bereiche sichtbar.
 
-Noch herzustellen: Etappe 3 mit identischem Input-/Merkblatt-Paar, Pflichtblättern mit Vertiefungen, Nachweisen und Förderangeboten, neuer Lernweg und Schüler-Raster, Probearbeit/Feedback, Projekt-PDFs und zwei vergleichbare Klassenarbeitsvarianten. Die Projektaufträge sind bereits als Textgrundlage geplant. Kontroll-Kiosk und Vertretungshinweise folgen.
+Noch herzustellen: neuer Lernweg und Schüler-Raster, Projekt-PDFs mit Wiederholungshilfe und zwei vergleichbare Klassenarbeitsvarianten. Die Projektaufträge sind bereits als Textgrundlage geplant. Kontroll-Kiosk und Vertretungshinweise folgen.
 
 Schülerausgaben: A5 hoch, mindestens 14 pt einschließlich Beschriftungen, Graustufen, Lochrand, einfache Du-Form. Längere Texte ins Heft. Keine iPads; Online-Ressourcen für Lehrkräfte. Lernbuddy-Reflexion vor dem Abwischen ins Heft übertragen.
 
@@ -66,3 +66,13 @@ Generator: `python tools/generate_etappe1.py`. Gemeinsame Inhaltsquelle: `materi
 - [Auswertung und Einsatz](materialien/etappe2/Lehrkraft_Auswertung_A4.pdf)
 
 Generator: `python tools/generate_etappe2.py`. Gemeinsame Inhaltsquelle: `materialien/etappe2/inhalt.json`. PDF-Prüfung und Inhaltsabgleich abgeschlossen; Navigation technisch geprüft, visuelle Browserprüfung noch offen.
+
+## Etappe 3 verfügbar
+
+- [Schülerpaket A5, 9 Seiten](materialien/etappe3/Etappe3_Schuelerpaket_A5.pdf)
+- [Identischer Input für Lehrkräfte](materialien/etappe3/Input_Etappe3.html)
+- [Probearbeit Waschbär](materialien/etappe3/Probearbeit_Waschbaer_A5.pdf) und [Feedback](materialien/etappe3/Feedback_Probearbeit_A5.pdf)
+- [Alle Einzeldateien, Hilfen, Fördermodule und erneuten Belege](materialien/etappe3/README.md)
+- [Lehrkraft-Auswertung mit Ankerbeispielen](materialien/etappe3/Lehrkraft_Auswertung_A4.pdf)
+
+Generator: `python tools/generate_etappe3.py`. Inhalt und PDF-Ausgaben geprüft; HTML-Navigation technisch geprüft. Visuelle Browserprüfung und Unterrichtserprobung stehen aus. Für die Probearbeit sind 45 Minuten Arbeitsannahme; konkrete Dauer und Hilfen vor Durchführung ankündigen.

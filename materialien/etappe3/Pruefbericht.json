@@ -1,0 +1,106 @@
+{
+  "files": [
+    {
+      "path": "materialien/etappe3/Merkblatt_3_A5.pdf",
+      "pages": 4,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 48713,
+      "sha256": "55cf8026c59f1353fe8a1cba2fc58113609b6e5c456c235ccbfe8abd2f0d5298"
+    },
+    {
+      "path": "materialien/etappe3/Pflichtblaetter_7-9_A5.pdf",
+      "pages": 3,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 47343,
+      "sha256": "ca31373d510a6269c9c2bf8692d615cb780af21874d48bc0827e8e78cff937af"
+    },
+    {
+      "path": "materialien/etappe3/Tipps_7-9_A5.pdf",
+      "pages": 3,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 47128,
+      "sha256": "d99c5a3e6266f2053c614c9b2fb00673087a145ca401444dbcd1030c1202f66b"
+    },
+    {
+      "path": "materialien/etappe3/Loesungen_7-9_A5.pdf",
+      "pages": 4,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 48521,
+      "sha256": "af310baf2b420e3fe296bd74b03f1470e38a16fae9799e8beeb41692d36313a8"
+    },
+    {
+      "path": "materialien/etappe3/Checkliste_K1-K6_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 45908,
+      "sha256": "0f3314a184d7cb92e313fe053ff9560228cc9c4d6d4a3faaff3117429b3f9d65"
+    },
+    {
+      "path": "materialien/etappe3/Uebungstexte_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 46004,
+      "sha256": "ad0ab08a79c7aea66f798a99f805bc17c3fde51a454ac980bc8f0d06c0acc5a5"
+    },
+    {
+      "path": "materialien/etappe3/Probearbeit_Waschbaer_A5.pdf",
+      "pages": 3,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 456117,
+      "sha256": "c41db102b337a405ae2c49d80ce0046a8cec131577efd670538873ba40cc8648"
+    },
+    {
+      "path": "materialien/etappe3/Feedback_Probearbeit_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 45599,
+      "sha256": "3e9a5ae31a5e9d69f4fb4c4ea63a7cf95a7e8ddf6191c69855c44f9fc17b1b19"
+    },
+    {
+      "path": "materialien/etappe3/Erneute_Belege_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 45785,
+      "sha256": "90f598637502a2c664e72bd3793810c5d4f7ee3046b608c2a41997f988aadcf9"
+    },
+    {
+      "path": "materialien/etappe3/Foerdermodule_A5.pdf",
+      "pages": 3,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 47174,
+      "sha256": "3bf9abb6991cd22f6d29a5ebf62c4ff5d209ae5dabc8efe4990a8df7632f3576"
+    },
+    {
+      "path": "materialien/etappe3/Lehrkraft_Auswertung_A4.pdf",
+      "pages": 7,
+      "student": false,
+      "minimumFontPt": 14.0,
+      "bytes": 58412,
+      "sha256": "6c65e5f0cd4286efa5134a07b46d050698f3f6018138499c7e1002cfa57def18"
+    },
+    {
+      "path": "materialien/etappe3/Etappe3_Schuelerpaket_A5.pdf",
+      "pages": 9,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 138808,
+      "sha256": "0f95cfa5417ce624594e96d5b8f874a6cbd860b68d7f78e678ef69c70cf85367"
+    }
+  ],
+  "inputMemoContentParity": true,
+  "sourceSha256": "99c256c471f19adf0a3c19b7b3c0486483b2bbd1df8598c807dafe544385f2ac",
+  "visualReview": "35 eigenständige Seiten mit pdftoppm gerendert und visuell geprüft. Grundpaket enthält dieselben neun Merkblatt-/Aufgaben-/Checklistenseiten.",
+  "htmlNavigation": "12 Abschnitte, Grenzen, Auswahl, Vor/Zurück und Pfeiltasten technisch mit Node geprüft",
+  "browserVisualReview": "offen: keine Browserlaufzeit verfügbar",
+  "linkCheck": "97 Verweise gegen Repository und neue Dateien geprüft"
+}

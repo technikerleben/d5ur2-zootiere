@@ -1,6 +1,6 @@
 # Materialmatrix · Schritt 1
 
-Stand: 30.09.2026. **Schritt 1 abgeschlossen: Inhalte, Umfang und Kompetenzabdeckung sind als Produktionsgrundlage festgelegt.** Bearbeitungszeiten sind ungetestete Planungswerte, keine Zeitgrenzen für Kinder. Schülerausgaben für Etappen 1 und 2 sind erstellt; Etappe 3 folgt.
+Stand: 30.09.2026. **Schritt 1 abgeschlossen: Inhalte, Umfang und Kompetenzabdeckung sind als Produktionsgrundlage festgelegt.** Bearbeitungszeiten sind ungetestete Planungswerte, keine Zeitgrenzen für Kinder. Schülerausgaben für alle drei Etappen einschließlich Probearbeit und Feedback sind erstellt.
 
 Verbindlich bleiben [SRL-Standard](SRL_Standard.md), [Etappenindikatoren](Etappen_Gelingensnachweise.md) und [Projektangebote](Projekte_und_Terminwahl.md). Diese Matrix konkretisiert den Umfang; sie ersetzt weder individuelle Förderziele noch die spätere Prüfung der druckfertigen Materialien.
 
@@ -88,7 +88,7 @@ Förderstandard ist kein pauschales Zusatzpaket für alle. Vor Einsatz eine pass
 | LEK A/B | Zwei gleichwertige getrennte Aufgaben-/Materialvarianten, gemeinsamer Erwartungshorizont, Terminwahl | Früher/später Termin; jedes Kind schreibt einmal | Je 45 Min. als vorläufiger Platzhalter im Zeitmodell |
 | LW/KR | Kompakter Papierlernweg mit Etappen, Pflicht/Vertiefung, Nachweisen und zwei Terminen; Schüler-Kompetenzübersicht | Keine zweite Lernbuddy-Vorlage | Kurze Orientierung im Reihenstart |
 
-**Offene Festlegung:** Die 45 Minuten für Probe- und Klassenarbeit sind ausschließlich Arbeitsannahmen für Schritt 1. Dauer, Hilfen, konkrete Kalenderdaten und zweite Prüfungsvariante müssen vor Herstellung der Prüfungen festgelegt werden. Die 80-%-Freigabe ist kein Klassenarbeits-Notenschlüssel.
+**Arbeitsfassung Probearbeit erstellt:** 45 Minuten bleiben Planungswert. Material, neutrale Checkliste und individuell vereinbarte Hilfen sind vorgesehen; konkrete Dauer und Hilfen vor Durchführung ankündigen. Kein Kiosk und keine Partnerhilfe. Für die Klassenarbeit bleiben Dauer, Hilfen, konkrete Kalenderdaten und zweite Prüfungsvariante festzulegen. Die 80-%-Freigabe ist kein Klassenarbeits-Notenschlüssel.
 
 ## 7. Kapazitätsprüfung: achtmal 90 Minuten
 
@@ -119,6 +119,6 @@ Probearbeiten aus DS5 bis DS6 außerhalb der Unterrichtszeit sichten. Texte aus 
 
 ## 9. Produktionsauftrag für den nächsten Schritt
 
-**Etappe 1 hergestellt:** gemeinsame Inhaltsquelle I1/M1, Papiermerkblatt (vier A5-Seiten), Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, Fördermodule und GN1 samt 4/5-Auswertung liegen unter [Etappe 1](../materialien/etappe1/README.md) vor. **Etappe 2 ebenfalls hergestellt:** [Input/Merkblatt, Blätter 5–6, Tipps/Lösungen, Fördermodule und GN2 A/B](../materialien/etappe2/README.md). Als Nächstes Etappe 3 mit Probearbeit. Die Schritte 2–4 des Workflows werden damit etappenweise verzahnt.
+**Etappe 1 hergestellt:** gemeinsame Inhaltsquelle I1/M1, Papiermerkblatt (vier A5-Seiten), Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, Fördermodule und GN1 samt 4/5-Auswertung liegen unter [Etappe 1](../materialien/etappe1/README.md) vor. **Etappe 2 ebenfalls hergestellt:** [Input/Merkblatt, Blätter 5–6, Tipps/Lösungen, Fördermodule und GN2 A/B](../materialien/etappe2/README.md). **Etappe 3 hergestellt:** [Input/Merkblatt, Blätter 7-9, Checkliste, Tipps/Lösungen, Probearbeit mit Feedback und erneuten Belegen](../materialien/etappe3/README.md). Als Nächstes Papier-Lernweg, Schüler-Kompetenzübersicht und Projektangebote mit Wiederholungshilfe. Die Schritte 2–4 des Workflows werden damit etappenweise verzahnt.
 
 Vor Freigabe prüfen: gleicher Inhalt in Input/Merkblatt; alle fünf Indikatoren im Pflichtkern geübt; keine identischen Nachweislösungen vorab als Übung ausgeben; lesbare A5-Ausgaben; Blatt-/Lösungsnummern und Links passend; Materialaufwand und Bearbeitungszeit nach Sichtung realistisch. Aktuelle PDF-Vorfassungen bleiben bis zur geprüften Neuausgabe als solche gekennzeichnet.

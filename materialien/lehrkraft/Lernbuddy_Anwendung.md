@@ -1,3 +1,7 @@
+# Aktueller Stand: Etappenmaterialien 1-3
+
+Die konkreten Fachaufträge und Nachweise stehen in den neuen Etappenpaketen. GN1/GN2: vier von fünf Zielen. Probearbeit ist Abschluss der dritten Etappe; nach Feedback gezielt üben und offene Ziele erneut belegen. Zwei Klassenarbeitstermine DS7/DS8. [Etappe 3: Einsatz und Auswertung](../etappe3/README.md).
+
 # Lernweg und Lernbuddy anwenden
 
 ## Verbindliche Ergänzung vom 30.09.2026
@@ -73,7 +77,7 @@ In Woche 1 engere Zielauswahl und kurze Erinnerungen, in Woche 2 mehr selbststä
 1. Nach Blatt 3/4: eine Bildinformation und eine Textinformation zeigen. Bei Unsicherheit passende Teilaufgabe erneut bearbeiten; bei Sicherheit weitergehen.
 2. Nach Blatt 9: vollständigen Übungstext anhand der späteren Kindercheckliste prüfen und eine gelungene Stelle zeigen. Nur Nötiges überarbeiten.
 3. Nach der unbenoteten Probearbeit: einen vorrangigen Lernbedarf mit Lehrkraft vereinbaren. Blatt 10 führt zurück zu passenden Übungen, nicht zu einem neuen Pflichtstapel.
-4. Lernerfolgskontrolle: ein gemeinsamer Termin ist bislang geplant. Nicht alle Karten, Vertiefungen oder Projekte müssen erledigt sein. Die Lehrkraft klärt Prüfungsdauer und Hilfen vorab.
+4. Lernerfolgskontrolle: zwei Wahltermine in Doppelstunde 7 und 8; jedes Kind schreibt einmal. Pflichtkern der Etappen bearbeiten, Vertiefungen und Projekte bleiben freiwillig. Nach frühem Termin Projektarbeit. Prüfungsdauer und Hilfen vorab klären.
 
 ## Beobachten ohne zusätzliche Bewertung
 Pro Doppelstunde beispielsweise vier bis sechs wechselnde Kinder fokussieren. Kürzel auf dem Bogen verwenden. Z/W/B/N sind Beobachtungsbereiche, S/I/U beschreiben den aktuell beobachteten Unterstützungsbedarf, keine festen Leistungsgruppen. „Nicht beobachtet“ ist kein Defizit. Nur tatsächlich wahrgenommene Handlungen notieren; kein erzwungenes Durchbeobachten aller Bereiche.
@@ -87,5 +91,6 @@ Diese Anwendungshilfe gilt für Lernzeiten. Die konkrete Lernbuddy-Nutzung und w
 
 ## Technik und weiterer Stand
 PDF-Erzeugung: `python tools/generate_a5.py` (ReportLab und DejaVu-Schriften). Die editierbare Quelle liegt im Generator. Ausgaben und Quelltext gemeinsam aktualisieren und die Druckansicht prüfen. Der Nutzer übernimmt das Vercel-Deployment. Das vorhandene Lehrkraft-Cockpit verlinkt die aktuellen A5-PDFs; die Deployment-Konfiguration bleibt unverändert.
+
 
 

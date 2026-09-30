@@ -48,7 +48,7 @@ Vier von fünf → Etappe 3. Offene Ziele: gezielte Teilaufgabe aus Blatt 5/6 un
 - Pflicht: Blätter 7–9; mindestens ein vollständiger Übungstext zu Erdmännchen oder Rotem Panda.
 - Freiwillige Vertiefungen: zwei sinnvolle Gliederungen vergleichen (7), Satzanfänge/Bezüge gezielt verbessern (8), eine gelungene Überarbeitung begründen (9).
 - Das bisherige „GN3“-Textgespräch wird **Übungsfeedback**, kein weiterer verpflichtender Etappenabschluss.
-- **Abschluss: Probearbeit** mit neuem Tier, anschließend Feedback. Sie ist der dritte Gelingensnachweis und prüft die Gesamtanwendung. Dauer im vorgesehenen Arbeitsfenster vor Materialproduktion festlegen; kein zusätzlicher kurzer GN3 davor.
+- **Abschluss: Probearbeit** mit neuem Tier, anschließend Feedback. Sie ist der dritte Gelingensnachweis und prüft die Gesamtanwendung. Arbeitsfassung mit 45 Minuten als Planungswert erstellt; konkrete Dauer und Hilfen vor Durchführung ankündigen. Kein zusätzlicher kurzer GN3 davor.
 
 | Indikator | Erreicht, wenn … |
 |---|---|
@@ -58,7 +58,7 @@ Vier von fünf → Etappe 3. Offene Ziele: gezielte Teilaufgabe aus Blatt 5/6 un
 | E3.4 Sprache (K4/K5) | ein zusammenhängender, überwiegend sachlicher Text im Präsens aus überwiegend vollständigen, verständlichen Sätzen vorliegt |
 | E3.5 Prüfung (K6) | eine Prüfung von Satzanfängen, Nomen und Satzschlüssen am Produkt belegt ist und geübte Schreibungen überwiegend richtig sind |
 
-Vier von fünf schließen die letzte Etappe ab. Für E3.4/E3.5 konkrete Ankerbeispiele im noch zu erstellenden Erwartungshorizont ausarbeiten; keine automatische Wortzahl- oder Fehlerquotengrenze. Feedback benennt auch das verbleibende offene Ziel. Unter 80 % gezielte Wiederholung und erneuter Teilnachweis vor dem passenden Prüfungstermin.
+Vier von fünf schließen die letzte Etappe ab. Der [Erwartungshorizont](../materialien/etappe3/Lehrkraft_Auswertung_A4.pdf) enthält konkrete Ankerbeispiele für E3.4/E3.5; keine automatische Wortzahl- oder Fehlerquotengrenze. [Probearbeit, Feedback und erneute Belege](../materialien/etappe3/README.md) sind erstellt. Feedback benennt auch das verbleibende offene Ziel. Unter 80 % gezielte Wiederholung und erneuter Teilnachweis vor dem passenden Prüfungstermin.
 
 ## Individuelle Förderziele und Dokumentation
 

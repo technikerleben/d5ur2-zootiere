@@ -44,7 +44,7 @@ Alle Schülerausgaben: A5 hoch, mindestens 14 pt, Graustufen, Lochrand, einfache
 
 ## Materialstatus und Produktionsreihenfolge
 
-Die neue Struktur ist verbindlich geplant. Die vorhandenen PDFs werden nicht stillschweigend als angepasst ausgegeben. Fachliche Tierpakete und K1–K6 können weiterverwendet werden. Aufgaben, Merkblätter, Inputs, Lernweg und Nachweisauswertungen benötigen Überarbeitung.
+Die neue Struktur ist verbindlich geplant. Die vorhandenen PDFs werden nicht stillschweigend als angepasst ausgegeben. Fachliche Tierpakete und K1–K6 können weiterverwendet werden. Aktuelle Etappenausgaben liegen separat vor; alte Gesamtpakete bleiben Vorfassungen. Lernweg und Anschlussmaterialien benötigen noch Überarbeitung.
 
 1. Gemeinsame Inhaltsquelle für drei Input-/Merkblatt-Paare; Pflichtblätter 1–9 mit freiwilligen Vertiefungen sowie Lernweg neu ausgeben.
 2. GN1/GN2 mit fünf ausgewiesenen Indikatoren und 4/5-Freigabe samt Wiederholungsvarianten überarbeiten. Das bisherige GN3-Gespräch nur als Übungsfeedback nutzen.
@@ -54,4 +54,4 @@ Die neue Struktur ist verbindlich geplant. Die vorhandenen PDFs werden nicht sti
 
 ## Produktionsfortschritt
 
-Etappe 1 ist seit 30.09.2026 nach diesem Standard erstellt und als [separates Paket](../materialien/etappe1/README.md) verfügbar: identischer Input/Merkblatt-Inhalt, Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, GN1 A/B mit 4/5-Auswertung und auswählbare Fördermodule. Die alten Gesamtpakete bleiben Vorfassungen. Etappe 2 ist ebenfalls [als geprüftes Materialpaket](../materialien/etappe2/README.md) verfügbar: Input/Merkblatt, Pflichtblätter 5–6 mit Vertiefungen, Tipps/Lösungen, GN2 A/B mit 4/5-Auswertung und Fördermodule. Etappe 3 mit Probearbeit und weitere Materialien folgen.
+Etappe 1 ist seit 30.09.2026 nach diesem Standard erstellt und als [separates Paket](../materialien/etappe1/README.md) verfügbar: identischer Input/Merkblatt-Inhalt, Pflichtblätter 1–4 mit Vertiefungen, Tipps/Lösungen, GN1 A/B mit 4/5-Auswertung und auswählbare Fördermodule. Die alten Gesamtpakete bleiben Vorfassungen. Etappe 2 ist ebenfalls [als geprüftes Materialpaket](../materialien/etappe2/README.md) verfügbar: Input/Merkblatt, Pflichtblätter 5–6 mit Vertiefungen, Tipps/Lösungen, GN2 A/B mit 4/5-Auswertung und Fördermodule. Etappe 3 ist ebenfalls [erstellt und PDF-geprüft](../materialien/etappe3/README.md): Input/Merkblatt, Pflichtblätter 7-9, Hilfen, Checkliste, Probearbeit, Feedback, erneute Belege und Fördermodule. Projekt-PDFs, Papierlernweg/Schüler-Raster, Klassenarbeiten und Kiosk folgen.
