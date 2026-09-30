@@ -16,6 +16,12 @@ Der Standard ersetzt die frühere freie Übungsauswahl, den Verzicht auf eine Pr
 
 Bei unter 80 % gezielt nacharbeiten und erneut nachweisen. Förderziele vorab individuell festlegen. Das bisherige GN3-Gespräch wird als Übungsfeedback genutzt. Nach der Probearbeit stehen drei Projekte, Wiederholungen und nachgeholte Vertiefungen zur Wahl. Früher Klassenarbeitstermin in Doppelstunde 7, später in Doppelstunde 8; konkrete Daten, Dauer und Hilfen noch festzulegen. Früh geprüfte Kinder arbeiten anschließend an Projekten.
 
+## Schritt 1 abgeschlossen · Materialmatrix
+
+[Materialmatrix](planung/Materialmatrix.md) mit Input-/Merkblatt-Inhalten, neun Pflichtblättern, freiwilligen Vertiefungen, Hilfen und vollständiger Zuordnung der 15 Etappenindikatoren. Pflichtumfang: rund 200 Minuten als ungetesteter Planungswert. Acht Zeitfenster zu je 90 Minuten sichern Platz für Nachweise, Rückmeldung, Wahlzeit und zwei Klassenarbeitstermine. Die dort angesetzten 45 Prüfungsminuten sind noch keine endgültige Festlegung.
+
+Nächster Produktionsauftrag: Etappe 1 vollständig herstellen – gemeinsamer Input-/Merkblatt-Inhalt, Pflichtblätter 1–4 mit Vertiefungen, Hilfen/Lösungen und GN1 mit 4/5-Freigabe. Neue Schüler-PDFs sind noch nicht erstellt.
+
 ## Planung und Cockpit
 
 - [Lehrkraft-Cockpit](index.html)

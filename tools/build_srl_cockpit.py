@@ -25,15 +25,15 @@ def md(s):
  if lst:out.append('</ul>')
  if table:out.append('</table></div>')
  return ''.join(out)
-for name in ['SRL_Standard','Etappen_Gelingensnachweise','Reihenplanung_8_Doppelstunden','Projekte_und_Terminwahl']:
+for name in ['SRL_Standard','Etappen_Gelingensnachweise','Reihenplanung_8_Doppelstunden','Projekte_und_Terminwahl','Materialmatrix']:
  body='<header><a href="../index.html">Zum Lehrkraft-Cockpit</a></header><main>'+md((r/'planung'/f'{name}.md').read_text())+'</main>'
  # Link to HTML companions for the four planning documents.
- for target in ['SRL_Standard','Etappen_Gelingensnachweise','Reihenplanung_8_Doppelstunden','Projekte_und_Terminwahl']:body=body.replace(target+'.md',target+'.html')
+ for target in ['SRL_Standard','Etappen_Gelingensnachweise','Reihenplanung_8_Doppelstunden','Projekte_und_Terminwahl','Materialmatrix']:body=body.replace(target+'.md',target+'.html')
  (r/'planung'/f'{name}.html').write_text(page('Zootiere · '+name.replace('_',' '),body))
 (r/'materialien/lehrkraft/Etappen_Gelingensnachweise.html').write_text(page('Zootiere · aktuelle Etappen','<main><h1>Aktuelle Etappenplanung</h1><p>Stand 30.09.2026: Pflichtübungen mit freiwilligen Vertiefungen, Wechsel ab 80 %, Abschluss der letzten Etappe durch Probearbeit und zwei Klassenarbeitstermine.</p><p><a href="../../planung/Etappen_Gelingensnachweise.html">Etappen, Indikatoren und Nachweise lesen</a></p><p><a href="../../index.html">Zum Cockpit</a></p></main>'))
-body='''<header><p>OTTERKLASSE 5.3 · DEUTSCH · FÜR LEHRKRÄFTE</p><h1>Zootiere: Lernen in Etappen</h1><p>Stand: 30. September 2026 · vier Wochen · acht Doppelstunden · Fischotter als Beispieltier</p><nav><a href="#etappen">Etappen</a><a href="#termine">Projekte und Termine</a><a href="#material">Materialstatus</a><a href="#planung">Planung</a></nav></header><main>
+body='''<header><p>OTTERKLASSE 5.3 · DEUTSCH · FÜR LEHRKRÄFTE</p><h1>Zootiere: Lernen in Etappen</h1><p>Stand: 30. September 2026 · vier Wochen · acht Doppelstunden · Fischotter als Beispieltier</p><nav><a href="#materialmatrix">Materialmatrix</a><a href="#etappen">Etappen</a><a href="#termine">Projekte und Termine</a><a href="#material">Materialstatus</a><a href="#planung">Planung</a></nav></header><main>
 <p class="status"><strong>Neuer SRL-Standard verbindlich geplant.</strong> Die fachlichen Grundlagen sind vorhanden. Angepasste Schülerausgaben, Probearbeit, Projekt-PDFs und zwei Klassenarbeitsvarianten sind noch herzustellen. Alte Downloads sind ausdrücklich als Vorfassungen gekennzeichnet.</p>
-<section id="etappen"><h2>Dein Tempo – klare Etappen</h2><p>Je Etappe: <strong>Startinput + identisches Merkblatt → Pflichtübungen mit freiwilligen Vertiefungen → Gelingensnachweis.</strong> Die letzte Etappe endet mit der Probearbeit.</p><div class="grid">
+<section id="materialmatrix"><h2>Schritt 1 abgeschlossen · Materialmatrix</h2><p>Pflichtumfang, integrierte Vertiefungen und Kompetenzbezug sind festgelegt. Neun Pflichtblätter: rund 200 Minuten als ungetesteter Planungswert. Alle 15 Etappenindikatoren werden vorher erklärt und verbindlich geübt.</p><p><a href="planung/Materialmatrix.html">Materialmatrix und 720-Minuten-Zeitprüfung lesen</a> · <a href="planung/Materialmatrix.md">Quelldokument</a></p><p>Schülerausgaben noch herzustellen. 45 Minuten für Probe-/Klassenarbeit dienen vorläufig der Kapazitätsprüfung; endgültige Dauer und Hilfen stehen noch aus. Nächster Produktionsschritt: Etappe 1 mit Input/Merkblatt, Pflichtblättern 1–4, Hilfen und GN1.</p></section><section id="etappen"><h2>Dein Tempo – klare Etappen</h2><p>Je Etappe: <strong>Startinput + identisches Merkblatt → Pflichtübungen mit freiwilligen Vertiefungen → Gelingensnachweis.</strong> Die letzte Etappe endet mit der Probearbeit.</p><div class="grid">
 <article class="card"><h3>1 · Informationen</h3><p>Bild und Text auswerten, Merkmale und Sachinformationen ordnen.</p><p><strong>Pflicht:</strong> Blätter 1–4<br><strong>Abschluss:</strong> GN1 Tierdetektiv</p></article>
 <article class="card"><h3>2 · Sachliche Sprache</h3><p>Genaue Wörter und vollständige Sätze im Präsens nutzen.</p><p><strong>Pflicht:</strong> Blätter 5–6<br><strong>Abschluss:</strong> GN2 Genaue Sätze</p></article>
 <article class="card"><h3>3 · Schreiben und Prüfen</h3><p>Eine Beschreibung planen, schreiben und überarbeiten.</p><p><strong>Pflicht:</strong> Blätter 7–9<br><strong>Abschluss:</strong> Probearbeit mit Feedback</p></article></div>
@@ -48,7 +48,7 @@ for label,href in [('Aufgaben 1–10','materialien/schritt4/Aufgaben_1-10_A5.pdf
 body+='</ul></details><details id="nachweise"><summary>Vorfassungen: Nachweiskarten und Gesprächsleitfaden</summary><p>Karten als Grundlage vorhanden. Die alte Auswertung ohne 80-%-Schwelle ist überholt. Das alte GN3-Gespräch ist nur Übungsfeedback, nicht der Abschluss von Etappe 3.</p><ul>'
 for label,fn in [('GN1/GN2 A/B','GN1_GN2_Schuelerkarten_A5.pdf'),('Alte Erwartungshorizonte – zu ersetzen','GN1_GN2_Erwartungshorizonte_Lehrkraft_A4.pdf'),('Übungsfeedback – bisher als GN3 bezeichnet','GN3_Gespraechsleitfaden_Lehrkraft_A4.pdf')]:body+=f'<li><a href="materialien/gelingensnachweise/{fn}">{label}</a></li>'
 body+='</ul></details></section><section id="planung"><h2>Verbindliche Planung</h2><ul>'
-for label,fn in [('SRL-Standard','SRL_Standard'),('Etappen und Gelingensnachweise','Etappen_Gelingensnachweise'),('Acht Doppelstunden','Reihenplanung_8_Doppelstunden'),('Projekte und Terminwahl','Projekte_und_Terminwahl')]:body+=f'<li><a href="planung/{fn}.html">{label}</a> · <a href="planung/{fn}.md">Quelldokument</a></li>'
+for label,fn in [('Materialmatrix · Schritt 1','Materialmatrix'),('SRL-Standard','SRL_Standard'),('Etappen und Gelingensnachweise','Etappen_Gelingensnachweise'),('Acht Doppelstunden','Reihenplanung_8_Doppelstunden'),('Projekte und Terminwahl','Projekte_und_Terminwahl')]:body+=f'<li><a href="planung/{fn}.html">{label}</a> · <a href="planung/{fn}.md">Quelldokument</a></li>'
 body+='''</ul><p><a href="planung/Projektgrundlage.md">Projektgrundlage</a> · <a href="skill.md">Produktionsregeln</a></p></section><section id="ausblick"><h2>Nächste Produktion</h2><ol><li>Input-/Merkblatt-Paare, Pflichtblätter mit Vertiefungen und Lernweg aktualisieren.</li><li>80-%-Nachweise und individuelle Förderfassungen ausarbeiten.</li><li>Probearbeit, Feedback und Projekt-PDFs erstellen.</li><li>Zwei Klassenarbeitsvarianten, Terminwahl und Kontroll-Kiosk herstellen.</li></ol><p>Alle Schülerarbeitsblätter bleiben A5 mit mindestens 14 pt. Online-Angebote dienen Lehrkräften; Lernende arbeiten auf Papier und im Heft. Der geplante Kontroll-Kiosk am Raum-Laptop ist die einzige digitale Schüleranwendung.</p></section></main><footer>Deutsch 5.3 · Zootiere · Planung und Produktionsstand getrennt dargestellt.</footer>'''
 (r/'index.html').write_text(page('Zootiere · SRL-Etappen und Material-Cockpit',body))
 (r/'README.md').write_text('''# Deutsch 5 · Zootiere
@@ -68,6 +68,12 @@ Der Standard ersetzt die frühere freie Übungsauswahl, den Verzicht auf eine Pr
 | 3 Eine Tierbeschreibung schreiben und prüfen | Blätter 7–9 mit freiwilligen Vertiefungen | Probearbeit mit Feedback, mindestens 4/5 Indikatoren |
 
 Bei unter 80 % gezielt nacharbeiten und erneut nachweisen. Förderziele vorab individuell festlegen. Das bisherige GN3-Gespräch wird als Übungsfeedback genutzt. Nach der Probearbeit stehen drei Projekte, Wiederholungen und nachgeholte Vertiefungen zur Wahl. Früher Klassenarbeitstermin in Doppelstunde 7, später in Doppelstunde 8; konkrete Daten, Dauer und Hilfen noch festzulegen. Früh geprüfte Kinder arbeiten anschließend an Projekten.
+
+## Schritt 1 abgeschlossen · Materialmatrix
+
+[Materialmatrix](planung/Materialmatrix.md) mit Input-/Merkblatt-Inhalten, neun Pflichtblättern, freiwilligen Vertiefungen, Hilfen und vollständiger Zuordnung der 15 Etappenindikatoren. Pflichtumfang: rund 200 Minuten als ungetesteter Planungswert. Acht Zeitfenster zu je 90 Minuten sichern Platz für Nachweise, Rückmeldung, Wahlzeit und zwei Klassenarbeitstermine. Die dort angesetzten 45 Prüfungsminuten sind noch keine endgültige Festlegung.
+
+Nächster Produktionsauftrag: Etappe 1 vollständig herstellen – gemeinsamer Input-/Merkblatt-Inhalt, Pflichtblätter 1–4 mit Vertiefungen, Hilfen/Lösungen und GN1 mit 4/5-Freigabe. Neue Schüler-PDFs sind noch nicht erstellt.
 
 ## Planung und Cockpit
 
@@ -96,3 +102,4 @@ Die bisherigen PDF-Generatoren `generate_a5.py`, `generate_schritt4.py` und `gen
 
 Das Cockpit ist statisch und benötigt keinen Build-Schritt auf Vercel. Das Deployment übernimmt der Nutzer. Es werden keine Vercel-Einstellungen verändert.
 ''')
+

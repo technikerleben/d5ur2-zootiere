@@ -44,3 +44,8 @@ Bei anhaltenden Schwierigkeiten spätestens in Doppelstunde 4 Unterstützung und
 ## Materialfreigabe
 
 Die bestehende PDF-Sammlung ist eine Vorfassung der neuen Etappenstruktur. Tierpakete und K1–K6 bleiben fachlich nutzbar. Input-/Merkblatt-Paare, Pflicht-/Vertiefungskennzeichnung, Lernweg, 80-%-Auswertung, Probearbeit, Projekte und zwei Klassenarbeitsvarianten müssen entsprechend neu ausgegeben werden. Im Cockpit Planungsstand und druckfertige Freigabe getrennt zeigen.
+
+
+## Konkretisierung durch Materialmatrix
+
+Schritt 1 der Materialproduktion ist abgeschlossen. Die [Materialmatrix](Materialmatrix.md) legt Pflichtumfang, Vertiefungen, Kompetenzabdeckung und eine vollständige 720-Minuten-Kapazitätsrechnung fest. Neun Pflichtblätter benötigen im Basisansatz rund 200 Minuten. Die dort verwendeten 45 Minuten für Probe-/Klassenarbeit sind Arbeitsannahmen; die endgültige Prüfungsdauer bleibt vor Materialfreigabe festzulegen. Zeitansätze sind keine individuellen Bearbeitungsgrenzen.
