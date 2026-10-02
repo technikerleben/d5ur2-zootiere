@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-30",
-  "status": "Alle drei Etappen einschließlich Probearbeit und Feedback hergestellt und PDF-geprüft; Anschlussmaterialien folgen",
+  "stand": "2026-10-02",
+  "status": "Drei Etappen, Probearbeit/Feedback sowie Lernweg, Schüler-Kompetenzraster und Wahlmaterial hergestellt und PDF-geprüft; zwei Klassenarbeitsvarianten und Kontroll-Kiosk folgen",
   "levels": [
     "Förderstandard – individuelle Ziele",
     "Mindeststandard",
@@ -76,7 +76,7 @@
     "Es gibt keine Mindestwortzahl und keine automatische Umrechnung in Punkte oder Noten. K1 erfasst Sachinformationen, K2 äußere Merkmale, K3 Aufbau, K4 Wortwahl und Sachlichkeit, K5 Satzbau und Zusammenhang, K6 Schreibung und Satzzeichen. Einen Fehler nicht mehrfach abwerten.",
     "Der vorhandene Lernbuddy bleibt der laminierte Tischrahmen mit A5-Aufgabe in der Mitte. Planung, Durchführung und Reflexion werden getrennt von der fachlichen Leistung rückgemeldet. Kein zweites SRL-Formular auf Fachblättern.",
     "Die bisherigen Kategorien „sicher / teilweise / noch zu entwickeln“ sind Rückmeldezustände des älteren Beobachtungsrasters. Sie entsprechen nicht den vier neuen Standards. Insbesondere ist „noch zu entwickeln“ nicht gleichbedeutend mit Förderstandard.",
-    "Diese HTML- und Markdown-Fassungen dienen Lehrkräften. Die Schülerfassung als A5-PDF mit mindestens 14 pt ist noch zu erstellen. Bestehende PDFs wurden durch diese Planungsaktualisierung nicht neu erzeugt."
+    "Diese HTML- und Markdown-Fassungen dienen Lehrkräften. Die Schüler-Kompetenzübersicht und das vollständige Raster mit vier Standards liegen unter materialien/lernweg_wahlphase als geprüfte A5-PDFs mit mindestens 14 pt vor."
   ],
   "stages": [
     {
@@ -179,7 +179,9 @@
     "expectations": "gelingensnachweise/GN1_GN2_Erwartungshorizonte_Lehrkraft_A4.pdf",
     "conversation_3": "gelingensnachweise/GN3_Gespraechsleitfaden_Lehrkraft_A4.pdf",
     "source": "../tools/generate_gelingensnachweise.py",
-    "conversation_3_role": "Übungsfeedback, kein abschließender Gelingensnachweis"
+    "conversation_3_role": "Übungsfeedback, kein abschließender Gelingensnachweis",
+    "lernweg_wahlphase": "lernweg_wahlphase/README.md",
+    "schueler_kompetenzraster": "lernweg_wahlphase/Kompetenzraster_4_Standards_A5.pdf"
   },
   "progression": {
     "thresholdPercent": 80,

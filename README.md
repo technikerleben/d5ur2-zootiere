@@ -20,7 +20,7 @@ Bei unter 80 % gezielt nacharbeiten und erneut nachweisen. Förderziele vorab in
 
 [Materialmatrix](planung/Materialmatrix.md) mit Input-/Merkblatt-Inhalten, neun Pflichtblättern, freiwilligen Vertiefungen, Hilfen und vollständiger Zuordnung der 15 Etappenindikatoren. Pflichtumfang: rund 200 Minuten als ungetesteter Planungswert. Acht Zeitfenster zu je 90 Minuten sichern Platz für Nachweise, Rückmeldung, Wahlzeit und zwei Klassenarbeitstermine. Die dort angesetzten 45 Prüfungsminuten sind noch keine endgültige Festlegung.
 
-Alle drei Etappen einschließlich Probearbeit und Feedback sind hergestellt. Nächster Produktionsauftrag: Papier-Lernweg, Schüler-Kompetenzübersicht und Projektangebote mit Wiederholungshilfe.
+Alle drei Etappen einschließlich Probearbeit und Feedback sind hergestellt. Lernweg, Schüler-Kompetenzraster, Projekte und Wiederholungshilfe sind ebenfalls hergestellt. Nächster Produktionsauftrag: zwei vergleichbare Klassenarbeitsvarianten mit Bewertung und Prüfungsorganisation.
 
 ## Planung und Cockpit
 
@@ -35,9 +35,9 @@ Alle drei Etappen einschließlich Probearbeit und Feedback sind hergestellt. Nä
 
 ## Materialstatus
 
-Planung und Cockpit sind auf den neuen Standard umgestellt. Vorhandene PDFs sind dadurch nicht automatisch neu erstellt. Tierpakete und K1–K6 bleiben fachlich nutzbar. Die alten Gesamtpakete bleiben Vorfassungen. Aktuell sind alle drei Etappen unter materialien/etappe1 bis materialien/etappe3 verfügbar. Lernweg und weitere Anschlussmaterialien folgen noch. Das Cockpit trennt diese Bereiche sichtbar.
+Planung und Cockpit sind auf den neuen Standard umgestellt. Vorhandene PDFs sind dadurch nicht automatisch neu erstellt. Tierpakete und K1–K6 bleiben fachlich nutzbar. Die alten Gesamtpakete bleiben Vorfassungen. Aktuell sind alle drei Etappen unter materialien/etappe1 bis materialien/etappe3 verfügbar. Lernweg, Schüler-Raster und Projektangebote mit Wiederholungshilfe sind ebenfalls verfügbar. Das Cockpit trennt diese Bereiche sichtbar.
 
-Noch herzustellen: neuer Lernweg und Schüler-Raster, Projekt-PDFs mit Wiederholungshilfe und zwei vergleichbare Klassenarbeitsvarianten. Die Projektaufträge sind bereits als Textgrundlage geplant. Kontroll-Kiosk und Vertretungshinweise folgen.
+Noch herzustellen: zwei vergleichbare Klassenarbeitsvarianten. Termine, Dauer, Hilfen und Wahlfrist sind vor Durchführung festzulegen. Kontroll-Kiosk und Vertretungshinweise folgen.
 
 Schülerausgaben: A5 hoch, mindestens 14 pt einschließlich Beschriftungen, Graustufen, Lochrand, einfache Du-Form. Längere Texte ins Heft. Keine iPads; Online-Ressourcen für Lehrkräfte. Lernbuddy-Reflexion vor dem Abwischen ins Heft übertragen.
 
@@ -76,3 +76,7 @@ Generator: `python tools/generate_etappe2.py`. Gemeinsame Inhaltsquelle: `materi
 - [Lehrkraft-Auswertung mit Ankerbeispielen](materialien/etappe3/Lehrkraft_Auswertung_A4.pdf)
 
 Generator: `python tools/generate_etappe3.py`. Inhalt und PDF-Ausgaben geprüft; HTML-Navigation technisch geprüft. Visuelle Browserprüfung und Unterrichtserprobung stehen aus. Für die Probearbeit sind 45 Minuten Arbeitsannahme; konkrete Dauer und Hilfen vor Durchführung ankündigen.
+
+## Lernweg und Wahlphase verfügbar
+
+[Alle Downloads, Kompetenzübersichten, drei Projekte und Wiederholungshilfe](materialien/lernweg_wahlphase/README.md). Schülerausgaben A5 mit mindestens 14 pt, technisch und visuell geprüft. Der vollständige Vier-Standards-Raster übernimmt alle 24 Beschreibungen wortgleich aus der Kompetenzquelle. Generator: `python tools/generate_lernweg_wahlphase.py`.

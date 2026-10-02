@@ -21,7 +21,7 @@ Verbindliche Planungsgrundlage, beschlossen am 29.09.2026. Die sechs Kriterien K
 - Es gibt keine Mindestwortzahl und keine automatische Umrechnung in Punkte oder Noten. K1 erfasst Sachinformationen, K2 äußere Merkmale, K3 Aufbau, K4 Wortwahl und Sachlichkeit, K5 Satzbau und Zusammenhang, K6 Schreibung und Satzzeichen. Einen Fehler nicht mehrfach abwerten.
 - Der vorhandene Lernbuddy bleibt der laminierte Tischrahmen mit A5-Aufgabe in der Mitte. Planung, Durchführung und Reflexion werden getrennt von der fachlichen Leistung rückgemeldet. Kein zweites SRL-Formular auf Fachblättern.
 - Die bisherigen Kategorien „sicher / teilweise / noch zu entwickeln“ sind Rückmeldezustände des älteren Beobachtungsrasters. Sie entsprechen nicht den vier neuen Standards. Insbesondere ist „noch zu entwickeln“ nicht gleichbedeutend mit Förderstandard.
-- Diese HTML- und Markdown-Fassungen dienen Lehrkräften. Die Schülerfassung als A5-PDF mit mindestens 14 pt ist noch zu erstellen. Bestehende PDFs wurden durch diese Planungsaktualisierung nicht neu erzeugt.
+- Diese HTML- und Markdown-Fassungen dienen Lehrkräften. Die Schüler-Kompetenzübersicht und das vollständige Raster mit vier Standards liegen unter materialien/lernweg_wahlphase als geprüfte A5-PDFs mit mindestens 14 pt vor.
 
 [Etappen und Gelingensnachweise](Etappen_Gelingensnachweise.md) · [Lehrkraftansicht des Rasters](../materialien/bewertung/Kompetenzraster_4_Standards.html)
 

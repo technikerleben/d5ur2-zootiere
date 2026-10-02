@@ -1,0 +1,92 @@
+{
+  "files": [
+    {
+      "path": "materialien/lernweg_wahlphase/Lernweg_Zootiere_A5.pdf",
+      "pages": 3,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 47201,
+      "sha256": "f68f3890fd54710b188635f96fc369ee80fda073b28ed88a7f86a8039a42b85e"
+    },
+    {
+      "path": "materialien/lernweg_wahlphase/Kompetenzuebersicht_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 46253,
+      "sha256": "953de0f89a20df739e659278dc4a19b32fb4f4443023d4f518076ed0b074b168"
+    },
+    {
+      "path": "materialien/lernweg_wahlphase/Individuelle_Foerderziele_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 45152,
+      "sha256": "5fd4e7691679acd1d4d65c6c1bce688e95bf6fbfae01ce75f2be3f477cb5145c"
+    },
+    {
+      "path": "materialien/lernweg_wahlphase/Projekt_1_Tierlexikon_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 46429,
+      "sha256": "fe3ff55646d3e2e025d1b343dbcfa8a3202a42508409a61f9238fc19fd2da1a3"
+    },
+    {
+      "path": "materialien/lernweg_wahlphase/Projekt_2_Tierraetsel_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 46249,
+      "sha256": "805d5fe02c686e3e617aa4dea53b0ef2b952dc3d41b6f8321495dfc8fc2d7472"
+    },
+    {
+      "path": "materialien/lernweg_wahlphase/Projekt_3_Tiervergleich_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 46233,
+      "sha256": "597727dadbc1c50fb3df11bf533e506e4a243e349c22901d45f6a6ed62140d63"
+    },
+    {
+      "path": "materialien/lernweg_wahlphase/Blatt_10_Wiederholung_A5.pdf",
+      "pages": 2,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 46263,
+      "sha256": "8696141c3c893754cf1b90d2b158f47d1641365ab4d4f89e188776871a23bb10"
+    },
+    {
+      "path": "materialien/lernweg_wahlphase/Kompetenzraster_4_Standards_A5.pdf",
+      "pages": 6,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 50874,
+      "sha256": "4fbfca0c851c093b677e77d84e90cb38c0f2fc6d73da190b414a96abc7f66d76"
+    },
+    {
+      "path": "materialien/lernweg_wahlphase/Lehrkraft_Einsatz_A4.pdf",
+      "pages": 3,
+      "student": false,
+      "minimumFontPt": 14.0,
+      "bytes": 50112,
+      "sha256": "40af427bae76067af9d6fbe8cb77aa12dd074be8924e1a8930994978d39b23f6"
+    },
+    {
+      "path": "materialien/lernweg_wahlphase/Projekte_1-3_A5.pdf",
+      "pages": 6,
+      "student": true,
+      "minimumFontPt": 14.0,
+      "bytes": 135867,
+      "sha256": "438a1419fc85e5adb9722bf10a9ed926cfe24a7817b0a529de1214b37bc466e5"
+    }
+  ],
+  "rubricDescriptorParity": true,
+  "visualReview": {
+    "status": "completed",
+    "date": "2026-10-02",
+    "uniquePages": 24,
+    "method": "Alle eigenständigen Seiten gerendert und visuell geprüft; Sammelpaket enthält identische Projektseiten."
+  },
+  "sourceSha256": "7c1b73efe1b2c2dd9fab946da023e00745cec729be7b69aaa5c92d1b5497c679"
+}

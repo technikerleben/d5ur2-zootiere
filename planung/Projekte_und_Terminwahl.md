@@ -1,6 +1,6 @@
 # Projektangebote und Terminwahl
 
-Stand: 30.09.2026. Inhaltlich geplante Angebote nach dem Feedback zur Probearbeit. Schüleraufträge als A5-PDF mit mindestens 14 pt noch herzustellen. Die folgenden Aufträge sind bereits die Textgrundlage dafür.
+Stand: 02.10.2026. Die drei Projektaufträge und die Wiederholungshilfe sind als geprüfte A5-PDFs mit mindestens 14 pt verfügbar: [Material und Einsatz](../materialien/lernweg_wahlphase/README.md). Die folgenden Aufträge bilden die fachliche Grundlage. Die Projekte dauern als Planungswert jeweils 25–40 Minuten und bilden keine zusätzliche Pflichtetappe oder 80-%-Hürde.
 
 ## Deine Wahl
 
@@ -15,13 +15,13 @@ Du kannst allein oder mit ein bis zwei anderen Kindern arbeiten. Nutzt Fischotte
 1. Wähle ein Übungstier. Nutze deinen bereits geschriebenen Text oder schreibe einen kurzen neuen Text aus dem Material.
 2. Prüfe die Angaben mit K1–K6. Ergänze eine eigene Zeichnung und beschrifte mindestens vier passende Merkmale.
 3. Gestalte eine übersichtliche Lexikonseite. Nenne das verwendete Tierpaket als Quelle.
-4. Zeige, welche Stelle durch dein Prüfen besser geworden ist. Zu zweit: Jede Person übernimmt einen erkennbaren Text- oder Prüfanteil.
+4. Zeige eine Verbesserung oder begründe, warum eine geprüfte Stelle bereits passend ist. Zu zweit: Jede Person übernimmt einen erkennbaren Text- oder Prüfanteil.
 
 **Das Ergebnis gelingt:** Text und Zeichnung passen zum Tier; Informationen sind richtig, Merkmale genau und die Seite ist lesbar. Gestaltung ersetzt nicht die Facharbeit. **Erweiterung:** Verfasse eine kurze Einleitung für das gemeinsame Klassenlexikon.
 
 ## Projekt 2 · Welches Tier ist gemeint?
 
-**Material:** zwei bekannte Tierpakete, Papier/Karteikarten, Stifte. **Arbeitsform:** allein oder zu zweit/dritt.
+**Material:** drei bekannte Tierpakete (Fischotter, Erdmännchen, Roter Panda) als Auswahl für die Rätsellösung, Papier/Karteikarten, Stifte. **Arbeitsform:** allein oder zu zweit/dritt.
 
 1. Wähle ein bekanntes Übungstier. Schreibe eine Rätselkarte mit vier genauen Merkmalen. Verrate den Tiernamen noch nicht.
 2. Schreibe die Lösung auf eine getrennte Karte. Zeige dort zu jedem Hinweis den passenden Beleg im Material.
