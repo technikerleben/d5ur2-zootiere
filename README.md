@@ -80,3 +80,7 @@ Generator: `python tools/generate_etappe3.py`. Inhalt und PDF-Ausgaben geprüft;
 ## Lernweg und Wahlphase verfügbar
 
 [Alle Downloads, Kompetenzübersichten, drei Projekte und Wiederholungshilfe](materialien/lernweg_wahlphase/README.md). Schülerausgaben A5 mit mindestens 14 pt, technisch und visuell geprüft. Der vollständige Vier-Standards-Raster übernimmt alle 24 Beschreibungen wortgleich aus der Kompetenzquelle. Generator: `python tools/generate_lernweg_wahlphase.py`.
+
+## Etappe 1 für Otter- und Dino-Klasse
+
+[Grafische Graustufenfassung mit beiden Maskottchen](materialien/etappe1/grafisch/README.md): Schülerpaket und Arbeitsblätter 1–4, A5 mit mindestens 14 pt, fachlich unverändert.

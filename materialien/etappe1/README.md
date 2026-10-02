@@ -34,3 +34,7 @@ Sachangaben: vorhandenes Fischotterpaket der Reihe; keine neuen Tierdaten ergän
 Bearbeitbare Quelle: `inhalt.json`; Generator: `python tools/generate_etappe1.py`. Benötigt ReportLab, PyMuPDF, Pillow und DejaVu Sans. Input und Merkblatt werden aus derselben Liste erzeugt. Der Generator kontrolliert den fachlichen Inhaltsabgleich, A5-Maße, Mindestschriftgröße und Textgrenzen; der [Prüfbericht](Pruefbericht.json) hält die Ergebnisse fest.
 
 PDF-Seiten mit Poppler gerendert und visuell geprüft. HTML-Inhalt und Navigation technisch geprüft; eine visuelle Browserprüfung war mangels Browser-Laufzeit nicht möglich. Ausgefüllte Lehrkraftprotokolle nicht öffentlich speichern.
+
+## Grafische Fassung für 5.3 und 5.5
+
+[Schülerpaket und Pflichtarbeitsblätter mit Otter und Dino](grafisch/README.md): A5, mindestens 14 pt, Graustufen. Fachlicher Inhalt, Seitenfolge und Fischotterfoto unverändert; technisch und visuell geprüft.

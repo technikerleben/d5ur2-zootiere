@@ -1,0 +1,88 @@
+{
+  "source": "materialien/etappe1/Etappe1_Schuelerpaket_A5.pdf",
+  "sourceSha256": "6b42d4558bee442bf208f32a773bff1e1a23c388b8ba3dc956d92505a78d68d3",
+  "contentChanges": "Nur Fußzeile erweitert um Klasse 5.5. Fachliche Inhalte und Seitenfolge unverändert.",
+  "pages": [
+    {
+      "page": 1,
+      "sourceTextIdentical": true,
+      "minimumFontPt": 14.0,
+      "a5": true,
+      "imagesGrayscale": true
+    },
+    {
+      "page": 2,
+      "sourceTextIdentical": true,
+      "minimumFontPt": 14.0,
+      "a5": true,
+      "imagesGrayscale": true
+    },
+    {
+      "page": 3,
+      "sourceTextIdentical": true,
+      "minimumFontPt": 14.0,
+      "a5": true,
+      "imagesGrayscale": true
+    },
+    {
+      "page": 4,
+      "sourceTextIdentical": true,
+      "minimumFontPt": 14.0,
+      "a5": true,
+      "imagesGrayscale": true
+    },
+    {
+      "page": 5,
+      "sourceTextIdentical": true,
+      "minimumFontPt": 14.0,
+      "a5": true,
+      "imagesGrayscale": true
+    },
+    {
+      "page": 6,
+      "sourceTextIdentical": true,
+      "minimumFontPt": 14.0,
+      "a5": true,
+      "imagesGrayscale": true
+    },
+    {
+      "page": 7,
+      "sourceTextIdentical": true,
+      "minimumFontPt": 14.0,
+      "a5": true,
+      "imagesGrayscale": true
+    },
+    {
+      "page": 8,
+      "sourceTextIdentical": true,
+      "minimumFontPt": 14.0,
+      "a5": true,
+      "imagesGrayscale": true
+    },
+    {
+      "page": 9,
+      "sourceTextIdentical": true,
+      "minimumFontPt": 14.0,
+      "a5": true,
+      "imagesGrayscale": true
+    }
+  ],
+  "visualReview": {
+    "status": "completed",
+    "date": "2026-10-02",
+    "pages": 9,
+    "method": "Alle neun Seiten gerendert und visuell geprüft; nach Anpassung der Innenabstände alle vier Arbeitsblätter erneut geprüft."
+  },
+  "files": [
+    {
+      "path": "materialien/etappe1/grafisch/Etappe1_Schuelerpaket_A5_grafisch_graustufen.pdf",
+      "sha256": "864c02bce613b58800c95eb8cbd054e8e4b4ff12e589871acbb02b558235b744",
+      "bytes": 1314957
+    },
+    {
+      "path": "materialien/etappe1/grafisch/Pflichtblaetter_1-4_A5_grafisch_graustufen.pdf",
+      "sha256": "09e00e7468ada438b690234027b957319a98d5ff57ee8e76ae06c8964cec0126",
+      "bytes": 560559
+    }
+  ]
+}
