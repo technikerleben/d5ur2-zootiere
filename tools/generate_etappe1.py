@@ -15,7 +15,7 @@ manifest=[]
 class Doc:
  def __init__(self,name,a4=False):
   self.path=OUT/name;self.w,self.h=(595.276,841.89) if a4 else (419.528,595.276);self.left=42.52;self.width=self.w-self.left-28.35;self.n=0
-  self.c=canvas.Canvas(str(self.path),pagesize=(self.w,self.h));self.c.setTitle(name.replace('_',' '));self.c.setAuthor('Deutsch 5.3 - Zootiere')
+  self.c=canvas.Canvas(str(self.path),pagesize=(self.w,self.h));self.c.setTitle(name.replace('_',' '));self.c.setAuthor('Deutsch 5.3 und 5.5 - Zootiere')
  def p(self,s,size=14,bold=False,gap=9):
   p=Paragraph(s,ParagraphStyle('p',fontName='Bold' if bold else 'Text',fontSize=size,leading=size*1.28));_,height=p.wrap(self.width,2000)
   assert self.y+height<=self.h-48,(self.path.name,self.n,self.y,height,s)
@@ -24,7 +24,7 @@ class Doc:
   if self.n:self.c.showPage()
   self.n+=1;self.c.setStrokeGray(.2);self.c.setLineWidth(1.2);self.c.line(self.left,self.h-25,self.w-28.35,self.h-25);self.y=35
   self.p(label,14,True,8);self.p(title,21,True,14)
-  self.c.setFont('Text',14);self.c.drawString(self.left,22,'Deutsch 5.3 | Etappe 1');self.c.drawRightString(self.w-28.35,22,str(self.n))
+  self.c.setFont('Text',14);self.c.drawString(self.left,22,'Deutsch 5.3 / 5.5 | Etappe 1');self.c.drawRightString(self.w-28.35,22,str(self.n))
  def block(self,title,s):self.p(title,15,True,4);self.p(s,14,gap=12)
  def photo(self,height=115):
   from PIL import Image
@@ -35,7 +35,7 @@ class Doc:
 def memo():
  d=Doc('Merkblatt_1_A5.pdf')
  for n,item in enumerate(DATA['memo'],1):
-  d.page('Merkblatt 1 | '+str(n)+'/4',item['title'])
+  d.page('Merkblatt 1 | '+str(n)+'/'+str(len(DATA['memo'])),item['title'])
   if item.get('photo'):d.photo(112)
   for title,s in item['blocks']:d.block(title,s)
  d.end()
@@ -71,9 +71,9 @@ def foerder():
 def teacher():
  d=Doc('Lehrkraft_Auswertung_A4.pdf',True);d.page('Lehrkraft | Einsatz','Etappe 1 begleiten')
  for title,s in [
- ('Material ausgeben','Grundpaket: Merkblatt 1 (4 Seiten), Fischotter-Material (1), Pflichtblätter 1–4 (4). Alle Schülerseiten A5 mit mindestens 14 pt. Tipps, Lösungen und Nachweise separat halten. Keine Nachweislösungen im Kontroll-Kiosk.'),
+ ('Material ausgeben','Grundpaket: Merkblatt 1 (5 Seiten), Fischotter-Material (1), Pflichtblätter 1–4 (4). Alle Schülerseiten A5 mit mindestens 14 pt. Tipps, Lösungen und Nachweise separat halten. Keine Nachweislösungen im Kontroll-Kiosk.'),
  ('Input und Merkblatt','Die fachlichen Inhalte werden aus derselben JSON-Quelle erzeugt. Der Input ist eine Lehrkraft-Präsentation. Fachliche Aussagen, Beispiele, Fragen und gesicherte Antworten stimmen mit dem Merkblatt überein; nur Aufteilung und Bedienung unterscheiden sich.'),
- ('Pflicht und freiwillig','Pflichtkern aller vier Blätter bearbeiten. Vertiefungen sind freiwillig; keine Voraussetzung für GN1. Lernbuddy als Tischrahmen nutzen, Reflexion vor dem Abwischen ins Heft. Ein Zyklus darf mehrere Blätter umfassen.'),
+ ('Pflicht und freiwillig','Pflichtkern aller vier Blätter bearbeiten. Vertiefungen sind freiwillig; keine Voraussetzung für GN1. Lernbuddy als Tischrahmen nutzen, Reflexion vor dem Abwischen ins Heft. Ein Zyklus darf mehrere Blätter umfassen. Sprachspur: pro Blatt ein kurzer Pflichtauftrag (2–5 Minuten). Wortarten und Wortzerlegung werden geübt und rückgemeldet, bilden aber keinen sechsten GN-Indikator. Wähle bei Bedarf ein Sprachziel im vorhandenen Lernbuddy.'),
  ('GN1 durchführen','Erstversuch A, nach Übung B oder passende B-Teilaufgabe. Beide Materialseiten zugänglich halten. Antworten im Heft. Rund 5–8 Minuten als Planungswert, kein Abbruch bei langsamem Schreiben. Bei der Abgabe Bild- und Textbeleg kurz zeigen lassen; alternativ die Fundstellen markieren lassen.'),
  ('Hilfen vorher vereinbaren','Auftrag vorlesen, Wörter erklären oder Schreibentlastung nach Vereinbarung. Keine Lösung nennen und keine fertige Zuordnung vorgeben. Hilfen dokumentieren; sie senken den Standard nicht automatisch. Schriftfehler sind bei GN1 kein eigener Indikator.'),
  ('Grenze und Weiterarbeit','Fünf Indikatoren, jeder erreicht = 1. Vier oder fünf = Etappenwechsel. Null bis drei = gezielte Teilübung und erneuter Nachweis. Bereits Gezeigtes anerkennen; Datum und neuen Beleg ergänzen. Eine offene Kompetenz auch bei 4/5 rückmelden. Keine Note aus dem Anteil ableiten.')]:d.block(title,s)
@@ -135,7 +135,7 @@ def validate():
  report={'files':manifest,'inputMemoContentParity':True,'sourceSha256':hashlib.sha256((OUT/'inhalt.json').read_bytes()).hexdigest(),'visualReview':'pending'}
  (OUT/'Pruefbericht.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False))
 if __name__=='__main__':
- memo();material();exercises();gn('A');gn('B');foerder();teacher();input_html()
+ memo();material();exercises();gn('A');gn('B');teacher();input_html()
  combo=fitz.open()
  for f in ['Merkblatt_1_A5.pdf','Fischotter_Material_A5.pdf','Pflichtblaetter_1-4_A5.pdf']:combo.insert_pdf(fitz.open(OUT/f))
  combo.save(OUT/'Etappe1_Schuelerpaket_A5.pdf',garbage=4,deflate=True);manifest.append({'path':'materialien/etappe1/Etappe1_Schuelerpaket_A5.pdf','pages':len(combo),'student':True});validate()

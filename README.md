@@ -51,7 +51,7 @@ Das Cockpit ist statisch und benötigt keinen Build-Schritt auf Vercel. Das Depl
 
 ## Etappe 1 verfügbar
 
-- [Schülerpaket A5, 9 Seiten](materialien/etappe1/Etappe1_Schuelerpaket_A5.pdf)
+- [Schülerpaket A5, 10 Seiten](materialien/etappe1/Etappe1_Schuelerpaket_A5.pdf)
 - [Input für Lehrkräfte](materialien/etappe1/Input_Etappe1.html)
 - [Alle Einzeldateien, Tipps, Lösungen, GN1 A/B und Fördermodule](materialien/etappe1/README.md)
 - [Auswertung und Einsatz](materialien/etappe1/Lehrkraft_Auswertung_A4.pdf)
@@ -69,7 +69,7 @@ Generator: `python tools/generate_etappe2.py`. Gemeinsame Inhaltsquelle: `materi
 
 ## Etappe 3 verfügbar
 
-- [Schülerpaket A5, 9 Seiten](materialien/etappe3/Etappe3_Schuelerpaket_A5.pdf)
+- [Schülerpaket A5, 10 Seiten](materialien/etappe3/Etappe3_Schuelerpaket_A5.pdf)
 - [Identischer Input für Lehrkräfte](materialien/etappe3/Input_Etappe3.html)
 - [Probearbeit Waschbär](materialien/etappe3/Probearbeit_Waschbaer_A5.pdf) und [Feedback](materialien/etappe3/Feedback_Probearbeit_A5.pdf)
 - [Alle Einzeldateien, Hilfen, Fördermodule und erneuten Belege](materialien/etappe3/README.md)
@@ -81,6 +81,10 @@ Generator: `python tools/generate_etappe3.py`. Inhalt und PDF-Ausgaben geprüft;
 
 [Alle Downloads, Kompetenzübersichten, drei Projekte und Wiederholungshilfe](materialien/lernweg_wahlphase/README.md). Schülerausgaben A5 mit mindestens 14 pt, technisch und visuell geprüft. Der vollständige Vier-Standards-Raster übernimmt alle 24 Beschreibungen wortgleich aus der Kompetenzquelle. Generator: `python tools/generate_lernweg_wahlphase.py`.
 
-## Etappe 1 für Otter- und Dino-Klasse
+## Ältere Grafikfassung (ohne Sprachspur)
 
 [Grafische Graustufenfassung mit beiden Maskottchen](materialien/etappe1/grafisch/README.md): Schülerpaket und Arbeitsblätter 1–4, A5 mit mindestens 14 pt, fachlich unverändert.
+
+## Aktueller Stand: Sprachspur Etappe 1
+
+Stand 03.10.2026: [Bildgeneriertes Schülerpaket und GN1 A/B](materialien/etappe1/bildfassung/README.md). Textquellen, identischer Input, Tipps und Lösungen angepasst. Etappen 2/3 und Fördermodule enthalten die neue Sprachspur noch nicht vollständig. Weitere Produktion: Etappe 2 → Etappe 3 → Probearbeit → Lernerfolgskontrolle → Kontroll-Kiosk → zieldifferentes Material. Jedes Druckpaket durchläuft Text-PDF → Bildgenerierung mit Otter und Dino → Prüfung → Bild-PDF.

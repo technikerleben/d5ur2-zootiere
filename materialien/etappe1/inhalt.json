@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-30",
+  "version": "2026-10-03-sprachspur",
   "text": "Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern. Er hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Der Fischotter frisst vor allem Fische, aber auch Frösche und Krebse.",
   "memo": [
     {
@@ -59,6 +59,23 @@
       ]
     },
     {
+      "title": "Sprachdetektiv",
+      "blocks": [
+        [
+          "Vier Wortarten",
+          "<b>Nomen</b> benennen Tiere, Dinge und mehr: Otter, Fell. Du schreibst sie groß.<br/><b>Artikel</b> begleiten Nomen: der Otter, das Fell, die Pfote.<br/><b>Verben</b> sagen, was geschieht oder wie etwas ist: schwimmt, ist.<br/><b>Adjektive</b> beschreiben Merkmale: braun, dicht, lang."
+        ],
+        [
+          "Wörter zerlegen",
+          "der Körper + die Länge = die Körperlänge<br/>Das letzte Nomen bestimmt den Artikel."
+        ],
+        [
+          "Frage und gesicherte Antwort",
+          "„Der Otter schwimmt.“ Welche Wortarten findest du?<br/>Der: Artikel; Otter: Nomen; schwimmt: Verb."
+        ]
+      ]
+    },
+    {
       "title": "Informationen ordnen",
       "blocks": [
         [
@@ -95,6 +112,10 @@
           "1. Schreibe A oder B ins Heft. Welcher Text hilft dir, das Tier vorzustellen? Begründe.<br/>2. Notiere zwei genaue Angaben aus Text B. Erkläre: Warum hilft „toll“ beim Beschreiben wenig?"
         ],
         [
+          "Pflicht | Sprachdetektiv",
+          "Markiere in „Der Fischotter hat einen langen Körper.“ die Nomen mit N und die Artikel mit A."
+        ],
+        [
           "Freiwillige Vertiefung",
           "Ersetze „Der Fischotter hat schöne Beine“ durch eine genaue Angabe aus dem Material. Erkläre den Unterschied."
         ]
@@ -108,6 +129,10 @@
         [
           "Pflicht",
           "1. Betrachte das Foto. Notiere zwei sichtbare Körperteile. Ergänze zu jedem ein genaues Merkmal.<br/>2. Bilde daraus zwei vollständige Sätze.<br/>3. Zeige einem anderen Kind oder der Lehrkraft beide Bildstellen. Prüfe: Passen deine Sätze zum Foto?"
+        ],
+        [
+          "Pflicht | Sprachdetektiv",
+          "Markiere in einem deiner Sätze ein Adjektiv mit Adj. Schreibe das Nomen dazu, das es genauer beschreibt."
         ],
         [
           "Freiwillige Vertiefung",
@@ -126,7 +151,11 @@
       "blocks": [
         [
           "Pflicht",
-          "1. Lies den Text. Notiere:<br/>a) Wo lebt der Fischotter?<br/>b) Was frisst er vor allem?<br/>c) Wie lang sind Kopf und Rumpf? Schreibe die Einheit dazu. Zählt der Schwanz mit?<br/>2. Zeige die drei Textstellen. Schreibe hinter die Antworten: „Text“.<br/>3. Notiere ein sichtbares Merkmal und schreibe „Bild“ dazu. Zeige die Bildstelle. Findest du es auch im Text?"
+          "1. Lies den Text. Notiere:<br/>a) Wo lebt der Fischotter?<br/>b) Was frisst er vor allem?<br/>c) Wie lang sind Kopf und Rumpf? Nenne die Einheit. Zählt der Schwanz mit?<br/>2. Zeige die drei Textstellen. Schreibe „Text“ hinter die Antworten.<br/>3. Notiere ein sichtbares Merkmal mit „Bild“. Zeige die Bildstelle. Steht es auch im Text?"
+        ],
+        [
+          "Pflicht | Sprachdetektiv",
+          "Unterstreiche im Fischottertext zwei Verben. Schreibe V darüber."
         ],
         [
           "Freiwillige Vertiefung",
@@ -141,7 +170,11 @@
       "blocks": [
         [
           "Pflicht",
-          "1. Schreibe diese Überschriften ins Heft:<br/>Überblick · Aussehen · Lebensraum · Nahrung<br/>2. Ordne die acht Stichwörter zu:<br/>Fischotter · kurze Beine · Fische · Flüsse und Seen · Kopf und Rumpf: 60–90 cm · dunkelbraune Oberseite · Frösche und Krebse · geschützte Ufer<br/>3. Ergänze beim Maß den Hinweis zum Schwanz. Ergänze aus dem Text zwei weitere äußere Merkmale. Hast du jetzt vier verschiedene Merkmale?"
+          "1. Schreibe ins Heft: Überblick · Aussehen · Lebensraum · Nahrung.<br/>2. Ordne diese Angaben zu:<br/>Fischotter · kurze Beine · Fische · Flüsse und Seen · Kopf und Rumpf: 60–90 cm · dunkelbraune Oberseite · Frösche und Krebse · geschützte Ufer<br/>3. Ergänze den Hinweis zum Schwanz und zwei weitere äußere Merkmale aus dem Text. Hast du vier verschiedene Merkmale?"
+        ],
+        [
+          "Pflicht | Sprachdetektiv",
+          "Zerlege „Körperlänge“ in zwei Nomen. Schreibe beide mit Artikel auf. Ergänze den Artikel zu „Körperlänge“."
         ],
         [
           "Freiwillige Vertiefung",
@@ -153,44 +186,52 @@
   "tips": [
     [
       "Suche Körperteile und genaue Angaben dazu. Eine Meinung sagt nur, wie jemand das Tier findet.",
-      "Für deine Begründung hilft: „Text … hilft, weil …“"
+      "Für deine Begründung hilft: „Text … hilft, weil …“",
+      "Sprachdetektiv: Suche Wörter für das Tier und einen Körperteil. Artikel können auch „ein“, „eine“ oder „einen“ heißen."
     ],
     [
       "Beginne am Kopf. Was erkennst du an Schnauze und Ohren?",
-      "Verbinde Körperteil und Merkmal. Zeige jede Angabe am Foto."
+      "Verbinde Körperteil und Merkmal. Zeige jede Angabe am Foto.",
+      "Sprachdetektiv: Ein Adjektiv nennt zum Beispiel Farbe, Form oder Größe. Frage: Wie ist das Körperteil?"
     ],
     [
       "Suche die Wörter „lebt“, „frisst“ und „Zentimeter“. Lies den Satz danach mit.",
-      "Das Bild hat keinen Maßstab. Eine genaue Länge kannst du dort nicht ablesen."
+      "Das Bild hat keinen Maßstab. Eine genaue Länge kannst du dort nicht ablesen.",
+      "Sprachdetektiv: Verben sagen, was geschieht oder wie etwas ist. Nutze die Beispiele im Merkblatt."
     ],
     [
       "Unter Überblick passen Tiername und Maß. Nahrung beantwortet: Was frisst das Tier?",
-      "Suche für zwei weitere Merkmale am Körper, Kopf oder an der Schnauze."
+      "Suche für zwei weitere Merkmale am Körper, Kopf oder an der Schnauze.",
+      "Sprachdetektiv: Suche zwei bekannte Nomen im langen Wort. Prüfe den Artikel des letzten Nomens."
     ]
   ],
   "solutions": [
     [
       "Pflicht 1: B. Der Text nennt Körperform, Beinlänge und Fellfarbe. A enthält Meinungen.",
       "Pflicht 2: Zum Beispiel langer Körper und kurze Beine; auch oben dunkelbraunes Fell passt. „Toll“ beschreibt kein äußeres Merkmal.",
-      "Vertiefung: „Der Fischotter hat kurze Beine.“ Das Wort „kurz“ beschreibt die Beine. „Schön“ nennt eine Meinung."
+      "Vertiefung: „Der Fischotter hat kurze Beine.“ Das Wort „kurz“ beschreibt die Beine. „Schön“ nennt eine Meinung.",
+      "Sprachdetektiv: N: Fischotter, Körper. A: Der, einen. „Langen“ ist ein Adjektiv, kein Artikel."
     ],
     [
       "Pflicht: Zum Beispiel kleine Ohren und lange Tasthaare an der Schnauze. Auch braunes Fell ist sichtbar.",
       "Mögliche Sätze: „Die Ohren sind klein.“ „An der Schnauze sitzen lange Tasthaare.“ Zeige die Stellen im Bild.",
-      "Vertiefung: Eine passende Ergänzung nennt zum Beispiel den Ort: „An der Schnauze sitzen lange Tasthaare.“ Nur tatsächlich sichtbare Angaben gelten. Andere belegte Lösungen sind möglich."
+      "Vertiefung: Eine passende Ergänzung nennt zum Beispiel den Ort: „An der Schnauze sitzen lange Tasthaare.“ Nur tatsächlich sichtbare Angaben gelten. Andere belegte Lösungen sind möglich.",
+      "Sprachdetektiv: Zum Beispiel „klein“ zu „Ohren“ oder „lang“ zu „Tasthaare“. Entscheidend ist dein eigener Satz."
     ],
     [
       "a) An Flüssen und Seen mit geschützten Ufern.",
       "b) Vor allem Fische. Auch Frösche und Krebse sind genannt.",
       "c) Kopf und Rumpf sind zusammen etwa 60–90 cm lang. Der Schwanz kommt dazu und wird nicht mitgemessen.",
       "Bildmerkmal: zum Beispiel lange Tasthaare. Diese stehen auch im Text.",
-      "Vertiefung: Nein. Im Foto fehlt ein Maßstab. Der Text nennt eine Spanne von 60–90 cm, nicht das genaue Maß dieses Tieres."
+      "Vertiefung: Nein. Im Foto fehlt ein Maßstab. Der Text nennt eine Spanne von 60–90 cm, nicht das genaue Maß dieses Tieres.",
+      "Sprachdetektiv: Zum Beispiel lebt und frisst. Auch hat, ist, sitzen, sind, kommt passen."
     ],
     [
       "Überblick: Fischotter; Kopf und Rumpf 60–90 cm, Schwanz zusätzlich.",
       "Aussehen: kurze Beine; dunkelbraune Oberseite. Ergänzungen: zum Beispiel lang gestreckter Körper und lange Tasthaare. Auch breiter, flacher Kopf passt.",
       "Lebensraum: Flüsse und Seen; geschützte Ufer. Nahrung: Fische; Frösche und Krebse.",
-      "Vertiefung: Zum Beispiel vom Kopf über den Körper zu den Beinen. Eine andere nachvollziehbare Ordnung ist möglich. Eine Maßangabe darf sinnvoll auch beim Körperbau stehen."
+      "Vertiefung: Zum Beispiel vom Kopf über den Körper zu den Beinen. Eine andere nachvollziehbare Ordnung ist möglich. Eine Maßangabe darf sinnvoll auch beim Körperbau stehen.",
+      "Sprachdetektiv: der Körper + die Länge = die Körperlänge. Das letzte Nomen bestimmt den Artikel."
     ]
   ],
   "foerder": [

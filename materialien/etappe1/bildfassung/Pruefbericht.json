@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-03",
+  "pdfImageEncoding": "JPEG quality 95, original resolution; no cropping or text edits",
+  "visualTextReview": "Alle 14 Bildseiten mit der jeweiligen Textquelle verglichen. Seite 1 wegen eines Kommas statt Punkt neu erzeugt; korrigierte Fassung verwendet.",
+  "minimumFontPt": "14 pt in den Textquellen technisch geprüft; in Bildfassungen nicht technisch zertifizierbar.",
+  "files": [
+    {
+      "name": "Etappe1_Schuelerpaket_A5_Otter_Dino.pdf",
+      "pages": 10,
+      "bytes": 3796328,
+      "images": [
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 1,
+          "generatedFile": "exec-ebdb99c2-a128-4bb4-a84d-3605c12bf36b.png",
+          "sha256": "04784667a26efaee0fcbf7da2f9b9f8852642684feaa687f20160b431a600f69"
+        },
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 2,
+          "generatedFile": "exec-f7e2cbf6-9434-4ac6-954a-753fbb58d052.png",
+          "sha256": "a3edfdfbc78fb63bd7813585c8d5aa44bffee0e8a01458ac1acbb9d81ccb5f0a"
+        },
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 3,
+          "generatedFile": "exec-a34965cd-cd45-4daa-88fc-6aaeee1ee1ed.png",
+          "sha256": "bc62add180d11f2faa7e07cb95030ccb01d7135ec263409620816081bc3d849b"
+        },
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 4,
+          "generatedFile": "exec-975f3ff3-9961-4644-8e75-4f569b944fb5.png",
+          "sha256": "559498eee19643a21254b92474af86e81ce96bb6282583e7ecf55a3bb3b3b6e9"
+        },
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 5,
+          "generatedFile": "exec-ff2174c4-e6c6-4703-9c74-2fdc3649a6aa.png",
+          "sha256": "6a9238b31ca924ca9e66d3899ed9a7a87b4c93cc4d26e742b03fb21137d01991"
+        },
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 6,
+          "generatedFile": "exec-5278d4fe-f1e8-4df2-82c8-9b90a37046ad.png",
+          "sha256": "839835c3a4cfd06dcf25def6bc9123b89ec67961f4d8c8eb64c7d92458b884dd"
+        },
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 7,
+          "generatedFile": "exec-7cf76f84-3860-40ec-ae85-85edf11f6b09.png",
+          "sha256": "616a7a4efcb446c763af03acfb335cf47625266fc7a81ace06b80664ea6d12cb"
+        },
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 8,
+          "generatedFile": "exec-db2de9e9-fc08-4a7f-915f-afeb7ce86e51.png",
+          "sha256": "9578f3bcd769d7c97cb31331ad2cc289053faafd9d1d7e858b1747489452ebea"
+        },
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 9,
+          "generatedFile": "exec-4edbe09a-1777-4d65-adeb-ecda97b64350.png",
+          "sha256": "e5c9b6d879e9639dd5bf8339a1c73b4ddd4521eee608fb07ae9d4d7dbc487139"
+        },
+        {
+          "sourcePdf": "Etappe1_Schuelerpaket_A5.pdf",
+          "sourcePage": 10,
+          "generatedFile": "exec-481b8c7b-303c-497d-85d0-45537c7c6718.png",
+          "sha256": "a93b98d523e62fd247be9e62bb1e0efbce643dbd1fdf83849d3505a008a3c1ce"
+        }
+      ]
+    },
+    {
+      "name": "GN1_A_A5_Otter_Dino.pdf",
+      "pages": 2,
+      "bytes": 771655,
+      "images": [
+        {
+          "sourcePdf": "GN1_A_A5.pdf",
+          "sourcePage": 1,
+          "generatedFile": "exec-05944c25-b6a8-4bf4-aed1-20590f1e72e8.png",
+          "sha256": "809be320a65dd1d569f979d73377ed13dedb68a034619bdad05ad35bceb8776e"
+        },
+        {
+          "sourcePdf": "GN1_A_A5.pdf",
+          "sourcePage": 2,
+          "generatedFile": "exec-a2df6c46-b5a9-4d72-a172-9906f14113c8.png",
+          "sha256": "68d98ec4ef58655540e057957a4ea1dc86ee467d6576df247c5c4f418705638f"
+        }
+      ]
+    },
+    {
+      "name": "GN1_B_A5_Otter_Dino.pdf",
+      "pages": 2,
+      "bytes": 790334,
+      "images": [
+        {
+          "sourcePdf": "GN1_B_A5.pdf",
+          "sourcePage": 1,
+          "generatedFile": "exec-e9ccf367-5c5c-4888-8734-d4981d38b4bb.png",
+          "sha256": "90e4376a6c830c0d5779e3c0d75fc7237dbd99f7c93c766901fd68ea7bb9ce8d"
+        },
+        {
+          "sourcePdf": "GN1_B_A5.pdf",
+          "sourcePage": 2,
+          "generatedFile": "exec-37811a76-e33a-4b40-b78f-4b83f67e6b62.png",
+          "sha256": "3d0a0044bcd239762c0ead89b13b49a646f0c51d2d3ea322641a26c299a57ddb"
+        }
+      ]
+    }
+  ]
+}

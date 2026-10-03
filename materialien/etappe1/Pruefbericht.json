@@ -2,77 +2,70 @@
   "files": [
     {
       "path": "materialien/etappe1/Merkblatt_1_A5.pdf",
-      "pages": 4,
+      "pages": 5,
       "student": true,
       "minimumFontPt": 14.0,
-      "bytes": 277330
+      "bytes": 278803
     },
     {
       "path": "materialien/etappe1/Fischotter_Material_A5.pdf",
       "pages": 1,
       "student": true,
       "minimumFontPt": 14.0,
-      "bytes": 273121
+      "bytes": 273136
     },
     {
       "path": "materialien/etappe1/Pflichtblaetter_1-4_A5.pdf",
       "pages": 4,
       "student": true,
       "minimumFontPt": 14.0,
-      "bytes": 48453
+      "bytes": 48831
     },
     {
       "path": "materialien/etappe1/Tipps_1-4_A5.pdf",
       "pages": 4,
       "student": true,
       "minimumFontPt": 14.0,
-      "bytes": 47175
+      "bytes": 47593
     },
     {
       "path": "materialien/etappe1/Loesungen_1-4_A5.pdf",
       "pages": 4,
       "student": true,
       "minimumFontPt": 14.0,
-      "bytes": 47894
+      "bytes": 48257
     },
     {
       "path": "materialien/etappe1/GN1_A_A5.pdf",
       "pages": 2,
       "student": true,
       "minimumFontPt": 14.0,
-      "bytes": 275233
+      "bytes": 275251
     },
     {
       "path": "materialien/etappe1/GN1_B_A5.pdf",
       "pages": 2,
       "student": true,
       "minimumFontPt": 14.0,
-      "bytes": 275206
-    },
-    {
-      "path": "materialien/etappe1/Foerdermodule_A5.pdf",
-      "pages": 4,
-      "student": true,
-      "minimumFontPt": 14.0,
-      "bytes": 47895
+      "bytes": 275223
     },
     {
       "path": "materialien/etappe1/Lehrkraft_Auswertung_A4.pdf",
       "pages": 5,
       "student": false,
       "minimumFontPt": 14.0,
-      "bytes": 53398
+      "bytes": 53582
     },
     {
       "path": "materialien/etappe1/Etappe1_Schuelerpaket_A5.pdf",
-      "pages": 9,
+      "pages": 10,
       "student": true,
       "minimumFontPt": 14.0,
-      "bytes": 367024
+      "bytes": 368823
     }
   ],
   "inputMemoContentParity": true,
-  "sourceSha256": "aeccc80224d47bbe2405414146e3d75c559673e7bcd8ebdbfb70d26d575a604d",
-  "visualReview": "30 eigenständige Seiten mit Poppler gerendert und visuell geprüft; geänderte GN-Aufgabenseite erneut geprüft; Sammelpaket aus geprüften Seiten",
-  "htmlNavigation": "15 Folien und Pfeiltasten technisch geprüft; visuelle Browserprüfung mangels Browser-Laufzeit ausstehend"
+  "sourceSha256": "0e6fad70a6762756952a87eeec3179f1217e339ac4e1bebcd8a19f00d7d62f70",
+  "visualReview": "Text-PDFs seitenweise gerendert und am 03.10.2026 geprüft: vollständig, lesbar, keine Überlagerung.",
+  "languageTrack": "Wortarten und Nomenzerlegung: Merkblatt 1 Seite 4; ein Mikroauftrag pro Pflichtblatt; GN1 unverändert 4/5."
 }
