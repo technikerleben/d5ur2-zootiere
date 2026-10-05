@@ -15,7 +15,7 @@ manifest=[]
 class Doc:
  def __init__(self,name,a4=False):
   self.path=OUT/name;self.w,self.h=(595.276,841.89) if a4 else (419.528,595.276);self.left=42.52;self.width=self.w-self.left-28.35;self.n=0
-  self.c=canvas.Canvas(str(self.path),pagesize=(self.w,self.h));self.c.setTitle(name.replace('_',' '));self.c.setAuthor('Deutsch 5.3 - Zootiere')
+  self.c=canvas.Canvas(str(self.path),pagesize=(self.w,self.h));self.c.setTitle(name.replace('_',' '));self.c.setAuthor('Deutsch 5.3 und 5.5 - Zootiere')
  def p(self,s,size=14,bold=False,gap=9):
   p=Paragraph(s,ParagraphStyle('p',fontName='Bold' if bold else 'Text',fontSize=size,leading=size*1.28));_,height=p.wrap(self.width,2000)
   assert self.y+height<=self.h-48,(self.path.name,self.n,self.y,height,s)
@@ -24,7 +24,7 @@ class Doc:
   if self.n:self.c.showPage()
   self.n+=1;self.c.setStrokeGray(.2);self.c.setLineWidth(1.2);self.c.line(self.left,self.h-25,self.w-28.35,self.h-25);self.y=35
   self.p(label,14,True,8);self.p(title,21,True,14)
-  self.c.setFont('Text',14);self.c.drawString(self.left,22,'Deutsch 5.3 | Etappe 2');self.c.drawRightString(self.w-28.35,22,str(self.n))
+  self.c.setFont('Text',14);self.c.drawString(self.left,22,'Deutsch 5.3 / 5.5 | Etappe 2');self.c.drawRightString(self.w-28.35,22,str(self.n))
  def block(self,title,s):self.p(title,15,True,4);self.p(s,14,gap=12)
  def photo(self,height=115):
   from PIL import Image
@@ -35,7 +35,7 @@ class Doc:
 def memo():
  d=Doc('Merkblatt_2_A5.pdf')
  for n,item in enumerate(DATA['memo'],1):
-  d.page('Merkblatt 2 | '+str(n)+'/3',item['title'])
+  d.page('Merkblatt 2 | '+str(n)+'/'+str(len(DATA['memo'])),item['title'])
   for title,s in item['blocks']:d.block(title,s)
  d.end()
 def exercises():
@@ -56,7 +56,7 @@ def gn(v):
  d=Doc('GN2_'+v+'_A5.pdf');d.page('Nachweis 2'+v,'Zeige dein Können')
  d.block('1 | Drei Sätze','Die Wortgruppen enthalten richtige Angaben. Schreibe daraus drei vollständige Sätze im Präsens in dein Heft.<br/>'+'<br/>'.join(str(i+1)+'. '+s for i,s in enumerate(groups)))
  d.block('2 | Einen Satz verbessern','Verbessere im Heft: „'+bad+'“.<br/>Material: '+fact)
- d.block('Prüfe alle vier Sätze','Fünf Ziele: richtige Angaben, vollständige Sätze, passende Verben im Präsens, genaue statt wertende Wörter, große Satzanfänge/Nomen und Punkte.')
+ d.block('Prüfe alle vier Sätze','Fünf Ziele: richtige Angaben, vollständige Sätze, Sprachspur: passende Verben im Präsens, genaue statt wertende Wörter, große Satzanfänge/Nomen und Punkte.')
  d.p('Vier von fünf Zielen = 80 %. Dann geht es weiter. Keine Note.',gap=0);d.end()
 def foerder():
  d=Doc('Foerdermodule_A5.pdf')
@@ -99,7 +99,8 @@ def validate():
  report={'files':manifest,'inputMemoContentParity':True,'sourceSha256':hashlib.sha256((OUT/'inhalt.json').read_bytes()).hexdigest(),'visualReview':'pending'}
  (OUT/'Pruefbericht.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False))
 if __name__=='__main__':
- memo();exercises();gn('A');gn('B');foerder();teacher();input_html()
+ memo();exercises();gn('A');gn('B');teacher();input_html()
  combo=fitz.open()
  for f in ['Merkblatt_2_A5.pdf','Pflichtblaetter_5-6_A5.pdf']:combo.insert_pdf(fitz.open(OUT/f))
  combo.save(OUT/'Etappe2_Schuelerpaket_A5.pdf',garbage=4,deflate=True);manifest.append({'path':'materialien/etappe2/Etappe2_Schuelerpaket_A5.pdf','pages':len(combo),'student':True});validate()
+

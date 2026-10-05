@@ -60,7 +60,7 @@ Generator: `python tools/generate_etappe1.py`. Gemeinsame Inhaltsquelle: `materi
 
 ## Etappe 2 verfügbar
 
-- [Schülerpaket A5, 5 Seiten](materialien/etappe2/Etappe2_Schuelerpaket_A5.pdf)
+- [Schülerpaket A5, 6 Seiten](materialien/etappe2/Etappe2_Schuelerpaket_A5.pdf)
 - [Input für Lehrkräfte](materialien/etappe2/Input_Etappe2.html)
 - [Einzeldateien, Tipps, Lösungen, GN2 A/B und Fördermodule](materialien/etappe2/README.md)
 - [Auswertung und Einsatz](materialien/etappe2/Lehrkraft_Auswertung_A4.pdf)
@@ -69,7 +69,7 @@ Generator: `python tools/generate_etappe2.py`. Gemeinsame Inhaltsquelle: `materi
 
 ## Etappe 3 verfügbar
 
-- [Schülerpaket A5, 10 Seiten](materialien/etappe3/Etappe3_Schuelerpaket_A5.pdf)
+- [Schülerpaket A5, 9 Seiten](materialien/etappe3/Etappe3_Schuelerpaket_A5.pdf)
 - [Identischer Input für Lehrkräfte](materialien/etappe3/Input_Etappe3.html)
 - [Probearbeit Waschbär](materialien/etappe3/Probearbeit_Waschbaer_A5.pdf) und [Feedback](materialien/etappe3/Feedback_Probearbeit_A5.pdf)
 - [Alle Einzeldateien, Hilfen, Fördermodule und erneuten Belege](materialien/etappe3/README.md)
@@ -87,4 +87,5 @@ Generator: `python tools/generate_etappe3.py`. Inhalt und PDF-Ausgaben geprüft;
 
 ## Aktueller Stand: Sprachspur Etappe 1
 
-Stand 03.10.2026: [Bildgeneriertes Schülerpaket und GN1 A/B](materialien/etappe1/bildfassung/README.md). Textquellen, identischer Input, Tipps und Lösungen angepasst. Etappen 2/3 und Fördermodule enthalten die neue Sprachspur noch nicht vollständig. Weitere Produktion: Etappe 2 → Etappe 3 → Probearbeit → Lernerfolgskontrolle → Kontroll-Kiosk → zieldifferentes Material. Jedes Druckpaket durchläuft Text-PDF → Bildgenerierung mit Otter und Dino → Prüfung → Bild-PDF.
+Stand 03.10.2026: [Bildgeneriertes Schülerpaket und GN1 A/B](materialien/etappe1/bildfassung/README.md). Textquellen, identischer Input, Tipps und Lösungen angepasst. Etappe 2 liegt als überarbeitete Textfassung mit Sprachspur vor; ihre Bildfassung folgt. Etappe 3 und Fördermodule enthalten die Sprachspur noch nicht vollständig. Weitere Produktion: Etappe 2 → Etappe 3 → Probearbeit → Lernerfolgskontrolle → Kontroll-Kiosk → zieldifferentes Material. Jedes Druckpaket durchläuft Text-PDF → Bildgenerierung mit Otter und Dino → Prüfung → Bild-PDF.
+

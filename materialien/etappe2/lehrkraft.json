@@ -4,7 +4,7 @@
     "blocks": [
       [
         "Ablauf und Zeit",
-        "Input/Merkblatt 2 → Pflichtblätter 5–6 mit freiwilligen Vertiefungen → GN2. Richtwert für Pflichtübungen: etwa 45 Minuten; Input und Nachweis kommen hinzu. Eigenes Tempo ermöglichen. Keine Vertiefung als Zugangsvoraussetzung."
+        "Input/Merkblatt 2 → Pflichtblätter 5–6 mit freiwilligen Vertiefungen → GN2. Richtwert für Pflichtübungen: etwa 45 Minuten; Input und Nachweis kommen hinzu. Eigenes Tempo ermöglichen. Keine Vertiefung als Zugangsvoraussetzung. Sprachspur: Erklärung des Präsens, Grundform/gebeugte Form, Subjekt-Verb-Bezug und genaue Verbwahl. Für die ergänzten Übungen etwa 5–8 Minuten innerhalb der Etappe einplanen; keine neue Grammatik-Etappe."
       ],
       [
         "Lernbuddy bewusst nutzen",
@@ -12,7 +12,7 @@
       ],
       [
         "Materialzugang",
-        "Grundpaket: 3 Seiten Merkblatt + 2 Pflichtblätter. Tipps und Lösungen getrennt zum Vergleichen anbieten. GN2 und seine Lösungen nicht in den Kontroll-Kiosk stellen. Schüler arbeiten auf Papier/im Heft; Input-HTML nur für Lehrkräfte."
+        "Grundpaket: 4 Seiten Merkblatt + 2 Pflichtblätter. Tipps und Lösungen getrennt zum Vergleichen anbieten. GN2 und seine Lösungen nicht in den Kontroll-Kiosk stellen. Schüler arbeiten auf Papier/im Heft; Input-HTML nur für Lehrkräfte."
       ],
       [
         "Input und Merkblatt",
@@ -40,8 +40,8 @@
         "Erreicht: Alle vier Sätze sind vollständig und verständlich. Ein Satzfragment genügt nicht. Verbformfehler bei verständlichem vollständigem Satz gesondert unter E2.3 beurteilen."
       ],
       [
-        "E2.3 | Präsens und Verb",
-        "Erreicht: In allen vier Sätzen stehen die Verben im Präsens und stimmen mit dem Satzgegenstand überein. Bei A: lebt, ist, frisst, hat; bei B ebenso. Gleichwertige Verbwahl zulassen."
+        "E2.3 | Sprachspur: Präsens und Verb",
+        "Erreicht: In allen vier Sätzen stehen die Verben im Präsens und stimmen mit dem Satzgegenstand überein. Bei A: lebt, ist, frisst, hat; bei B ebenso. Gleichwertige Verbwahl zulassen. Keine isolierte Wortarten- oder Grundformabfrage im GN2; die Anwendung im eigenen Satz zählt."
       ],
       [
         "E2.4 | Genau formulieren",
@@ -107,7 +107,7 @@
       ],
       [
         "Druck und Pflege",
-        "A5, Originalgröße, mindestens 14 pt; 15 mm linker Rand. Längere Antworten ins Heft. Fachangaben aus dem vorhandenen Fischottermaterial; Wörterhilfe ergänzt Begriffsdefinitionen. Erzeugung mit tools/generate_etappe2.py. Nach inhaltlichen Änderungen PDFs und Input neu erzeugen und prüfen."
+        "A5, Originalgröße, mindestens 14 pt; 15 mm linker Rand. Längere Antworten ins Heft. Fachangaben aus dem vorhandenen Fischottermaterial; Wörterhilfe ergänzt Begriffsdefinitionen. Erzeugung mit tools/generate_etappe2.py. Nach inhaltlichen Änderungen PDFs und Input neu erzeugen und prüfen. Sprachspur-Textfassung 05.10.2026. Bildgenerierung und zieldifferente Überarbeitung folgen getrennt."
       ]
     ]
   }
