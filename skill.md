@@ -56,6 +56,7 @@ Diese Festlegung ersetzt die frühere Vorgabe „alle Schülerblätter als A5-PD
 | Hilfekarten (Wörterhilfe, Rückmeldekarte) | A4 hoch | auf A5 verkleinert | mindestens 14 pt |
 | Strategiekarten am Lernbuddy | 70 × 297 mm (A4 längs gedrittelt, 3 pro Bogen) | Originalgröße, schneiden, laminieren | mindestens 12 pt |
 | Raumschilder (z. B. Haltestelle) | A4 hoch | Originalgröße | groß |
+| Förder-Material (zieldifferent, 1F–9F) | A4 hoch, ein Auftrag pro Kasten, Lösungsstreifen | auf A5 verkleinert | mindestens 14 pt, Grundschrift 16,5 pt |
 
 - **Alles, was für Schülerinnen und Schüler gedruckt wird: Graustufen**, druckfreundlich; keine Flächenfüllungen außer hellem Grau, Struktur über Linien, Rahmen und Typografie.
 - **HTML-Seiten (Input-Präsentationen, Kontroll-Kiosk, Cockpit) dürfen vollfarbig sein.** Farben nach dem HBG-SRL-Farbschema: Schieferblau für Struktur und Navigation, Rostorange für Aufträge und Aktionen, Salbeigrün für gesicherte Antworten und Erfolg.
