@@ -10,54 +10,159 @@
   },
   "input": [
     {
+      "titel": "Finde den Fisch",
+      "grafik": "assets/grafik/aquarium.svg",
+      "grafik_alt": "Aquarium mit vier Fischen: A rund mit Streifen, B lang und schmal mit Punkten, C dreieckig mit langen Flossen, D klein mit großer Schwanzflosse.",
+      "bloecke": [
+        [
+          "Schau genau hin",
+          "Im Aquarium schwimmen vier Fische: A, B, C und D."
+        ],
+        [
+          "Beschreibung 1",
+          "*Der Fisch hat einen langen, schmalen Körper. Auf dem Körper sind dunkle Punkte.*"
+        ],
+        [
+          "Beschreibung 2",
+          "*Der Fisch ist schön und schwimmt im Wasser.*"
+        ],
+        [
+          "Frage",
+          "Welche Beschreibung passt nur zu einem Fisch? Zeige den Hinweis, der dir hilft. Mache Beschreibung 2 genauer."
+        ],
+        [
+          "Gesicherte Antwort",
+          "Beschreibung 1 passt nur zu Fisch B: langer, schmaler Körper und dunkle Punkte. Beschreibung 2 passt zu allen Fischen. Genauer ist zum Beispiel: *Der Fisch hat einen runden Körper mit dunklen Streifen.* Das ist Fisch A."
+        ]
+      ],
+      "umbruch_nach": 3
+    },
+    {
       "titel": "Genau statt wertend",
       "bloecke": [
-        ["Dein Ziel", "Du findest genaue Angaben über ein Tier. Eine Beschreibung hilft anderen, sich das Tier vorzustellen."],
-        ["Vergleiche", "A: *Der Fischotter ist toll. Sein Fell ist schön.*\nB: *Der Fischotter hat einen langen Körper und kurze Beine. Sein Fell ist oben dunkelbraun.*"],
-        ["Frage", "Welcher Text hilft dir beim Vorstellen? Warum?"],
-        ["Gesicherte Antwort", "B nennt Körperform, Beinlänge und Fellfarbe. A enthält Meinungen. „schön“ und „toll“ sind keine genauen Merkmale."]
+        [
+          "Dein Ziel",
+          "Du findest genaue Angaben über ein Tier. Eine Beschreibung hilft anderen, sich das Tier vorzustellen."
+        ],
+        [
+          "Vergleiche",
+          "A: *Der Fischotter ist toll. Sein Fell ist schön.*\nB: *Der Fischotter hat einen langen Körper und kurze Beine. Sein Fell ist oben dunkelbraun.*"
+        ],
+        [
+          "Frage",
+          "Welcher Text hilft dir beim Vorstellen? Warum?"
+        ],
+        [
+          "Gesicherte Antwort",
+          "B nennt Körperform, Beinlänge und Fellfarbe. A enthält Meinungen. „schön“ und „toll“ sind keine genauen Merkmale."
+        ]
       ]
     },
     {
       "titel": "Das zeigt dir das Foto",
       "foto": true,
       "bloecke": [
-        ["Beobachte", "Zeige zwei Körperteile. Nenne jeweils ein genaues Merkmal."],
-        ["Gesicherte Antwort", "An der Schnauze sitzen lange **Tasthaare**. Die Ohren sind klein. Zeige die passenden Bildstellen."],
-        ["Grenze des Bildes", "**Schwimmhäute** und die gesamte **Körperlänge** erkennst du hier nicht sicher. Erfinde keine verdeckten Merkmale."]
+        [
+          "Beobachte",
+          "Zeige zwei Körperteile. Nenne jeweils ein genaues Merkmal."
+        ],
+        [
+          "Gesicherte Antwort",
+          "An der Schnauze sitzen lange **Tasthaare**. Die Ohren sind klein. Zeige die passenden Bildstellen."
+        ],
+        [
+          "Grenze des Bildes",
+          "**Schwimmhäute** und die gesamte **Körperlänge** erkennst du hier nicht sicher. Erfinde keine verdeckten Merkmale."
+        ]
       ]
     },
     {
       "titel": "Das erfährst du im Text",
       "bloecke": [
-        ["Lies gezielt", "*Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern. Er hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Der Fischotter frisst vor allem Fische, aber auch Frösche und Krebse.*"],
-        ["Frage", "Wo lebt der Fischotter? Was frisst er? Wie lang sind Kopf und Rumpf? Zählt der Schwanz dazu?"],
-        ["Gesicherte Antwort", "Flüsse und Seen mit geschützten Ufern; vor allem Fische; Kopf und Rumpf etwa 60–90 cm. Der Schwanz zählt nicht dazu. Zeige die Textstellen."]
-      ]
+        [
+          "So liest du",
+          "1. Lies den Text einmal. Markiere Wörter, die du nicht verstehst.\n2. Lies den Satz um das Wort noch einmal. Nutze die Wörterhilfe. Frage bei Bedarf ein anderes Kind oder deine Lehrkraft. Rate keine Bedeutung.\n3. Lies mit deinem Suchauftrag weiter. Suchwörter helfen: *lebt, frisst, Zentimeter*. Markiere die passende Textstelle: **L** für Lebensraum, **N** für Nahrung, **M** für Maß.\n4. Notiere die Information als Stichwort unter der passenden Überschrift."
+        ],
+        [
+          "Lies gezielt",
+          "*Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern. Er hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Der Fischotter frisst vor allem Fische, aber auch Frösche und Krebse.*"
+        ],
+        [
+          "Frage",
+          "Wo lebt der Fischotter? Was frisst er? Wie lang sind Kopf und Rumpf? Zählt der Schwanz dazu?"
+        ],
+        [
+          "Gesicherte Antwort",
+          "Flüsse und Seen mit geschützten Ufern; vor allem Fische; Kopf und Rumpf etwa 60–90 cm. Der Schwanz zählt nicht dazu. Zeige die Textstellen."
+        ],
+        [
+          "Mit einem Partner prüfen",
+          "Zeige deine Textstelle. Erkläre, welche Information du gefunden hast. Vergleicht: Passt die Stelle zur Frage? Bei verschiedenen Antworten prüft ihr gemeinsam im Text."
+        ]
+      ],
+      "umbruch_nach": 1
     },
     {
       "titel": "Sprachdetektiv",
       "bloecke": [
-        ["Vier Wortarten", "**Nomen** benennen Tiere, Dinge und mehr: *Otter, Fell*. Du schreibst sie groß.\n**Artikel** begleiten Nomen: *der Otter, das Fell, die Pfote*.\n**Verben** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*.\n**Adjektive** beschreiben Merkmale: *braun, dicht, lang*."],
-        ["Wörter zerlegen", "*der Körper + die Länge = die Körperlänge*\nDas letzte Nomen bestimmt den Artikel."],
-        ["Frage", "„Der Otter schwimmt.“ Welche Wortarten findest du?"],
-        ["Gesicherte Antwort", "*Der*: Artikel; *Otter*: Nomen; *schwimmt*: Verb."]
+        [
+          "Vier Wortarten",
+          "**Nomen** benennen Tiere, Dinge und mehr: *Otter, Fell*. Du schreibst sie groß.\n**Artikel** begleiten Nomen: *der Otter, das Fell, die Pfote*.\n**Verben** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*.\n**Adjektive** beschreiben Merkmale: *braun, dicht, lang*."
+        ],
+        [
+          "Wörter zerlegen",
+          "*der Körper + die Länge = die Körperlänge*\nDas letzte Nomen bestimmt den Artikel."
+        ],
+        [
+          "Frage",
+          "„Der Otter schwimmt.“ Welche Wortarten findest du?"
+        ],
+        [
+          "Gesicherte Antwort",
+          "*Der*: Artikel; *Otter*: Nomen; *schwimmt*: Verb."
+        ]
       ]
     },
     {
       "titel": "Informationen ordnen",
       "bloecke": [
-        ["So gehst du vor", "Lies den Auftrag. Suche passende Angaben in Bild und Text. Notiere Stichwörter unter Überschriften."],
-        ["Beispiel: geordnete Sammlung", "**Überblick:** Fischotter; Kopf und Rumpf 60–90 cm, Schwanz zusätzlich\n**Aussehen:** langer Körper; kurze Beine; dunkelbraune Oberseite; lange Tasthaare\n**Lebensraum:** Flüsse und Seen; geschützte Ufer\n**Nahrung:** vor allem Fische"],
-        ["Frage", "Wohin gehört „breiter, flacher Kopf“?"],
-        ["Gesicherte Antwort", "Unter Aussehen. Eine genaue Angabe kann im Bild und im Text vorkommen. Zeige, welche Quelle du genutzt hast."]
+        [
+          "So gehst du vor",
+          "Lies den Auftrag. Suche passende Angaben in Bild und Text. Notiere Stichwörter unter Überschriften."
+        ],
+        [
+          "Beispiel: geordnete Sammlung",
+          "**Überblick:** Fischotter; Kopf und Rumpf 60–90 cm, Schwanz zusätzlich\n**Aussehen:** langer Körper; kurze Beine; dunkelbraune Oberseite; lange Tasthaare\n**Lebensraum:** Flüsse und Seen; geschützte Ufer\n**Nahrung:** vor allem Fische"
+        ],
+        [
+          "Frage",
+          "Wohin gehört „breiter, flacher Kopf“?"
+        ],
+        [
+          "Gesicherte Antwort",
+          "Unter Aussehen. Eine genaue Angabe kann im Bild und im Text vorkommen. Zeige, welche Quelle du genutzt hast."
+        ]
       ]
     }
   ],
-  "abschluss": "Bearbeite die Pflichtaufgaben auf Blatt 1–4. Vertiefungen sind freiwillig. Danach zeigst du dein Können im Gelingensnachweis: Vier von fünf Zielen reichen für die nächste Etappe.",
+  "abschluss": "Bearbeite Blatt 1–4. Vertiefungen sind freiwillig. Danach zeigst du dein Können im Gelingensnachweis. Vier von fünf Zielen reichen für Etappe 2.",
   "material": {
     "titel": "Der Fischotter",
-    "text": "Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern. Er hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Der Fischotter frisst vor allem Fische, aber auch Frösche und Krebse."
+    "text": "Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern. Er hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Der Fischotter frisst vor allem Fische, aber auch Frösche und Krebse.",
+    "woerter": [
+      [
+        "Rumpf",
+        "Körper ohne Kopf, Beine und Schwanz"
+      ],
+      [
+        "Tasthaare",
+        "Haare zum Ertasten"
+      ],
+      [
+        "Ufer",
+        "Rand eines Flusses oder Sees"
+      ]
+    ]
   },
   "blaetter": [
     {
@@ -88,10 +193,11 @@
     {
       "nr": 3,
       "titel": "Bild oder Text?",
-      "brauchst": "Fischotter-Material · Heft",
+      "brauchst": "Fischotter-Material · Merkblatt 1 · Heft · Bleistift",
       "pflicht": [
-        "Lies den Text. Notiere:\na) Wo lebt der Fischotter?\nb) Was frisst er vor allem?\nc) Wie lang sind Kopf und Rumpf? Nenne die Einheit. Zählt der Schwanz mit?",
-        "Zeige die drei Textstellen. Schreibe „Text“ hinter die Antworten.",
+        "Lies den Text mit den Leseschritten von Merkblatt 1. Notiere:\na) Wo lebt der Fischotter?\nb) Was frisst er vor allem?\nc) Wie lang sind Kopf und Rumpf? Nenne die Einheit. Zählt der Schwanz mit?",
+        "Markiere die Textstellen im Material: **L** für Lebensraum, **N** für Nahrung, **M** für Maß. Schreibe „Text“ hinter deine Antworten.",
+        "Partnercheck: Zeige einem anderen Kind deine Textstellen. Erkläre, was du gefunden hast. Passt die Stelle zur Frage? Prüft Unterschiede gemeinsam im Text.",
         "Notiere ein sichtbares Merkmal mit „Bild“. Zeige die Bildstelle. Steht es auch im Text?"
       ],
       "sprachdetektiv": "Unterstreiche auf deiner Fischotter-Materialseite zwei Verben. Schreibe **V** darüber.",
@@ -113,16 +219,58 @@
   "nachweis": {
     "titel": "Tierdetektiv",
     "ziele": [
-      {"id": "E1.1", "kurz": "Merkmale", "kind": "Ich nenne zwei verschiedene äußere Merkmale genau.", "lehrkraft": "zwei verschiedene äußere Merkmale richtig und genau benannt", "ueben": "Blatt 2"},
-      {"id": "E1.2", "kurz": "Quellen", "kind": "Ich zeige, was ich im Bild und was ich im Text gefunden habe.", "lehrkraft": "ein Bildbeleg und ein Textbeleg richtig zugeordnet und gezeigt", "ueben": "Blatt 3"},
-      {"id": "E1.3", "kurz": "Maß", "kind": "Ich gebe die Länge von Kopf und Rumpf mit Einheit an.", "lehrkraft": "Kopf-Rumpf-Länge mit Einheit und ohne mitgerechneten Schwanz richtig angegeben", "ueben": "Blatt 3"},
-      {"id": "E1.4", "kurz": "Lebensraum und Nahrung", "kind": "Ich finde Lebensraum und Nahrung im Text.", "lehrkraft": "Lebensraum und Nahrung dem Text richtig entnommen", "ueben": "Blatt 3"},
-      {"id": "E1.5", "kurz": "Ordnen", "kind": "Ich ordne Angaben unter passende Überschriften.", "lehrkraft": "Angaben unter passenden Überschriften", "ueben": "Blatt 4"}
+      {
+        "id": "E1.1",
+        "kurz": "Merkmale",
+        "kind": "Ich nenne zwei verschiedene äußere Merkmale genau.",
+        "lehrkraft": "zwei verschiedene äußere Merkmale richtig und genau benannt",
+        "ueben": "Blatt 2"
+      },
+      {
+        "id": "E1.2",
+        "kurz": "Quellen",
+        "kind": "Ich zeige, was ich im Bild und was ich im Text gefunden habe.",
+        "lehrkraft": "ein Bildbeleg und ein Textbeleg richtig zugeordnet und gezeigt",
+        "ueben": "Blatt 3"
+      },
+      {
+        "id": "E1.3",
+        "kurz": "Maß",
+        "kind": "Ich gebe die Länge von Kopf und Rumpf mit Einheit an.",
+        "lehrkraft": "Kopf-Rumpf-Länge mit Einheit und ohne mitgerechneten Schwanz richtig angegeben",
+        "ueben": "Blatt 3"
+      },
+      {
+        "id": "E1.4",
+        "kurz": "Lebensraum und Nahrung",
+        "kind": "Ich finde Lebensraum und Nahrung im Text.",
+        "lehrkraft": "Lebensraum und Nahrung dem Text richtig entnommen",
+        "ueben": "Blatt 3"
+      },
+      {
+        "id": "E1.5",
+        "kurz": "Ordnen",
+        "kind": "Ich ordne Angaben unter passende Überschriften.",
+        "lehrkraft": "Angaben unter passenden Überschriften",
+        "ueben": "Blatt 4"
+      }
     ],
     "aufgaben": [
-      {"titel": "Merkmale und Quellen", "text": "Notiere zwei verschiedene genaue äußere Merkmale: eines aus dem Bild, ein anderes aus dem Text. Kreise auf dem Foto die Bildstelle ein. Unterstreiche im Text die Textstelle.", "feld": "merkmale"},
-      {"titel": "Das Maß", "text": "Notiere die Länge von Kopf und Rumpf mit Einheit. Kreuze an, ob der Schwanz mitgezählt wird.", "feld": "mass"},
-      {"titel": "Informationen ordnen", "text": "Notiere unter jeder Überschrift eine richtige Angabe aus dem Text.", "feld": "ordnen"}
+      {
+        "titel": "Merkmale und Quellen",
+        "text": "Notiere zwei verschiedene genaue äußere Merkmale: eines aus dem Bild, ein anderes aus dem Text. Kreise auf dem Foto die Bildstelle ein. Unterstreiche im Text die Textstelle.",
+        "feld": "merkmale"
+      },
+      {
+        "titel": "Das Maß",
+        "text": "Notiere die Länge von Kopf und Rumpf mit Einheit. Kreuze an, ob der Schwanz mitgezählt wird.",
+        "feld": "mass"
+      },
+      {
+        "titel": "Informationen ordnen",
+        "text": "Notiere unter jeder Überschrift eine richtige Angabe aus dem Text.",
+        "feld": "ordnen"
+      }
     ],
     "varianten": {
       "A": {

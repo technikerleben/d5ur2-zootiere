@@ -44,6 +44,10 @@ def font_css() -> str:
     return "\n".join(out)
 
 
+def svg_uri(rel: str) -> str:
+    return "data:image/svg+xml;base64," + b64(ROOT / rel)
+
+
 def md(text: str) -> str:
     """Minimales Markup: **fett**, *kursiv*, Zeilenumbruch."""
     t = html.escape(text, quote=False)
@@ -96,8 +100,8 @@ MB_CSS = """
 .kopf h1{font-size:23pt;line-height:1.1;margin-top:1mm}
 .kopf .ziel{max-width:75mm;font-size:12.5pt;text-align:right;color:var(--mid)}
 .kopf .ziel b{display:block;color:var(--ink);text-transform:uppercase;letter-spacing:.05em;font-size:12pt}
-.cols{column-count:2;column-gap:8mm;column-fill:auto;height:100%}
-.sec{margin-bottom:5mm}
+.cols{column-count:2;column-gap:8mm;column-fill:auto}
+.sec{margin-bottom:4mm}
 .sec h2{break-after:avoid;font-size:16.5pt;display:flex;gap:2.5mm;align-items:center;margin-bottom:2mm}
 .sec h2 .n{display:inline-flex;width:8mm;height:8mm;border-radius:50%;background:var(--ink);color:#fff;
   font-size:12.5pt;align-items:center;justify-content:center;flex:0 0 auto}
@@ -105,12 +109,13 @@ MB_CSS = """
 .foto,.cred{break-after:avoid;break-inside:avoid}
 .blk .lab{font-weight:700}
 .blk.ans{border-left:3pt solid var(--ink);background:var(--fill);padding:1.5mm 2.5mm;border-radius:0 2mm 2mm 0}
+.page.eng{font-size:12.4pt;line-height:1.3}.eng .sec{margin-bottom:3.5mm}.eng .sec h2{font-size:15pt}.eng .foto{max-height:62mm;object-fit:contain}
 .blk.frage{break-after:avoid}
 .blk.frage .lab::before{content:"? ";}
-.foto{width:100%;border-radius:2mm;display:block;margin-bottom:1mm}
+.foto{width:100%;max-height:50mm;object-fit:contain;object-position:left;border-radius:2mm;display:block;margin-bottom:1mm}
 .cred{font-size:12pt;color:var(--mid);margin-bottom:2mm}
-.abschluss{break-inside:avoid;border:1.5pt solid var(--ink);border-radius:3mm;padding:3mm}
-.abschluss b{display:block;font-size:13pt;margin-bottom:1mm}
+.abschluss{border:1.5pt solid var(--ink);border-radius:3mm;padding:2mm 3.5mm;margin-bottom:4mm}
+.abschluss b{margin-right:2mm}
 .foot{font-size:12pt;color:var(--mid);border-top-width:1pt;margin-top:3mm}
 """
 
@@ -120,6 +125,8 @@ def mb_section(i: int, s: dict, foto_b64: str, foto: dict) -> str:
     if s.get("foto"):
         h.append("<img class='foto' src='data:image/jpeg;base64,%s' alt='%s'>" % (foto_b64, html.escape(foto["alt"])))
         h.append("<div class='cred'>%s</div>" % html.escape(foto["nachweis"]))
+    if s.get("grafik"):
+        h.append("<img class='foto' src='%s' alt='%s'>" % (svg_uri(s["grafik"]), html.escape(s.get("grafik_alt", ""))))
     for lab, txt in s["bloecke"]:
         cls = "ans" if lab.startswith("Gesicherte Antwort") else ("frage" if lab == "Frage" else "")
         h.append("<div class='blk %s'><span class='lab'>%s:</span> %s</div>" % (cls, md(lab), md(txt)))
@@ -127,26 +134,34 @@ def mb_section(i: int, s: dict, foto_b64: str, foto: dict) -> str:
     return "".join(h)
 
 
-def merkblatt_pages(c: dict, split: int | None) -> str:
+def merkblatt_html(c: dict, fs: float) -> str:
+    """Fließender zweispaltiger Satz über die Seiten; Fußzeile über die Druckvorlage."""
     foto_b64 = b64(ROOT / c["foto"]["datei"])
-    secs = [mb_section(i + 1, s, foto_b64, c["foto"]) for i, s in enumerate(c["input"])]
-    absch = "<div class='abschluss'><b>Deine Etappe</b>%s</div>" % md(c["abschluss"])
+    secs = "".join(mb_section(i + 1, s, foto_b64, c["foto"]) for i, s in enumerate(c["input"]))
+    absch = "<div class='abschluss'><b>Deine Etappe:</b>%s</div>" % md(c["abschluss"])
     kopf = (
         "<div class='kopf'><div><div class='mb'>Merkblatt %d · zum Nachlesen</div><h1>%s</h1></div>"
         "<div class='ziel'><b>Dein Ziel</b>%s</div></div>" % (c["etappe"], md(c["titel"]), md(c["ziel"]))
     )
-    parts = [secs] if split is None else [secs[:split], secs[split:]]
-    pages = []
-    for p, ss in enumerate(parts):
-        last = p == len(parts) - 1
-        body = "".join(ss) + (absch if last else "")
-        seite = "" if len(parts) == 1 else " · Seite %d/%d" % (p + 1, len(parts))
-        pages.append(
-            "<div class='page'>%s<div class='grow'><div class='cols'>%s</div></div>"
-            "<div class='foot'><span>%s · Etappe %d</span><span>Merkblatt %d%s</span></div></div>"
-            % (kopf if p == 0 else "", body, FUSS, c["etappe"], c["etappe"], seite)
-        )
-    return "".join(pages)
+    css = MB_CSS + "\n.flow{font-size:%.1fpt;line-height:1.34}.flow .cols{height:auto}" % fs
+    return doc("<div class='flow'>%s%s<div class='cols'>%s</div></div>" % (kopf, absch, secs), css, "Merkblatt %d" % c["etappe"]).replace(
+        "@page{size:A4;margin:0}", "@page{size:A4;margin:13mm 15mm 17mm 15mm}")
+
+
+def merkblatt_render(pg, c: dict, pdf: Path) -> int:
+    fuss = ("<div style='font-size:12pt;width:100%%;padding:0 15mm;display:flex;justify-content:space-between;"
+            "font-family:DejaVu Sans,sans-serif;color:#555'><span>%s · Etappe %d</span>"
+            "<span>Merkblatt %d · Seite <span class=pageNumber></span>/<span class=totalPages></span></span></div>"
+            % (FUSS, c["etappe"], c["etappe"]))
+    for fs in (13.5, 13.0, 12.4):
+        pg.set_content(merkblatt_html(c, fs), wait_until="load")
+        pg.evaluate("document.fonts.ready")
+        pg.pdf(path=str(pdf), prefer_css_page_size=True, print_background=True, display_header_footer=True,
+               header_template="<span></span>", footer_template=fuss)
+        n = len(fitz.open(pdf))
+        if n <= 2:
+            return n
+    return n
 
 
 # ---------------------------------------------------------------- Übungsblätter (A4, ≥14 pt)
@@ -257,7 +272,7 @@ def material_page(c: dict, m: dict) -> str:
     nrs = [b["nr"] for b in c["blaetter"]]
     rng = "%d–%d" % (nrs[0], nrs[-1]) if len(nrs) > 1 else str(nrs[0])
     f = m["foto"]
-    lang = " lang" if len(m["text"]) > 500 else ""
+    lang = " lang" if len(m["text"]) > 500 or m.get("woerter") else ""
     hint = m.get("bildhinweis", "")
     return (
         "<div class='page mat%s'><div class='grow'><div class='meta'>Material zu Blatt %s</div><h1>%s</h1>"
@@ -276,6 +291,50 @@ def zusatz_page(c: dict, z: dict, k: int, n: int) -> str:
         h.append("<div class='teil box'><h2>%s</h2><div class='cbl'><span class='cb'></span><span>%s</span></div></div>" % (md(t["titel"]), md(t["text"])))
     h.append("</div><div class='foot'><span>%s · Etappe %d</span><b>%s %d/%d</b></div></div>" % (FUSS, c["etappe"], md(z["kennung"]), k, n))
     return "".join(h)
+
+
+
+
+# ---------------------------------------------------------------- Hilfekarten und Raumschild
+HK_CSS = UB_CSS + """
+.hk .hin{font-size:17pt;font-weight:700;padding:3mm 4mm;border:2pt solid var(--ink);border-radius:2.5mm;margin-bottom:5mm}
+table.wt{width:100%;border-collapse:collapse;margin-bottom:5mm;font-size:16pt}
+table.wt th{text-align:left;font-size:14pt;text-transform:uppercase;letter-spacing:.05em;border-bottom:2pt solid var(--ink);padding:1.5mm 2mm}
+table.wt td{border-bottom:1pt solid var(--line);padding:2mm;vertical-align:top}
+table.wt td:first-child{font-weight:700;width:38%}
+.hk .liste{margin-bottom:4.5mm}
+.hk .liste b{display:block;font-size:15pt;text-transform:uppercase;letter-spacing:.05em;margin-bottom:1mm}
+.hk .liste div{font-size:16pt;line-height:1.4}
+.hk .acht{font-size:15pt;padding:3mm 4mm;background:var(--fill);border-radius:2.5mm}
+.schild{align-items:center;justify-content:center;text-align:center}
+.schild .h{width:120mm;height:120mm;border-radius:50%;border:8mm solid var(--ink);display:flex;align-items:center;justify-content:center;
+  font-size:150pt;font-weight:700;margin:20mm auto 12mm;line-height:1}
+.schild h1{font-size:54pt;line-height:1.05}
+.schild .u{font-size:30pt;margin-top:4mm}
+.schild .z{font-size:22pt;line-height:1.5;margin-top:14mm}
+"""
+
+
+def hilfe_page(c: dict, h: dict) -> str:
+    out = ["<div class='page hk'><div class='grow'><div class='ukopf'><div><div class='meta'>%s · Etappe %d</div><h1>%s</h1></div></div>"
+           % (md(h["kennung"]), c["etappe"], md(h["titel"]))]
+    out.append("<div class='hin'>%s</div>" % md(h["hinweis"]))
+    if h.get("tabelle"):
+        t = h["tabelle"]
+        out.append("<table class='wt'><tr>%s</tr>%s</table>" % ("".join("<th>%s</th>" % md(x) for x in t["kopf"]),
+                   "".join("<tr>%s</tr>" % "".join("<td>%s</td>" % md(x) for x in r) for r in t["zeilen"])))
+    for tit, txt in h.get("listen", []):
+        out.append("<div class='liste'><b>%s</b><div>%s</div></div>" % (md(tit), md(txt)))
+    if h.get("achtung"):
+        out.append("<div class='acht'>%s</div>" % md(h["achtung"]))
+    out.append("</div><div class='foot'><span>%s · Etappe %d</span><b>%s</b></div></div>" % (FUSS, c["etappe"], md(h["kennung"])))
+    return "".join(out)
+
+
+def schild_page(c: dict, sc: dict) -> str:
+    return ("<div class='page schild'><div class='grow'><div class='h'>H</div><h1>%s</h1><div class='u'>%s</div><div class='z'>%s</div></div>"
+            "<div class='foot' style='width:100%%'><span>%s · Etappe %d</span><b>Raumschild · A4 in Originalgröße</b></div></div>"
+            % (md(sc["titel"]), md(sc["untertitel"]), "<br>".join(md(z) for z in sc["zeilen"]), FUSS, c["etappe"]))
 
 
 # ---------------------------------------------------------------- Gelingensnachweis A4
@@ -547,6 +606,7 @@ h1 .n{display:inline-flex;width:76px;height:76px;border-radius:50%;background:va
 .blk.ans{border-left:10px solid var(--sage-dark);background:var(--sage-pale);border-radius:0 18px 18px 0;padding:16px 24px;transition:opacity .25s}
 .blk.ans.zu{opacity:0;pointer-events:none}
 .blk.lang{font-size:30px}
+h1 .teil{font-size:30px;color:var(--text-muted);font-weight:400;margin-left:14px}
 .fotowrap{flex:0 0 640px;display:flex;flex-direction:column}
 .fotowrap img{width:640px;border-radius:18px}
 .blk.ans .lab{color:var(--sage-dark)}
@@ -603,31 +663,38 @@ def input_html(c: dict) -> str:
         "%s</section>" % (e, md(c["titel"]), md(c["ziel"]), weg)
     ]
     for k, sec in enumerate(c["input"], 1):
-        blks = []
-        for lab, txt in sec["bloecke"]:
-            cls = "ans zu" if lab.startswith("Gesicherte Antwort") else ("frage" if lab == "Frage" else "")
-            if len(txt) > 260:
-                cls += " lang"
-            blks.append("<div class='blk %s'><span class='lab'>%s</span>%s</div>" % (cls, md(lab), md(txt)))
-        foto = ""
-        if sec.get("foto"):
-            foto = "<div class='fotowrap'><img src='data:image/jpeg;base64,%s' alt='%s'><div class='cred'>%s</div></div>" % (
-                foto_b64, html.escape(c["foto"]["alt"]), html.escape(c["foto"]["nachweis"]))
-        if foto:
-            body = foto + "<div class='col'>%s</div>" % "".join(blks)
-        elif len(blks) > 2:
-            # links: Information, rechts: ab der ersten Frage (Frage + gesicherte Antwort)
-            labs = [lab for lab, _ in sec["bloecke"]]
-            cut = labs.index("Frage") if "Frage" in labs[1:] else (len(blks) + 1) // 2
-            if cut >= 3:  # links zu voll: letzten Informationsblock nach rechts über die Frage
-                cut -= 1
-            body = "<div class='col'>%s</div><div class='col'>%s</div>" % ("".join(blks[:cut]), "".join(blks[cut:]))
-        else:
-            body = "<div class='col'>%s</div>" % "".join(blks)
-        s.append(
-            "<section class='slide'><div class='kick'>Etappe %d · %s</div><h1><span class='n'>%d</span>%s</h1><div class='body'>%s</div></section>"
-            % (e, md(c["titel"]), k, md(sec["titel"]), body)
-        )
+        # 'umbruch_nach': Folie nach so vielen Blöcken teilen (Merkblatt bleibt unverändert)
+        cuts = [0] + ([sec["umbruch_nach"]] if sec.get("umbruch_nach") else []) + [len(sec["bloecke"])]
+        for part in range(len(cuts) - 1):
+            teil = sec["bloecke"][cuts[part]:cuts[part + 1]]
+            blks = []
+            for lab, txt in teil:
+                cls = "ans zu" if lab.startswith("Gesicherte Antwort") else ("frage" if lab == "Frage" else "")
+                if len(txt) > 260:
+                    cls += " lang"
+                blks.append("<div class='blk %s'><span class='lab'>%s</span>%s</div>" % (cls, md(lab), md(txt)))
+            foto = ""
+            if sec.get("foto"):
+                foto = "<div class='fotowrap'><img src='data:image/jpeg;base64,%s' alt='%s'><div class='cred'>%s</div></div>" % (
+                    foto_b64, html.escape(c["foto"]["alt"]), html.escape(c["foto"]["nachweis"]))
+            if sec.get("grafik"):
+                foto = "<div class='fotowrap'><img src='%s' alt='%s'></div>" % (svg_uri(sec["grafik"]), html.escape(sec.get("grafik_alt", "")))
+            if foto:
+                body = foto + "<div class='col'>%s</div>" % "".join(blks)
+            elif len(blks) > 2:
+                # links: Information, rechts: ab der ersten Frage (Frage + gesicherte Antwort)
+                labs = [lab for lab, _ in teil]
+                cut = labs.index("Frage") if "Frage" in labs[1:] else (len(blks) + 1) // 2
+                if cut >= 3:  # links zu voll: letzten Informationsblock nach rechts über die Frage
+                    cut -= 1
+                body = "<div class='col'>%s</div><div class='col'>%s</div>" % ("".join(blks[:cut]), "".join(blks[cut:]))
+            else:
+                body = "<div class='col'>%s</div>" % "".join(blks)
+            weiter = "" if len(cuts) == 2 else " <span class='teil'>%d/%d</span>" % (part + 1, len(cuts) - 1)
+            s.append(
+                "<section class='slide'><div class='kick'>Etappe %d · %s</div><h1><span class='n'>%d</span>%s%s</h1><div class='body'>%s</div></section>"
+                % (e, md(c["titel"]), k, md(sec["titel"]), weiter, body)
+            )
     s.append(
         "<section class='slide'><div class='kick'>Etappe %d · %s</div><h1>Deine Etappe</h1><div class='body'><div class='col'>"
         "<div class='blk' style='font-size:40px'>%s</div>%s</div></div></section>" % (e, md(c["titel"]), md(c["abschluss"]), weg)
@@ -707,15 +774,10 @@ def main(n: int):
             if d > 0:
                 ueberlauf.append(f"Input: Folie {k+1} läuft {round(d)} px in die Fortschrittsleiste")
 
-        # Merkblatt: eine Seite, sonst automatisch passender Seitenumbruch
+        # Merkblatt: fließend zweispaltig, höchstens zwei Seiten (Vorder- und Rückseite)
         mb = out / f"Merkblatt_{n}_A4.pdf"
-        ok = False
-        for split in [None] + list(range(len(c["input"]) - 1, 0, -1)):
-            if not render(pg, doc(merkblatt_pages(c, split), MB_CSS, f"Merkblatt {n}"), mb):
-                ok = True
-                break
-        if not ok:
-            raise SystemExit("Merkblatt passt nicht auf zwei Seiten.")
+        if merkblatt_render(pg, c, mb) > 2:
+            ueberlauf.append("Merkblatt: mehr als zwei Seiten")
         report.append(("Merkblatt", mb, font_sizes(mb), MIN_PT["merkblatt"]))
 
         # Übungsblätter
@@ -739,6 +801,19 @@ def main(n: int):
         if o:
             ueberlauf.append(f"Übungsblätter: Überlauf auf Seite {o}")
         report.append(("Übungsblätter", ub, font_sizes(ub), MIN_PT["uebung"]))
+
+        # Hilfekarten (auf A5 verkleinert drucken) und Raumschild (A4 Originalgröße)
+        for h in c.get("hilfen", []):
+            hp = out / ("%s.pdf" % h["datei"])
+            o = render(pg, doc(hilfe_page(c, h), HK_CSS, h["titel"]), hp)
+            if o:
+                ueberlauf.append("%s: Überlauf %s" % (h["datei"], o))
+            report.append((h["kennung"], hp, font_sizes(hp), MIN_PT["uebung"]))
+        if c.get("schild"):
+            sp = out / ("%s.pdf" % c["schild"]["datei"])
+            o = render(pg, doc(schild_page(c, c["schild"]), HK_CSS, c["schild"]["titel"]), sp)
+            if o:
+                ueberlauf.append("Schild: Überlauf %s" % o)
 
         # Gelingensnachweise
         for var in (c["nachweis"]["varianten"] if c.get("nachweis") else []):

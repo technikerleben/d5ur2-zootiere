@@ -12,37 +12,117 @@
     {
       "titel": "Genau statt wertend",
       "bloecke": [
-        ["Sachlich beschreiben", "Beschreibe überprüfbare Merkmale. „schön“ und „süß“ sagen nur, wie jemand etwas findet. Nutze Angaben aus deinem Material."],
-        ["Genaue Wörter wählen", "Nutze genaue Nomen, Verben und Adjektive.\n*„Das Tier bewegt sich im Wasser.“* wird genauer: *„Der Fischotter schwimmt im Wasser.“*\n*„Sein Fell ist oben dunkelbraun.“* ist ebenfalls genau. Du musst „ist“ nicht immer ersetzen."],
-        ["Wörter zusammensetzen", "Aus *Fell* und *Farbe* wird die *Fellfarbe*. Das letzte Wort bestimmt den Artikel: *die Farbe → die Fellfarbe*. **Fachwörter** benennen etwas genau. Kläre ihre Bedeutung."],
-        ["Frage", "Was ist genauer: „schönes Fell“ oder „oben dunkelbraunes Fell“?"],
-        ["Gesicherte Antwort", "„oben dunkelbraunes Fell“. Die Farbe ist überprüfbar."]
+        [
+          "Sachlich beschreiben",
+          "Beschreibe überprüfbare Merkmale. „schön“ und „süß“ sagen nur, wie jemand etwas findet. Nutze Angaben aus deinem Material."
+        ],
+        [
+          "Genaue Wörter wählen",
+          "Nutze genaue Nomen, Verben und Adjektive.\n*„Das Tier bewegt sich im Wasser.“* wird genauer: *„Der Fischotter schwimmt im Wasser.“*\n*„Sein Fell ist oben dunkelbraun.“* ist ebenfalls genau. Du musst „ist“ nicht immer ersetzen."
+        ],
+        [
+          "Wörter zusammensetzen",
+          "Aus *Fell* und *Farbe* wird die *Fellfarbe*. Das letzte Wort bestimmt den Artikel: *die Farbe → die Fellfarbe*. **Fachwörter** benennen etwas genau. Kläre ihre Bedeutung."
+        ],
+        [
+          "Die Wörterhilfe",
+          "Auf der Wörterhilfe findest du genaue Wörter für Körperteile. Wähle nur Wörter, die zu deinem Tier passen. Prüfe die Angabe am Bild oder im Text."
+        ],
+        [
+          "Frage",
+          "Was ist genauer: „schönes Fell“ oder „oben dunkelbraunes Fell“?"
+        ],
+        [
+          "Gesicherte Antwort",
+          "„oben dunkelbraunes Fell“. Die Farbe ist überprüfbar."
+        ]
+      ]
+    },
+    {
+      "titel": "Fische genau beschreiben",
+      "grafik": "assets/grafik/aquarium.svg",
+      "grafik_alt": "Aquarium mit vier Fischen A bis D.",
+      "umbruch_nach": 3,
+      "bloecke": [
+        [
+          "Ungenau",
+          "*„Der Fisch ist hübsch.“* Welcher Fisch ist gemeint? Das weiß niemand."
+        ],
+        [
+          "Genau",
+          "*„Der Fisch hat einen kleinen Körper und eine sehr große Schwanzflosse.“* Das ist Fisch D."
+        ],
+        [
+          "Rätsel mit einem Partner",
+          "Beschreibe einen Fisch mit zwei genauen Merkmalen. Verrate nicht, welchen du meinst. Dein Partner zeigt auf den passenden Fisch."
+        ],
+        [
+          "Frage",
+          "Verbessere: „Der Fisch sieht cool aus.“ Nenne ein genaues Merkmal, damit man den Fisch erkennt."
+        ],
+        [
+          "Gesicherte Antwort",
+          "Zum Beispiel: *„Der Fisch hat lange Flossen oben und unten.“* Das ist Fisch C. Andere genaue Merkmale sind auch richtig."
+        ]
       ]
     },
     {
       "titel": "Im Präsens beschreiben",
       "bloecke": [
-        ["Warum Präsens?", "Tierbeschreibungen sagen, was allgemein für ein Tier gilt. Deshalb stehen sie meistens im **Präsens**, der Gegenwart: *Der Fischotter lebt an Gewässern.*"],
-        ["Grundform und gebeugte Form", "Im Wörterbuch steht die **Grundform**: *leben, fressen, sein*.\nIm Satz beugst du das Verb passend:\n*leben → er lebt*\n*fressen → er frisst*\n*sein → sein Fell ist dicht.*"],
-        ["Subjekt und Verb", "Das **Subjekt** ist der Satzgegenstand. Frage: Wer oder was schwimmt?\n*Der Otter schwimmt. Die Otter schwimmen.*"],
-        ["Frage", "Was ändert sich?"],
-        ["Gesicherte Antwort", "Bei mehreren Ottern heißt das Verb „schwimmen“ statt „schwimmt“."]
+        [
+          "Warum Präsens?",
+          "Tierbeschreibungen sagen, was allgemein für ein Tier gilt. Deshalb stehen sie meistens im **Präsens**, der Gegenwart: *Der Fischotter lebt an Gewässern.*"
+        ],
+        [
+          "Grundform und gebeugte Form",
+          "Im Wörterbuch steht die **Grundform**: *leben, fressen, sein*.\nIm Satz beugst du das Verb passend:\n*leben → er lebt*\n*fressen → er frisst*\n*sein → sein Fell ist dicht.*"
+        ],
+        [
+          "Subjekt und Verb",
+          "Das **Subjekt** ist der Satzgegenstand. Frage: Wer oder was schwimmt?\n*Der Otter schwimmt. Die Otter schwimmen.*"
+        ],
+        [
+          "Frage",
+          "Was ändert sich?"
+        ],
+        [
+          "Gesicherte Antwort",
+          "Bei mehreren Ottern heißt das Verb „schwimmen“ statt „schwimmt“."
+        ]
       ]
     },
     {
       "titel": "Vollständige Sätze",
       "bloecke": [
-        ["Ein vollständiger Satz", "Verbinde die Angaben zu einem verständlichen Satz. Achte darauf, dass Subjekt und Verb zusammenpassen: *Der Fischotter lebt. Die Fischotter leben.*"],
-        ["Beispiel", "Wortgruppe: *sein Fell – oben dunkelbraun – sein*\nSatz: *Sein Fell ist oben dunkelbraun.*\nDer Satz ist vollständig und verständlich."],
-        ["Frage", "Was fehlt bei „Der Fischotter an einem See“?"],
-        ["Gesicherte Antwort", "Das Verb. Vollständig heißt es: *Der Fischotter lebt an einem See.*"]
+        [
+          "Ein vollständiger Satz",
+          "Verbinde die Angaben zu einem verständlichen Satz. Achte darauf, dass Subjekt und Verb zusammenpassen: *Der Fischotter lebt. Die Fischotter leben.*"
+        ],
+        [
+          "Beispiel",
+          "Wortgruppe: *sein Fell – oben dunkelbraun – sein*\nSatz: *Sein Fell ist oben dunkelbraun.*\nDer Satz ist vollständig und verständlich."
+        ],
+        [
+          "Frage",
+          "Was fehlt bei „Der Fischotter an einem See“?"
+        ],
+        [
+          "Gesicherte Antwort",
+          "Das Verb. Vollständig heißt es: *Der Fischotter lebt an einem See.*"
+        ]
       ]
     },
     {
       "titel": "Sätze prüfen",
       "bloecke": [
-        ["Prüfe jeden Satz", "Passt die Aussage zum Material?\nIst der Satz vollständig?\nSteht das Verb im Präsens und passt es?\nSind die Wörter genau?\nBeginnen Satz und Nomen groß?\nSteht am Ende ein Punkt?"],
-        ["Beispiel verbessern", "*„sein fell war schön“* wird zu: *„Sein Fell ist oben dunkelbraun.“* Die Angabe stammt aus dem Material."]
+        [
+          "Prüfe jeden Satz",
+          "Passt die Aussage zum Material?\nIst der Satz vollständig?\nSteht das Verb im Präsens und passt es?\nSind die Wörter genau?\nBeginnen Satz und Nomen groß?\nSteht am Ende ein Punkt?"
+        ],
+        [
+          "Beispiel verbessern",
+          "*„sein fell war schön“* wird zu: *„Sein Fell ist oben dunkelbraun.“* Die Angabe stammt aus dem Material."
+        ]
       ]
     }
   ],
@@ -51,7 +131,7 @@
     {
       "nr": 5,
       "titel": "Treffende Wörter",
-      "brauchst": "Heft · Merkblatt 2",
+      "brauchst": "Heft · Merkblatt 2 · Wörterhilfe",
       "material": {
         "titel": "Material und Wörterhilfe",
         "text": "Fell oben: dunkelbraun. Kopf: breit und flach. Im Wasser schwimmt der Fischotter.\n**Tasthaare:** Haare zum Ertasten.\n**Schwimmhäute:** Haut zwischen den Zehen."
@@ -69,7 +149,7 @@
         {
           "art": "frei",
           "titel": "Vertiefung",
-          "text": "Zerlege „Körperlänge“ in zwei Nomen. Erkläre das Wort. Welcher Teil bestimmt den Artikel?"
+          "text": "Schau dir das Aquarium auf Merkblatt 2 an. Verbessere: *„Der Fisch ist lustig.“* Nenne ein genaues Merkmal, damit man den Fisch erkennt. Schreibe einen ganzen Satz im Präsens."
         }
       ]
     },
@@ -117,15 +197,53 @@
   "nachweis": {
     "titel": "Genaue Sätze",
     "ziele": [
-      {"id": "E2.1", "kurz": "richtige Angaben", "kind": "Meine Sätze passen zu den Angaben im Material.", "lehrkraft": "alle vier Aussagen passen zu den vorgegebenen Tierinformationen", "ueben": "Blatt 5"},
-      {"id": "E2.2", "kurz": "vollständige Sätze", "kind": "Ich schreibe vollständige, verständliche Sätze.", "lehrkraft": "alle vier Aussagen als vollständige, verständliche Sätze formuliert", "ueben": "Blatt 6"},
-      {"id": "E2.3", "kurz": "Verben im Präsens", "kind": "Meine Verben stehen im Präsens und passen zum Subjekt.", "lehrkraft": "Verben im Präsens und passend zum Subjekt", "ueben": "Blatt 6"},
-      {"id": "E2.4", "kurz": "genaue Wörter", "kind": "Ich ersetze eine Wertung durch eine genaue Angabe.", "lehrkraft": "die Wertung ist durch eine genaue passende Angabe ersetzt", "ueben": "Blatt 5"},
-      {"id": "E2.5", "kurz": "Großschreibung und Punkte", "kind": "Ich schreibe Satzanfänge und Nomen groß und setze Punkte.", "lehrkraft": "Satzanfänge und Nomen groß sowie Satzschlusspunkte in den vier Sätzen", "ueben": "Blatt 6"}
+      {
+        "id": "E2.1",
+        "kurz": "richtige Angaben",
+        "kind": "Meine Sätze passen zu den Angaben im Material.",
+        "lehrkraft": "alle vier Aussagen passen zu den vorgegebenen Tierinformationen",
+        "ueben": "Blatt 5"
+      },
+      {
+        "id": "E2.2",
+        "kurz": "vollständige Sätze",
+        "kind": "Ich schreibe vollständige, verständliche Sätze.",
+        "lehrkraft": "alle vier Aussagen als vollständige, verständliche Sätze formuliert",
+        "ueben": "Blatt 6"
+      },
+      {
+        "id": "E2.3",
+        "kurz": "Verben im Präsens",
+        "kind": "Meine Verben stehen im Präsens und passen zum Subjekt.",
+        "lehrkraft": "Verben im Präsens und passend zum Subjekt",
+        "ueben": "Blatt 6"
+      },
+      {
+        "id": "E2.4",
+        "kurz": "genaue Wörter",
+        "kind": "Ich ersetze eine Wertung durch eine genaue Angabe.",
+        "lehrkraft": "die Wertung ist durch eine genaue passende Angabe ersetzt",
+        "ueben": "Blatt 5"
+      },
+      {
+        "id": "E2.5",
+        "kurz": "Großschreibung und Punkte",
+        "kind": "Ich schreibe Satzanfänge und Nomen groß und setze Punkte.",
+        "lehrkraft": "Satzanfänge und Nomen groß sowie Satzschlusspunkte in den vier Sätzen",
+        "ueben": "Blatt 6"
+      }
     ],
     "aufgaben": [
-      {"titel": "Drei Sätze", "text": "Die Wortgruppen enthalten richtige Angaben. Schreibe daraus drei vollständige Sätze im Präsens.", "feld": "saetze"},
-      {"titel": "Einen Satz verbessern", "text": "Verbessere den Satz. Nutze die Angabe aus dem Material.", "feld": "verbessern"}
+      {
+        "titel": "Drei Sätze",
+        "text": "Die Wortgruppen enthalten richtige Angaben. Schreibe daraus drei vollständige Sätze im Präsens.",
+        "feld": "saetze"
+      },
+      {
+        "titel": "Einen Satz verbessern",
+        "text": "Verbessere den Satz. Nutze die Angabe aus dem Material.",
+        "feld": "verbessern"
+      }
     ],
     "vor_zielen": "Prüfe alle vier Sätze.",
     "varianten": {
@@ -135,7 +253,10 @@
           "sein Kopf – breit und flach – sein",
           "er – vor allem Fische – fressen"
         ],
-        "verbessern": {"satz": "der fischotter hatte schöne beine", "material": "Seine Beine sind kurz."}
+        "verbessern": {
+          "satz": "der fischotter hatte schöne beine",
+          "material": "Seine Beine sind kurz."
+        }
       },
       "B": {
         "wortgruppen": [
@@ -143,8 +264,66 @@
           "sein Körper – lang gestreckt – sein",
           "er – auch Frösche – fressen"
         ],
-        "verbessern": {"satz": "der fischotter hatte einen tollen schwanz", "material": "Sein Schwanz ist kräftig."}
+        "verbessern": {
+          "satz": "der fischotter hatte einen tollen schwanz",
+          "material": "Sein Schwanz ist kräftig."
+        }
       }
     }
-  }
+  },
+  "hilfen": [
+    {
+      "datei": "Woerterhilfe_A4",
+      "kennung": "Wörterhilfe",
+      "titel": "Genaue Wörter für dein Tier",
+      "hinweis": "Wähle nur Wörter, die zu deinem Tier passen. Prüfe die Angabe am Bild oder im Text.",
+      "tabelle": {
+        "kopf": [
+          "Körperteil",
+          "genaue Angaben"
+        ],
+        "zeilen": [
+          [
+            "der Kopf",
+            "breit, schmal, flach, rund"
+          ],
+          [
+            "die Schnauze",
+            "lang, kurz, spitz, breit"
+          ],
+          [
+            "die Ohren",
+            "klein, groß, rund, spitz"
+          ],
+          [
+            "das Fell",
+            "dicht, glatt, dunkelbraun, graubraun, gestreift, gefleckt"
+          ],
+          [
+            "der Körper",
+            "lang gestreckt, schlank, kräftig"
+          ],
+          [
+            "der Schwanz",
+            "lang, kurz, buschig, schmal, geringelt"
+          ],
+          [
+            "die Beine / die Pfoten",
+            "kurz, lang, kräftig"
+          ]
+        ]
+      },
+      "listen": [
+        [
+          "Fachwörter",
+          "die Tasthaare: Haare zum Ertasten\ndie Schwimmhäute: Haut zwischen den Zehen\ndie Krallen: spitze Nägel an den Zehen\nder Rumpf: Körper ohne Kopf, Beine und Schwanz"
+        ],
+        [
+          "Genaue Verben",
+          "er lebt · er frisst · er schwimmt · er klettert · er gräbt · er hat · er ist"
+        ]
+      ],
+      "achtung": "Ein Foto zeigt nicht alles. Ob ein Fell weich ist, siehst du nicht. Schreibe nur, was du belegen kannst."
+    }
+  ]
 }
