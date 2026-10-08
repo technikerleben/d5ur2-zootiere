@@ -53,7 +53,8 @@ Diese Festlegung ersetzt die frühere Vorgabe „alle Schülerblätter als A5-PD
 | Gelingensnachweis A/B | A4 hoch, mit integriertem Feedbackteil | A4 in Originalgröße | Schüleraufgaben mindestens 14 pt |
 | Probearbeit und Klassenarbeit | gleicher Aufbau wie Gelingensnachweis | A4 | wie Gelingensnachweis |
 
-- Graustufen, druckfreundlich: keine Flächenfüllungen außer hellem Grau, Struktur über Linien, Rahmen und Typografie.
+- **Alles, was für Schülerinnen und Schüler gedruckt wird: Graustufen**, druckfreundlich; keine Flächenfüllungen außer hellem Grau, Struktur über Linien, Rahmen und Typografie.
+- **HTML-Seiten (Input-Präsentationen, Kontroll-Kiosk, Cockpit) dürfen vollfarbig sein.** Farben nach dem HBG-SRL-Farbschema: Schieferblau für Struktur und Navigation, Rostorange für Aufträge und Aktionen, Salbeigrün für gesicherte Antworten und Erfolg.
 - Neutral gestaltet: **keine Maskottchen** (kein Otter, kein Dino), keine dekorativen Bilder. Fachliche Fotos sind erlaubt.
 - Kopf-/Fußzeilen neutral: **„Deutsch · Jahrgang 5“**, keine Klassenbezeichnungen.
 - Schrift: Andika (SIL, OFL; für Leseanfänger entwickelt, eindeutige Ziffern und Buchstaben), eingebettet; keine Netzladung beim Lernen.

@@ -527,36 +527,40 @@ INPUT_HTML = r"""<!doctype html><html lang="de"><head><meta charset="utf-8">
 <title>__TITLE__</title>
 <style>
 __FONTS__
-:root{--ink:#111;--mid:#4a4a4a;--soft:#8a8a8a;--line:#c8c8c8;--fill:#efefef;--bg:#fafafa}
+:root{--slate-dark:#2C3D4C;--slate-base:#3E5668;--slate-mid:#6A8599;--slate-pale:#D0DCE6;--slate-ghost:#EEF3F7;--rust-dark:#9E4E22;--rust-base:#D97A4A;--rust-mid:#EBA882;--rust-pale:#F5DDD1;--rust-ghost:#FBF0EB;--sage-dark:#4D8B3F;--sage-base:#7DBB6F;--sage-mid:#A8D49D;--sage-pale:#DDF0D8;--sage-ghost:#F0FAF0;--text:#1E2A35;--text-muted:#5A6A78;--ink:var(--text);--mid:var(--text-muted);--soft:var(--slate-mid);--line:var(--slate-pale);--fill:var(--slate-ghost);--bg:#F5F4F1}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;background:#2a2a2a;font-family:'Andika',sans-serif;color:var(--ink);overflow:hidden}
+html,body{height:100%;background:var(--slate-dark);font-family:'Andika',sans-serif;color:var(--ink);overflow:hidden}
 #stage{position:absolute;left:50%;top:50%;width:1600px;height:900px;transform-origin:center;background:var(--bg)}
 .slide{position:absolute;inset:0;padding:70px 90px 90px;display:none;flex-direction:column}
 .slide.on{display:flex}
-.kick{font-size:26px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
+.kick{font-size:26px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--rust-dark)}
+h1{color:var(--slate-dark)}
 h1{font-size:64px;line-height:1.08;margin:8px 0 28px}
-h1 .n{display:inline-flex;width:76px;height:76px;border-radius:50%;background:var(--ink);color:#fff;font-size:44px;
+h1 .n{display:inline-flex;width:76px;height:76px;border-radius:50%;background:var(--slate-base);color:#fff;font-size:44px;
   align-items:center;justify-content:center;margin-right:24px;vertical-align:6px}
 .body{flex:1;display:flex;gap:56px;min-height:0}
 .col{flex:1;display:flex;flex-direction:column;gap:22px;min-height:0}
 .blk{font-size:var(--fs,33px);line-height:1.38}
-.blk .lab{display:block;font-size:22px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);margin-bottom:4px}
-.blk.frage{border:3px solid var(--ink);border-radius:18px;padding:16px 24px}
-.blk.ans{border-left:10px solid var(--ink);background:var(--fill);border-radius:0 18px 18px 0;padding:16px 24px;transition:opacity .25s}
+.blk .lab{display:block;font-size:22px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--slate-base);margin-bottom:4px}
+.blk.frage{border:3px solid var(--rust-base);background:var(--rust-ghost);border-radius:18px;padding:16px 24px}
+.blk.frage .lab{color:var(--rust-dark)}
+.blk.ans{border-left:10px solid var(--sage-dark);background:var(--sage-pale);border-radius:0 18px 18px 0;padding:16px 24px;transition:opacity .25s}
 .blk.ans.zu{opacity:0;pointer-events:none}
 .blk.lang{font-size:30px}
 .fotowrap{flex:0 0 640px;display:flex;flex-direction:column}
-.fotowrap img{width:640px;border-radius:18px;filter:grayscale(1)}
+.fotowrap img{width:640px;border-radius:18px}
+.blk.ans .lab{color:var(--sage-dark)}
 .fotowrap .cred{font-size:18px;color:var(--mid);margin-top:8px}
-.title .ziel{font-size:40px;line-height:1.35;border-left:10px solid var(--ink);padding:10px 0 10px 28px;max-width:1150px}
+.title .ziel{font-size:40px;line-height:1.35;border-left:10px solid var(--rust-base);padding:10px 0 10px 28px;max-width:1150px}
 .title h1{font-size:88px;margin-top:20px}
 .weg{display:flex;gap:18px;align-items:center;margin-top:auto;font-size:30px}
-.weg span{border:3px solid var(--ink);border-radius:14px;padding:14px 22px;white-space:nowrap}
-.weg span.d{border-style:dashed}
-.weg i{font-style:normal;font-size:38px}
+.weg span{border:3px solid var(--slate-base);background:var(--slate-ghost);border-radius:14px;padding:14px 22px;white-space:nowrap}
+.weg span:last-child{border-color:var(--sage-dark);background:var(--sage-ghost)}
+.weg span.d{border-style:dashed;border-color:var(--rust-base);background:var(--rust-ghost)}
+.weg i{font-style:normal;font-size:38px;color:var(--rust-base)}
 #bar{position:absolute;left:90px;right:90px;bottom:34px;display:flex;gap:10px;align-items:center}
 #bar .dot{flex:1;height:8px;border-radius:4px;background:var(--line)}
-#bar .dot.on{background:var(--ink)}
+#bar .dot.on{background:var(--rust-base)}
 #bar .num{font-size:20px;color:var(--mid);margin-left:14px;min-width:70px;text-align:right}
 #hint{position:absolute;right:90px;top:30px;font-size:18px;color:var(--soft)}
 @media print{#hint,#bar{display:none}}
