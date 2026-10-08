@@ -670,8 +670,24 @@ addEventListener('resize',fit);fit();show(0);document.fonts.ready.then(()=>{shri
 </script></body></html>"""
 
 
+def farbig(rel: str) -> str:
+    """HTML darf farbig sein: farbige Fassung bevorzugen (…_graustufen.jpg → …_farbe.jpg, x.svg → x_farbe.svg)."""
+    p = Path(rel)
+    kandidaten = [p.with_name(p.name.replace("_Graustufen", "").replace("_graustufen", "") + "")]
+    if p.suffix == ".svg":
+        kandidaten = [p.with_name(p.stem + "_farbe.svg")]
+    elif "Fischotter" in p.name or "fischotter" in p.name:
+        kandidaten = [Path("assets/bilder/fischotter_farbe.jpg")]
+    else:
+        kandidaten = [p.with_name(p.name.replace("_graustufen", "_farbe"))]
+    for k in kandidaten:
+        if (ROOT / k).exists():
+            return str(k)
+    return rel
+
+
 def input_html(c: dict) -> str:
-    foto_b64 = b64(ROOT / c["foto"]["datei"])
+    foto_b64 = b64(ROOT / farbig(c["foto"]["datei"]))
     e = c["etappe"]
     weg = ("<div class='weg'><span>Input + Merkblatt %d</span><i>→</i><span>Blatt %d–%d · Pflicht</span>"
            "<span class='d'>Vertiefung · freiwillig</span><i>→</i><span>%s</span></div>"
@@ -695,9 +711,9 @@ def input_html(c: dict) -> str:
             foto = ""
             if sec.get("foto"):
                 foto = "<div class='fotowrap'><img src='data:image/jpeg;base64,%s' alt='%s'><div class='cred'>%s</div></div>" % (
-                    foto_b64, html.escape(c["foto"]["alt"]), html.escape(c["foto"]["nachweis"]))
+                    foto_b64, html.escape(c["foto"]["alt"]), html.escape(c["foto"]["nachweis"].replace(" · Graustufenfassung", "")))
             if sec.get("grafik"):
-                foto = "<div class='fotowrap'><img src='%s' alt='%s'></div>" % (svg_uri(sec["grafik"]), html.escape(sec.get("grafik_alt", "")))
+                foto = "<div class='fotowrap'><img src='%s' alt='%s'></div>" % (svg_uri(farbig(sec["grafik"])), html.escape(sec.get("grafik_alt", "")))
             if foto:
                 body = foto + "<div class='col'>%s</div>" % "".join(blks)
             elif len(blks) > 2:
