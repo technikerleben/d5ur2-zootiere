@@ -1,6 +1,17 @@
 # Deutsch 5 · Zootiere
 
-Stand: 30.09.2026. Vier Wochen, acht Doppelstunden, Fischotter als Beispieltier.
+Stand: 08.10.2026. Vier Wochen, acht Doppelstunden, Fischotter als Beispieltier. Jahrgang 5.
+
+## Neue Materialproduktion (ab 08.10.2026)
+
+Alle Materialien werden neu und neutral (Graustufen, ohne Maskottchen) aus einer Inhaltsdatei pro Etappe erzeugt:
+
+- **Input** als HTML-Präsentation und **Merkblatt** als A4-Blatt mit identischem Inhalt
+- **Übungsblätter** (Pflicht + freiwillige Vertiefung) und Material: A4 gesetzt, mindestens 14 pt, Druck auf A5 verkleinert
+- **Gelingensnachweise** A/B: A4 mit integrierter Lehrkraft-Rückmeldung je Ziel
+- **Probearbeit und Klassenarbeit** im Aufbau der Gelingensnachweise (Feinplanung folgt)
+
+Ausgabe: `ausgabe/etappeN/`. Quelle: `inhalt/etappeN.json`. Erzeugung: `python tools/build_material.py N`. Formatregeln: [skill.md](skill.md#ausgabeformate-verbindlich-ab-08102026). Etappe 1 ist das Muster; Etappe 2 und 3 folgen nach Freigabe. Die bisherigen Ordner unter `materialien/` bleiben als Vorfassungen erhalten.
 
 ## Verbindlicher SRL-Standard
 

@@ -1,11 +1,11 @@
 ---
 name: zootiere-deutsch-5
-description: Materialien der Deutschreihe Zootiere in Klasse 5.3 planen, erstellen und überarbeiten; A5-Papiermaterial, Lernbuddy als wiederverwendbaren SRL-Tischrahmen und Fischotter als Beispieltier verbindlich beachten.
+description: Materialien der Deutschreihe Zootiere in Jahrgang 5 planen, erstellen und überarbeiten; A4-Satz (Übungsblätter auf A5 verkleinert gedruckt, mindestens 14 pt), Lernbuddy als wiederverwendbaren SRL-Tischrahmen und Fischotter als Beispieltier verbindlich beachten.
 ---
 
 # Deutsch 5 · Zootiere · Produktionsregeln
 
-Stand: 30. September 2026
+Stand: 8. Oktober 2026 (Ausgabeformate neu festgelegt)
 
 ## Verbindliche Definition: Lernbuddy
 
@@ -29,7 +29,7 @@ Neue Schülerarbeitsblätter **dürfen den Lernbuddy nicht nachbauen oder ersetz
 2. Keine zweite tägliche Planungs- oder Reflexionsseite als Pflichtmaterial erstellen.
 3. Keine Datei als „Lernbuddy“ bezeichnen, wenn sie nur Zielhilfe, Checkliste, Lernweg oder Fachaufgabe ist.
 4. Ein kurzer Hinweis wie **„Lernbuddy-Fokus: Durchführung – prüfe deinen nächsten Schritt“** ist erlaubt. Er verweist auf den Tischrahmen und dupliziert ihn nicht.
-5. Aufgaben so setzen, dass sie als **A5-PDF hochkant** in die freie Mitte des Lernbuddys passen.
+5. Aufgaben so setzen, dass sie **auf A5 verkleinert gedruckt** hochkant in die freie Mitte des Lernbuddys passen.
 6. Lernweg, Schreibplan, Kriteriencheckliste und Lernbuddy haben unterschiedliche Funktionen und bleiben getrennt.
 
 ## SRL in dieser Reihe
@@ -41,9 +41,28 @@ Lernbuddy = physischer Tischrahmen zur Steuerung der aktuellen Lernphase.
 Schreibplan = fachliche Ordnung des Textes.  
 Kindercheckliste = Prüfung der Textqualität.
 
+## Ausgabeformate (verbindlich ab 08.10.2026)
+
+Diese Festlegung ersetzt die frühere Vorgabe „alle Schülerblätter als A5-PDF“.
+
+| Material | Satz | Druck | Schrift |
+|---|---|---|---|
+| Input | HTML-Präsentation, eine Datei, offline nutzbar | Beamer | groß, Präsentationssatz |
+| Merkblatt | A4 hoch | A4 in Originalgröße | Fließtext mindestens 12 pt |
+| Übungsblätter (Pflicht + freiwillige Vertiefung) und Material | A4 hoch | **auf A5 verkleinert** | **mindestens 14 pt**, auch Hinweise und Beschriftungen |
+| Gelingensnachweis A/B | A4 hoch, mit integriertem Feedbackteil | A4 in Originalgröße | Schüleraufgaben mindestens 14 pt |
+| Probearbeit und Klassenarbeit | gleicher Aufbau wie Gelingensnachweis | A4 | wie Gelingensnachweis |
+
+- Graustufen, druckfreundlich: keine Flächenfüllungen außer hellem Grau, Struktur über Linien, Rahmen und Typografie.
+- Neutral gestaltet: **keine Maskottchen** (kein Otter, kein Dino), keine dekorativen Bilder. Fachliche Fotos sind erlaubt.
+- Kopf-/Fußzeilen neutral: **„Deutsch · Jahrgang 5“**, keine Klassenbezeichnungen.
+- Schrift: Andika (SIL, OFL; für Leseanfänger entwickelt, eindeutige Ziffern und Buchstaben), eingebettet; keine Netzladung beim Lernen.
+- Input und Merkblatt einer Etappe werden aus **derselben Inhaltsdatei** erzeugt; Aussagen, Beispiele, Reihenfolge und gesicherte Antworten sind 1:1 gleich.
+- Feedback im Gelingensnachweis: pro Ziel „gezeigt / noch offen“, Ergebnis x/5, Lehrkraft-Rückmeldung und „Dein nächster Schritt“. Es ist eine **Lehrkrafteinschätzung**; keine SRL-Reflexion (das bleibt Aufgabe des Lernbuddys). Die Struktur ist so angelegt, dass die Einschätzung später auch KI-gestützt vorbereitet werden kann.
+
 ## Materialgestaltung
 
-- Alle Schülerarbeitsblätter: A5-PDF, mindestens 14 pt, einfache deutliche Du-Form.
+- Alle Schülerarbeitsblätter: einfache deutliche Du-Form; Formate siehe oben.
 - Längere Schreibprodukte ins Heft.
 - Keine iPads für Lernende. Online-Ressourcen sind für Lehrkräfte.
 - Einzige digitale Schüleranwendung: Kontroll-Kiosk auf einem Laptop im Raum.
