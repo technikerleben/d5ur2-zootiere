@@ -1,0 +1,802 @@
+{
+ "erzeugt": "2026-10-08T21:01+02:00",
+ "commit": "e23307f",
+ "thumbs": [
+  "043b64fbc3bfb8b8cf4f431dc79bca6362de7c01",
+  "04cfddaafcd584e4f11d7fa39df85eb5508310a2",
+  "06e8cfb39c8ec295fa003c97ddf6175d4da4974c",
+  "183ba215bc247bd17fd5ee224c3cdf5cf6c93a5b",
+  "192944568410748a47d44de61187ddd3a6dd8f30",
+  "19c52f17fe3117a5af7d263e78db539169ecb7fe",
+  "1d009d09a12edef028a823ab10927a45a1eadc46",
+  "20f8a897a141aa83e7b329729680403f16a6c94a",
+  "229a4def7d6b63bbb76deb54f309b148c1365261",
+  "233e3033a07a355c2fb313b7fa8fb9285ca45e20",
+  "254272e856e65761f640ffb5983809b0bb4bc40e",
+  "29670e3a0ed64021b1cc54cddc0f2a7689ebbb38",
+  "309873138b6707042bfc726925c2eed2960337ac",
+  "31d0ead7667a6ef77817bfc123e7795dfb07e5d1",
+  "31f5e18bd3a16620da8821fde058a7714557298a",
+  "34f1b96750e30992fe959be241cf46c7e611e59b",
+  "371afdc2f2a29a6176400effa0c82b87749550e0",
+  "3743cc07e59b65c83d2e4901b056818eed7e5dee",
+  "3cd47d7a52e55962e14638d7d4e56bbe6aa91c2d",
+  "3dad8308ef137d4f25362772e96e10d9a4952eeb",
+  "3edf75da541d0b04fa9e000073a042634dba19be",
+  "43b8b42848b7be7b704aef0b09b22df5bcba1ef2",
+  "4c4b594cc281a0c7f707f1f597fc9a2a5f08ea0e",
+  "4f592b7782ddb33600ed07231c849ab2edd95f51",
+  "59f6f9088030a45bbd534fd3a4d423e7d6b0e292",
+  "5e52ca2957eb247ec1d6572e1302e198796f6f76",
+  "5eac0e02d74e23377ffaf07fb94bb216ba01bdcb",
+  "611a7a0aaed59563767c507decc8f38bc5843c5c",
+  "61324937fcd90b1ec9f950dd7bbe4fae1f43e3d2",
+  "6276df1ce136e5f7a8ba293a19db3c4eb7695407",
+  "6acff66ee8e283e404cd7816458d9cd68cada698",
+  "70a110acc8cb9637bb0ad61e81bcf8a1f1a0e1d5",
+  "7fd096c7dc207d8d86470a13ea25122f5e2b8be3",
+  "83be1bb61b0f6f372fd1eb1c375a0a6672bb96ce",
+  "85506ea6f0a17f5e6a7dde5ae450ddefbb709eab",
+  "86e9ce06e73a23d3e322d712f2c337ff6de00d49",
+  "87ce9b78ac84ef7aacfe845b722058a35dfdf695",
+  "87e580a1dd1792603cff80d6b4201491025f215b",
+  "8c33311fab0e0c9fa56c6839222cb5449b09d2a5",
+  "957a23c00b0102c19f831cb5ea5a38d937eac2a6",
+  "9a99205f12f57e4281ddb5cd6ac8a95db30a7cea",
+  "9d6eff656ce945c820aecb5ebdf7a53646174d26",
+  "a12403e13b2992e20c6d478d23c481f6696c8856",
+  "a2a0dbde47b4ee6f306a386e531045462f181b0f",
+  "a43b8d0cd27ed7d33487274f4bdd4d3ef11309ba",
+  "ac1f3572a14a42edaca20cb0b0e1f9fe09ebed6a",
+  "b2cbf4a9ded78beb161819f9509d5a9d636d5211",
+  "b77c62f4b1d37dcaa1cbb231e515a750545e7cd9",
+  "b8e960376a3dd7e25c0f7be6d94826650af94360",
+  "c143dfb4362d085269cde09a4f7fe669e94686be",
+  "c15ff2f953b7c55940ca2c3abe31ae7c2fb93baa",
+  "c2438b2b9619ecd4bac2f62537c37c554863b18f",
+  "cbfaa400098afd7cbe6f6bde9201156be933f000",
+  "ccc3e67cf90c70733db1797324d52e2fbf22f593",
+  "cce72af740676fc51c77964d09cc74c52a959e88",
+  "cf5576603e9ee7e1016d6e8a5f5e9a470da149a8",
+  "d2afc487c39b54ff11e802fd0d46273149d213f5",
+  "d55761b2ba771bb8f807591f2934bd345d7d9ef7",
+  "e2ffa2a6c9ed7a517cb9216a5eb5fb3a364b26c0",
+  "e9b954da91353d9d64b29ef93b8ba31e383949bb",
+  "ed88e10fa94bdf8156291f0f3749e436a871e4de",
+  "edbb218d97b3f53ce30032e9e4101871ae98363b",
+  "edcf11042d8bb7ee69333b4c86f988a6ae6c79e1",
+  "f29588e91fe3bfc1e4f001d8e4a0858470b1dbb9",
+  "f3e767fbe336b49e71f59d61e6217c6f128aa0c6",
+  "f4299c3fbf5b227454e17b36bae157105021dc27",
+  "fc8b39c204ea713dcaf62ad281fad46f3192bf20",
+  "fcf670d159fe6ff461000c3958f8b363e0fb1c4b",
+  "fde43fca83b735fe1ae4e2d0c2201f6a687ebb11"
+ ],
+ "files": [
+  {
+   "path": "README.md",
+   "size": 8396,
+   "sha": "dda29dae49b69dbf76a3c380d87ff50ea6807c6c"
+  },
+  {
+   "path": "index.html",
+   "size": 21647,
+   "sha": "fc438f93ae2a33701a30a9b20eef7a47d3314ecb"
+  },
+  {
+   "path": "inputs/Zootiere_Inputs.html",
+   "size": 12966,
+   "sha": "46f256161767524b18d582cc626b1649e87c6639"
+  },
+  {
+   "path": "materialien/A5_Pruefbericht.json",
+   "size": 1602,
+   "sha": "0f6eef46d7fa14161fff826077d83f9484eece74"
+  },
+  {
+   "path": "materialien/Schuelermaterial_Zootiere_A5.pdf",
+   "size": 679128,
+   "sha": "309873138b6707042bfc726925c2eed2960337ac"
+  },
+  {
+   "path": "materialien/bewertung/Bewertungsraster.html",
+   "size": 6362,
+   "sha": "9e91e3ef2a0714b61399df1691eb2686fa03af82"
+  },
+  {
+   "path": "materialien/bewertung/Kindercheckliste.html",
+   "size": 2744,
+   "sha": "cfe8c00d9c0a680fb3deaf2d333e0f6118797bcf"
+  },
+  {
+   "path": "materialien/bewertung/Kindercheckliste_A5.pdf",
+   "size": 46533,
+   "sha": "9a99205f12f57e4281ddb5cd6ac8a95db30a7cea"
+  },
+  {
+   "path": "materialien/bewertung/Kompetenzraster_4_Standards.html",
+   "size": 8068,
+   "sha": "7d8c477a96ce21f51376ce542490024784302ca3"
+  },
+  {
+   "path": "materialien/etappe1/Etappe1_Schuelerpaket_A5.pdf",
+   "size": 368823,
+   "sha": "6276df1ce136e5f7a8ba293a19db3c4eb7695407"
+  },
+  {
+   "path": "materialien/etappe1/Fischotter_Material_A5.pdf",
+   "size": 273136,
+   "sha": "c2438b2b9619ecd4bac2f62537c37c554863b18f"
+  },
+  {
+   "path": "materialien/etappe1/Foerdermodule_A5.pdf",
+   "size": 47895,
+   "sha": "20f8a897a141aa83e7b329729680403f16a6c94a"
+  },
+  {
+   "path": "materialien/etappe1/GN1_A_A5.pdf",
+   "size": 275251,
+   "sha": "cbfaa400098afd7cbe6f6bde9201156be933f000"
+  },
+  {
+   "path": "materialien/etappe1/GN1_B_A5.pdf",
+   "size": 275223,
+   "sha": "87e580a1dd1792603cff80d6b4201491025f215b"
+  },
+  {
+   "path": "materialien/etappe1/Input_Etappe1.html",
+   "size": 8179,
+   "sha": "f3e342f909103f914772ae02febb5504d1a029df"
+  },
+  {
+   "path": "materialien/etappe1/Lehrkraft_Auswertung_A4.pdf",
+   "size": 53582,
+   "sha": "59f6f9088030a45bbd534fd3a4d423e7d6b0e292"
+  },
+  {
+   "path": "materialien/etappe1/Loesungen_1-4_A5.pdf",
+   "size": 48257,
+   "sha": "fc8b39c204ea713dcaf62ad281fad46f3192bf20"
+  },
+  {
+   "path": "materialien/etappe1/Merkblatt_1_A5.pdf",
+   "size": 278803,
+   "sha": "c15ff2f953b7c55940ca2c3abe31ae7c2fb93baa"
+  },
+  {
+   "path": "materialien/etappe1/Pflichtblaetter_1-4_A5.pdf",
+   "size": 48831,
+   "sha": "fcf670d159fe6ff461000c3958f8b363e0fb1c4b"
+  },
+  {
+   "path": "materialien/etappe1/Pruefbericht.json",
+   "size": 1864,
+   "sha": "1ea4654aa70b18189caeac683e7b306e7cad0097"
+  },
+  {
+   "path": "materialien/etappe1/README.md",
+   "size": 4777,
+   "sha": "beae53a5f1b0f968e859f3877bfee411690a29d0"
+  },
+  {
+   "path": "materialien/etappe1/Tipps_1-4_A5.pdf",
+   "size": 47593,
+   "sha": "043b64fbc3bfb8b8cf4f431dc79bca6362de7c01"
+  },
+  {
+   "path": "materialien/etappe1/bildfassung/Etappe1_Schuelerpaket_A5_Otter_Dino.pdf",
+   "size": 3796328,
+   "sha": "b8e960376a3dd7e25c0f7be6d94826650af94360"
+  },
+  {
+   "path": "materialien/etappe1/bildfassung/GN1_A_A5_Otter_Dino.pdf",
+   "size": 771655,
+   "sha": "87ce9b78ac84ef7aacfe845b722058a35dfdf695"
+  },
+  {
+   "path": "materialien/etappe1/bildfassung/GN1_B_A5_Otter_Dino.pdf",
+   "size": 790334,
+   "sha": "85506ea6f0a17f5e6a7dde5ae450ddefbb709eab"
+  },
+  {
+   "path": "materialien/etappe1/bildfassung/Generierung.json",
+   "size": 2019,
+   "sha": "c38d4f33c4cf44663f90767b8d854ca4cf338c2a"
+  },
+  {
+   "path": "materialien/etappe1/bildfassung/Pruefbericht.json",
+   "size": 4457,
+   "sha": "99dec590c4504b999ed03624aae0a43824319802"
+  },
+  {
+   "path": "materialien/etappe1/bildfassung/README.md",
+   "size": 1507,
+   "sha": "d3ab9c02431c97b3cbd065e8f7faec6336904847"
+  },
+  {
+   "path": "materialien/etappe1/grafisch/Etappe1_Schuelerpaket_A5_grafisch_graustufen.pdf",
+   "size": 1314957,
+   "sha": "e2ffa2a6c9ed7a517cb9216a5eb5fb3a364b26c0"
+  },
+  {
+   "path": "materialien/etappe1/grafisch/Pflichtblaetter_1-4_A5_grafisch_graustufen.pdf",
+   "size": 560559,
+   "sha": "ac1f3572a14a42edaca20cb0b0e1f9fe09ebed6a"
+  },
+  {
+   "path": "materialien/etappe1/grafisch/Pruefbericht.json",
+   "size": 2238,
+   "sha": "7f8f87767ddfcab57f05aacdd21a56d2c873f40e"
+  },
+  {
+   "path": "materialien/etappe1/grafisch/README.md",
+   "size": 1817,
+   "sha": "275fe336d665592d5e4bbc2f0c16c2ff7235687f"
+  },
+  {
+   "path": "materialien/etappe1/grafisch/assets/Otter_und_Dino.png",
+   "size": 1023787,
+   "sha": "9bad7b08436f514f8e2fb961ee0062a6e01b0bab"
+  },
+  {
+   "path": "materialien/etappe1/inhalt.json",
+   "size": 14060,
+   "sha": "ff096db0aa9d9b9e421497c58df6af0925782db6"
+  },
+  {
+   "path": "materialien/etappe2/Etappe2_Schuelerpaket_A5.pdf",
+   "size": 72083,
+   "sha": "611a7a0aaed59563767c507decc8f38bc5843c5c"
+  },
+  {
+   "path": "materialien/etappe2/Foerdermodule_A5.pdf",
+   "size": 46754,
+   "sha": "31d0ead7667a6ef77817bfc123e7795dfb07e5d1"
+  },
+  {
+   "path": "materialien/etappe2/GN2_A_A5.pdf",
+   "size": 44941,
+   "sha": "ccc3e67cf90c70733db1797324d52e2fbf22f593"
+  },
+  {
+   "path": "materialien/etappe2/GN2_B_A5.pdf",
+   "size": 44948,
+   "sha": "04cfddaafcd584e4f11d7fa39df85eb5508310a2"
+  },
+  {
+   "path": "materialien/etappe2/Input_Etappe2.html",
+   "size": 7133,
+   "sha": "ed19c5ee6768978c6f23237c58b4b3896d3c96bc"
+  },
+  {
+   "path": "materialien/etappe2/Lehrkraft_Auswertung_A4.pdf",
+   "size": 51940,
+   "sha": "7fd096c7dc207d8d86470a13ea25122f5e2b8be3"
+  },
+  {
+   "path": "materialien/etappe2/Loesungen_5-6_A5.pdf",
+   "size": 45561,
+   "sha": "9d6eff656ce945c820aecb5ebdf7a53646174d26"
+  },
+  {
+   "path": "materialien/etappe2/Merkblatt_2_A5.pdf",
+   "size": 48590,
+   "sha": "4c4b594cc281a0c7f707f1f597fc9a2a5f08ea0e"
+  },
+  {
+   "path": "materialien/etappe2/Pflichtblaetter_5-6_A5.pdf",
+   "size": 46283,
+   "sha": "957a23c00b0102c19f831cb5ea5a38d937eac2a6"
+  },
+  {
+   "path": "materialien/etappe2/Pruefbericht.json",
+   "size": 1678,
+   "sha": "c80c062ecb103874e7e50f53e37e35b158437aa9"
+  },
+  {
+   "path": "materialien/etappe2/README.md",
+   "size": 3833,
+   "sha": "8eec5b35b96d96f4389e66bfa9562e506b5671e8"
+  },
+  {
+   "path": "materialien/etappe2/Tipps_5-6_A5.pdf",
+   "size": 45560,
+   "sha": "43b8b42848b7be7b704aef0b09b22df5bcba1ef2"
+  },
+  {
+   "path": "materialien/etappe2/inhalt.json",
+   "size": 8815,
+   "sha": "3f188e34d9a9fca9f46d07b95d4d56fa64bd5596"
+  },
+  {
+   "path": "materialien/etappe2/lehrkraft.json",
+   "size": 7392,
+   "sha": "86452ed588226c52bf9f6e3ec0b5246a6a7e6b99"
+  },
+  {
+   "path": "materialien/etappe3/Checkliste_K1-K6_A5.pdf",
+   "size": 45908,
+   "sha": "8c33311fab0e0c9fa56c6839222cb5449b09d2a5"
+  },
+  {
+   "path": "materialien/etappe3/Erneute_Belege_A5.pdf",
+   "size": 45785,
+   "sha": "b2cbf4a9ded78beb161819f9509d5a9d636d5211"
+  },
+  {
+   "path": "materialien/etappe3/Etappe3_Schuelerpaket_A5.pdf",
+   "size": 138808,
+   "sha": "e9b954da91353d9d64b29ef93b8ba31e383949bb"
+  },
+  {
+   "path": "materialien/etappe3/Feedback_Probearbeit_A5.pdf",
+   "size": 45599,
+   "sha": "29670e3a0ed64021b1cc54cddc0f2a7689ebbb38"
+  },
+  {
+   "path": "materialien/etappe3/Foerdermodule_A5.pdf",
+   "size": 47174,
+   "sha": "31f5e18bd3a16620da8821fde058a7714557298a"
+  },
+  {
+   "path": "materialien/etappe3/Input_Etappe3.html",
+   "size": 7145,
+   "sha": "d3d564b9278db38bb64ea9758864b193c4ad9e4e"
+  },
+  {
+   "path": "materialien/etappe3/Lehrkraft_Auswertung_A4.pdf",
+   "size": 58412,
+   "sha": "70a110acc8cb9637bb0ad61e81bcf8a1f1a0e1d5"
+  },
+  {
+   "path": "materialien/etappe3/Loesungen_7-9_A5.pdf",
+   "size": 48521,
+   "sha": "edcf11042d8bb7ee69333b4c86f988a6ae6c79e1"
+  },
+  {
+   "path": "materialien/etappe3/Merkblatt_3_A5.pdf",
+   "size": 48713,
+   "sha": "b77c62f4b1d37dcaa1cbb231e515a750545e7cd9"
+  },
+  {
+   "path": "materialien/etappe3/Pflichtblaetter_7-9_A5.pdf",
+   "size": 47343,
+   "sha": "d55761b2ba771bb8f807591f2934bd345d7d9ef7"
+  },
+  {
+   "path": "materialien/etappe3/Probearbeit_Waschbaer_A5.pdf",
+   "size": 456117,
+   "sha": "86e9ce06e73a23d3e322d712f2c337ff6de00d49"
+  },
+  {
+   "path": "materialien/etappe3/Pruefbericht.json",
+   "size": 3547,
+   "sha": "ac2ee1c38000f5e9d1af9ab06bb0972129bc6a03"
+  },
+  {
+   "path": "materialien/etappe3/README.md",
+   "size": 4546,
+   "sha": "80031252dab38f6c088b14a7419561897e3cb91d"
+  },
+  {
+   "path": "materialien/etappe3/Tipps_7-9_A5.pdf",
+   "size": 47128,
+   "sha": "a12403e13b2992e20c6d478d23c481f6696c8856"
+  },
+  {
+   "path": "materialien/etappe3/Uebungstexte_A5.pdf",
+   "size": 46004,
+   "sha": "3743cc07e59b65c83d2e4901b056818eed7e5dee"
+  },
+  {
+   "path": "materialien/etappe3/inhalt.json",
+   "size": 21576,
+   "sha": "c87ff6a9d8bfb7cf5526170ea4f7826163b5ee0f"
+  },
+  {
+   "path": "materialien/etappe3/lehrkraft.json",
+   "size": 13802,
+   "sha": "662dc09fcbb2f7fbe2d38bfa8ad881b8680bb6a0"
+  },
+  {
+   "path": "materialien/etappe3/quellen.json",
+   "size": 2644,
+   "sha": "05f53498bc5a99cb12cef971b52991b4566a598c"
+  },
+  {
+   "path": "materialien/gelingensnachweise/Fischotter_DavePape_Graustufen.jpg",
+   "size": 182708,
+   "sha": "97ce3be7ebb470575f9ab68f42fe3d0017b44598"
+  },
+  {
+   "path": "materialien/gelingensnachweise/GN1_A_Tierdetektiv_A5.pdf",
+   "size": 275582,
+   "sha": "3cd47d7a52e55962e14638d7d4e56bbe6aa91c2d"
+  },
+  {
+   "path": "materialien/gelingensnachweise/GN1_B_Tierdetektiv_A5.pdf",
+   "size": 275560,
+   "sha": "229a4def7d6b63bbb76deb54f309b148c1365261"
+  },
+  {
+   "path": "materialien/gelingensnachweise/GN1_GN2_Erwartungshorizonte_Lehrkraft_A4.pdf",
+   "size": 160119,
+   "sha": "3edf75da541d0b04fa9e000073a042634dba19be"
+  },
+  {
+   "path": "materialien/gelingensnachweise/GN1_GN2_Schuelerkarten_A5.pdf",
+   "size": 321620,
+   "sha": "233e3033a07a355c2fb313b7fa8fb9285ca45e20"
+  },
+  {
+   "path": "materialien/gelingensnachweise/GN2_A_Genaue_Saetze_A5.pdf",
+   "size": 44937,
+   "sha": "06e8cfb39c8ec295fa003c97ddf6175d4da4974c"
+  },
+  {
+   "path": "materialien/gelingensnachweise/GN2_B_Genaue_Saetze_A5.pdf",
+   "size": 44943,
+   "sha": "edbb218d97b3f53ce30032e9e4101871ae98363b"
+  },
+  {
+   "path": "materialien/gelingensnachweise/GN3_Gespraechsleitfaden_Lehrkraft_A4.pdf",
+   "size": 89610,
+   "sha": "c143dfb4362d085269cde09a4f7fe669e94686be"
+  },
+  {
+   "path": "materialien/gelingensnachweise/Pruefbericht.json",
+   "size": 1196,
+   "sha": "ab4107b6a9cc8bf67bb8b7a50f2c0ee98e7a137b"
+  },
+  {
+   "path": "materialien/gelingensnachweise/README.md",
+   "size": 4391,
+   "sha": "648a7b574ddb65df024074521a3e63b6a6abe669"
+  },
+  {
+   "path": "materialien/kompetenzen_etappen.json",
+   "size": 11407,
+   "sha": "464d67bfaf356abc0e97e1fc94054c90e6c585a7"
+  },
+  {
+   "path": "materialien/lehrkraft/Beobachtung_Lernbuddy_A4.pdf",
+   "size": 45022,
+   "sha": "a2a0dbde47b4ee6f306a386e531045462f181b0f"
+  },
+  {
+   "path": "materialien/lehrkraft/Etappen_Gelingensnachweise.html",
+   "size": 1628,
+   "sha": "90a804112636e8fccdae05277fb0725f227ed970"
+  },
+  {
+   "path": "materialien/lehrkraft/Lernbuddy_Anwendung.md",
+   "size": 11557,
+   "sha": "c6df661335f6f40b6e5553b7b2a3b57ff6fbf791"
+  },
+  {
+   "path": "materialien/lehrkraft/Schritt4_Einsatz.html",
+   "size": 8542,
+   "sha": "260f67e3cbaa570efdf9a84607c1acc4fe3ef3ce"
+  },
+  {
+   "path": "materialien/lehrkraft/Schritt4_Einsatz.md",
+   "size": 7219,
+   "sha": "17e43905f712a3e0dca318680eab5594ae38e92f"
+  },
+  {
+   "path": "materialien/lehrkraft/Tierpakete_Quellen.html",
+   "size": 14865,
+   "sha": "54b84312b124f1619f19deefd4a766ccecd4aabd"
+  },
+  {
+   "path": "materialien/lernweg/Lernbuddy_Zielhilfe_Zootiere_A4.pdf",
+   "size": 45185,
+   "sha": "cce72af740676fc51c77964d09cc74c52a959e88"
+  },
+  {
+   "path": "materialien/lernweg/Lernbuddy_Zielhilfe_Zootiere_A5.pdf",
+   "size": 46039,
+   "sha": "fde43fca83b735fe1ae4e2d0c2201f6a687ebb11"
+  },
+  {
+   "path": "materialien/lernweg/Mein_Lernweg_Zootiere_A4.pdf",
+   "size": 46978,
+   "sha": "f4299c3fbf5b227454e17b36bae157105021dc27"
+  },
+  {
+   "path": "materialien/lernweg/Mein_Lernweg_Zootiere_A5.pdf",
+   "size": 47294,
+   "sha": "d2afc487c39b54ff11e802fd0d46273149d213f5"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Blatt_10_Wiederholung_A5.pdf",
+   "size": 46263,
+   "sha": "ed88e10fa94bdf8156291f0f3749e436a871e4de"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Individuelle_Foerderziele_A5.pdf",
+   "size": 45152,
+   "sha": "5e52ca2957eb247ec1d6572e1302e198796f6f76"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Kompetenzraster_4_Standards_A5.pdf",
+   "size": 50874,
+   "sha": "f3e767fbe336b49e71f59d61e6217c6f128aa0c6"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Kompetenzuebersicht_A5.pdf",
+   "size": 46253,
+   "sha": "cf5576603e9ee7e1016d6e8a5f5e9a470da149a8"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Lehrkraft_Einsatz_A4.pdf",
+   "size": 50112,
+   "sha": "371afdc2f2a29a6176400effa0c82b87749550e0"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Lernweg_Zootiere_A5.pdf",
+   "size": 47201,
+   "sha": "183ba215bc247bd17fd5ee224c3cdf5cf6c93a5b"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Projekt_1_Tierlexikon_A5.pdf",
+   "size": 46429,
+   "sha": "192944568410748a47d44de61187ddd3a6dd8f30"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Projekt_2_Tierraetsel_A5.pdf",
+   "size": 46249,
+   "sha": "a43b8d0cd27ed7d33487274f4bdd4d3ef11309ba"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Projekt_3_Tiervergleich_A5.pdf",
+   "size": 46233,
+   "sha": "4f592b7782ddb33600ed07231c849ab2edd95f51"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Projekte_1-3_A5.pdf",
+   "size": 135867,
+   "sha": "3dad8308ef137d4f25362772e96e10d9a4952eeb"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/Pruefbericht.json",
+   "size": 2998,
+   "sha": "76e8864a480c63cb3b3940f65c390815c7105a75"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/README.md",
+   "size": 3393,
+   "sha": "0fd6606591aa7c5073708dc29237444dcfee995c"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/inhalt.json",
+   "size": 14003,
+   "sha": "1b3d7af275fa538006f280076c6af02b270970c5"
+  },
+  {
+   "path": "materialien/lernweg_wahlphase/lehrkraft.json",
+   "size": 6168,
+   "sha": "e1610ef3fc30af156d493e246a7d90732f293138"
+  },
+  {
+   "path": "materialien/schritt3.css",
+   "size": 4162,
+   "sha": "5598d0f1ce6e4ba6147267bdf3dc6dcee6c519aa"
+  },
+  {
+   "path": "materialien/schritt3_inhalte.json",
+   "size": 15911,
+   "sha": "97b0f880a5e293985b9861f1fb76d46e91605e61"
+  },
+  {
+   "path": "materialien/schritt4/Aufgaben_1-10_A5.pdf",
+   "size": 58208,
+   "sha": "1d009d09a12edef028a823ab10927a45a1eadc46"
+  },
+  {
+   "path": "materialien/schritt4/Loesungen_1-10_A5.pdf",
+   "size": 57201,
+   "sha": "254272e856e65761f640ffb5983809b0bb4bc40e"
+  },
+  {
+   "path": "materialien/schritt4/Merkblaetter_1-3_A5.pdf",
+   "size": 48271,
+   "sha": "6acff66ee8e283e404cd7816458d9cd68cada698"
+  },
+  {
+   "path": "materialien/schritt4/Pruefbericht.json",
+   "size": 877,
+   "sha": "536b7e8242e0a9449876f191f4c79e65a7796f85"
+  },
+  {
+   "path": "materialien/schritt4/Tipps_1-10_A5.pdf",
+   "size": 55250,
+   "sha": "83be1bb61b0f6f372fd1eb1c375a0a6672bb96ce"
+  },
+  {
+   "path": "materialien/schritt4_inhalte.json",
+   "size": 27616,
+   "sha": "ac282cf5622ed2e57e264243e573f45d378038aa"
+  },
+  {
+   "path": "materialien/tierpakete/biber.html",
+   "size": 4111,
+   "sha": "b3d8446ebaaa153dc52e2c07c737ec35f3830438"
+  },
+  {
+   "path": "materialien/tierpakete/biber_A5.pdf",
+   "size": 248575,
+   "sha": "19c52f17fe3117a5af7d263e78db539169ecb7fe"
+  },
+  {
+   "path": "materialien/tierpakete/erdmaennchen.html",
+   "size": 4314,
+   "sha": "3f51249ace1cfbeeb7971f0d157a769290208c78"
+  },
+  {
+   "path": "materialien/tierpakete/erdmaennchen_A5.pdf",
+   "size": 202996,
+   "sha": "5eac0e02d74e23377ffaf07fb94bb216ba01bdcb"
+  },
+  {
+   "path": "materialien/tierpakete/fischotter.html",
+   "size": 4120,
+   "sha": "212c4b618ce2801eda24a03cea0fe82f4238a9e4"
+  },
+  {
+   "path": "materialien/tierpakete/fischotter_A5.pdf",
+   "size": 265518,
+   "sha": "61324937fcd90b1ec9f950dd7bbe4fae1f43e3d2"
+  },
+  {
+   "path": "materialien/tierpakete/roter-panda.html",
+   "size": 4069,
+   "sha": "94ef7dfdffba6722b67fb8d07515bccfd908f0d2"
+  },
+  {
+   "path": "materialien/tierpakete/roter-panda_A5.pdf",
+   "size": 123705,
+   "sha": "f29588e91fe3bfc1e4f001d8e4a0858470b1dbb9"
+  },
+  {
+   "path": "materialien/tierpakete/waschbaer.html",
+   "size": 4097,
+   "sha": "2a91904bdcd4b1ff6ef4b0fa825a291cb2f0e4c1"
+  },
+  {
+   "path": "materialien/tierpakete/waschbaer_A5.pdf",
+   "size": 220330,
+   "sha": "34f1b96750e30992fe959be241cf46c7e611e59b"
+  },
+  {
+   "path": "planung/Etappen_Gelingensnachweise.html",
+   "size": 8676,
+   "sha": "f5060d78e3627915fb97b6cab379a6b6898f5d4e"
+  },
+  {
+   "path": "planung/Etappen_Gelingensnachweise.md",
+   "size": 6537,
+   "sha": "ba527f5a570005e6c845493764d7b1bbd966e6e8"
+  },
+  {
+   "path": "planung/Kompetenzraster_4_Standards.md",
+   "size": 6196,
+   "sha": "0082b95a74d07fed5eb9dc9c4c24ce3d59f025a8"
+  },
+  {
+   "path": "planung/Materialmatrix.html",
+   "size": 21110,
+   "sha": "e58b97719e12900b1224488ddcd7f90e26c304e1"
+  },
+  {
+   "path": "planung/Materialmatrix.md",
+   "size": 17688,
+   "sha": "9a4e6de924c73cf994f1fe38a77ceec4617c22e1"
+  },
+  {
+   "path": "planung/Projekte_und_Terminwahl.html",
+   "size": 6484,
+   "sha": "a174a9a30b4cfe93cc2aa113bd588a53d3ca1c53"
+  },
+  {
+   "path": "planung/Projekte_und_Terminwahl.md",
+   "size": 4769,
+   "sha": "b9465f8ea10569671f00d778ba320d84f87c6c08"
+  },
+  {
+   "path": "planung/Projektgrundlage.md",
+   "size": 16454,
+   "sha": "b50b8b1f5d74bbfd8a8e0f3e91cb8c6359cec4dc"
+  },
+  {
+   "path": "planung/Reihenplanung_8_Doppelstunden.html",
+   "size": 8212,
+   "sha": "e5751ca0699a1449378fac3a83032b64e9172ee6"
+  },
+  {
+   "path": "planung/Reihenplanung_8_Doppelstunden.md",
+   "size": 6527,
+   "sha": "20f0ec16deecbbe217f9178f26d98573c03f3d46"
+  },
+  {
+   "path": "planung/SRL_Standard.html",
+   "size": 9384,
+   "sha": "71ee7e6e934eed553de7f0051ab4f9aa568a8370"
+  },
+  {
+   "path": "planung/SRL_Standard.md",
+   "size": 7822,
+   "sha": "389a081a4eb947e020235b68e9ca2fa3ae97388e"
+  },
+  {
+   "path": "planung/Sprachspur_Zootiere_Feinplanung.md",
+   "size": 11787,
+   "sha": "43f3730cd49614a316afe83ecbf0749e9e6104e6"
+  },
+  {
+   "path": "skill.md",
+   "size": 4819,
+   "sha": "2b7f8351cf9f5bcea49b660d50d68aa77a6efbdb"
+  },
+  {
+   "path": "tools/assemble_etappe1_bildfassung.py",
+   "size": 2230,
+   "sha": "f2726dbe217a95d0c6750fe9eadac28cf564919e"
+  },
+  {
+   "path": "tools/build_srl_cockpit.py",
+   "size": 42668,
+   "sha": "f906245e199f4b7666f239adfae3c64905e1fb18"
+  },
+  {
+   "path": "tools/generate_a5.py",
+   "size": 9728,
+   "sha": "1f1e7ed94261c4ea711e886b341d03b5c351cdae"
+  },
+  {
+   "path": "tools/generate_etappe1.py",
+   "size": 18432,
+   "sha": "07c659f52e9322e68c205cd6d6f78b0c0e84b740"
+  },
+  {
+   "path": "tools/generate_etappe1_grafisch.py",
+   "size": 5647,
+   "sha": "aaee8e84c9a69f5fd969ecec4ef72f8f5759e348"
+  },
+  {
+   "path": "tools/generate_etappe2.py",
+   "size": 9781,
+   "sha": "f6f3b1f9f8b95d43c51646351ef35d5ae80b23d0"
+  },
+  {
+   "path": "tools/generate_etappe3.py",
+   "size": 9600,
+   "sha": "d2041563e4f7f31058194d7494b639a5f76ca53d"
+  },
+  {
+   "path": "tools/generate_gelingensnachweise.py",
+   "size": 17483,
+   "sha": "c680e990114a2c4fd521d0f76af51892315af1c4"
+  },
+  {
+   "path": "tools/generate_lernweg_wahlphase.py",
+   "size": 4805,
+   "sha": "1f9eca1b21857fd77dd9194253f9f3df2320882d"
+  },
+  {
+   "path": "tools/generate_schritt2.py",
+   "size": 7922,
+   "sha": "19e7d9d4854bcff865c602d19c111512109279cc"
+  },
+  {
+   "path": "tools/generate_schritt4.py",
+   "size": 3928,
+   "sha": "8b0e1139bf0243e5044fdbb7b734ae6b9a2a7800"
+  },
+  {
+   "path": "tools/generate_tierpakete.mjs",
+   "size": 3646,
+   "sha": "685693d8d30b3023368f9daaa7b5f6dee25289c5"
+  }
+ ]
+}

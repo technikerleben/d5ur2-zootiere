@@ -25,6 +25,7 @@ Alle drei Etappen einschließlich Probearbeit und Feedback sind hergestellt. Ler
 ## Planung und Cockpit
 
 - [Lehrkraft-Cockpit](index.html)
+- [Materialboard](materialboard.html): alle aktuellen Dateien im Aufbau der TaskCard, Dateiliste live aus GitHub
 - [Verbindlicher Standard](planung/SRL_Standard.md)
 - [Etappen und Kompetenzindikatoren](planung/Etappen_Gelingensnachweise.md)
 - [Reihenplanung](planung/Reihenplanung_8_Doppelstunden.md)
@@ -46,6 +47,8 @@ Schülerausgaben: A5 hoch, mindestens 14 pt einschließlich Beschriftungen, Grau
 `materialien/kompetenzen_etappen.json` enthält Kriterien und aktuelle Etappenstruktur. Die Planungs-HTML-Seiten und das Cockpit werden mit `python tools/build_srl_cockpit.py` aus den Planungsquellen erzeugt. Änderungen an fachlichen Planungen auch in den Cockpit-Zusammenfassungen nachziehen.
 
 Die bisherigen PDF-Generatoren `generate_a5.py`, `generate_schritt4.py` und `generate_gelingensnachweise.py` sowie `generate_schritt2.py` sind für die Etappenstruktur zu überarbeiten; ihr unveränderter Aufruf erzeugt Vorfassungen. Vorhandene Prüfberichte gelten nur für die alten Ausgaben und belegen keine Freigabe nach dem neuen Standard. Schüler-PDFs erst nach technischer und visueller Prüfung ersetzen.
+
+Das Materialboard ordnet Dateien über Muster in `materialboard.html` den Karten zu; neue Dateien in bekannten Ordnern erscheinen ohne weiteren Schritt, unbekannte in der Spalte „Noch nicht zugeordnet“. Vorschaubilder und Ersatz-Dateiliste nach PDF-Änderungen mit `python tools/build_materialboard.py` erneuern (benötigt PyMuPDF).
 
 Das Cockpit ist statisch und benötigt keinen Build-Schritt auf Vercel. Das Deployment übernimmt der Nutzer. Es werden keine Vercel-Einstellungen verändert.
 
