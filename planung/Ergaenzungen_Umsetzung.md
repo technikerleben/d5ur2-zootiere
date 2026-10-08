@@ -11,7 +11,7 @@ Stand: 08.10.2026. Grundlage: Ergänzungsauftrag Materialproduktion (Vergleich m
 | Fischbeschreibung verbessern | Input/Merkblatt 2 „Fische genau beschreiben“, Vertiefung Blatt 5 | Ersetzt die doppelte Vertiefung „Körperlänge“. |
 | Mündliches Rätsel | Input 2 | Partnerrätsel mit zwei Merkmalen, 2–5 Minuten, kein Nachweis. |
 | Haltestelle | Blatt 9, Aufgaben 2–3 | Raumschild `Haltestelle_Schild_A4.pdf` (Originalgröße) und `Rueckmeldekarte_A4.pdf`. Keine Unterschriften, kein Protokoll. |
-| Tiermagazin und Kurzvortrag | Wahlprojekt P1 | folgt mit den Projektblättern A4 |
+| Tiermagazin und Kurzvortrag | Wahlprojekt P1 | `ausgabe/wahlphase/Wahlphase_Projekte_A4.pdf`: Magazinseite aus vorhandenem Text, Kurzvortrag 1–2 Minuten als freiwillige Erweiterung, keine Note. |
 
 ## Hinweise für die Lehrkraft zu den Partnerphasen
 

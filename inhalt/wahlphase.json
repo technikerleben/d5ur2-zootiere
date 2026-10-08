@@ -1,0 +1,62 @@
+{
+  "_hinweis": "Wahlphase nach dem Feedback zur Probearbeit. A4 in Originalgröße drucken (nicht verkleinern). P1 ist das bisherige Tierlexikon, weiterentwickelt zum Tiermagazin mit freiwilligem Kurzvortrag (Ergänzungsauftrag 7.1/7.2).",
+  "uebersicht": {
+    "titel": "Deine Wahlzeit",
+    "einleitung": "Du hast deine Probearbeit geschrieben und Feedback bekommen. Jetzt entscheidest du, woran du arbeitest.",
+    "zuerst": "Hast du weniger als vier von fünf Zielen gezeigt? Dann übst du zuerst deine offenen Ziele und zeigst sie noch einmal. Deine Rückmeldung sagt dir, mit welchem Blatt du übst.",
+    "angebote": [
+      ["P1 · Unser Tiermagazin", "Du gestaltest eine Magazinseite mit deinem Tiertext und einer beschrifteten Zeichnung. Freiwillig: ein kurzer Vortrag."],
+      ["P2 · Welches Tier ist gemeint?", "Du schreibst eine Rätselkarte mit vier genauen Merkmalen. Andere raten das Tier."],
+      ["P3 · Zwei Tiere vergleichen", "Du vergleichst zwei Tiere in einer Tabelle und in drei Sätzen."],
+      ["Wiederholen", "Du übst ein Ziel, das dir noch schwerfällt. Nutze das passende Blatt und den Kiosk."],
+      ["Vertiefung nachholen", "Du bearbeitest eine freiwillige Vertiefung von Blatt 1–9, die du noch nicht gemacht hast."]
+    ],
+    "regeln": "Du musst nicht alle Projekte machen. Du kannst allein, zu zweit oder zu dritt arbeiten. Während einer Klassenarbeit arbeitest du still für dich."
+  },
+  "projekte": [
+    {
+      "nr": "P1",
+      "titel": "Unser Tiermagazin",
+      "ergebnis": "Du gestaltest eine Seite für das Tiermagazin unserer Klasse. Arbeite allein oder zu zweit.",
+      "brauchst": "deinen überarbeiteten Text von Blatt 8 und 9 · das Tierpaket · Checkliste K1–K6 · Papier · Stifte",
+      "schritte": [
+        ["Text auswählen und prüfen", "Nimm deinen überarbeiteten Übungstext. Prüfe ihn noch einmal mit K1–K6. Verbessere nur nötige Stellen. Schreibe nicht alles neu."],
+        ["Die Seite gestalten", "Schreibe eine Überschrift mit dem Tiernamen. Übertrage deinen Text sauber. Zeichne das Tier und beschrifte vier äußere Merkmale. Schreibe unten: „Quelle: Tierpaket …“."],
+        ["Die Seite abgeben", "Lege deine Seite in die Magazin-Mappe. Zu zweit: Schreibt unten auf, wer was gemacht hat."]
+      ],
+      "gelingt": ["Die Angaben passen zum Material.", "Vier Merkmale sind beschriftet.", "Text und Zeichnung passen zusammen.", "Die Seite ist gut lesbar."],
+      "erweiterung": "**Kurzvortrag (1–2 Minuten):** Stelle dein Tier mit wenigen Stichwörtern vor. Nenne genaue Merkmale und eine interessante Information aus dem Material. Sprich so, dass andere dich verstehen. Eine Karteikarte oder dein Schreibplan hilft dir.",
+      "still": "Während einer Klassenarbeit: Zeichne oder schreibe still. Den Vortrag hältst du später."
+    },
+    {
+      "nr": "P2",
+      "titel": "Welches Tier ist gemeint?",
+      "ergebnis": "Du erstellst eine Rätselkarte und eine getrennte Lösungskarte. Arbeite allein, zu zweit oder zu dritt.",
+      "brauchst": "Tierpakete zu Fischotter, Erdmännchen und Rotem Panda · Karten · Stifte. Nur diese drei Tiere stehen zur Auswahl.",
+      "schritte": [
+        ["Hinweise schreiben", "Wähle eines der drei Tiere. Schreibe vier genaue äußere Merkmale auf deine Rätselkarte. Nenne den Tiernamen noch nicht. Prüfe: Passen die Hinweise zusammen nur zu deinem Tier?"],
+        ["Lösung getrennt sichern", "Schreibe den Tiernamen auf eine zweite Karte. Notiere zu jedem Hinweis den Beleg: eine Textstelle oder ein sichtbares Merkmal auf dem Foto."],
+        ["Rätsel erproben", "Lies einem Kind deine Hinweise vor. Es zeigt auf das passende Tier. Frage danach: „Was hat geholfen? Was war unklar?“"],
+        ["Verbessern", "Verbessere ungenaue Hinweise. Passt schon alles? Erkläre, warum die Hinweise eindeutig sind."]
+      ],
+      "gelingt": ["Vier richtige Merkmale.", "Verständliche Hinweise.", "Unter den drei Tieren eindeutig.", "Getrennte Lösung mit vier Belegen."],
+      "erweiterung": "Ordne deine Hinweise vom allgemeinen zum besonders kennzeichnenden Merkmal. Das letzte Merkmal verrät das Tier sicher.",
+      "still": "Während einer Klassenarbeit: Schreibe oder prüfe deine Karten still. Die Rätselrunde findet später statt."
+    },
+    {
+      "nr": "P3",
+      "titel": "Zwei Tiere vergleichen",
+      "ergebnis": "Du erstellst eine Tabelle und schreibst drei Vergleichssätze. Arbeite allein, zu zweit oder zu dritt.",
+      "brauchst": "zwei Tierpakete: Fischotter, Erdmännchen oder Roter Panda · Heft · Stifte",
+      "schritte": [
+        ["Merkmale auswählen", "Wähle drei Körpermerkmale, zu denen beide Pakete Angaben enthalten. Vergleiche immer dasselbe Merkmal, zum Beispiel Fell oder Schwanz."],
+        ["Tabelle anlegen", "Zeichne im Heft eine Tabelle mit drei Spalten: Merkmal · Tier 1 · Tier 2. Trage zu jedem Merkmal die Angaben beider Tiere ein."],
+        ["Sätze schreiben", "Schreibe zu jeder Zeile einen Vergleichssatz. Zum Beispiel: „Beide Tiere haben …“ oder „Beim … ist …, beim … ist …“."],
+        ["Prüfen", "Prüfe alle Angaben in den Paketen. Markiere einen Vergleich, der beim Erkennen besonders hilft."]
+      ],
+      "gelingt": ["Drei gleiche Merkmale verglichen.", "Angaben zu beiden Tieren richtig.", "Drei verständliche Vergleichssätze."],
+      "erweiterung": "Erkläre, warum dein Vergleich mehr hilft als eine Wertung wie „süß“.",
+      "still": "Während einer Klassenarbeit: Arbeite still an deiner Tabelle oder deinen Sätzen."
+    }
+  ]
+}

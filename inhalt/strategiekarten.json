@@ -1,0 +1,124 @@
+{
+  "_hinweis": "Strategiekarten zum Anlegen am Lernbuddy (A4 laminiert, Strategiekante rechts bzw. links). Format 70 × 297 mm: A4 hochkant längs gedrittelt, drei Karten pro Bogen. Original groß drucken, schneiden, laminieren. Graustufen. Jede Karte: Wann? · Schritte · Beispiel · Hat es geholfen?",
+  "karten": [
+    {
+      "nr": 1,
+      "titel": "Lesen mit Suchauftrag",
+      "symbol": "lesen",
+      "wann": "Du suchst Informationen in einem Sachtext.",
+      "schritte": [
+        "Lies den Text einmal. Markiere unbekannte Wörter.",
+        "Kläre die Wörter: Satz noch einmal lesen, Wörterhilfe, fragen.",
+        "Lies mit Suchauftrag weiter. Markiere die Stelle.",
+        "Notiere ein Stichwort unter der Überschrift."
+      ],
+      "beispiel": "Was frisst er?\nSuchwort: *frisst*\n→ *vor allem Fische*"
+    },
+    {
+      "nr": 2,
+      "titel": "Markieren mit Buchstaben",
+      "symbol": "markieren",
+      "wann": "Du suchst verschiedene Informationen im selben Text.",
+      "schritte": [
+        "Lege fest, was du suchst.",
+        "Schreibe einen Buchstaben an die Stelle:\n**A** Aussehen · **L** Lebensraum\n**N** Nahrung · **M** Maß",
+        "Markiere nur die wichtigen Wörter, nicht den ganzen Satz.",
+        "Prüfe: Passt die Stelle zur Frage?"
+      ],
+      "beispiel": "*Er lebt an Flüssen und Seen.* → **L**"
+    },
+    {
+      "nr": 3,
+      "titel": "Ordnen unter Überschriften",
+      "symbol": "ordnen",
+      "wann": "Du sammelst Informationen für einen Plan.",
+      "schritte": [
+        "Schreibe die Überschriften: Überblick · Aussehen · Lebensraum · Nahrung.",
+        "Frage bei jeder Angabe: Wohin gehört sie?",
+        "Schreibe sie als Stichwort darunter.",
+        "Zähle: Hast du vier Merkmale beim Aussehen?"
+      ],
+      "beispiel": "*breiter, flacher Kopf* → Aussehen\n*Fische* → Nahrung"
+    },
+    {
+      "nr": 4,
+      "titel": "Genau statt wertend",
+      "symbol": "lupe",
+      "wann": "Du beschreibst, wie ein Tier aussieht.",
+      "schritte": [
+        "Lies dein Wort: Sagt es, wie jemand das Tier findet?",
+        "Frage: Kann ich es im Bild sehen oder im Text lesen?",
+        "Ersetze die Wertung durch Form, Farbe oder Größe.",
+        "Prüfe die neue Angabe am Material."
+      ],
+      "beispiel": "nicht: *schönes Fell*\nsondern: *oben dunkelbraunes Fell*"
+    },
+    {
+      "nr": 5,
+      "titel": "Die Wörterhilfe nutzen",
+      "symbol": "liste",
+      "wann": "Dir fehlt ein genaues Wort.",
+      "schritte": [
+        "Suche den Körperteil in der Wörterhilfe.",
+        "Lies die möglichen Wörter.",
+        "Wähle nur ein Wort, das zu deinem Tier passt.",
+        "Prüfe es am Bild oder im Text."
+      ],
+      "beispiel": "Schwanz: *lang, kurz, buschig, schmal*\nErdmännchen: *lang und schmal*"
+    },
+    {
+      "nr": 6,
+      "titel": "Einen Satz bauen",
+      "symbol": "satz",
+      "wann": "Du machst aus Stichwörtern einen Satz.",
+      "schritte": [
+        "Wer oder was? Nenne das Subjekt.",
+        "Was tut es oder wie ist es? Setze das Verb im Präsens.",
+        "Ergänze die Angabe aus dem Plan.",
+        "Prüfe: Großer Anfang? Punkt am Ende?"
+      ],
+      "beispiel": "*Kopf – breit, flach*\n→ *Sein Kopf ist breit und flach.*"
+    },
+    {
+      "nr": 7,
+      "titel": "Satzanfang, Nomen, Punkt",
+      "symbol": "pruefen",
+      "wann": "Du prüfst die Schreibung deines Textes.",
+      "schritte": [
+        "Lies Satz für Satz. Lege ein Lineal unter die Zeile.",
+        "Kreise den Satzanfang ein. Ist er groß?",
+        "Unterstreiche die Nomen. Sind sie groß?",
+        "Markiere das Satzende. Steht ein Punkt?"
+      ],
+      "beispiel": "*sein kopf ist flach*\n→ *Sein Kopf ist flach.*"
+    },
+    {
+      "nr": 8,
+      "titel": "Rückmeldung geben",
+      "symbol": "sprechen",
+      "wann": "Du liest den Text eines anderen Kindes an der Haltestelle.",
+      "schritte": [
+        "Lies den ganzen Text ruhig.",
+        "Wähle zwei Fragen von der Rückmeldekarte.",
+        "Zeige die passende Textstelle.",
+        "Sage es freundlich und genau."
+      ],
+      "beispiel": "*Diese Stelle ist genau: …*\n*Prüfe diese Angabe im Material: …*"
+    },
+    {
+      "nr": 9,
+      "titel": "Meine eigene Strategie",
+      "symbol": "stern",
+      "wann": "Du hast eine eigene Idee, die dir hilft.",
+      "schritte": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "leer": true,
+      "beispiel": ""
+    }
+  ],
+  "abschluss": "Hat dir die Strategie geholfen? Schreibe es in deine Reflexion."
+}

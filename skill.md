@@ -52,6 +52,10 @@ Diese Festlegung ersetzt die frühere Vorgabe „alle Schülerblätter als A5-PD
 | Übungsblätter (Pflicht + freiwillige Vertiefung) und Material | A4 hoch | **auf A5 verkleinert** | **mindestens 14 pt**, auch Hinweise und Beschriftungen |
 | Gelingensnachweis A/B | A4 hoch, mit integriertem Feedbackteil | A4 in Originalgröße | Schüleraufgaben mindestens 14 pt |
 | Probearbeit und Klassenarbeit | gleicher Aufbau wie Gelingensnachweis | A4 | wie Gelingensnachweis |
+| Wahlphase und Projekte | A4 hoch | A4 in Originalgröße | Fließtext 14 pt, Beschriftungen mind. 12 pt |
+| Hilfekarten (Wörterhilfe, Rückmeldekarte) | A4 hoch | auf A5 verkleinert | mindestens 14 pt |
+| Strategiekarten am Lernbuddy | 70 × 297 mm (A4 längs gedrittelt, 3 pro Bogen) | Originalgröße, schneiden, laminieren | mindestens 12 pt |
+| Raumschilder (z. B. Haltestelle) | A4 hoch | Originalgröße | groß |
 
 - **Alles, was für Schülerinnen und Schüler gedruckt wird: Graustufen**, druckfreundlich; keine Flächenfüllungen außer hellem Grau, Struktur über Linien, Rahmen und Typografie.
 - **HTML-Seiten (Input-Präsentationen, Kontroll-Kiosk, Cockpit) dürfen vollfarbig sein.** Farben nach dem HBG-SRL-Farbschema: Schieferblau für Struktur und Navigation, Rostorange für Aufträge und Aktionen, Salbeigrün für gesicherte Antworten und Erfolg.
