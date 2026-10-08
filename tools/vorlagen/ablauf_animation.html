@@ -1,0 +1,264 @@
+<title>Zootiere-Lernweg</title>
+<style>
+__FONTS__
+/* Layout: 16:9-Bühne mit Wegekarte (oben) und Erzählzeile (unten), skaliert auf die Fensterbreite */
+:root{
+  --bg:#F5F4F1; --stage:#FFFFFF; --ink:#1E2A35; --muted:#5A6A78;
+  --slate:#3E5668; --slate-d:#2C3D4C; --slate-p:#D0DCE6; --slate-g:#EEF3F7;
+  --rust:#D97A4A; --rust-d:#9E4E22; --rust-g:#FBF0EB;
+  --sage:#7DBB6F; --sage-d:#4D8B3F; --sage-g:#F0FAF0;
+  --trail:#C9D5DF; --font:'Andika',"Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141C23; --stage:#1B252E; --ink:#E8EEF2; --muted:#9FB0BE;
+  --slate:#8FB0C7; --slate-d:#C6D7E4; --slate-p:#33475A; --slate-g:#22303C;
+  --rust:#E89466; --rust-d:#F2B08B; --rust-g:#3A2A22;
+  --sage:#8FCB82; --sage-d:#A8D49D; --sage-g:#22332A; --trail:#3A4D5E; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141C23; --stage:#1B252E; --ink:#E8EEF2; --muted:#9FB0BE;
+  --slate:#8FB0C7; --slate-d:#C6D7E4; --slate-p:#33475A; --slate-g:#22303C;
+  --rust:#E89466; --rust-d:#F2B08B; --rust-g:#3A2A22;
+  --sage:#8FCB82; --sage-d:#A8D49D; --sage-g:#22332A; --trail:#3A4D5E; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);margin:0;padding-block:16px;padding-inline:16px}
+.wrap{max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.stage{position:relative;width:100%;aspect-ratio:16/9;max-width:100%;background:var(--stage);border:2px solid var(--slate-p);border-radius:18px;overflow:hidden}
+.stage svg{position:absolute;inset:0;width:100%;height:100%}
+.trail{fill:none;stroke:var(--trail);stroke-width:26;stroke-linecap:round;stroke-linejoin:round}
+.trail-dash{fill:none;stroke:var(--stage);stroke-width:3;stroke-dasharray:14 16;stroke-linecap:round}
+.row-label{font:700 26px var(--font);fill:var(--slate);letter-spacing:.06em;text-transform:uppercase}
+.row-sub{font:400 22px var(--font);fill:var(--muted)}
+.st circle.base{fill:var(--stage);stroke:var(--slate);stroke-width:5;transition:fill .4s,stroke .4s}
+.st text{font:700 23px var(--font);fill:var(--ink);text-anchor:middle}
+.st .ic{fill:none;stroke:var(--slate);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.st.on circle.base{fill:var(--rust-g);stroke:var(--rust)}
+.st.on .ic{stroke:var(--rust-d)}
+.st.done circle.base{fill:var(--sage-g);stroke:var(--sage-d)}
+.st.done .ic{stroke:var(--sage-d)}
+.token circle{fill:var(--rust);stroke:var(--stage);stroke-width:5}
+.token text{font:700 22px var(--font);fill:#fff;text-anchor:middle}
+.token.k2 circle{fill:var(--slate)} .token.k3 circle{fill:var(--sage-d)}
+.pop{opacity:0;transition:opacity .45s}
+.pop.show{opacity:1}
+.card rect{fill:var(--stage);stroke:var(--slate);stroke-width:3}
+.card.rust rect{stroke:var(--rust);fill:var(--rust-g)}
+.card.sage rect{stroke:var(--sage-d);fill:var(--sage-g)}
+.card.dash rect{stroke-dasharray:10 7}
+.card text{font:400 22px var(--font);fill:var(--ink)}
+.card .t{font-weight:700;fill:var(--slate-d)}
+.card.rust .t{fill:var(--rust-d)} .card.sage .t{fill:var(--sage-d)}
+.dot{fill:var(--stage);stroke:var(--sage-d);stroke-width:4;transition:fill .35s}
+.dot.full{fill:var(--sage)}
+.loop{fill:none;stroke:var(--rust);stroke-width:4;stroke-dasharray:9 8;marker-end:url(#arr)}
+.flag{fill:var(--slate)}
+.caption{display:flex;gap:16px;align-items:flex-start;background:var(--stage);border:2px solid var(--slate-p);border-radius:16px;padding:14px 18px;min-height:96px}
+.caption .num{flex:0 0 auto;min-width:46px;height:46px;border-radius:50%;background:var(--slate);color:var(--stage);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;font-variant-numeric:tabular-nums}
+.caption .txt{min-width:0}
+.caption h1{margin:0 0 4px;font-size:clamp(20px,2.4vw,30px);line-height:1.15;color:var(--slate-d);text-wrap:balance}
+.caption p{margin:0;font-size:clamp(16px,1.8vw,23px);line-height:1.4;max-width:62ch}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.controls button{font:700 17px var(--font);padding:10px 16px;border-radius:12px;border:2px solid var(--slate);background:var(--stage);color:var(--slate-d);cursor:pointer;min-height:44px}
+.controls button.main{background:var(--rust);border-color:var(--rust);color:#fff}
+.controls button:focus-visible{outline:3px solid var(--rust);outline-offset:2px}
+.steps{display:flex;gap:6px;flex:1;min-width:160px}
+.steps i{flex:1;height:8px;border-radius:4px;background:var(--slate-p);cursor:pointer}
+.steps i.on{background:var(--rust)}
+.hint{font-size:14px;color:var(--muted)}
+@media (prefers-reduced-motion: reduce){.pop{transition:none}.st circle.base{transition:none}}
+</style>
+
+<div class="wrap">
+  <div class="stage" id="stage">
+    <svg viewBox="0 0 1600 900" role="img" aria-label="Wegekarte der Reihe Zootiere: drei Etappen, Probearbeit, Feedback, Wahlzeit und Klassenarbeit">
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--rust)"/></marker>
+      </defs>
+      <!-- Weg -->
+      <path class="trail" id="trail" d=""/>
+      <path class="trail-dash" id="trailDash" d=""/>
+      <!-- Zeilenbeschriftungen -->
+      <text class="row-label" x="70" y="96">Etappe 1</text><text class="row-sub" x="215" y="96">Informationen finden und ordnen</text>
+      <text class="row-label" x="70" y="356">Etappe 2</text><text class="row-sub" x="215" y="356">Sachlich und genau formulieren</text>
+      <text class="row-label" x="70" y="616">Etappe 3</text><text class="row-sub" x="215" y="616">Eine Tierbeschreibung schreiben und prüfen</text>
+      <g id="stations"></g>
+      <!-- GN-Schleifen -->
+      <g class="pop" id="loop1"><path class="loop" d="M700 140 C 640 40, 520 40, 470 125"/><text x="585" y="58" text-anchor="middle" style="font:700 21px var(--font);fill:var(--rust-d)">noch üben</text></g>
+      <!-- Ziele-Punkte am GN -->
+      <g class="pop" id="dots"></g>
+      <!-- Info-Karten -->
+      <g class="pop card" id="cBuddy" transform="translate(1110 110)"><rect width="430" height="108" rx="14"/><text class="t" x="18" y="38">Lernbuddy</text><text x="18" y="72">Das Blatt liegt in der Mitte.</text><text x="18" y="98">Planen · Arbeiten · Reflektieren</text></g>
+      <g class="pop card dash rust" id="cVert" transform="translate(1110 240)"><rect width="430" height="108" rx="14"/><text class="t" x="18" y="38">Vertiefung</text><text x="18" y="72">Freiwillig. Du kannst sie</text><text x="18" y="98">auch später nachholen.</text></g>
+      <g class="pop card" id="cStrat" transform="translate(1110 90)"><rect width="430" height="108" rx="14"/><text class="t" x="18" y="38">Strategiekarte</text><text x="18" y="72">Lege sie am Lernbuddy an.</text><text x="18" y="98">Zum Beispiel: Lesen mit Suchauftrag</text></g>
+      <g class="pop card" id="cLeiter" transform="translate(1110 215)"><rect width="430" height="150" rx="14"/><text class="t" x="18" y="38">Lösungsleiter</text><text x="18" y="68">1 Aufgabe noch einmal lesen</text><text x="18" y="90">2 Beispiel oder Merkblatt prüfen</text><text x="18" y="112">3 ein anderes Kind fragen</text><text x="18" y="134">4 die Lehrkraft fragen</text></g>
+      <g class="pop card rust" id="cKiosk" transform="translate(1110 385)"><rect width="430" height="80" rx="14"/><text class="t" x="18" y="34">Kontroll-Kiosk</text><text x="18" y="64">Tipp oder Lösung zum Blatt</text></g>
+      <g class="pop card sage" id="cWeiter" transform="translate(1110 110)"><rect width="430" height="80" rx="14"/><text class="t" x="18" y="34">4 von 5 Zielen = 80 %</text><text x="18" y="64">Du gehst weiter zur nächsten Etappe.</text></g>
+      <g class="pop card rust" id="cNoch" transform="translate(1110 210)"><rect width="430" height="80" rx="14"/><text class="t" x="18" y="34">Noch nicht?</text><text x="18" y="64">Üben und noch einmal zeigen.</text></g>
+      <g class="pop card sage" id="cFeedback" transform="translate(1110 690)"><rect width="430" height="80" rx="14"/><text class="t" x="18" y="34">Feedback zur Probearbeit</text><text x="18" y="64">Keine Note. Ein nächster Schritt für dich.</text></g>
+      <g class="pop card" id="cWahl" transform="translate(1110 300)"><rect width="430" height="186" rx="14"/><text class="t" x="18" y="38">Deine Wahlzeit</text><text x="18" y="72">P1 Unser Tiermagazin</text><text x="18" y="100">P2 Welches Tier ist gemeint?</text><text x="18" y="128">P3 Zwei Tiere vergleichen</text><text x="18" y="160">oder: wiederholen, Vertiefung</text></g>
+      <g class="pop card rust" id="cKA" transform="translate(1110 300)"><rect width="430" height="110" rx="14"/><text class="t" x="18" y="38">Klassenarbeit</text><text x="18" y="72">Du schreibst an einem von</text><text x="18" y="98">zwei Terminen: früh oder spät.</text></g>
+      <g class="pop card" id="cTempo" transform="translate(1110 300)"><rect width="430" height="110" rx="14"/><text class="t" x="18" y="38">Dein Tempo</text><text x="18" y="72">Alle sind an einer anderen Stelle.</text><text x="18" y="98">Das ist so gewollt.</text></g>
+      <!-- Spielfiguren -->
+      <g class="token" id="tok"><circle r="30"/><text y="8">Du</text></g>
+      <g class="token k2 pop" id="tok2"><circle r="24"/></g>
+      <g class="token k3 pop" id="tok3"><circle r="24"/></g>
+    </svg>
+  </div>
+
+  <div class="caption" aria-live="polite">
+    <div class="num" id="num">1</div>
+    <div class="txt"><h1 id="capH">So arbeitest du in der Reihe Zootiere</h1><p id="capP">Ein Weg mit drei Etappen. Du gehst ihn in deinem Tempo.</p></div>
+  </div>
+
+  <div class="controls">
+    <button id="prev" type="button" aria-label="Zurück">◀ Zurück</button>
+    <button id="play" class="main" type="button">Pause</button>
+    <button id="next" type="button" aria-label="Weiter">Weiter ▶</button>
+    <div class="steps" id="steps" aria-hidden="true"></div>
+  </div>
+  <div class="hint">Leertaste: Pause oder Start · Pfeiltasten: zurück und weiter</div>
+</div>
+
+<script>
+(() => {
+  // Stationen (x, y) auf der 1600×900-Karte; Etappen laufen im Zickzack
+  const S = {
+    in1:[230,190], bl1:[480,190], gn1:[720,190],
+    in2:[720,450], bl2:[480,450], gn2:[230,450],
+    in3:[230,710], bl3:[480,710], pa:[720,710],
+    fb:[960,710], wz:[960,450], ka:[960,190]
+  };
+  const ICON = {
+    input:"M-16 -12h32v20h-32zM-6 14h12", blatt:"M-12 -16h18l6 6v26h-24zM-6 -4h12M-6 4h12",
+    gn:"M-14 0l9 9 19-19", pa:"M-14 14l4-12 18-18 8 8-18 18zM-14 14h28", fb:"M-14 -12h28v18h-14l-8 8v-8h-6z",
+    wz:"M0 -15l4.5 9.5 10.5 1.5-7.5 7 2 10.5-9.5-5-9.5 5 2-10.5-7.5-7 10.5-1.5z", ka:"M-12 -16h24v32h-24zM-6 -6h12M-6 2h12M-6 10h8"
+  };
+  const ST = [
+    ["in1","Input","input"],["bl1","Blatt 1–4","blatt"],["gn1","Nachweis 1","gn"],
+    ["in2","Input","input"],["bl2","Blatt 5–6","blatt"],["gn2","Nachweis 2","gn"],
+    ["in3","Input","input"],["bl3","Blatt 7–9","blatt"],["pa","Probearbeit","pa"],
+    ["fb","Feedback","fb"],["wz","Wahlzeit","wz"],["ka","Klassenarbeit","ka"]
+  ];
+  const order = ST.map(s => s[0]);
+  const svgNS = "http://www.w3.org/2000/svg";
+  const g = document.getElementById("stations");
+  ST.forEach(([id,label,ic]) => {
+    const [x,y] = S[id];
+    const el = document.createElementNS(svgNS,"g");
+    el.setAttribute("class","st"); el.id = "st_"+id; el.setAttribute("transform",`translate(${x} ${y})`);
+    el.innerHTML = `<circle class="base" r="44"/><path class="ic" d="${ICON[ic]}"/><text y="78">${label}</text>`;
+    g.appendChild(el);
+  });
+  // Weg zeichnen
+  const pts = order.map(id => S[id]);
+  const d = "M" + pts.map(p => p.join(" ")).join(" L");
+  document.getElementById("trail").setAttribute("d", d);
+  document.getElementById("trailDash").setAttribute("d", d);
+  // Punkte für die fünf Ziele über dem Nachweis
+  const dots = document.getElementById("dots");
+  for (let i = 0; i < 5; i++) {
+    const c = document.createElementNS(svgNS,"circle");
+    c.setAttribute("class","dot"); c.setAttribute("r","13"); c.setAttribute("cx", 654 + i*33); c.setAttribute("cy", 312);
+    dots.appendChild(c);
+  }
+
+  const tok = document.getElementById("tok"), tok2 = document.getElementById("tok2"), tok3 = document.getElementById("tok3");
+  let pos = S.in1.slice();
+  const place = (el,[x,y]) => el.setAttribute("transform",`translate(${x} ${y})`);
+  place(tok, [110,190]); pos = [110,190];
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let anim = 0;
+  function moveTo(id, ms = 1400) {
+    // entlang der Stationen zwischen aktueller und Zielstation laufen
+    const target = S[id];
+    const from = nearestIndex(pos), to = order.indexOf(id);
+    const path = [pos.slice()];
+    if (from >= 0 && to >= 0) {
+      const stepDir = to >= from ? 1 : -1;
+      for (let i = from; i !== to + stepDir; i += stepDir) if (i !== from || dist(pos, S[order[i]]) > 1) path.push(S[order[i]]);
+    } else path.push(target);
+    cancelAnimationFrame(anim);
+    if (reduce || ms === 0) { pos = target.slice(); place(tok,pos); return; }
+    const lens = []; let total = 0;
+    for (let i = 1; i < path.length; i++) { const l = dist(path[i-1], path[i]); lens.push(l); total += l; }
+    if (!total) { pos = target.slice(); place(tok,pos); return; }
+    const t0 = performance.now();
+    const step = now => {
+      let t = Math.min(1, (now - t0) / ms); t = t < .5 ? 2*t*t : 1 - Math.pow(-2*t + 2, 2)/2;
+      let dd = t * total, i = 0;
+      while (i < lens.length - 1 && dd > lens[i]) { dd -= lens[i]; i++; }
+      const a = path[i], b = path[i+1], f = lens[i] ? dd / lens[i] : 1;
+      pos = [a[0] + (b[0]-a[0])*f, a[1] + (b[1]-a[1])*f]; place(tok,pos);
+      if (t < 1) anim = requestAnimationFrame(step);
+    };
+    anim = requestAnimationFrame(step);
+  }
+  function dist(a,b){ return Math.hypot(a[0]-b[0], a[1]-b[1]); }
+  function nearestIndex(p){ let best=-1, bd=1e9; order.forEach((id,i)=>{const dd=dist(p,S[id]); if(dd<bd){bd=dd;best=i}}); return best; }
+
+  const pops = ["loop1","dots","cBuddy","cVert","cStrat","cLeiter","cKiosk","cWeiter","cNoch","cFeedback","cWahl","cKA","cTempo","tok2","tok3"];
+  function show(ids){ pops.forEach(p => document.getElementById(p).classList.toggle("show", ids.includes(p))); }
+  function mark(on, done){
+    order.forEach(id => { const el = document.getElementById("st_"+id); el.classList.toggle("on", id === on); el.classList.toggle("done", done.includes(id)); });
+  }
+  function fillDots(n){ [...dots.children].forEach((c,i) => c.classList.toggle("full", i < n)); }
+  let timers = [];
+  const later = (ms, fn) => timers.push(setTimeout(fn, reduce ? 0 : ms));
+
+  const E1 = ["in1","bl1","gn1"], E2 = ["in2","bl2","gn2"], E3 = ["in3","bl3","pa"];
+  const scenes = [
+    {h:"So arbeitest du in der Reihe Zootiere", p:"Ein Weg mit drei Etappen. Du gehst ihn in deinem Tempo. Am Ende beschreibst du ein Tier genau und sachlich.",
+     run(){ mark(null,[]); show([]); place(tok,[110,190]); pos=[110,190]; }},
+    {h:"Etappe 1 beginnt mit dem Input", p:"Deine Lehrkraft erklärt kurz das Wichtigste. Alles steht auch auf dem Merkblatt. Dort kannst du jederzeit nachlesen.",
+     run(){ mark("in1",[]); show([]); moveTo("in1"); }},
+    {h:"Pflichtblätter auf dem Lernbuddy", p:"Du bearbeitest Blatt 1 bis 4. Das Blatt liegt in der Mitte deines Lernbuddys. Die Vertiefungen sind freiwillig.",
+     run(){ mark("bl1",["in1"]); show([]); moveTo("bl1"); later(900,()=>show(["cBuddy","cVert"])); }},
+    {h:"Wenn du feststeckst", p:"Nutze eine Strategiekarte und die Lösungsleiter. Am Kontroll-Kiosk findest du Tipps und Lösungen zu jedem Blatt.",
+     run(){ mark("bl1",["in1"]); moveTo("bl1",0); show(["cStrat","cLeiter"]); later(1600,()=>show(["cStrat","cLeiter","cKiosk"])); }},
+    {h:"Der Gelingensnachweis", p:"Du zeigst, was du kannst. Es gibt fünf Ziele. Schaffst du vier davon, gehst du weiter. Sonst übst du gezielt und zeigst es noch einmal.",
+     run(){ mark("gn1",["in1","bl1"]); fillDots(0); show(["dots"]); moveTo("gn1");
+       [1,2,3,4].forEach(k => later(900 + k*450, () => fillDots(k)));
+       later(3000,()=>show(["dots","cWeiter","loop1","cNoch"])); }},
+    {h:"Etappe 2: sachlich und genau formulieren", p:"Wieder Input, Merkblatt, Blatt 5 und 6 und ein Nachweis. Du übst genaue Wörter und Sätze in der Gegenwart.",
+     run(){ fillDots(4); mark("gn2",E1.concat(["in2","bl2"])); show([]); moveTo("gn2",2600); }},
+    {h:"Etappe 3: deine Tierbeschreibung", p:"Du planst, schreibst und prüfst einen Text über ein Tier. Am Ende der Etappe steht die Probearbeit.",
+     run(){ mark("pa",E1.concat(E2,["in3","bl3"])); show([]); moveTo("pa",2600); }},
+    {h:"Feedback zur Probearbeit", p:"Die Probearbeit bekommt keine Note. Du erfährst, was dir gelingt und was dein nächster Schritt ist.",
+     run(){ mark("fb",E1.concat(E2,E3)); moveTo("fb"); later(900,()=>show(["cFeedback"])); }},
+    {h:"Deine Wahlzeit", p:"Du wählst ein Projekt, wiederholst ein Ziel oder holst eine Vertiefung nach. Hast du noch offene Ziele, übst du zuerst diese.",
+     run(){ mark("wz",E1.concat(E2,E3,["fb"])); show([]); moveTo("wz"); later(900,()=>show(["cWahl"])); }},
+    {h:"Die Klassenarbeit", p:"Du schreibst an einem von zwei Terminen. Wer früh schreibt, arbeitet danach weiter an Projekten.",
+     run(){ mark("ka",E1.concat(E2,E3,["fb","wz"])); show([]); moveTo("ka"); later(900,()=>show(["cKA"])); }},
+    {h:"Jede und jeder in eigenem Tempo", p:"In der Klasse sind alle an einer anderen Stelle des Weges. Das ist so gewollt. Wichtig ist, dass du Schritt für Schritt weiterkommst.",
+     run(){ mark(null,[]); moveTo("bl2",0); place(tok2,S.gn1); place(tok3,S.bl3); show(["tok2","tok3","cTempo"]); }}
+  ];
+  const DUR = 9000;
+  let i = 0, playing = true, tick = 0;
+  const steps = document.getElementById("steps");
+  scenes.forEach((_,k) => { const s = document.createElement("i"); s.addEventListener("click",()=>go(k)); steps.appendChild(s); });
+  function go(k){
+    i = (k + scenes.length) % scenes.length;
+    timers.forEach(clearTimeout); timers = [];
+    const sc = scenes[i];
+    document.getElementById("capH").textContent = sc.h;
+    document.getElementById("capP").textContent = sc.p;
+    document.getElementById("num").textContent = i + 1;
+    [...steps.children].forEach((s,k2) => s.classList.toggle("on", k2 <= i));
+    if (i !== 4) fillDots(i > 4 ? 4 : 0);
+    sc.run();
+    clearTimeout(tick);
+    if (playing) tick = setTimeout(() => go(i + 1), DUR);
+  }
+  const playBtn = document.getElementById("play");
+  function toggle(){ playing = !playing; playBtn.textContent = playing ? "Pause" : "Abspielen"; clearTimeout(tick); if (playing) tick = setTimeout(() => go(i + 1), DUR); }
+  playBtn.addEventListener("click", toggle);
+  document.getElementById("next").addEventListener("click", () => go(i + 1));
+  document.getElementById("prev").addEventListener("click", () => go(i - 1));
+  addEventListener("keydown", e => {
+    if (e.key === " ") { e.preventDefault(); toggle(); }
+    else if (e.key === "ArrowRight") go(i + 1);
+    else if (e.key === "ArrowLeft") go(i - 1);
+  });
+  if (reduce) toggle();
+  go(0);
+})();
+</script>
