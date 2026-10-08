@@ -1,0 +1,213 @@
+{
+  "_hinweis": "Probearbeit = Abschluss von Etappe 3 (letzter Gelingensnachweis, keine Note). Aufbau nach der Lernerfolgskontrolle der Reihe Wunschbriefe: Auftrag → Material → Planung → Schreibseite → Das zählt → Hilfe → Rückmeldung. Die Klassenarbeit nutzt denselben Aufbau mit eigener Datei.",
+  "datei": "Probearbeit_Waschbaer_A4",
+  "art": "Probearbeit",
+  "kurz": "Probearbeit",
+  "etappe": 3,
+  "tier": "Waschbär",
+  "titel": "Deine Probearbeit: Der Waschbär",
+  "arbeitszeit": "Arbeitszeit: ______ Minuten (nennt dir deine Lehrkraft)",
+  "situation": "Unsere Klasse gestaltet ein Tierlexikon. Es fehlt noch ein Text über den Waschbären. Schreibe diesen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.",
+  "auftrag": [
+    "Lies den Sachtext und betrachte das Foto.",
+    "Ordne Stichwörter in deinem Schreibplan.",
+    "Schreibe einen zusammenhängenden Text mit Überschrift.",
+    "Nenne Tiername, ein Maß mit Einheit und Bezug, Lebensraum und Nahrung.",
+    "Beschreibe mindestens vier verschiedene äußere Merkmale.",
+    "Schreibe sachlich, im Präsens und in vollständigen Sätzen.",
+    "Prüfe deinen Text. Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt."
+  ],
+  "hinweise": [
+    "Arbeite allein. Lass deine erste Fassung lesbar: Streiche sauber durch und schreibe Verbesserungen darüber.",
+    "Die Probearbeit bekommt keine Note. Du bekommst eine Rückmeldung für deinen nächsten Schritt."
+  ],
+  "ablauf": "Arbeite in drei Schritten: Planen → Schreiben → Prüfen.",
+  "material": {
+    "titel": "Der Waschbär",
+    "foto": {
+      "datei": "assets/bilder/waschbaer_graustufen.jpg",
+      "nachweis": "Foto: BS Thurner Hof · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
+      "alt": "Ein Waschbär sitzt am Rand eines Gewässers."
+    },
+    "text": "Der Waschbär stammt ursprünglich aus Nordamerika. Er lebt gern in Wäldern mit Gewässern, kommt aber auch in Städten vor. Sein Körper ist kräftig und wirkt gedrungen. Das Fell ist meist graubraun. Um seine Augen liegt eine schwarze Zeichnung, die wie eine Maske aussieht. Der buschige Schwanz hat mehrere dunkle Ringe. Ein erwachsener Waschbär wiegt häufig etwa sechs bis sieben Kilogramm. An jeder Pfote sitzen fünf Zehen. Mit den Vorderpfoten kann er Nahrung geschickt greifen. Er frisst pflanzliche und tierische Nahrung, zum Beispiel Früchte, Nüsse, Insekten und Frösche.",
+    "woerter": [
+      [
+        "gedrungen",
+        "eher kurz und kräftig gebaut"
+      ],
+      [
+        "Zeichnung",
+        "Muster auf dem Fell"
+      ],
+      [
+        "Vorderpfoten",
+        "die beiden vorderen Pfoten"
+      ]
+    ],
+    "bildhinweis": "Nutze nur Merkmale, die du wirklich siehst. Gewicht, Lebensraum und Nahrung findest du im Text."
+  },
+  "plan": {
+    "hinweis": "Notiere nur Stichwörter. Deinen vollständigen Text schreibst du erst auf die Schreibseite.",
+    "felder": [
+      {
+        "titel": "Überblick",
+        "zeilen": [
+          [
+            "Tiername",
+            1
+          ],
+          [
+            "Maß mit Einheit und Bezug",
+            1
+          ]
+        ]
+      },
+      {
+        "titel": "Aussehen",
+        "zeilen": [
+          [
+            "Merkmal 1",
+            1
+          ],
+          [
+            "Merkmal 2",
+            1
+          ],
+          [
+            "Merkmal 3",
+            1
+          ],
+          [
+            "Merkmal 4",
+            1
+          ]
+        ]
+      },
+      {
+        "titel": "Lebensraum",
+        "zeilen": [
+          [
+            "",
+            1
+          ]
+        ]
+      },
+      {
+        "titel": "Nahrung",
+        "zeilen": [
+          [
+            "",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "schreiben": {
+    "hinweis": "Schreibe hier deinen vollständigen Text. Wenn du mehr Platz brauchst, bekommst du weiteres Papier.",
+    "pruefen": "Lies deinen Text noch einmal. Prüfe ihn mit „Dein Text: Das zählt“. Verbessere, was nötig ist. Zeige deine Prüfung."
+  },
+  "zaehlt": {
+    "ziel": "Du schreibst einen sachlichen, geordneten und verständlichen Lexikontext über den Waschbären.",
+    "kriterien": [
+      [
+        "K1 Informationen",
+        "Du nennst Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung. Alles passt zum Material."
+      ],
+      [
+        "K2 Aussehen",
+        "Du beschreibst mindestens vier verschiedene äußere Merkmale genau."
+      ],
+      [
+        "K3 Aufbau",
+        "Du beginnst mit Tiername und Überblick. Zusammengehörige Angaben stehen zusammen."
+      ],
+      [
+        "K4 Sachlich",
+        "Du schreibst sachlich und im Präsens, ohne persönliche Wertungen."
+      ],
+      [
+        "K5 Verständlich",
+        "Du schreibst einen zusammenhängenden Text aus vollständigen, verständlichen Sätzen."
+      ],
+      [
+        "K6 Schreibung",
+        "Du prüfst Satzanfänge, Nomen und Punkte und zeigst deine Prüfung im Text."
+      ]
+    ],
+    "auswertung": "Deine Lehrkraft prüft fünf Ziele: Informationen (K1), vier Merkmale (K2), Aufbau (K3), Sprache (K4 und K5), Schreibung mit sichtbarer Prüfung (K6). Vier von fünf Zielen = 80 %. Dann ist Etappe 3 geschafft.",
+    "zusatz": "Ein guter Text muss nicht besonders lang sein. Wichtig ist, dass alle Angaben stimmen und gut geordnet sind."
+  },
+  "hilfe": {
+    "einleitung": "Diese Seite und „Das zählt“ darfst du bei der Probearbeit nutzen.",
+    "bloecke": [
+      [
+        "Planen",
+        "Lies den Text Satz für Satz. Markiere passende Angaben. Ordne sie unter Überblick, Aussehen, Lebensraum und Nahrung."
+      ],
+      [
+        "Schreiben in dieser Reihenfolge",
+        "1 Überschrift\n2 Tiername und Überblick mit Maß\n3 Aussehen: vier Merkmale\n4 Lebensraum\n5 Nahrung"
+      ],
+      [
+        "Wenn du einen Anfang brauchst",
+        "*Der Waschbär hat …*\n*Sein Fell ist …*\n*Sein Schwanz …*\n*Er lebt …*\n*Er frisst …*"
+      ],
+      [
+        "Prüfen",
+        "Stehen alle Verben im Präsens? Beginnt jeder Satz groß? Sind Nomen groß? Steht am Ende ein Punkt? Vergleiche schwierige Tierwörter mit dem Material."
+      ]
+    ],
+    "regeln": "Du darfst dir den Auftrag vorlesen lassen. Deinen Text formulierst du selbst. Keine Partnerhilfe und kein Kontroll-Kiosk während der Arbeit."
+  },
+  "ziele": [
+    {
+      "id": "E3.1",
+      "kind": "Informationen (K1)",
+      "lehrkraft": "Tiername, richtige Maßangabe mit Bezug, Lebensraum und Nahrung enthalten",
+      "ueben": "Blatt 7"
+    },
+    {
+      "id": "E3.2",
+      "kind": "Aussehen: vier Merkmale (K2)",
+      "lehrkraft": "mindestens vier verschiedene äußere Merkmale richtig beschrieben",
+      "ueben": "Blatt 7"
+    },
+    {
+      "id": "E3.3",
+      "kind": "Aufbau (K3)",
+      "lehrkraft": "Text beginnt mit Überblick und ordnet zusammengehörige Informationen nachvollziehbar",
+      "ueben": "Blatt 8"
+    },
+    {
+      "id": "E3.4",
+      "kind": "Sprache (K4, K5)",
+      "lehrkraft": "zusammenhängender, überwiegend sachlicher Text im Präsens aus überwiegend vollständigen, verständlichen Sätzen",
+      "ueben": "Blatt 8"
+    },
+    {
+      "id": "E3.5",
+      "kind": "Schreibung mit Prüfbeleg (K6)",
+      "lehrkraft": "Prüfung von Satzanfängen, Nomen und Satzschlüssen am Produkt belegt; geübte Schreibungen überwiegend richtig",
+      "ueben": "Blatt 9"
+    }
+  ],
+  "rueckmeldung": {
+    "bestanden": "Etappe 3 ist geschafft. Du wählst in der Wahlzeit.",
+    "offen": "Übe die offenen Ziele. Dann zeigst du sie noch einmal.",
+    "hilfen": [
+      "Hilfeseite",
+      "Auftrag vorgelesen",
+      "weitere Hilfe: ________"
+    ],
+    "wahl": [
+      "Projekt",
+      "Wiederholung",
+      "Vertiefung nachholen"
+    ],
+    "termin": [
+      "früher Termin",
+      "später Termin"
+    ]
+  }
+}

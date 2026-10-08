@@ -11,7 +11,7 @@ Alle Materialien werden neu und neutral (Graustufen, ohne Maskottchen) aus einer
 - **Gelingensnachweise** A/B: A4 mit integrierter Lehrkraft-Rückmeldung je Ziel
 - **Probearbeit und Klassenarbeit** im Aufbau der Gelingensnachweise (Feinplanung folgt)
 
-Ausgabe: `ausgabe/etappeN/`. Quelle: `inhalt/etappeN.json`. Erzeugung: `python tools/build_material.py N`. Formatregeln: [skill.md](skill.md#ausgabeformate-verbindlich-ab-08102026). Etappe 1 (Muster, freigegeben) und Etappe 2 sind erstellt; Etappe 3 folgt. Die bisherigen Ordner unter `materialien/` bleiben als Vorfassungen erhalten.
+Ausgabe: `ausgabe/etappeN/`. Quelle: `inhalt/etappeN.json`. Erzeugung: `python tools/build_material.py N`. Formatregeln: [skill.md](skill.md#ausgabeformate-verbindlich-ab-08102026). Etappe 1–3 sind erstellt, Etappe 3 mit Probearbeit Waschbär (`inhalt/probearbeit_waschbaer.json`). Die Klassenarbeit nutzt denselben Aufbau: `python tools/build_material.py pruefung inhalt/<datei>.json` → `ausgabe/pruefungen/`. Die bisherigen Ordner unter `materialien/` bleiben als Vorfassungen erhalten.
 
 ## Verbindlicher SRL-Standard
 

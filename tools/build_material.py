@@ -181,7 +181,12 @@ ol.auf li{margin-bottom:2.5mm;padding-left:1mm}
 .enger{font-size:14.5pt;line-height:1.28}.enger .teil{margin-bottom:3mm}
 .mat h1{font-size:34pt;margin-bottom:5mm}
 .mat .meta{font-size:14pt;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mid);margin-bottom:1mm}
-.mat img{width:100%;height:108mm;object-fit:cover;border-radius:3mm;display:block}
+.mat img{max-width:100%;height:100mm;width:auto;object-fit:contain;border-radius:3mm;display:block;margin:0 auto}
+.mat.lang img{height:73mm}
+.mat.lang .txt{font-size:16pt;line-height:1.45;padding:4mm 5mm}
+.mat.lang .cred{margin-bottom:4mm}
+.wh{font-size:15pt;margin-top:4mm;padding:3mm 4mm;background:var(--fill);border-radius:2.5mm}.wh>b{display:block;font-size:14pt;letter-spacing:.05em;text-transform:uppercase}
+.cbl{display:flex;gap:2mm;align-items:flex-start}.cbl .cb{flex:0 0 auto;margin-top:1.2mm}
 .mat .cred{font-size:14pt;color:var(--mid);margin:2mm 0 6mm}
 .mat .txt{font-size:19pt;line-height:1.6;padding:5mm 6mm}
 .mat .hint{font-size:14pt;color:var(--mid);margin-top:3mm}
@@ -233,17 +238,44 @@ def blatt_page(c: dict, b: dict, dicht: int = 0) -> str:
     return "".join(h)
 
 
-def material_page(c: dict) -> str:
+def materialien(c: dict) -> list:
+    if c.get("materialien"):
+        return c["materialien"]
+    if c.get("material"):
+        return [dict(c["material"], foto=c["foto"])]
+    return []
+
+
+def woerter_html(m: dict) -> str:
+    if not m.get("woerter"):
+        return ""
+    return "<div class='wh'><b>Wörterhilfe</b>%s</div>" % "".join(
+        "<div><b>%s:</b> %s</div>" % (md(w), md(e)) for w, e in m["woerter"])
+
+
+def material_page(c: dict, m: dict) -> str:
     nrs = [b["nr"] for b in c["blaetter"]]
     rng = "%d–%d" % (nrs[0], nrs[-1]) if len(nrs) > 1 else str(nrs[0])
+    f = m["foto"]
+    lang = " lang" if len(m["text"]) > 500 else ""
+    hint = m.get("bildhinweis", "")
     return (
-        "<div class='page mat'><div class='grow'><div class='meta'>Material zu Blatt %s</div><h1>%s</h1>"
-        "<img src='data:image/jpeg;base64,%s' alt='%s'><div class='cred'>%s</div>"
-        "<div class='txt box'>%s</div><div class='hint'>Auf dieser Seite darfst du markieren und unterstreichen.</div></div>"
+        "<div class='page mat%s'><div class='grow'><div class='meta'>Material zu Blatt %s</div><h1>%s</h1>"
+        "<img src='data:image/jpeg;base64,%s' alt='%s'><div class='cred'>%s%s</div>"
+        "<div class='txt box'>%s</div>%s<div class='hint'>Auf dieser Seite darfst du markieren und unterstreichen.</div></div>"
         "<div class='foot'><span>%s · Etappe %d</span><b>Material</b></div></div>"
-        % (rng, md(c["material"]["titel"]), b64(ROOT / c["foto"]["datei"]), html.escape(c["foto"]["alt"]),
-           html.escape(c["foto"]["nachweis"]), md(c["material"]["text"]), FUSS, c["etappe"])
+        % (lang, rng, md(m["titel"]), b64(ROOT / f["datei"]), html.escape(f["alt"]), html.escape(f["nachweis"]),
+           ("<br>" + md(hint)) if hint else "", md(m["text"]), woerter_html(m), FUSS, c["etappe"])
     )
+
+
+def zusatz_page(c: dict, z: dict, k: int, n: int) -> str:
+    h = ["<div class='page'><div class='grow'><div class='ukopf'><div><div class='meta'>%s K1–K6 · Seite %d/%d</div><h1>%s</h1></div></div>"
+         % (md(z["kennung"]), k, n, md(z["titel"]))]
+    for t in z["teile"]:
+        h.append("<div class='teil box'><h2>%s</h2><div class='cbl'><span class='cb'></span><span>%s</span></div></div>" % (md(t["titel"]), md(t["text"])))
+    h.append("</div><div class='foot'><span>%s · Etappe %d</span><b>%s %d/%d</b></div></div>" % (FUSS, c["etappe"], md(z["kennung"]), k, n))
+    return "".join(h)
 
 
 # ---------------------------------------------------------------- Gelingensnachweis A4
@@ -379,6 +411,116 @@ def gn_pages(c: dict, var: str) -> str:
     return "".join(p1) + p2
 
 
+
+# ---------------------------------------------------------------- Probearbeit / Klassenarbeit (A4)
+# Aufbau nach der Lernerfolgskontrolle der Reihe Wunschbriefe:
+# Auftrag → Material → Planung → Schreibseite → Das zählt → Hilfe → Rückmeldung
+PR_CSS = GN_CSS + """
+.pk h2{font-size:17pt;margin:4mm 0 1.5mm}
+.pk .sit{font-size:15pt;line-height:1.4}
+.al{list-style:none}
+.al li{display:flex;gap:2.5mm;align-items:flex-start;margin-bottom:1.8mm;font-size:15pt}
+.al li .cb{flex:0 0 auto;margin-top:1.3mm}
+.hw{font-size:14pt;padding:3mm 4mm;background:var(--fill);border-radius:2.5mm;margin-top:4mm}
+.hw div+div{margin-top:1.5mm}
+.zeit{font-size:14pt;margin-bottom:2mm}
+.pm img{display:block;margin:0 auto;height:92mm;width:auto;max-width:100%;border-radius:2mm}
+.pm .cred{font-size:14pt;color:var(--mid);text-align:center;margin:1.5mm 0 3mm}
+.pm .bh{font-size:14pt;font-weight:700;text-align:center;margin-bottom:3mm}
+.pm .txt{font-size:15pt;line-height:1.5;padding:3.5mm 4.5mm}
+.pp .fh{font-weight:700;font-size:16pt;border-bottom:2pt solid var(--ink);margin-top:5mm;padding-bottom:.5mm}
+.pp .zl{display:flex;align-items:flex-end;gap:3mm;font-size:14pt}
+.pp .zl .lab{flex:0 0 52mm;color:var(--mid)}
+.pp .zl .ln{flex:1;border-bottom:1pt solid var(--soft);height:11.5mm}
+.sb{flex:1 1 0;min-height:40mm;margin-top:1mm;overflow:hidden;display:flex;flex-direction:column}
+.sb .l{flex:0 0 11mm;border-bottom:1pt solid var(--soft)}
+.sw{display:flex;flex-direction:column;height:100%}
+.ueb{display:flex;align-items:flex-end;gap:3mm;font-size:15pt;font-weight:700;margin-top:2mm}
+.ueb .ln{flex:1;border-bottom:1.4pt solid var(--ink);height:11mm}
+.pz .kr{display:flex;gap:3mm;align-items:flex-start;padding:2.4mm 0;border-bottom:1pt solid var(--line);font-size:15pt}
+.pz .kr .cb{flex:0 0 auto;margin-top:1.3mm}
+.ph .blk{margin-top:4mm;font-size:15pt}
+.ph .blk>b{display:block;font-size:16pt;margin-bottom:1mm}
+.mini{display:flex;flex-wrap:wrap;gap:1.5mm 6mm;font-size:13pt;margin:0 0 2mm}
+.rm table.ziele{margin-bottom:2.5mm}
+"""
+
+
+def build_pruefung(pg, p: dict, out: Path, ueberlauf: list):
+    kurz = p["kurz"]
+    seiten = []
+
+    def page(cls: str, inner: str) -> str:
+        return "<div class='page %s'><div class='grow'>%s</div>{FOOT}</div>" % (cls, inner)
+
+    def kopf(meta: str, h1: str) -> str:
+        return "<div class='gkopf'><div><div class='meta'>%s</div><h1>%s</h1></div><div class='var'>%s</div></div>" % (meta, h1, md(kurz))
+
+    namen = "<div class='namen'><div>Name:</div><div class='d'>Datum:</div></div>"
+    meta = "Deutsch · Jahrgang 5 · Zootiere · %s" % md(p["art"])
+
+    # 1 Auftrag
+    seiten.append(page("pk", kopf(meta, md(p["titel"])) + namen
+        + "<div class='zeit'>%s</div>" % md(p["arbeitszeit"])
+        + "<h2>Deine Situation</h2><div class='sit'>%s</div>" % md(p["situation"])
+        + "<h2>Dein Auftrag</h2><ul class='al'>%s</ul>" % "".join("<li><span class='cb'></span><span>%s</span></li>" % md(a) for a in p["auftrag"])
+        + "<div class='hw'>%s<div><b>%s</b></div></div>" % ("".join("<div>%s</div>" % md(h) for h in p["hinweise"]), md(p["ablauf"]))))
+    # 2 Material
+    m = p["material"]
+    seiten.append(page("pm", kopf(meta, "Material: %s" % md(m["titel"]))
+        + "<img src='data:image/jpeg;base64,%s' alt='%s'><div class='cred'>%s</div><div class='bh'>%s</div>"
+        % (b64(ROOT / m["foto"]["datei"]), html.escape(m["foto"]["alt"]), html.escape(m["foto"]["nachweis"]), md(m.get("bildhinweis", "")))
+        + "<div class='txt box'><b>Sachtext</b><br>%s</div>%s" % (md(m["text"]), woerter_html(m))))
+    # 3 Planung
+    fl = ""
+    for f in p["plan"]["felder"]:
+        fl += "<div class='fh'>%s</div>" % md(f["titel"])
+        for lab, n in f["zeilen"]:
+            fl += "".join("<div class='zl'><span class='lab'>%s</span><span class='ln'></span></div>" % md(lab) for _ in range(n))
+    seiten.append(page("pp", kopf(meta, "Planung: dein Schreibplan") + "<div class='sit'>%s</div>" % md(p["plan"]["hinweis"]) + fl))
+    # 4 Schreibseite
+    seiten.append(page("ps", "<div class='sw'>" + kopf(meta, "Schreiben: dein Text") + namen
+        + "<div class='sit'>%s</div>" % md(p["schreiben"]["hinweis"])
+        + "<div class='ueb'><span>Überschrift:</span><span class='ln'></span></div><div class='sb'>%s</div>" % ("<div class='l'></div>" * 40)
+        + "<div class='hw'><b>Prüfen:</b> %s</div></div>" % md(p["schreiben"]["pruefen"])))
+    # 5 Das zählt
+    z = p["zaehlt"]
+    seiten.append(page("pz", kopf(meta, "Dein Text: Das zählt") + "<div class='sit'><b>Dein Ziel:</b> %s</div><div style='margin-top:3mm'>" % md(z["ziel"])
+        + "".join("<div class='kr'><span class='cb'></span><span><b>%s:</b> %s</span></div>" % (md(a), md(b)) for a, b in z["kriterien"])
+        + "</div><div class='hw'><b>So wird deine %s ausgewertet</b><div>%s</div><div>%s</div></div>" % (md(p["art"]), md(z["auswertung"]), md(z["zusatz"]))))
+    # 6 Hilfe
+    hl = p["hilfe"]
+    seiten.append(page("ph", kopf(meta, "Diese Hilfe darfst du nutzen") + "<div class='sit'>%s</div>" % md(hl["einleitung"])
+        + "".join("<div class='blk'><b>%s</b>%s</div>" % (md(a), md(b)) for a, b in hl["bloecke"])
+        + "<div class='hw'>%s</div>" % md(hl["regeln"])))
+    # 7 Rückmeldung der Lehrkraft
+    r = p["rueckmeldung"]
+    rows = "".join(
+        "<tr><td><span class='id'>%s</span> %s<span class='krit'>Erreicht, wenn: %s</span></td>"
+        "<td class='c'><span class='cb'></span></td><td class='c'><span class='cb'></span></td><td class='u'>%s</td><td class='e'></td></tr>"
+        % (zz["id"], md(zz["kind"]), md(zz["lehrkraft"]), md(zz["ueben"])) for zz in p["ziele"])
+    cbs = lambda xs: "".join("<span><span class='cb'></span>%s</span>" % md(x) for x in xs)
+    seiten.append(page("rm", kopf("Rückmeldung der Lehrkraft", "So weit bist du")
+        + "<table class='ziele'><tr><th>Ziel</th><th>gezeigt</th><th>noch offen</th><th>Übe mit</th><th>erneut gezeigt am</th></tr>%s</table>" % rows
+        + "<div class='mini'><b>Genutzte Hilfen:</b>%s</div>" % cbs(r["hilfen"])
+        + "<div class='ergebnis'><div class='sum box'>Ergebnis<b>___ / 5</b>Ziele gezeigt</div>"
+        "<div class='ent box'><div><span class='cb'></span><b>4 oder 5 Ziele:</b> %s</div><div><span class='cb'></span><b>Weniger als 4:</b> %s</div></div></div>"
+        % (md(r["bestanden"]), md(r["offen"]))
+        + "<div class='fb'><div class='h'>Das gelingt dir schon:</div><div class='ln'></div></div>"
+        + "<div class='fb'><div class='h'>Dein nächster Schritt:</div><div class='ln'></div></div>"
+        + "<div class='mini'><b>Wahlzeit:</b>%s</div><div class='mini'><b>Klassenarbeit, vereinbarter Termin:</b>%s</div>" % (cbs(r["wahl"]), cbs(r["termin"]))
+        + "<div class='sig'><div>Lehrkraft:</div><div>Datum:</div></div>"))
+
+    n = len(seiten)
+    body = "".join(sp.replace("{FOOT}", "<div class='foot'><span>%s · %s</span><b>%s · Seite %d/%d</b></div>"
+                              % (FUSS, md(p["art"]), md(kurz), k, n)) for k, sp in enumerate(seiten, 1))
+    pdf = out / ("%s.pdf" % p["datei"])
+    o = render(pg, doc(body, PR_CSS, p["titel"]), pdf)
+    if o:
+        ueberlauf.append("%s: Überlauf auf Seite %s" % (p["datei"], o))
+    return ("%s (S. 1–%d)" % (kurz, n - 1), pdf, font_sizes(pdf, list(range(n - 1))), MIN_PT["nachweis_aufgaben"])
+
+
 # ---------------------------------------------------------------- Input-Präsentation
 INPUT_HTML = r"""<!doctype html><html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -449,8 +591,8 @@ def input_html(c: dict) -> str:
     foto_b64 = b64(ROOT / c["foto"]["datei"])
     e = c["etappe"]
     weg = ("<div class='weg'><span>Input + Merkblatt %d</span><i>→</i><span>Blatt %d–%d · Pflicht</span>"
-           "<span class='d'>Vertiefung · freiwillig</span><i>→</i><span>Gelingensnachweis</span></div>"
-           % (e, c["blaetter"][0]["nr"], c["blaetter"][-1]["nr"]))
+           "<span class='d'>Vertiefung · freiwillig</span><i>→</i><span>%s</span></div>"
+           % (e, c["blaetter"][0]["nr"], c["blaetter"][-1]["nr"], c.get("abschluss_name", "Gelingensnachweis")))
     s = [
         "<section class='slide title'><div class='kick'>Zootiere · Etappe %d · Input</div><h1>%s</h1>"
         "<div class='ziel'><b>Dein Ziel:</b> %s</div>"
@@ -576,9 +718,13 @@ def main(n: int):
         ub = out / f"Uebungsblaetter_Etappe{n}_A4.pdf"
         # zu volle Blätter automatisch dichter setzen (Schrift bleibt mind. 14 pt)
         dicht = {b["nr"]: 0 for b in c["blaetter"]}
-        off = 1 if c.get("material") else 0
+        mats = materialien(c)
+        off = len(mats)
+        zs = c.get("zusatzseiten", [])
         for _ in range(3):
-            body = (material_page(c) if c.get("material") else "") + "".join(blatt_page(c, b, dicht[b["nr"]]) for b in c["blaetter"])
+            body = ("".join(material_page(c, m) for m in mats)
+                    + "".join(blatt_page(c, b, dicht[b["nr"]]) for b in c["blaetter"])
+                    + "".join(zusatz_page(c, z, k, len(zs)) for k, z in enumerate(zs, 1)))
             o = render(pg, doc(body, UB_CSS, f"Übungsblätter Etappe {n}"), ub)
             voll = [int(str(x).split()[0]) - 1 - off for x in o]
             voll = [c["blaetter"][k]["nr"] for k in voll if 0 <= k < len(c["blaetter"]) and dicht[c["blaetter"][k]["nr"]] < 2]
@@ -591,12 +737,16 @@ def main(n: int):
         report.append(("Übungsblätter", ub, font_sizes(ub), MIN_PT["uebung"]))
 
         # Gelingensnachweise
-        for var in c["nachweis"]["varianten"]:
+        for var in (c["nachweis"]["varianten"] if c.get("nachweis") else []):
             gp = out / f"GN{n}_{var}_A4.pdf"
             o = render(pg, doc(gn_pages(c, var), GN_CSS, f"Gelingensnachweis {n}{var}"), gp)
             if o:
                 ueberlauf.append(f"GN{n}{var}: Überlauf auf Seite {o}")
             report.append((f"GN{n}{var} Aufgaben", gp, font_sizes(gp, [0]), MIN_PT["nachweis_aufgaben"]))
+        # Probearbeit (Abschluss der letzten Etappe)
+        if c.get("pruefung"):
+            pr = json.loads((ROOT / c["pruefung"]).read_text(encoding="utf-8"))
+            report.append(build_pruefung(pg, pr, out, ueberlauf))
         br.close()
 
     fail = bool(ueberlauf)
@@ -612,5 +762,24 @@ def main(n: int):
         sys.exit(1)
 
 
+def main_pruefung(path: str):
+    p = json.loads((ROOT / path).read_text(encoding="utf-8"))
+    out = ROOT / "ausgabe" / "pruefungen"
+    out.mkdir(parents=True, exist_ok=True)
+    ueberlauf = []
+    with sync_playwright() as pw:
+        br = pw.chromium.launch()
+        name, pdf, (mn, pages), need = build_pruefung(br.new_page(), p, out, ueberlauf)
+        br.close()
+    for u in ueberlauf:
+        print("ÜBERLAUF:", u)
+    print(f"{name:22s} {pages} S.  kleinste Schrift {mn:5.2f} pt (mind. {need})")
+    if ueberlauf or mn < need - 0.05:
+        sys.exit(1)
+
+
 if __name__ == "__main__":
-    main(int(sys.argv[1]) if len(sys.argv) > 1 else 1)
+    if len(sys.argv) > 2 and sys.argv[1] == "pruefung":
+        main_pruefung(sys.argv[2])
+    else:
+        main(int(sys.argv[1]) if len(sys.argv) > 1 else 1)
