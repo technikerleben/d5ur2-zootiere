@@ -111,6 +111,58 @@ def karte(k: dict, abschluss: str) -> str:
             % (k["nr"], ICONS[k["symbol"]], md(k["titel"]), md(k["wann"]), "leer" if leer else "", steps, bsp, md(abschluss)))
 
 
+# ---------------------------------------------------------------- Lernweg (A4, Originalgröße)
+LW_CSS = UB_CSS + """
+.page.lw{font-size:13.5pt;line-height:1.3;padding:11mm 14mm 8mm 14mm}
+.lw .ukopf{margin-bottom:3mm}.lw .ukopf h1{font-size:26pt}
+.lw .kopfz{display:flex;gap:6mm;margin-bottom:4mm;font-size:13.5pt}
+.lw .kopfz div{flex:1;border-bottom:1pt solid var(--ink);padding-bottom:1mm}
+.lw .ziel{border-left:3pt solid var(--ink);padding:1mm 0 1mm 3.5mm;margin-bottom:4mm;font-size:14pt}
+.weg{position:relative;padding-left:15mm}
+.weg::before{content:"";position:absolute;left:5.5mm;top:4mm;bottom:4mm;border-left:2.5pt dashed var(--ink)}
+.st{position:relative;border:1.5pt solid var(--ink);border-radius:3mm;padding:2.2mm 4mm 2.6mm;margin-bottom:2.8mm;background:#fff}
+.st .sn{position:absolute;left:-15mm;top:2mm;width:11mm;height:11mm;border-radius:50%;background:var(--ink);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15pt}
+.st .sn.o{background:#fff;color:var(--ink);border:2pt solid var(--ink)}
+.st h2{font-size:15pt;margin-bottom:1.5mm}
+.st .z{display:flex;flex-wrap:wrap;align-items:center;gap:1.5mm 4mm;margin-top:1mm}
+.st .z b{min-width:31mm}
+.st .z span{display:inline-flex;align-items:center;gap:1mm}
+.st .cb{width:5mm;height:5mm;margin:0 .5mm 0 0}
+.st .fr{color:var(--mid)}
+.st .nw{display:flex;gap:4mm;margin-top:2mm;padding-top:2mm;border-top:1pt solid var(--line)}
+.st .nw div{flex:1;border-bottom:1pt solid var(--soft);padding-bottom:.5mm;font-size:13pt}.st .nw div:first-child{flex:1.7}
+.lw .fuss{font-size:13pt;color:var(--mid);margin-top:1mm}
+"""
+
+
+def lernweg_page(etappen: list, f: bool) -> str:
+    suf = "F" if f else ""
+    h = ["<div class='page lw'><div class='grow'><div class='ukopf'><div><div class='meta'>Zootiere · Lernweg%s</div><h1>Mein Lernweg: Zootiere</h1></div></div>" % (" · Schritt für Schritt" if f else ""),
+         "<div class='kopfz'><div>Name:</div><div>Klasse:</div></div>",
+         "<div class='ziel'><b>Mein Ziel:</b> Ich beschreibe ein Tier genau und sachlich.</div><div class='weg'>"]
+    for e in etappen:
+        n = e["etappe"]
+        nrs = [str(b["nr"]) + suf for b in e["blaetter"]]
+        cbs = "".join("<span><span class='cb'></span>%s</span>" % x for x in nrs)
+        nachweis = ("<div class='nw'><div>Gelingensnachweis %d%s: ___ / ___</div><div>Datum:</div><div>Freigabe:</div></div>" % (n, suf)
+                    if n < 3 else "<div class='nw'><div>Probearbeit: ___ / ___</div><div><span class='cb'></span>Feedback erhalten</div><div>Datum:</div></div>")
+        vert = "" if f else "<div class='z fr'><b>Vertiefung · freiwillig</b>%s</div>" % cbs
+        h.append("<div class='st'><span class='sn'>%d</span><h2>Etappe %d · %s</h2>"
+                 "<div class='z'><b>Start</b><span><span class='cb'></span>Input</span><span><span class='cb'></span>Merkblatt%s</span></div>"
+                 "<div class='z'><b>Pflichtblätter</b>%s</div>%s%s</div>"
+                 % (n, n, md(e["titel"]), " / Merkkarte" if f else " " + str(n), cbs, vert, nachweis))
+    h.append("<div class='st'><span class='sn o'>★</span><h2>Wahlzeit nach dem Feedback</h2>"
+             "<div class='z'><span><span class='cb'></span>offene Ziele üben</span><span><span class='cb'></span>P1 Tiermagazin</span>"
+             "<span><span class='cb'></span>P2 Tierrätsel</span><span><span class='cb'></span>P3 Tiervergleich</span>"
+             "<span><span class='cb'></span>Vertiefung nachholen</span></div></div>")
+    h.append("<div class='st'><span class='sn o'>✎</span><h2>Klassenarbeit</h2>"
+             "<div class='z'><span><span class='cb'></span>früher Termin: ____________</span><span><span class='cb'></span>später Termin: ____________</span></div></div>")
+    h.append("</div><div class='fuss'>Vier von fünf Zielen = 80 %. Dann geht es weiter. Lege jedes Blatt in deinen Lernbuddy. Übertrage deine Reflexion vor dem Abwischen ins Heft.</div>")
+    h.append("</div><div class='foot'><span>%s</span><b>Lernweg%s · A4 Originalgröße</b></div></div>" % (FUSS, " F" if f else ""))
+    return "".join(h)
+
+
 def main():
     out_w = ROOT / "ausgabe" / "wahlphase"
     out_s = ROOT / "ausgabe" / "strategiekarten"
@@ -144,6 +196,22 @@ def main():
         print(f"Strategiekarten      {n} S.  kleinste Schrift {mn:5.2f} pt (mind. 12, Originalgröße)")
         if mn < 11.95:
             fail.append("Strategiekarten: Schrift zu klein")
+        out_l = ROOT / "ausgabe" / "lernweg"
+        out_l.mkdir(parents=True, exist_ok=True)
+        et = [json.loads((ROOT / "inhalt" / f"etappe{k}.json").read_text(encoding="utf-8")) for k in (1, 2, 3)]
+        etf = [json.loads((ROOT / "inhalt" / f"foerder_etappe{k}.json").read_text(encoding="utf-8")) for k in (1, 2, 3)]
+        for name, ets, f in (("Lernweg_Zootiere_A4.pdf", et, False), ("Lernweg_Zootiere_F_A4.pdf", etf, True)):
+            if f:
+                for e in ets:
+                    e["blaetter"] = [dict(b, nr=str(b["nr"]).rstrip("F")) for b in e["blaetter"]]
+            lp = out_l / name
+            o = render(pg, doc(lernweg_page(ets, f), LW_CSS, "Lernweg"), lp)
+            if o:
+                fail.append("%s: Überlauf %s" % (name, o))
+            mn, n = font_sizes(lp)
+            print(f"{name:28s} {n} S.  kleinste Schrift {mn:5.2f} pt (mind. 12, Originalgröße)")
+            if mn < 11.95:
+                fail.append("%s: Schrift zu klein" % name)
         br.close()
     print("ok" if not fail else "FEHLER:\n  " + "\n  ".join(fail))
     sys.exit(1 if fail else 0)

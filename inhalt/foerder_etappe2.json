@@ -1,0 +1,327 @@
+{
+  "_hinweis": "Zieldifferentes Material (Förderschwerpunkt Lernen), Etappe 2. Aufbau wie Etappe 1F.",
+  "etappe": 2,
+  "titel": "Sachlich und genau formulieren",
+  "foto": {
+    "datei": "materialien/gelingensnachweise/Fischotter_DavePape_Graustufen.jpg",
+    "nachweis": "Foto: Dave Pape · Public Domain",
+    "alt": "Ein Fischotter im Gras. Die Zahlen 1 bis 5 zeigen auf Nase, Auge, Ohr, Tasthaare und Fell.",
+    "punkte": [
+      [
+        1,
+        28.3,
+        31.7
+      ],
+      [
+        2,
+        38.6,
+        26.9
+      ],
+      [
+        3,
+        49.9,
+        24.6
+      ],
+      [
+        4,
+        45.9,
+        47.1
+      ],
+      [
+        5,
+        87.5,
+        42.9
+      ]
+    ]
+  },
+  "material": {
+    "titel": "Der Fischotter",
+    "saetze": [
+      "Der Fischotter lebt an Flüssen und Seen.",
+      "Sein Körper ist lang.",
+      "Seine Beine sind kurz.",
+      "Sein Fell ist oben dunkelbraun.",
+      "Sein Kopf ist breit und flach.",
+      "An der Schnauze sitzen lange Tasthaare.",
+      "Zwischen den Zehen hat er Schwimmhäute.",
+      "Im Wasser schwimmt er schnell.",
+      "Er frisst vor allem Fische."
+    ],
+    "woerter": [
+      [
+        "Tasthaare",
+        "Haare zum Ertasten"
+      ],
+      [
+        "Schwimmhäute",
+        "Haut zwischen den Zehen"
+      ]
+    ]
+  },
+  "merkkarte": {
+    "titel": "Das hilft dir in Etappe 2",
+    "punkte": [
+      [
+        "Genau",
+        "Nimm Wörter, die du prüfen kannst: *dunkelbraun, kurz, breit*. Nicht: *schön, toll*."
+      ],
+      [
+        "Präsens",
+        "Eine Tierbeschreibung steht in der Gegenwart: *er lebt, er frisst, es ist*."
+      ],
+      [
+        "Ein Satz",
+        "Wer? + Verb + Rest. *Der Fischotter + frisst + Fische.*"
+      ],
+      [
+        "Groß",
+        "Der Satzanfang ist groß. Nomen sind groß: *Fell, Kopf, Fische*."
+      ],
+      [
+        "Punkt",
+        "Am Ende vom Satz steht ein Punkt."
+      ]
+    ]
+  },
+  "blaetter": [
+    {
+      "nr": "5F",
+      "titel": "Treffende Wörter",
+      "aufgaben": [
+        {
+          "typ": "ankreuzen",
+          "auftrag": "Wie ist das Fell oben? Kreuze das **genaue** Wort an.",
+          "spalten": 3,
+          "items": [
+            [
+              "schön",
+              false
+            ],
+            [
+              "dunkelbraun",
+              true
+            ],
+            [
+              "toll",
+              false
+            ]
+          ]
+        },
+        {
+          "typ": "ankreuzen",
+          "auftrag": "Wie ist der Kopf? Kreuze die **genaue** Angabe an.",
+          "spalten": 3,
+          "items": [
+            [
+              "süß",
+              false
+            ],
+            [
+              "breit und flach",
+              true
+            ],
+            [
+              "lustig",
+              false
+            ]
+          ]
+        },
+        {
+          "typ": "luecke",
+          "auftrag": "Mache den Satz genauer. Nutze den Wortspeicher.",
+          "text": "Der {Fischotter} {schwimmt} im Wasser.",
+          "extra": [
+            "Tier",
+            "ist"
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "auftrag": "Was bedeutet das Wort? Schreibe die Zahl in das Kästchen.",
+          "optionen": [
+            "Haare zum Ertasten",
+            "Haut zwischen den Zehen"
+          ],
+          "paare": [
+            [
+              "Tasthaare",
+              "1"
+            ],
+            [
+              "Schwimmhäute",
+              "2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nr": "6F",
+      "titel": "Sachliche Sätze",
+      "aufgaben": [
+        {
+          "typ": "ordnen",
+          "auftrag": "Bilde einen Satz aus den Wortkarten. Schreibe ihn auf die Linie.",
+          "karten": [
+            "kurz.",
+            "Seine Beine",
+            "sind"
+          ],
+          "loesung": "Seine Beine sind kurz."
+        },
+        {
+          "typ": "ordnen",
+          "auftrag": "Bilde einen Satz aus den Wortkarten. Schreibe ihn auf die Linie.",
+          "karten": [
+            "Krebse.",
+            "frisst",
+            "Der Fischotter",
+            "auch"
+          ],
+          "loesung": "Der Fischotter frisst auch Krebse."
+        },
+        {
+          "typ": "ankreuzen",
+          "auftrag": "Welcher Satz steht in der Gegenwart (Präsens)? Kreuze an.",
+          "items": [
+            [
+              "Der Fischotter lebte am Wasser.",
+              false
+            ],
+            [
+              "Der Fischotter lebt am Wasser.",
+              true
+            ]
+          ]
+        },
+        {
+          "typ": "luecke",
+          "auftrag": "Setze das passende Verb ein.",
+          "text": "Ein Fischotter {frisst} Fische.\nZwei Fischotter {fressen} Fische."
+        },
+        {
+          "typ": "ankreuzen",
+          "auftrag": "Welcher Satz ist richtig geschrieben? Kreuze an.",
+          "items": [
+            [
+              "der fischotter lebt am see",
+              false
+            ],
+            [
+              "Der Fischotter lebt am See.",
+              true
+            ],
+            [
+              "Der Fischotter lebt am see",
+              false
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "nachweis": {
+    "titel": "Genaue Sätze",
+    "hinweis_lehrkraft": "Vorschlag. Förderziele, Antwortform und Hilfen vorab individuell vereinbaren. 80 % beziehen sich auf die vereinbarte Liste.",
+    "ziele": [
+      {
+        "id": "F2.1",
+        "kind": "Ich wähle genaue Wörter.",
+        "lehrkraft": "genaue Angabe statt Wertung angekreuzt",
+        "ueben": "Blatt 5F"
+      },
+      {
+        "id": "F2.2",
+        "kind": "Ich bilde einen Satz aus Wortkarten.",
+        "lehrkraft": "Satz vollständig und in sinnvoller Reihenfolge",
+        "ueben": "Blatt 6F"
+      },
+      {
+        "id": "F2.3",
+        "kind": "Ich wähle das Verb im Präsens.",
+        "lehrkraft": "Präsensform richtig gewählt bzw. eingesetzt",
+        "ueben": "Blatt 6F"
+      },
+      {
+        "id": "F2.4",
+        "kind": "Ich erkenne große Anfänge, Nomen und Punkt.",
+        "lehrkraft": "richtig geschriebenen Satz angekreuzt",
+        "ueben": "Blatt 6F"
+      },
+      {
+        "id": "F2.5",
+        "kind": "Ich kenne ein Fachwort.",
+        "lehrkraft": "Fachwort richtig zugeordnet",
+        "ueben": "Blatt 5F"
+      }
+    ],
+    "aufgaben": [
+      {
+        "typ": "ankreuzen",
+        "auftrag": "Wie sind die Beine? Kreuze das **genaue** Wort an.",
+        "spalten": 3,
+        "items": [
+          [
+            "kurz",
+            true
+          ],
+          [
+            "toll",
+            false
+          ],
+          [
+            "schön",
+            false
+          ]
+        ]
+      },
+      {
+        "typ": "ordnen",
+        "auftrag": "Bilde einen Satz aus den Wortkarten. Schreibe ihn auf die Linie.",
+        "karten": [
+          "Flüssen.",
+          "lebt",
+          "Der Fischotter",
+          "an"
+        ],
+        "loesung": "Der Fischotter lebt an Flüssen."
+      },
+      {
+        "typ": "luecke",
+        "auftrag": "Setze das Verb im Präsens ein.",
+        "text": "Der Fischotter {frisst} vor allem Fische.",
+        "extra": [
+          "fraß"
+        ]
+      },
+      {
+        "typ": "ankreuzen",
+        "auftrag": "Welcher Satz ist richtig geschrieben? Kreuze an.",
+        "items": [
+          [
+            "sein kopf ist breit",
+            false
+          ],
+          [
+            "Sein Kopf ist breit.",
+            true
+          ]
+        ]
+      },
+      {
+        "typ": "zuordnen",
+        "auftrag": "Was bedeutet das Wort? Schreibe die Zahl in das Kästchen.",
+        "optionen": [
+          "Haare zum Ertasten",
+          "Haut zwischen den Zehen"
+        ],
+        "paare": [
+          [
+            "Schwimmhäute",
+            "2"
+          ]
+        ]
+      }
+    ]
+  }
+}

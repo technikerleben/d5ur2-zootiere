@@ -1,0 +1,228 @@
+{
+  "_hinweis": "Zieldifferentes Material (Förderschwerpunkt Lernen), Etappe 3. Übungstier: nur Erdmännchen. Abschluss: Probearbeit F (folgt).",
+  "etappe": 3,
+  "titel": "Eine Tierbeschreibung schreiben und prüfen",
+  "foto": {
+    "datei": "assets/bilder/erdmaennchen_graustufen.jpg",
+    "nachweis": "Foto: Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons · Graustufenfassung",
+    "alt": "Ein Erdmännchen steht aufrecht. Die Zahlen zeigen auf Augenfleck, Körper, Schwanz und Pfote mit Krallen.",
+    "punkte": [
+      [
+        1,
+        53,
+        13
+      ],
+      [
+        2,
+        48,
+        42
+      ],
+      [
+        3,
+        65,
+        73
+      ],
+      [
+        4,
+        49,
+        91
+      ]
+    ]
+  },
+  "material": {
+    "titel": "Das Erdmännchen",
+    "saetze": [
+      "Das Erdmännchen lebt in Afrika.",
+      "Es lebt im trockenen Grasland.",
+      "Sein Körper ist schlank.",
+      "Sein Fell ist hellbraun.",
+      "Auf dem Rücken hat es dunkle Streifen.",
+      "Um die Augen hat es dunkle Flecken.",
+      "Sein Schwanz ist lang und schmal.",
+      "An den Pfoten hat es lange Krallen.",
+      "Kopf und Rumpf sind 25 bis 29 Zentimeter lang.",
+      "Der Schwanz kommt noch dazu.",
+      "Es frisst vor allem Insekten.",
+      "Es frisst auch Spinnen."
+    ],
+    "woerter": [
+      [
+        "Krallen",
+        "spitze Nägel an den Zehen"
+      ],
+      [
+        "Insekten",
+        "kleine Tiere wie Käfer und Ameisen"
+      ],
+      [
+        "Rumpf",
+        "Körper ohne Kopf, Beine und Schwanz"
+      ]
+    ],
+    "bildhinweis": "Die Streifen auf dem Rücken siehst du auf dem Foto nicht. Sie stehen im Text."
+  },
+  "merkkarte": {
+    "titel": "Das hilft dir in Etappe 3",
+    "punkte": [
+      [
+        "Plan",
+        "Überblick · Aussehen · Lebensraum · Nahrung"
+      ],
+      [
+        "Überblick",
+        "Name und Größe: *Das Erdmännchen ist 25 bis 29 Zentimeter lang.*"
+      ],
+      [
+        "Aussehen",
+        "Vier Merkmale: Körper, Fell, Schwanz, Krallen …"
+      ],
+      [
+        "Text",
+        "Erst der Name, dann das Aussehen, dann Lebensraum und Nahrung."
+      ],
+      [
+        "Prüfen",
+        "Großer Anfang? Nomen groß? Punkt am Ende?"
+      ]
+    ]
+  },
+  "blaetter": [
+    {
+      "nr": "7F",
+      "titel": "Dein Schreibplan",
+      "aufgaben": [
+        {
+          "typ": "bild",
+          "auftrag": "Schau dir das Foto genau an. Die Zahlen zeigen auf Körperteile."
+        },
+        {
+          "typ": "zuordnen",
+          "auftrag": "Welche Zahl gehört zu welchem Wort? Schreibe die Zahl in das Kästchen.",
+          "paare": [
+            [
+              "Fleck um das Auge",
+              "1"
+            ],
+            [
+              "Körper",
+              "2"
+            ],
+            [
+              "Schwanz",
+              "3"
+            ],
+            [
+              "Pfote mit Krallen",
+              "4"
+            ]
+          ]
+        },
+        {
+          "typ": "sortieren",
+          "auftrag": "Ordne die Stichwörter. Schreibe jedes unter die richtige Überschrift.",
+          "wortspeicher": [
+            "schlanker Körper",
+            "Insekten",
+            "hellbraunes Fell",
+            "Afrika",
+            "langer Schwanz",
+            "Spinnen",
+            "Grasland",
+            "lange Krallen"
+          ],
+          "spalten": [
+            [
+              "Aussehen",
+              [
+                "schlanker Körper",
+                "hellbraunes Fell",
+                "langer Schwanz",
+                "lange Krallen"
+              ]
+            ],
+            [
+              "Lebensraum",
+              [
+                "Afrika",
+                "Grasland"
+              ]
+            ],
+            [
+              "Nahrung",
+              [
+                "Insekten",
+                "Spinnen"
+              ]
+            ]
+          ]
+        },
+        {
+          "typ": "luecke",
+          "auftrag": "Fülle den Überblick aus. Nutze die Materialseite.",
+          "text": "Das {Erdmännchen} ist 25 bis 29 {Zentimeter} lang.\nDer {Schwanz} kommt noch dazu."
+        }
+      ]
+    },
+    {
+      "nr": "8F",
+      "titel": "Deine Tierbeschreibung",
+      "aufgaben": [
+        {
+          "typ": "luecke",
+          "auftrag": "Fülle die Lücken. So entsteht deine Tierbeschreibung. Nutze deinen Plan von Blatt 7F.",
+          "text": "**Das Erdmännchen**\nDas Erdmännchen hat einen {schlanken} Körper.\nSein Fell ist {hellbraun}.\nAuf dem Rücken hat es dunkle {Streifen}.\nSein Schwanz ist {lang} und schmal.\nEs lebt im trockenen {Grasland} in Afrika.\nEs frisst vor allem {Insekten}.",
+          "extra": [
+            "Bambus"
+          ]
+        },
+        {
+          "typ": "schreiben",
+          "auftrag": "Schreibe einen eigenen Satz über die Pfoten. Lies danach deinen ganzen Text leise vor.",
+          "anfang": "An den Pfoten",
+          "loesung": "An den Pfoten hat es lange Krallen."
+        }
+      ]
+    },
+    {
+      "nr": "9F",
+      "titel": "Prüfen und verbessern",
+      "aufgaben": [
+        {
+          "typ": "check",
+          "auftrag": "Prüfe deinen Text von Blatt 8F. Kreuze an, was du gefunden hast. Zeige den Text danach einem anderen Kind oder deiner Lehrkraft.",
+          "items": [
+            "Mein Text hat eine Überschrift.",
+            "Ich nenne vier Merkmale.",
+            "Ich nenne Lebensraum und Nahrung.",
+            "Jeder Satz beginnt groß.",
+            "Am Ende jedes Satzes steht ein Punkt."
+          ]
+        },
+        {
+          "typ": "ankreuzen",
+          "auftrag": "Welcher Satz ist richtig geschrieben? Kreuze an.",
+          "items": [
+            [
+              "sein fell ist hellbraun",
+              false
+            ],
+            [
+              "Sein Fell ist hellbraun.",
+              true
+            ],
+            [
+              "Sein fell ist hellbraun.",
+              false
+            ]
+          ]
+        },
+        {
+          "typ": "schreiben",
+          "auftrag": "Verbessere den Satz. Schreibe ihn richtig auf die Linie.",
+          "anfang": "„es frisst vor allem insekten“ →",
+          "loesung": "Es frisst vor allem Insekten."
+        }
+      ]
+    }
+  ]
+}

@@ -26,6 +26,9 @@ ICON = {
     "luecke": "<path d='M4 30h10M18 30h14M36 30h8' stroke='#111' stroke-width='4'/><path d='M18 34h14' stroke='#111' stroke-width='3' stroke-dasharray='3 3'/><path d='M4 18h40' stroke='#888' stroke-width='3'/>",
     "zuordnen": "<circle cx='10' cy='12' r='5' fill='#111'/><circle cx='10' cy='36' r='5' fill='#111'/><rect x='30' y='4' width='14' height='14' fill='none' stroke='#111' stroke-width='3'/><rect x='30' y='30' width='14' height='14' fill='none' stroke='#111' stroke-width='3'/><path d='M15 12l15 24M15 36l15-24' stroke='#111' stroke-width='3'/>",
     "bild": "<rect x='4' y='8' width='40' height='32' rx='4' fill='none' stroke='#111' stroke-width='4'/><circle cx='17' cy='20' r='5' fill='#111'/><path d='M8 36l12-10 8 6 6-5 8 9' fill='none' stroke='#111' stroke-width='3'/>",
+    "ordnen": "<rect x='3' y='14' width='13' height='12' fill='none' stroke='#111' stroke-width='3'/><rect x='18' y='14' width='13' height='12' fill='#bbb' stroke='#111' stroke-width='3'/><rect x='33' y='14' width='12' height='12' fill='none' stroke='#111' stroke-width='3'/><path d='M4 38h40' stroke='#111' stroke-width='3'/>",
+    "schreiben": "<path d='M10 38l4-12 22-22 8 8-22 22z' fill='none' stroke='#111' stroke-width='4' stroke-linejoin='round'/><path d='M6 44h36' stroke='#111' stroke-width='3'/>",
+    "check": "<path d='M6 10l4 4 7-8M6 24l4 4 7-8M6 38l4 4 7-8' fill='none' stroke='#111' stroke-width='3.5' stroke-linecap='round'/><path d='M22 12h20M22 26h20M22 40h20' stroke='#111' stroke-width='3'/>",
     "hinweis": "<path d='M8 8h32v26H22l-10 8v-8H8z' fill='none' stroke='#111' stroke-width='4' stroke-linejoin='round'/><path d='M24 14v10M24 28v2' stroke='#111' stroke-width='4' stroke-linecap='round'/>",
 }
 
@@ -58,6 +61,11 @@ F_CSS = UB_CSS + """
 .loes b{color:var(--ink)}
 .knick{flex:0 0 auto;font-size:14pt;color:var(--mid);text-align:center;margin-top:2mm}
 .fmat .s{font-size:18pt;line-height:1.45}
+.wk{display:flex;flex-wrap:wrap;gap:3mm;margin-bottom:2mm}
+.wk span{border:2pt solid var(--ink);border-radius:2mm;padding:1.5mm 4mm;background:#fff}
+.zl{height:13mm;border-bottom:1.4pt solid var(--ink)}
+.sa{display:flex;align-items:flex-end;gap:3mm}.sa .zl1{flex:1;border-bottom:1.4pt solid var(--ink);height:11mm}
+.bh{font-size:14pt;font-weight:700;margin-bottom:3mm}
 .fmat .s div{padding:.6mm 0;border-bottom:1pt solid var(--line)}
 .fmat .cred{font-size:14pt;color:var(--mid);margin:1.5mm 0 4mm}
 .mkk .p{display:flex;gap:4mm;border-bottom:1.2pt solid var(--line);padding:3mm 0}
@@ -89,7 +97,15 @@ def aufgabe_html(a: dict, i: int, foto: dict) -> str:
         body = "<div class='ws'><b>Wortspeicher</b>%s</div>" % "".join("<span>%s</span>" % md(w) for w in ws)
         body += "<div class='lu'>%s</div>" % re.sub(r"\{[^}]+\}", "<span class='gap'></span>", md(a["text"]))
     elif t == "zuordnen":
-        body = "<div class='zo'>%s</div>" % "".join("<div><span>%s</span><span class='box'></span></div>" % md(w) for w, _ in a["paare"])
+        if a.get("optionen"):
+            body = "<div class='ws'><b>Bedeutungen</b>%s</div>" % "".join("<span><b style='display:inline'>%d</b> %s</span>" % (k, md(o)) for k, o in enumerate(a["optionen"], 1))
+        body += "<div class='zo'>%s</div>" % "".join("<div><span>%s</span><span class='box'></span></div>" % md(w) for w, _ in a["paare"])
+    elif t == "ordnen":
+        body = "<div class='wk'>%s</div><div class='zl'></div><div class='zl'></div>" % "".join("<span>%s</span>" % md(k) for k in a["karten"])
+    elif t == "schreiben":
+        body = "<div class='sa'><span>%s</span><span class='zl1'></span></div><div class='zl'></div>" % md(a.get("anfang", ""))
+    elif t == "check":
+        body = "<div class='kx'>%s</div>" % "".join("<div><span class='box'></span><span>%s</span></div>" % md(x) for x in a["items"])
     elif t == "bild":
         body = bild_html(foto, "70mm")
     return "<div class='fa'>%s%s</div>" % (head, body)
@@ -114,6 +130,10 @@ def loesung(aufgaben: list, start: int = 1) -> str:
             r = ", ".join(gaps(a["text"]))
         elif t == "zuordnen":
             r = ", ".join("%s %s" % (w, z) for w, z in a["paare"])
+        elif t == "ordnen":
+            r = a["loesung"]
+        elif t == "schreiben":
+            r = "zum Beispiel: " + a["loesung"]
         else:
             continue
         parts.append("<b>%d:</b> %s" % (i, html.escape(r)))
@@ -125,7 +145,7 @@ def blatt_page(c: dict, b: dict, gruppe: list, start: int, teil: str = "") -> st
     h = ["<div class='page f'><div class='grow'><div class='ukopf'><div class='nr'><span>Blatt</span><b>%s</b></div>"
          "<div><div class='meta'>Etappe %d · Schritt für Schritt%s</div><h1>%s</h1></div></div>" % (md(b["nr"]), c["etappe"], teil, md(b["titel"]))]
     h += [aufgabe_html(a, i, c["foto"]) for i, a in enumerate(gruppe, start)]
-    hat_loesung = any(a["typ"] not in ("bild", "hinweis") for a in gruppe)
+    hat_loesung = any(a["typ"] not in ("bild", "hinweis", "check") for a in gruppe)
     if hat_loesung:
         h.append("</div><div class='knick'>Fertig? Knicke den Streifen unten um und vergleiche.</div>%s" % loesung(gruppe, start))
     else:
@@ -160,10 +180,12 @@ def paginate(pg, c: dict, b: dict, css: str) -> str:
 def material_page(c: dict) -> str:
     m = c["material"]
     wh = "<div class='wh'><b>Wörterhilfe</b>%s</div>" % "".join("<div><b>%s:</b> %s</div>" % (md(w), md(e)) for w, e in m["woerter"])
-    return ("<div class='page f fmat'><div class='grow'><div class='ukopf'><div><div class='meta'>Material zu Blatt 1F–4F</div><h1>%s</h1></div></div>"
-            "%s<div class='cred'>%s</div><div class='s'>%s</div>%s</div>"
+    rng = "%s–%s" % (c["blaetter"][0]["nr"], c["blaetter"][-1]["nr"])
+    bh = "<div class='bh'>%s</div>" % md(m["bildhinweis"]) if m.get("bildhinweis") else ""
+    return ("<div class='page f fmat'><div class='grow'><div class='ukopf'><div><div class='meta'>Material zu Blatt %s</div><h1>%s</h1></div></div>"
+            "%s<div class='cred'>%s</div>%s<div class='s'>%s</div>%s</div>"
             "<div class='foot'><span>%s · Etappe %d</span><b>Material F</b></div></div>"
-            % (md(m["titel"]), bild_html(c["foto"], "72mm"), html.escape(c["foto"]["nachweis"]),
+            % (rng, md(m["titel"]), bild_html(c["foto"], "72mm" if len(m["saetze"]) <= 10 else "44mm"), html.escape(c["foto"]["nachweis"]), bh,
                "".join("<div>%s</div>" % md(s) for s in m["saetze"]), wh, FUSS, c["etappe"]))
 
 
@@ -233,17 +255,18 @@ def main(n: int):
         print(f"Förder Etappe {n}      {pages} S.  kleinste Schrift {mn:5.2f} pt (mind. 14)")
         if mn < 13.95:
             fail.append("Fördermaterial: Schrift zu klein")
-        gp = out / f"GN{n}F_A4.pdf"
-        GN_SEITEN.clear()
-        aufs = c["nachweis"]["aufgaben"]
-        GN_SEITEN.extend([aufs[:2], aufs[2:]] if len(aufs) > 2 else [aufs])
-        o = render(pg, doc(gn_pages(c), F_CSS + GN_CSS.replace(".page{padding:12mm 15mm 9mm 15mm;font-size:14pt;line-height:1.3}", ""), f"GN{n}F"), gp)
-        if o:
-            fail.append("GN%dF: Überlauf %s" % (n, o))
-        mn, pages = font_sizes(gp, list(range(len(GN_SEITEN) + 1)))
-        print(f"GN{n}F (ohne Rückmeldung) {pages} S.  kleinste Schrift {mn:5.2f} pt (mind. 14)")
-        if mn < 13.95:
-            fail.append("GN%dF: Schrift zu klein" % n)
+        if c.get("nachweis"):
+            gp = out / f"GN{n}F_A4.pdf"
+            GN_SEITEN.clear()
+            aufs = c["nachweis"]["aufgaben"]
+            GN_SEITEN.extend([aufs[:2], aufs[2:]] if len(aufs) > 2 else [aufs])
+            o = render(pg, doc(gn_pages(c), F_CSS + GN_CSS.replace(".page{padding:12mm 15mm 9mm 15mm;font-size:14pt;line-height:1.3}", ""), f"GN{n}F"), gp)
+            if o:
+                fail.append("GN%dF: Überlauf %s" % (n, o))
+            mn, pages = font_sizes(gp, list(range(len(GN_SEITEN) + 1)))
+            print(f"GN{n}F (ohne Rückmeldung) {pages} S.  kleinste Schrift {mn:5.2f} pt (mind. 14)")
+            if mn < 13.95:
+                fail.append("GN%dF: Schrift zu klein" % n)
         br.close()
     print("ok" if not fail else "FEHLER:\n  " + "\n  ".join(fail))
     sys.exit(1 if fail else 0)
