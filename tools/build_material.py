@@ -173,6 +173,12 @@ ol.auf li{margin-bottom:2.5mm;padding-left:1mm}
 .tipp{font-size:16pt;padding:3mm 4mm;border-radius:2.5mm;background:var(--fill);margin-bottom:6mm}
 .tipp b{margin-right:2mm}
 .foot{font-size:14pt;color:var(--mid)}
+.eng{font-size:15.5pt;line-height:1.32}
+.eng .ukopf{margin-bottom:4mm}.eng .nr{width:25mm;height:25mm}.eng .nr b{font-size:34pt}.eng .ukopf h1{font-size:27pt}
+.eng .brauch{margin-bottom:4mm;font-size:14pt}.eng .lies{margin-bottom:4mm}
+.eng .teil{margin-bottom:4mm;padding:3mm 4.5mm 3.5mm}.eng .teil h2{font-size:16pt;margin-bottom:1.5mm}
+.eng ol.auf li{margin-bottom:1.5mm}
+.enger{font-size:14.5pt;line-height:1.28}.enger .teil{margin-bottom:3mm}
 .mat h1{font-size:34pt;margin-bottom:5mm}
 .mat .meta{font-size:14pt;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mid);margin-bottom:1mm}
 .mat img{width:100%;height:108mm;object-fit:cover;border-radius:3mm;display:block}
@@ -182,8 +188,8 @@ ol.auf li{margin-bottom:2.5mm;padding-left:1mm}
 """
 
 
-def blatt_page(c: dict, b: dict) -> str:
-    h = ["<div class='page'><div class='grow'>"]
+def blatt_page(c: dict, b: dict, dicht: int = 0) -> str:
+    h = ["<div class='page%s'><div class='grow'>" % ("", " eng", " eng enger")[dicht]]
     h.append(
         "<div class='ukopf'><div class='nr'><span>Blatt</span><b>%d</b></div><div><div class='meta'>Etappe %d · Pflicht + freiwillige Vertiefung</div>"
         "<h1>%s</h1></div></div>" % (b["nr"], c["etappe"], md(b["titel"]))
@@ -191,6 +197,27 @@ def blatt_page(c: dict, b: dict) -> str:
     h.append("<div class='brauch'><b>Du brauchst:</b>%s</div>" % md(b["brauchst"]))
     if b.get("lies"):
         h.append("<div class='lies'><b>Lies</b>%s</div>" % md(b["lies"]))
+    if b.get("material"):
+        h.append("<div class='lies'><b>%s</b>%s</div>" % (md(b["material"]["titel"]), md(b["material"]["text"])))
+    if b.get("teile"):
+        # Allgemeine Form: mehrere Pflicht- und freiwillige Teile
+        for t in b["teile"]:
+            frei = t["art"] == "frei"
+            h.append("<div class='teil %s'><h2><span class='tag %s'>%s</span>%s</h2>"
+                     % ("dashed" if frei else "box", "f" if frei else "p", "Freiwillig" if frei else "Pflicht", md(t["titel"])))
+            if t.get("text"):
+                h.append("<div>%s</div>" % md(t["text"]))
+            if t.get("aufgaben"):
+                h.append("<ol class='auf' start='%d'>" % t.get("start", 1))
+                h += ["<li>%s</li>" % md(x) for x in t["aufgaben"]]
+                h.append("</ol>")
+            if t.get("nachtext"):
+                h.append("<div>%s</div>" % md(t["nachtext"]))
+            h.append("</div>")
+        if b.get("tipp"):
+            h.append("<div class='tipp'><b>Achte darauf:</b>%s</div>" % md(b["tipp"]))
+        h.append("</div><div class='foot'><span>%s · Etappe %d</span><b>Blatt %d</b></div></div>" % (FUSS, c["etappe"], b["nr"]))
+        return "".join(h)
     h.append("<div class='teil box'><h2><span class='tag p'>Pflicht</span>Schreibe ins Heft</h2><ol class='auf'>")
     h += ["<li>%s</li>" % md(x) for x in b["pflicht"]]
     h.append("</ol></div>")
@@ -244,6 +271,8 @@ GN_CSS = """
 .zwei>div{flex:1}
 .zwei .h{font-weight:700;font-size:14pt;border-bottom:1.5pt solid var(--ink);margin-top:2mm}
 .zwei .ln{border-bottom:1pt solid var(--soft);height:9.5mm}
+.wg{margin-top:2mm;font-size:15pt}
+.wn{display:inline-block;width:7mm;font-weight:700}
 .zielinfo{font-size:14pt;padding:2.5mm 4mm;background:var(--fill);border-radius:2.5mm}
 .foot{font-size:14pt;color:var(--mid)}
 /* Rückmeldeseite (Lehrkraftteil) */
@@ -269,7 +298,18 @@ table.ziele td.e{width:27mm}
 """
 
 
-def gn_felder(feld: str) -> str:
+def gn_felder(feld: str, v: dict) -> str:
+    if feld == "saetze":
+        return "".join(
+            "<div class='wg'><span class='wn'>%d.</span><em>%s</em></div><div class='feld'><span class='ln'></span></div>"
+            "<div class='feld'><span class='ln'></span></div>" % (i, md(w)) for i, w in enumerate(v["wortgruppen"], 1)
+        )
+    if feld == "verbessern":
+        return (
+            "<div class='wg'><em>„%s“</em></div><div class='wg'><b>Material:</b> <em>%s</em></div>"
+            "<div class='feld'><span class='ln'></span></div><div class='feld'><span class='ln'></span></div>"
+            % (md(v["verbessern"]["satz"]), md(v["verbessern"]["material"]))
+        )
     if feld == "merkmale":
         return (
             "<div class='feld'><span class='lab'>Aus dem Bild:</span><span class='ln'></span></div>"
@@ -299,16 +339,19 @@ def gn_pages(c: dict, var: str) -> str:
         "<div class='gkopf'><div><div class='meta'>Gelingensnachweis %d · Etappe %d</div><h1>%s</h1></div><div class='var'>Nachweis %d%s</div></div>"
         % (e, e, md(n["titel"]), e, var),
         "<div class='namen'><div>Name:</div><div class='d'>Datum:</div></div>",
-        "<div class='matbox box'><img src='data:image/jpeg;base64,%s' alt='%s'><div><div class='t'>%s</div><div class='cred'>%s</div></div></div>"
-        % (b64(ROOT / c["foto"]["datei"]), html.escape(c["foto"]["alt"]), md(v["text"]), html.escape(c["foto"]["nachweis"])),
     ]
+    if v.get("text"):
+        p1.append(
+            "<div class='matbox box'><img src='data:image/jpeg;base64,%s' alt='%s'><div><div class='t'>%s</div><div class='cred'>%s</div></div></div>"
+            % (b64(ROOT / c["foto"]["datei"]), html.escape(c["foto"]["alt"]), md(v["text"]), html.escape(c["foto"]["nachweis"])))
     for i, a in enumerate(n["aufgaben"], 1):
         p1.append(
             "<div class='auf box'><h2><span class='n'>%d</span>%s</h2>%s%s</div>"
-            % (i, md(a["titel"]), md(a["text"]), gn_felder(a["feld"]))
+            % (i, md(a["titel"]), md(a["text"]), gn_felder(a["feld"], v))
         )
     p1.append(
-        "<div class='zielinfo'><b>Fünf Ziele:</b> %s. Vier von fünf = 80 %%. Dann gehst du weiter. Es gibt keine Note.</div>" % kurz
+        "<div class='zielinfo'>%s<b>Fünf Ziele:</b> %s. Vier von fünf = 80 %%. Dann gehst du weiter. Es gibt keine Note.</div>"
+        % (("<b>%s</b> " % md(n["vor_zielen"])) if n.get("vor_zielen") else "", kurz)
     )
     p1.append("</div><div class='foot'><span>%s · Etappe %d</span><b>Nachweis %d%s · Seite 1</b></div></div>" % (FUSS, e, e, var))
 
@@ -354,7 +397,7 @@ h1 .n{display:inline-flex;width:76px;height:76px;border-radius:50%;background:va
   align-items:center;justify-content:center;margin-right:24px;vertical-align:6px}
 .body{flex:1;display:flex;gap:56px;min-height:0}
 .col{flex:1;display:flex;flex-direction:column;gap:22px;min-height:0}
-.blk{font-size:33px;line-height:1.38}
+.blk{font-size:var(--fs,33px);line-height:1.38}
 .blk .lab{display:block;font-size:22px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);margin-bottom:4px}
 .blk.frage{border:3px solid var(--ink);border-radius:18px;padding:16px 24px}
 .blk.ans{border-left:10px solid var(--ink);background:var(--fill);border-radius:0 18px 18px 0;padding:16px 24px;transition:opacity .25s}
@@ -393,7 +436,12 @@ addEventListener('keydown',e=>{if([' ','ArrowRight','PageDown','Enter'].includes
  else if(e.key==='a'||e.key==='A'){slides[i].querySelectorAll('.ans').forEach(x=>x.classList.remove('zu'))}});
 addEventListener('click',e=>{if(e.target.closest('.ans.zu')){e.target.closest('.ans').classList.remove('zu');return}
  (e.clientX<innerWidth/4)?prev():next()});
-addEventListener('resize',fit);fit();show(0);
+// Folien mit viel Text automatisch etwas kleiner setzen (mind. 24 px)
+function shrink(){const top=()=>document.getElementById('bar').getBoundingClientRect().top;
+ slides.forEach((s,k)=>{show(k);let f=33;s.style.setProperty('--fs',f+'px');
+  const low=()=>{let m=0;s.querySelectorAll('.blk,img').forEach(e=>{m=Math.max(m,e.getBoundingClientRect().bottom)});return m};
+  while(f>24&&low()>top()-8){f--;s.style.setProperty('--fs',f+'px')}})}
+addEventListener('resize',fit);fit();show(0);document.fonts.ready.then(()=>{shrink();show(0)});
 </script></body></html>"""
 
 
@@ -425,6 +473,8 @@ def input_html(c: dict) -> str:
             # links: Information, rechts: ab der ersten Frage (Frage + gesicherte Antwort)
             labs = [lab for lab, _ in sec["bloecke"]]
             cut = labs.index("Frage") if "Frage" in labs[1:] else (len(blks) + 1) // 2
+            if cut >= 3:  # links zu voll: letzten Informationsblock nach rechts über die Frage
+                cut -= 1
             body = "<div class='col'>%s</div><div class='col'>%s</div>" % ("".join(blks[:cut]), "".join(blks[cut:]))
         else:
             body = "<div class='col'>%s</div>" % "".join(blks)
@@ -502,7 +552,7 @@ def main(n: int):
 
         pg.set_viewport_size({"width": 1600, "height": 900})
         pg.set_content(h_in, wait_until="load")
-        pg.evaluate("document.fonts.ready")
+        pg.evaluate("document.fonts.ready.then(()=>shrink())")
         n_sl = pg.evaluate("document.querySelectorAll('.slide').length")
         for k in range(n_sl):
             pg.evaluate("show(%d); document.querySelectorAll('.ans').forEach(x=>x.classList.remove('zu'))" % k)
@@ -524,8 +574,18 @@ def main(n: int):
 
         # Übungsblätter
         ub = out / f"Uebungsblaetter_Etappe{n}_A4.pdf"
-        body = material_page(c) + "".join(blatt_page(c, b) for b in c["blaetter"])
-        o = render(pg, doc(body, UB_CSS, f"Übungsblätter Etappe {n}"), ub)
+        # zu volle Blätter automatisch dichter setzen (Schrift bleibt mind. 14 pt)
+        dicht = {b["nr"]: 0 for b in c["blaetter"]}
+        off = 1 if c.get("material") else 0
+        for _ in range(3):
+            body = (material_page(c) if c.get("material") else "") + "".join(blatt_page(c, b, dicht[b["nr"]]) for b in c["blaetter"])
+            o = render(pg, doc(body, UB_CSS, f"Übungsblätter Etappe {n}"), ub)
+            voll = [int(str(x).split()[0]) - 1 - off for x in o]
+            voll = [c["blaetter"][k]["nr"] for k in voll if 0 <= k < len(c["blaetter"]) and dicht[c["blaetter"][k]["nr"]] < 2]
+            if not voll:
+                break
+            for nr in voll:
+                dicht[nr] += 1
         if o:
             ueberlauf.append(f"Übungsblätter: Überlauf auf Seite {o}")
         report.append(("Übungsblätter", ub, font_sizes(ub), MIN_PT["uebung"]))

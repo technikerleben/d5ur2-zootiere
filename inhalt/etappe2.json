@@ -1,0 +1,150 @@
+{
+  "_hinweis": "Einzige Inhaltsquelle für Etappe 2. Input (HTML) und Merkblatt (A4) werden aus 'input' erzeugt und sind dadurch 1:1 gleich. Markup: *kursiv* für Beispielsätze, **fett** für Begriffe.",
+  "etappe": 2,
+  "titel": "Sachlich und genau formulieren",
+  "ziel": "Ich kann genaue Wörter nutzen und verständliche Sätze im Präsens schreiben.",
+  "foto": {
+    "datei": "materialien/gelingensnachweise/Fischotter_DavePape_Graustufen.jpg",
+    "nachweis": "Foto: Dave Pape · Public Domain",
+    "alt": "Ein Fischotter im Gras."
+  },
+  "input": [
+    {
+      "titel": "Genau statt wertend",
+      "bloecke": [
+        ["Sachlich beschreiben", "Beschreibe überprüfbare Merkmale. „schön“ und „süß“ sagen nur, wie jemand etwas findet. Nutze Angaben aus deinem Material."],
+        ["Genaue Wörter wählen", "Nutze genaue Nomen, Verben und Adjektive.\n*„Das Tier bewegt sich im Wasser.“* wird genauer: *„Der Fischotter schwimmt im Wasser.“*\n*„Sein Fell ist oben dunkelbraun.“* ist ebenfalls genau. Du musst „ist“ nicht immer ersetzen."],
+        ["Wörter zusammensetzen", "Aus *Fell* und *Farbe* wird die *Fellfarbe*. Das letzte Wort bestimmt den Artikel: *die Farbe → die Fellfarbe*. **Fachwörter** benennen etwas genau. Kläre ihre Bedeutung."],
+        ["Frage", "Was ist genauer: „schönes Fell“ oder „oben dunkelbraunes Fell“?"],
+        ["Gesicherte Antwort", "„oben dunkelbraunes Fell“. Die Farbe ist überprüfbar."]
+      ]
+    },
+    {
+      "titel": "Im Präsens beschreiben",
+      "bloecke": [
+        ["Warum Präsens?", "Tierbeschreibungen sagen, was allgemein für ein Tier gilt. Deshalb stehen sie meistens im **Präsens**, der Gegenwart: *Der Fischotter lebt an Gewässern.*"],
+        ["Grundform und gebeugte Form", "Im Wörterbuch steht die **Grundform**: *leben, fressen, sein*.\nIm Satz beugst du das Verb passend:\n*leben → er lebt*\n*fressen → er frisst*\n*sein → sein Fell ist dicht.*"],
+        ["Subjekt und Verb", "Das **Subjekt** ist der Satzgegenstand. Frage: Wer oder was schwimmt?\n*Der Otter schwimmt. Die Otter schwimmen.*"],
+        ["Frage", "Was ändert sich?"],
+        ["Gesicherte Antwort", "Bei mehreren Ottern heißt das Verb „schwimmen“ statt „schwimmt“."]
+      ]
+    },
+    {
+      "titel": "Vollständige Sätze",
+      "bloecke": [
+        ["Ein vollständiger Satz", "Verbinde die Angaben zu einem verständlichen Satz. Achte darauf, dass Subjekt und Verb zusammenpassen: *Der Fischotter lebt. Die Fischotter leben.*"],
+        ["Beispiel", "Wortgruppe: *sein Fell – oben dunkelbraun – sein*\nSatz: *Sein Fell ist oben dunkelbraun.*\nDer Satz ist vollständig und verständlich."],
+        ["Frage", "Was fehlt bei „Der Fischotter an einem See“?"],
+        ["Gesicherte Antwort", "Das Verb. Vollständig heißt es: *Der Fischotter lebt an einem See.*"]
+      ]
+    },
+    {
+      "titel": "Sätze prüfen",
+      "bloecke": [
+        ["Prüfe jeden Satz", "Passt die Aussage zum Material?\nIst der Satz vollständig?\nSteht das Verb im Präsens und passt es?\nSind die Wörter genau?\nBeginnen Satz und Nomen groß?\nSteht am Ende ein Punkt?"],
+        ["Beispiel verbessern", "*„sein fell war schön“* wird zu: *„Sein Fell ist oben dunkelbraun.“* Die Angabe stammt aus dem Material."]
+      ]
+    }
+  ],
+  "abschluss": "Bearbeite die Pflichtaufgaben auf Blatt 5 und 6. Vertiefungen sind freiwillig. Im Gelingensnachweis bildest du drei Sätze und verbesserst einen Satz. Fünf Ziele: Materialtreue, vollständige Sätze, passende Verben im Präsens, genaue statt wertende Wörter, Großschreibung und Punkte. Bei vier von fünf Zielen gehst du weiter zu Etappe 3.",
+  "blaetter": [
+    {
+      "nr": 5,
+      "titel": "Treffende Wörter",
+      "brauchst": "Heft · Merkblatt 2",
+      "material": {
+        "titel": "Material und Wörterhilfe",
+        "text": "Fell oben: dunkelbraun. Kopf: breit und flach. Im Wasser schwimmt der Fischotter.\n**Tasthaare:** Haare zum Ertasten.\n**Schwimmhäute:** Haut zwischen den Zehen."
+      },
+      "teile": [
+        {
+          "art": "pflicht",
+          "titel": "Schreibe ins Heft",
+          "aufgaben": [
+            "Ersetze „schönes Fell“ und „toller Kopf“ durch genaue Angaben aus dem Material.",
+            "Bilde Wörter mit Artikel: *Tast + Haare*; *Schwimm + Häute*. Erkläre beide mit der Wörterhilfe.",
+            "Verbessere mit dem Material: *„Das Tier bewegt sich im Wasser.“* Nenne das Tier genau. Nutze ein treffendes Verb."
+          ]
+        },
+        {
+          "art": "frei",
+          "titel": "Vertiefung",
+          "text": "Zerlege „Körperlänge“ in zwei Nomen. Erkläre das Wort. Welcher Teil bestimmt den Artikel?"
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "titel": "Sachliche Sätze",
+      "brauchst": "Heft · Merkblatt 2",
+      "teile": [
+        {
+          "art": "pflicht",
+          "titel": "Drei neue Sätze",
+          "text": "Schreibe im Heft je einen vollständigen Satz im Präsens:",
+          "aufgaben": [
+            "*seine Beine – kurz – sein*",
+            "*der Fischotter – auch Krebse – fressen*",
+            "*an der Schnauze – lange Tasthaare – sitzen*"
+          ]
+        },
+        {
+          "art": "pflicht",
+          "titel": "Verbessern und prüfen",
+          "start": 4,
+          "aufgaben": [
+            "Verbessere: *„der fischotter lebte an schönen ufern“*.\nMaterial: *Er lebt an geschützten Ufern.*"
+          ],
+          "nachtext": "Prüfe alle vier Sätze mit Merkblatt 2. Achte auch auf große Satzanfänge und Nomen sowie Punkte."
+        },
+        {
+          "art": "pflicht",
+          "titel": "Verben untersuchen",
+          "start": 5,
+          "aufgaben": [
+            "Unterstreiche im Heft die Verben in deinen vier Sätzen. Schreibe zu „frisst“ die Grundform.",
+            "Schreibe Satz 2 noch einmal für mehrere Fischotter. Passe das Verb an."
+          ]
+        },
+        {
+          "art": "frei",
+          "titel": "Vertiefung",
+          "text": "Verbinde zwei deiner Sätze mit „und“. Erkläre, warum das Präsens zu einer Tierbeschreibung passt."
+        }
+      ]
+    }
+  ],
+  "nachweis": {
+    "titel": "Genaue Sätze",
+    "ziele": [
+      {"id": "E2.1", "kurz": "richtige Angaben", "kind": "Meine Sätze passen zu den Angaben im Material.", "lehrkraft": "alle vier Aussagen passen zu den vorgegebenen Tierinformationen", "ueben": "Blatt 5"},
+      {"id": "E2.2", "kurz": "vollständige Sätze", "kind": "Ich schreibe vollständige, verständliche Sätze.", "lehrkraft": "alle vier Aussagen als vollständige, verständliche Sätze formuliert", "ueben": "Blatt 6"},
+      {"id": "E2.3", "kurz": "Verben im Präsens", "kind": "Meine Verben stehen im Präsens und passen zum Subjekt.", "lehrkraft": "Verben im Präsens und passend zum Subjekt", "ueben": "Blatt 6"},
+      {"id": "E2.4", "kurz": "genaue Wörter", "kind": "Ich ersetze eine Wertung durch eine genaue Angabe.", "lehrkraft": "die Wertung ist durch eine genaue passende Angabe ersetzt", "ueben": "Blatt 5"},
+      {"id": "E2.5", "kurz": "Großschreibung und Punkte", "kind": "Ich schreibe Satzanfänge und Nomen groß und setze Punkte.", "lehrkraft": "Satzanfänge und Nomen groß sowie Satzschlusspunkte in den vier Sätzen", "ueben": "Blatt 6"}
+    ],
+    "aufgaben": [
+      {"titel": "Drei Sätze", "text": "Die Wortgruppen enthalten richtige Angaben. Schreibe daraus drei vollständige Sätze im Präsens.", "feld": "saetze"},
+      {"titel": "Einen Satz verbessern", "text": "Verbessere den Satz. Nutze die Angabe aus dem Material.", "feld": "verbessern"}
+    ],
+    "vor_zielen": "Prüfe alle vier Sätze.",
+    "varianten": {
+      "A": {
+        "wortgruppen": [
+          "der Fischotter – an Flüssen und Seen – leben",
+          "sein Kopf – breit und flach – sein",
+          "er – vor allem Fische – fressen"
+        ],
+        "verbessern": {"satz": "der fischotter hatte schöne beine", "material": "Seine Beine sind kurz."}
+      },
+      "B": {
+        "wortgruppen": [
+          "der Fischotter – auch an Seen – leben",
+          "sein Körper – lang gestreckt – sein",
+          "er – auch Frösche – fressen"
+        ],
+        "verbessern": {"satz": "der fischotter hatte einen tollen schwanz", "material": "Sein Schwanz ist kräftig."}
+      }
+    }
+  }
+}
