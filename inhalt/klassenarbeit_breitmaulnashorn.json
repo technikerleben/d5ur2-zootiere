@@ -1,0 +1,207 @@
+{
+  "_hinweis": "Lernerfolgskontrolle Variante 2 (Breitmaulnashorn), gleicher Aufbau und gleiche Anforderungen wie Variante Biber. Sachinformationen: NABU Artensteckbrief Nashorn, WWF Factsheet Das Afrikanische Nashorn (Abruf 08.10.2026). Foto: Platzhalter, wird ersetzt.",
+  "datei": "Klassenarbeit_Breitmaulnashorn_A4",
+  "art": "Klassenarbeit",
+  "kurz": "Klassenarbeit",
+  "etappe": 3,
+  "tier": "Breitmaulnashorn",
+  "titel": "Deine Klassenarbeit: Das Breitmaulnashorn",
+  "arbeitszeit": "Arbeitszeit: ______ Minuten",
+  "termin": [
+    "früher Termin",
+    "später Termin"
+  ],
+  "situation": "Unser Tiermagazin bekommt eine neue Seite. Es fehlt noch ein Text über das Breitmaulnashorn. Schreibe diesen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.",
+  "auftrag": [
+    "Lies den Sachtext und betrachte das Foto.",
+    "Ordne Stichwörter in deinem Schreibplan.",
+    "Schreibe einen zusammenhängenden Text mit Überschrift.",
+    "Nenne Tiername, ein Maß mit Einheit und Bezug, Lebensraum und Nahrung.",
+    "Beschreibe mindestens vier verschiedene äußere Merkmale.",
+    "Schreibe sachlich, im Präsens und in vollständigen Sätzen.",
+    "Prüfe deinen Text. Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt."
+  ],
+  "hinweise": [
+    "Arbeite allein. Keine Partnerhilfe und kein Kontroll-Kiosk.",
+    "Streiche sauber durch und schreibe Verbesserungen darüber. Ein guter Text muss nicht besonders lang sein."
+  ],
+  "ablauf": "Arbeite in drei Schritten: Planen → Schreiben → Prüfen.",
+  "material": {
+    "titel": "Das Breitmaulnashorn",
+    "foto": {
+      "datei": "assets/bilder/breitmaulnashorn_platzhalter.jpg",
+      "nachweis": "Foto folgt",
+      "alt": "Platzhalter für ein Foto des Breitmaulnashorns."
+    },
+    "text": "Das Breitmaulnashorn lebt in Afrika. Es lebt in Savannen mit kurzem Gras. Es frisst fast nur Gras. Mit seinen sehr breiten Lippen rupft es das Gras ab. Sein Körper ist groß und massig. Die Haut ist grau, dick und fast ohne Haare. Im Nacken hat es einen Buckel. Seine Beine sind kurz und kräftig. Auf der Nase trägt es zwei Hörner. Das vordere Horn ist länger als das hintere. Kopf und Rumpf sind zusammen etwa 3,40 bis 3,80 Meter lang. Der Schwanz kommt noch dazu. Ein erwachsenes Männchen kann bis zu 3600 Kilogramm wiegen.",
+    "woerter": [
+      [
+        "Savanne",
+        "Grasland mit wenigen Bäumen"
+      ],
+      [
+        "massig",
+        "sehr groß und schwer"
+      ],
+      [
+        "Buckel",
+        "eine Erhöhung im Nacken"
+      ]
+    ],
+    "bildhinweis": "Nutze nur Merkmale, die du wirklich siehst. Maße, Lebensraum und Nahrung findest du im Text."
+  },
+  "plan": {
+    "hinweis": "Notiere nur Stichwörter. Deinen vollständigen Text schreibst du erst auf die Schreibseite.",
+    "felder": [
+      {
+        "titel": "Überblick",
+        "zeilen": [
+          [
+            "Tiername",
+            1
+          ],
+          [
+            "Maß mit Einheit und Bezug",
+            1
+          ]
+        ]
+      },
+      {
+        "titel": "Aussehen",
+        "zeilen": [
+          [
+            "Merkmal 1",
+            1
+          ],
+          [
+            "Merkmal 2",
+            1
+          ],
+          [
+            "Merkmal 3",
+            1
+          ],
+          [
+            "Merkmal 4",
+            1
+          ]
+        ]
+      },
+      {
+        "titel": "Lebensraum",
+        "zeilen": [
+          [
+            "",
+            1
+          ]
+        ]
+      },
+      {
+        "titel": "Nahrung",
+        "zeilen": [
+          [
+            "",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "schreiben": {
+    "hinweis": "Schreibe hier deinen vollständigen Text. Wenn du mehr Platz brauchst, bekommst du weiteres Papier.",
+    "pruefen": "Lies deinen Text noch einmal. Prüfe ihn mit „Dein Text: Das zählt“. Verbessere, was nötig ist. Zeige deine Prüfung."
+  },
+  "zaehlt": {
+    "ziel": "Du schreibst einen sachlichen, geordneten und verständlichen Lexikontext über das Breitmaulnashorn.",
+    "kriterien": [
+      [
+        "K1 Informationen",
+        "Du nennst Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung. Alles passt zum Material."
+      ],
+      [
+        "K2 Aussehen",
+        "Du beschreibst mindestens vier verschiedene äußere Merkmale genau."
+      ],
+      [
+        "K3 Aufbau",
+        "Du beginnst mit Tiername und Überblick. Zusammengehörige Angaben stehen zusammen."
+      ],
+      [
+        "K4 Sachlich",
+        "Du schreibst sachlich und im Präsens, ohne persönliche Wertungen."
+      ],
+      [
+        "K5 Verständlich",
+        "Du schreibst einen zusammenhängenden Text aus vollständigen, verständlichen Sätzen."
+      ],
+      [
+        "K6 Schreibung",
+        "Du prüfst Satzanfänge, Nomen und Punkte und zeigst deine Prüfung im Text."
+      ]
+    ],
+    "auswertung": "Deine Lehrkraft bewertet deinen Text in den sechs Bereichen K1 bis K6. Es sind dieselben Bereiche wie in der Probearbeit. Die Punkte für jeden Bereich nennt dir deine Lehrkraft vor der Arbeit.",
+    "zusatz": "Ein guter Text muss nicht besonders lang sein. Wichtig ist, dass alle Angaben stimmen und gut geordnet sind."
+  },
+  "hilfe": {
+    "einleitung": "Diese Seite und „Das zählt“ darfst du bei der Klassenarbeit nutzen.",
+    "bloecke": [
+      [
+        "Planen",
+        "Lies den Text Satz für Satz. Markiere passende Angaben. Ordne sie unter Überblick, Aussehen, Lebensraum und Nahrung."
+      ],
+      [
+        "Schreiben in dieser Reihenfolge",
+        "1 Überschrift\n2 Tiername und Überblick mit Maß\n3 Aussehen: vier Merkmale\n4 Lebensraum\n5 Nahrung"
+      ],
+      [
+        "Wenn du einen Anfang brauchst",
+        "*Das Breitmaulnashorn hat …*\n*Seine Haut ist …*\n*Auf der Nase …*\n*Es lebt …*\n*Es frisst …*"
+      ],
+      [
+        "Prüfen",
+        "Stehen alle Verben im Präsens? Beginnt jeder Satz groß? Sind Nomen groß? Steht am Ende ein Punkt? Vergleiche schwierige Tierwörter mit dem Material."
+      ]
+    ],
+    "regeln": "Du darfst dir den Auftrag vorlesen lassen. Deinen Text formulierst du selbst. Keine Partnerhilfe und kein Kontroll-Kiosk während der Arbeit."
+  },
+  "bewertung": {
+    "kriterien": [
+      [
+        "K1",
+        "Informationen",
+        "Tiername, Maß mit Einheit und Bezug (z. B. Kopf und Rumpf 3,40–3,80 m, Schwanz zusätzlich), Lebensraum, Nahrung"
+      ],
+      [
+        "K2",
+        "Aussehen",
+        "mindestens vier verschiedene äußere Merkmale richtig (z. B. graue, dicke Haut, zwei Hörner, breite Lippen, kurze, kräftige Beine, Buckel)"
+      ],
+      [
+        "K3",
+        "Aufbau",
+        "Überschrift, Überblick am Anfang, zusammengehörige Angaben gebündelt"
+      ],
+      [
+        "K4",
+        "Sachlich",
+        "überwiegend sachlich, im Präsens, ohne Wertungen"
+      ],
+      [
+        "K5",
+        "Verständlich",
+        "zusammenhängender Text aus überwiegend vollständigen, verständlichen Sätzen; klare Bezüge"
+      ],
+      [
+        "K6",
+        "Schreibung",
+        "Prüfung sichtbar; Satzanfänge, Nomen, Satzschlüsse und geübte Tierwörter überwiegend richtig"
+      ]
+    ],
+    "hinweis": "Punkteverteilung und Notengrenzen bei der Feinplanung festlegen. Textlänge allein ist kein Qualitätsmerkmal.",
+    "hilfen": [
+      "Hilfeseite",
+      "Auftrag vorgelesen",
+      "Nachteilsausgleich: ________"
+    ]
+  }
+}
