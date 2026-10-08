@@ -1,0 +1,207 @@
+{
+  "_hinweis": "Lernerfolgskontrolle (schriftliche Klassenarbeit) zum Europäischen Biber. Gleicher Aufbau wie die Probearbeit Waschbär und die Wunschbrief-LEK: Auftrag → Material → Planung → Schreibseite → Das zählt → Hilfe → Bewertung. Arbeitszeit, Punkteverteilung und Hilfen bei der Feinplanung festlegen. Foto vorläufig aus dem Tierpaket (Tomas Čekanavičius, CC BY-SA 3.0); wird durch das Wunschbild ersetzt.",
+  "datei": "Klassenarbeit_Biber_A4",
+  "art": "Klassenarbeit",
+  "kurz": "Klassenarbeit",
+  "etappe": 3,
+  "tier": "Biber",
+  "titel": "Deine Klassenarbeit: Der Biber",
+  "arbeitszeit": "Arbeitszeit: ______ Minuten",
+  "termin": [
+    "früher Termin",
+    "später Termin"
+  ],
+  "situation": "Unser Tiermagazin bekommt eine neue Seite. Es fehlt noch ein Text über den Europäischen Biber. Schreibe diesen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.",
+  "auftrag": [
+    "Lies den Sachtext und betrachte das Foto.",
+    "Ordne Stichwörter in deinem Schreibplan.",
+    "Schreibe einen zusammenhängenden Text mit Überschrift.",
+    "Nenne Tiername, ein Maß mit Einheit und Bezug, Lebensraum und Nahrung.",
+    "Beschreibe mindestens vier verschiedene äußere Merkmale.",
+    "Schreibe sachlich, im Präsens und in vollständigen Sätzen.",
+    "Prüfe deinen Text. Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt."
+  ],
+  "hinweise": [
+    "Arbeite allein. Keine Partnerhilfe und kein Kontroll-Kiosk.",
+    "Streiche sauber durch und schreibe Verbesserungen darüber. Ein guter Text muss nicht besonders lang sein."
+  ],
+  "ablauf": "Arbeite in drei Schritten: Planen → Schreiben → Prüfen.",
+  "material": {
+    "titel": "Der Europäische Biber",
+    "foto": {
+      "datei": "assets/bilder/biber_graustufen.jpg",
+      "nachweis": "Foto: Tomas Čekanavičius · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
+      "alt": "Ein Biber sitzt am Ufer."
+    },
+    "text": "Der Europäische Biber lebt an Flüssen und Seen. Er ist ein Nagetier und ernährt sich von Pflanzen. Er frisst zum Beispiel Blätter, junge Triebe und Rinde. Sein Körper ist kräftig und hat kurze Beine. Das dichte Fell ist braun. Am Kopf sitzen kleine Ohren und eine stumpfe Schnauze. Ein erwachsener Biber kann etwa 13 bis 35 Kilogramm wiegen. Sein breiter, flacher Schwanz ist kaum behaart und mit Schuppen bedeckt. Dieser Schwanz heißt auch Kelle. Zwischen den Zehen der Hinterfüße liegen Schwimmhäute. Die großen Schneidezähne sind auf der Vorderseite orange gefärbt.",
+    "woerter": [
+      [
+        "Triebe",
+        "junge Teile einer Pflanze"
+      ],
+      [
+        "Kelle",
+        "Name für den breiten Biberschwanz"
+      ],
+      [
+        "Schneidezähne",
+        "die vorderen Zähne zum Abbeißen und Nagen"
+      ]
+    ],
+    "bildhinweis": "Nutze nur Merkmale, die du wirklich siehst. Gewicht, Lebensraum und Nahrung findest du im Text."
+  },
+  "plan": {
+    "hinweis": "Notiere nur Stichwörter. Deinen vollständigen Text schreibst du erst auf die Schreibseite.",
+    "felder": [
+      {
+        "titel": "Überblick",
+        "zeilen": [
+          [
+            "Tiername",
+            1
+          ],
+          [
+            "Maß mit Einheit und Bezug",
+            1
+          ]
+        ]
+      },
+      {
+        "titel": "Aussehen",
+        "zeilen": [
+          [
+            "Merkmal 1",
+            1
+          ],
+          [
+            "Merkmal 2",
+            1
+          ],
+          [
+            "Merkmal 3",
+            1
+          ],
+          [
+            "Merkmal 4",
+            1
+          ]
+        ]
+      },
+      {
+        "titel": "Lebensraum",
+        "zeilen": [
+          [
+            "",
+            1
+          ]
+        ]
+      },
+      {
+        "titel": "Nahrung",
+        "zeilen": [
+          [
+            "",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "schreiben": {
+    "hinweis": "Schreibe hier deinen vollständigen Text. Wenn du mehr Platz brauchst, bekommst du weiteres Papier.",
+    "pruefen": "Lies deinen Text noch einmal. Prüfe ihn mit „Dein Text: Das zählt“. Verbessere, was nötig ist. Zeige deine Prüfung."
+  },
+  "zaehlt": {
+    "ziel": "Du schreibst einen sachlichen, geordneten und verständlichen Lexikontext über den Biber.",
+    "kriterien": [
+      [
+        "K1 Informationen",
+        "Du nennst Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung. Alles passt zum Material."
+      ],
+      [
+        "K2 Aussehen",
+        "Du beschreibst mindestens vier verschiedene äußere Merkmale genau."
+      ],
+      [
+        "K3 Aufbau",
+        "Du beginnst mit Tiername und Überblick. Zusammengehörige Angaben stehen zusammen."
+      ],
+      [
+        "K4 Sachlich",
+        "Du schreibst sachlich und im Präsens, ohne persönliche Wertungen."
+      ],
+      [
+        "K5 Verständlich",
+        "Du schreibst einen zusammenhängenden Text aus vollständigen, verständlichen Sätzen."
+      ],
+      [
+        "K6 Schreibung",
+        "Du prüfst Satzanfänge, Nomen und Punkte und zeigst deine Prüfung im Text."
+      ]
+    ],
+    "auswertung": "Deine Lehrkraft bewertet deinen Text in den sechs Bereichen K1 bis K6. Es sind dieselben Bereiche wie in der Probearbeit. Die Punkte für jeden Bereich nennt dir deine Lehrkraft vor der Arbeit.",
+    "zusatz": "Ein guter Text muss nicht besonders lang sein. Wichtig ist, dass alle Angaben stimmen und gut geordnet sind."
+  },
+  "hilfe": {
+    "einleitung": "Diese Seite und „Das zählt“ darfst du bei der Klassenarbeit nutzen.",
+    "bloecke": [
+      [
+        "Planen",
+        "Lies den Text Satz für Satz. Markiere passende Angaben. Ordne sie unter Überblick, Aussehen, Lebensraum und Nahrung."
+      ],
+      [
+        "Schreiben in dieser Reihenfolge",
+        "1 Überschrift\n2 Tiername und Überblick mit Maß\n3 Aussehen: vier Merkmale\n4 Lebensraum\n5 Nahrung"
+      ],
+      [
+        "Wenn du einen Anfang brauchst",
+        "*Der Biber hat …*\n*Sein Fell ist …*\n*Sein Schwanz …*\n*Er lebt …*\n*Er frisst …*"
+      ],
+      [
+        "Prüfen",
+        "Stehen alle Verben im Präsens? Beginnt jeder Satz groß? Sind Nomen groß? Steht am Ende ein Punkt? Vergleiche schwierige Tierwörter mit dem Material."
+      ]
+    ],
+    "regeln": "Du darfst dir den Auftrag vorlesen lassen. Deinen Text formulierst du selbst. Keine Partnerhilfe und kein Kontroll-Kiosk während der Arbeit."
+  },
+  "bewertung": {
+    "kriterien": [
+      [
+        "K1",
+        "Informationen",
+        "Tiername, Gewicht mit Einheit und Bezug, Lebensraum, Nahrung"
+      ],
+      [
+        "K2",
+        "Aussehen",
+        "mindestens vier verschiedene äußere Merkmale richtig (z. B. kräftiger Körper, kurze Beine, dichtes braunes Fell, breiter flacher Schwanz)"
+      ],
+      [
+        "K3",
+        "Aufbau",
+        "Überschrift, Überblick am Anfang, zusammengehörige Angaben gebündelt"
+      ],
+      [
+        "K4",
+        "Sachlich",
+        "überwiegend sachlich, im Präsens, ohne Wertungen"
+      ],
+      [
+        "K5",
+        "Verständlich",
+        "zusammenhängender Text aus überwiegend vollständigen, verständlichen Sätzen; klare Bezüge"
+      ],
+      [
+        "K6",
+        "Schreibung",
+        "Prüfung sichtbar; Satzanfänge, Nomen, Satzschlüsse und geübte Tierwörter überwiegend richtig"
+      ]
+    ],
+    "hinweis": "Punkteverteilung und Notengrenzen bei der Feinplanung festlegen. Textlänge allein ist kein Qualitätsmerkmal.",
+    "hilfen": [
+      "Hilfeseite",
+      "Auftrag vorgelesen",
+      "Nachteilsausgleich: ________"
+    ]
+  }
+}

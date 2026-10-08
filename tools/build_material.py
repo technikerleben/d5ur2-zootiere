@@ -483,7 +483,7 @@ PR_CSS = GN_CSS + """
 .hw{font-size:14pt;padding:3mm 4mm;background:var(--fill);border-radius:2.5mm;margin-top:4mm}
 .hw div+div{margin-top:1.5mm}
 .zeit{font-size:14pt;margin-bottom:2mm}
-.pm img{display:block;margin:0 auto;height:92mm;width:auto;max-width:100%;border-radius:2mm}
+.pm img{display:block;margin:0 auto;height:72mm;width:auto;max-width:100%;border-radius:2mm}
 .pm .cred{font-size:14pt;color:var(--mid);text-align:center;margin:1.5mm 0 3mm}
 .pm .bh{font-size:14pt;font-weight:700;text-align:center;margin-bottom:3mm}
 .pm .txt{font-size:15pt;line-height:1.5;padding:3.5mm 4.5mm}
@@ -521,6 +521,7 @@ def build_pruefung(pg, p: dict, out: Path, ueberlauf: list):
     # 1 Auftrag
     seiten.append(page("pk", kopf(meta, md(p["titel"])) + namen
         + "<div class='zeit'>%s</div>" % md(p["arbeitszeit"])
+        + ("<div class='zeit'><b>Termin:</b> %s</div>" % "".join("<span style='margin-right:6mm'><span class='cb'></span>%s</span>" % md(t) for t in p["termin"]) if p.get("termin") else "")
         + "<h2>Deine Situation</h2><div class='sit'>%s</div>" % md(p["situation"])
         + "<h2>Dein Auftrag</h2><ul class='al'>%s</ul>" % "".join("<li><span class='cb'></span><span>%s</span></li>" % md(a) for a in p["auftrag"])
         + "<div class='hw'>%s<div><b>%s</b></div></div>" % ("".join("<div>%s</div>" % md(h) for h in p["hinweise"]), md(p["ablauf"]))))
@@ -552,23 +553,41 @@ def build_pruefung(pg, p: dict, out: Path, ueberlauf: list):
     seiten.append(page("ph", kopf(meta, "Diese Hilfe darfst du nutzen") + "<div class='sit'>%s</div>" % md(hl["einleitung"])
         + "".join("<div class='blk'><b>%s</b>%s</div>" % (md(a), md(b)) for a, b in hl["bloecke"])
         + "<div class='hw'>%s</div>" % md(hl["regeln"])))
-    # 7 Rückmeldung der Lehrkraft
-    r = p["rueckmeldung"]
-    rows = "".join(
-        "<tr><td><span class='id'>%s</span> %s<span class='krit'>Erreicht, wenn: %s</span></td>"
-        "<td class='c'><span class='cb'></span></td><td class='c'><span class='cb'></span></td><td class='u'>%s</td><td class='e'></td></tr>"
-        % (zz["id"], md(zz["kind"]), md(zz["lehrkraft"]), md(zz["ueben"])) for zz in p["ziele"])
-    cbs = lambda xs: "".join("<span><span class='cb'></span>%s</span>" % md(x) for x in xs)
-    seiten.append(page("rm", kopf("Rückmeldung der Lehrkraft", "So weit bist du")
-        + "<table class='ziele'><tr><th>Ziel</th><th>gezeigt</th><th>noch offen</th><th>Übe mit</th><th>erneut gezeigt am</th></tr>%s</table>" % rows
-        + "<div class='mini'><b>Genutzte Hilfen:</b>%s</div>" % cbs(r["hilfen"])
-        + "<div class='ergebnis'><div class='sum box'>Ergebnis<b>___ / 5</b>Ziele gezeigt</div>"
-        "<div class='ent box'><div><span class='cb'></span><b>4 oder 5 Ziele:</b> %s</div><div><span class='cb'></span><b>Weniger als 4:</b> %s</div></div></div>"
-        % (md(r["bestanden"]), md(r["offen"]))
-        + "<div class='fb'><div class='h'>Das gelingt dir schon:</div><div class='ln'></div></div>"
-        + "<div class='fb'><div class='h'>Dein nächster Schritt:</div><div class='ln'></div></div>"
-        + "<div class='mini'><b>Wahlzeit:</b>%s</div><div class='mini'><b>Klassenarbeit, vereinbarter Termin:</b>%s</div>" % (cbs(r["wahl"]), cbs(r["termin"]))
-        + "<div class='sig'><div>Lehrkraft:</div><div>Datum:</div></div>"))
+    # 7 Rückmeldung der Lehrkraft (Klassenarbeit: Bewertungsseite)
+    if p.get("bewertung"):
+        bw = p["bewertung"]
+        cbs = lambda xs: "".join("<span><span class='cb'></span>%s</span>" % md(x) for x in xs)
+        rows = "".join(
+            "<tr><td><span class='id'>%s</span> %s<span class='krit'>%s</span></td>"
+            "<td class='c'><span class='cb'></span></td><td class='c'><span class='cb'></span></td><td class='c'><span class='cb'></span></td>"
+            "<td class='e'>___ / ___</td></tr>" % (md(k[0]), md(k[1]), md(k[2])) for k in bw["kriterien"])
+        seiten.append(page("rm", kopf("Bewertung der Lehrkraft", "Deine Klassenarbeit")
+            + "<table class='ziele'><tr><th>Bereich</th><th>erfüllt</th><th>teil&shy;weise</th><th>noch nicht</th><th>Punkte</th></tr>%s</table>" % rows
+            + "<div class='ergebnis'><div class='sum box'>Gesamt<b style='font-size:20pt'>____ / ____</b>Punkte</div>"
+              "<div class='ent box'><div><b>Note:</b> ________</div><div class='krit' style='font-size:11pt'>%s</div></div></div>" % md(bw["hinweis"])
+            + "<div class='mini'><b>Genutzte Hilfen:</b>%s</div>" % cbs(bw["hilfen"])
+            + "<div class='fb'><div class='h'>Das ist dir gelungen:</div><div class='ln'></div></div>"
+            + "<div class='fb'><div class='h'>Daran kannst du weiterarbeiten:</div><div class='ln'></div></div>"
+            + "<div class='sig'><div>Lehrkraft:</div><div>Datum:</div></div>"))
+        r = None
+    else:
+        r = p["rueckmeldung"]
+    if r is not None:
+      rows = "".join(
+          "<tr><td><span class='id'>%s</span> %s<span class='krit'>Erreicht, wenn: %s</span></td>"
+          "<td class='c'><span class='cb'></span></td><td class='c'><span class='cb'></span></td><td class='u'>%s</td><td class='e'></td></tr>"
+          % (zz["id"], md(zz["kind"]), md(zz["lehrkraft"]), md(zz["ueben"])) for zz in p["ziele"])
+      cbs = lambda xs: "".join("<span><span class='cb'></span>%s</span>" % md(x) for x in xs)
+      seiten.append(page("rm", kopf("Rückmeldung der Lehrkraft", "So weit bist du")
+          + "<table class='ziele'><tr><th>Ziel</th><th>gezeigt</th><th>noch offen</th><th>Übe mit</th><th>erneut gezeigt am</th></tr>%s</table>" % rows
+          + "<div class='mini'><b>Genutzte Hilfen:</b>%s</div>" % cbs(r["hilfen"])
+          + "<div class='ergebnis'><div class='sum box'>Ergebnis<b>___ / 5</b>Ziele gezeigt</div>"
+          "<div class='ent box'><div><span class='cb'></span><b>4 oder 5 Ziele:</b> %s</div><div><span class='cb'></span><b>Weniger als 4:</b> %s</div></div></div>"
+          % (md(r["bestanden"]), md(r["offen"]))
+          + "<div class='fb'><div class='h'>Das gelingt dir schon:</div><div class='ln'></div></div>"
+          + "<div class='fb'><div class='h'>Dein nächster Schritt:</div><div class='ln'></div></div>"
+          + "<div class='mini'><b>Wahlzeit:</b>%s</div><div class='mini'><b>Klassenarbeit, vereinbarter Termin:</b>%s</div>" % (cbs(r["wahl"]), cbs(r["termin"]))
+          + "<div class='sig'><div>Lehrkraft:</div><div>Datum:</div></div>"))
 
     n = len(seiten)
     body = "".join(sp.replace("{FOOT}", "<div class='foot'><span>%s · %s</span><b>%s · Seite %d/%d</b></div>"
