@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Erzeugt Wahlphase (Projekte A4, Originalgröße) und Strategiekarten (70 × 297 mm).
+"""Erzeugt Wahlphase (Projekte A4, Originalgröße) und Strategiekarten (210 × 99 mm).
 
 Aufruf: python tools/build_extras.py
 Ausgabe: ausgabe/wahlphase/Wahlphase_Projekte_A4.pdf
@@ -75,39 +75,43 @@ ICONS = {
 
 SK_CSS = """
 @page{size:A4;margin:0}
-.bogen{width:210mm;height:297mm;display:flex;page-break-after:always;break-after:page}
+.bogen{width:210mm;height:297mm;display:flex;flex-direction:column;page-break-after:always;break-after:page}
 .bogen:last-child{page-break-after:auto}
-.karte{width:70mm;height:297mm;padding:8mm 6mm 7mm;display:flex;flex-direction:column;border-right:0.6pt dashed #888;font-size:14pt;line-height:1.28}
-.karte:last-child{border-right:none}
-.karte .kk{display:flex;justify-content:space-between;align-items:center;font-size:12pt;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mid)}
-.karte .kn{width:10mm;height:10mm;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13pt}
-.karte svg{flex:0 0 auto;width:20mm;height:20mm;margin:5mm 0 3mm}
-.karte h2{font-size:22pt;line-height:1.12;margin-bottom:4mm;min-height:17mm}
-.karte .lab{font-size:12.5pt;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:4.5mm 0 1.5mm;color:var(--mid)}
-.karte .wann{padding:2.5mm 3mm;background:var(--fill);border-radius:2mm}
+.karte{width:210mm;height:99mm;padding:7mm 8mm 6mm;display:grid;grid-template-columns:52mm 1fr 52mm;gap:6mm;
+  border-bottom:0.6pt dashed #888;font-size:13.5pt;line-height:1.27;overflow:hidden}
+.karte:last-child{border-bottom:none}
+.karte .l,.karte .m,.karte .r{display:flex;flex-direction:column;min-height:0}
+.karte .kk{display:flex;gap:2.5mm;align-items:center;font-size:12pt;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mid)}
+.karte .kn{width:9mm;height:9mm;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13pt}
+.karte svg{flex:0 0 auto;width:15mm;height:15mm;margin:3mm 0 2mm}
+.karte h2{font-size:19pt;line-height:1.1;margin-bottom:2mm}
+.karte .lab{font-size:12pt;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:0 0 1.5mm;color:var(--mid)}
+.karte .wann{padding:2mm 2.5mm;background:var(--fill);border-radius:2mm;font-size:13pt}
+.karte .m{border-left:1.5pt solid var(--ink);border-right:1.5pt solid var(--ink);padding:0 5mm}
 .karte ol{list-style:none;counter-reset:s}
-.karte ol li{counter-increment:s;display:flex;gap:2.5mm;margin-bottom:3mm}
-.karte ol li::before{content:counter(s);flex:0 0 7.5mm;height:7.5mm;border-radius:50%;border:1.5pt solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:12pt;font-weight:700}
-.karte ol.leer li{border-bottom:1pt solid var(--soft);min-height:15mm}
-.karte .bsp{border-left:3pt solid var(--ink);padding:1mm 0 1mm 3mm}
+.karte ol li{counter-increment:s;display:flex;gap:2.5mm;margin-bottom:2.4mm}
+.karte ol li::before{content:counter(s);flex:0 0 7mm;height:7mm;border-radius:50%;border:1.5pt solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:12pt;font-weight:700}
+.karte ol.leer li{border-bottom:1pt solid var(--soft);min-height:12mm;margin-bottom:1mm}
+.karte .bsp{border-left:3pt solid var(--ink);padding:1mm 0 1mm 3mm;font-size:13pt}
 .karte .rest{flex:1}
-.karte .ref{border-top:1.5pt solid var(--ink);padding-top:2.5mm;font-size:13pt}
+.karte .ref{border-top:1.5pt solid var(--ink);padding-top:2mm;font-size:12.5pt}
 .karte .ref .cbs{display:flex;gap:3mm;margin-top:1.5mm}
 .karte .cb{width:5mm;height:5mm;margin-right:1mm}
-.karte .fuss{font-size:12pt;color:var(--mid);margin-top:2mm}
+.karte .fuss{font-size:12pt;color:var(--mid);margin-top:1.5mm}
 """
 
 
 def karte(k: dict, abschluss: str) -> str:
     leer = k.get("leer")
-    steps = "".join("<li><span>%s</span></li>" % md(s) for s in k["schritte"])
-    bsp = "" if not k["beispiel"] else "<div class='lab'>Beispiel</div><div class='bsp'>%s</div>" % md(k["beispiel"])
-    return ("<div class='karte'><div class='kk'><span>Strategiekarte</span><span class='kn'>%d</span></div>"
-            "<svg viewBox='0 0 48 48'>%s</svg><h2>%s</h2>"
-            "<div class='lab'>Wann?</div><div class='wann'>%s</div>"
-            "<div class='lab'>So gehst du vor</div><ol class='%s'>%s</ol>%s<div class='rest'></div>"
-            "<div class='ref'>%s<div class='cbs'><span><span class='cb'></span>ja</span><span><span class='cb'></span>etwas</span><span><span class='cb'></span>nein</span></div></div>"
-            "<div class='fuss'>Zootiere · Lernbuddy</div></div>"
+    steps = "".join("<li><span>%s</span></li>" % md(st) for st in k["schritte"])
+    bsp = "<div class='lab'>Beispiel</div><div class='bsp'>%s</div>" % md(k["beispiel"]) if k["beispiel"] else "<div class='lab'>Beispiel</div><div class='bsp' style='min-height:18mm'></div>"
+    return ("<div class='karte'>"
+            "<div class='l'><div class='kk'><span class='kn'>%d</span><span>Strategiekarte</span></div><svg viewBox='0 0 48 48'>%s</svg>"
+            "<h2>%s</h2><div class='rest'></div><div class='lab'>Wann?</div><div class='wann'>%s</div></div>"
+            "<div class='m'><div class='lab'>So gehst du vor</div><ol class='%s'>%s</ol></div>"
+            "<div class='r'>%s<div class='rest'></div><div class='ref'>%s<div class='cbs'><span><span class='cb'></span>ja</span>"
+            "<span><span class='cb'></span>etwas</span><span><span class='cb'></span>nein</span></div></div>"
+            "<div class='fuss'>Zootiere · Lernbuddy</div></div></div>"
             % (k["nr"], ICONS[k["symbol"]], md(k["titel"]), md(k["wann"]), "leer" if leer else "", steps, bsp, md(abschluss)))
 
 

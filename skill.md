@@ -54,7 +54,7 @@ Diese Festlegung ersetzt die frühere Vorgabe „alle Schülerblätter als A5-PD
 | Probearbeit und Klassenarbeit | gleicher Aufbau wie Gelingensnachweis | A4 | wie Gelingensnachweis |
 | Wahlphase und Projekte | A4 hoch | A4 in Originalgröße | Fließtext 14 pt, Beschriftungen mind. 12 pt |
 | Hilfekarten (Wörterhilfe, Rückmeldekarte) | A4 hoch | auf A5 verkleinert | mindestens 14 pt |
-| Strategiekarten am Lernbuddy | 70 × 297 mm (A4 längs gedrittelt, 3 pro Bogen) | Originalgröße, schneiden, laminieren | mindestens 12 pt |
+| Strategiekarten am Lernbuddy | 210 × 99 mm (3 untereinander pro A4-Bogen hochkant) | Originalgröße, schneiden, laminieren | mindestens 12 pt |
 | Raumschilder (z. B. Haltestelle) | A4 hoch | Originalgröße | groß |
 | Förder-Material (zieldifferent, 1F–9F) | A4 hoch, ein Auftrag pro Kasten, Lösungsstreifen | auf A5 verkleinert | mindestens 14 pt, Grundschrift 16,5 pt |
 
