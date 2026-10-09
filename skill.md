@@ -88,6 +88,8 @@ Diese Festlegung ersetzt die frühere Vorgabe „alle Schülerblätter als A5-PD
 
 ## Vor Änderungen lesen
 
+- [WISSENSBASIS.md](WISSENSBASIS.md) – Gesamtübersicht über Inhalte, Prinzipien, Formate und offene Punkte (nach Änderungen neu erzeugen)
+
 - [Projektgrundlage](planung/Projektgrundlage.md)
 - [Reihenplanung](planung/Reihenplanung_8_Doppelstunden.md)
 - [Lernbuddy-Anwendung](materialien/lehrkraft/Lernbuddy_Anwendung.md)
