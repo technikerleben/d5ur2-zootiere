@@ -2,6 +2,8 @@
 
 Stand: 08.10.2026. Vier Wochen, acht Doppelstunden, Fischotter als Beispieltier. Jahrgang 5.
 
+**Für Lehrkräfte: [Leitfaden mit Ablauf, Druckplan und Links](anleitung.html)** (erzeugt mit `python tools/build_anleitung.py`).
+
 ## Neue Materialproduktion (ab 08.10.2026)
 
 Alle Materialien werden neu und neutral (Graustufen, ohne Maskottchen) aus einer Inhaltsdatei pro Etappe erzeugt:
