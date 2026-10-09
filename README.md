@@ -40,6 +40,8 @@ Planung und Cockpit sind auf den neuen Standard umgestellt. Vorhandene PDFs sind
 
 Noch herzustellen: zwei vergleichbare Klassenarbeitsvarianten. Termine, Dauer, Hilfen und Wahlfrist sind vor Durchführung festzulegen. Kontroll-Kiosk und Vertretungshinweise folgen.
 
+[Auswertung der Klassenarbeit](apps/auswertung-klassenarbeit/index.html): Lehrkraft-App nach dem Vorbild der Wunschbrief-Auswertung (d5ur1). K1–K6 je 0–4 Punkte (24 Punkte, Fachschaftsschlüssel), Variante Biber/Breitmaulnashorn mit Erwartungen aus dem Material, Termin, genutzte Hilfen, Nachteilsausgleich Rechtschreibung, Einzel- und Klassensatzdruck als zweiseitige A4-Rückmeldung in Graustufen, CSV/JSON-Export. Daten bleiben im Browserspeicher.
+
 Schülerausgaben: A5 hoch, mindestens 14 pt einschließlich Beschriftungen, Graustufen, Lochrand, einfache Du-Form. Längere Texte ins Heft. Keine iPads; Online-Ressourcen für Lehrkräfte. Lernbuddy-Reflexion vor dem Abwischen ins Heft übertragen.
 
 ## Pflege und Erzeugung
