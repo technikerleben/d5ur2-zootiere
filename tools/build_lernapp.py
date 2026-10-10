@@ -236,7 +236,7 @@ def pruefe_inhalt(data: dict):
 
 # ------------------------------------------------------------------ Ausgabe
 MANIFEST = {
-    "name": "Zootiere lernen",
+    "name": "Zootiere",
     "short_name": "Zootiere",
     "description": "Lernbegleiter zur Deutsch-Reihe Zootiere, Jahrgang 5",
     "lang": "de",

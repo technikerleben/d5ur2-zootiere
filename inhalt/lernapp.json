@@ -1,7 +1,7 @@
 {
   "_hinweis": "Inhalte der Lern-App fürs Smartphone (lernapp/). Merkkarten, Strategiekarten, Checkliste, Wörterhilfe, Lernweg-Blätter und Interviews kommen aus den übrigen Inhaltsdateien. Hier stehen nur app-eigene Texte und Übungen. Keine Kiosk-Lösungen zu Blatt 1–9, keine Inhalte aus Probearbeit, Klassenarbeiten oder Gelingensnachweisen (Sperrliste wird beim Erzeugen geprüft). Markup: *kursiv*, **fett**, \\n.",
   "app": {
-    "titel": "Zootiere lernen",
+    "titel": "Zootiere",
     "kurz": "Zootiere",
     "untertitel": "Deutsch · Jahrgang 5 · Tiere beschreiben"
   },
