@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zootiere · Materialboard</title>
+<style>
+:root{
+  --slate-dark:#2C3D4C;--slate-base:#3E5668;--slate-mid:#6A8599;--slate-pale:#D0DCE6;--slate-ghost:#EEF3F7;
+  --rust-dark:#9E4E22;--rust-base:#D97A4A;--rust-mid:#EBA882;--rust-pale:#F5DDD1;--rust-ghost:#FBF0EB;
+  --sage-dark:#4D8B3F;--sage-base:#7DBB6F;--sage-mid:#A8D49D;--sage-pale:#DDF0D8;--sage-ghost:#F0FAF0;
+  --color-warning:#C17B00;--color-error:#C0392B;
+  --bg:#F5F4F1;--text:#1E2A35;--text-muted:#5A6A78;
+  --col-w:268px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--slate-base);color:var(--text);font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outline:3px solid var(--rust-base);outline-offset:2px}
+
+/* Kopf */
+header{background:var(--slate-dark);color:#fff;padding:14px 20px 12px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:flex-end}
+.titel{flex:1 1 420px;min-width:0}
+.titel small{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-pale)}
+h1{margin:2px 0 0;font-size:clamp(22px,3vw,30px);line-height:1.15}
+.titel p{margin:2px 0 0;font-size:15px;color:var(--slate-pale)}
+.werkzeuge{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.suche{position:relative}
+.suche input{width:220px;padding:7px 10px 7px 30px;border-radius:6px;border:1px solid var(--slate-mid);background:#fff;color:var(--text);font:inherit}
+.suche svg{position:absolute;left:9px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:var(--text-muted)}
+.schalter{display:flex;gap:6px;align-items:center;font-size:14px;cursor:pointer;border-radius:4px}
+.schalter input{width:16px;height:16px;accent-color:var(--rust-base)}
+.kopflink{color:#fff;font-size:14px;text-underline-offset:3px}
+.quelle{flex-basis:100%;font-size:12.5px;color:var(--slate-pale);display:flex;gap:6px;align-items:center}
+.punkt{width:8px;height:8px;border-radius:50%;background:var(--slate-mid)}
+.punkt.live{background:var(--sage-base)}.punkt.ersatz{background:var(--rust-mid)}
+
+/* Board */
+main{flex:1;overflow-x:auto;overflow-y:hidden;padding:16px 16px 8px}
+.board{display:flex;gap:12px;align-items:flex-start;height:100%}
+.spalte{flex:0 0 var(--col-w);max-height:100%;display:flex;flex-direction:column;background:rgba(255,255,255,.08);border-radius:8px}
+.spalte.archiv{background:rgba(0,0,0,.12)}
+.spaltenkopf{background:#fff;border-radius:8px 8px 0 0;padding:8px 10px;border-bottom:3px solid var(--slate-mid)}
+.spalte.etappe .spaltenkopf{border-bottom-color:var(--rust-base)}
+.spalte.offen .spaltenkopf{border-bottom-color:var(--color-warning)}
+.spalte.archiv .spaltenkopf{border-bottom-color:var(--text-muted);background:var(--slate-ghost)}
+.spaltenkopf h2{margin:0;font-size:15px;text-align:center;color:var(--slate-dark)}
+.spaltenkopf a{display:block;text-align:center;font-size:12.5px;color:var(--slate-base);margin-top:2px}
+.karten{overflow-y:auto;padding:8px;display:flex;flex-direction:column;gap:8px}
+.karte{flex-shrink:0;background:#fff;border-radius:6px;box-shadow:0 1px 2px rgba(0,0,0,.18);overflow:hidden}
+.karte h3{margin:0;padding:8px 10px 2px;font-size:14.5px;color:var(--slate-dark);line-height:1.25}
+.karte .notiz{margin:0;padding:0 10px 6px;font-size:12.5px;color:var(--text-muted)}
+.chip{display:inline-block;margin:0 10px 8px;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600}
+.chip.offen{background:var(--rust-ghost);color:var(--rust-dark);border:1px solid var(--rust-mid)}
+.chip.vorfassung{background:var(--slate-ghost);color:var(--text-muted);border:1px solid var(--slate-pale)}
+.vorschau{display:block;margin:0 10px 8px;border:1px solid var(--slate-pale);border-radius:4px;overflow:hidden;background:var(--slate-ghost);height:150px}
+.vorschau img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.dateien{list-style:none;margin:0;padding:0;border-top:1px solid var(--slate-ghost)}
+.dateien li{border-bottom:1px solid var(--slate-ghost)}
+.dateien li:last-child{border-bottom:0}
+.datei{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;padding:6px 10px;text-decoration:none;align-items:center}
+.datei:hover{background:var(--slate-ghost)}
+.typ{grid-row:span 2;font-size:10.5px;font-weight:700;letter-spacing:.03em;padding:3px 0;width:38px;text-align:center;border-radius:3px;color:#fff;background:var(--slate-mid)}
+.typ.pdf{background:var(--rust-dark)}.typ.html{background:var(--slate-base)}.typ.md{background:var(--text-muted)}
+.dname{font-size:13.5px;line-height:1.25;color:var(--text);overflow-wrap:anywhere}
+.dmeta{font-size:11.5px;color:var(--text-muted)}
+.leer{padding:4px 10px 10px;font-size:12.5px;color:var(--text-muted);font-style:italic}
+.hinweis{margin:auto;max-width:480px;background:#fff;border-radius:8px;padding:20px;text-align:center}
+[hidden]{display:none!important}
+mark{background:var(--rust-pale);color:inherit;border-radius:2px}
+
+@media (max-width:700px){
+  body{height:auto}
+  main{overflow:visible}
+  .board{flex-direction:column;height:auto}
+  .spalte{flex:none;width:100%;max-height:none}
+  .karten{overflow:visible}
+  .suche input{width:100%}
+  .suche{flex:1 1 100%}
+}
+@media print{body{background:#fff}header{background:#fff;color:var(--text)}main{overflow:visible}.board{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header>
+  <div class="titel">
+    <small>Deutsch 5 · Unterrichtsreihe 2 · Materialboard</small>
+    <h1>D5 UR2: Zootiere</h1>
+    <p>Tierbeschreibungen auf Materialbasis verfassen – Aufgabentyp 2</p>
+  </div>
+  <div class="werkzeuge">
+    <label class="suche">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="suche" type="search" placeholder="Dateien suchen …" aria-label="Dateien suchen">
+    </label>
+    <label class="schalter"><input id="archiv" type="checkbox"> Vorfassungen zeigen</label>
+    <a class="kopflink" href="index.html">Cockpit</a>
+    <a class="kopflink" id="repolink" href="#" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <div class="quelle" role="status"><span class="punkt" id="punkt"></span><span id="quelle">Dateiliste wird geladen …</span></div>
+</header>
+<main><div class="board" id="board"></div></main>
+
+<script>
+/* ===================== Einstellungen ===================== */
+const REPO = { owner: "technikerleben", name: "d5ur2-zootiere", branch: "main" };
+
+/* Dateien, die nie angezeigt werden (Technik, Datenquellen, Bilder). */
+const VERSTECKT = [
+  "tools/**", "board/**", "**/*.json", "**/*.py", "**/*.mjs", "**/*.css",
+  "**/*.jpg", "**/*.jpeg", "**/*.png", "**/assets/**", "materialien/**/README.md",
+  ".gitignore", "vercel.json", "package.json", "materialboard.html"
+];
+
+/*
+  Spalten und Karten. Jede Datei landet in der ersten Karte, deren Muster passt.
+  Reihenfolge: zuerst Karten mit prio:true, dann normale Karten, zuletzt rest:true.
+  Muster: * = beliebig innerhalb eines Ordners, ** = beliebig über Ordner hinweg.
+  status: "offen" (noch nicht fertig) oder "vorfassung".
+  info: Pfad zu einer Erläuterung (wird auf GitHub geöffnet).
+*/
+const SPALTEN = [
+  { titel: "Basis-Infos", karten: [
+    { titel: "Lehrkraft-Cockpit", notiz: "Gesamtübersicht mit Status, Etappen und Planung.", muster: ["index.html"] },
+    { titel: "Projektinfo und Produktionsregeln", muster: ["README.md", "skill.md"] },
+  ]},
+  { titel: "Planung", karten: [
+    { titel: "Verbindlicher SRL-Standard", muster: ["planung/SRL_Standard.*"] },
+    { titel: "Reihenplanung und Materialmatrix", notiz: "Acht Doppelstunden, Zeitprüfung, Pflichtumfang.", muster: ["planung/Reihenplanung_*", "planung/Materialmatrix.*"] },
+    { titel: "Etappen und Gelingensnachweise", muster: ["planung/Etappen_Gelingensnachweise.*", "materialien/lehrkraft/Etappen_Gelingensnachweise.*"] },
+    { titel: "Projekte und Terminwahl", muster: ["planung/Projekte_und_Terminwahl.*", "planung/Projektgrundlage.*"] },
+    { titel: "Sprachspur", muster: ["planung/Sprachspur*"] },
+    { titel: "Weitere Planung", rest: true, muster: ["planung/**"] },
+  ]},
+  { titel: "Für Lehrkräfte", karten: [
+    { titel: "Kompetenzraster und Bewertung", notiz: "Raster mit vier Standards, Bewertungsraster, Kindercheckliste K1–K6.", muster: ["planung/Kompetenzraster*", "materialien/bewertung/**"] },
+    { titel: "Lernbuddy", notiz: "Laminierter Tischrahmen; Reflexion vor dem Abwischen ins Heft.", muster: ["materialien/lehrkraft/*Lernbuddy*"] },
+    { titel: "Einsatz Lernweg und Wahlphase", muster: ["materialien/lernweg_wahlphase/Lehrkraft_*"] },
+    { titel: "Weitere Lehrkraftdateien", rest: true, muster: ["materialien/lehrkraft/**"] },
+  ]},
+  { titel: "Allgemeines", karten: [
+    { titel: "Lernweg für die SuS", muster: ["materialien/lernweg_wahlphase/Lernweg_*"] },
+    { titel: "Kompetenzübersicht für SuS", notiz: "Zwei Seiten zu Beginn; vollständiges Raster bei Bedarf.", muster: ["materialien/lernweg_wahlphase/Kompetenzuebersicht*", "materialien/lernweg_wahlphase/Kompetenzraster*"] },
+    { titel: "Individuelle Förderziele", notiz: "Nur bei Bedarf gemeinsam festlegen.", muster: ["materialien/lernweg_wahlphase/Individuelle_*"] },
+  ]},
+  { titel: "Hilfsmaterial", karten: [
+    { titel: "Kontrollkiosk", status: "offen", notiz: "Tipps und Lösungen am Laptop im Raum. Keine Nachweis-Lösungen.", muster: ["materialien/kontrollkiosk/**", "materialien/kiosk/**"] },
+    { titel: "Strategiekarten für den Lernbuddy", status: "offen", muster: ["materialien/strategiekarten/**"] },
+    { titel: "Vertretungshinweise", status: "offen", muster: ["materialien/vertretung/**"] },
+  ]},
+  { titel: "Etappe 1", art: "etappe", info: "materialien/etappe1/README.md", karten: [
+    { titel: "Input / Merkblatt", notiz: "Informationen finden und ordnen.", muster: ["materialien/etappe1/Input_*", "materialien/etappe1/Merkblatt_*"] },
+    { titel: "Schülerpaket", notiz: "Bildfassung mit Otter und Dino (5.3 / 5.5) und Textfassung.", muster: ["materialien/etappe1/bildfassung/Etappe1_Schuelerpaket*", "materialien/etappe1/Etappe1_Schuelerpaket*"] },
+    { titel: "Übungen (Pflicht) inkl. freiwilliger Vertiefungen", notiz: "Material und Blätter 1–4.", muster: ["materialien/etappe1/Fischotter_Material*", "materialien/etappe1/Pflichtblaetter_*"] },
+    { titel: "Tipps und Lösungen", muster: ["materialien/etappe1/Tipps_*", "materialien/etappe1/Loesungen_*"] },
+    { titel: "Gelingensnachweis GN1", notiz: "Zwei Versionen: A zuerst, B nach gezielter Wiederholung. 4/5 Indikatoren.", muster: ["materialien/etappe1/bildfassung/GN1_*", "materialien/etappe1/GN1_*"] },
+    { titel: "Zieldifferentes Material", notiz: "Fördermodule; Ziele vorab individuell festlegen.", muster: ["materialien/etappe1/Foerdermodule*", "materialien/etappe1/zieldifferent/**"] },
+    { titel: "Auswertung (Lehrkraft)", muster: ["materialien/etappe1/Lehrkraft_*"] },
+    { titel: "Weitere Dateien", rest: true, muster: ["materialien/etappe1/**"] },
+  ]},
+  { titel: "Etappe 2", art: "etappe", info: "materialien/etappe2/README.md", karten: [
+    { titel: "Input / Merkblatt", notiz: "Sachlich und genau formulieren.", muster: ["materialien/etappe2/Input_*", "materialien/etappe2/Merkblatt_*"] },
+    { titel: "Schülerpaket", notiz: "Textfassung mit Sprachspur. Bildfassung mit Otter und Dino folgt.", muster: ["materialien/etappe2/bildfassung/Etappe2_Schuelerpaket*", "materialien/etappe2/Etappe2_Schuelerpaket*"] },
+    { titel: "Übungen (Pflicht) inkl. freiwilliger Vertiefungen", notiz: "Blätter 5–6.", muster: ["materialien/etappe2/Pflichtblaetter_*"] },
+    { titel: "Tipps und Lösungen", muster: ["materialien/etappe2/Tipps_*", "materialien/etappe2/Loesungen_*"] },
+    { titel: "Gelingensnachweis GN2", notiz: "A zuerst, B nach Übung. 4/5 Indikatoren.", muster: ["materialien/etappe2/bildfassung/GN2_*", "materialien/etappe2/GN2_*"] },
+    { titel: "Zieldifferentes Material", notiz: "Fördermodule; individuell auswählen.", muster: ["materialien/etappe2/Foerdermodule*", "materialien/etappe2/zieldifferent/**"] },
+    { titel: "Auswertung (Lehrkraft)", muster: ["materialien/etappe2/Lehrkraft_*"] },
+    { titel: "Weitere Dateien", rest: true, muster: ["materialien/etappe2/**"] },
+  ]},
+  { titel: "Etappe 3", art: "etappe", info: "materialien/etappe3/README.md", karten: [
+    { titel: "Input / Merkblatt", notiz: "Eine Tierbeschreibung schreiben und prüfen.", muster: ["materialien/etappe3/Input_*", "materialien/etappe3/Merkblatt_*"] },
+    { titel: "Schülerpaket", notiz: "Merkblatt, Blätter 7–9, Checkliste. Tierpaket zusätzlich ausgeben.", muster: ["materialien/etappe3/bildfassung/Etappe3_Schuelerpaket*", "materialien/etappe3/Etappe3_Schuelerpaket*"] },
+    { titel: "Übungen (Pflicht) inkl. freiwilliger Vertiefungen", notiz: "Blätter 7–9 und optionale Übungstexte.", muster: ["materialien/etappe3/Pflichtblaetter_*", "materialien/etappe3/Uebungstexte*"] },
+    { titel: "Checkliste K1–K6", muster: ["materialien/etappe3/Checkliste_*"] },
+    { titel: "Tipps und Lösungen", muster: ["materialien/etappe3/Tipps_*", "materialien/etappe3/Loesungen_*"] },
+    { titel: "Probearbeit", notiz: "Der Waschbär. Einziger Abschlussnachweis der Etappe, 4/5 Indikatoren.", muster: ["materialien/etappe3/Probearbeit_*"] },
+    { titel: "Feedback und erneute Belege", muster: ["materialien/etappe3/Feedback_*", "materialien/etappe3/Erneute_*"] },
+    { titel: "Zieldifferentes Material", notiz: "Fördermodule inkl. individueller Förder-Probearbeit.", muster: ["materialien/etappe3/Foerdermodule*", "materialien/etappe3/zieldifferent/**"] },
+    { titel: "Auswertung (Lehrkraft)", muster: ["materialien/etappe3/Lehrkraft_*"] },
+    { titel: "Weitere Dateien", rest: true, muster: ["materialien/etappe3/**"] },
+  ]},
+  { titel: "Lernerfolgskontrolle (Klassenarbeit)", art: "offen", karten: [
+    { titel: "Klassenarbeit · zwei Varianten", status: "offen", notiz: "Früher Termin DS 7, später DS 8. Dauer, Hilfen und Wahlfrist noch festlegen.", muster: ["materialien/klassenarbeit/**"] },
+    { titel: "Auswertung & Rückmeldung (App)", notiz: "K1–K6 mit 0–4 Punkten, Notenschlüssel 24 Punkte, zweiseitige Graustufen-Rückmeldung. Daten nur im Browser.", muster: ["apps/auswertung-klassenarbeit/**"] },
+  ]},
+  { titel: "Projekte", info: "materialien/lernweg_wahlphase/README.md", karten: [
+    { titel: "Drei Projektideen", notiz: "Tierlexikon, Tierrätsel, Tiervergleich. Freiwillig, 25–40 Minuten.", muster: ["materialien/lernweg_wahlphase/Projekte_*", "materialien/lernweg_wahlphase/Projekt_*"] },
+    { titel: "Wiederholung nach Feedback", notiz: "Blatt 10 ist eine Wiederholungshilfe, kein Pflichtblatt.", muster: ["materialien/lernweg_wahlphase/Blatt_10*"] },
+    { titel: "Weitere Dateien", rest: true, muster: ["materialien/lernweg_wahlphase/**"] },
+  ]},
+  { titel: "Tierpakete", karten: [
+    { titel: "Fischotter", notiz: "Beispieltier der Reihe.", muster: ["materialien/tierpakete/fischotter*"] },
+    { titel: "Erdmännchen", muster: ["materialien/tierpakete/erdmaennchen*"] },
+    { titel: "Roter Panda", muster: ["materialien/tierpakete/roter-panda*"] },
+    { titel: "Waschbär", notiz: "Grundlage der Probearbeit.", muster: ["materialien/tierpakete/waschbaer*"] },
+    { titel: "Biber", muster: ["materialien/tierpakete/biber*"] },
+    { titel: "Quellen und Bildnachweise", muster: ["materialien/lehrkraft/Tierpakete_Quellen*"] },
+    { titel: "Weitere Tierpakete", rest: true, muster: ["materialien/tierpakete/**"] },
+  ]},
+  { titel: "Vorfassungen", art: "archiv", karten: [
+    { titel: "Altes Gesamtpaket, Aufgaben 1–10, Inputs", status: "vorfassung", prio: true, notiz: "Bildet den SRL-Standard nicht vollständig ab. Nicht als Gesamtpaket ausgeben.", muster: ["materialien/Schuelermaterial_Zootiere_A5.pdf", "materialien/schritt4/**", "inputs/**", "materialien/lehrkraft/Schritt4_*"] },
+    { titel: "Bisheriger Lernweg", status: "vorfassung", prio: true, notiz: "Ersetzt durch den Lernweg in „Allgemeines“.", muster: ["materialien/lernweg/**"] },
+    { titel: "Alte Nachweiskarten und Leitfaden", status: "vorfassung", prio: true, notiz: "Auswertung ohne 80-%-Schwelle überholt; GN3 nur Übungsfeedback.", muster: ["materialien/gelingensnachweise/**"] },
+    { titel: "Etappe 1 · grafische Fassung ohne Sprachspur", status: "vorfassung", prio: true, muster: ["materialien/etappe1/grafisch/**"] },
+  ]},
+];
+
+/* Lesbare Namen: Umlaute und Abkürzungen in Dateinamen auflösen. */
+const WOERTER = {
+  Loesungen:"Lösungen", Pflichtblaetter:"Pflichtblätter", Foerdermodule:"Fördermodule", Foerderziele:"Förderziele",
+  Uebungstexte:"Übungstexte", Schuelerpaket:"Schülerpaket", Schuelermaterial:"Schülermaterial", Schuelerkarten:"Schülerkarten",
+  Waschbaer:"Waschbär", waschbaer:"Waschbär", erdmaennchen:"Erdmännchen", Erdmaennchen:"Erdmännchen",
+  Kompetenzuebersicht:"Kompetenzübersicht", Pruefbericht:"Prüfbericht", Gespraechsleitfaden:"Gesprächsleitfaden",
+  Saetze:"Sätze", Merkblaetter:"Merkblätter", fischotter:"Fischotter", biber:"Biber", "roter-panda":"Roter Panda",
+  Tierraetsel:"Tierrätsel", und:"und", Zootiere:"Zootiere"
+};
+
+/* ===================== Ab hier keine Anpassung nötig ===================== */
+const CACHE_KEY = "materialboard-tree-v1", CACHE_MIN = 10;
+const $ = s => document.querySelector(s);
+const ghBlob = p => `https://github.com/${REPO.owner}/${REPO.name}/blob/${REPO.branch}/${p.split("/").map(encodeURIComponent).join("/")}`;
+const relUrl = p => p.split("/").map(encodeURIComponent).join("/");
+$("#repolink").href = `https://github.com/${REPO.owner}/${REPO.name}`;
+
+function globRe(g){
+  let r = "";
+  for (let i = 0; i < g.length; i++){
+    const c = g[i];
+    if (c === "*"){
+      if (g[i+1] === "*"){ i++; if (g[i+1] === "/"){ i++; r += "(?:.*/)?"; } else r += ".*"; }
+      else r += "[^/]*";
+    } else if (c === "?") r += "[^/]";
+    else r += c.replace(/[.+^${}()|[\]\\]/g, "\\$&");
+  }
+  return new RegExp("^" + r + "$");
+}
+SPALTEN.forEach(s => s.karten.forEach(k => k.muster = k.muster.map(m => Object.assign(new String(m), { _re: globRe(m) }))));
+const verstecktRe = VERSTECKT.map(globRe);
+const passtRe = (karte, p) => karte.muster.some(m => m._re.test(p));
+
+function sichtbar(files){
+  const pfade = new Set(files.map(f => f.path));
+  return files.filter(f => {
+    if (verstecktRe.some(r => r.test(f.path))) return false;
+    // Markdown-Quelle ausblenden, wenn es eine gleichnamige HTML-Fassung gibt
+    if (f.path.endsWith(".md") && pfade.has(f.path.slice(0, -3) + ".html")) return false;
+    return true;
+  });
+}
+
+function zuordnen(files){
+  const karten = [];
+  SPALTEN.forEach((s, si) => s.karten.forEach((k, ki) => { k.dateien = []; karten.push(k); }));
+  const rang = k => k.prio ? 0 : k.rest ? 2 : 1;
+  const geordnet = [...karten].sort((a, b) => rang(a) - rang(b));
+  const unzugeordnet = [];
+  for (const f of files){
+    const k = geordnet.find(k => passtRe(k, f.path));
+    if (k){
+      // Reihenfolge der Muster bestimmt die Reihenfolge in der Karte
+      f._ord = k.muster.findIndex(m => m._re.test(f.path));
+      k.dateien.push(f);
+    } else unzugeordnet.push(f);
+  }
+  karten.forEach(k => k.dateien.sort((a, b) => a._ord - b._ord || a.path.localeCompare(b.path, "de")));
+  return unzugeordnet;
+}
+
+function anzeigename(p){
+  const datei = p.split("/").pop();
+  const ext = datei.includes(".") ? datei.split(".").pop().toLowerCase() : "";
+  let name = datei.slice(0, ext ? -(ext.length + 1) : undefined);
+  let format = "";
+  name = name.replace(/_(A[45])(?=_|$)/, (m, f) => { format = f; return ""; });
+  if (p === "index.html") return { name: "Lehrkraft-Cockpit", ext, format };
+  name = name.split("_").map(w => WOERTER[w] ?? w.split("-").map(t => WOERTER[t] ?? t).join("-")).join(" ");
+  name = name.replace(/(\d)-([A-Z]?\d)/g, "$1–$2").replace(/\bEtappe(\d)/g, "Etappe $1").replace(/\bOtter Dino\b/, "· Bildfassung Otter & Dino");
+  name = name.charAt(0).toUpperCase() + name.slice(1);
+  return { name, ext, format };
+}
+
+function groesse(b){
+  if (b == null) return "";
+  if (b < 1024) return b + " B";
+  if (b < 1048576) return Math.round(b / 1024) + " KB";
+  return (b / 1048576).toFixed(1).replace(".", ",") + " MB";
+}
+
+function el(tag, attrs = {}, ...kinder){
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)){
+    if (v == null || v === false) continue;
+    if (k === "class") e.className = v; else if (k === "text") e.textContent = v; else e.setAttribute(k, v);
+  }
+  kinder.flat().forEach(c => c != null && e.append(c));
+  return e;
+}
+
+let THUMBS = new Set();
+
+function dateiZeile(f){
+  const { name, ext, format } = anzeigename(f.path);
+  const istMd = ext === "md";
+  const href = istMd ? ghBlob(f.path) : relUrl(f.path);
+  const meta = [ext.toUpperCase(), format, groesse(f.size), istMd ? "auf GitHub" : ""].filter(Boolean).join(" · ");
+  const a = el("a", { class: "datei", href, target: "_blank", rel: "noopener", title: f.path },
+    el("span", { class: "typ " + ext, text: (ext || "?").toUpperCase().slice(0, 4), "aria-hidden": "true" }),
+    el("span", { class: "dname", text: name }),
+    el("span", { class: "dmeta", text: meta }));
+  const li = el("li", {}, a);
+  li.dataset.suche = (name + " " + f.path).toLowerCase();
+  return li;
+}
+
+function karteBauen(k){
+  const kinder = [el("h3", { text: k.titel })];
+  if (k.status === "offen") kinder.push(el("span", { class: "chip offen", text: "noch nicht fertig" }));
+  if (k.status === "vorfassung") kinder.push(el("span", { class: "chip vorfassung", text: "Vorfassung" }));
+  if (k.notiz) kinder.push(el("p", { class: "notiz", text: k.notiz }));
+  const pdf = k.dateien.find(f => f.path.toLowerCase().endsWith(".pdf") && THUMBS.has(f.sha));
+  if (pdf){
+    kinder.push(el("a", { class: "vorschau", href: relUrl(pdf.path), target: "_blank", rel: "noopener", "aria-label": "Vorschau öffnen: " + anzeigename(pdf.path).name },
+      el("img", { src: `board/thumbs/${pdf.sha}.jpg`, alt: "", loading: "lazy" })));
+  }
+  if (k.dateien.length) kinder.push(el("ul", { class: "dateien" }, k.dateien.map(dateiZeile)));
+  else if (k.status !== "offen") kinder.push(el("p", { class: "leer", text: "Noch keine Dateien." }));
+  const karte = el("article", { class: "karte" }, kinder);
+  karte._karte = k;
+  return karte;
+}
+
+function zeichnen(files){
+  const unzugeordnet = zuordnen(sichtbar(files));
+  const board = $("#board");
+  board.replaceChildren();
+  const spalten = [...SPALTEN];
+  if (unzugeordnet.length) spalten.push({ titel: "Noch nicht zugeordnet", art: "offen",
+    karten: [{ titel: "Neue Dateien", notiz: "Passt zu keiner Karte. Muster in materialboard.html ergänzen.", dateien: unzugeordnet }] });
+  for (const s of spalten){
+    // Rest-Karten ohne Inhalt nicht anzeigen
+    const karten = s.karten.filter(k => !(k.rest && !k.dateien.length));
+    const kopf = el("div", { class: "spaltenkopf" }, el("h2", { text: s.titel }),
+      s.info ? el("a", { href: ghBlob(s.info), target: "_blank", rel: "noopener", text: "Einsatzhinweise" }) : null);
+    const spalte = el("section", { class: "spalte" + (s.art ? " " + s.art : ""), "aria-label": s.titel },
+      kopf, el("div", { class: "karten" }, karten.map(karteBauen)));
+    if (s.art === "archiv") spalte.dataset.archiv = "1";
+    board.append(spalte);
+  }
+  filtern();
+}
+
+function filtern(){
+  const q = $("#suche").value.trim().toLowerCase();
+  const archiv = $("#archiv").checked;
+  document.querySelectorAll(".spalte").forEach(sp => {
+    const istArchiv = sp.dataset.archiv === "1";
+    if (istArchiv && !archiv && !q){ sp.hidden = true; return; }
+    let spalteTreffer = 0;
+    sp.querySelectorAll(".karte").forEach(k => {
+      const titel = k._karte.titel.toLowerCase();
+      const titelPasst = q && titel.includes(q);
+      let treffer = 0;
+      k.querySelectorAll("li").forEach(li => {
+        const ok = !q || titelPasst || li.dataset.suche.includes(q);
+        li.hidden = !ok; if (ok) treffer++;
+      });
+      const zeigen = !q || titelPasst || treffer > 0;
+      k.hidden = !zeigen; if (zeigen) spalteTreffer++;
+    });
+    sp.hidden = q ? spalteTreffer === 0 : false;
+  });
+}
+
+async function liveListe(){
+  try {
+    const c = JSON.parse(sessionStorage.getItem(CACHE_KEY) || "null");
+    if (c && Date.now() - c.zeit < CACHE_MIN * 60000) return c;
+  } catch (e) {}
+  const url = `https://api.github.com/repos/${REPO.owner}/${REPO.name}/git/trees/${REPO.branch}?recursive=1`;
+  const r = await fetch(url, { headers: { Accept: "application/vnd.github+json" } });
+  if (!r.ok) throw new Error("GitHub " + r.status);
+  const j = await r.json();
+  const daten = { zeit: Date.now(), files: j.tree.filter(t => t.type === "blob").map(t => ({ path: t.path, size: t.size, sha: t.sha })) };
+  try { sessionStorage.setItem(CACHE_KEY, JSON.stringify(daten)); } catch (e) {}
+  return daten;
+}
+
+async function ersatzListe(){
+  const r = await fetch("board/dateien.json", { cache: "no-cache" });
+  if (!r.ok) throw new Error("Ersatzliste " + r.status);
+  return r.json();
+}
+
+function stand(text, art){ $("#quelle").textContent = text; $("#punkt").className = "punkt " + art; }
+
+async function start(){
+  const [live, ersatz] = await Promise.allSettled([liveListe(), ersatzListe()]);
+  if (ersatz.status === "fulfilled") THUMBS = new Set(ersatz.value.thumbs || []);
+  if (live.status === "fulfilled"){
+    const t = new Date(live.value.zeit).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
+    stand(`Live aus GitHub (${REPO.branch}), abgerufen um ${t} Uhr. Vorschaubilder fehlen bei neuen oder geänderten PDFs, bis tools/build_materialboard.py läuft.`, "live");
+    zeichnen(live.value.files);
+  } else if (ersatz.status === "fulfilled"){
+    const e = ersatz.value;
+    const d = e.erzeugt ? new Date(e.erzeugt).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) : "unbekannt";
+    stand(`GitHub nicht erreichbar. Gespeicherte Dateiliste vom ${d}${e.commit ? " (Commit " + e.commit + ")" : ""}.`, "ersatz");
+    zeichnen(e.files);
+  } else {
+    stand("Dateiliste konnte nicht geladen werden.", "");
+    $("#board").replaceChildren(el("div", { class: "hinweis" },
+      el("p", { text: "Weder GitHub noch die gespeicherte Dateiliste sind erreichbar. Bitte später erneut laden oder das " }),
+      el("a", { href: "index.html", text: "Cockpit öffnen" })));
+  }
+}
+
+$("#suche").addEventListener("input", filtern);
+$("#archiv").addEventListener("change", filtern);
+start();
+</script>
+</body>
+</html>
