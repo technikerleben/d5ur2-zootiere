@@ -2,7 +2,7 @@
 
 > **Zweck:** Vollständige, verbindliche Wissensgrundlage für ein LLM, das an dieser Reihe weiterarbeitet (Material ergänzen, ändern, prüfen, Fragen beantworten).
 > **Stand:** 10.10.2026. Abschnitte mit ⚙ werden aus den Inhaltsdateien `inhalt/*.json` erzeugt (`python tools/build_wissensbasis.py`) und spiegeln den aktuellen Materialstand.
-> **Repo:** `technikerleben/d5ur2-zootiere`, Arbeitsbranch `claude/etappe1-muster` (noch nicht in `main`). Lehrkraft-Leitfaden: `anleitung.html`.
+> **Repo:** `technikerleben/d5ur2-zootiere`, Stand in `main` (am 10.10.2026 aus `claude/etappe1-muster` zusammengeführt; Deployment über Vercel). Lehrkraft-Leitfaden: `anleitung.html`.
 
 ## 0 · Kurzfassung in zehn Sätzen
 
@@ -100,7 +100,7 @@ Nicht übernommen aus der Kolleginnen-PowerPoint: Kamel/Delfin/Koala, acht verbi
 | Probearbeit | Waschbär | Transfer, neues Tier |
 | Klassenarbeit | Biber (Variante 1), Breitmaulnashorn (Variante 2) | Vorschlag: Biber früher Termin, Nashorn später Termin |
 | Projekte | Fischotter, Erdmännchen, Roter Panda | Tierpakete (A5-PDFs) |
-| Beispielaufgabe Training | Angola-Giraffe (Zikomo, Zoo Dortmund) | durchklickbare Beispielaufgabe mit drei Mustertexten (Mindest-/Regel-/Leistungsstandard) und Vorlesen; bisher Einzel-HTML aus dem Chat vom 10.10.2026, soll nach `inhalt/training_giraffe.json`; in der Lern-App vorgesehen |
+| Beispielaufgabe Training | Angola-Giraffe (Zikomo, Zoo Dortmund) | durchklickbare Beispielaufgabe mit drei Mustertexten (Mindest-/Regel-/Leistungsstandard) und Vorlesen; liegt als `apps/beispielaufgabe-giraffe/index.html` vor (noch eigenständig, nicht aus `inhalt/`); in der Lern-App vorgesehen |
 | Training vor der Klassenarbeit | Elenantilope (Ü1, Kiosk 10), Hirschziegenantilope (Ü2, Kiosk 11) – beide im Zoo Dortmund; auch in der Lern-App (ohne Musterlösung) | `inhalt/training.json`, `tools/build_training.py`: platzsparend A4 Originalgröße (vorn Interview zweispaltig mit Zeilen, hinten Aufgaben/Schreibplan), ≥ 12 pt; Kiosk zeigt Plan mit Zeilen, Musterlösung Mindeststandard, aufklappbar Regelstandard |
 
 Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er ist der Otter (dekoratives Maskottchen spielt in dieser Reihe keine Rolle).
@@ -707,11 +707,11 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 - Foto Breitmaulnashorn fehlt (Platzhalter); Biber-Foto vorläufig (Tierpaket, CC BY-SA 3.0). Wunschbild tierdoku.de nicht ladbar und ohne freie Lizenz.
 - Probearbeit F (Waschbär) und Klassenarbeit F (Biber) liegen vor (`inhalt/probearbeit_f_waschbaer.json`, `inhalt/klassenarbeit_f_biber.json`, `tools/build_pruefung_f.py`): Kurzinterview → Auftrag → Aufgaben (Info/Meinung, Wer ist gemeint, Plan sortieren, Lückentext-Beschreibung, eigener Satz, Prüfliste) → Rückmeldung F3.1–F3.5 bzw. Bewertung (22 Punkte, Vorschlag). Offen: zieldifferente Bewertung mit Schulvorgaben abstimmen; F-Fassung Nashorn bei Bedarf.
 - Zuordnung Variante ↔ Termin (Vorschlag Biber früh, Nashorn spät).
-- Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen; Branch `claude/etappe1-muster` noch nicht in `main`.
+- Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen.
 - Gedruckte Lösungsfassung (Tipps/Lösungen wie im Kiosk) und ggf. Übungskarten-Modus im Kiosk.
 - Unterrichtserprobung steht aus; Zeitbudget nach Erprobung prüfen.
-- Lern-App (`planung/Lernapp_Planung.md`): Grundversion gebaut (Mein Weg, Wissen, 14 Übungen inkl. Training Ü1/Ü2, Buchstabenrätsel, Zuhause); offen: Quiz je Etappe, Silbenrätsel/Suchsel, Giraffe, Schalter „Einfach“. **Vor Ausgabe von Adresse/QR an Kinder Klassenarbeiten aus dem Repo entfernen** (extern speichern), da das Repo über Vercel öffentlich ausgeliefert wird.
-- Angola-Giraffe in Inhaltsdatei überführen; Pflegerin heißt dort wie bei der Elenantilope „Frau Demir“ → neuen Namen wählen.
+- Lern-App (`planung/Lernapp_Planung.md`): Grundversion gebaut (Mein Weg, Wissen, 14 Übungen inkl. Training Ü1/Ü2, Buchstabenrätsel, Zuhause); offen: Quiz je Etappe, Silbenrätsel/Suchsel, Giraffe, Schalter „Einfach“. Freigabe für Kinder steuert die Lehrkraft über den QR-Code. Klassenarbeiten sollen später extern gespeichert werden.
+- Angola-Giraffe (`apps/beispielaufgabe-giraffe/`) in Inhaltsdatei überführen und in die Lern-App einbinden; Pflegerin heißt dort wie bei der Elenantilope „Frau Demir“ → neuen Namen wählen.
 
 ## 17 · Glossar
 

@@ -11,7 +11,7 @@
 | Lösungen zu Blatt 1–9 (Kiosk-Tipps/-Lösungen) in der App? | **Nein.** Kiosk bleibt im Raum und Teil der Lösungsleiter. Die App hat eigene Übungen mit eigener Rückmeldung. |
 | Trainingstiere in der App? | **Ja:** Elenantilope (Ü1), Hirschziegenantilope (Ü2) und die Beispielaufgabe **Angola-Giraffe** (Zikomo, mit drei Mustertexten). |
 | Hosting | **Im Hauptrepo** unter `lernapp/`, Deploy über das bestehende Vercel-Projekt aus `main`. Vercel-Einstellungen bleiben unverändert. |
-| Prüfungsdateien | Klassenarbeiten werden demnächst extern gespeichert und aus dem Repo entfernt; wenn die Reihe läuft, sind sie unter Verschluss. **App-Adresse/QR erst danach an Kinder geben.** |
+| Prüfungsdateien und Freigabe | Klassenarbeiten werden später extern gespeichert. Die App liegt schon in `main`; **die Lehrkraft steuert die Nutzung über den QR-Code** (Entscheidung 10.10.2026). |
 
 ## 2 · Grundsätze
 
@@ -59,7 +59,7 @@ Sofortige Rückmeldung mit Begründung und Verweis („Merkblatt 1, Abschnitt 5�
 **Quiz:** je Etappe 8–10 Fragen, gemischt, beliebig oft. Ende ohne Punktwert: „Das kannst du schon“ und „Schau dir noch einmal an: …“.
 
 **Training (vor der Klassenarbeit)**
-- *Angola-Giraffe:* vollständiger Durchgang (Auftrag, Interview, Markieren, Plan, Sätze, drei Mustertexte Mindest-/Regel-/Leistungsstandard, Fehler finden, Vorlesen). Quelle bisher: Einzel-HTML aus dem Chat „Angola-Giraffe Beispielaufgabe HTML“ (10.10.2026); wird in `inhalt/training_giraffe.json` überführt.
+- *Angola-Giraffe:* vollständiger Durchgang (Auftrag, Interview, Markieren, Plan, Sätze, drei Mustertexte Mindest-/Regel-/Leistungsstandard, Fehler finden, Vorlesen). Quelle: `apps/beispielaufgabe-giraffe/index.html` (in `main`).10.2026); wird in `inhalt/training_giraffe.json` überführt.
 - *Elenantilope (Ü1), Hirschziegenantilope (Ü2):* Interview markieren, Plan ordnen, Sätze prüfen; keine Musterlösung in der App.
 
 ## 5 · Buchstabenrätsel (Tab „Rätsel“)
@@ -98,8 +98,8 @@ Gleiche Denkschritte wie in der Reihe, übertragen auf Haustiere, Amsel, Taube, 
 ## 9 · Deployment
 
 - Ordner `lernapp/` im Repo `technikerleben/d5ur2-zootiere`; Adresse dann `<vercel-domain>/lernapp/`.
-- Live erst, wenn die Reihe (Branch `claude/etappe1-muster`) in `main` ist.
-- Vor Ausgabe von Adresse/QR an Kinder: Klassenarbeiten aus dem Repo entfernt (extern gespeichert).
+- Seit 10.10.2026 in `main`; Vercel liefert die App unter `/lernapp/` aus.
+- Die Freigabe für Kinder steuert die Lehrkraft über den QR-Code. Klassenarbeiten werden später extern gespeichert.
 - QR-Code auf Lernweg-Blatt und Elternzettel.
 
 ## 10 · Umsetzung in Schritten
@@ -120,6 +120,5 @@ Gleiche Denkschritte wie in der Reihe, übertragen auf Haustiere, Amsel, Taube, 
 
 ## 12 · Offen
 
-- Angola-Giraffe in die Inhaltsdatei überführen (Quelle: Chat-HTML vom 10.10.2026). Pflegerin heißt dort „Frau Demir“ wie bei der Elenantilope → für die Giraffe neuen Namen wählen.
-- Klassenarbeiten extern speichern und aus dem Repo entfernen, bevor die App verteilt wird.
+- Angola-Giraffe aus `apps/beispielaufgabe-giraffe/index.html` in die Inhaltsdatei überführen. Pflegerin heißt dort „Frau Demir“ wie bei der Elenantilope → für die Giraffe neuen Namen wählen.
 - Elterninfo-Text (Datenschutz, Zweck, keine Pflicht).
