@@ -5,14 +5,14 @@
       "nr": 1,
       "titel": "Lesen mit Suchauftrag",
       "symbol": "lesen",
-      "wann": "Du suchst Informationen in einem Sachtext.",
+      "wann": "Du suchst Informationen in einem Sachtext oder Interview.",
       "schritte": [
         "Lies den Text einmal. Markiere unbekannte Wörter.",
         "Kläre die Wörter: Satz noch einmal lesen, Wörterhilfe, fragen.",
         "Lies mit Suchauftrag weiter. Markiere die Stelle.",
         "Notiere ein Stichwort unter der Überschrift."
       ],
-      "beispiel": "Was frisst er?\nSuchwort: *frisst*\n→ *vor allem Fische*"
+      "beispiel": "Was fressen Fischotter?\nSuchwort: *fressen*\n→ *hauptsächlich Fische*"
     },
     {
       "nr": 2,
@@ -47,9 +47,9 @@
       "wann": "Du beschreibst, wie ein Tier aussieht.",
       "schritte": [
         "Lies dein Wort: Sagt es, wie jemand das Tier findet?",
-        "Frage: Kann ich es im Bild sehen oder im Text lesen?",
+        "Frage: Kann ich es im Bild sehen oder im Interview lesen?",
         "Ersetze die Wertung durch Form, Farbe oder Größe.",
-        "Prüfe die neue Angabe am Material."
+        "Prüfe die neue Angabe am Interview."
       ],
       "beispiel": "nicht: *schönes Fell*\nsondern: *oben dunkelbraunes Fell*"
     },
@@ -107,6 +107,19 @@
     },
     {
       "nr": 9,
+      "titel": "Aus dem Interview wird ein Sachtext",
+      "symbol": "sprechen",
+      "wann": "Du schreibst mit einem Interview als Material.",
+      "schritte": [
+        "Frage bei jeder Angabe: Gilt das für alle Tiere der Art?",
+        "Ja: markieren. Nur das Zootier oder eine Meinung: streichen.",
+        "Vergleich? Nimm nur die Sachangabe heraus.",
+        "Schreibe im Präsens über die Tierart: *Der Fischotter …*"
+      ],
+      "beispiel": "*„Otto ist 80 cm lang.“* → streichen\n*„Fischotter sind 60 bis 90 cm lang.“* → markieren"
+    },
+    {
+      "nr": 10,
       "titel": "Meine eigene Strategie",
       "symbol": "stern",
       "wann": "Du hast eine eigene Idee, die dir hilft.",

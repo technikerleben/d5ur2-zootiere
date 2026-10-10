@@ -234,6 +234,8 @@ def main():
         pg.evaluate("document.fonts.ready")
         pg.pdf(path=str(pl), prefer_css_page_size=True, print_background=True)
         br.close()
+    import shutil
+    shutil.copy(pl, AUS / "Interviews_Pruefliste_A4.pdf")
     out = fitz.open()
     for f in pdfs + [pl]:
         out.insert_pdf(fitz.open(f))

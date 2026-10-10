@@ -648,7 +648,7 @@ def build_pruefung(pg, p: dict, out: Path, ueberlauf: list):
                          fuss_rechts="%s · Material" % kurz)
         m_iv = len(fitz.open(ivpdf))
     n = len(seiten) + m_iv
-    nr = lambda k: k if k == 1 else k + m_iv
+    nr = lambda k: k + m_iv  # Interview (Materialbasis) steht vorn
     body = "".join(sp.replace("{FOOT}", "<div class='foot'><span>%s · %s</span><b>%s · Seite %d/%d</b></div>"
                               % (FUSS, md(p["art"]), md(kurz), nr(k), n)) for k, sp in enumerate(seiten, 1))
     o = render(pg, doc(body, PR_CSS, p["titel"]), pdf)
@@ -656,12 +656,13 @@ def build_pruefung(pg, p: dict, out: Path, ueberlauf: list):
         ueberlauf.append("%s: Überlauf auf Seite %s" % (p["datei"], o))
     if ivpdf:
         d = fitz.open(pdf)
-        d.insert_pdf(fitz.open(ivpdf), start_at=1)
+        d.insert_pdf(fitz.open(ivpdf), start_at=0)
         d.save(pdf.with_name(pdf.stem + "_neu.pdf"))
         d.close()
         pdf.with_name(pdf.stem + "_neu.pdf").replace(pdf)
         ivpdf.unlink()
     return ("%s (S. 1–%d)" % (kurz, n - 1), pdf, font_sizes(pdf, list(range(n - 1))), MIN_PT["nachweis_aufgaben"])
+
 
 
 # ---------------------------------------------------------------- Input-Präsentation

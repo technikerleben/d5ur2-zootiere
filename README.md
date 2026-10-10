@@ -4,6 +4,14 @@ Stand: 08.10.2026. Vier Wochen, acht Doppelstunden, Fischotter als Beispieltier.
 
 **Für LLMs und Weiterarbeit: [WISSENSBASIS.md](WISSENSBASIS.md)** (Gesamtübersicht, erzeugt mit `python tools/build_wissensbasis.py`). **Für Lehrkräfte: [Leitfaden mit Ablauf, Druckplan und Links](anleitung.html)** (erzeugt mit `python tools/build_anleitung.py`).
 
+## Druckpakete und Interviews (ab 10.10.2026)
+
+**Textbasis sind Interviews** mit Tierpflegerinnen und Tierpflegern (Schülerzeitung „Zoo-Reporter“, ausgedacht, Tierangaben stimmen): sechs Interviews mit 250–350 Wörtern und zwei Förder-Kurzinterviews in `inhalt/interviews.json`. Die Kinder trennen Sachangaben über die Tierart von Meinungen, Erlebnissen und Angaben über das einzelne Zootier und formen daraus einen Sachtext. Entwurf und Zeilenbelege: `python tools/build_interviews.py` → `ausgabe/interviews/`.
+
+**Druckpakete:** `python tools/build_pakete.py` → `ausgabe/pakete/` (plus ZIP).
+- `schueler/`: Schülerpaket Etappe 1–3, Förder-Etappe 1F–3F, Probearbeit, Klassenarbeit V1/V2 – jeweils **erst Materialbasis, dann Arbeitsblätter**, eine PDF pro Paket.
+- `lehrkraft/`: Kopiervorlagen (Merkblätter, Gelingensnachweise, GN-F, Haltestellen-Schild), Hilfekarten zum Laminieren, Zeilenbelege der Interviews, Strategiekarten, Lernweg, Wahlphase, Input-Präsentationen.
+
 ## Neue Materialproduktion (ab 08.10.2026)
 
 Alle Materialien werden neu und neutral (Graustufen, ohne Maskottchen) aus einer Inhaltsdatei pro Etappe erzeugt:

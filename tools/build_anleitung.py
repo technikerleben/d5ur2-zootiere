@@ -23,42 +23,44 @@ ABS = "https://raw.githack.com/technikerleben/d5ur2-zootiere/%s/" % BRANCH
 M = {
     "animation": ("Ablauf-Animation", "ausgabe/lernweg/Ablauf_Animation.html", "dig", None, ""),
     "kiosk": ("Kontroll-Kiosk", "apps/kontroll-kiosk/index.html", "dig", None, "auf dem Klassenlaptop speichern"),
+    "zeilen": ("Interviews: Zeilenbelege", "ausgabe/pakete/lehrkraft/Interviews_Zeilenbelege_A4.pdf", "dig", None, "Lehrkraft: jede Textstelle mit Zeile und Einordnung"),
+    "zip": ("Alle Druckpakete (ZIP)", "ausgabe/pakete/Zootiere_Druckpakete.zip", "dig", None, "Schülerpakete und Lehrkräfte-Material"),
     "in1": ("Input Etappe 1", "ausgabe/etappe1/Input_Etappe1.html", "dig", None, "Beamer"),
     "in2": ("Input Etappe 2", "ausgabe/etappe2/Input_Etappe2.html", "dig", None, "Beamer oder Kleingruppe"),
     "in3": ("Input Etappe 3", "ausgabe/etappe3/Input_Etappe3.html", "dig", None, "Beamer oder Kleingruppe"),
     "lernweg": ("Lernweg", "ausgabe/lernweg/Lernweg_Zootiere_A4.pdf", "a4", "kind", "1 Seite"),
     "lernwegF": ("Lernweg F", "ausgabe/lernweg/Lernweg_Zootiere_F_A4.pdf", "a4", "f", "1 Seite"),
-    "strategie": ("Strategiekarten", "ausgabe/strategiekarten/Strategiekarten_A4.pdf", "a4 lam", "tisch", "3 Bögen, 9 Karten; schneiden"),
+    "strategie": ("Strategiekarten", "ausgabe/strategiekarten/Strategiekarten_A4.pdf", "a4 lam", "tisch", "4 Bögen, 10 Karten; schneiden"),
     "schild": ("Haltestellen-Schild", "ausgabe/etappe3/Haltestelle_Schild_A4.pdf", "a4 lam", "fix:1", "1 Seite"),
     "mb1": ("Merkblatt 1", "ausgabe/etappe1/Merkblatt_1_A4.pdf", "a4", "kind", "2 Seiten, doppelseitig"),
-    "ub1": ("Übungsblätter Etappe 1", "ausgabe/etappe1/Uebungsblaetter_Etappe1_A4.pdf", "a5", "kind", "5 Seiten: Material Fischotter, Blatt 1–4"),
+    "ub1": ("Schülerpaket Etappe 1", "ausgabe/pakete/schueler/Schuelerpaket_Etappe1_A4.pdf", "a5", "kind", "7 Seiten: Foto, Interview Fischotter (2 S.), Blatt 1–4"),
     "gn1a": ("Gelingensnachweis 1 A", "ausgabe/etappe1/GN1_A_A4.pdf", "a4", "kind", "doppelseitig: Aufgaben vorn, Rückmeldung hinten"),
     "gn1b": ("Gelingensnachweis 1 B", "ausgabe/etappe1/GN1_B_A4.pdf", "a4", "drittel", "für die Wiederholung"),
     "mb2": ("Merkblatt 2", "ausgabe/etappe2/Merkblatt_2_A4.pdf", "a4", "kind", "2 Seiten, doppelseitig"),
-    "ub2": ("Übungsblätter Etappe 2", "ausgabe/etappe2/Uebungsblaetter_Etappe2_A4.pdf", "a5", "kind", "2 Seiten: Blatt 5–6"),
+    "ub2": ("Schülerpaket Etappe 2", "ausgabe/pakete/schueler/Schuelerpaket_Etappe2_A4.pdf", "a5", "kind", "4 Seiten: Interview Fischotter (2 S.), Blatt 5–6"),
     "woerter": ("Wörterhilfe", "ausgabe/etappe2/Woerterhilfe_A4.pdf", "a5 lam", "tisch", "1 Seite; gilt auch für Etappe 3"),
     "gn2a": ("Gelingensnachweis 2 A", "ausgabe/etappe2/GN2_A_A4.pdf", "a4", "kind", "doppelseitig"),
     "gn2b": ("Gelingensnachweis 2 B", "ausgabe/etappe2/GN2_B_A4.pdf", "a4", "drittel", "für die Wiederholung"),
     "mb3": ("Merkblatt 3", "ausgabe/etappe3/Merkblatt_3_A4.pdf", "a4", "kind", "2 Seiten, doppelseitig"),
-    "ub3": ("Übungsblätter Etappe 3", "ausgabe/etappe3/Uebungsblaetter_Etappe3_A4.pdf", "a5", "kind",
-            "7 Seiten: S. 1 Erdmännchen, S. 2 Roter Panda (je halber Klassensatz), S. 3–5 Blatt 7–9, S. 6–7 Checkliste"),
+    "ub3": ("Schülerpaket Etappe 3", "ausgabe/pakete/schueler/Schuelerpaket_Etappe3_A4.pdf", "a5", "kind",
+            "9 Seiten: Interview Erdmännchen (2 S.), Interview Roter Panda (2 S.), Blatt 7–9, Checkliste (2 S.)"),
     "rueck": ("Rückmeldekarte", "ausgabe/etappe3/Rueckmeldekarte_A4.pdf", "a5 lam", "fix:3", "an der Haltestelle auslegen"),
     "probe": ("Probearbeit Waschbär", "ausgabe/etappe3/Probearbeit_Waschbaer_A4.pdf", "a4", "kind",
-              "7 Seiten: S. 1–6 für das Kind, S. 7 Rückmeldung der Lehrkraft"),
+              "8 Seiten: S. 1–2 Interview, S. 3–7 für das Kind, S. 8 Rückmeldung der Lehrkraft"),
     "wahl": ("Wahlphase und Projekte P1–P3", "ausgabe/wahlphase/Wahlphase_Projekte_A4.pdf", "a4", "halb",
              "4 Seiten: Übersicht, P1 Tiermagazin, P2 Tierrätsel, P3 Tiervergleich; zum Auslegen"),
     "tp_otter": ("Tierpaket Fischotter", "materialien/tierpakete/fischotter_A5.pdf", "a5", "fix:4", "für die Projekte"),
     "tp_erd": ("Tierpaket Erdmännchen", "materialien/tierpakete/erdmaennchen_A5.pdf", "a5", "fix:4", "für die Projekte"),
     "tp_panda": ("Tierpaket Roter Panda", "materialien/tierpakete/roter-panda_A5.pdf", "a5", "fix:4", "für die Projekte"),
     "ka1": ("Klassenarbeit Biber", "ausgabe/pruefungen/Klassenarbeit_Biber_A4.pdf", "a4", "termin",
-            "7 Seiten: S. 1–6 für das Kind, S. 7 Bewertung · Foto vorläufig"),
+            "8 Seiten: S. 1–2 Interview, S. 3–7 für das Kind, S. 8 Bewertung · Foto vorläufig"),
     "ka2": ("Klassenarbeit Breitmaulnashorn", "ausgabe/pruefungen/Klassenarbeit_Breitmaulnashorn_A4.pdf", "a4", "termin",
-            "7 Seiten · Foto fehlt noch (Platzhalter)"),
-    "f1": ("Förder-Material Etappe 1F", "ausgabe/foerder/etappe1/Foerder_Etappe1_A4.pdf", "a5", "f", "7 Seiten: Merkkarte, Material, Blatt 1F–4F"),
+            "8 Seiten wie Variante 1 · Foto fehlt noch (Platzhalter)"),
+    "f1": ("Förder-Paket Etappe 1F", "ausgabe/pakete/schueler/Schuelerpaket_Foerder_Etappe1_A4.pdf", "a5", "f", "Foto, Kurzinterview, Blatt 1F–4F, Merkkarte"),
     "gn1f": ("Gelingensnachweis 1F", "ausgabe/foerder/etappe1/GN1F_A4.pdf", "a4", "f", "4 Seiten, letzte Seite Rückmeldung"),
-    "f2": ("Förder-Material Etappe 2F", "ausgabe/foerder/etappe2/Foerder_Etappe2_A4.pdf", "a5", "f", "5 Seiten: Merkkarte, Material, Blatt 5F–6F"),
+    "f2": ("Förder-Paket Etappe 2F", "ausgabe/pakete/schueler/Schuelerpaket_Foerder_Etappe2_A4.pdf", "a5", "f", "Foto, Kurzinterview, Blatt 5F–6F, Merkkarte"),
     "gn2f": ("Gelingensnachweis 2F", "ausgabe/foerder/etappe2/GN2F_A4.pdf", "a4", "f", "4 Seiten, letzte Seite Rückmeldung"),
-    "f3": ("Förder-Material Etappe 3F", "ausgabe/foerder/etappe3/Foerder_Etappe3_A4.pdf", "a5", "f", "7 Seiten: Merkkarte, Material Erdmännchen, Blatt 7F–9F"),
+    "f3": ("Förder-Paket Etappe 3F", "ausgabe/pakete/schueler/Schuelerpaket_Foerder_Etappe3_A4.pdf", "a5", "f", "Foto, Kurzinterview Erdmännchen, Blatt 7F–9F, Merkkarte"),
 }
 
 SCHRITTE = [
@@ -71,7 +73,7 @@ SCHRITTE = [
          "Termine festlegen: früher Klassenarbeitstermin in Doppelstunde 7, später in Doppelstunde 8. Arbeitszeit und Punkteverteilung festlegen.",
      ],
      "druck": ["lernweg", "lernwegF", "strategie", "schild"],
-     "digital": ["kiosk", "animation"]},
+     "digital": ["kiosk", "animation", "zip", "zeilen"]},
     {"id": "ds1", "n": "1", "kurz": "Doppelstunde 1", "titel": "Start und Etappe 1",
      "wann": "Doppelstunde 1",
      "tun": [
@@ -311,7 +313,7 @@ html{scroll-behavior:smooth}
   <div>
     <div class="eyebrow">Deutsch · Jahrgang 5 · Zootiere</div>
     <h1>So läuft die Reihe Zootiere</h1>
-    <p class="lead">Acht Doppelstunden, drei Etappen im eigenen Tempo. Die Kinder lernen, ein Zootier mit Bild und Sachtext sachlich und geordnet zu beschreiben. Hier steht Schritt für Schritt, was passiert und was wann gedruckt bereitliegen muss.</p>
+    <p class="lead">Acht Doppelstunden, drei Etappen im eigenen Tempo. Die Kinder lernen, ein Zootier mit Bild und Interview sachlich und geordnet zu beschreiben. Hier steht Schritt für Schritt, was passiert und was wann gedruckt bereitliegen muss.</p>
     <div class="flow" aria-label="Ablauf jeder Etappe">
       <span>Input + Merkblatt</span><i>→</i><span>Pflichtblätter</span><span class="p">Vertiefung freiwillig</span><i>→</i><span class="s">Nachweis: 4 von 5</span>
     </div>

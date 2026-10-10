@@ -38,7 +38,7 @@ KOPF = """# Wissensbasis · Deutsch 5 · Unterrichtsreihe „Zootiere“
 ## 0 · Kurzfassung in zehn Sätzen
 
 1. Deutsch, Jahrgang 5, Heinrich-Böll-Gesamtschule Dortmund; vier Wochen, acht Doppelstunden à 90 Minuten.
-2. Zielkompetenz: **ein Zootier mithilfe von Bild und Sachtext sachlich und geordnet beschreiben** (Aufgabentyp 2, informierendes Schreiben, materialgestützt).
+2. Zielkompetenz: **ein Zootier mithilfe von Bild und Interview sachlich und geordnet beschreiben** (Aufgabentyp 2, informierendes Schreiben, materialgestützt). Textbasis ist immer ein **ausgedachtes Interview** mit einer Tierpflegerin/einem Tierpfleger (Schülerzeitung „Zoo-Reporter“), das die Kinder erst auswerten (Sachangaben über die Art vs. Meinung/Einzeltier/Vergleich) und dann zum Sachtext formen.
 3. Die Reihe ist in **drei Etappen** gegliedert, die jedes Kind **im eigenen Tempo** durchläuft.
 4. Jede Etappe: **Input (HTML-Präsentation) + inhaltsgleiches Merkblatt → Pflichtblätter mit freiwilliger Vertiefung → Abschlussnachweis**.
 5. Nachweise prüfen **fünf Indikatoren**; **4 von 5 (80 %)** = Freigabe für die nächste Etappe; sonst gezielt üben und erneut nachweisen (Variante B).
@@ -127,7 +127,9 @@ Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er i
 |---|---|---|---|
 | Input | HTML-Präsentation, offline, eine Datei | Beamer | groß; farbig erlaubt |
 | Merkblatt | A4 hoch, zweispaltig, fließend, max. 2 Seiten | A4 Originalgröße, doppelseitig | Fließtext ≥ 12 pt |
-| Übungsblätter (Pflicht + Vertiefung) inkl. Materialseiten, Checkliste | A4 hoch, je Blatt eine Seite | **auf A5 verkleinert** | **≥ 14 pt** (meist 17 pt) |
+| Übungsblätter (Pflicht + Vertiefung), Checkliste | A4 hoch, je Blatt eine Seite | **auf A5 verkleinert** | **≥ 14 pt** (meist 17 pt) |
+| Materialbasis: Interviews | A4, fließend über 1–2 Seiten, Zeilennummern alle 5 Zeilen, Fragen fett, Foto, Wörterhilfe, Hinweis „ausgedacht“ | auf A5 verkleinert (Prüfungen: A4) | 15 pt, nichts unter 14 pt |
+| Druckpakete | `ausgabe/pakete/schueler` (je Etappe, Förder-Etappe, Probearbeit, KA V1/V2: erst Material, dann Blätter) und `ausgabe/pakete/lehrkraft` (Merkblätter + GN als Kopiervorlagen, Zeilenbelege, Strategiekarten, Lernweg, Wahlphase, Inputs) | – | – |
 | Hilfekarten (Wörterhilfe, Rückmeldekarte) | A4 hoch | auf A5 verkleinert | ≥ 14 pt |
 | Gelingensnachweis A/B | A4: S. 1 Aufgaben (Kind schreibt aufs Blatt), S. 2 Rückmeldung der Lehrkraft | A4 Originalgröße | Aufgaben ≥ 14 pt |
 | Probearbeit, Klassenarbeit | A4, 7 Seiten (s. Abschnitt 10) | A4 Originalgröße | Kinderseiten ≥ 14 pt |
@@ -153,6 +155,7 @@ REPO = """
 inhalt/                 Einzige Inhaltsquellen (JSON) – hier ändern, nie in den Ausgaben
   etappe1|2|3.json        Input/Merkblatt, Material, Blätter, Nachweise, Hilfen
   probearbeit_waschbaer.json, klassenarbeit_biber.json, klassenarbeit_breitmaulnashorn.json
+  interviews.json         sechs Interviews (250–350 Wörter) + zwei Förder-Kurzinterviews; [[Stelle|Kürzel]]
   foerder_etappe1|2|3.json, kiosk.json, wahlphase.json, strategiekarten.json
 tools/
   build_material.py N     Input, Merkblatt, Übungsblätter, Hilfen, GN, Probearbeit (Etappe N)
@@ -162,6 +165,8 @@ tools/
   build_extras.py         Wahlphase, Strategiekarten, Lernweg (regulär + F)
   build_animation.py      ausgabe/lernweg/Ablauf_Animation.html
   build_anleitung.py      anleitung.html (Lehrkraft-Leitfaden, prüft alle Links)
+  build_interviews.py     Interviews (Entwurf + Prüfliste/Zeilenbelege, zeilen.json); render_interview() für alle Materialseiten
+  build_pakete.py         Druckpakete Schüler/Lehrkraft + ZIP (ausgabe/pakete)
   build_wissensbasis.py   diese Datei
 ausgabe/                Erzeugte PDFs/HTML (etappe1–3, foerder, pruefungen, wahlphase, strategiekarten, lernweg)
 apps/kontroll-kiosk/    Kiosk
@@ -174,7 +179,7 @@ skill.md                Produktionsregeln (verbindlich)
 
 **Technik:** Python + Playwright/Chromium rendert HTML → PDF; PyMuPDF prüft Schriftgrößen. Jeder Generator prüft automatisch: Seitenüberlauf, Mindestschriftgröße, Input = Merkblatt (Textabgleich), Link-Existenz (Leitfaden), Kiosk-Ansichten. Volle Übungsblätter werden automatisch dichter gesetzt (Schrift bleibt ≥ 14 pt); Förderblätter werden automatisch auf Folgeseiten verteilt.
 
-**Markup in Inhaltsdateien:** `*kursiv*` für Beispielsätze, `**fett**` für Begriffe, `\\n` Zeilenumbruch, `{Wort}` = Lücke (Förder-Lückentext, Wortspeicher automatisch).
+**Markup in Inhaltsdateien:** `*kursiv*` für Beispielsätze, `**fett**` für Begriffe, `\\n` Zeilenumbruch, `{Wort}` = Lücke (Förder-Lückentext, Wortspeicher automatisch), `[[Textstelle|Kürzel]]` = Markierung im Interview (unsichtbar für Kinder; T Tiername, M Maß der Art, A Aussehen, L Lebensraum, N Nahrung, W Meinung, X Einzeltier/Zooalltag, V Vergleich, Z Zusatz Verhalten, U Vermutung). Zeilenangaben in Blättern/Kiosk („Z. 12“) beziehen sich auf den Satz der Interviews; nach Textänderungen `ausgabe/interviews/zeilen.json` prüfen und Verweise nachziehen.
 
 **Workflow für Änderungen:** Inhaltsdatei ändern → passenden Generator ausführen → Prüfausgabe lesen → bei Bedarf gerenderte Seiten ansehen → committen → `anleitung.html`/`WISSENSBASIS.md` neu erzeugen, wenn Dateien hinzukommen. Deployment über Vercel aus `main` (statisch, kein Build-Schritt); Vercel-Einstellungen nicht ändern.
 
@@ -204,8 +209,22 @@ def kompetenzraster():
     return "\n## 13 · Kompetenzraster mit vier Standards (Volltext)\n\n" + tab + "\n"
 
 
+def interviews_text():
+    import re as _re
+    iv = j("interviews.json")
+    out = ["### 8.0 Interviews als Textbasis\n", f"Rahmen: {iv['rahmen']} Hinweis auf jeder Seite: „{iv['hinweis_fiktiv']}“ "
+           "Keine echte Person, kein echter Zoo. Lange Interviews 250–350 Wörter (Prüfungen etwa 265), Förder 6 Fragen. "
+           "Markierung: ⟦Stelle|Kürzel⟧ wie in `inhalt/interviews.json`.\n"]
+    for t in iv["tiere"] + iv["foerder"]:
+        out.append(f"#### {t['rolle']} · {t['titel']} ({t['person']}, `{t['id']}`)\n")
+        for q, a in t["paare"]:
+            out.append(f"- **{q}** " + _re.sub(r"\[\[(.+?)\|(\w)\]\]", r"⟦\1|\2⟧", a))
+        out.append("- Wörterhilfe: " + "; ".join(f"{w} = {e}" for w, e in t["woerter"]) + "\n")
+    return "\n".join(out)
+
+
 def etappen():
-    out = ["\n## 8 · Etappen im Detail ⚙\n"]
+    out = ["\n## 8 · Etappen im Detail ⚙\n", interviews_text()]
     kiosk = j("kiosk.json")["blaetter"]
     for n in (1, 2, 3):
         d = j(f"etappe{n}.json")
@@ -216,7 +235,10 @@ def etappen():
             for lab, txt in s["bloecke"]:
                 out.append(f"   - _{lab}:_ {clean(txt)}")
         out.append(f"\n**Abschlusssatz:** {d['abschluss']}\n")
-        mats = d.get("materialien") or ([dict(d["material"], foto=d["foto"])] if d.get("material") else [])
+        if d.get("interviews"):
+            out.append("**Materialbasis:** %s%s (Text siehe 8.0; Paket: erst Material, dann Blätter)\n"
+                       % ("Fotoseite + " if d.get("bildseite") else "", ", ".join("Interview " + i for i in d["interviews"])))
+        mats = [] if d.get("interviews") else d.get("materialien") or ([dict(d["material"], foto=d["foto"])] if d.get("material") else [])
         for m in mats:
             out.append(f"**Materialseite „{m['titel']}“** (Foto: {m['foto']['nachweis']}):\n> {m['text']}\n")
             if m.get("woerter"):
@@ -277,15 +299,17 @@ def etappen():
 def pruefungen():
     out = ["\n## 9 · Probearbeit und Klassenarbeit ⚙\n",
            "Gemeinsamer Aufbau (A4, 7 Seiten; Vorbild: Lernerfolgskontrolle der Reihe Wunschbriefe): "
-           "1 Auftrag (Situation, Auftrags-Checkliste, Arbeitszeit-Feld, bei KA Terminwahl) · 2 Material (Foto, Sachtext, Wörterhilfe, Bildhinweis) · "
+           "Material vorn: Interview (2 Seiten, Foto, Zeilennummern, Wörterhilfe) · 1 Auftrag (Situation, Auftrags-Checkliste inkl. „Markiere Sachangaben, streiche Meinungen/Einzeltier“, Arbeitszeit-Feld, bei KA Terminwahl) · "
            "3 Planung (Schreibplan Überblick/Aussehen ×4/Lebensraum/Nahrung) · 4 Schreibseite (Überschrift + Linien, Prüfhinweis) · "
            "5 „Dein Text: Das zählt“ (K1–K6 zum Abhaken) · 6 Hilfeseite (erlaubt) · 7 Lehrkraftseite (Probearbeit: Rückmeldung E3.1–E3.5, Hilfen, x/5, nächster Schritt, Wahlzeit, Klassenarbeitstermin; Klassenarbeit: Bewertung K1–K6 mit Punkten und Note).\n"]
     for f in ("probearbeit_waschbaer.json", "klassenarbeit_biber.json", "klassenarbeit_breitmaulnashorn.json"):
         p = j(f)
         out.append(f"### {p['titel']} ({p['art']}) · `inhalt/{f}`\n")
         out.append(f"- Situation: {p['situation']}")
-        out.append(f"- Sachtext: {p['material']['text']}")
-        out.append("- Wörterhilfe: " + "; ".join(f"{w} = {e}" for w, e in p["material"]["woerter"]))
+        if p.get("interview"):
+            out.append(f"- Material: Interview `{p['interview']}` (vor dem Auftrag, mit Zeilennummern; Text siehe 8.0)")
+        else:
+            out.append(f"- Sachtext: {p['material']['text']}")
         out.append(f"- Foto: {p['material']['foto']['nachweis']}")
         if p.get("ziele"):
             out.append("- Indikatoren: " + " · ".join(f"{z['id']} {z['kind']} (erreicht, wenn {z['lehrkraft']})" for z in p["ziele"]))
@@ -318,14 +342,14 @@ def wahl_strategie():
 def foerder():
     out = ["\n## 14 · Zieldifferentes Material (Förderschwerpunkt Lernen) ⚙\n",
            "Zwei Kinder; kurze Texte möglich. Gleiche Etappen und Blattnummern mit „F“, gleicher Input, Fischotter als Beispieltier (Etappe 3F: nur Erdmännchen). "
-           "Je Etappe vereinfachte **Merkkarte** und **Materialseite** (ein Satz pro Zeile, Foto mit nummerierten Bildstellen). Kleinschrittig: ein Auftrag pro Kasten mit Symbol je Format. "
+           "Je Etappe vereinfachte **Merkkarte**, **Fotoseite** mit nummerierten Bildstellen und **Kurzinterview** (6 Fragen, Antworten 1–2 Sätze, je eine Meinung und Angaben nur über das Zootier; Aufgaben „Info oder Meinung?“ und „Wer ist gemeint?“). Kleinschrittig: ein Auftrag pro Kasten mit Symbol je Format. "
            "Formate: ankreuzen · zuordnen (Zahl ins Kästchen, ggf. nummerierte Bedeutungen) · sortieren (Wortspeicher → Spalten) · Lückentext (Wortspeicher, ggf. Ablenker) · Wortkarten zu einem Satz ordnen · Satz weiterschreiben · Prüfliste · Bild betrachten · Hinweis. "
            "Jede Seite mit Lösungsstreifen auf dem Kopf zum Umknicken. Schreiben aufs Blatt. GN-F-Ziele sind Vorschläge; Förderziele individuell vereinbaren, Zeile für eigenes Förderziel.\n"]
     for n in (1, 2, 3):
         d = j(f"foerder_etappe{n}.json")
         out.append(f"### Etappe {n}F · {d['titel']}\n")
         out.append("- Merkkarte: " + " · ".join(f"{a}: {clean(b)}" for a, b in d["merkkarte"]["punkte"]))
-        out.append("- Material „%s“: %s" % (d["material"]["titel"], " ".join(d["material"]["saetze"])))
+        out.append("- Material: Fotoseite mit Zahlen + Kurzinterview `%s` (Text siehe 8.0)" % d.get("interview", "–"))
         out.append("- Bildstellen: " + ", ".join(f"{p[0]}" for p in d["foto"]["punkte"]) + f" ({d['foto']['alt']})")
         for b in d["blaetter"]:
             teile = []

@@ -1,13 +1,13 @@
 # Wissensbasis · Deutsch 5 · Unterrichtsreihe „Zootiere“
 
 > **Zweck:** Vollständige, verbindliche Wissensgrundlage für ein LLM, das an dieser Reihe weiterarbeitet (Material ergänzen, ändern, prüfen, Fragen beantworten).
-> **Stand:** 09.10.2026. Abschnitte mit ⚙ werden aus den Inhaltsdateien `inhalt/*.json` erzeugt (`python tools/build_wissensbasis.py`) und spiegeln den aktuellen Materialstand.
+> **Stand:** 10.10.2026. Abschnitte mit ⚙ werden aus den Inhaltsdateien `inhalt/*.json` erzeugt (`python tools/build_wissensbasis.py`) und spiegeln den aktuellen Materialstand.
 > **Repo:** `technikerleben/d5ur2-zootiere`, Arbeitsbranch `claude/etappe1-muster` (noch nicht in `main`). Lehrkraft-Leitfaden: `anleitung.html`.
 
 ## 0 · Kurzfassung in zehn Sätzen
 
 1. Deutsch, Jahrgang 5, Heinrich-Böll-Gesamtschule Dortmund; vier Wochen, acht Doppelstunden à 90 Minuten.
-2. Zielkompetenz: **ein Zootier mithilfe von Bild und Sachtext sachlich und geordnet beschreiben** (Aufgabentyp 2, informierendes Schreiben, materialgestützt).
+2. Zielkompetenz: **ein Zootier mithilfe von Bild und Interview sachlich und geordnet beschreiben** (Aufgabentyp 2, informierendes Schreiben, materialgestützt). Textbasis ist immer ein **ausgedachtes Interview** mit einer Tierpflegerin/einem Tierpfleger (Schülerzeitung „Zoo-Reporter“), das die Kinder erst auswerten (Sachangaben über die Art vs. Meinung/Einzeltier/Vergleich) und dann zum Sachtext formen.
 3. Die Reihe ist in **drei Etappen** gegliedert, die jedes Kind **im eigenen Tempo** durchläuft.
 4. Jede Etappe: **Input (HTML-Präsentation) + inhaltsgleiches Merkblatt → Pflichtblätter mit freiwilliger Vertiefung → Abschlussnachweis**.
 5. Nachweise prüfen **fünf Indikatoren**; **4 von 5 (80 %)** = Freigabe für die nächste Etappe; sonst gezielt üben und erneut nachweisen (Variante B).
@@ -36,7 +36,7 @@
 - 13 · Kompetenzraster mit vier Standards (Volltext)
 - 14 · Zieldifferentes Material (Förderschwerpunkt Lernen)
 - 15 · Zeitplan der acht Doppelstunden und Druckplan
-- 16 · Offene Punkte (Stand 09.10.2026)
+- 16 · Offene Punkte (Stand 10.10.2026)
 - 17 · Glossar
 
 ## 1 · Rahmen und Lehrplanbezug
@@ -116,7 +116,9 @@ Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er i
 |---|---|---|---|
 | Input | HTML-Präsentation, offline, eine Datei | Beamer | groß; farbig erlaubt |
 | Merkblatt | A4 hoch, zweispaltig, fließend, max. 2 Seiten | A4 Originalgröße, doppelseitig | Fließtext ≥ 12 pt |
-| Übungsblätter (Pflicht + Vertiefung) inkl. Materialseiten, Checkliste | A4 hoch, je Blatt eine Seite | **auf A5 verkleinert** | **≥ 14 pt** (meist 17 pt) |
+| Übungsblätter (Pflicht + Vertiefung), Checkliste | A4 hoch, je Blatt eine Seite | **auf A5 verkleinert** | **≥ 14 pt** (meist 17 pt) |
+| Materialbasis: Interviews | A4, fließend über 1–2 Seiten, Zeilennummern alle 5 Zeilen, Fragen fett, Foto, Wörterhilfe, Hinweis „ausgedacht“ | auf A5 verkleinert (Prüfungen: A4) | 15 pt, nichts unter 14 pt |
+| Druckpakete | `ausgabe/pakete/schueler` (je Etappe, Förder-Etappe, Probearbeit, KA V1/V2: erst Material, dann Blätter) und `ausgabe/pakete/lehrkraft` (Merkblätter + GN als Kopiervorlagen, Zeilenbelege, Strategiekarten, Lernweg, Wahlphase, Inputs) | – | – |
 | Hilfekarten (Wörterhilfe, Rückmeldekarte) | A4 hoch | auf A5 verkleinert | ≥ 14 pt |
 | Gelingensnachweis A/B | A4: S. 1 Aufgaben (Kind schreibt aufs Blatt), S. 2 Rückmeldung der Lehrkraft | A4 Originalgröße | Aufgaben ≥ 14 pt |
 | Probearbeit, Klassenarbeit | A4, 7 Seiten (s. Abschnitt 10) | A4 Originalgröße | Kinderseiten ≥ 14 pt |
@@ -137,9 +139,110 @@ Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er i
 
 ## 8 · Etappen im Detail ⚙
 
+### 8.0 Interviews als Textbasis
+
+Rahmen: Die Schülerzeitung „Zoo-Reporter“ war im Zoo und hat mit Tierpflegerinnen und Tierpflegern gesprochen. Hinweis auf jeder Seite: „Das Interview ist ausgedacht. Die Angaben über das Tier stimmen.“ Keine echte Person, kein echter Zoo. Lange Interviews 250–350 Wörter (Prüfungen etwa 265), Förder 6 Fragen. Markierung: ⟦Stelle|Kürzel⟧ wie in `inhalt/interviews.json`.
+
+#### Beispieltier · Etappe 1–2 · „Otto taucht am liebsten“ (Frau Berger, `fischotter`)
+
+- **Frau Berger, wie fängt Ihr Tag bei den Ottern an?** ⟦Um halb acht mache ich die Anlage sauber. Danach gibt es Frühstück.|X⟧ ⟦Unser Otto wartet dann schon am Gitter und pfeift laut.|X⟧ ⟦Ehrlich gesagt ist er der süßeste Otter der Welt!|W⟧
+- **Was gibt es denn zum Frühstück?** Vor allem Fisch. ⟦Otto bekommt jeden Tag einen kleinen Eimer voll.|X⟧ In der Natur ⟦fressen Fischotter hauptsächlich Fische|N⟧. ⟦Sie fangen aber auch Frösche und Krebse.|N⟧ ⟦Gestern hat Otto einen Krebs ganz allein geknackt. Das hat richtig gekracht!|X⟧
+- **Wo leben Fischotter, wenn sie nicht im Zoo sind?** ⟦An Flüssen und Seen.|L⟧ ⟦Sie brauchen Ufer, an denen sie sich verstecken können|L⟧, zum Beispiel unter Büschen und Wurzeln. ⟦Deshalb liegen in unserer Anlage auch so viele alte Wurzeln herum.|X⟧
+- **Ist ein Otter eigentlich mit dem Biber verwandt?** Nein. ⟦Fischotter gehören zu den Mardern.|T⟧ Biber sind Nagetiere. Das ist etwas ganz anderes.
+- **Woran erkennt man einen Fischotter?** Schauen Sie mal, wie er durchs Wasser saust! ⟦Sein Körper ist lang und schmal|A⟧, ⟦fast wie ein Torpedo|V⟧. ⟦Die Beine sind dagegen richtig kurz.|A⟧ Und ⟦der Kopf ist breit und flach|A⟧. Ich sage immer: ⟦wie ein Brett mit Nase|V⟧.
+- **Und die Ohren? Ich sehe gar keine.** ⟦Die sind ganz klein.|A⟧ ⟦Beim Tauchen kann er sie sogar verschließen, damit kein Wasser hineinläuft.|Z⟧
+- **Wie groß ist Otto eigentlich?** ⟦Letzte Woche haben wir ihn gemessen. Von der Nase bis zum Schwanzansatz waren es 80 Zentimeter.|X⟧ Der Schwanz kommt noch dazu. ⟦Fischotter sind meistens 60 bis 90 Zentimeter lang, wenn man den Schwanz nicht mitzählt.|M⟧
+- **Darf man ihn streicheln? Das Fell sieht so weich aus.** Nein, ⟦Otto ist kein Kuscheltier. Ich fasse ihn nur an, wenn die Tierärztin kommt.|X⟧ ⟦Das Fell ist sehr dicht.|A⟧ ⟦Oben ist es dunkelbraun, am Hals ist es heller.|A⟧
+- **Gibt es noch etwas Besonderes?** Ja, ⟦die langen Tasthaare an der Schnauze|A⟧! ⟦Damit spürt er Fische, auch wenn das Wasser trüb ist.|Z⟧ Und ⟦zwischen den Zehen hat er Schwimmhäute|A⟧. ⟦Deshalb ist er so ein toller Schwimmer.|W⟧
+- **Vielen Dank, Frau Berger!** Gern. ⟦Und kommt Otto bald besuchen!|X⟧
+- Wörterhilfe: Anlage = Gehege im Zoo; Tasthaare = Haare zum Ertasten; trüb = nicht klar, man sieht wenig; Schwanzansatz = Stelle, an der der Schwanz beginnt
+
+#### Übungstier · Etappe 3 · „Kiki hält Wache“ (Herr Yıldız, `erdmaennchen`)
+
+- **Herr Yıldız, wie viele Erdmännchen leben hier?** Im Moment neun. ⟦Erdmännchen leben immer in Gruppen.|Z⟧ ⟦Allein wären sie unglücklich, glaube ich.|W⟧ ⟦Unsere Chefin heißt Kiki. Sie ist die Mutigste von allen.|X⟧
+- **Was macht Kiki gerade da oben auf dem Stein?** ⟦Sie hält Wache.|X⟧ ⟦Einer aus der Gruppe stellt sich immer auf die Hinterbeine und schaut sich um.|Z⟧ ⟦Der Schwanz ist lang und schmal|A⟧, ⟦die Spitze ist dunkel|A⟧. ⟦Wenn ein Greifvogel kommt, pfeift der Wächter, und alle verschwinden im Bau.|Z⟧
+- **Im Bau?** Ja. In der Natur ⟦leben Erdmännchen im trockenen Gras- und Buschland im Süden von Afrika|L⟧. ⟦Dort graben sie unterirdische Gänge.|L⟧ Das können sie gut, denn ⟦an den Pfoten haben sie lange Krallen|A⟧. ⟦Letzten Sommer haben unsere einen Tunnel bis unter den Zaun gegraben. Da musste ich ganz schön rennen!|X⟧
+- **Sind Erdmännchen eigentlich Mäuse?** Nein, überhaupt nicht! ⟦Sie gehören zu den Mangusten.|T⟧ Das ist eine Familie von kleinen Raubtieren.
+- **Raubtiere? Was fressen die denn?** ⟦Vor allem Insekten, also Käfer, Heuschrecken und Larven.|N⟧ ⟦Aber auch Spinnen und kleine Eidechsen.|N⟧ ⟦Bei uns gibt es morgens Mehlwürmer. Die mag Kiki am allerliebsten.|X⟧
+- **Wie groß werden Erdmännchen?** ⟦Kopf und Rumpf sind zusammen nur etwa 25 bis 29 Zentimeter lang. Der Schwanz kommt noch dazu.|M⟧ ⟦Kiki ist sogar ein bisschen kleiner. Sie wiegt nicht einmal ein Kilo.|X⟧
+- **Und wie sehen sie sonst aus?** ⟦Ihr Körper ist schlank.|A⟧ ⟦Das Fell ist hellbraun bis graubraun|A⟧, und ⟦auf dem Rücken haben sie dunklere Streifen|A⟧. Am Kopf fällt ⟦die spitze Schnauze|A⟧ auf. Und ⟦um die Augen haben sie dunkle Flecken|A⟧. ⟦Das sieht aus wie eine Sonnenbrille.|V⟧ ⟦Total cool, oder?|W⟧
+- **Wofür sind die Flecken gut?** ⟦Man vermutet, dass sie die Augen vor der grellen Sonne schützen. Ganz sicher weiß man das aber nicht.|U⟧ Übrigens: ⟦Die kleinen Ohren können sie beim Graben verschließen.|A⟧ So kommt kein Sand hinein.
+- **Haben Sie noch einen Tipp für unsere Leserinnen und Leser?** ⟦Kommt am besten morgens. Dann sonnen sich alle vor dem Bau.|X⟧ ⟦Das ist der schönste Anblick im ganzen Zoo!|W⟧
+- Wörterhilfe: Mangusten = eine Familie von kleinen Raubtieren; Bau = Versteck unter der Erde mit Gängen; Rumpf = Körper ohne Kopf, Beine und Schwanz; Greifvogel = Vogel, der andere Tiere jagt, zum Beispiel ein Adler
+
+#### Übungstier · Etappe 3 · „Mei klettert, wenn es dunkel wird“ (Frau Nowak, `roter-panda`)
+
+- **Frau Nowak, wo ist denn der Panda? Ich sehe nur Bäume.** ⟦Mei schläft oben in der Astgabel. Am Vormittag ist sie meistens faul.|X⟧ ⟦Rote Pandas sind vor allem in der Dämmerung und nachts unterwegs.|Z⟧ ⟦Da muss man Geduld haben!|W⟧
+- **Ist Mei ein kleiner Großer Panda?** Das fragen viele! ⟦Der Rote Panda heißt auch Kleiner Panda.|T⟧ Mit dem großen schwarz-weißen Panda ist er aber nicht nah verwandt. Beide fressen nur gern Bambus.
+- **Dann frisst Mei also Bambus?** Ja, ⟦hauptsächlich Bambus.|N⟧ ⟦Daneben fressen Rote Pandas zum Beispiel Beeren und Eier.|N⟧ ⟦Mei bekommt jeden Morgen frische Bambusstangen und ein paar Weintrauben. Letzte Woche hat sie die Trauben zuerst gefressen und den Bambus liegen lassen.|X⟧
+- **Wo leben Rote Pandas in der Natur?** ⟦In Bergwäldern in Asien, in denen Bambus wächst.|L⟧ Dort ist es oft kühl und feucht. ⟦Deshalb haben wir in der Anlage so viele schattige Bäume gepflanzt.|X⟧
+- **Woran erkennt man einen Roten Panda?** Zuerst an der Farbe! ⟦Am Rücken ist das Fell rötlich braun.|A⟧ ⟦Die Beine und der Bauch sind dunkel bis schwarz.|A⟧ ⟦Im Gesicht hat er helle, fast weiße Bereiche.|A⟧ ⟦Der Kopf ist rund|A⟧, und ⟦die Ohren sind groß und spitz|A⟧. ⟦Mei sieht aus wie ein Kuscheltier.|V⟧ ⟦Ich finde, sie ist das hübscheste Tier hier.|W⟧
+- **Und der Schwanz? Der ist ja riesig!** Genau. ⟦Der Schwanz ist lang und buschig.|A⟧ ⟦Er hat hellere und dunklere Ringe.|A⟧ ⟦Beim Klettern helfen ihm der Schwanz und die Krallen.|Z⟧ ⟦Im Winter wickelt sich Mei beim Schlafen in ihren Schwanz ein wie in eine Decke.|X⟧
+- **Wie groß ist ein Roter Panda?** ⟦Kopf und Rumpf sind zusammen etwa 60 Zentimeter lang. Der Schwanz kommt noch dazu.|M⟧ ⟦Mei ist etwas kleiner, sie ist noch jung.|X⟧
+- **Haben Sie zum Schluss noch einen Tipp?** ⟦Kommt am späten Nachmittag. Dann klettert Mei herunter und sucht ihr Futter.|X⟧ ⟦Das ist jedes Mal ein Erlebnis!|W⟧
+- Wörterhilfe: Dämmerung = Zeit zwischen Tageslicht und Dunkelheit; Bambus = eine Pflanze mit festen Halmen; Rumpf = Körper ohne Kopf, Beine und Schwanz; verwandt = zur gleichen Tierfamilie gehören
+
+#### Probearbeit · „Rocky öffnet jede Dose“ (Herr Schäfer, `waschbaer`)
+
+- **Herr Schäfer, warum steht da ein Schloss an der Futterkiste?** ⟦Wegen Rocky! Er öffnet jede Dose und jede Kiste.|X⟧ ⟦Mit den Vorderpfoten kann ein Waschbär Nahrung geschickt greifen.|Z⟧ ⟦An jeder Pfote sitzen fünf Zehen.|A⟧ ⟦Ehrlich, manchmal ist er schlauer als ich.|W⟧
+- **Woher kommen Waschbären eigentlich?** ⟦Ursprünglich aus Nordamerika.|L⟧ ⟦Sie leben gern in Wäldern mit Gewässern.|L⟧ ⟦Heute kommen sie aber auch in Städten vor.|L⟧
+- **Gibt es auch in Deutschland Waschbären?** ⟦Ja. Ein Nachbar von mir hatte neulich einen im Garten. Der hat in der Nacht die ganze Mülltonne ausgeräumt!|X⟧ ⟦Waschbären sind vor allem nachts unterwegs.|Z⟧
+- **Was frisst Rocky?** ⟦Waschbären fressen pflanzliche und tierische Nahrung.|N⟧ ⟦Zum Beispiel Früchte, Nüsse, Insekten und Frösche.|N⟧ ⟦Rocky liebt Weintrauben. Gestern hat er eine ganze Schale leer gemacht.|X⟧
+- **Warum heißt er eigentlich Waschbär?** ⟦Waschbären gehören zu den Kleinbären.|T⟧ ⟦Oft tasten sie ihr Futter im Wasser ab. Das sieht aus, als würden sie es waschen.|Z⟧ ⟦Rocky taucht seine Trauben auch immer in den Wassernapf.|X⟧ ⟦Das ist so lustig!|W⟧
+- **Woran erkennt man einen Waschbären?** ⟦Am Gesicht! Um die Augen liegt eine schwarze Zeichnung.|A⟧ ⟦Die sieht aus wie eine Maske von einem Räuber.|V⟧ ⟦Die Ohren sind abgerundet und haben einen hellen Rand.|A⟧ ⟦Der Körper ist kräftig und wirkt gedrungen.|A⟧ ⟦Das Fell ist meist graubraun.|A⟧
+- **Und der Schwanz?** ⟦Der ist buschig und hat mehrere dunkle Ringe.|A⟧ ⟦Ich finde, das ist der schönste Schwanz im ganzen Zoo.|W⟧
+- **Wie schwer ist so ein Waschbär?** ⟦Ein erwachsener Waschbär wiegt häufig etwa sechs bis sieben Kilogramm.|M⟧ ⟦Rocky wiegt im Moment acht Kilo. Er hat im Herbst zu viel genascht.|X⟧
+- **Danke, Herr Schäfer!** ⟦Gern. Und passt auf eure Brotdosen auf!|X⟧
+- Wörterhilfe: gedrungen = eher kurz und kräftig gebaut; Zeichnung = Muster auf dem Fell; Vorderpfoten = die beiden vorderen Pfoten; ursprünglich = zuerst, von Anfang an
+
+#### Klassenarbeit Variante 1 · „Bruno baut die ganze Nacht“ (Frau Krause, `biber`)
+
+- **Frau Krause, was ist denn mit dem Baumstamm passiert?** ⟦Das war Bruno heute Nacht!|X⟧ ⟦Biber sind Nagetiere.|T⟧ ⟦Ihre großen Schneidezähne sind vorne orange gefärbt.|A⟧ Damit können sie sogar dicke Äste durchnagen. ⟦Bruno ist da wirklich ein Meister.|W⟧
+- **Fressen Biber Holz?** Nicht direkt. ⟦Biber ernähren sich von Pflanzen.|N⟧ ⟦Sie fressen zum Beispiel Blätter, junge Triebe und Rinde.|N⟧ ⟦Bruno bekommt jeden Abend Weidenzweige. Die Rinde nagt er ab, den Rest verbaut er.|X⟧
+- **Wo leben Biber in der Natur?** ⟦An Flüssen und Seen.|L⟧ ⟦Sie bauen dort Burgen aus Ästen und Schlamm.|Z⟧
+- **Wann ist Bruno denn wach?** ⟦Biber sind vor allem in der Dämmerung und nachts aktiv.|Z⟧ ⟦Tagsüber schläft Bruno in seiner Burg. Wenn ich morgens komme, finde ich nur noch Holzspäne.|X⟧
+- **Wie sieht ein Biber aus?** ⟦Sein Körper ist kräftig|A⟧ und ⟦die Beine sind kurz|A⟧. ⟦Das Fell ist braun und sehr dicht.|A⟧ ⟦Am Kopf sitzen kleine Ohren und eine stumpfe Schnauze.|A⟧ ⟦Bruno sieht ein bisschen aus wie ein dicker Teddy.|V⟧ ⟦Ich finde ihn total niedlich.|W⟧ ⟦Zwischen den Zehen der Hinterfüße liegen Schwimmhäute.|A⟧
+- **Und was ist das für ein komischer Schwanz?** ⟦Der Schwanz ist breit und flach. Er ist kaum behaart und mit Schuppen bedeckt.|A⟧ Dieser Schwanz heißt auch Kelle. ⟦Wenn Gefahr droht, klatscht der Biber damit aufs Wasser.|Z⟧ ⟦Letzte Woche hat Bruno mich damit ganz nass gespritzt!|X⟧
+- **Kann ein Biber gut tauchen?** ⟦Ja, er kann mehrere Minuten unter Wasser bleiben.|Z⟧ ⟦Bruno taucht einmal quer durch unseren Teich. Das sind bestimmt 20 Meter.|X⟧ ⟦Das finde ich jedes Mal spannend.|W⟧
+- **Wie schwer ist so ein Biber?** ⟦Ein erwachsener Biber kann etwa 13 bis 35 Kilogramm wiegen.|M⟧ ⟦Bruno wiegt gerade 25 Kilo.|X⟧
+- Wörterhilfe: Triebe = junge Teile einer Pflanze; Kelle = Name für den breiten Biberschwanz; Schneidezähne = die vorderen Zähne zum Abbeißen und Nagen; Burg = Wohnhöhle des Bibers aus Ästen; Späne = kleine, dünne Holzstücke
+
+#### Klassenarbeit Variante 2 · „Nala badet gern im Schlamm“ (Herr Mensah, `breitmaulnashorn`)
+
+- **Herr Mensah, warum ist Nala so dreckig?** ⟦Sie hat sich gerade im Schlamm gewälzt. Das macht sie jeden Mittag.|X⟧ ⟦Der Schlamm schützt die Haut vor Sonne und Insekten.|Z⟧ ⟦Für mich ist das der lustigste Moment des Tages.|W⟧
+- **Was für ein Nashorn ist Nala?** ⟦Ein Breitmaulnashorn.|T⟧ ⟦Es hat sehr breite Lippen.|A⟧ Damit rupft es das Gras ab, ⟦fast wie ein Rasenmäher|V⟧.
+- **Was frisst ein Breitmaulnashorn?** ⟦Es frisst fast nur Gras.|N⟧ ⟦Nala bekommt bei uns Heu, jeden Tag einen ganzen Berg.|X⟧
+- **Wo leben Breitmaulnashörner in der Natur?** ⟦In Afrika.|L⟧ ⟦Sie leben in Savannen mit kurzem Gras.|L⟧
+- **Wie sieht ein Breitmaulnashorn aus?** ⟦Der Körper ist groß und massig.|A⟧ ⟦Die Haut ist grau und dick.|A⟧ ⟦Sie hat fast keine Haare.|A⟧ ⟦Im Nacken hat es einen Buckel.|A⟧ ⟦Die Beine sind kurz und kräftig.|A⟧ ⟦Nala sieht aus wie ein Panzer auf vier Beinen.|V⟧
+- **Kann Nala gut sehen?** ⟦Nashörner sehen eher schlecht. Dafür können sie sehr gut hören und riechen.|Z⟧ ⟦Wenn ich mit dem Heuwagen komme, dreht Nala schon von Weitem die Ohren zu mir.|X⟧
+- **Und die Hörner?** ⟦Auf der Nase trägt es zwei Hörner. Das vordere Horn ist länger als das hintere.|A⟧ ⟦Nalas vorderes Horn ist ein bisschen abgebrochen. Sie ist gegen einen Baum gerannt.|X⟧
+- **Wie groß ist so ein Tier?** ⟦Kopf und Rumpf sind zusammen etwa 3,40 bis 3,80 Meter lang. Der Schwanz kommt noch dazu.|M⟧ ⟦Ein erwachsenes Männchen kann bis zu 3600 Kilogramm wiegen.|M⟧ ⟦Nala ist ein Weibchen und etwas leichter.|X⟧ ⟦Ich finde sie trotzdem riesig!|W⟧
+- **Wie lange sind Sie schon Nalas Pfleger?** ⟦Seit sieben Jahren. Am Anfang hatte ich ein bisschen Angst vor ihr.|X⟧ ⟦Heute ist sie für mich das tollste Tier der Welt.|W⟧
+- Wörterhilfe: Savanne = Grasland mit wenigen Bäumen; massig = sehr groß und schwer; Buckel = eine Erhöhung im Nacken; sich wälzen = sich hin und her rollen
+
+#### Förder · Etappe 1–2 · Otto taucht gern (Frau Berger, `fischotter-f`)
+
+- **Wo leben Fischotter?** ⟦Fischotter leben an Flüssen und Seen.|L⟧ ⟦Unser Otto wohnt im Zoo.|X⟧
+- **Was fressen Fischotter?** ⟦Fischotter fressen Fische, Frösche und Krebse.|N⟧ ⟦Otto frisst am liebsten Forellen.|X⟧
+- **Wie sieht ein Fischotter aus?** ⟦Der Körper ist lang.|A⟧ ⟦Das Fell ist dunkelbraun.|A⟧
+- **Und die Beine und der Kopf?** ⟦Die Beine sind kurz.|A⟧ ⟦Der Kopf ist breit und flach.|A⟧
+- **Wie groß ist ein Fischotter?** ⟦Ein Fischotter ist ohne Schwanz etwa 60 bis 90 Zentimeter lang.|M⟧ ⟦Otto ist 80 Zentimeter lang.|X⟧
+- **Wie finden Sie Otto?** ⟦Otto ist der süßeste Otter der Welt!|W⟧
+- Wörterhilfe: Forellen = eine Art von Fischen
+
+#### Förder · Etappe 3 · Kiki hält Wache (Herr Yıldız, `erdmaennchen-f`)
+
+- **Wo leben Erdmännchen?** ⟦Erdmännchen leben im trockenen Grasland in Afrika.|L⟧ ⟦Kiki wohnt im Zoo.|X⟧
+- **Was fressen Erdmännchen?** ⟦Erdmännchen fressen Insekten und Spinnen.|N⟧ ⟦Kiki mag Mehlwürmer.|X⟧
+- **Wie sieht ein Erdmännchen aus?** ⟦Das Fell ist hellbraun.|A⟧ ⟦Der Körper ist schlank.|A⟧
+- **Was hat es noch?** ⟦Der Schwanz ist lang und schmal.|A⟧ ⟦Auf dem Rücken hat es dunkle Streifen.|A⟧
+- **Wie groß ist ein Erdmännchen?** ⟦Ein Erdmännchen ist ohne Schwanz etwa 25 bis 29 Zentimeter lang.|M⟧ ⟦Kiki ist kleiner.|X⟧
+- **Wie finden Sie Kiki?** ⟦Kiki ist das mutigste Tier im Zoo!|W⟧
+- Wörterhilfe: Grasland = Land mit Gras und wenigen Bäumen
+
 ### Etappe 1 · Informationen finden und ordnen
 
-**Ziel (Kind):** Ich kann ein Tier genau betrachten und Informationen aus Bild und Text ordnen.
+**Ziel (Kind):** Ich kann ein Tier genau betrachten und Sachangaben aus Bild und Interview ordnen.
 
 **Input und Merkblatt 1 – Abschnitte (identisch):**
 
@@ -150,37 +253,38 @@ Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er i
    - _Frage:_ Welche Beschreibung passt nur zu einem Fisch? Zeige den Hinweis, der dir hilft. Mache Beschreibung 2 genauer.
    - _Gesicherte Antwort:_ Beschreibung 1 passt nur zu Fisch B: langer, schmaler Körper und dunkle Punkte. Beschreibung 2 passt zu allen Fischen. Genauer ist zum Beispiel: *Der Fisch hat einen runden Körper mit dunklen Streifen.* Das ist Fisch A.
 2. **Genau statt wertend**
-   - _Dein Ziel:_ Du findest genaue Angaben über ein Tier. Eine Beschreibung hilft anderen, sich das Tier vorzustellen.
+   - _Dein Ziel:_ Genaue Angaben helfen anderen, sich das Tier vorzustellen.
    - _Vergleiche:_ A: *Der Fischotter ist toll. Sein Fell ist schön.* / B: *Der Fischotter hat einen langen Körper und kurze Beine. Sein Fell ist oben dunkelbraun.*
    - _Frage:_ Welcher Text hilft dir beim Vorstellen? Warum?
-   - _Gesicherte Antwort:_ B nennt Körperform, Beinlänge und Fellfarbe. A enthält Meinungen. „schön“ und „toll“ sind keine genauen Merkmale.
+   - _Gesicherte Antwort:_ B nennt Körperform, Beine und Fellfarbe. „schön“ und „toll“ sind Meinungen, keine Merkmale.
 3. **Das zeigt dir das Foto**
    - _Beobachte:_ Zeige zwei Körperteile. Nenne jeweils ein genaues Merkmal.
    - _Gesicherte Antwort:_ An der Schnauze sitzen lange **Tasthaare**. Die Ohren sind klein. Zeige die passenden Bildstellen.
    - _Grenze des Bildes:_ **Schwimmhäute** und die gesamte **Körperlänge** erkennst du hier nicht sicher. Erfinde keine verdeckten Merkmale.
-4. **Das erfährst du im Text**
-   - _So liest du:_ 1. Lies den Text einmal. Markiere Wörter, die du nicht verstehst. / 2. Lies den Satz um das Wort noch einmal. Nutze die Wörterhilfe. Frage bei Bedarf ein anderes Kind oder deine Lehrkraft. Rate keine Bedeutung. / 3. Lies mit deinem Suchauftrag weiter. Suchwörter helfen: *lebt, frisst, Zentimeter*. Markiere die passende Textstelle: **L** für Lebensraum, **N** für Nahrung, **M** für Maß. / 4. Notiere die Information als Stichwort unter der passenden Überschrift.
-   - _Lies gezielt:_ *Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern. Er hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Der Fischotter frisst vor allem Fische, aber auch Frösche und Krebse.*
-   - _Frage:_ Wo lebt der Fischotter? Was frisst er? Wie lang sind Kopf und Rumpf? Zählt der Schwanz dazu?
-   - _Gesicherte Antwort:_ Flüsse und Seen mit geschützten Ufern; vor allem Fische; Kopf und Rumpf etwa 60–90 cm. Der Schwanz zählt nicht dazu. Zeige die Textstellen.
-   - _Mit einem Partner prüfen:_ Zeige deine Textstelle. Erkläre, welche Information du gefunden hast. Vergleicht: Passt die Stelle zur Frage? Bei verschiedenen Antworten prüft ihr gemeinsam im Text.
-5. **Sprachdetektiv**
-   - _Vier Wortarten:_ **Nomen** benennen Tiere, Dinge und mehr: *Otter, Fell*. Du schreibst sie groß. / **Artikel** begleiten Nomen: *der Otter, das Fell, die Pfote*. / **Verben** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*. / **Adjektive** beschreiben Merkmale: *braun, dicht, lang*.
+4. **Das erfährst du im Interview**
+   - _So liest du:_ 1. Lies das Interview einmal. Markiere Wörter, die du nicht verstehst. / 2. Kläre sie mit der Wörterhilfe oder frage nach. Rate nicht. / 3. Suche mit Suchwörtern: *leben, fressen, Zentimeter*. Markiere **L** (Lebensraum), **N** (Nahrung), **M** (Maß). / 4. Notiere ein Stichwort und die Zeile.
+   - _Lies gezielt:_ **Wie groß ist Otto?** / *Von der Nase bis zum Schwanzansatz waren es 80 Zentimeter. Fischotter sind meistens 60 bis 90 Zentimeter lang, wenn man den Schwanz nicht mitzählt.*
+   - _Frage:_ Wie lang sind Fischotter? Zählt der Schwanz dazu? Für wen gelten die 80 Zentimeter?
+   - _Gesicherte Antwort:_ Fischotter sind ohne Schwanz etwa 60–90 cm lang. Die 80 cm gelten nur für Otto.
+   - _Mit einem Partner prüfen:_ Zeige deine Stelle und nenne die Zeile. Passt sie zur Frage? Bei verschiedenen Antworten prüft ihr gemeinsam.
+5. **Was gehört in die Beschreibung?**
+   - _Im Interview:_ Frau Berger erzählt viel. Nicht alles passt in eine Tierbeschreibung.
+   - _Drei Prüffragen:_ 1. Gilt es für **alle Fischotter**? → **Sachangabe**, passt. / 2. Geht es nur um **Otto** oder den Zoo? → **Einzelfall**, passt nicht. / 3. Sagt jemand, wie er das Tier **findet**? → **Meinung**, passt nicht.
+   - _Frage:_ Ordne zu: *Fischotter fressen Fische.* · *Otto bekommt einen Eimer voll.* · *Er ist der süßeste Otter!*
+   - _Gesicherte Antwort:_ Sachangabe: Fische. Einzelfall: Ottos Eimer. Meinung: „der süßeste Otter“. Nur die Sachangabe passt.
+6. **Sprachdetektiv**
+   - _Vier Wortarten:_ **Nomen** benennen Tiere und Dinge: *Otter, Fell*. Du schreibst sie groß. / **Artikel** begleiten Nomen: *der Otter, das Fell*. / **Verben** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*. / **Adjektive** beschreiben Merkmale: *braun, dicht*.
    - _Wörter zerlegen:_ *der Körper + die Länge = die Körperlänge* / Das letzte Nomen bestimmt den Artikel.
    - _Frage:_ „Der Otter schwimmt.“ Welche Wortarten findest du?
    - _Gesicherte Antwort:_ *Der*: Artikel; *Otter*: Nomen; *schwimmt*: Verb.
-6. **Informationen ordnen**
-   - _So gehst du vor:_ Lies den Auftrag. Suche passende Angaben in Bild und Text. Notiere Stichwörter unter Überschriften.
-   - _Beispiel: geordnete Sammlung:_ **Überblick:** Fischotter; Kopf und Rumpf 60–90 cm, Schwanz zusätzlich / **Aussehen:** langer Körper; kurze Beine; dunkelbraune Oberseite; lange Tasthaare / **Lebensraum:** Flüsse und Seen; geschützte Ufer / **Nahrung:** vor allem Fische
+7. **Informationen ordnen**
+   - _Beispiel: nur Sachangaben, geordnet:_ **Überblick:** Fischotter; ohne Schwanz 60–90 cm / **Aussehen:** langer, schmaler Körper; kurze Beine; dunkelbraunes Fell oben / **Lebensraum:** Flüsse und Seen; Ufer mit Verstecken / **Nahrung:** vor allem Fische; Frösche, Krebse
    - _Frage:_ Wohin gehört „breiter, flacher Kopf“?
-   - _Gesicherte Antwort:_ Unter Aussehen. Eine genaue Angabe kann im Bild und im Text vorkommen. Zeige, welche Quelle du genutzt hast.
+   - _Gesicherte Antwort:_ Unter Aussehen. Zeige, ob du die Angabe im Bild oder im Interview gefunden hast.
 
-**Abschlusssatz:** Bearbeite Blatt 1–4. Vertiefungen sind freiwillig. Danach zeigst du dein Können im Gelingensnachweis. Vier von fünf Zielen reichen für Etappe 2.
+**Abschlusssatz:** Bearbeite Blatt 1–4 mit dem Fischotter-Interview. Vertiefungen sind freiwillig. Danach zeigst du dein Können im Gelingensnachweis. Vier von fünf Zielen reichen für Etappe 2.
 
-**Materialseite „Der Fischotter“** (Foto: Foto: Dave Pape · Public Domain):
-> Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern. Er hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Der Fischotter frisst vor allem Fische, aber auch Frösche und Krebse.
-
-Wörterhilfe: Rumpf = Körper ohne Kopf, Beine und Schwanz; Tasthaare = Haare zum Ertasten; Ufer = Rand eines Flusses oder Sees
+**Materialbasis:** Fotoseite + Interview fischotter (Text siehe 8.0; Paket: erst Material, dann Blätter)
 
 **Pflichtblätter:**
 
@@ -188,11 +292,11 @@ Wörterhilfe: Rumpf = Körper ohne Kopf, Beine und Schwanz; Tasthaare = Haare zu
   - Lies: A: *Der Fischotter ist toll. Sein Fell ist schön.* / B: *Der Fischotter hat einen langen Körper und kurze Beine. Sein Fell ist oben dunkelbraun.*
   - Pflicht: Schreibe A oder B ins Heft. Welcher Text hilft dir, das Tier vorzustellen? Begründe. | Notiere zwei genaue Angaben aus Text B. Erkläre: Warum hilft „toll“ beim Beschreiben wenig?
   - Pflicht – Sprachdetektiv: Schreibe den Satz ins Heft: *„Der Fischotter hat einen langen Körper.“* Schreibe **N** über die Nomen und **A** über die Artikel.
-  - Freiwillige Vertiefung: Ersetze *„Der Fischotter hat schöne Beine“* durch eine genaue Angabe aus dem Material. Erkläre den Unterschied.
+  - Freiwillige Vertiefung: Ersetze *„Der Fischotter hat schöne Beine“* durch eine genaue Angabe aus dem Interview. Erkläre den Unterschied.
   - Kiosk-Tipp: Welcher Text sagt dir, wie der Fischotter aussieht? Suche Wörter für Form, Länge und Farbe.
   - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1: Text B hilft. Er nennt Körperform, Beinlänge und Fellfarbe. Text A enthält nur Meinungen. /  / Aufgabe 2 – zwei genaue Angaben, zum Beispiel: langer Körper; kurze Beine; Fell oben dunkelbraun. / „toll“ sagt nur, wie jemand das Tier findet. Damit kannst du dir das Tier nicht vorstellen. /  / Sprachdetektiv: / A (Artikel): Der, einen / N (Nomen): Fischotter, Körper
-  - Kiosk-Vertiefung: Beispiel: „Der Fischotter hat kurze Beine.“ / „schön“ ist eine Meinung. „kurz“ kannst du am Material prüfen.
-- **Blatt 2 · Schau genau hin** (Du brauchst: Fischotter-Material · Heft · Bleistift)
+  - Kiosk-Vertiefung: Beispiel: „Der Fischotter hat kurze Beine.“ (Interview, Z. 19–20) / „schön“ ist eine Meinung. „kurz“ kannst du im Interview und am Foto prüfen.
+- **Blatt 2 · Schau genau hin** (Du brauchst: Fischotter-Foto · Heft · Bleistift)
   - Pflicht: Betrachte das Foto. Notiere im Heft zwei sichtbare Körperteile. Ergänze zu jedem ein genaues Merkmal. | Bilde daraus zwei vollständige Sätze. | Zeige einem anderen Kind oder der Lehrkraft beide Bildstellen. Prüfe: Passen deine Sätze zum Foto?
   - Pflicht – Sprachdetektiv: Markiere in einem deiner Sätze ein Adjektiv mit **Adj**. Schreibe das Nomen dazu, das es genauer beschreibt.
   - Freiwillige Vertiefung: Beschreibe zwei sichtbare Merkmale noch genauer. Prüfe am Foto: Was kannst du sicher sagen? Erfinde keine verdeckten Teile.
@@ -200,19 +304,19 @@ Wörterhilfe: Rumpf = Körper ohne Kopf, Beine und Schwanz; Tasthaare = Haare zu
   - Kiosk-Tipp: Schau auf Kopf und Gesicht. Was siehst du an der Schnauze? Wie groß sind die Ohren?
   - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1 – Beispiele: / Schnauze: lange Tasthaare / Ohren: klein / Kopf: breit und flach /  / Aufgabe 2 – Beispiele: / „An der Schnauze sitzen lange Tasthaare.“ / „Die Ohren sind klein.“ /  / Aufgabe 3: Zeige beide Stellen auf dem Foto. Andere sichtbare Merkmale sind auch richtig. /  / Sprachdetektiv – Beispiel: „lange“ (Adj) beschreibt das Nomen „Tasthaare“.
   - Kiosk-Vertiefung: Beispiel: „An der Schnauze sitzen viele lange Tasthaare. Sie stehen zur Seite ab.“ / Sicher sagen kannst du nur, was du siehst. Schwimmhäute und die ganze Körperlänge erkennst du auf dem Foto nicht.
-- **Blatt 3 · Bild oder Text?** (Du brauchst: Fischotter-Material · Merkblatt 1 · Heft · Bleistift)
-  - Pflicht: Lies den Text mit den Leseschritten von Merkblatt 1. Notiere: / a) Wo lebt der Fischotter? / b) Was frisst er vor allem? / c) Wie lang sind Kopf und Rumpf? Nenne die Einheit. Zählt der Schwanz mit? | Markiere die Textstellen im Material: **L** für Lebensraum, **N** für Nahrung, **M** für Maß. Schreibe „Text“ hinter deine Antworten. | Partnercheck: Zeige einem anderen Kind deine Textstellen. Erkläre, was du gefunden hast. Passt die Stelle zur Frage? Prüft Unterschiede gemeinsam im Text. | Notiere ein sichtbares Merkmal mit „Bild“. Zeige die Bildstelle. Steht es auch im Text?
-  - Pflicht – Sprachdetektiv: Unterstreiche auf deiner Fischotter-Materialseite zwei Verben. Schreibe **V** darüber.
-  - Freiwillige Vertiefung: *„Der Fischotter auf dem Foto ist genau 80 cm lang.“* Kannst du das belegen? Begründe mit dem Material.
-  - Kiosk-Tipp: Nutze die Leseschritte. Suche im Text die Wörter „lebt“, „frisst“ und „Zentimeter“. Lies auch den Satz danach.
-  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1: / a) an Flüssen und Seen mit geschützten Ufern (Text) / b) vor allem Fische (Text) / c) etwa 60 bis 90 Zentimeter. Der Schwanz zählt nicht mit. (Text) /  / Aufgabe 2: L steht bei „lebt an Flüssen und Seen mit geschützten Ufern“. N steht bei „frisst vor allem Fische“. M steht bei „etwa 60 bis 90 Zentimeter“. /  / Aufgabe 3: Habt ihr verschiedene Stellen markiert? Lest die Frage noch einmal und prüft gemeinsam im Text. /  / Aufgabe 4 – Beispiel: „kleine Ohren (Bild)“. Kleine Ohren stehen nicht im Text. / Auch richtig: „lange Tasthaare (Bild)“. Das steht auch im Text. /  / Sprachdetektiv – Verben im Text, zum Beispiel: lebt, hat, ist, sitzen, sind, kommt, frisst.
-  - Kiosk-Vertiefung: Nein, das kannst du nicht belegen. Im Text steht nur: Kopf und Rumpf sind etwa 60 bis 90 Zentimeter lang. Wie lang genau dieser Fischotter ist, zeigt das Foto nicht. Der Schwanz kommt noch dazu.
-- **Blatt 4 · Informationen ordnen** (Du brauchst: Fischotter-Material · Heft)
-  - Pflicht: Schreibe ins Heft: Überblick · Aussehen · Lebensraum · Nahrung. | Ordne diese Angaben zu: / *Fischotter · kurze Beine · Fische · Flüsse und Seen · Kopf und Rumpf: 60–90 cm · dunkelbraune Oberseite · Frösche und Krebse · geschützte Ufer* | Ergänze den Hinweis zum Schwanz und zwei weitere äußere Merkmale aus dem Text. Hast du vier verschiedene Merkmale?
+- **Blatt 3 · Im Interview suchen** (Du brauchst: Fischotter-Interview · Fischotter-Foto · Merkblatt 1 · Heft)
+  - Pflicht: Lies das Interview mit den Leseschritten von Merkblatt 1. Notiere: / a) Wo leben Fischotter? / b) Was fressen sie vor allem? / c) Wie lang sind Fischotter ohne Schwanz? Nenne die Einheit. | Markiere die Stellen im Interview: **L** für Lebensraum, **N** für Nahrung, **M** für Maß. Schreibe die Zeile hinter deine Antwort, zum Beispiel „Z. 12“. | Im Interview stehen zwei Längen. Welche gilt für alle Fischotter? Welche gilt nur für Otto? Begründe. | Partnercheck: Zeige einem anderen Kind deine Stellen. Passt die Stelle zur Frage? Prüft Unterschiede gemeinsam. | Notiere ein sichtbares Merkmal mit „Bild“. Zeige die Bildstelle. Steht es auch im Interview?
+  - Pflicht – Sprachdetektiv: Unterstreiche im Interview zwei Verben. Schreibe **V** darüber.
+  - Freiwillige Vertiefung: Suche im Interview zwei Stellen, die nur Otto betreffen. Erkläre, warum sie nicht in eine Tierbeschreibung gehören.
+  - Kiosk-Tipp: Nutze die Leseschritte. Suche im Interview die Wörter „leben“, „fressen“ und „Zentimeter“. Lies auch den Satz danach. Die Zeilennummern stehen am Rand.
+  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1: / a) an Flüssen und Seen; Ufer, an denen sie sich verstecken können (Z. 11–12) / b) vor allem Fische, auch Frösche und Krebse (Z. 7–8) / c) etwa 60 bis 90 Zentimeter ohne Schwanz (Z. 28–29) /  / Aufgabe 2: L bei Z. 11–12 · N bei Z. 7–8 · M bei Z. 28–29. /  / Aufgabe 3: „60 bis 90 Zentimeter“ gilt für alle Fischotter. „80 Zentimeter“ gilt nur für Otto (Z. 26–27). Otto wurde gemessen – das ist ein Einzelfall. /  / Aufgabe 4: Habt ihr verschiedene Stellen markiert? Lest die Frage noch einmal und prüft gemeinsam. /  / Aufgabe 5 – Beispiel: „lange Tasthaare (Bild)“. Das steht auch im Interview (Z. 35). Auch richtig: „kleine Ohren (Bild)“ – steht in Z. 23. /  / Sprachdetektiv – Verben, zum Beispiel: mache, gibt, fressen, leben, brauchen, ist, sind.
+  - Kiosk-Vertiefung: Zum Beispiel: „Otto wartet am Gitter und pfeift.“ (Z. 3) und „Otto bekommt jeden Tag einen kleinen Eimer voll.“ (Z. 6) / Das gilt nur für Otto im Zoo. Eine Tierbeschreibung erklärt, wie alle Fischotter sind.
+- **Blatt 4 · Informationen ordnen** (Du brauchst: Fischotter-Interview · Heft)
+  - Pflicht: Schreibe ins Heft: Überblick · Aussehen · Lebensraum · Nahrung. | Ordne die Angaben zu. Drei Angaben passen nicht in eine Tierbeschreibung. Streiche sie. / *Fischotter · kurze Beine · Otto bekommt einen Eimer Fisch · Fische · Flüsse und Seen · der süßeste Otter der Welt · ohne Schwanz 60–90 cm · dunkelbraunes Fell oben · Otto ist 80 cm lang · Frösche und Krebse · Ufer mit Verstecken* | Suche im Interview drei weitere Angaben zum Aussehen. Schreibe die Zeile dazu. Hast du jetzt vier verschiedene Merkmale?
   - Pflicht – Sprachdetektiv: Zerlege „Körperlänge“ im Heft in zwei Nomen. Schreibe beide mit Artikel auf. Ergänze den Artikel zu „Körperlänge“.
   - Freiwillige Vertiefung: Ordne deine Angaben zum Aussehen in einer anderen sinnvollen Reihenfolge. Erkläre deine Wahl.
-  - Kiosk-Tipp: Frage bei jeder Angabe: Geht es um das Aussehen, den Wohnort oder das Futter? Tiername und Maß gehören zum Überblick.
-  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 2: / Überblick: Fischotter; Kopf und Rumpf: 60–90 cm / Aussehen: kurze Beine; dunkelbraune Oberseite / Lebensraum: Flüsse und Seen; geschützte Ufer / Nahrung: Fische; Frösche und Krebse /  / Aufgabe 3: / Überblick: Der Schwanz kommt noch dazu. / Aussehen, zum Beispiel: lang gestreckter Körper; breiter, flacher Kopf; lange Tasthaare. / Dann hast du mindestens vier verschiedene Merkmale. /  / Sprachdetektiv: der Körper + die Länge = die Körperlänge
+  - Kiosk-Tipp: Frage bei jeder Angabe zuerst: Gilt das für alle Fischotter? Wenn nicht: streichen. Dann: Aussehen, Wohnort oder Futter? Tiername und Maß gehören zum Überblick.
+  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 2: / Überblick: Fischotter; ohne Schwanz 60–90 cm / Aussehen: kurze Beine; dunkelbraunes Fell oben / Lebensraum: Flüsse und Seen; Ufer mit Verstecken / Nahrung: Fische; Frösche und Krebse / Gestrichen: „Otto bekommt einen Eimer Fisch“ und „Otto ist 80 cm lang“ (Einzelfall), „der süßeste Otter der Welt“ (Meinung). /  / Aufgabe 3 – zum Beispiel: langer, schmaler Körper (Z. 18–19); breiter, flacher Kopf (Z. 20); kleine Ohren (Z. 23); dichtes Fell (Z. 32); lange Tasthaare (Z. 35); Schwimmhäute zwischen den Zehen (Z. 36–37). /  / Sprachdetektiv: der Körper + die Länge = die Körperlänge
   - Kiosk-Vertiefung: Zum Beispiel von oben nach unten: Kopf, Körper, Beine, Fell. Oder vom großen zum kleinen Merkmal. / Erkläre, warum deine Reihenfolge beim Vorstellen hilft. Mehrere Reihenfolgen sind richtig.
 
 **Gelingensnachweis 1 „Tierdetektiv“ (Varianten A, B)** – 4 von 5 Indikatoren:
@@ -220,16 +324,16 @@ Wörterhilfe: Rumpf = Körper ohne Kopf, Beine und Schwanz; Tasthaare = Haare zu
 | ID | Kind-Formulierung | erreicht, wenn | Übe mit |
 |---|---|---|---|
 | E1.1 | Ich nenne zwei verschiedene äußere Merkmale genau. | zwei verschiedene äußere Merkmale richtig und genau benannt | Blatt 2 |
-| E1.2 | Ich zeige, was ich im Bild und was ich im Text gefunden habe. | ein Bildbeleg und ein Textbeleg richtig zugeordnet und gezeigt | Blatt 3 |
-| E1.3 | Ich gebe die Länge von Kopf und Rumpf mit Einheit an. | Kopf-Rumpf-Länge mit Einheit und ohne mitgerechneten Schwanz richtig angegeben | Blatt 3 |
-| E1.4 | Ich finde Lebensraum und Nahrung im Text. | Lebensraum und Nahrung dem Text richtig entnommen | Blatt 3 |
-| E1.5 | Ich ordne Angaben unter passende Überschriften. | Angaben unter passenden Überschriften | Blatt 4 |
+| E1.2 | Ich zeige, was ich im Bild und was ich im Interview gefunden habe. | je ein Beleg aus Bild und Interview richtig gezeigt | Blatt 3 |
+| E1.3 | Ich gebe an, wie lang Fischotter sind – mit Einheit. | 60–90 cm ohne Schwanz, mit Einheit; Ottos 80 cm als Einzelfall erkannt | Blatt 3 |
+| E1.4 | Ich finde Lebensraum und Nahrung im Interview. | Lebensraum und Nahrung dem Interview richtig entnommen | Blatt 3 |
+| E1.5 | Ich ordne Sachangaben unter passende Überschriften. | Sachangaben passend zugeordnet; keine Meinung, kein Einzelfall | Blatt 4 |
 
-Aufgaben: 1) Merkmale und Quellen: Notiere zwei verschiedene genaue äußere Merkmale: eines aus dem Bild, ein anderes aus dem Text. Kreise auf dem Foto die Bildstelle ein. Unterstreiche im Text die Textstelle. · 2) Das Maß: Notiere die Länge von Kopf und Rumpf mit Einheit. Kreuze an, ob der Schwanz mitgezählt wird. · 3) Informationen ordnen: Notiere unter jeder Überschrift eine richtige Angabe aus dem Text.
+Aufgaben: 1) Merkmale und Quellen: Notiere zwei verschiedene äußere Merkmale: eines aus dem Bild, eines aus dem Interview. Kreise die Bildstelle ein. Unterstreiche die Interviewstelle. · 2) Das Maß: Im Interview stehen zwei Längen. Notiere, wie lang Fischotter sind. Kreuze an, für wen die 80 cm gelten. · 3) Informationen ordnen: Notiere unter jeder Überschrift eine Sachangabe aus dem Interview.
 
-- Variante A Materialtext: Der Fischotter hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Er lebt an Flüssen und Seen. Er frisst vor allem Fische, aber auch Frösche und Krebse. Kopf und Rumpf sind zusammen 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu.
+- Variante A Materialtext: **Wo leben Fischotter?** An Flüssen und Seen, gut versteckt am Ufer. **Was frisst Otto?** Einen Eimer Fisch am Tag. Fischotter fressen vor allem Fische, Frösche und Krebse. **Wie sieht er aus?** Der Körper ist lang und schmal, die Beine sind kurz. Er ist der schönste Otter im Zoo! **Wie groß ist Otto?** Otto ist 80 Zentimeter lang. Fischotter sind ohne Schwanz meistens 60 bis 90 Zentimeter lang.
 
-- Variante B Materialtext: An Flüssen und Seen lebt der Fischotter. Zu seiner Nahrung gehören Fische, Frösche und Krebse. Sein Kopf ist breit und flach. Seine Beine sind kurz. Kopf und Rumpf messen zusammen 60 bis 90 Zentimeter. Der Schwanz wird dabei nicht mitgemessen.
+- Variante B Materialtext: **Was frisst Otto?** Am liebsten Fisch. Fischotter fressen hauptsächlich Fische, Frösche und Krebse. **Wie lang ist Otto?** Wir haben 80 Zentimeter gemessen, ohne Schwanz. Fischotter sind meistens 60 bis 90 Zentimeter lang. **Woran erkennt man einen Fischotter?** Der Kopf ist breit und flach. Ehrlich gesagt ist Otto der süßeste Otter der Welt! **Wo wohnen Fischotter?** An Flüssen und Seen.
 
 ### Etappe 2 · Sachlich und genau formulieren
 
@@ -238,160 +342,157 @@ Aufgaben: 1) Merkmale und Quellen: Notiere zwei verschiedene genaue äußere Mer
 **Input und Merkblatt 2 – Abschnitte (identisch):**
 
 1. **Genau statt wertend**
-   - _Sachlich beschreiben:_ Beschreibe überprüfbare Merkmale. „schön“ und „süß“ sagen nur, wie jemand etwas findet. Nutze Angaben aus deinem Material.
+   - _Sachlich beschreiben:_ Beschreibe überprüfbare Merkmale. „schön“ und „süß“ sagen nur, wie jemand etwas findet. Nutze Angaben aus dem Interview.
    - _Genaue Wörter wählen:_ Nutze genaue Nomen, Verben und Adjektive. / *„Das Tier bewegt sich im Wasser.“* wird genauer: *„Der Fischotter schwimmt im Wasser.“* / *„Sein Fell ist oben dunkelbraun.“* ist ebenfalls genau. Du musst „ist“ nicht immer ersetzen.
    - _Wörter zusammensetzen:_ Aus *Fell* und *Farbe* wird die *Fellfarbe*. Das letzte Wort bestimmt den Artikel: *die Farbe → die Fellfarbe*. **Fachwörter** benennen etwas genau. Kläre ihre Bedeutung.
-   - _Die Wörterhilfe:_ Auf der Wörterhilfe findest du genaue Wörter für Körperteile. Wähle nur Wörter, die zu deinem Tier passen. Prüfe die Angabe am Bild oder im Text.
+   - _Die Wörterhilfe:_ Auf der Wörterhilfe findest du genaue Wörter für Körperteile. Wähle nur Wörter, die zu deinem Tier passen. Prüfe am Bild oder im Interview.
    - _Frage:_ Was ist genauer: „schönes Fell“ oder „oben dunkelbraunes Fell“?
    - _Gesicherte Antwort:_ „oben dunkelbraunes Fell“. Die Farbe ist überprüfbar.
-2. **Fische genau beschreiben**
+2. **Aus Interview-Sprache wird Sachsprache**
+   - _Im Interview:_ Frau Berger spricht mit uns. Sie sagt *ich* und *unser Otto*, sie vergleicht und sagt ihre Meinung. Im Sachtext schreibst du über **alle Fischotter**, im **Präsens** und **ohne Meinung**.
+   - _Beispiel:_ Interview: *„Sein Körper ist lang und schmal, fast wie ein Torpedo.“* / Sachtext: *Der Fischotter hat einen langen, schmalen Körper.*
+   - _Frage:_ Mache sachlich: *„Und der Kopf ist breit und flach. Ich sage immer: wie ein Brett mit Nase.“*
+   - _Gesicherte Antwort:_ *Der Kopf des Fischotters ist breit und flach.* Den Vergleich und „Ich sage immer“ lässt du weg.
+3. **Fische genau beschreiben**
    - _Ungenau:_ *„Der Fisch ist hübsch.“* Welcher Fisch ist gemeint? Das weiß niemand.
    - _Genau:_ *„Der Fisch hat einen kleinen Körper und eine sehr große Schwanzflosse.“* Das ist Fisch D.
    - _Rätsel mit einem Partner:_ Beschreibe einen Fisch mit zwei genauen Merkmalen. Verrate nicht, welchen du meinst. Dein Partner zeigt auf den passenden Fisch.
    - _Frage:_ Verbessere: „Der Fisch sieht cool aus.“ Nenne ein genaues Merkmal, damit man den Fisch erkennt.
    - _Gesicherte Antwort:_ Zum Beispiel: *„Der Fisch hat lange Flossen oben und unten.“* Das ist Fisch C. Andere genaue Merkmale sind auch richtig.
-3. **Im Präsens beschreiben**
+4. **Im Präsens beschreiben**
    - _Warum Präsens?:_ Tierbeschreibungen sagen, was allgemein für ein Tier gilt. Deshalb stehen sie meistens im **Präsens**, der Gegenwart: *Der Fischotter lebt an Gewässern.*
    - _Grundform und gebeugte Form:_ Im Wörterbuch steht die **Grundform**: *leben, fressen, sein*. / Im Satz beugst du das Verb passend: / *leben → er lebt* / *fressen → er frisst* / *sein → sein Fell ist dicht.*
    - _Subjekt und Verb:_ Das **Subjekt** ist der Satzgegenstand. Frage: Wer oder was schwimmt? / *Der Otter schwimmt. Die Otter schwimmen.*
    - _Frage:_ Was ändert sich?
    - _Gesicherte Antwort:_ Bei mehreren Ottern heißt das Verb „schwimmen“ statt „schwimmt“.
-4. **Vollständige Sätze**
+5. **Vollständige Sätze**
    - _Ein vollständiger Satz:_ Verbinde die Angaben zu einem verständlichen Satz. Achte darauf, dass Subjekt und Verb zusammenpassen: *Der Fischotter lebt. Die Fischotter leben.*
    - _Beispiel:_ Wortgruppe: *sein Fell – oben dunkelbraun – sein* / Satz: *Sein Fell ist oben dunkelbraun.* / Der Satz ist vollständig und verständlich.
    - _Frage:_ Was fehlt bei „Der Fischotter an einem See“?
    - _Gesicherte Antwort:_ Das Verb. Vollständig heißt es: *Der Fischotter lebt an einem See.*
-5. **Sätze prüfen**
-   - _Prüfe jeden Satz:_ Passt die Aussage zum Material? / Ist der Satz vollständig? / Steht das Verb im Präsens und passt es? / Sind die Wörter genau? / Beginnen Satz und Nomen groß? / Steht am Ende ein Punkt?
-   - _Beispiel verbessern:_ *„sein fell war schön“* wird zu: *„Sein Fell ist oben dunkelbraun.“* Die Angabe stammt aus dem Material.
+6. **Sätze prüfen**
+   - _Prüfe jeden Satz:_ Passt die Aussage zum Interview? Gilt sie für alle Tiere? / Ist der Satz vollständig? / Steht das Verb im Präsens und passt es? / Sind die Wörter genau? / Beginnen Satz und Nomen groß? / Steht am Ende ein Punkt?
+   - _Beispiel verbessern:_ *„sein fell war schön“* wird zu: *„Sein Fell ist oben dunkelbraun.“* Die Angabe stammt aus dem Interview.
 
-**Abschlusssatz:** Bearbeite die Pflichtaufgaben auf Blatt 5 und 6. Vertiefungen sind freiwillig. Im Gelingensnachweis bildest du drei Sätze und verbesserst einen Satz. Fünf Ziele: Materialtreue, vollständige Sätze, passende Verben im Präsens, genaue statt wertende Wörter, Großschreibung und Punkte. Bei vier von fünf Zielen gehst du weiter zu Etappe 3.
+**Abschlusssatz:** Bearbeite die Pflichtaufgaben auf Blatt 5 und 6 mit dem Fischotter-Interview. Vertiefungen sind freiwillig. Im Gelingensnachweis bildest du drei Sätze und machst aus einer Meinung einen sachlichen Satz. Bei vier von fünf Zielen gehst du weiter zu Etappe 3.
+
+**Materialbasis:** Interview fischotter (Text siehe 8.0; Paket: erst Material, dann Blätter)
 
 **Pflichtblätter:**
 
-- **Blatt 5 · Treffende Wörter** (Du brauchst: Heft · Merkblatt 2 · Wörterhilfe)
-  - Material und Wörterhilfe: Fell oben: dunkelbraun. Kopf: breit und flach. Im Wasser schwimmt der Fischotter. / **Tasthaare:** Haare zum Ertasten. / **Schwimmhäute:** Haut zwischen den Zehen.
-  - Pflicht – Schreibe ins Heft: Ersetze „schönes Fell“ und „toller Kopf“ durch genaue Angaben aus dem Material. | Bilde Wörter mit Artikel: *Tast + Haare*; *Schwimm + Häute*. Erkläre beide mit der Wörterhilfe. | Verbessere mit dem Material: *„Das Tier bewegt sich im Wasser.“* Nenne das Tier genau. Nutze ein treffendes Verb.
+- **Blatt 5 · Treffende Wörter** (Du brauchst: Fischotter-Interview · Heft · Merkblatt 2 · Wörterhilfe)
+  - Aus dem Interview: *„Sein Körper ist lang und schmal, fast wie ein Torpedo.“* / *„Deshalb ist er so ein toller Schwimmer.“* / **Tasthaare:** Haare zum Ertasten. **Schwimmhäute:** Haut zwischen den Zehen.
+  - Pflicht – Schreibe ins Heft: Ersetze „schönes Fell“ und „toller Kopf“ durch genaue Angaben aus dem Interview. Schreibe die Zeile dazu. | Mache den Torpedo-Satz sachlich: Schreibe über den Körper des Fischotters ohne Vergleich. | „toller Schwimmer“ ist eine Meinung. Was hat der Fischotter zum Schwimmen? Schreibe einen sachlichen Satz. | Bilde Wörter mit Artikel: *Tast + Haare*; *Schwimm + Häute*. Erkläre beide mit der Wörterhilfe.
   - Freiwillige Vertiefung – Vertiefung: Schau dir das Aquarium auf Merkblatt 2 an. Verbessere: *„Der Fisch ist lustig.“* Nenne ein genaues Merkmal, damit man den Fisch erkennt. Schreibe einen ganzen Satz im Präsens.
-  - Kiosk-Tipp: Lies das Material oben auf dem Blatt. Wie ist das Fell oben? Wie ist der Kopf? Was macht der Fischotter im Wasser?
-  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1: „oben dunkelbraunes Fell“ und „breiter, flacher Kopf“ /  / Aufgabe 2: / die Tasthaare: Haare zum Ertasten / die Schwimmhäute: Haut zwischen den Zehen /  / Aufgabe 3: „Der Fischotter schwimmt im Wasser.“
+  - Kiosk-Tipp: Suche im Interview die Stellen zu Fell (Z. 32–33) und Kopf (Z. 20). Was hat der Fischotter zwischen den Zehen (Z. 36–37)?
+  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1: „oben dunkelbraunes Fell“ (Z. 32–33) und „breiter, flacher Kopf“ (Z. 20) /  / Aufgabe 2: „Der Fischotter hat einen langen, schmalen Körper.“ Der Vergleich mit dem Torpedo fällt weg. /  / Aufgabe 3: „Der Fischotter hat Schwimmhäute zwischen den Zehen.“ „toll“ fällt weg. /  / Aufgabe 4: / die Tasthaare: Haare zum Ertasten / die Schwimmhäute: Haut zwischen den Zehen
   - Kiosk-Vertiefung: Zum Beispiel: „Der Fisch hat einen runden Körper mit dunklen Streifen.“ Das ist Fisch A. / Oder: „Der Fisch hat einen langen, schmalen Körper mit dunklen Punkten.“ Das ist Fisch B. / Wichtig: Das Merkmal passt nur zu einem Fisch.
-- **Blatt 6 · Sachliche Sätze** (Du brauchst: Heft · Merkblatt 2)
-  - Pflicht – Drei neue Sätze: Schreibe im Heft je einen vollständigen Satz im Präsens: *seine Beine – kurz – sein* | *der Fischotter – auch Krebse – fressen* | *an der Schnauze – lange Tasthaare – sitzen*
-  - Pflicht – Verbessern und prüfen: Verbessere: *„der fischotter lebte an schönen ufern“*. / Material: *Er lebt an geschützten Ufern.* Prüfe alle vier Sätze mit Merkblatt 2. Achte auch auf große Satzanfänge und Nomen sowie Punkte.
+- **Blatt 6 · Sachliche Sätze** (Du brauchst: Fischotter-Interview · Heft · Merkblatt 2)
+  - Pflicht – Aus dem Interview wird ein Sachsatz: Schreibe aus jeder Stelle einen vollständigen, sachlichen Satz im Präsens über den Fischotter: *„Die Beine sind dagegen richtig kurz.“* | *„Sie fangen aber auch Frösche und Krebse.“* | *„Die sind ganz klein.“* (Gemeint sind die Ohren.)
+  - Pflicht – Verbessern und prüfen: Verbessere: *„der fischotter lebte an schönen ufern“*. / Im Interview: *„Sie brauchen Ufer, an denen sie sich verstecken können.“* Prüfe alle vier Sätze mit Merkblatt 2. Achte auch auf große Satzanfänge und Nomen sowie Punkte.
   - Pflicht – Verben untersuchen: Unterstreiche im Heft die Verben in deinen vier Sätzen. Schreibe zu „frisst“ die Grundform. | Schreibe Satz 2 noch einmal für mehrere Fischotter. Passe das Verb an.
   - Freiwillige Vertiefung – Vertiefung: Verbinde zwei deiner Sätze mit „und“. Erkläre, warum das Präsens zu einer Tierbeschreibung passt.
-  - Kiosk-Tipp: Stelle die Wortgruppen so um, dass ein ganzer Satz entsteht. Das Verb passt zum Subjekt: er frisst, die Beine sind.
-  - Kiosk-Lösung (Lösung und Vergleich): 1. Seine Beine sind kurz. / 2. Der Fischotter frisst auch Krebse. / 3. An der Schnauze sitzen lange Tasthaare. / 4. Der Fischotter lebt an geschützten Ufern. /  / 5. Verben: sind, frisst, sitzen, lebt. Grundform von „frisst“: fressen. / 6. Die Fischotter fressen auch Krebse. /  / Andere Reihenfolgen im Satz sind richtig, wenn der Satz vollständig ist.
-  - Kiosk-Vertiefung: Beispiel: „Der Fischotter lebt an geschützten Ufern und frisst auch Krebse.“ / Das Präsens passt, weil die Beschreibung sagt, was allgemein für den Fischotter gilt.
+  - Kiosk-Tipp: Schreibe immer „Der Fischotter …“ oder „Fischotter …“. Lass „dagegen“, „aber“ und „ganz“ weg, wenn sie nichts Genaues sagen. Das Verb passt zum Subjekt: er frisst, die Beine sind.
+  - Kiosk-Lösung (Lösung und Vergleich): 1. Der Fischotter hat kurze Beine. / Seine Beine sind kurz. / 2. Der Fischotter frisst auch Frösche und Krebse. / 3. Der Fischotter hat kleine Ohren. / 4. Der Fischotter lebt an Ufern, an denen er sich verstecken kann. /  / 5. Verben, zum Beispiel: hat, frisst, lebt. Grundform von „frisst“: fressen. / 6. Die Fischotter fressen auch Frösche und Krebse. /  / Andere Reihenfolgen im Satz sind richtig, wenn der Satz vollständig und sachlich ist.
+  - Kiosk-Vertiefung: Beispiel: „Der Fischotter hat kurze Beine und frisst auch Krebse.“ / Das Präsens passt, weil die Beschreibung sagt, was allgemein für den Fischotter gilt.
 - **Hilfekarte Wörterhilfe · Genaue Wörter für dein Tier** – Hinweis: Wähle nur Wörter, die zu deinem Tier passen. Prüfe die Angabe am Bild oder im Text. Tabelle: der Kopf: breit, schmal, flach, rund; die Schnauze: lang, kurz, spitz, breit; die Ohren: klein, groß, rund, spitz; das Fell: dicht, glatt, dunkelbraun, graubraun, gestreift, gefleckt; der Körper: lang gestreckt, schlank, kräftig; der Schwanz: lang, kurz, buschig, schmal, geringelt; die Beine / die Pfoten: kurz, lang, kräftig. Fachwörter: die Tasthaare: Haare zum Ertasten / die Schwimmhäute: Haut zwischen den Zehen / die Krallen: spitze Nägel an den Zehen / der Rumpf: Körper ohne Kopf, Beine und Schwanz. Genaue Verben: er lebt · er frisst · er schwimmt · er klettert · er gräbt · er hat · er ist.
 
 **Gelingensnachweis 2 „Genaue Sätze“ (Varianten A, B)** – 4 von 5 Indikatoren:
 
 | ID | Kind-Formulierung | erreicht, wenn | Übe mit |
 |---|---|---|---|
-| E2.1 | Meine Sätze passen zu den Angaben im Material. | alle vier Aussagen passen zu den vorgegebenen Tierinformationen | Blatt 5 |
+| E2.1 | Meine Sätze passen zu den Angaben aus dem Interview. | alle vier Aussagen passen zu den vorgegebenen Angaben | Blatt 5 |
 | E2.2 | Ich schreibe vollständige, verständliche Sätze. | alle vier Aussagen als vollständige, verständliche Sätze formuliert | Blatt 6 |
 | E2.3 | Meine Verben stehen im Präsens und passen zum Subjekt. | Verben im Präsens und passend zum Subjekt | Blatt 6 |
-| E2.4 | Ich ersetze eine Wertung durch eine genaue Angabe. | die Wertung ist durch eine genaue passende Angabe ersetzt | Blatt 5 |
+| E2.4 | Ich mache aus einer Meinung eine genaue Sachangabe. | Meinung/Vergleich weggelassen und durch die genaue Angabe ersetzt | Blatt 5 |
 | E2.5 | Ich schreibe Satzanfänge und Nomen groß und setze Punkte. | Satzanfänge und Nomen groß sowie Satzschlusspunkte in den vier Sätzen | Blatt 6 |
 
-Aufgaben: 1) Drei Sätze: Die Wortgruppen enthalten richtige Angaben. Schreibe daraus drei vollständige Sätze im Präsens. · 2) Einen Satz verbessern: Verbessere den Satz. Nutze die Angabe aus dem Material.
+Aufgaben: 1) Drei Sätze: Die Wortgruppen enthalten richtige Angaben. Schreibe daraus drei vollständige Sätze im Präsens. · 2) Aus einer Meinung wird ein Sachsatz: Das sagt Frau Berger. Schreibe daraus einen sachlichen Satz über den Fischotter. Nutze die genaue Angabe aus dem Interview.
 
-- Variante A: Wortgruppen der Fischotter – an Flüssen und Seen – leben | sein Kopf – breit und flach – sein | er – vor allem Fische – fressen; verbessern „der fischotter hatte schöne beine“ (Material: Seine Beine sind kurz.)
+- Variante A: Wortgruppen der Fischotter – an Flüssen und Seen – leben | sein Kopf – breit und flach – sein | er – vor allem Fische – fressen; verbessern „Ehrlich gesagt hat unser Otto die süßesten Beine der Welt!“ (Material: Die Beine sind dagegen richtig kurz.)
 
-- Variante B: Wortgruppen der Fischotter – auch an Seen – leben | sein Körper – lang gestreckt – sein | er – auch Frösche – fressen; verbessern „der fischotter hatte einen tollen schwanz“ (Material: Sein Schwanz ist kräftig.)
+- Variante B: Wortgruppen der Fischotter – auch an Seen – leben | sein Körper – lang gestreckt – sein | er – auch Frösche – fressen; verbessern „Sein Kopf ist so toll, wie ein Brett mit Nase!“ (Material: Der Kopf ist breit und flach.)
 
 ### Etappe 3 · Eine Tierbeschreibung schreiben und prüfen
 
-**Ziel (Kind):** Ich kann ein Tier mit Material sachlich, geordnet und verständlich beschreiben.
+**Ziel (Kind):** Ich kann aus einem Interview eine sachliche, geordnete und verständliche Tierbeschreibung schreiben.
 
 **Input und Merkblatt 3 – Abschnitte (identisch):**
 
-1. **Vom Material zum Plan**
-   - _Dein Ziel:_ Ich kann ein Tier mit Material sachlich, geordnet und verständlich beschreiben.
-   - _Ein Plan in Stichwörtern:_ **Überblick:** Fischotter; Kopf und Rumpf etwa 60–90 cm, Schwanz zusätzlich / **Aussehen:** lang gestreckter Körper; kurze Beine; oben dunkelbraunes Fell; breiter, flacher Kopf / **Lebensraum:** Flüsse und Seen mit geschützten Ufern / **Nahrung:** vor allem Fische, auch Frösche und Krebse
-   - _Frage:_ Was fehlt bei „60–90“?
-   - _Gesicherte Antwort:_ Einheit und Bezug. Richtig: Kopf und Rumpf etwa 60–90 cm, ohne Schwanz. Prüfe alle Angaben am Material.
+1. **Vom Interview zum Plan**
+   - _Dein Ziel:_ Ich kann aus einem Interview eine sachliche, geordnete und verständliche Tierbeschreibung schreiben.
+   - _Markieren und streichen:_ Markiere im Interview Sachangaben über **die Tierart**. Streiche Meinungen, Erlebnisse und Angaben nur über **das Zootier**. Aus einem Vergleich nimmst du nur die Sachangabe.
+   - _Ein Plan in Stichwörtern:_ **Überblick:** Fischotter; Marder; ohne Schwanz etwa 60–90 cm / **Aussehen:** langer, schmaler Körper; kurze Beine; oben dunkelbraunes Fell; breiter, flacher Kopf / **Lebensraum:** Flüsse und Seen; Ufer mit Verstecken / **Nahrung:** vor allem Fische, auch Frösche und Krebse
+   - _Frage:_ Gehört „Otto ist 80 Zentimeter lang“ in den Plan?
+   - _Gesicherte Antwort:_ Nein. Das gilt nur für Otto. In den Plan gehört das Maß der Art: ohne Schwanz etwa 60–90 cm.
 2. **Aus Stichwörtern wird Text**
    - _Vom Plan zum Satz:_ Stichwörter: *Kopf – breit, flach* / Satz: *Sein Kopf ist breit und flach.* / Nutze vollständige Sätze im Präsens. Schreibe sachlich und verbinde zusammengehörige Angaben.
-   - _Ein vollständiges Beispiel:_ **Der Fischotter** / *Der Fischotter hat einen lang gestreckten Körper. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Seine Beine sind kurz. Sein Fell ist oben dunkelbraun. Der Kopf ist breit und flach.* / *Er lebt an Flüssen und Seen mit geschützten Ufern. Er frisst vor allem Fische, aber auch Frösche und Krebse.*
+   - _Ein vollständiges Beispiel:_ **Der Fischotter** / *Der Fischotter gehört zu den Mardern. Er hat einen langen, schmalen Körper. Ohne Schwanz ist er etwa 60 bis 90 Zentimeter lang. Seine Beine sind kurz. Sein Fell ist oben dunkelbraun. Der Kopf ist breit und flach.* / *Er lebt an Flüssen und Seen. Dort braucht er Ufer mit Verstecken. Er frisst vor allem Fische, aber auch Frösche und Krebse.*
 3. **Mit Kriterien prüfen**
-   - _K1 · Informationen:_ Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung sind richtig im Text enthalten.
+   - _K1 · Informationen:_ Tiername, Maß der Art mit Einheit und Bezug, Lebensraum und Nahrung sind richtig im Text. Angaben nur über das Zootier gehören nicht hinein.
    - _K2 · Aussehen:_ Mindestens vier verschiedene äußere Merkmale sind genau beschrieben. Wiederholungen desselben Merkmals zählen nicht doppelt.
    - _K3 · Aufbau:_ Beginne mit Tiername und Überblick, etwa Körperform oder Maß. Ordne zusammengehörige Informationen. Absätze helfen.
-   - _K4 und K5 · Sprache:_ Schreibe sachlich und im Präsens. Nutze genaue Wörter. Verbinde vollständige, verständliche Sätze zu einem Text. Eine Stichwortliste reicht nicht.
+   - _K4 und K5 · Sprache:_ Schreibe sachlich und im Präsens, ohne Meinungen aus dem Interview. Nutze genaue Wörter. Verbinde vollständige, verständliche Sätze zu einem Text.
 4. **Prüfen und überarbeiten**
-   - _K6 · Schreibung:_ Prüfe Satzanfänge, Nomen und Satzschlüsse. Vergleiche schwierige Tierwörter mit dem Material. / **Zeige deine Prüfung:** Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Satzschlusspunkt.
+   - _K6 · Schreibung:_ Prüfe Satzanfänge, Nomen und Satzschlüsse. Vergleiche schwierige Tierwörter mit dem Interview. / **Zeige deine Prüfung:** Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Satzschlusspunkt.
    - _Ein Beispiel prüfen:_ *„sein kopf ist breit und flach“* wird zu: *„Sein Kopf ist breit und flach.“* / Groß: *Sein, Kopf*. Am Ende steht ein Punkt.
    - _Frage:_ Muss ein richtiger Satz verändert werden?
    - _Gesicherte Antwort:_ Nein. Zeige die Prüfung und begründe: „Mein Satz bleibt, weil …“
 
-**Abschlusssatz:** Bearbeite die Pflichtaufgaben auf Blatt 7–9. Vertiefungen sind freiwillig. Dein Abschluss ist die Probearbeit, dein letzter Gelingensnachweis. Fünf Ziele: Informationen, vier Merkmale, Aufbau, Sprache, Schreibung mit sichtbarer Prüfung. Vier von fünf = 80 %. Danach bekommst du Feedback für deinen nächsten Schritt.
+**Abschlusssatz:** Bearbeite die Pflichtaufgaben auf Blatt 7–9 mit einem Interview. Vertiefungen sind freiwillig. Dein Abschluss ist die Probearbeit, dein letzter Gelingensnachweis. Vier von fünf Zielen = 80 %. Danach bekommst du Feedback für deinen nächsten Schritt.
 
-**Materialseite „Das Erdmännchen“** (Foto: Foto: Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons · Graustufenfassung):
-> Das Erdmännchen lebt im trockenen Gras- und Buschland im südlichen Afrika. Es gehört zu den Mangusten. Die Tiere leben in Gruppen und nutzen unterirdische Baue. Ein Erdmännchen hat einen schlanken Körper. Sein Fell ist hellbraun bis graubraun; auf dem Rücken liegen dunklere Streifen. Um die Augen sind dunkle Flecken zu erkennen. Kopf und Rumpf sind zusammen etwa 25 bis 29 Zentimeter lang; der Schwanz kommt noch dazu. Der Schwanz ist lang und schmal. An den Pfoten sitzen lange Krallen, die beim Graben helfen. Es frisst vor allem Insekten, aber auch Spinnen und kleine Eidechsen.
-
-Wörterhilfe: Mangusten = eine Familie von Raubtieren; Rumpf = Körper ohne Kopf, Beine und Schwanz; Bau = unterirdisches Versteck mit Gängen
-
-**Materialseite „Der Rote Panda“** (Foto: Foto: Brunswyk · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung):
-> Der Rote Panda wird auch Kleiner Panda genannt. Er lebt in Bergwäldern Asiens, in denen Bambus wächst. Sein Fell ist am Rücken rötlich braun. Beine und Bauch sind dunkel bis schwarz. Im Gesicht hat er helle, fast weiße Bereiche. Kopf und Rumpf sind zusammen etwa 60 Zentimeter lang; der Schwanz kommt noch dazu. Sein langer, buschiger Schwanz hat hellere und dunklere Ringe. Beim Klettern helfen ihm Krallen und der Schwanz. Er frisst hauptsächlich Bambus, daneben zum Beispiel Beeren und Eier. Der Rote Panda ist besonders in der Dämmerung und nachts aktiv.
-
-Wörterhilfe: Rumpf = Körper ohne Kopf, Beine und Schwanz; Bambus = eine Pflanze mit festen Halmen; Dämmerung = Zeit zwischen Tageslicht und Dunkelheit
+**Materialbasis:** Interview erdmaennchen, Interview roter-panda (Text siehe 8.0; Paket: erst Material, dann Blätter)
 
 **Pflichtblätter:**
 
-- **Blatt 7 · Dein Schreibplan** (Du brauchst: Merkblatt 3 · Material zum Erdmännchen oder Roten Panda · Heft. Wähle ein Tier. Bleibe auf Blatt 7–9 bei diesem Tier.)
-  - Pflicht – Plane im Heft: Lies das Material und betrachte das Foto. | Schreibe diese Überschriften: Überblick · Aussehen · Lebensraum · Nahrung. | Ordne Stichwörter zu: Tiername, ein Maß mit Einheit und Bezug, vier verschiedene äußere Merkmale, Lebensraum und Nahrung. | Prüfe deine Angaben. Zeige eine passende Bildstelle und eine Textstelle.
+- **Blatt 7 · Dein Schreibplan** (Du brauchst: Merkblatt 3 · Interview zum Erdmännchen oder Roten Panda · Heft. Wähle ein Tier. Bleibe auf Blatt 7–9 bei diesem Tier.)
+  - Pflicht – Plane im Heft: Lies das Interview zu deinem Tier. Markiere Sachangaben über die Tierart. Streiche Meinungen und Angaben, die nur das Zootier betreffen. | Schreibe diese Überschriften: Überblick · Aussehen · Lebensraum · Nahrung. | Ordne Stichwörter zu: Tiername, das Maß der Art mit Einheit und Bezug, vier verschiedene äußere Merkmale, Lebensraum und Nahrung. Notiere die Zeile. | Prüfe jede Angabe: Gilt sie für alle Tiere dieser Art? Zeige eine Bildstelle und eine Interviewstelle.
   - Freiwillige Vertiefung – Vertiefung: Skizziere eine zweite sinnvolle Reihenfolge. Welche hilft dir besser beim Schreiben? Begründe kurz.
-  - Kiosk-Tipp: Lies dein Tiermaterial Satz für Satz. Markiere zuerst den Tiernamen und das Maß. Suche dann vier Angaben zum Aussehen.
-  - Kiosk-Lösung (Vergleichsplan): Erdmännchen / Überblick: Erdmännchen; Kopf und Rumpf etwa 25–29 cm, Schwanz zusätzlich / Aussehen: schlanker Körper; hellbraunes bis graubraunes Fell; dunkle Streifen auf dem Rücken; dunkle Flecken um die Augen; langer, schmaler Schwanz; lange Krallen / Lebensraum: trockenes Gras- und Buschland im südlichen Afrika / Nahrung: vor allem Insekten, auch Spinnen und kleine Eidechsen /  / Roter Panda / Überblick: Roter Panda; Kopf und Rumpf etwa 60 cm, Schwanz zusätzlich / Aussehen: Fell am Rücken rötlich braun; Beine und Bauch dunkel; helle Bereiche im Gesicht; langer, buschiger Schwanz mit Ringen / Lebensraum: Bergwälder Asiens mit Bambus / Nahrung: hauptsächlich Bambus, auch Beeren und Eier /  / Du brauchst nur vier Merkmale. Andere Stichwörter sind richtig, wenn sie zum Material passen.
+  - Kiosk-Tipp: Frage bei jedem Satz im Interview: Gilt das für alle Tiere dieser Art? Dann markieren. Geht es nur um Kiki oder Mei, oder sagt jemand seine Meinung? Dann streichen.
+  - Kiosk-Lösung (Vergleichsplan): Erdmännchen / Überblick: Erdmännchen; gehört zu den Mangusten (Z. 17); Kopf und Rumpf etwa 25–29 cm, Schwanz zusätzlich (Z. 24–25) / Aussehen: schlanker Körper; hellbraunes bis graubraunes Fell; dunklere Streifen auf dem Rücken (Z. 28–29); spitze Schnauze; dunkle Flecken um die Augen (Z. 29–30); langer, schmaler Schwanz (Z. 7); lange Krallen (Z. 13–14) / Lebensraum: trockenes Gras- und Buschland im Süden von Afrika; Gänge unter der Erde (Z. 11–13) / Nahrung: vor allem Insekten, auch Spinnen und kleine Eidechsen (Z. 20–21) / Gestrichen zum Beispiel: Kiki ist die Mutigste; Mehlwürmer am Morgen; „Total cool, oder?“; „wie eine Sonnenbrille“. /  / Roter Panda / Überblick: Roter Panda, auch Kleiner Panda (Z. 6); Kopf und Rumpf etwa 60 cm, Schwanz zusätzlich (Z. 30–31) / Aussehen: Fell am Rücken rötlich braun; Beine und Bauch dunkel; helle Bereiche im Gesicht (Z. 19–21); runder Kopf; große, spitze Ohren (Z. 21–22); langer, buschiger Schwanz mit Ringen (Z. 25–26) / Lebensraum: Bergwälder in Asien mit Bambus (Z. 15) / Nahrung: hauptsächlich Bambus, auch Beeren und Eier (Z. 10–11) / Gestrichen zum Beispiel: Mei schläft in der Astgabel; Weintrauben; „sieht aus wie ein Kuscheltier“; „das hübscheste Tier“. /  / Du brauchst nur vier Merkmale. Andere Stichwörter sind richtig, wenn sie für alle Tiere der Art gelten.
   - Kiosk-Vertiefung: Zum Beispiel: erst Lebensraum und Nahrung, dann das Aussehen. Oder das Aussehen von oben nach unten. / Wichtig: Tiername und Überblick stehen am Anfang.
-- **Blatt 8 · Deine Tierbeschreibung** (Du brauchst: deinen Plan von Blatt 7 · das gewählte Tiermaterial · Merkblatt 3 · Heft)
-  - Pflicht – Schreibe im Heft: Schreibe eine passende Überschrift. | Schreibe aus deinem Plan einen zusammenhängenden Text. Beginne mit Tiername und Überblick. | Beschreibe vier verschiedene äußere Merkmale. Ergänze Maß mit Einheit und Bezug, Lebensraum und Nahrung. | Schreibe sachlich, im Präsens und in vollständigen Sätzen. Lies deinen Text einmal leise vor.
+- **Blatt 8 · Deine Tierbeschreibung** (Du brauchst: deinen Plan von Blatt 7 · das gewählte Interview · Merkblatt 3 · Heft)
+  - Pflicht – Schreibe im Heft: Schreibe eine passende Überschrift. | Schreibe aus deinem Plan einen zusammenhängenden Text. Beginne mit Tiername und Überblick. | Beschreibe vier verschiedene äußere Merkmale. Ergänze Maß mit Einheit und Bezug, Lebensraum und Nahrung. | Schreibe sachlich, im Präsens und in vollständigen Sätzen. Übernimm keine Meinung und kein Erlebnis aus dem Interview. Lies deinen Text einmal leise vor.
   - Freiwillige Vertiefung – Vertiefung: Verbessere zwei Satzanfänge oder Bezüge. Zeige: Welches Wort macht jetzt klarer, was gemeint ist?
-  - Kiosk-Tipp: Mache aus jeder Zeile deines Plans einen ganzen Satz. Beginne mit „Das Erdmännchen …“ oder „Der Rote Panda …“.
-  - Kiosk-Lösung (Prüffragen und Teilbeispiele): Hier gibt es keine feste Lösung. Prüfe deinen Text: / Überschrift vorhanden? / Tiername und Überblick am Anfang? / Maß mit Einheit und Bezug? / Vier verschiedene äußere Merkmale? / Lebensraum und Nahrung? / Präsens und ganze Sätze? /  / Teilbeispiel Erdmännchen: „Das Erdmännchen hat einen schlanken Körper. Kopf und Rumpf sind zusammen etwa 25 bis 29 Zentimeter lang. Der Schwanz kommt noch dazu.“ /  / Teilbeispiel Roter Panda: „Der Rote Panda lebt in Bergwäldern Asiens. Dort wächst Bambus.“
+  - Kiosk-Tipp: Mache aus jeder Zeile deines Plans einen ganzen Satz. Beginne mit „Das Erdmännchen …“ oder „Der Rote Panda …“. Schreibe nicht „Kiki“ oder „Mei“.
+  - Kiosk-Lösung (Prüffragen und Teilbeispiele): Hier gibt es keine feste Lösung. Prüfe deinen Text: / Überschrift vorhanden? / Tiername und Überblick am Anfang? / Maß mit Einheit und Bezug? / Vier verschiedene äußere Merkmale? / Lebensraum und Nahrung? / Keine Meinung, kein Erlebnis aus dem Interview? / Präsens und ganze Sätze? /  / Teilbeispiel Erdmännchen: „Das Erdmännchen hat einen schlanken Körper. Kopf und Rumpf sind zusammen etwa 25 bis 29 Zentimeter lang. Der Schwanz kommt noch dazu.“ /  / Teilbeispiel Roter Panda: „Der Rote Panda lebt in Bergwäldern Asiens. Dort wächst Bambus.“
   - Kiosk-Vertiefung: Unklar: „Es ist lang und schmal.“ Was ist gemeint? / Klarer: „Der Schwanz ist lang und schmal.“ / Wenn „er“, „es“ oder „sein“ unklar ist, nenne das Nomen.
-- **Blatt 9 · Prüfen und verbessern** (Du brauchst: deinen Text von Blatt 8 · das Tiermaterial · Checkliste K1–K6 · Rückmeldekarte)
-  - Pflicht – Arbeite am Text: Prüfe deinen Text im Heft mit K1–K6. | Geh zur Haltestelle. Such dir ein Kind für eine Rückmeldung. Es liest deinen Text und nutzt die Rückmeldekarte. Lass dir die Textstelle zeigen. | Entscheide mit Material und Checkliste, was du verbesserst. Schreibe nicht den ganzen Text neu. Ist eine Stelle schon richtig? Begründe, warum sie bleibt. | Zeige die Schreibprüfung: Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt. Vergleiche Tierwörter mit dem Material.
+- **Blatt 9 · Prüfen und verbessern** (Du brauchst: deinen Text von Blatt 8 · das Interview · Checkliste K1–K6 · Rückmeldekarte)
+  - Pflicht – Arbeite am Text: Prüfe deinen Text im Heft mit K1–K6. | Geh zur Haltestelle. Such dir ein Kind für eine Rückmeldung. Es liest deinen Text und nutzt die Rückmeldekarte. Lass dir die Textstelle zeigen. | Entscheide mit Interview und Checkliste, was du verbesserst. Schreibe nicht den ganzen Text neu. Ist eine Stelle schon richtig? Begründe, warum sie bleibt. | Zeige die Schreibprüfung: Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt. Vergleiche Tierwörter mit dem Interview.
   - Freiwillige Vertiefung – Vertiefung: Zeige eine Stelle vorher und nachher. Erkläre, was durch deine Änderung besser geworden ist.
   - Kiosk-Tipp: An der Haltestelle hilft dir die Rückmeldekarte. Prüfe danach ein Kriterium nach dem anderen. Lies für K6 jeden Satz einzeln: Beginnt er groß? Steht am Ende ein Punkt?
-  - Kiosk-Lösung (Prüffragen): Deine Verbesserungen hängen von deinem Text ab. Die Rückmeldung an der Haltestelle ist ein Hinweis. Du entscheidest mit Material und Checkliste, was du änderst. /  / So prüfst du: / K1: Stimmen Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung mit dem Material überein? / K2: Zähle vier verschiedene Merkmale. Dasselbe Merkmal zählt nur einmal. / K3: Steht der Überblick am Anfang? Stehen zusammengehörige Angaben zusammen? / K4 und K5: Präsens, sachlich, ganze Sätze? / K6: Satzanfang eingekreist, zwei Nomen unterstrichen, Punkt markiert? /  / Ein richtiger Satz bleibt. Begründe: „Mein Satz bleibt, weil …“
+  - Kiosk-Lösung (Prüffragen): Deine Verbesserungen hängen von deinem Text ab. Die Rückmeldung an der Haltestelle ist ein Hinweis. Du entscheidest mit Interview und Checkliste, was du änderst. /  / So prüfst du: / K1: Stimmen Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung mit dem Interview überein? Gelten sie für alle Tiere der Art? / K2: Zähle vier verschiedene Merkmale. Dasselbe Merkmal zählt nur einmal. / K3: Steht der Überblick am Anfang? Stehen zusammengehörige Angaben zusammen? / K4 und K5: Präsens, sachlich, keine Meinung aus dem Interview, ganze Sätze? / K6: Satzanfang eingekreist, zwei Nomen unterstrichen, Punkt markiert? /  / Ein richtiger Satz bleibt. Begründe: „Mein Satz bleibt, weil …“
   - Kiosk-Vertiefung: Beispiel vorher: „der schwanz ist toll“ / Nachher: „Der Schwanz ist lang und schmal.“ / Besser, weil der Satz groß beginnt, das Nomen groß ist und ein genaues Merkmal statt einer Wertung steht.
-- **Checkliste · Inhalt und Aufbau:** K1 · Informationen: Hast du das Tier benannt? Stimmen Maß, Einheit und Bezug? Stehen Lebensraum und Nahrung im Text? Vergleiche alles mit dem Material. · K2 · Aussehen: Findest du vier verschiedene genaue äußere Merkmale? Zeige sie. „schön“ ist kein genaues Merkmal. · K3 · Aufbau: Stehen Tiername und Überblick am Anfang? Sind zusammengehörige Informationen zusammen?
-- **Checkliste · Sprache und Schreibung:** K4 · Sachlich schreiben: Stehen deine Verben im Präsens? Beschreibst du genau und ohne persönliche Wertungen? · K5 · Verständliche Sätze: Sind deine Sätze vollständig und verständlich? Ist klar, auf wen sich „er“, „es“ und „sein“ beziehen? · K6 · Schreibung prüfen: Prüfe große Satzanfänge und Nomen sowie Satzschlusspunkte. Vergleiche schwierige Wörter mit dem Material. Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt als Prüfbeleg.
-- **Hilfekarte Rückmeldekarte · Rückmeldung an der Haltestelle** – Hinweis: Du gibst einem anderen Kind eine Rückmeldung zu seinem Text. Lies den Text ruhig. Wähle zwei oder drei Fragen. So geht es: 1. Das Kind hat seinen Text schon selbst geprüft. / 2. Du liest den Text. / 3. Du prüfst mit zwei oder drei Fragen. / 4. Das Kind entscheidet selbst, was es verbessert.. Fragen zum Prüfen: Kannst du dir das Aussehen des Tieres vorstellen? Zeige eine genaue Beschreibung. / Stehen zusammengehörige Informationen zusammen? / Welche Stelle sollte noch genauer oder verständlicher werden?. So sagst du es: *Diese Stelle ist genau: …* / *Hier habe ich eine Frage: …* / *Prüfe diese Angabe noch einmal im Material: …*.
+- **Checkliste · Inhalt und Aufbau:** K1 · Informationen: Hast du das Tier benannt? Stimmen Maß, Einheit und Bezug – für alle Tiere der Art, nicht nur für das Zootier? Stehen Lebensraum und Nahrung im Text? Vergleiche alles mit dem Interview. · K2 · Aussehen: Findest du vier verschiedene genaue äußere Merkmale? Zeige sie. „schön“ ist kein genaues Merkmal. · K3 · Aufbau: Stehen Tiername und Überblick am Anfang? Sind zusammengehörige Informationen zusammen?
+- **Checkliste · Sprache und Schreibung:** K4 · Sachlich schreiben: Stehen deine Verben im Präsens? Beschreibst du genau? Hast du keine Meinung und kein Erlebnis aus dem Interview übernommen? · K5 · Verständliche Sätze: Sind deine Sätze vollständig und verständlich? Ist klar, auf wen sich „er“, „es“ und „sein“ beziehen? · K6 · Schreibung prüfen: Prüfe große Satzanfänge und Nomen sowie Satzschlusspunkte. Vergleiche schwierige Wörter mit dem Interview. Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt als Prüfbeleg.
+- **Hilfekarte Rückmeldekarte · Rückmeldung an der Haltestelle** – Hinweis: Du gibst einem anderen Kind eine Rückmeldung zu seinem Text. Lies den Text ruhig. Wähle zwei oder drei Fragen. So geht es: 1. Das Kind hat seinen Text schon selbst geprüft. / 2. Du liest den Text. / 3. Du prüfst mit zwei oder drei Fragen. / 4. Das Kind entscheidet selbst, was es verbessert.. Fragen zum Prüfen: Kannst du dir das Aussehen des Tieres vorstellen? Zeige eine genaue Beschreibung. / Stehen zusammengehörige Informationen zusammen? / Welche Stelle sollte noch genauer oder verständlicher werden?. So sagst du es: *Diese Stelle ist genau: …* / *Hier habe ich eine Frage: …* / *Prüfe diese Angabe noch einmal im Interview: …*.
 - **Raumschild:** Haltestelle – Rückmeldung zum Text
 
 
 ## 9 · Probearbeit und Klassenarbeit ⚙
 
-Gemeinsamer Aufbau (A4, 7 Seiten; Vorbild: Lernerfolgskontrolle der Reihe Wunschbriefe): 1 Auftrag (Situation, Auftrags-Checkliste, Arbeitszeit-Feld, bei KA Terminwahl) · 2 Material (Foto, Sachtext, Wörterhilfe, Bildhinweis) · 3 Planung (Schreibplan Überblick/Aussehen ×4/Lebensraum/Nahrung) · 4 Schreibseite (Überschrift + Linien, Prüfhinweis) · 5 „Dein Text: Das zählt“ (K1–K6 zum Abhaken) · 6 Hilfeseite (erlaubt) · 7 Lehrkraftseite (Probearbeit: Rückmeldung E3.1–E3.5, Hilfen, x/5, nächster Schritt, Wahlzeit, Klassenarbeitstermin; Klassenarbeit: Bewertung K1–K6 mit Punkten und Note).
+Gemeinsamer Aufbau (A4, 7 Seiten; Vorbild: Lernerfolgskontrolle der Reihe Wunschbriefe): Material vorn: Interview (2 Seiten, Foto, Zeilennummern, Wörterhilfe) · 1 Auftrag (Situation, Auftrags-Checkliste inkl. „Markiere Sachangaben, streiche Meinungen/Einzeltier“, Arbeitszeit-Feld, bei KA Terminwahl) · 3 Planung (Schreibplan Überblick/Aussehen ×4/Lebensraum/Nahrung) · 4 Schreibseite (Überschrift + Linien, Prüfhinweis) · 5 „Dein Text: Das zählt“ (K1–K6 zum Abhaken) · 6 Hilfeseite (erlaubt) · 7 Lehrkraftseite (Probearbeit: Rückmeldung E3.1–E3.5, Hilfen, x/5, nächster Schritt, Wahlzeit, Klassenarbeitstermin; Klassenarbeit: Bewertung K1–K6 mit Punkten und Note).
 
 ### Deine Probearbeit: Der Waschbär (Probearbeit) · `inhalt/probearbeit_waschbaer.json`
 
-- Situation: Unsere Klasse gestaltet ein Tierlexikon. Es fehlt noch ein Text über den Waschbären. Schreibe diesen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.
-- Sachtext: Der Waschbär stammt ursprünglich aus Nordamerika. Er lebt gern in Wäldern mit Gewässern, kommt aber auch in Städten vor. Sein Körper ist kräftig und wirkt gedrungen. Das Fell ist meist graubraun. Um seine Augen liegt eine schwarze Zeichnung, die wie eine Maske aussieht. Der buschige Schwanz hat mehrere dunkle Ringe. Ein erwachsener Waschbär wiegt häufig etwa sechs bis sieben Kilogramm. An jeder Pfote sitzen fünf Zehen. Mit den Vorderpfoten kann er Nahrung geschickt greifen. Er frisst pflanzliche und tierische Nahrung, zum Beispiel Früchte, Nüsse, Insekten und Frösche.
-- Wörterhilfe: gedrungen = eher kurz und kräftig gebaut; Zeichnung = Muster auf dem Fell; Vorderpfoten = die beiden vorderen Pfoten
+- Situation: Unsere Klasse gestaltet ein Tierlexikon. Es fehlt noch ein Text über den Waschbären. Die Schülerzeitung hat dafür ein Interview im Zoo geführt. Schreibe daraus einen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.
+- Material: Interview `waschbaer` (vor dem Auftrag, mit Zeilennummern; Text siehe 8.0)
 - Foto: Foto: BS Thurner Hof · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung
-- Indikatoren: E3.1 Informationen (K1) (erreicht, wenn Tiername, richtige Maßangabe mit Bezug, Lebensraum und Nahrung enthalten) · E3.2 Aussehen: vier Merkmale (K2) (erreicht, wenn mindestens vier verschiedene äußere Merkmale richtig beschrieben) · E3.3 Aufbau (K3) (erreicht, wenn Text beginnt mit Überblick und ordnet zusammengehörige Informationen nachvollziehbar) · E3.4 Sprache (K4, K5) (erreicht, wenn zusammenhängender, überwiegend sachlicher Text im Präsens aus überwiegend vollständigen, verständlichen Sätzen) · E3.5 Schreibung mit Prüfbeleg (K6) (erreicht, wenn Prüfung von Satzanfängen, Nomen und Satzschlüssen am Produkt belegt; geübte Schreibungen überwiegend richtig)
+- Indikatoren: E3.1 Informationen (K1) (erreicht, wenn Tiername, Maß der Art mit Bezug, Lebensraum und Nahrung; nichts nur über Rocky) · E3.2 Aussehen: vier Merkmale (K2) (erreicht, wenn mindestens vier verschiedene äußere Merkmale richtig beschrieben) · E3.3 Aufbau (K3) (erreicht, wenn Text beginnt mit Überblick und ordnet zusammengehörige Informationen nachvollziehbar) · E3.4 Sprache (K4, K5) (erreicht, wenn zusammenhängend, überwiegend sachlich, Präsens, vollständige Sätze; keine Meinung aus dem Interview) · E3.5 Schreibung mit Prüfbeleg (K6) (erreicht, wenn Prüfung von Satzanfängen, Nomen und Satzschlüssen am Produkt belegt; geübte Schreibungen überwiegend richtig)
 
 ### Deine Klassenarbeit: Der Biber (Klassenarbeit) · `inhalt/klassenarbeit_biber.json`
 
-- Situation: Unser Tiermagazin bekommt eine neue Seite. Es fehlt noch ein Text über den Europäischen Biber. Schreibe diesen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.
-- Sachtext: Der Europäische Biber lebt an Flüssen und Seen. Er ist ein Nagetier und ernährt sich von Pflanzen. Er frisst zum Beispiel Blätter, junge Triebe und Rinde. Sein Körper ist kräftig und hat kurze Beine. Das dichte Fell ist braun. Am Kopf sitzen kleine Ohren und eine stumpfe Schnauze. Ein erwachsener Biber kann etwa 13 bis 35 Kilogramm wiegen. Sein breiter, flacher Schwanz ist kaum behaart und mit Schuppen bedeckt. Dieser Schwanz heißt auch Kelle. Zwischen den Zehen der Hinterfüße liegen Schwimmhäute. Die großen Schneidezähne sind auf der Vorderseite orange gefärbt.
-- Wörterhilfe: Triebe = junge Teile einer Pflanze; Kelle = Name für den breiten Biberschwanz; Schneidezähne = die vorderen Zähne zum Abbeißen und Nagen
+- Situation: Unser Tiermagazin bekommt eine neue Seite. Es fehlt noch ein Text über den Europäischen Biber. Die Schülerzeitung hat dafür ein Interview im Zoo geführt. Schreibe daraus einen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.
+- Material: Interview `biber` (vor dem Auftrag, mit Zeilennummern; Text siehe 8.0)
 - Foto: Foto: Tomas Čekanavičius · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung
-- Bewertungserwartung: K1 Informationen: Tiername, Gewicht mit Einheit und Bezug, Lebensraum, Nahrung · K2 Aussehen: mindestens vier verschiedene äußere Merkmale richtig (z. B. kräftiger Körper, kurze Beine, dichtes braunes Fell, breiter flacher Schwanz) · K3 Aufbau: Überschrift, Überblick am Anfang, zusammengehörige Angaben gebündelt · K4 Sachlich: überwiegend sachlich, im Präsens, ohne Wertungen · K5 Verständlich: zusammenhängender Text aus überwiegend vollständigen, verständlichen Sätzen; klare Bezüge · K6 Schreibung: Prüfung sichtbar; Satzanfänge, Nomen, Satzschlüsse und geübte Tierwörter überwiegend richtig
+- Bewertungserwartung: K1 Informationen: Tiername, Gewicht mit Einheit und Bezug, Lebensraum, Nahrung; nur Angaben zur Art · K2 Aussehen: mindestens vier verschiedene äußere Merkmale richtig (z. B. kräftiger Körper, kurze Beine, dichtes braunes Fell, breiter flacher Schwanz) · K3 Aufbau: Überschrift, Überblick am Anfang, zusammengehörige Angaben gebündelt · K4 Sachlich: sachlich, Präsens; nichts Wertendes oder Erlebtes aus dem Interview · K5 Verständlich: zusammenhängender Text aus überwiegend vollständigen, verständlichen Sätzen; klare Bezüge · K6 Schreibung: Prüfung sichtbar; Satzanfänge, Nomen, Satzschlüsse und geübte Tierwörter überwiegend richtig
 
 ### Deine Klassenarbeit: Das Breitmaulnashorn (Klassenarbeit) · `inhalt/klassenarbeit_breitmaulnashorn.json`
 
-- Situation: Unser Tiermagazin bekommt eine neue Seite. Es fehlt noch ein Text über das Breitmaulnashorn. Schreibe diesen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.
-- Sachtext: Das Breitmaulnashorn lebt in Afrika. Es lebt in Savannen mit kurzem Gras. Es frisst fast nur Gras. Mit seinen sehr breiten Lippen rupft es das Gras ab. Sein Körper ist groß und massig. Die Haut ist grau, dick und fast ohne Haare. Im Nacken hat es einen Buckel. Seine Beine sind kurz und kräftig. Auf der Nase trägt es zwei Hörner. Das vordere Horn ist länger als das hintere. Kopf und Rumpf sind zusammen etwa 3,40 bis 3,80 Meter lang. Der Schwanz kommt noch dazu. Ein erwachsenes Männchen kann bis zu 3600 Kilogramm wiegen.
-- Wörterhilfe: Savanne = Grasland mit wenigen Bäumen; massig = sehr groß und schwer; Buckel = eine Erhöhung im Nacken
+- Situation: Unser Tiermagazin bekommt eine neue Seite. Es fehlt noch ein Text über das Breitmaulnashorn. Die Schülerzeitung hat dafür ein Interview im Zoo geführt. Schreibe daraus einen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.
+- Material: Interview `breitmaulnashorn` (vor dem Auftrag, mit Zeilennummern; Text siehe 8.0)
 - Foto: Foto folgt
-- Bewertungserwartung: K1 Informationen: Tiername, Maß mit Einheit und Bezug (z. B. Kopf und Rumpf 3,40–3,80 m, Schwanz zusätzlich), Lebensraum, Nahrung · K2 Aussehen: mindestens vier verschiedene äußere Merkmale richtig (z. B. graue, dicke Haut, zwei Hörner, breite Lippen, kurze, kräftige Beine, Buckel) · K3 Aufbau: Überschrift, Überblick am Anfang, zusammengehörige Angaben gebündelt · K4 Sachlich: überwiegend sachlich, im Präsens, ohne Wertungen · K5 Verständlich: zusammenhängender Text aus überwiegend vollständigen, verständlichen Sätzen; klare Bezüge · K6 Schreibung: Prüfung sichtbar; Satzanfänge, Nomen, Satzschlüsse und geübte Tierwörter überwiegend richtig
+- Bewertungserwartung: K1 Informationen: Tiername, Maß mit Einheit und Bezug (z. B. Kopf und Rumpf 3,40–3,80 m, Schwanz zusätzlich), Lebensraum, Nahrung; nur Angaben zur Art · K2 Aussehen: mindestens vier verschiedene äußere Merkmale richtig (z. B. graue, dicke Haut, zwei Hörner, breite Lippen, kurze, kräftige Beine, Buckel) · K3 Aufbau: Überschrift, Überblick am Anfang, zusammengehörige Angaben gebündelt · K4 Sachlich: sachlich, Präsens; nichts Wertendes oder Erlebtes aus dem Interview · K5 Verständlich: zusammenhängender Text aus überwiegend vollständigen, verständlichen Sätzen; klare Bezüge · K6 Schreibung: Prüfung sichtbar; Satzanfänge, Nomen, Satzschlüsse und geübte Tierwörter überwiegend richtig
 
 
 ## 10 · Wahlphase, Strategiekarten, Kiosk, Lernweg ⚙
@@ -406,15 +507,16 @@ Du hast deine Probearbeit geschrieben und Feedback bekommen. Jetzt entscheidest 
 
 ### Strategiekarten (am Lernbuddy anlegen; Aufbau: Wann? · 4 Schritte · Beispiel · Hat es geholfen? ja/etwas/nein)
 
-1. **Lesen mit Suchauftrag** – Wann: Du suchst Informationen in einem Sachtext. Schritte: Lies den Text einmal. Markiere unbekannte Wörter. · Kläre die Wörter: Satz noch einmal lesen, Wörterhilfe, fragen. · Lies mit Suchauftrag weiter. Markiere die Stelle. · Notiere ein Stichwort unter der Überschrift. Beispiel: Was frisst er? / Suchwort: *frisst* / → *vor allem Fische*
+1. **Lesen mit Suchauftrag** – Wann: Du suchst Informationen in einem Sachtext oder Interview. Schritte: Lies den Text einmal. Markiere unbekannte Wörter. · Kläre die Wörter: Satz noch einmal lesen, Wörterhilfe, fragen. · Lies mit Suchauftrag weiter. Markiere die Stelle. · Notiere ein Stichwort unter der Überschrift. Beispiel: Was fressen Fischotter? / Suchwort: *fressen* / → *hauptsächlich Fische*
 2. **Markieren mit Buchstaben** – Wann: Du suchst verschiedene Informationen im selben Text. Schritte: Lege fest, was du suchst. · Schreibe einen Buchstaben an die Stelle: / **A** Aussehen · **L** Lebensraum / **N** Nahrung · **M** Maß · Markiere nur die wichtigen Wörter, nicht den ganzen Satz. · Prüfe: Passt die Stelle zur Frage? Beispiel: *Er lebt an Flüssen und Seen.* → **L**
 3. **Ordnen unter Überschriften** – Wann: Du sammelst Informationen für einen Plan. Schritte: Schreibe die Überschriften: Überblick · Aussehen · Lebensraum · Nahrung. · Frage bei jeder Angabe: Wohin gehört sie? · Schreibe sie als Stichwort darunter. · Zähle: Hast du vier Merkmale beim Aussehen? Beispiel: *breiter, flacher Kopf* → Aussehen / *Fische* → Nahrung
-4. **Genau statt wertend** – Wann: Du beschreibst, wie ein Tier aussieht. Schritte: Lies dein Wort: Sagt es, wie jemand das Tier findet? · Frage: Kann ich es im Bild sehen oder im Text lesen? · Ersetze die Wertung durch Form, Farbe oder Größe. · Prüfe die neue Angabe am Material. Beispiel: nicht: *schönes Fell* / sondern: *oben dunkelbraunes Fell*
+4. **Genau statt wertend** – Wann: Du beschreibst, wie ein Tier aussieht. Schritte: Lies dein Wort: Sagt es, wie jemand das Tier findet? · Frage: Kann ich es im Bild sehen oder im Interview lesen? · Ersetze die Wertung durch Form, Farbe oder Größe. · Prüfe die neue Angabe am Interview. Beispiel: nicht: *schönes Fell* / sondern: *oben dunkelbraunes Fell*
 5. **Die Wörterhilfe nutzen** – Wann: Dir fehlt ein genaues Wort. Schritte: Suche den Körperteil in der Wörterhilfe. · Lies die möglichen Wörter. · Wähle nur ein Wort, das zu deinem Tier passt. · Prüfe es am Bild oder im Text. Beispiel: Schwanz: *lang, kurz, buschig, schmal* / Erdmännchen: *lang und schmal*
 6. **Einen Satz bauen** – Wann: Du machst aus Stichwörtern einen Satz. Schritte: Wer oder was? Nenne das Subjekt. · Was tut es oder wie ist es? Setze das Verb im Präsens. · Ergänze die Angabe aus dem Plan. · Prüfe: Großer Anfang? Punkt am Ende? Beispiel: *Kopf – breit, flach* / → *Sein Kopf ist breit und flach.*
 7. **Satzanfang, Nomen, Punkt** – Wann: Du prüfst die Schreibung deines Textes. Schritte: Lies Satz für Satz. Lege ein Lineal unter die Zeile. · Kreise den Satzanfang ein. Ist er groß? · Unterstreiche die Nomen. Sind sie groß? · Markiere das Satzende. Steht ein Punkt? Beispiel: *sein kopf ist flach* / → *Sein Kopf ist flach.*
 8. **Rückmeldung geben** – Wann: Du liest den Text eines anderen Kindes an der Haltestelle. Schritte: Lies den ganzen Text ruhig. · Wähle zwei Fragen von der Rückmeldekarte. · Zeige die passende Textstelle. · Sage es freundlich und genau. Beispiel: *Diese Stelle ist genau: …* / *Prüfe diese Angabe im Material: …*
-9. **Meine eigene Strategie** – leere Karte für eine eigene Strategie
+9. **Aus dem Interview wird ein Sachtext** – Wann: Du schreibst mit einem Interview als Material. Schritte: Frage bei jeder Angabe: Gilt das für alle Tiere der Art? · Ja: markieren. Nur das Zootier oder eine Meinung: streichen. · Vergleich? Nimm nur die Sachangabe heraus. · Schreibe im Präsens über die Tierart: *Der Fischotter …* Beispiel: *„Otto ist 80 cm lang.“* → streichen / *„Fischotter sind 60 bis 90 cm lang.“* → markieren
+10. **Meine eigene Strategie** – leere Karte für eine eigene Strategie
 
 ### Kontroll-Kiosk
 
@@ -435,6 +537,7 @@ HTML-Animation (11 Szenen) für den Einstieg in DS 1: Wegekarte mit Spielstein �
 inhalt/                 Einzige Inhaltsquellen (JSON) – hier ändern, nie in den Ausgaben
   etappe1|2|3.json        Input/Merkblatt, Material, Blätter, Nachweise, Hilfen
   probearbeit_waschbaer.json, klassenarbeit_biber.json, klassenarbeit_breitmaulnashorn.json
+  interviews.json         sechs Interviews (250–350 Wörter) + zwei Förder-Kurzinterviews; [[Stelle|Kürzel]]
   foerder_etappe1|2|3.json, kiosk.json, wahlphase.json, strategiekarten.json
 tools/
   build_material.py N     Input, Merkblatt, Übungsblätter, Hilfen, GN, Probearbeit (Etappe N)
@@ -444,6 +547,8 @@ tools/
   build_extras.py         Wahlphase, Strategiekarten, Lernweg (regulär + F)
   build_animation.py      ausgabe/lernweg/Ablauf_Animation.html
   build_anleitung.py      anleitung.html (Lehrkraft-Leitfaden, prüft alle Links)
+  build_interviews.py     Interviews (Entwurf + Prüfliste/Zeilenbelege, zeilen.json); render_interview() für alle Materialseiten
+  build_pakete.py         Druckpakete Schüler/Lehrkraft + ZIP (ausgabe/pakete)
   build_wissensbasis.py   diese Datei
 ausgabe/                Erzeugte PDFs/HTML (etappe1–3, foerder, pruefungen, wahlphase, strategiekarten, lernweg)
 apps/kontroll-kiosk/    Kiosk
@@ -456,7 +561,7 @@ skill.md                Produktionsregeln (verbindlich)
 
 **Technik:** Python + Playwright/Chromium rendert HTML → PDF; PyMuPDF prüft Schriftgrößen. Jeder Generator prüft automatisch: Seitenüberlauf, Mindestschriftgröße, Input = Merkblatt (Textabgleich), Link-Existenz (Leitfaden), Kiosk-Ansichten. Volle Übungsblätter werden automatisch dichter gesetzt (Schrift bleibt ≥ 14 pt); Förderblätter werden automatisch auf Folgeseiten verteilt.
 
-**Markup in Inhaltsdateien:** `*kursiv*` für Beispielsätze, `**fett**` für Begriffe, `\n` Zeilenumbruch, `{Wort}` = Lücke (Förder-Lückentext, Wortspeicher automatisch).
+**Markup in Inhaltsdateien:** `*kursiv*` für Beispielsätze, `**fett**` für Begriffe, `\n` Zeilenumbruch, `{Wort}` = Lücke (Förder-Lückentext, Wortspeicher automatisch), `[[Textstelle|Kürzel]]` = Markierung im Interview (unsichtbar für Kinder; T Tiername, M Maß der Art, A Aussehen, L Lebensraum, N Nahrung, W Meinung, X Einzeltier/Zooalltag, V Vergleich, Z Zusatz Verhalten, U Vermutung). Zeilenangaben in Blättern/Kiosk („Z. 12“) beziehen sich auf den Satz der Interviews; nach Textänderungen `ausgabe/interviews/zeilen.json` prüfen und Verweise nachziehen.
 
 **Workflow für Änderungen:** Inhaltsdatei ändern → passenden Generator ausführen → Prüfausgabe lesen → bei Bedarf gerenderte Seiten ansehen → committen → `anleitung.html`/`WISSENSBASIS.md` neu erzeugen, wenn Dateien hinzukommen. Deployment über Vercel aus `main` (statisch, kein Build-Schritt); Vercel-Einstellungen nicht ändern.
 
@@ -493,34 +598,34 @@ skill.md                Produktionsregeln (verbindlich)
 
 ## 14 · Zieldifferentes Material (Förderschwerpunkt Lernen) ⚙
 
-Zwei Kinder; kurze Texte möglich. Gleiche Etappen und Blattnummern mit „F“, gleicher Input, Fischotter als Beispieltier (Etappe 3F: nur Erdmännchen). Je Etappe vereinfachte **Merkkarte** und **Materialseite** (ein Satz pro Zeile, Foto mit nummerierten Bildstellen). Kleinschrittig: ein Auftrag pro Kasten mit Symbol je Format. Formate: ankreuzen · zuordnen (Zahl ins Kästchen, ggf. nummerierte Bedeutungen) · sortieren (Wortspeicher → Spalten) · Lückentext (Wortspeicher, ggf. Ablenker) · Wortkarten zu einem Satz ordnen · Satz weiterschreiben · Prüfliste · Bild betrachten · Hinweis. Jede Seite mit Lösungsstreifen auf dem Kopf zum Umknicken. Schreiben aufs Blatt. GN-F-Ziele sind Vorschläge; Förderziele individuell vereinbaren, Zeile für eigenes Förderziel.
+Zwei Kinder; kurze Texte möglich. Gleiche Etappen und Blattnummern mit „F“, gleicher Input, Fischotter als Beispieltier (Etappe 3F: nur Erdmännchen). Je Etappe vereinfachte **Merkkarte**, **Fotoseite** mit nummerierten Bildstellen und **Kurzinterview** (6 Fragen, Antworten 1–2 Sätze, je eine Meinung und Angaben nur über das Zootier; Aufgaben „Info oder Meinung?“ und „Wer ist gemeint?“). Kleinschrittig: ein Auftrag pro Kasten mit Symbol je Format. Formate: ankreuzen · zuordnen (Zahl ins Kästchen, ggf. nummerierte Bedeutungen) · sortieren (Wortspeicher → Spalten) · Lückentext (Wortspeicher, ggf. Ablenker) · Wortkarten zu einem Satz ordnen · Satz weiterschreiben · Prüfliste · Bild betrachten · Hinweis. Jede Seite mit Lösungsstreifen auf dem Kopf zum Umknicken. Schreiben aufs Blatt. GN-F-Ziele sind Vorschläge; Förderziele individuell vereinbaren, Zeile für eigenes Förderziel.
 
 ### Etappe 1F · Informationen finden und ordnen
 
-- Merkkarte: Genau: Genaue Wörter sagen, wie das Tier aussieht: *kurz, lang, dunkelbraun, breit*. · Nicht genau: Diese Wörter sind Meinungen: *toll, schön, süß*. · Bild: Auf dem Foto siehst du: Nase, Auge, Ohr, Tasthaare, Fell. · Text: Im Text findest du: Wo lebt das Tier? Was frisst es? · Ordnen: Aussehen · Lebensraum · Nahrung
-- Material „Der Fischotter“: Der Fischotter lebt am Wasser. Er lebt an Flüssen und Seen. Sein Körper ist lang. Seine Beine sind kurz. Sein Fell ist dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze hat er lange Tasthaare. Er frisst vor allem Fische. Er frisst auch Frösche und Krebse. Kopf und Rumpf sind 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu.
+- Merkkarte: Genau: Genaue Wörter sagen, wie das Tier aussieht: *kurz, lang, dunkelbraun, breit*. · Nicht genau: Diese Wörter sind Meinungen: *toll, schön, süß*. · Bild: Auf dem Foto siehst du: Nase, Auge, Ohr, Tasthaare, Fell. · Interview: Im Interview findest du: Wo leben Fischotter? Was fressen sie? · Nur Otto?: Was nur für Otto gilt, gehört nicht in die Beschreibung. · Ordnen: Aussehen · Lebensraum · Nahrung
+- Material: Fotoseite mit Zahlen + Kurzinterview `fischotter-f` (Text siehe 8.0)
 - Bildstellen: 1, 2, 3, 4, 5 (Ein Fischotter im Gras. Die Zahlen 1 bis 5 zeigen auf Nase, Auge, Ohr, Tasthaare und Fell.)
-- **Blatt 1F · Genau oder nicht genau?:** [ankreuzen] Welche Sätze sind genau? Kreuze **2** Sätze an. Richtig: Der Fischotter hat kurze Beine., Das Fell ist dunkelbraun. | [sortieren] Schreibe jedes Wort in die richtige Spalte. Lösung: genau: kurz, dunkelbraun, lang; Meinung: toll, schön, süß | [ankreuzen] **Sprachdetektiv:** Nomen schreibst du groß. Kreuze die **3** Nomen an. Richtig: Fischotter, Beine, Fell
+- **Blatt 1F · Genau oder nicht genau?:** [ankreuzen] Welche Sätze sind genau? Kreuze **2** Sätze an. Richtig: Der Fischotter hat kurze Beine., Das Fell ist dunkelbraun. | [sortieren] Schreibe jedes Wort in die richtige Spalte. Lösung: genau: kurz, dunkelbraun, lang; Meinung: toll, schön, süß | [ankreuzen] **Info oder Meinung?** Kreuze die **Meinung** an. Richtig: Otto ist der süßeste Otter der Welt! | [ankreuzen] **Sprachdetektiv:** Nomen schreibst du groß. Kreuze die **3** Nomen an. Richtig: Fischotter, Beine, Fell
 - **Blatt 2F · Was siehst du auf dem Foto?:** [bild] Schau dir das Foto genau an. Die Zahlen zeigen auf Körperteile. | [zuordnen] Welche Zahl gehört zu welchem Wort? Schreibe die Zahl in das Kästchen. Lösung: Nase=1, Auge=2, Ohr=3, Tasthaare=4, Fell=5 | [luecke] Fülle die Lücken. Nutze den Wortspeicher. Lösung: klein, Tasthaare
-- **Blatt 3F · Was steht im Text?:** [hinweis] Lies den Text auf der Materialseite. Lies Satz für Satz. Zeige mit dem Finger mit. | [luecke] Fülle die Lücken. Nutze den Wortspeicher. Lösung: Flüssen, Seen, Fische, Zentimeter | [ankreuzen] Zählt der Schwanz bei der Länge mit? Kreuze an. Richtig: nein | [ankreuzen] **Sprachdetektiv:** Welche Wörter sind Verben? Kreuze **2** an. Richtig: lebt, frisst
+- **Blatt 3F · Was steht im Interview?:** [hinweis] Lies das Interview. Lies Satz für Satz. Zeige mit dem Finger mit. | [luecke] Fülle die Lücken. Nutze den Wortspeicher. Lösung: Flüssen, Seen, Fische, Zentimeter | [zuordnen] **Wer ist gemeint?** Schreibe die Zahl in das Kästchen. Lösung: Fischotter leben an Flüssen.=1, Otto wohnt im Zoo.=2, Otto ist 80 Zentimeter lang.=2, Fischotter fressen Krebse.=1 | [ankreuzen] **Sprachdetektiv:** Welche Wörter sind Verben? Kreuze **2** an. Richtig: lebt, frisst
 - **Blatt 4F · Ordne die Informationen:** [sortieren] Schreibe jedes Wort unter die richtige Überschrift. Streiche das Wort im Wortspeicher durch. Lösung: Aussehen: kurze Beine, dunkelbraunes Fell; Lebensraum: Flüsse, Seen; Nahrung: Fische, Krebse | [ankreuzen] Wohin gehört „langer Körper“? Kreuze an. Richtig: Aussehen
-- **GN1F:** F1.1 Ich erkenne genaue Wörter. (erreicht, wenn zwei genaue Sätze angekreuzt, keine Meinung) · F1.2 Ich benenne Körperteile auf dem Foto. (erreicht, wenn mindestens drei von vier Zahlen richtig zugeordnet) · F1.3 Ich finde den Lebensraum im Text. (erreicht, wenn Flüsse und Seen richtig eingesetzt) · F1.4 Ich finde die Nahrung im Text. (erreicht, wenn Fische richtig eingesetzt) · F1.5 Ich ordne Angaben unter Überschriften. (erreicht, wenn mindestens fünf von sechs Wörtern richtig sortiert)
+- **GN1F:** F1.1 Ich erkenne genaue Wörter. (erreicht, wenn zwei genaue Sätze angekreuzt, keine Meinung) · F1.2 Ich benenne Körperteile auf dem Foto. (erreicht, wenn 3 von 4 Zahlen richtig) · F1.3 Ich finde den Lebensraum im Interview. (erreicht, wenn Flüsse und Seen richtig eingesetzt) · F1.4 Ich finde die Nahrung im Interview. (erreicht, wenn Fische richtig eingesetzt) · F1.5 Ich ordne Angaben unter Überschriften. (erreicht, wenn 5 von 6 Wörtern richtig sortiert)
 
 ### Etappe 2F · Sachlich und genau formulieren
 
 - Merkkarte: Genau: Nimm Wörter, die du prüfen kannst: *dunkelbraun, kurz, breit*. Nicht: *schön, toll*. · Präsens: Eine Tierbeschreibung steht in der Gegenwart: *er lebt, er frisst, es ist*. · Ein Satz: Wer? + Verb + Rest. *Der Fischotter + frisst + Fische.* · Groß: Der Satzanfang ist groß. Nomen sind groß: *Fell, Kopf, Fische*. · Punkt: Am Ende vom Satz steht ein Punkt.
-- Material „Der Fischotter“: Der Fischotter lebt an Flüssen und Seen. Sein Körper ist lang. Seine Beine sind kurz. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Zwischen den Zehen hat er Schwimmhäute. Im Wasser schwimmt er schnell. Er frisst vor allem Fische.
+- Material: Fotoseite mit Zahlen + Kurzinterview `fischotter-f` (Text siehe 8.0)
 - Bildstellen: 1, 2, 3, 4, 5 (Ein Fischotter im Gras. Die Zahlen 1 bis 5 zeigen auf Nase, Auge, Ohr, Tasthaare und Fell.)
-- **Blatt 5F · Treffende Wörter:** [ankreuzen] Wie ist das Fell oben? Kreuze das **genaue** Wort an. Richtig: dunkelbraun | [ankreuzen] Wie ist der Kopf? Kreuze die **genaue** Angabe an. Richtig: breit und flach | [luecke] Mache den Satz genauer. Nutze den Wortspeicher. Lösung: Fischotter, schwimmt | [zuordnen] Was bedeutet das Wort? Schreibe die Zahl in das Kästchen. Lösung: Tasthaare=1, Schwimmhäute=2
+- **Blatt 5F · Treffende Wörter:** [ankreuzen] Wie ist das Fell oben? Kreuze das **genaue** Wort an. Richtig: dunkelbraun | [ankreuzen] Wie ist der Kopf? Kreuze die **genaue** Angabe an. Richtig: breit und flach | [ankreuzen] Frau Berger sagt: „Otto ist der süßeste Otter der Welt!“ **Info oder Meinung?** Richtig: Meinung | [luecke] Mache den Satz genauer. Nutze den Wortspeicher. Lösung: Fischotter, schwimmt | [zuordnen] Was bedeutet das Wort? Schreibe die Zahl in das Kästchen. Lösung: Tasthaare=1, Schwimmhäute=2
 - **Blatt 6F · Sachliche Sätze:** [ordnen] Bilde einen Satz aus den Wortkarten. Schreibe ihn auf die Linie. Lösung: Seine Beine sind kurz. | [ordnen] Bilde einen Satz aus den Wortkarten. Schreibe ihn auf die Linie. Lösung: Der Fischotter frisst auch Krebse. | [ankreuzen] Welcher Satz steht in der Gegenwart (Präsens)? Kreuze an. Richtig: Der Fischotter lebt am Wasser. | [luecke] Setze das passende Verb ein. Lösung: frisst, fressen | [ankreuzen] Welcher Satz ist richtig geschrieben? Kreuze an. Richtig: Der Fischotter lebt am See.
 - **GN2F:** F2.1 Ich wähle genaue Wörter. (erreicht, wenn genaue Angabe statt Wertung angekreuzt) · F2.2 Ich bilde einen Satz aus Wortkarten. (erreicht, wenn Satz vollständig und in sinnvoller Reihenfolge) · F2.3 Ich wähle das Verb im Präsens. (erreicht, wenn Präsensform richtig gewählt bzw. eingesetzt) · F2.4 Ich erkenne große Anfänge, Nomen und Punkt. (erreicht, wenn richtig geschriebenen Satz angekreuzt) · F2.5 Ich kenne ein Fachwort. (erreicht, wenn Fachwort richtig zugeordnet)
 
 ### Etappe 3F · Eine Tierbeschreibung schreiben und prüfen
 
-- Merkkarte: Plan: Überblick · Aussehen · Lebensraum · Nahrung · Überblick: Name und Größe: *Das Erdmännchen ist 25 bis 29 Zentimeter lang.* · Aussehen: Vier Merkmale: Körper, Fell, Schwanz, Krallen … · Text: Erst der Name, dann das Aussehen, dann Lebensraum und Nahrung. · Prüfen: Großer Anfang? Nomen groß? Punkt am Ende?
-- Material „Das Erdmännchen“: Das Erdmännchen lebt in Afrika. Es lebt im trockenen Grasland. Sein Körper ist schlank. Sein Fell ist hellbraun. Auf dem Rücken hat es dunkle Streifen. Um die Augen hat es dunkle Flecken. Sein Schwanz ist lang und schmal. An den Pfoten hat es lange Krallen. Kopf und Rumpf sind 25 bis 29 Zentimeter lang. Der Schwanz kommt noch dazu. Es frisst vor allem Insekten. Es frisst auch Spinnen.
+- Merkkarte: Plan: Überblick · Aussehen · Lebensraum · Nahrung · Überblick: Name und Größe: *Das Erdmännchen ist ohne Schwanz 25 bis 29 Zentimeter lang.* · Aussehen: Vier Merkmale: Körper, Fell, Schwanz, Krallen … · Nur Kiki?: Was nur für Kiki gilt, gehört nicht in die Beschreibung. · Text: Erst der Name, dann das Aussehen, dann Lebensraum und Nahrung. · Prüfen: Großer Anfang? Nomen groß? Punkt am Ende?
+- Material: Fotoseite mit Zahlen + Kurzinterview `erdmaennchen-f` (Text siehe 8.0)
 - Bildstellen: 1, 2, 3, 4 (Ein Erdmännchen steht aufrecht. Die Zahlen zeigen auf Augenfleck, Körper, Schwanz und Pfote mit Krallen.)
-- **Blatt 7F · Dein Schreibplan:** [bild] Schau dir das Foto genau an. Die Zahlen zeigen auf Körperteile. | [zuordnen] Welche Zahl gehört zu welchem Wort? Schreibe die Zahl in das Kästchen. Lösung: Fleck um das Auge=1, Körper=2, Schwanz=3, Pfote mit Krallen=4 | [sortieren] Ordne die Stichwörter. Schreibe jedes unter die richtige Überschrift. Lösung: Aussehen: schlanker Körper, hellbraunes Fell, langer Schwanz, lange Krallen; Lebensraum: Afrika, Grasland; Nahrung: Insekten, Spinnen | [luecke] Fülle den Überblick aus. Nutze die Materialseite. Lösung: Erdmännchen, Zentimeter, Schwanz
+- **Blatt 7F · Dein Schreibplan:** [bild] Schau dir das Foto genau an. Die Zahlen zeigen auf Körperteile. | [zuordnen] Welche Zahl gehört zu welchem Wort? Schreibe die Zahl in das Kästchen. Lösung: Fleck um das Auge=1, Körper=2, Schwanz=3, Pfote mit Krallen=4 | [zuordnen] **Wer ist gemeint?** Schreibe die Zahl in das Kästchen. Lösung: Erdmännchen fressen Insekten.=1, Kiki mag Mehlwürmer.=2, Kiki ist kleiner.=2, Erdmännchen leben in Afrika.=1 | [sortieren] Ordne die Stichwörter. Schreibe jedes unter die richtige Überschrift. Lösung: Aussehen: schlanker Körper, hellbraunes Fell, langer Schwanz, lange Krallen; Lebensraum: Afrika, Grasland; Nahrung: Insekten, Spinnen | [luecke] Fülle den Überblick aus. Nutze das Interview. Lösung: Erdmännchen, Schwanz, Zentimeter
 - **Blatt 8F · Deine Tierbeschreibung:** [luecke] Fülle die Lücken. So entsteht deine Tierbeschreibung. Nutze deinen Plan von Blatt 7F. Lösung: schlanken, hellbraun, Streifen, lang, Grasland, Insekten | [schreiben] Schreibe einen eigenen Satz über die Pfoten. Lies danach deinen ganzen Text leise vor. Lösung: An den Pfoten hat es lange Krallen.
 - **Blatt 9F · Prüfen und verbessern:** [check] Prüfe deinen Text von Blatt 8F. Kreuze an, was du gefunden hast. Zeige den Text danach einem anderen Kind oder deiner Lehrkraft. | [ankreuzen] Welcher Satz ist richtig geschrieben? Kreuze an. Richtig: Sein Fell ist hellbraun. | [schreiben] Verbessere den Satz. Schreibe ihn richtig auf die Linie. Lösung: Es frisst vor allem Insekten.
 
@@ -541,7 +646,7 @@ Zwei Kinder; kurze Texte möglich. Gleiche Etappen und Blattnummern mit „F“,
 
 Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 200 Minuten (ungetestet). Bei Zeitkonflikten zuerst freiwillige Ergänzungen kürzen, nicht Schreib-/Überarbeitungsprozess.
 
-## 16 · Offene Punkte (Stand 09.10.2026)
+## 16 · Offene Punkte (Stand 10.10.2026)
 
 - Arbeitszeit der Probearbeit; Arbeitszeit, Punkteverteilung und Notengrenzen der Klassenarbeit.
 - Foto Breitmaulnashorn fehlt (Platzhalter); Biber-Foto vorläufig (Tierpaket, CC BY-SA 3.0). Wunschbild tierdoku.de nicht ladbar und ohne freie Lizenz.
