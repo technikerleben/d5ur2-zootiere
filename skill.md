@@ -71,7 +71,7 @@ Diese Festlegung ersetzt die frühere Vorgabe „alle Schülerblätter als A5-PD
 - Alle Schülerarbeitsblätter: einfache deutliche Du-Form; Formate siehe oben.
 - Längere Schreibprodukte ins Heft.
 - Keine iPads für Lernende. Online-Ressourcen sind für Lehrkräfte.
-- Einzige digitale Schüleranwendung: Kontroll-Kiosk auf einem Laptop im Raum.
+- Einzige digitale Schüleranwendung im Unterricht: Kontroll-Kiosk auf einem Laptop im Raum. Für zu Hause gibt es die freiwillige Lern-App fürs Smartphone (`lernapp/`, `python tools/build_lernapp.py`, Inhalte in `inhalt/lernapp.json`): keine Kiosk-Lösungen zu Blatt 1–9, keine Inhalte aus Probearbeit, Klassenarbeiten oder Gelingensnachweisen, keine Kinderdaten.
 - Fischotter ist das gemeinsame Beispieltier.
 - Verbindlicher Lernweg: **Etappen mit Startinput + identischem Merkblatt → Pflichtübungen mit freiwilligen Vertiefungen → Gelingensnachweis ab 80 %; letzte Etappe endet mit Probearbeit → Feedback → Projekte / Wiederholung / Vertiefungen → Klassenarbeit mit mindestens zwei Wahlterminen**.
 - Individuelles Tempo ermöglichen. Pflichtblätter nicht allgemein zur Auswahl stellen.

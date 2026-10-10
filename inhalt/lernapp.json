@@ -1,0 +1,366 @@
+{
+  "_hinweis": "Inhalte der Lern-App fürs Smartphone (lernapp/). Merkkarten, Strategiekarten, Checkliste, Wörterhilfe, Lernweg-Blätter und Interviews kommen aus den übrigen Inhaltsdateien. Hier stehen nur app-eigene Texte und Übungen. Keine Kiosk-Lösungen zu Blatt 1–9, keine Inhalte aus Probearbeit, Klassenarbeiten oder Gelingensnachweisen (Sperrliste wird beim Erzeugen geprüft). Markup: *kursiv*, **fett**, \\n.",
+  "app": {
+    "titel": "Zootiere lernen",
+    "kurz": "Zootiere",
+    "untertitel": "Deutsch · Jahrgang 5 · Tiere beschreiben"
+  },
+  "start": {
+    "hallo": "Hier übst du, wie man ein Tier sachlich beschreibt. Du lernst in deinem Tempo. Die App ersetzt nicht dein Heft und nicht die Blätter in der Schule.",
+    "hinweis_haken": "Deine Häkchen bleiben nur auf diesem Handy. Niemand sonst sieht sie."
+  },
+  "elterninfo": {
+    "titel": "Für Eltern",
+    "absaetze": [
+      "Diese App begleitet die Deutsch-Reihe „Zootiere“ in Jahrgang 5. Die Kinder lernen, ein Tier mithilfe von Bild und Interview sachlich und geordnet zu beschreiben.",
+      "Die Nutzung ist **freiwillig**. Es gibt keine Noten, keine Punkte und keine Ranglisten.",
+      "**Datenschutz:** Es gibt keine Anmeldung, keine Namen und keine Werbung. Die App sendet keine Daten. Häkchen und Notizen werden nur auf diesem Gerät gespeichert. Mit „Alles löschen“ entfernen Sie sie.",
+      "**Offline:** Nach dem ersten Öffnen funktioniert die App auch ohne Internet. Sie können sie über das Teilen-Menü des Browsers zum Startbildschirm hinzufügen.",
+      "**So können Sie helfen:** Lassen Sie sich von Ihrem Kind ein Tier beschreiben. Fragen Sie nach: „Woher weißt du das? Gilt das für alle Tiere dieser Art?“ Im Bereich „Zuhause“ finden Sie Ideen.",
+      "Die Interviews sind ausgedacht. Die Angaben über die Tiere stimmen."
+    ]
+  },
+  "weg": {
+    "etappe_text": "Input oder Merkblatt → Pflichtblätter → Gelingensnachweis. Vier von fünf Zielen reichen für die nächste Etappe.",
+    "stationen": [
+      {
+        "id": "wahl",
+        "titel": "Wahlzeit",
+        "text": "Nach dem Feedback zur Probearbeit entscheidest du, woran du arbeitest. Offene Ziele kommen zuerst.",
+        "punkte": ["Offene Ziele geübt und noch einmal gezeigt (wenn nötig)", "P1 · Unser Tiermagazin", "P2 · Welches Tier ist gemeint?", "P3 · Zwei Tiere vergleichen", "Vertiefungen nachgeholt"],
+        "ueben": "training"
+      },
+      {
+        "id": "training",
+        "titel": "Training vor der Klassenarbeit",
+        "text": "Du übst noch einmal mit neuen Tieren aus dem Zoo Dortmund.",
+        "punkte": ["Ü1 · Die Elenantilope", "Ü2 · Die Hirschziegenantilope"],
+        "ueben": "training"
+      },
+      {
+        "id": "ka",
+        "titel": "Klassenarbeit",
+        "text": "Du schreibst die Klassenarbeit an einem von zwei Terminen. Du arbeitest allein. Erlaubt sind die Seite „Das zählt“ und die Hilfeseite.",
+        "punkte": ["Termin gewählt", "Klassenarbeit geschrieben"]
+      }
+    ]
+  },
+  "uebungen": [
+    {
+      "id": "e1-fisch",
+      "etappe": 1,
+      "typ": "auswahl",
+      "titel": "Finde den Fisch",
+      "kurz": "Welcher Fisch ist gemeint?",
+      "bild": "aquarium",
+      "intro": "Lies die Beschreibung. Tippe auf den passenden Fisch. Passt sie zu allen Fischen? Dann ist sie zu ungenau.",
+      "siehe": "Merkblatt 1 · Finde den Fisch",
+      "optionen": [["A", "Fisch A"], ["B", "Fisch B"], ["C", "Fisch C"], ["D", "Fisch D"], ["alle", "passt zu allen"]],
+      "items": [
+        {"text": "*Der Fisch hat einen runden Körper mit dunklen Streifen.*", "richtig": "A", "erklaerung": "Nur Fisch A ist rund und gestreift."},
+        {"text": "*Der Fisch ist schön und schwimmt im Wasser.*", "richtig": "alle", "erklaerung": "Alle Fische schwimmen. „schön“ ist eine Meinung. Diese Beschreibung hilft nicht."},
+        {"text": "*Der Fisch hat oben und unten lange, spitze Flossen. Sein Körper hat kein Muster.*", "richtig": "C", "erklaerung": "Fisch C hat lange Flossen oben und unten und kein Muster."},
+        {"text": "*Der Fisch hat ein spitzes Maul und einen schmalen Körper mit Punkten.*", "richtig": "B", "erklaerung": "Nur Fisch B ist lang, schmal und gepunktet."},
+        {"text": "*Der kleine Fisch hat eine große, breite Schwanzflosse.*", "richtig": "D", "erklaerung": "Fisch D hat einen kleinen Körper und eine sehr große Schwanzflosse."},
+        {"text": "*Der Fisch sieht cool aus.*", "richtig": "alle", "erklaerung": "„cool“ sagt nur, wie jemand den Fisch findet. Man erkennt keinen Fisch daran."},
+        {"text": "*Der Fisch hat einen hohen, runden Körper und eine kleine Schwanzflosse.*", "richtig": "A", "erklaerung": "Fisch A ist hoch und rund. Seine Schwanzflosse ist klein."}
+      ]
+    },
+    {
+      "id": "e1-foto",
+      "etappe": 1,
+      "typ": "auswahl",
+      "titel": "Was zeigt das Foto?",
+      "kurz": "Sehe ich es oder steht es nur im Text?",
+      "bild": "fischotter",
+      "intro": "Schau dir das Foto genau an. Kannst du die Angabe auf dem Foto sicher sehen? Oder erfährst du sie nur aus dem Interview?",
+      "siehe": "Merkblatt 1 · Das zeigt dir das Foto",
+      "optionen": [["foto", "sehe ich auf dem Foto"], ["text", "nur im Interview"]],
+      "items": [
+        {"text": "lange Tasthaare an der Schnauze", "richtig": "foto", "erklaerung": "Die langen Tasthaare siehst du gut an der Schnauze."},
+        {"text": "Schwimmhäute zwischen den Zehen", "richtig": "text", "erklaerung": "Die Pfoten sind im Gras verdeckt. Erfinde keine verdeckten Merkmale."},
+        {"text": "kleine Ohren", "richtig": "foto", "erklaerung": "Die Ohren sind gut zu sehen. Sie sind klein."},
+        {"text": "ohne Schwanz 60 bis 90 Zentimeter lang", "richtig": "text", "erklaerung": "Eine Länge kannst du auf einem Foto nicht messen. Das Maß steht im Interview."},
+        {"text": "am Hals helleres Fell", "richtig": "foto", "erklaerung": "Am Hals ist das Fell deutlich heller."},
+        {"text": "Fischotter fressen vor allem Fische.", "richtig": "text", "erklaerung": "Auf dem Foto frisst der Otter nicht. Die Nahrung erfährst du im Interview."},
+        {"text": "Fischotter leben an Flüssen und Seen.", "richtig": "text", "erklaerung": "Auf dem Foto siehst du nur Gras. Den Lebensraum erfährst du im Interview."},
+        {"text": "ein breiter, flacher Kopf", "richtig": "foto", "erklaerung": "Den breiten, flachen Kopf siehst du gut."}
+      ]
+    },
+    {
+      "id": "e1-sortieren",
+      "etappe": 1,
+      "typ": "auswahl",
+      "titel": "Was gehört in die Beschreibung?",
+      "kurz": "Sachangabe, nur Otto oder Meinung?",
+      "intro": "Frau Berger erzählt viel. Gilt der Satz für alle Fischotter? Geht es nur um Otto? Oder sagt jemand, wie er das Tier findet?",
+      "siehe": "Merkblatt 1 · Was gehört in die Beschreibung?",
+      "optionen": [["S", "Sachangabe"], ["X", "nur Otto"], ["W", "Meinung"]],
+      "items": [
+        {"text": "*Fischotter gehören zu den Mardern.*", "richtig": "S", "erklaerung": "Das gilt für alle Fischotter. Es passt in die Beschreibung."},
+        {"text": "*Unser Otto wartet am Gitter und pfeift laut.*", "richtig": "X", "erklaerung": "Das erzählt Frau Berger nur über Otto im Zoo."},
+        {"text": "*Ehrlich gesagt ist er der süßeste Otter der Welt!*", "richtig": "W", "erklaerung": "„der süßeste“ sagt, wie Frau Berger Otto findet."},
+        {"text": "*Sie brauchen Ufer, an denen sie sich verstecken können.*", "richtig": "S", "erklaerung": "Das gilt für alle Fischotter. Es gehört zum Lebensraum."},
+        {"text": "*Gestern hat Otto einen Krebs ganz allein geknackt.*", "richtig": "X", "erklaerung": "Das ist ein Erlebnis mit Otto. Es gilt nicht für alle Fischotter."},
+        {"text": "*Deshalb ist er so ein toller Schwimmer.*", "richtig": "W", "erklaerung": "„toll“ ist eine Meinung. Kein Merkmal."},
+        {"text": "*Das Fell ist sehr dicht.*", "richtig": "S", "erklaerung": "Das gilt für alle Fischotter. Es gehört zum Aussehen."},
+        {"text": "*Letzte Woche haben wir Otto gemessen: 80 Zentimeter.*", "richtig": "X", "erklaerung": "Die 80 Zentimeter gelten nur für Otto. In die Beschreibung gehört das Maß aller Fischotter."}
+      ]
+    },
+    {
+      "id": "e1-detektiv",
+      "etappe": 1,
+      "typ": "detektiv",
+      "titel": "Interview-Detektiv",
+      "kurz": "Stellen im Fischotter-Interview zuordnen",
+      "interview": "fischotter",
+      "zootier": "Otto",
+      "intro": "Tippe auf eine unterstrichene Stelle. Entscheide: Wozu gehört sie? Oder streichst du sie?",
+      "siehe": "Merkblatt 1 · Das erfährst du im Interview",
+      "kuerzel": ["A", "L", "N", "M", "W", "X", "V"],
+      "optionen": [["A", "Aussehen"], ["L", "Lebensraum"], ["N", "Nahrung"], ["M", "Maß"], ["weg", "streichen"]]
+    },
+    {
+      "id": "e1-wortarten",
+      "etappe": 1,
+      "typ": "auswahl",
+      "titel": "Sprachdetektiv",
+      "kurz": "Nomen, Artikel, Verb oder Adjektiv?",
+      "intro": "Lies den Satz. Welche Wortart ist das **fette** Wort?",
+      "siehe": "Merkblatt 1 · Sprachdetektiv",
+      "optionen": [["N", "Nomen"], ["Ar", "Artikel"], ["V", "Verb"], ["Ad", "Adjektiv"]],
+      "items": [
+        {"text": "*Der **Otter** schwimmt.*", "richtig": "N", "erklaerung": "„Otter“ benennt ein Tier. Es ist ein Nomen. Du schreibst es groß."},
+        {"text": "*Der Otter **schwimmt**.*", "richtig": "V", "erklaerung": "„schwimmt“ sagt, was geschieht. Es ist ein Verb."},
+        {"text": "*Das Fell ist **dicht**.*", "richtig": "Ad", "erklaerung": "„dicht“ beschreibt das Fell genauer. Es ist ein Adjektiv."},
+        {"text": "***Das** Fell ist dicht.*", "richtig": "Ar", "erklaerung": "„Das“ begleitet das Nomen „Fell“. Es ist ein Artikel."},
+        {"text": "*An der **Schnauze** sitzen lange Tasthaare.*", "richtig": "N", "erklaerung": "„Schnauze“ benennt einen Körperteil. Es ist ein Nomen."},
+        {"text": "*Der Fischotter hat **kurze** Beine.*", "richtig": "Ad", "erklaerung": "„kurze“ beschreibt die Beine. Es ist ein Adjektiv."},
+        {"text": "*Der Fischotter **frisst** vor allem Fische.*", "richtig": "V", "erklaerung": "„frisst“ sagt, was der Fischotter tut. Es ist ein Verb."},
+        {"text": "*Die Ohren sind klein. **Die** Ohren sind rund.*", "richtig": "Ar", "erklaerung": "„Die“ begleitet das Nomen „Ohren“. Es ist ein Artikel."}
+      ]
+    },
+    {
+      "id": "e2-genau",
+      "etappe": 2,
+      "typ": "auswahl",
+      "titel": "Genau statt wertend",
+      "kurz": "Welche Angabe ist genauer?",
+      "intro": "Wähle die Angabe, die man am Bild oder im Interview prüfen kann.",
+      "siehe": "Merkblatt 2 · Genau statt wertend",
+      "items": [
+        {"text": "Was ist genauer als „schönes Fell“?", "optionen": ["oben dunkelbraunes Fell", "tolles Fell", "Fell wie Samt"], "richtig": 0, "erklaerung": "Die Farbe kannst du prüfen. „toll“ ist eine Meinung, „wie Samt“ ein Vergleich."},
+        {"text": "Was ist genauer als „cooler Schwanz“ beim Roten Panda?", "optionen": ["lustiger Schwanz", "langer, buschiger Schwanz mit Ringen", "Schwanz wie bei einem Kuscheltier"], "richtig": 1, "erklaerung": "Länge, Form und Muster sind genaue Merkmale."},
+        {"text": "Was ist genauer als *„Das Tier bewegt sich im Wasser.“*?", "optionen": ["*Das Tier ist im Wasser.*", "*Der Fischotter macht etwas im Wasser.*", "*Der Fischotter schwimmt im Wasser.*"], "richtig": 2, "erklaerung": "„Fischotter“ ist genauer als „Tier“, „schwimmt“ genauer als „bewegt sich“."},
+        {"text": "Herr Yıldız sagt über die Erdmännchen: *„Das sieht aus wie eine Sonnenbrille. Total cool, oder?“* Welche Sachangabe passt?", "optionen": ["*Das Erdmännchen trägt eine Sonnenbrille.*", "*Das Erdmännchen hat dunkle Flecken um die Augen.*", "*Das Erdmännchen sieht cool aus.*"], "richtig": 1, "erklaerung": "Die Flecken sind ein Merkmal. Der Vergleich und die Meinung fallen weg."},
+        {"text": "Welches Wort ist eine Meinung?", "optionen": ["dunkelbraun", "kurz", "süß"], "richtig": 2, "erklaerung": "„süß“ sagt, wie jemand das Tier findet. Farbe und Länge kann man prüfen."},
+        {"text": "Welches Wort ist kein genaues Merkmal?", "optionen": ["buschig", "hübsch", "spitz"], "richtig": 1, "erklaerung": "„hübsch“ ist eine Meinung. „buschig“ und „spitz“ beschreiben eine Form."}
+      ]
+    },
+    {
+      "id": "e2-sachsatz",
+      "etappe": 2,
+      "typ": "auswahl",
+      "titel": "Aus Interview-Sprache wird Sachsprache",
+      "kurz": "Welcher Satz passt in die Beschreibung?",
+      "intro": "Im Interview spricht jemand mit dir. Im Sachtext schreibst du über alle Tiere der Art, im Präsens und ohne Meinung.",
+      "siehe": "Merkblatt 2 · Aus Interview-Sprache wird Sachsprache",
+      "items": [
+        {"text": "Frau Berger über das Fell: *„Oben ist es dunkelbraun, am Hals ist es heller.“*", "optionen": ["*Ottos Fell war oben dunkelbraun.*", "*Oben ist es dunkelbraun.*", "*Das Fell des Fischotters ist oben dunkelbraun und am Hals heller.*"], "richtig": 2, "erklaerung": "Der Satz nennt das Tier, steht im Präsens und gilt für alle Fischotter. Bei „Oben ist es …“ weiß man nicht, was gemeint ist."},
+        {"text": "Frau Berger über die Tasthaare: *„Damit spürt er Fische, auch wenn das Wasser trüb ist.“*", "optionen": ["*Mit seinen Tasthaaren spürt der Fischotter Fische auch in trübem Wasser.*", "*Damit spürt er Fische.*", "*Otto spürte gestern Fische im trüben Wasser.*"], "richtig": 0, "erklaerung": "Der Satz sagt, womit der Fischotter spürt. „Damit“ allein ist unklar. Das Erlebnis mit Otto gehört nicht hinein."},
+        {"text": "Frau Nowak sagt: *„Mei sieht aus wie ein Kuscheltier. Ich finde, sie ist das hübscheste Tier hier.“*", "optionen": ["*Der Rote Panda ist das hübscheste Tier.*", "*Der Rote Panda sieht aus wie ein Kuscheltier.*", "Das lasse ich weg: Vergleich und Meinung."], "richtig": 2, "erklaerung": "Hier steckt keine Sachangabe. Vergleich und Meinung lässt du weg."},
+        {"text": "Herr Yıldız sagt: *„Unsere Chefin heißt Kiki. Sie ist die Mutigste von allen.“*", "optionen": ["*Das Erdmännchen ist mutig.*", "Das lasse ich weg: nur Kiki und eine Meinung.", "*Kiki ist die Chefin der Erdmännchen.*"], "richtig": 1, "erklaerung": "Kiki ist das Zootier. „die Mutigste“ ist eine Meinung. Beides gehört nicht hinein."},
+        {"text": "Frau Nowak sagt: *„Der Kopf ist rund, und die Ohren sind groß und spitz.“*", "optionen": ["*Der Rote Panda hat einen runden Kopf und große, spitze Ohren.*", "*Mei hatte einen runden Kopf.*", "*Der Kopf ist rund und süß.*"], "richtig": 0, "erklaerung": "Der Satz gilt für alle Roten Pandas und steht im Präsens. „süß“ wäre eine Meinung."}
+      ]
+    },
+    {
+      "id": "e2-verben",
+      "etappe": 2,
+      "typ": "auswahl",
+      "titel": "Verb-Werkstatt",
+      "kurz": "Präsens und passendes Verb",
+      "intro": "Welches Verb passt in die Lücke? Achte auf das Präsens und auf das Subjekt.",
+      "siehe": "Merkblatt 2 · Im Präsens beschreiben",
+      "items": [
+        {"text": "*Der Fischotter ___ vor allem Fische.*", "optionen": ["fressen", "frisst", "fraß"], "richtig": 1, "erklaerung": "Ein Fischotter: „er frisst“. „fraß“ ist Vergangenheit."},
+        {"text": "*Fischotter ___ an Flüssen und Seen.*", "optionen": ["leben", "lebt", "lebten"], "richtig": 0, "erklaerung": "Mehrere Fischotter: „sie leben“. Präsens."},
+        {"text": "*Das Erdmännchen ___ lange Krallen.*", "optionen": ["haben", "hatte", "hat"], "richtig": 2, "erklaerung": "Ein Erdmännchen: „es hat“."},
+        {"text": "*Die Ohren des Roten Pandas ___ groß und spitz.*", "optionen": ["ist", "sind", "waren"], "richtig": 1, "erklaerung": "Subjekt sind „die Ohren“, also mehrere: „sie sind“."},
+        {"text": "Wie heißt die **Grundform** von „schwimmt“?", "optionen": ["schwimmen", "schwamm", "geschwommen"], "richtig": 0, "erklaerung": "Im Wörterbuch steht die Grundform: schwimmen."},
+        {"text": "Wie heißt die **Grundform** von „hat“?", "optionen": ["hatte", "haben", "habt"], "richtig": 1, "erklaerung": "Die Grundform ist „haben“: ich habe, er hat."},
+        {"text": "*Der Rote Panda ___ hauptsächlich Bambus.*", "optionen": ["frisst", "fressen", "fresst"], "richtig": 0, "erklaerung": "Ein Roter Panda: „er frisst“."}
+      ]
+    },
+    {
+      "id": "e2-satzbau",
+      "etappe": 2,
+      "typ": "satzbau",
+      "titel": "Sätze bauen",
+      "kurz": "Wortkarten zu einem Satz ordnen",
+      "intro": "Tippe die Karten in der richtigen Reihenfolge an. Beginne mit dem Subjekt: Wer oder was?",
+      "siehe": "Merkblatt 2 · Vollständige Sätze",
+      "items": [
+        {"teile": ["Der Fischotter", "lebt", "an Flüssen und Seen", "."], "erklaerung": "Subjekt, Verb, Angabe, Punkt."},
+        {"teile": ["Sein Kopf", "ist", "breit und flach", "."], "erklaerung": "Wer oder was ist breit und flach? Sein Kopf."},
+        {"teile": ["Der Rote Panda", "frisst", "hauptsächlich Bambus", "."], "erklaerung": "Das Verb steht an zweiter Stelle."},
+        {"teile": ["Das Erdmännchen", "hat", "eine spitze Schnauze", "."], "erklaerung": "Großer Anfang, Verb im Präsens, Punkt am Ende."},
+        {"teile": ["An der Schnauze", "hat", "der Fischotter", "lange Tasthaare", "."], "erklaerung": "Auch so geht ein Satz: Das Verb bleibt an zweiter Stelle, das Subjekt kommt danach."}
+      ]
+    },
+    {
+      "id": "e3-plan",
+      "etappe": 3,
+      "typ": "auswahl",
+      "titel": "Plan ordnen",
+      "kurz": "Wohin gehört das Stichwort?",
+      "intro": "Du baust einen Schreibplan zum Fischotter. Wohin gehört das Stichwort? Angaben nur über Otto und Vergleiche streichst du.",
+      "siehe": "Merkblatt 3 · Vom Interview zum Plan",
+      "optionen": [["U", "Überblick"], ["A", "Aussehen"], ["L", "Lebensraum"], ["N", "Nahrung"], ["weg", "streichen"]],
+      "items": [
+        {"text": "gehört zu den Mardern", "richtig": "U", "erklaerung": "Die Tierfamilie gibt einen Überblick."},
+        {"text": "lange Tasthaare an der Schnauze", "richtig": "A", "erklaerung": "Ein äußeres Merkmal gehört zum Aussehen."},
+        {"text": "wie ein Brett mit Nase", "richtig": "weg", "erklaerung": "Das ist ein Vergleich. Die Sachangabe heißt: breiter, flacher Kopf."},
+        {"text": "Flüsse und Seen", "richtig": "L", "erklaerung": "Hier lebt der Fischotter."},
+        {"text": "ohne Schwanz etwa 60–90 cm", "richtig": "U", "erklaerung": "Das Maß der Art mit Einheit und Bezug gehört in den Überblick."},
+        {"text": "Otto pfeift laut am Gitter", "richtig": "weg", "erklaerung": "Das gilt nur für Otto."},
+        {"text": "vor allem Fische", "richtig": "N", "erklaerung": "Das frisst der Fischotter."},
+        {"text": "Schwimmhäute zwischen den Zehen", "richtig": "A", "erklaerung": "Ein äußeres Merkmal gehört zum Aussehen."},
+        {"text": "der süßeste Otter der Welt", "richtig": "weg", "erklaerung": "Das ist eine Meinung."},
+        {"text": "kleine Ohren", "richtig": "A", "erklaerung": "Ein äußeres Merkmal gehört zum Aussehen."}
+      ]
+    },
+    {
+      "id": "e3-merkmale",
+      "etappe": 3,
+      "typ": "saetze",
+      "titel": "Merkmale zählen",
+      "kurz": "Wie viele verschiedene Merkmale?",
+      "intro": "Tippe alle Sätze an, die ein **neues** äußeres Merkmal beschreiben. Ein Merkmal, das schon vorkam, zählt nicht noch einmal.",
+      "siehe": "Merkblatt 3 · Mit Kriterien prüfen (K2)",
+      "saetze": [
+        {"text": "Der Fischotter gehört zu den Mardern.", "ja": false, "erklaerung": "Das ist ein Überblick, kein äußeres Merkmal."},
+        {"text": "Er hat einen langen, schmalen Körper.", "ja": true, "erklaerung": "Merkmal 1: Körper."},
+        {"text": "Die Beine sind kurz.", "ja": true, "erklaerung": "Merkmal 2: Beine."},
+        {"text": "Er lebt an Flüssen und Seen.", "ja": false, "erklaerung": "Das ist der Lebensraum, kein Aussehen."},
+        {"text": "Sein Fell ist oben dunkelbraun.", "ja": true, "erklaerung": "Merkmal 3: Fell."},
+        {"text": "Der Körper des Fischotters ist lang.", "ja": false, "erklaerung": "Den Körper hast du schon. Er zählt nicht doppelt."},
+        {"text": "Lange Tasthaare wachsen an seiner Schnauze.", "ja": true, "erklaerung": "Merkmal 4: Tasthaare."},
+        {"text": "Er frisst vor allem Fische.", "ja": false, "erklaerung": "Das ist die Nahrung, kein Aussehen."}
+      ],
+      "fazit": "Der Text hat vier verschiedene äußere Merkmale. Das reicht für K2."
+    },
+    {
+      "id": "e3-fehlerjagd",
+      "etappe": 3,
+      "typ": "fehlerjagd",
+      "titel": "Fehlerjagd",
+      "kurz": "Satzanfang, Nomen, Punkt",
+      "intro": "Tippe jedes Wort an, das falsch geschrieben ist. Fehlt am Ende ein Punkt? Dann tippe auf **Ende**. Manche Sätze sind schon richtig.",
+      "siehe": "Merkblatt 3 · Prüfen und überarbeiten (K6)",
+      "items": [
+        {"falsch": "der Fischotter hat kleine ohren", "richtig": "Der Fischotter hat kleine Ohren."},
+        {"falsch": "Das Erdmännchen hat einen schlanken körper.", "richtig": "Das Erdmännchen hat einen schlanken Körper."},
+        {"falsch": "Der Rote Panda frisst hauptsächlich Bambus.", "richtig": "Der Rote Panda frisst hauptsächlich Bambus."},
+        {"falsch": "sein fell ist oben dunkelbraun", "richtig": "Sein Fell ist oben dunkelbraun."},
+        {"falsch": "Fischotter leben an flüssen und Seen.", "richtig": "Fischotter leben an Flüssen und Seen."},
+        {"falsch": "Seine tasthaare sind lang", "richtig": "Seine Tasthaare sind lang."}
+      ]
+    },
+    {
+      "id": "t1-detektiv",
+      "etappe": "training",
+      "typ": "detektiv",
+      "titel": "Ü1 · Die Elenantilope",
+      "kurz": "Interview markieren",
+      "interview": "elenantilope",
+      "zootier": "Kito",
+      "intro": "Tippe auf eine unterstrichene Stelle. Gehört sie in deinen Plan? Dann wähle die Überschrift. Sonst streichst du sie.",
+      "siehe": "Strategiekarte 9 · Aus dem Interview wird ein Sachtext",
+      "kuerzel": ["T", "A", "L", "N", "M", "W", "X", "V", "U"],
+      "optionen": [["T", "Überblick"], ["A", "Aussehen"], ["L", "Lebensraum"], ["N", "Nahrung"], ["M", "Maß"], ["weg", "streichen"]]
+    },
+    {
+      "id": "t2-detektiv",
+      "etappe": "training",
+      "typ": "detektiv",
+      "titel": "Ü2 · Die Hirschziegenantilope",
+      "kurz": "Interview markieren",
+      "interview": "hirschziegenantilope",
+      "zootier": "Raja",
+      "intro": "Tippe auf eine unterstrichene Stelle. Gehört sie in deinen Plan? Dann wähle die Überschrift. Sonst streichst du sie.",
+      "siehe": "Strategiekarte 9 · Aus dem Interview wird ein Sachtext",
+      "kuerzel": ["T", "A", "L", "N", "M", "W", "X", "V", "U"],
+      "optionen": [["T", "Überblick"], ["A", "Aussehen"], ["L", "Lebensraum"], ["N", "Nahrung"], ["M", "Maß"], ["weg", "streichen"]]
+    }
+  ],
+  "detektiv_rueckmeldung": {
+    "T": "Richtig: Das gibt einen Überblick über die Tierart.",
+    "A": "Richtig: Das ist ein äußeres Merkmal.",
+    "L": "Richtig: Hier lebt die Tierart.",
+    "N": "Richtig: Das frisst die Tierart.",
+    "M": "Richtig: Das ist das Maß der Art, mit Einheit und Bezug.",
+    "W": "Das ist eine Meinung. Du streichst sie.",
+    "X": "Das gilt nur für {zootier} oder den Zoo. Du streichst es.",
+    "V": "Das ist ein Vergleich. Du streichst ihn. Die Sachangabe steht meistens direkt davor.",
+    "U": "Das ist eine Vermutung. Du streichst sie."
+  },
+  "etappen_namen": {"1": "Etappe 1", "2": "Etappe 2", "3": "Etappe 3", "training": "Training"},
+  "raetsel": {
+    "intro": "Bringe die Buchstaben in die richtige Reihenfolge. Der Hinweis hilft dir.",
+    "woerter": [
+      ["Tasthaare", "Haare an der Schnauze zum Ertasten"],
+      ["Schwimmhäute", "Haut zwischen den Zehen"],
+      ["Krallen", "spitze Nägel an den Zehen"],
+      ["Rumpf", "Körper ohne Kopf, Beine und Schwanz"],
+      ["Lebensraum", "Wo lebt ein Tier in der Natur?"],
+      ["Nahrung", "Was frisst ein Tier?"],
+      ["Merkmal", "Daran erkennt man ein Tier."],
+      ["Sachangabe", "Sie gilt für alle Tiere einer Art."],
+      ["Meinung", "Sie sagt, wie jemand etwas findet."],
+      ["Präsens", "die Zeitform für Tierbeschreibungen"],
+      ["Nomen", "Wortart, die du großschreibst"],
+      ["Adjektiv", "Wortart, die Merkmale beschreibt"],
+      ["Verb", "Wortart, die sagt, was geschieht"],
+      ["Artikel", "der, die oder das"],
+      ["Überblick", "Er steht am Anfang der Tierbeschreibung."],
+      ["Marder", "Zu dieser Tierfamilie gehört der Fischotter."],
+      ["Mangusten", "Zu dieser Tierfamilie gehört das Erdmännchen."],
+      ["Bambus", "Davon ernährt sich der Rote Panda hauptsächlich."],
+      ["Savanne", "Grasland mit wenigen Bäumen"],
+      ["Dämmerung", "Zeit zwischen Tageslicht und Dunkelheit"],
+      ["Grundform", "So steht ein Verb im Wörterbuch."],
+      ["Subjekt", "Wer oder was? Der Satzgegenstand"],
+      ["Wamme", "Hautfalte am Hals der Elenantilope"],
+      ["Steppe", "weites, trockenes Grasland ohne Wald"]
+    ]
+  },
+  "zuhause": {
+    "intro": "Du kannst auch ohne Schulmaterial üben. Beschreibe ein Tier, das du wirklich sehen kannst: ein Haustier, eine Amsel, eine Taube, ein Eichhörnchen, eine Ente im Park oder eine Spinne am Fenster.",
+    "schritte": [
+      {"titel": "Beobachten wie im Zoo", "text": "Schau das Tier ruhig an. Was siehst du **sicher**? Körperform, Fellfarbe, Schwanz, Ohren, Beine. Was siehst du **nicht**? Notiere Stichwörter. Du kannst das Tier auch ins Heft zeichnen und beschriften."},
+      {"titel": "Dein eigenes Interview", "text": "Frage jemanden aus deiner Familie über ein Tier, zum Beispiel Oma über ihre Katze. Schreibe die Antworten auf. Sortiere danach: Was gilt für **alle Katzen**? Das ist eine Sachangabe. Was gilt nur für **eure Katze**? Das ist ein Einzelfall. Was ist eine **Meinung**? Genau so hast du es beim Fischotter gemacht."},
+      {"titel": "Grenze der Beobachtung", "text": "Lebensraum, Nahrung und das Maß der Art siehst du nicht an einem einzelnen Tier. Schlage in einem Tierlexikon nach, frage in der Bücherei oder frage einen Erwachsenen. Schreibe nur Angaben, die du belegen kannst."},
+      {"titel": "Messen ist ein Einzelfall", "text": "*„Unsere Katze ist 45 Zentimeter lang.“* Das gilt nur für eure Katze. Wie bei Otto. In die Beschreibung gehört das Maß der Tierart."},
+      {"titel": "Zu zweit raten", "text": "Beschreibe ein Tier mit zwei genauen Merkmalen. Sage den Namen nicht. Jemand aus deiner Familie rät. Waren deine Merkmale genau genug?"}
+    ],
+    "ideen": ["Hund oder Katze", "Amsel", "Taube", "Eichhörnchen", "Stockente", "Meerschweinchen", "Kaninchen", "Spinne", "Schnecke", "Kuh oder Pferd"],
+    "sicherheit": ["Fasse fremde Tiere nicht an.", "Füttere keine Tiere, die nicht dir gehören.", "Störe Wildtiere nicht. Bleib auf Abstand.", "Miss ein Haustier nur, wenn es das mag und ein Erwachsener erlaubt es.", "Wasch dir nach dem Kontakt mit Tieren die Hände."],
+    "plan": {
+      "titel": "Mein Schreibplan",
+      "hinweis": "Stichwörter reichen. Deinen Text schreibst du ins Heft. Der Plan bleibt nur auf diesem Handy.",
+      "felder": [
+        ["tier", "Welches Tier?"],
+        ["ueberblick", "Überblick: Tierfamilie, Größe oder Gewicht"],
+        ["a1", "Aussehen: Merkmal 1"],
+        ["a2", "Aussehen: Merkmal 2"],
+        ["a3", "Aussehen: Merkmal 3"],
+        ["a4", "Aussehen: Merkmal 4"],
+        ["leben", "Lebensraum"],
+        ["nahrung", "Nahrung"],
+        ["quelle", "Woher weißt du das? (beobachtet, Lexikon, gefragt …)"]
+      ]
+    },
+    "check_titel": "Prüfe deinen Text im Heft"
+  },
+  "sperrliste": ["Waschbär", "Rocky", "Bruno", "Breitmaulnashorn", "Nashorn", "Nala", "Herr Schäfer", "Frau Krause", "Herr Mensah", "Kelle", "Schlamm"]
+}

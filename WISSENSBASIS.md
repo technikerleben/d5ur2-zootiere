@@ -75,7 +75,7 @@ Klassenarbeit ─ früher Termin (DS 7) oder später Termin (DS 8); jedes Kind s
 - Ein SRL-Zyklus kann mehrere zusammenhängende Blätter umfassen. Reflexion vor dem Abwischen kurz ins Heft übertragen.
 - **Begriffe trennen:** Lernweg = Orientierung über die Reihe · Lernbuddy = Tischrahmen für die aktuelle Lernphase · Schreibplan = fachliche Ordnung des Textes · Checkliste K1–K6 = Prüfung der Textqualität.
 - **Kontroll-Kiosk** (Laptop im Raum) ist die einzige digitale Schüleranwendung **im Unterricht**; Kinder haben keine iPads.
-- **Lern-App fürs Smartphone (in Planung, 10.10.2026):** freiwilliger Lernbegleiter für zu Hause auf eigenen oder elterlichen Handys (`lernapp/`, Planung: `planung/Lernapp_Planung.md`). Lernweg, Merkkarten, Übungen, Quiz, Buchstabenrätsel, Training, Üben an Tieren der eigenen Umgebung. **Keine Kiosk-Lösungen zu Blatt 1–9**, keine Prüfungstiere, keine GN-Auszüge, keine Kinderdaten (nur `localStorage`), bewertungsneutral.
+- **Lern-App fürs Smartphone (Grundversion gebaut, 10.10.2026):** freiwilliger Lernbegleiter für zu Hause auf eigenen oder elterlichen Handys (`lernapp/`, Planung: `planung/Lernapp_Planung.md`). Lernweg, Merkkarten, Übungen, Quiz, Buchstabenrätsel, Training, Üben an Tieren der eigenen Umgebung. **Keine Kiosk-Lösungen zu Blatt 1–9**, keine Prüfungstiere, keine GN-Auszüge, keine Kinderdaten (nur `localStorage`), bewertungsneutral.
 
 ## 4 · Partner- und Feedbackphasen (Ergänzungsauftrag 08.10.2026)
 
@@ -602,10 +602,11 @@ tools/
   build_pruefung_f.py     Probearbeit F / Klassenarbeit F (zieldifferent)
   build_training.py       Training Antilopen + zeilen_training.json (vor build_kiosk.py ausführen)
   build_pakete.py         Druckpakete Schüler/Lehrkraft + ZIP (ausgabe/pakete)
+  build_lernapp.py        Lern-App (lernapp/) mit Sperrlisten-Prüfung und Browsertest 390×844
   build_wissensbasis.py   diese Datei
 ausgabe/                Erzeugte PDFs/HTML (etappe1–3, foerder, pruefungen, wahlphase, strategiekarten, lernweg)
 apps/kontroll-kiosk/    Kiosk
-lernapp/                Lern-App fürs Smartphone (geplant; tools/build_lernapp.py, inhalt/lernapp.json)
+lernapp/                Lern-App fürs Smartphone (index.html, manifest, sw.js, Icons); erzeugt von tools/build_lernapp.py aus inhalt/lernapp.json + Etappen/Interviews/Strategiekarten
 assets/                 fonts (Andika), bilder (Graustufen + Farbe), grafik (aquarium.svg / _farbe.svg)
 planung/                Planungstexte (SRL_Standard, Etappen_Gelingensnachweise, Kompetenzraster, Reihenplanung,
                         Sprachspur, Ergaenzungen_Umsetzung, Foerder_Workflow, Projekte_und_Terminwahl)
@@ -709,7 +710,7 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 - Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen; Branch `claude/etappe1-muster` noch nicht in `main`.
 - Gedruckte Lösungsfassung (Tipps/Lösungen wie im Kiosk) und ggf. Übungskarten-Modus im Kiosk.
 - Unterrichtserprobung steht aus; Zeitbudget nach Erprobung prüfen.
-- Lern-App (`planung/Lernapp_Planung.md`): Umsetzung steht aus. **Vor Ausgabe von Adresse/QR an Kinder Klassenarbeiten aus dem Repo entfernen** (extern speichern), da das Repo über Vercel öffentlich ausgeliefert wird.
+- Lern-App (`planung/Lernapp_Planung.md`): Grundversion gebaut (Mein Weg, Wissen, 14 Übungen inkl. Training Ü1/Ü2, Buchstabenrätsel, Zuhause); offen: Quiz je Etappe, Silbenrätsel/Suchsel, Giraffe, Schalter „Einfach“. **Vor Ausgabe von Adresse/QR an Kinder Klassenarbeiten aus dem Repo entfernen** (extern speichern), da das Repo über Vercel öffentlich ausgeliefert wird.
 - Angola-Giraffe in Inhaltsdatei überführen; Pflegerin heißt dort wie bei der Elenantilope „Frau Demir“ → neuen Namen wählen.
 
 ## 17 · Glossar

@@ -1,6 +1,6 @@
 # Lern-App „Zootiere“ fürs Smartphone · Planung
 
-> **Stand:** 10.10.2026 · Planungsphase, noch nichts gebaut.
+> **Stand:** 10.10.2026 · Grundversion gebaut (`lernapp/`, `python tools/build_lernapp.py`), noch nicht verteilt.
 > **Zweck:** Lernbegleiter für zu Hause auf eigenen oder elterlichen Handys (hochkant). Deckt den Lernweg ab, wiederholt die Merkblatt-Inhalte, bietet Übungen, Quiz, Buchstabenrätsel und eine Anleitung, wie man ohne Schulmaterial an Tieren aus der eigenen Umgebung übt.
 > **Bezug:** Alles bezieht sich auf die Reihe (WISSENSBASIS.md). Die App ersetzt keinen Unterricht, keinen Kiosk und keinen Nachweis.
 
@@ -108,7 +108,17 @@ Gleiche Denkschritte wie in der Reihe, übertragen auf Haustiere, Amsel, Taube, 
 2. **Ausbau:** Quiz je Etappe, Satzbau, Fehlerjagd, Silbenrätsel, Suchsel, Training (Giraffe, Ü1, Ü2), Zuhause mit Schreibplan und Selbstcheck.
 3. **Feinschliff:** Schalter „Einfach“, Vorlesen überall, Elterninfo, QR-Zettel; Wissensbasis/Leitfaden ergänzen.
 
-## 11 · Offen
+## 11 · Umsetzungsstand (10.10.2026)
+
+**Gebaut:** Mein Weg (Etappen aus den Inhaltsdateien, Wahlzeit, Training, Klassenarbeit; Häkchen lokal) · Wissen (Merkkarten Etappe 1–3 wortgleich mit Input/Merkblatt, Antwort aufdecken; Strategiekarten 1–10; K1–K6; Wörterhilfe) · Üben: Finde den Fisch, Was zeigt das Foto?, Sachangabe/nur Otto/Meinung, Interview-Detektiv Fischotter, Sprachdetektiv, Genau statt wertend, Interview → Sachsprache, Verb-Werkstatt, Sätze bauen, Plan ordnen, Merkmale zählen, Fehlerjagd, Training Ü1/Ü2 als Interview-Detektiv · Buchstabenrätsel (24 Fachwörter) · Zuhause (Schritte, Ideen, Sicherheit, Schreibplan, Selbstcheck K1–K6) · Elterninfo mit „Alles löschen“ · Vorlesen · PWA offline.
+
+**Prüfungen im Generator:** Sperrliste (Namen aus Probearbeit/Klassenarbeiten); app-eigene Texte dürfen keine Sätze aus Prüfungsinterviews, GN-Auszügen, Kiosk-Lösungen oder Training-Musterlösungen enthalten; Browsertest 390 × 844 (jede Übung lösbar, kein seitliches Scrollen, Tippflächen ≥ 44 px, keine Netzanfragen, offline, Speichern).
+
+**Auslegung „keine Lösungen“:** Die App enthält keine Kiosk-Texte und keine Zeilenbelege. Übungen zum Fischotter berühren aber zwangsläufig dieselben Fakten wie Blatt 1–6 (sie stehen auch im Merkblatt). Erdmännchen und Roter Panda werden in der App nicht markiert oder geplant, damit Blatt 7 nicht vorweggenommen wird.
+
+**Noch offen in der App:** Quiz je Etappe, Silbenrätsel und Suchsel, Giraffe als Beispielaufgabe, Schalter „Einfach“, QR-Zettel.
+
+## 12 · Offen
 
 - Angola-Giraffe in die Inhaltsdatei überführen (Quelle: Chat-HTML vom 10.10.2026). Pflegerin heißt dort „Frau Demir“ wie bei der Elenantilope → für die Giraffe neuen Namen wählen.
 - Klassenarbeiten extern speichern und aus dem Repo entfernen, bevor die App verteilt wird.
