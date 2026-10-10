@@ -437,9 +437,9 @@ def gn_felder(feld: str, v: dict) -> str:
         )
     if feld == "verbessern":
         return (
-            "<div class='wg'><em>„%s“</em></div><div class='wg'><b>Material:</b> <em>%s</em></div>"
+            "<div class='wg'><em>„%s“</em></div><div class='wg'><b>%s:</b> <em>%s</em></div>"
             "<div class='feld'><span class='ln'></span></div><div class='feld'><span class='ln'></span></div>"
-            % (md(v["verbessern"]["satz"]), md(v["verbessern"]["material"]))
+            % (md(v["verbessern"]["satz"]), v["verbessern"].get("label", "Material"), md(v["verbessern"]["material"]))
         )
     if feld == "merkmale":
         return (

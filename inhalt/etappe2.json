@@ -14,7 +14,7 @@
       "bloecke": [
         [
           "Sachlich beschreiben",
-          "Beschreibe überprüfbare Merkmale. „schön“ und „süß“ sagen nur, wie jemand etwas findet. Nutze Angaben aus deinem Material."
+          "Beschreibe überprüfbare Merkmale. „schön“ und „süß“ sagen nur, wie jemand etwas findet. Nutze Angaben aus dem Interview."
         ],
         [
           "Genaue Wörter wählen",
@@ -26,7 +26,7 @@
         ],
         [
           "Die Wörterhilfe",
-          "Auf der Wörterhilfe findest du genaue Wörter für Körperteile. Wähle nur Wörter, die zu deinem Tier passen. Prüfe die Angabe am Bild oder im Text."
+          "Auf der Wörterhilfe findest du genaue Wörter für Körperteile. Wähle nur Wörter, die zu deinem Tier passen. Prüfe am Bild oder im Interview."
         ],
         [
           "Frage",
@@ -35,6 +35,27 @@
         [
           "Gesicherte Antwort",
           "„oben dunkelbraunes Fell“. Die Farbe ist überprüfbar."
+        ]
+      ]
+    },
+    {
+      "titel": "Aus Interview-Sprache wird Sachsprache",
+      "bloecke": [
+        [
+          "Im Interview",
+          "Frau Berger spricht mit uns. Sie sagt *ich* und *unser Otto*, sie vergleicht und sagt ihre Meinung. Im Sachtext schreibst du über **alle Fischotter**, im **Präsens** und **ohne Meinung**."
+        ],
+        [
+          "Beispiel",
+          "Interview: *„Sein Körper ist lang und schmal, fast wie ein Torpedo.“*\nSachtext: *Der Fischotter hat einen langen, schmalen Körper.*"
+        ],
+        [
+          "Frage",
+          "Mache sachlich: *„Und der Kopf ist breit und flach. Ich sage immer: wie ein Brett mit Nase.“*"
+        ],
+        [
+          "Gesicherte Antwort",
+          "*Der Kopf des Fischotters ist breit und flach.* Den Vergleich und „Ich sage immer“ lässt du weg."
         ]
       ]
     },
@@ -117,33 +138,34 @@
       "bloecke": [
         [
           "Prüfe jeden Satz",
-          "Passt die Aussage zum Material?\nIst der Satz vollständig?\nSteht das Verb im Präsens und passt es?\nSind die Wörter genau?\nBeginnen Satz und Nomen groß?\nSteht am Ende ein Punkt?"
+          "Passt die Aussage zum Interview? Gilt sie für alle Tiere?\nIst der Satz vollständig?\nSteht das Verb im Präsens und passt es?\nSind die Wörter genau?\nBeginnen Satz und Nomen groß?\nSteht am Ende ein Punkt?"
         ],
         [
           "Beispiel verbessern",
-          "*„sein fell war schön“* wird zu: *„Sein Fell ist oben dunkelbraun.“* Die Angabe stammt aus dem Material."
+          "*„sein fell war schön“* wird zu: *„Sein Fell ist oben dunkelbraun.“* Die Angabe stammt aus dem Interview."
         ]
       ]
     }
   ],
-  "abschluss": "Bearbeite die Pflichtaufgaben auf Blatt 5 und 6. Vertiefungen sind freiwillig. Im Gelingensnachweis bildest du drei Sätze und verbesserst einen Satz. Fünf Ziele: Materialtreue, vollständige Sätze, passende Verben im Präsens, genaue statt wertende Wörter, Großschreibung und Punkte. Bei vier von fünf Zielen gehst du weiter zu Etappe 3.",
+  "abschluss": "Bearbeite die Pflichtaufgaben auf Blatt 5 und 6 mit dem Fischotter-Interview. Vertiefungen sind freiwillig. Im Gelingensnachweis bildest du drei Sätze und machst aus einer Meinung einen sachlichen Satz. Bei vier von fünf Zielen gehst du weiter zu Etappe 3.",
   "blaetter": [
     {
       "nr": 5,
       "titel": "Treffende Wörter",
-      "brauchst": "Heft · Merkblatt 2 · Wörterhilfe",
+      "brauchst": "Fischotter-Interview · Heft · Merkblatt 2 · Wörterhilfe",
       "material": {
-        "titel": "Material und Wörterhilfe",
-        "text": "Fell oben: dunkelbraun. Kopf: breit und flach. Im Wasser schwimmt der Fischotter.\n**Tasthaare:** Haare zum Ertasten.\n**Schwimmhäute:** Haut zwischen den Zehen."
+        "titel": "Aus dem Interview",
+        "text": "*„Sein Körper ist lang und schmal, fast wie ein Torpedo.“*\n*„Deshalb ist er so ein toller Schwimmer.“*\n**Tasthaare:** Haare zum Ertasten. **Schwimmhäute:** Haut zwischen den Zehen."
       },
       "teile": [
         {
           "art": "pflicht",
           "titel": "Schreibe ins Heft",
           "aufgaben": [
-            "Ersetze „schönes Fell“ und „toller Kopf“ durch genaue Angaben aus dem Material.",
-            "Bilde Wörter mit Artikel: *Tast + Haare*; *Schwimm + Häute*. Erkläre beide mit der Wörterhilfe.",
-            "Verbessere mit dem Material: *„Das Tier bewegt sich im Wasser.“* Nenne das Tier genau. Nutze ein treffendes Verb."
+            "Ersetze „schönes Fell“ und „toller Kopf“ durch genaue Angaben aus dem Interview. Schreibe die Zeile dazu.",
+            "Mache den Torpedo-Satz sachlich: Schreibe über den Körper des Fischotters ohne Vergleich.",
+            "„toller Schwimmer“ ist eine Meinung. Was hat der Fischotter zum Schwimmen? Schreibe einen sachlichen Satz.",
+            "Bilde Wörter mit Artikel: *Tast + Haare*; *Schwimm + Häute*. Erkläre beide mit der Wörterhilfe."
           ]
         },
         {
@@ -156,16 +178,16 @@
     {
       "nr": 6,
       "titel": "Sachliche Sätze",
-      "brauchst": "Heft · Merkblatt 2",
+      "brauchst": "Fischotter-Interview · Heft · Merkblatt 2",
       "teile": [
         {
           "art": "pflicht",
-          "titel": "Drei neue Sätze",
-          "text": "Schreibe im Heft je einen vollständigen Satz im Präsens:",
+          "titel": "Aus dem Interview wird ein Sachsatz",
+          "text": "Schreibe aus jeder Stelle einen vollständigen, sachlichen Satz im Präsens über den Fischotter:",
           "aufgaben": [
-            "*seine Beine – kurz – sein*",
-            "*der Fischotter – auch Krebse – fressen*",
-            "*an der Schnauze – lange Tasthaare – sitzen*"
+            "*„Die Beine sind dagegen richtig kurz.“*",
+            "*„Sie fangen aber auch Frösche und Krebse.“*",
+            "*„Die sind ganz klein.“* (Gemeint sind die Ohren.)"
           ]
         },
         {
@@ -173,7 +195,7 @@
           "titel": "Verbessern und prüfen",
           "start": 4,
           "aufgaben": [
-            "Verbessere: *„der fischotter lebte an schönen ufern“*.\nMaterial: *Er lebt an geschützten Ufern.*"
+            "Verbessere: *„der fischotter lebte an schönen ufern“*.\nIm Interview: *„Sie brauchen Ufer, an denen sie sich verstecken können.“*"
           ],
           "nachtext": "Prüfe alle vier Sätze mit Merkblatt 2. Achte auch auf große Satzanfänge und Nomen sowie Punkte."
         },
@@ -200,8 +222,8 @@
       {
         "id": "E2.1",
         "kurz": "richtige Angaben",
-        "kind": "Meine Sätze passen zu den Angaben im Material.",
-        "lehrkraft": "alle vier Aussagen passen zu den vorgegebenen Tierinformationen",
+        "kind": "Meine Sätze passen zu den Angaben aus dem Interview.",
+        "lehrkraft": "alle vier Aussagen passen zu den vorgegebenen Angaben",
         "ueben": "Blatt 5"
       },
       {
@@ -221,8 +243,8 @@
       {
         "id": "E2.4",
         "kurz": "genaue Wörter",
-        "kind": "Ich ersetze eine Wertung durch eine genaue Angabe.",
-        "lehrkraft": "die Wertung ist durch eine genaue passende Angabe ersetzt",
+        "kind": "Ich mache aus einer Meinung eine genaue Sachangabe.",
+        "lehrkraft": "Meinung/Vergleich weggelassen und durch die genaue Angabe ersetzt",
         "ueben": "Blatt 5"
       },
       {
@@ -240,8 +262,8 @@
         "feld": "saetze"
       },
       {
-        "titel": "Einen Satz verbessern",
-        "text": "Verbessere den Satz. Nutze die Angabe aus dem Material.",
+        "titel": "Aus einer Meinung wird ein Sachsatz",
+        "text": "Das sagt Frau Berger. Schreibe daraus einen sachlichen Satz über den Fischotter. Nutze die genaue Angabe aus dem Interview.",
         "feld": "verbessern"
       }
     ],
@@ -254,8 +276,9 @@
           "er – vor allem Fische – fressen"
         ],
         "verbessern": {
-          "satz": "der fischotter hatte schöne beine",
-          "material": "Seine Beine sind kurz."
+          "satz": "Ehrlich gesagt hat unser Otto die süßesten Beine der Welt!",
+          "material": "Die Beine sind dagegen richtig kurz.",
+          "label": "Im Interview"
         }
       },
       "B": {
@@ -265,8 +288,9 @@
           "er – auch Frösche – fressen"
         ],
         "verbessern": {
-          "satz": "der fischotter hatte einen tollen schwanz",
-          "material": "Sein Schwanz ist kräftig."
+          "satz": "Sein Kopf ist so toll, wie ein Brett mit Nase!",
+          "material": "Der Kopf ist breit und flach.",
+          "label": "Im Interview"
         }
       }
     }
@@ -325,5 +349,9 @@
       ],
       "achtung": "Ein Foto zeigt nicht alles. Ob ein Fell weich ist, siehst du nicht. Schreibe nur, was du belegen kannst."
     }
-  ]
+  ],
+  "interviews": [
+    "fischotter"
+  ],
+  "interview_kopf": "Material zu Blatt 5–6 · Interview"
 }
