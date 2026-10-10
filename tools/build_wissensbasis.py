@@ -166,6 +166,7 @@ tools/
   build_animation.py      ausgabe/lernweg/Ablauf_Animation.html
   build_anleitung.py      anleitung.html (Lehrkraft-Leitfaden, prüft alle Links)
   build_interviews.py     Interviews (Entwurf + Prüfliste/Zeilenbelege, zeilen.json); render_interview() für alle Materialseiten
+  build_pruefung_f.py     Probearbeit F / Klassenarbeit F (zieldifferent)
   build_pakete.py         Druckpakete Schüler/Lehrkraft + ZIP (ausgabe/pakete)
   build_wissensbasis.py   diese Datei
 ausgabe/                Erzeugte PDFs/HTML (etappe1–3, foerder, pruefungen, wahlphase, strategiekarten, lernweg)
@@ -401,7 +402,7 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 
 - Arbeitszeit der Probearbeit; Arbeitszeit, Punkteverteilung und Notengrenzen der Klassenarbeit.
 - Foto Breitmaulnashorn fehlt (Platzhalter); Biber-Foto vorläufig (Tierpaket, CC BY-SA 3.0). Wunschbild tierdoku.de nicht ladbar und ohne freie Lizenz.
-- Probearbeit F und Klassenarbeit F (Lückentext mit Wortspeicher im selben Aufbau).
+- Probearbeit F (Waschbär) und Klassenarbeit F (Biber) liegen vor (`inhalt/probearbeit_f_waschbaer.json`, `inhalt/klassenarbeit_f_biber.json`, `tools/build_pruefung_f.py`): Kurzinterview → Auftrag → Aufgaben (Info/Meinung, Wer ist gemeint, Plan sortieren, Lückentext-Beschreibung, eigener Satz, Prüfliste) → Rückmeldung F3.1–F3.5 bzw. Bewertung (22 Punkte, Vorschlag). Offen: zieldifferente Bewertung mit Schulvorgaben abstimmen; F-Fassung Nashorn bei Bedarf.
 - Zuordnung Variante ↔ Termin (Vorschlag Biber früh, Nashorn spät).
 - Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen; Branch `claude/etappe1-muster` noch nicht in `main`.
 - Gedruckte Lösungsfassung (Tipps/Lösungen wie im Kiosk) und ggf. Übungskarten-Modus im Kiosk.

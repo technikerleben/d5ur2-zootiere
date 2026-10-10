@@ -476,6 +476,88 @@
           "Land mit Gras und wenigen Bäumen"
         ]
       ]
+    },
+    {
+      "id": "waschbaer-f",
+      "rolle": "Förder · Probearbeit F",
+      "titel": "Rocky öffnet jede Dose",
+      "person": "Herr Schäfer",
+      "einleitung": "Herr Schäfer ist Tierpfleger. Er kümmert sich um die Waschbären.",
+      "foto": "assets/bilder/waschbaer_graustufen.jpg",
+      "foto_nachweis": "Foto: BS Thurner Hof · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
+      "paare": [
+        [
+          "Wo leben Waschbären?",
+          "[[Waschbären leben in Wäldern mit Wasser.|L]] [[Sie leben auch in Städten.|L]]"
+        ],
+        [
+          "Was fressen Waschbären?",
+          "[[Waschbären fressen Früchte, Nüsse und Insekten.|N]] [[Rocky mag am liebsten Weintrauben.|X]]"
+        ],
+        [
+          "Wie sieht ein Waschbär aus?",
+          "[[Das Fell ist graubraun.|A]] [[Um die Augen hat er eine schwarze Maske.|A]]"
+        ],
+        [
+          "Was hat er noch?",
+          "[[Der Schwanz ist buschig.|A]] [[Der Körper ist kräftig.|A]]"
+        ],
+        [
+          "Wie schwer ist ein Waschbär?",
+          "[[Ein Waschbär wiegt etwa 6 bis 7 Kilogramm.|M]] [[Rocky wiegt 8 Kilo.|X]]"
+        ],
+        [
+          "Wie finden Sie Rocky?",
+          "[[Rocky ist der schlauste Waschbär der Welt!|W]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "Maske",
+          "schwarzes Muster um die Augen"
+        ]
+      ]
+    },
+    {
+      "id": "biber-f",
+      "rolle": "Förder · Klassenarbeit F",
+      "titel": "Bruno baut die ganze Nacht",
+      "person": "Frau Krause",
+      "einleitung": "Frau Krause ist Tierpflegerin. Sie kümmert sich um die Biber.",
+      "foto": "assets/bilder/biber_graustufen.jpg",
+      "foto_nachweis": "Foto: Tomas Čekanavičius · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
+      "paare": [
+        [
+          "Wo leben Biber?",
+          "[[Biber leben an Flüssen und Seen.|L]] [[Bruno wohnt im Zoo am Teich.|X]]"
+        ],
+        [
+          "Was fressen Biber?",
+          "[[Biber fressen Blätter und Rinde.|N]] [[Bruno mag am liebsten Weidenzweige.|X]]"
+        ],
+        [
+          "Wie sieht ein Biber aus?",
+          "[[Das Fell ist braun und dicht.|A]] [[Der Körper ist kräftig.|A]]"
+        ],
+        [
+          "Was hat er noch?",
+          "[[Der Schwanz ist breit und flach.|A]] [[Die Zähne sind vorne orange.|A]]"
+        ],
+        [
+          "Wie schwer ist ein Biber?",
+          "[[Ein Biber wiegt etwa 13 bis 35 Kilogramm.|M]] [[Bruno wiegt 25 Kilo.|X]]"
+        ],
+        [
+          "Wie finden Sie Bruno?",
+          "[[Bruno ist total niedlich!|W]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "Rinde",
+          "Haut von Bäumen"
+        ]
+      ]
     }
   ]
 }

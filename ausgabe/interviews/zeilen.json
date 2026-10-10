@@ -919,5 +919,119 @@
    "Z. 15",
    "Kiki ist das mutigste Tier im Zoo!"
   ]
+ ],
+ "waschbaer-f": [
+  [
+   "L",
+   "Z. 2",
+   "Waschbären leben in Wäldern mit Wasser."
+  ],
+  [
+   "L",
+   "Z. 2–3",
+   "Sie leben auch in Städten."
+  ],
+  [
+   "N",
+   "Z. 5",
+   "Waschbären fressen Früchte, Nüsse und Insekten."
+  ],
+  [
+   "X",
+   "Z. 5–6",
+   "Rocky mag am liebsten Weintrauben."
+  ],
+  [
+   "A",
+   "Z. 8",
+   "Das Fell ist graubraun."
+  ],
+  [
+   "A",
+   "Z. 8",
+   "Um die Augen hat er eine schwarze Maske."
+  ],
+  [
+   "A",
+   "Z. 10",
+   "Der Schwanz ist buschig."
+  ],
+  [
+   "A",
+   "Z. 10",
+   "Der Körper ist kräftig."
+  ],
+  [
+   "M",
+   "Z. 12",
+   "Ein Waschbär wiegt etwa 6 bis 7 Kilogramm."
+  ],
+  [
+   "X",
+   "Z. 12",
+   "Rocky wiegt 8 Kilo."
+  ],
+  [
+   "W",
+   "Z. 14",
+   "Rocky ist der schlauste Waschbär der Welt!"
+  ]
+ ],
+ "biber-f": [
+  [
+   "L",
+   "Z. 2",
+   "Biber leben an Flüssen und Seen."
+  ],
+  [
+   "X",
+   "Z. 2",
+   "Bruno wohnt im Zoo am Teich."
+  ],
+  [
+   "N",
+   "Z. 4",
+   "Biber fressen Blätter und Rinde."
+  ],
+  [
+   "X",
+   "Z. 4–5",
+   "Bruno mag am liebsten Weidenzweige."
+  ],
+  [
+   "A",
+   "Z. 7",
+   "Das Fell ist braun und dicht."
+  ],
+  [
+   "A",
+   "Z. 7",
+   "Der Körper ist kräftig."
+  ],
+  [
+   "A",
+   "Z. 9",
+   "Der Schwanz ist breit und flach."
+  ],
+  [
+   "A",
+   "Z. 9",
+   "Die Zähne sind vorne orange."
+  ],
+  [
+   "M",
+   "Z. 11",
+   "Ein Biber wiegt etwa 13 bis 35 Kilogramm."
+  ],
+  [
+   "X",
+   "Z. 11",
+   "Bruno wiegt 25 Kilo."
+  ],
+  [
+   "W",
+   "Z. 13",
+   "Bruno ist total niedlich!"
+  ]
  ]
 }

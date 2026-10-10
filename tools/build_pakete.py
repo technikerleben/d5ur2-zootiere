@@ -34,6 +34,8 @@ SCHUELER = {
     "Probearbeit_Waschbaer_A4.pdf": ["etappe3/Probearbeit_Waschbaer_A4.pdf"],
     "Klassenarbeit_V1_Biber_A4.pdf": ["pruefungen/Klassenarbeit_Biber_A4.pdf"],
     "Klassenarbeit_V2_Breitmaulnashorn_A4.pdf": ["pruefungen/Klassenarbeit_Breitmaulnashorn_A4.pdf"],
+    "Probearbeit_F_Waschbaer_A4.pdf": ["pruefungen/Probearbeit_F_Waschbaer_A4.pdf"],
+    "Klassenarbeit_F_Biber_A4.pdf": ["pruefungen/Klassenarbeit_F_Biber_A4.pdf"],
 }
 
 LEHRKRAFT = {

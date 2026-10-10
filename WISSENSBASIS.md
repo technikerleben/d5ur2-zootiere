@@ -240,6 +240,26 @@ Rahmen: Die Schülerzeitung „Zoo-Reporter“ war im Zoo und hat mit Tierpflege
 - **Wie finden Sie Kiki?** ⟦Kiki ist das mutigste Tier im Zoo!|W⟧
 - Wörterhilfe: Grasland = Land mit Gras und wenigen Bäumen
 
+#### Förder · Probearbeit F · Rocky öffnet jede Dose (Herr Schäfer, `waschbaer-f`)
+
+- **Wo leben Waschbären?** ⟦Waschbären leben in Wäldern mit Wasser.|L⟧ ⟦Sie leben auch in Städten.|L⟧
+- **Was fressen Waschbären?** ⟦Waschbären fressen Früchte, Nüsse und Insekten.|N⟧ ⟦Rocky mag am liebsten Weintrauben.|X⟧
+- **Wie sieht ein Waschbär aus?** ⟦Das Fell ist graubraun.|A⟧ ⟦Um die Augen hat er eine schwarze Maske.|A⟧
+- **Was hat er noch?** ⟦Der Schwanz ist buschig.|A⟧ ⟦Der Körper ist kräftig.|A⟧
+- **Wie schwer ist ein Waschbär?** ⟦Ein Waschbär wiegt etwa 6 bis 7 Kilogramm.|M⟧ ⟦Rocky wiegt 8 Kilo.|X⟧
+- **Wie finden Sie Rocky?** ⟦Rocky ist der schlauste Waschbär der Welt!|W⟧
+- Wörterhilfe: Maske = schwarzes Muster um die Augen
+
+#### Förder · Klassenarbeit F · Bruno baut die ganze Nacht (Frau Krause, `biber-f`)
+
+- **Wo leben Biber?** ⟦Biber leben an Flüssen und Seen.|L⟧ ⟦Bruno wohnt im Zoo am Teich.|X⟧
+- **Was fressen Biber?** ⟦Biber fressen Blätter und Rinde.|N⟧ ⟦Bruno mag am liebsten Weidenzweige.|X⟧
+- **Wie sieht ein Biber aus?** ⟦Das Fell ist braun und dicht.|A⟧ ⟦Der Körper ist kräftig.|A⟧
+- **Was hat er noch?** ⟦Der Schwanz ist breit und flach.|A⟧ ⟦Die Zähne sind vorne orange.|A⟧
+- **Wie schwer ist ein Biber?** ⟦Ein Biber wiegt etwa 13 bis 35 Kilogramm.|M⟧ ⟦Bruno wiegt 25 Kilo.|X⟧
+- **Wie finden Sie Bruno?** ⟦Bruno ist total niedlich!|W⟧
+- Wörterhilfe: Rinde = Haut von Bäumen
+
 ### Etappe 1 · Informationen finden und ordnen
 
 **Ziel (Kind):** Ich kann ein Tier genau betrachten und Sachangaben aus Bild und Interview ordnen.
@@ -552,6 +572,7 @@ tools/
   build_animation.py      ausgabe/lernweg/Ablauf_Animation.html
   build_anleitung.py      anleitung.html (Lehrkraft-Leitfaden, prüft alle Links)
   build_interviews.py     Interviews (Entwurf + Prüfliste/Zeilenbelege, zeilen.json); render_interview() für alle Materialseiten
+  build_pruefung_f.py     Probearbeit F / Klassenarbeit F (zieldifferent)
   build_pakete.py         Druckpakete Schüler/Lehrkraft + ZIP (ausgabe/pakete)
   build_wissensbasis.py   diese Datei
 ausgabe/                Erzeugte PDFs/HTML (etappe1–3, foerder, pruefungen, wahlphase, strategiekarten, lernweg)
@@ -654,7 +675,7 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 
 - Arbeitszeit der Probearbeit; Arbeitszeit, Punkteverteilung und Notengrenzen der Klassenarbeit.
 - Foto Breitmaulnashorn fehlt (Platzhalter); Biber-Foto vorläufig (Tierpaket, CC BY-SA 3.0). Wunschbild tierdoku.de nicht ladbar und ohne freie Lizenz.
-- Probearbeit F und Klassenarbeit F (Lückentext mit Wortspeicher im selben Aufbau).
+- Probearbeit F (Waschbär) und Klassenarbeit F (Biber) liegen vor (`inhalt/probearbeit_f_waschbaer.json`, `inhalt/klassenarbeit_f_biber.json`, `tools/build_pruefung_f.py`): Kurzinterview → Auftrag → Aufgaben (Info/Meinung, Wer ist gemeint, Plan sortieren, Lückentext-Beschreibung, eigener Satz, Prüfliste) → Rückmeldung F3.1–F3.5 bzw. Bewertung (22 Punkte, Vorschlag). Offen: zieldifferente Bewertung mit Schulvorgaben abstimmen; F-Fassung Nashorn bei Bedarf.
 - Zuordnung Variante ↔ Termin (Vorschlag Biber früh, Nashorn spät).
 - Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen; Branch `claude/etappe1-muster` noch nicht in `main`.
 - Gedruckte Lösungsfassung (Tipps/Lösungen wie im Kiosk) und ggf. Übungskarten-Modus im Kiosk.

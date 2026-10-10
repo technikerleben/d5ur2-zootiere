@@ -56,6 +56,8 @@ M = {
             "8 Seiten: S. 1–2 Interview, S. 3–7 für das Kind, S. 8 Bewertung · Foto vorläufig"),
     "ka2": ("Klassenarbeit Breitmaulnashorn", "ausgabe/pruefungen/Klassenarbeit_Breitmaulnashorn_A4.pdf", "a4", "termin",
             "8 Seiten wie Variante 1 · Foto fehlt noch (Platzhalter)"),
+    "probeF": ("Probearbeit F Waschbär", "ausgabe/pruefungen/Probearbeit_F_Waschbaer_A4.pdf", "a4", "f", "7 Seiten: Kurzinterview, Auftrag, 4 Aufgabenseiten, Rückmeldung"),
+    "kaF": ("Klassenarbeit F Biber", "ausgabe/pruefungen/Klassenarbeit_F_Biber_A4.pdf", "a4", "f", "7 Seiten: Kurzinterview, Auftrag, 4 Aufgabenseiten, Bewertung (Punkte als Vorschlag)"),
     "f1": ("Förder-Paket Etappe 1F", "ausgabe/pakete/schueler/Schuelerpaket_Foerder_Etappe1_A4.pdf", "a5", "f", "Foto, Kurzinterview, Blatt 1F–4F, Merkkarte"),
     "gn1f": ("Gelingensnachweis 1F", "ausgabe/foerder/etappe1/GN1F_A4.pdf", "a4", "f", "4 Seiten, letzte Seite Rückmeldung"),
     "f2": ("Förder-Paket Etappe 2F", "ausgabe/pakete/schueler/Schuelerpaket_Foerder_Etappe2_A4.pdf", "a5", "f", "Foto, Kurzinterview, Blatt 5F–6F, Merkkarte"),
@@ -118,7 +120,7 @@ SCHRITTE = [
          "Arbeitszeit vorher auf Seite 1 eintragen. Hilfeseite und „Das zählt“ sind erlaubt, Partnerhilfe und Kiosk nicht.",
          "Seite 7 (Rückmeldung) bis Doppelstunde 6 ausfüllen.",
      ],
-     "druck": ["probe"],
+     "druck": ["probe", "probeF"],
      "digital": []},
     {"id": "ds6", "n": "6", "kurz": "Doppelstunde 6", "titel": "Zweites Probefenster, Feedback, Wahlzeit",
      "wann": "Doppelstunde 6",
@@ -135,7 +137,7 @@ SCHRITTE = [
          "Kinder mit frühem Termin schreiben die Klassenarbeit in einem festgelegten Teil der Doppelstunde.",
          "Alle anderen arbeiten still an Projekten oder bereiten sich vor. Danach Projektzeit für alle.",
      ],
-     "druck": ["ka1"],
+     "druck": ["ka1", "kaF"],
      "digital": []},
     {"id": "ds8", "n": "8", "kurz": "Doppelstunde 8", "titel": "Klassenarbeit, später Termin, Abschluss",
      "wann": "Doppelstunde 8",
@@ -150,7 +152,7 @@ SCHRITTE = [
 OFFEN = [
     "Arbeitszeit, Punkteverteilung und Notengrenzen der Klassenarbeit; Arbeitszeit der Probearbeit.",
     "Foto für die Klassenarbeit Breitmaulnashorn fehlt (Platzhalter). Biber-Foto ist vorläufig aus dem Tierpaket.",
-    "Probearbeit und Klassenarbeit in der F-Fassung für die zieldifferent lernenden Kinder.",
+    "Klassenarbeit F: Punkte und zieldifferente Bewertung mit den Vorgaben der Schule abstimmen; F-Fassung Breitmaulnashorn bei Bedarf.",
     "Welche Variante an welchem Termin geschrieben wird. Vorschlag: Biber früh, Breitmaulnashorn spät.",
 ]
 

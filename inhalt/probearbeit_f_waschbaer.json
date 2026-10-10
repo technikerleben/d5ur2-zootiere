@@ -1,0 +1,170 @@
+{
+  "datei": "Probearbeit_F_Waschbaer_A4",
+  "art": "Probearbeit",
+  "kurz": "Probearbeit F",
+  "interview": "waschbaer-f",
+  "titel": "Deine Probearbeit: Der Waschbär",
+  "arbeitszeit": "Arbeitszeit: ______ Minuten",
+  "termin": null,
+  "situation": "Die Schülerzeitung war im Zoo. Sie hat Herrn Schäfer zu den Waschbären befragt. Du schreibst einen kurzen Lexikontext über Waschbären.",
+  "schritte": [
+    "Lies das Interview. Zeige mit dem Finger mit.",
+    "Löse die Aufgaben der Reihe nach.",
+    "Prüfe am Ende deinen Text."
+  ],
+  "hilfen": "Du darfst die Merkkarte nutzen. Du darfst dir den Auftrag vorlesen lassen.",
+  "aufgaben": [
+    {
+      "typ": "ankreuzen",
+      "auftrag": "**Info oder Meinung?** Kreuze die **Meinung** an.",
+      "items": [
+        [
+          "Waschbären fressen Früchte.",
+          false
+        ],
+        [
+          "Rocky ist der schlauste Waschbär der Welt!",
+          true
+        ],
+        [
+          "Das Fell ist graubraun.",
+          false
+        ]
+      ]
+    },
+    {
+      "typ": "zuordnen",
+      "auftrag": "**Wer ist gemeint?** Schreibe die Zahl in das Kästchen.",
+      "optionen": [
+        "alle Waschbären",
+        "nur Rocky"
+      ],
+      "paare": [
+        [
+          "Waschbären leben auch in Städten.",
+          "1"
+        ],
+        [
+          "Rocky mag Weintrauben.",
+          "2"
+        ],
+        [
+          "Rocky wiegt 8 Kilo.",
+          "2"
+        ],
+        [
+          "Ein Waschbär wiegt 6 bis 7 Kilogramm.",
+          "1"
+        ]
+      ]
+    },
+    {
+      "typ": "sortieren",
+      "auftrag": "**Dein Plan:** Schreibe jedes Stichwort unter die richtige Überschrift.",
+      "wortspeicher": [
+        "graubraunes Fell",
+        "Wälder",
+        "Früchte",
+        "schwarze Maske",
+        "Städte",
+        "Nüsse",
+        "buschiger Schwanz",
+        "Insekten"
+      ],
+      "spalten": [
+        [
+          "Aussehen",
+          [
+            "graubraunes Fell",
+            "schwarze Maske",
+            "buschiger Schwanz"
+          ]
+        ],
+        [
+          "Lebensraum",
+          [
+            "Wälder",
+            "Städte"
+          ]
+        ],
+        [
+          "Nahrung",
+          [
+            "Früchte",
+            "Nüsse",
+            "Insekten"
+          ]
+        ]
+      ]
+    },
+    {
+      "typ": "luecke",
+      "auftrag": "**Dein Text:** Fülle die Lücken. Nutze den Wortspeicher.",
+      "text": "**Der Waschbär**\nEin Waschbär wiegt etwa 6 bis 7 {Kilogramm}.\nSein Fell ist {graubraun}.\nUm die Augen hat er eine schwarze {Maske}.\nSein Schwanz ist {buschig}.\nEr lebt in {Wäldern} und in Städten.\nEr frisst Früchte, Nüsse und {Insekten}.",
+      "extra": [
+        "Weintrauben",
+        "schlau"
+      ]
+    },
+    {
+      "typ": "schreiben",
+      "auftrag": "Schreibe einen eigenen Satz über den Körper.",
+      "anfang": "Der Körper",
+      "loesung": "Der Körper ist kräftig."
+    },
+    {
+      "typ": "check",
+      "auftrag": "**Prüfe deinen Text.** Kreuze an, was stimmt.",
+      "items": [
+        "Ich schreibe über alle Waschbären, nicht über Rocky.",
+        "Ich habe keine Meinung übernommen.",
+        "Jeder Satz beginnt groß.",
+        "Am Ende jedes Satzes steht ein Punkt."
+      ]
+    }
+  ],
+  "seiten": [
+    [
+      0,
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "ziele": [
+    {
+      "id": "F3.1",
+      "kind": "Ich erkenne eine Meinung.",
+      "lehrkraft": "Meinung angekreuzt (Aufgabe 1)"
+    },
+    {
+      "id": "F3.2",
+      "kind": "Ich erkenne, ob alle Tiere oder nur Rocky gemeint sind.",
+      "lehrkraft": "3 von 4 richtig (Aufgabe 2)"
+    },
+    {
+      "id": "F3.3",
+      "kind": "Ich ordne Stichwörter im Plan.",
+      "lehrkraft": "6 von 8 richtig (Aufgabe 3)"
+    },
+    {
+      "id": "F3.4",
+      "kind": "Ich vervollständige die Tierbeschreibung.",
+      "lehrkraft": "5 von 6 Lücken richtig (Aufgabe 4)"
+    },
+    {
+      "id": "F3.5",
+      "kind": "Ich schreibe einen eigenen Satz und prüfe.",
+      "lehrkraft": "Satz vollständig, groß, mit Punkt (Aufgabe 5–6)"
+    }
+  ],
+  "hinweis_lehrkraft": "Zieldifferent (Förderschwerpunkt Lernen). Ziele sind Vorschläge; mit den vereinbarten Förderzielen abgleichen. 80 % der vereinbarten Ziele = Etappe 3 geschafft. Keine Note."
+}

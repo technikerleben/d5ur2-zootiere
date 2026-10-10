@@ -1,0 +1,187 @@
+{
+  "datei": "Klassenarbeit_F_Biber_A4",
+  "art": "Klassenarbeit",
+  "kurz": "Klassenarbeit F",
+  "interview": "biber-f",
+  "titel": "Deine Klassenarbeit: Der Biber",
+  "arbeitszeit": "Arbeitszeit: ______ Minuten",
+  "termin": [
+    "früher Termin",
+    "später Termin"
+  ],
+  "situation": "Die Schülerzeitung war im Zoo. Sie hat Frau Krause zu den Bibern befragt. Du schreibst einen kurzen Lexikontext über Biber.",
+  "schritte": [
+    "Lies das Interview. Zeige mit dem Finger mit.",
+    "Löse die Aufgaben der Reihe nach.",
+    "Prüfe am Ende deinen Text."
+  ],
+  "hilfen": "Du darfst die Merkkarte nutzen. Du darfst dir den Auftrag vorlesen lassen.",
+  "aufgaben": [
+    {
+      "typ": "ankreuzen",
+      "auftrag": "**Info oder Meinung?** Kreuze die **Meinung** an.",
+      "items": [
+        [
+          "Biber leben an Flüssen.",
+          false
+        ],
+        [
+          "Das Fell ist braun.",
+          false
+        ],
+        [
+          "Bruno ist total niedlich!",
+          true
+        ]
+      ]
+    },
+    {
+      "typ": "zuordnen",
+      "auftrag": "**Wer ist gemeint?** Schreibe die Zahl in das Kästchen.",
+      "optionen": [
+        "alle Biber",
+        "nur Bruno"
+      ],
+      "paare": [
+        [
+          "Biber fressen Blätter und Rinde.",
+          "1"
+        ],
+        [
+          "Bruno wohnt im Zoo am Teich.",
+          "2"
+        ],
+        [
+          "Ein Biber wiegt 13 bis 35 Kilogramm.",
+          "1"
+        ],
+        [
+          "Bruno wiegt 25 Kilo.",
+          "2"
+        ]
+      ]
+    },
+    {
+      "typ": "sortieren",
+      "auftrag": "**Dein Plan:** Schreibe jedes Stichwort unter die richtige Überschrift.",
+      "wortspeicher": [
+        "braunes Fell",
+        "Flüsse",
+        "Blätter",
+        "flacher Schwanz",
+        "Seen",
+        "Rinde",
+        "orange Zähne",
+        "kräftiger Körper"
+      ],
+      "spalten": [
+        [
+          "Aussehen",
+          [
+            "braunes Fell",
+            "flacher Schwanz",
+            "orange Zähne",
+            "kräftiger Körper"
+          ]
+        ],
+        [
+          "Lebensraum",
+          [
+            "Flüsse",
+            "Seen"
+          ]
+        ],
+        [
+          "Nahrung",
+          [
+            "Blätter",
+            "Rinde"
+          ]
+        ]
+      ]
+    },
+    {
+      "typ": "luecke",
+      "auftrag": "**Dein Text:** Fülle die Lücken. Nutze den Wortspeicher.",
+      "text": "**Der Biber**\nEin Biber wiegt etwa 13 bis 35 {Kilogramm}.\nSein Fell ist braun und {dicht}.\nSein Schwanz ist breit und {flach}.\nSeine Zähne sind vorne {orange}.\nEr lebt an {Flüssen} und Seen.\nEr frisst Blätter und {Rinde}.",
+      "extra": [
+        "Weidenzweige",
+        "niedlich"
+      ]
+    },
+    {
+      "typ": "schreiben",
+      "auftrag": "Schreibe einen eigenen Satz über den Körper.",
+      "anfang": "Der Körper",
+      "loesung": "Der Körper ist kräftig."
+    },
+    {
+      "typ": "check",
+      "auftrag": "**Prüfe deinen Text.** Kreuze an, was stimmt.",
+      "items": [
+        "Ich schreibe über alle Biber, nicht über Bruno.",
+        "Ich habe keine Meinung übernommen.",
+        "Jeder Satz beginnt groß.",
+        "Am Ende jedes Satzes steht ein Punkt."
+      ]
+    }
+  ],
+  "seiten": [
+    [
+      0,
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "bewertung": {
+    "kriterien": [
+      [
+        "1",
+        "Info oder Meinung",
+        "Meinung angekreuzt",
+        "1"
+      ],
+      [
+        "2",
+        "Wer ist gemeint?",
+        "je richtige Zuordnung 1 Punkt",
+        "4"
+      ],
+      [
+        "3",
+        "Plan ordnen",
+        "je richtiges Stichwort 1 Punkt",
+        "8"
+      ],
+      [
+        "4",
+        "Tierbeschreibung",
+        "je richtige Lücke 1 Punkt",
+        "6"
+      ],
+      [
+        "5",
+        "Eigener Satz",
+        "Angabe stimmt (1), Satz vollständig, groß, mit Punkt (1)",
+        "2"
+      ],
+      [
+        "6",
+        "Prüfen",
+        "Prüfliste bearbeitet",
+        "1"
+      ]
+    ],
+    "summe": "22",
+    "hinweis": "Punkte sind ein Vorschlag. Zieldifferente Bewertung (Förderschwerpunkt Lernen) nach den Vorgaben der Schule und den vereinbarten Förderzielen."
+  }
+}
