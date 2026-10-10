@@ -85,7 +85,8 @@ Klassenarbeit ─ früher Termin (DS 7) oder später Termin (DS 8); jedes Kind s
 - Die SRL-Elemente werden **außerhalb des Deutschunterrichts** eingeführt (schrittweise Handreichung HBG: offener Anfang → Startklar → Lösungsleiter → Buddy Planung → Durchführung → Reflexion → Strategiefächer → Entscheidungen). In Deutsch werden sie angewendet, keine eigene Einführungssequenz.
 - Ein SRL-Zyklus kann mehrere zusammenhängende Blätter umfassen. Reflexion vor dem Abwischen kurz ins Heft übertragen.
 - **Begriffe trennen:** Lernweg = Orientierung über die Reihe · Lernbuddy = Tischrahmen für die aktuelle Lernphase · Schreibplan = fachliche Ordnung des Textes · Checkliste K1–K6 = Prüfung der Textqualität.
-- **Kontroll-Kiosk** (Laptop im Raum) ist die einzige digitale Schüleranwendung; Kinder haben keine iPads.
+- **Kontroll-Kiosk** (Laptop im Raum) ist die einzige digitale Schüleranwendung **im Unterricht**; Kinder haben keine iPads.
+- **Lern-App fürs Smartphone (in Planung, 10.10.2026):** freiwilliger Lernbegleiter für zu Hause auf eigenen oder elterlichen Handys (`lernapp/`, Planung: `planung/Lernapp_Planung.md`). Lernweg, Merkkarten, Übungen, Quiz, Buchstabenrätsel, Training, Üben an Tieren der eigenen Umgebung. **Keine Kiosk-Lösungen zu Blatt 1–9**, keine Prüfungstiere, keine GN-Auszüge, keine Kinderdaten (nur `localStorage`), bewertungsneutral.
 
 ## 4 · Partner- und Feedbackphasen (Ergänzungsauftrag 08.10.2026)
 
@@ -110,7 +111,8 @@ Nicht übernommen aus der Kolleginnen-PowerPoint: Kamel/Delfin/Koala, acht verbi
 | Probearbeit | Waschbär | Transfer, neues Tier |
 | Klassenarbeit | Biber (Variante 1), Breitmaulnashorn (Variante 2) | Vorschlag: Biber früher Termin, Nashorn später Termin |
 | Projekte | Fischotter, Erdmännchen, Roter Panda | Tierpakete (A5-PDFs) |
-| Training vor der Klassenarbeit | Elenantilope (Ü1, Kiosk 10), Hirschziegenantilope (Ü2, Kiosk 11) – beide im Zoo Dortmund | `inhalt/training.json`, `tools/build_training.py`: platzsparend A4 Originalgröße (vorn Interview zweispaltig mit Zeilen, hinten Aufgaben/Schreibplan), ≥ 12 pt; Kiosk zeigt Plan mit Zeilen, Musterlösung Mindeststandard, aufklappbar Regelstandard |
+| Beispielaufgabe Training | Angola-Giraffe (Zikomo, Zoo Dortmund) | durchklickbare Beispielaufgabe mit drei Mustertexten (Mindest-/Regel-/Leistungsstandard) und Vorlesen; bisher Einzel-HTML aus dem Chat vom 10.10.2026, soll nach `inhalt/training_giraffe.json`; in der Lern-App vorgesehen |
+| Training vor der Klassenarbeit | Elenantilope (Ü1, Kiosk 10), Hirschziegenantilope (Ü2, Kiosk 11) – beide im Zoo Dortmund; auch in der Lern-App (ohne Musterlösung) | `inhalt/training.json`, `tools/build_training.py`: platzsparend A4 Originalgröße (vorn Interview zweispaltig mit Zeilen, hinten Aufgaben/Schreibplan), ≥ 12 pt; Kiosk zeigt Plan mit Zeilen, Musterlösung Mindeststandard, aufklappbar Regelstandard |
 
 Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er ist der Otter (dekoratives Maskottchen spielt in dieser Reihe keine Rolle).
 
@@ -173,6 +175,7 @@ tools/
   build_wissensbasis.py   diese Datei
 ausgabe/                Erzeugte PDFs/HTML (etappe1–3, foerder, pruefungen, wahlphase, strategiekarten, lernweg)
 apps/kontroll-kiosk/    Kiosk
+lernapp/                Lern-App fürs Smartphone (geplant; tools/build_lernapp.py, inhalt/lernapp.json)
 assets/                 fonts (Andika), bilder (Graustufen + Farbe), grafik (aquarium.svg / _farbe.svg)
 planung/                Planungstexte (SRL_Standard, Etappen_Gelingensnachweise, Kompetenzraster, Reihenplanung,
                         Sprachspur, Ergaenzungen_Umsetzung, Foerder_Workflow, Projekte_und_Terminwahl)
@@ -409,6 +412,8 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 - Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen; Branch `claude/etappe1-muster` noch nicht in `main`.
 - Gedruckte Lösungsfassung (Tipps/Lösungen wie im Kiosk) und ggf. Übungskarten-Modus im Kiosk.
 - Unterrichtserprobung steht aus; Zeitbudget nach Erprobung prüfen.
+- Lern-App (`planung/Lernapp_Planung.md`): Umsetzung steht aus. **Vor Ausgabe von Adresse/QR an Kinder Klassenarbeiten aus dem Repo entfernen** (extern speichern), da das Repo über Vercel öffentlich ausgeliefert wird.
+- Angola-Giraffe in Inhaltsdatei überführen; Pflegerin heißt dort wie bei der Elenantilope „Frau Demir“ → neuen Namen wählen.
 
 ## 17 · Glossar
 
@@ -428,6 +433,7 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 | Strategiekarte | Karte 210 × 99 mm, wird am Lernbuddy angelegt |
 | Haltestelle | Ort im Raum für Partnerrückmeldung zum Übungstext (Blatt 9) |
 | Kontroll-Kiosk | Laptop-Anwendung mit Tipps und Lösungen zu Blatt 1–9 |
+| Lern-App | freiwilliger Smartphone-Lernbegleiter für zu Hause, ohne Blattlösungen und ohne Prüfungsinhalte |
 | Sprachspur | in die Etappen integrierte Grammatik-/Rechtschreibinhalte |
 | K1–K6 | Textkriterien: Informationen, Aussehen, Aufbau, Sachlich, Verständlich, Schreibung |
 | F-Material | zieldifferentes Material (Förderschwerpunkt Lernen), Blätter 1F–9F |
