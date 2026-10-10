@@ -1,0 +1,481 @@
+{
+  "_hinweis": "Interviews als Textbasis (Entwurf 10.10.2026). Markierung [[Textstelle|Kürzel]] nur für Lehrkraft-Prüfliste und Lösungen; im Schülertext unsichtbar. Kürzel: T Tiername · M Maß der Art · A Aussehen · L Lebensraum · N Nahrung · W Wertung/Meinung · X einzelnes Tier, Erlebnis, Alltag (nicht in die Beschreibung) · V bildhafter Vergleich (sachlich umformen) · Z Zusatzinfo Verhalten (erlaubt, nicht verlangt) · U Vermutung/unsicher. Fakten aus den Tierpaketen (Quellen dort) und den Klassenarbeits-Quellen (NABU, WWF).",
+  "rahmen": "Die Schülerzeitung „Zoo-Reporter“ war im Zoo und hat mit Tierpflegerinnen und Tierpflegern gesprochen.",
+  "hinweis_fiktiv": "Das Interview ist ausgedacht. Die Angaben über das Tier stimmen.",
+  "tiere": [
+    {
+      "id": "fischotter",
+      "rolle": "Beispieltier · Etappe 1–2",
+      "titel": "„Otto taucht am liebsten“",
+      "person": "Frau Berger",
+      "einleitung": "Frau Berger ist Tierpflegerin. Sie kümmert sich um die Fischotter.",
+      "foto": "materialien/gelingensnachweise/Fischotter_DavePape_Graustufen.jpg",
+      "foto_nachweis": "Foto: Dave Pape · Public Domain",
+      "paare": [
+        [
+          "Frau Berger, wie fängt Ihr Tag bei den Ottern an?",
+          "[[Um halb acht mache ich die Anlage sauber. Danach gibt es Frühstück.|X]] [[Unser Otto wartet dann schon am Gitter und pfeift laut.|X]] [[Ehrlich gesagt ist er der süßeste Otter der Welt!|W]]"
+        ],
+        [
+          "Was gibt es denn zum Frühstück?",
+          "Vor allem Fisch. [[Otto bekommt jeden Tag einen kleinen Eimer voll.|X]] In der Natur [[fressen Fischotter hauptsächlich Fische|N]]. [[Sie fangen aber auch Frösche und Krebse.|N]] [[Gestern hat Otto einen Krebs ganz allein geknackt. Das hat richtig gekracht!|X]]"
+        ],
+        [
+          "Wo leben Fischotter, wenn sie nicht im Zoo sind?",
+          "[[An Flüssen und Seen.|L]] [[Sie brauchen Ufer, an denen sie sich verstecken können|L]], zum Beispiel unter Büschen und Wurzeln. [[Deshalb liegen in unserer Anlage auch so viele alte Wurzeln herum.|X]]"
+        ],
+        [
+          "Ist ein Otter eigentlich mit dem Biber verwandt?",
+          "Nein. [[Fischotter gehören zu den Mardern.|T]] Biber sind Nagetiere. Das ist etwas ganz anderes."
+        ],
+        [
+          "Woran erkennt man einen Fischotter?",
+          "Schauen Sie mal, wie er durchs Wasser saust! [[Sein Körper ist lang und schmal|A]], [[fast wie ein Torpedo|V]]. [[Die Beine sind dagegen richtig kurz.|A]] Und [[der Kopf ist breit und flach|A]]. Ich sage immer: [[wie ein Brett mit Nase|V]]."
+        ],
+        [
+          "Und die Ohren? Ich sehe gar keine.",
+          "[[Die sind ganz klein.|A]] [[Beim Tauchen kann er sie sogar verschließen, damit kein Wasser hineinläuft.|Z]]"
+        ],
+        [
+          "Wie groß ist Otto eigentlich?",
+          "[[Letzte Woche haben wir ihn gemessen. Von der Nase bis zum Schwanzansatz waren es 80 Zentimeter.|X]] Der Schwanz kommt noch dazu. [[Fischotter sind meistens 60 bis 90 Zentimeter lang, wenn man den Schwanz nicht mitzählt.|M]]"
+        ],
+        [
+          "Darf man ihn streicheln? Das Fell sieht so weich aus.",
+          "Nein, [[Otto ist kein Kuscheltier. Ich fasse ihn nur an, wenn die Tierärztin kommt.|X]] [[Das Fell ist sehr dicht.|A]] [[Oben ist es dunkelbraun, am Hals ist es heller.|A]]"
+        ],
+        [
+          "Gibt es noch etwas Besonderes?",
+          "Ja, [[die langen Tasthaare an der Schnauze|A]]! [[Damit spürt er Fische, auch wenn das Wasser trüb ist.|Z]] Und [[zwischen den Zehen hat er Schwimmhäute|A]]. [[Deshalb ist er so ein toller Schwimmer.|W]]"
+        ],
+        [
+          "Vielen Dank, Frau Berger!",
+          "Gern. [[Und kommt Otto bald besuchen!|X]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "Anlage",
+          "Gehege im Zoo"
+        ],
+        [
+          "Tasthaare",
+          "Haare zum Ertasten"
+        ],
+        [
+          "trüb",
+          "nicht klar, man sieht wenig"
+        ],
+        [
+          "Schwanzansatz",
+          "Stelle, an der der Schwanz beginnt"
+        ]
+      ]
+    },
+    {
+      "id": "erdmaennchen",
+      "rolle": "Übungstier · Etappe 3",
+      "titel": "„Kiki hält Wache“",
+      "person": "Herr Yıldız",
+      "einleitung": "Herr Yıldız ist Tierpfleger. Er kümmert sich um die Erdmännchen.",
+      "foto": "assets/bilder/erdmaennchen_graustufen.jpg",
+      "foto_nachweis": "Foto: Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons · Graustufenfassung",
+      "paare": [
+        [
+          "Herr Yıldız, wie viele Erdmännchen leben hier?",
+          "Im Moment neun. [[Erdmännchen leben immer in Gruppen.|Z]] [[Allein wären sie unglücklich, glaube ich.|W]] [[Unsere Chefin heißt Kiki. Sie ist die Mutigste von allen.|X]]"
+        ],
+        [
+          "Was macht Kiki gerade da oben auf dem Stein?",
+          "[[Sie hält Wache.|X]] [[Einer aus der Gruppe stellt sich immer auf die Hinterbeine und schaut sich um.|Z]] [[Der Schwanz ist lang und schmal|A]], [[die Spitze ist dunkel|A]]. [[Wenn ein Greifvogel kommt, pfeift der Wächter, und alle verschwinden im Bau.|Z]]"
+        ],
+        [
+          "Im Bau?",
+          "Ja. In der Natur [[leben Erdmännchen im trockenen Gras- und Buschland im Süden von Afrika|L]]. [[Dort graben sie unterirdische Gänge.|L]] Das können sie gut, denn [[an den Pfoten haben sie lange Krallen|A]]. [[Letzten Sommer haben unsere einen Tunnel bis unter den Zaun gegraben. Da musste ich ganz schön rennen!|X]]"
+        ],
+        [
+          "Sind Erdmännchen eigentlich Mäuse?",
+          "Nein, überhaupt nicht! [[Sie gehören zu den Mangusten.|T]] Das ist eine Familie von kleinen Raubtieren."
+        ],
+        [
+          "Raubtiere? Was fressen die denn?",
+          "[[Vor allem Insekten, also Käfer, Heuschrecken und Larven.|N]] [[Aber auch Spinnen und kleine Eidechsen.|N]] [[Bei uns gibt es morgens Mehlwürmer. Die mag Kiki am allerliebsten.|X]]"
+        ],
+        [
+          "Wie groß werden Erdmännchen?",
+          "[[Kopf und Rumpf sind zusammen nur etwa 25 bis 29 Zentimeter lang. Der Schwanz kommt noch dazu.|M]] [[Kiki ist sogar ein bisschen kleiner. Sie wiegt nicht einmal ein Kilo.|X]]"
+        ],
+        [
+          "Und wie sehen sie sonst aus?",
+          "[[Ihr Körper ist schlank.|A]] [[Das Fell ist hellbraun bis graubraun|A]], und [[auf dem Rücken haben sie dunklere Streifen|A]]. Am Kopf fällt [[die spitze Schnauze|A]] auf. Und [[um die Augen haben sie dunkle Flecken|A]]. [[Das sieht aus wie eine Sonnenbrille.|V]] [[Total cool, oder?|W]]"
+        ],
+        [
+          "Wofür sind die Flecken gut?",
+          "[[Man vermutet, dass sie die Augen vor der grellen Sonne schützen. Ganz sicher weiß man das aber nicht.|U]] Übrigens: [[Die kleinen Ohren können sie beim Graben verschließen.|A]] So kommt kein Sand hinein."
+        ],
+        [
+          "Haben Sie noch einen Tipp für unsere Leserinnen und Leser?",
+          "[[Kommt am besten morgens. Dann sonnen sich alle vor dem Bau.|X]] [[Das ist der schönste Anblick im ganzen Zoo!|W]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "Mangusten",
+          "eine Familie von kleinen Raubtieren"
+        ],
+        [
+          "Bau",
+          "Versteck unter der Erde mit Gängen"
+        ],
+        [
+          "Rumpf",
+          "Körper ohne Kopf, Beine und Schwanz"
+        ],
+        [
+          "Greifvogel",
+          "Vogel, der andere Tiere jagt, zum Beispiel ein Adler"
+        ]
+      ]
+    },
+    {
+      "id": "roter-panda",
+      "rolle": "Übungstier · Etappe 3",
+      "titel": "„Mei klettert, wenn es dunkel wird“",
+      "person": "Frau Nowak",
+      "einleitung": "Frau Nowak ist Tierpflegerin. Sie kümmert sich um die Roten Pandas.",
+      "foto": "assets/bilder/roter-panda_graustufen.jpg",
+      "foto_nachweis": "Foto: Brunswyk · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
+      "paare": [
+        [
+          "Frau Nowak, wo ist denn der Panda? Ich sehe nur Bäume.",
+          "[[Mei schläft oben in der Astgabel. Am Vormittag ist sie meistens faul.|X]] [[Rote Pandas sind vor allem in der Dämmerung und nachts unterwegs.|Z]] [[Da muss man Geduld haben!|W]]"
+        ],
+        [
+          "Ist Mei ein kleiner Großer Panda?",
+          "Das fragen viele! [[Der Rote Panda heißt auch Kleiner Panda.|T]] Mit dem großen schwarz-weißen Panda ist er aber nicht nah verwandt. Beide fressen nur gern Bambus."
+        ],
+        [
+          "Dann frisst Mei also Bambus?",
+          "Ja, [[hauptsächlich Bambus.|N]] [[Daneben fressen Rote Pandas zum Beispiel Beeren und Eier.|N]] [[Mei bekommt jeden Morgen frische Bambusstangen und ein paar Weintrauben. Letzte Woche hat sie die Trauben zuerst gefressen und den Bambus liegen lassen.|X]]"
+        ],
+        [
+          "Wo leben Rote Pandas in der Natur?",
+          "[[In Bergwäldern in Asien, in denen Bambus wächst.|L]] Dort ist es oft kühl und feucht. [[Deshalb haben wir in der Anlage so viele schattige Bäume gepflanzt.|X]]"
+        ],
+        [
+          "Woran erkennt man einen Roten Panda?",
+          "Zuerst an der Farbe! [[Am Rücken ist das Fell rötlich braun.|A]] [[Die Beine und der Bauch sind dunkel bis schwarz.|A]] [[Im Gesicht hat er helle, fast weiße Bereiche.|A]] [[Der Kopf ist rund|A]], und [[die Ohren sind groß und spitz|A]]. [[Mei sieht aus wie ein Kuscheltier.|V]] [[Ich finde, sie ist das hübscheste Tier hier.|W]]"
+        ],
+        [
+          "Und der Schwanz? Der ist ja riesig!",
+          "Genau. [[Der Schwanz ist lang und buschig.|A]] [[Er hat hellere und dunklere Ringe.|A]] [[Beim Klettern helfen ihm der Schwanz und die Krallen.|Z]] [[Im Winter wickelt sich Mei beim Schlafen in ihren Schwanz ein wie in eine Decke.|X]]"
+        ],
+        [
+          "Wie groß ist ein Roter Panda?",
+          "[[Kopf und Rumpf sind zusammen etwa 60 Zentimeter lang. Der Schwanz kommt noch dazu.|M]] [[Mei ist etwas kleiner, sie ist noch jung.|X]]"
+        ],
+        [
+          "Haben Sie zum Schluss noch einen Tipp?",
+          "[[Kommt am späten Nachmittag. Dann klettert Mei herunter und sucht ihr Futter.|X]] [[Das ist jedes Mal ein Erlebnis!|W]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "Dämmerung",
+          "Zeit zwischen Tageslicht und Dunkelheit"
+        ],
+        [
+          "Bambus",
+          "eine Pflanze mit festen Halmen"
+        ],
+        [
+          "Rumpf",
+          "Körper ohne Kopf, Beine und Schwanz"
+        ],
+        [
+          "verwandt",
+          "zur gleichen Tierfamilie gehören"
+        ]
+      ]
+    },
+    {
+      "id": "waschbaer",
+      "rolle": "Probearbeit",
+      "titel": "„Rocky öffnet jede Dose“",
+      "person": "Herr Schäfer",
+      "einleitung": "Herr Schäfer ist Tierpfleger. Er kümmert sich um die Waschbären.",
+      "foto": "assets/bilder/waschbaer_graustufen.jpg",
+      "foto_nachweis": "Foto: BS Thurner Hof · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
+      "paare": [
+        [
+          "Herr Schäfer, warum steht da ein Schloss an der Futterkiste?",
+          "[[Wegen Rocky! Er öffnet jede Dose und jede Kiste.|X]] [[Mit den Vorderpfoten kann ein Waschbär Nahrung geschickt greifen.|Z]] [[An jeder Pfote sitzen fünf Zehen.|A]] [[Ehrlich, manchmal ist er schlauer als ich.|W]]"
+        ],
+        [
+          "Woher kommen Waschbären eigentlich?",
+          "[[Ursprünglich aus Nordamerika.|L]] [[Sie leben gern in Wäldern mit Gewässern.|L]] [[Heute kommen sie aber auch in Städten vor.|L]]"
+        ],
+        [
+          "Gibt es auch in Deutschland Waschbären?",
+          "[[Ja. Ein Nachbar von mir hatte neulich einen im Garten. Der hat in der Nacht die ganze Mülltonne ausgeräumt!|X]] [[Waschbären sind vor allem nachts unterwegs.|Z]]"
+        ],
+        [
+          "Was frisst Rocky?",
+          "[[Waschbären fressen pflanzliche und tierische Nahrung.|N]] [[Zum Beispiel Früchte, Nüsse, Insekten und Frösche.|N]] [[Rocky liebt Weintrauben. Gestern hat er eine ganze Schale leer gemacht.|X]]"
+        ],
+        [
+          "Warum heißt er eigentlich Waschbär?",
+          "[[Waschbären gehören zu den Kleinbären.|T]] [[Oft tasten sie ihr Futter im Wasser ab. Das sieht aus, als würden sie es waschen.|Z]] [[Rocky taucht seine Trauben auch immer in den Wassernapf.|X]] [[Das ist so lustig!|W]]"
+        ],
+        [
+          "Woran erkennt man einen Waschbären?",
+          "[[Am Gesicht! Um die Augen liegt eine schwarze Zeichnung.|A]] [[Die sieht aus wie eine Maske von einem Räuber.|V]] [[Die Ohren sind abgerundet und haben einen hellen Rand.|A]] [[Der Körper ist kräftig und wirkt gedrungen.|A]] [[Das Fell ist meist graubraun.|A]]"
+        ],
+        [
+          "Und der Schwanz?",
+          "[[Der ist buschig und hat mehrere dunkle Ringe.|A]] [[Ich finde, das ist der schönste Schwanz im ganzen Zoo.|W]]"
+        ],
+        [
+          "Wie schwer ist so ein Waschbär?",
+          "[[Ein erwachsener Waschbär wiegt häufig etwa sechs bis sieben Kilogramm.|M]] [[Rocky wiegt im Moment acht Kilo. Er hat im Herbst zu viel genascht.|X]]"
+        ],
+        [
+          "Danke, Herr Schäfer!",
+          "[[Gern. Und passt auf eure Brotdosen auf!|X]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "gedrungen",
+          "eher kurz und kräftig gebaut"
+        ],
+        [
+          "Zeichnung",
+          "Muster auf dem Fell"
+        ],
+        [
+          "Vorderpfoten",
+          "die beiden vorderen Pfoten"
+        ],
+        [
+          "ursprünglich",
+          "zuerst, von Anfang an"
+        ]
+      ]
+    },
+    {
+      "id": "biber",
+      "rolle": "Klassenarbeit Variante 1",
+      "titel": "„Bruno baut die ganze Nacht“",
+      "person": "Frau Krause",
+      "einleitung": "Frau Krause ist Tierpflegerin. Sie kümmert sich um die Biber.",
+      "foto": "assets/bilder/biber_graustufen.jpg",
+      "foto_nachweis": "Foto: Tomas Čekanavičius · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
+      "paare": [
+        [
+          "Frau Krause, was ist denn mit dem Baumstamm passiert?",
+          "[[Das war Bruno heute Nacht!|X]] [[Biber sind Nagetiere.|T]] [[Ihre großen Schneidezähne sind vorne orange gefärbt.|A]] Damit können sie sogar dicke Äste durchnagen. [[Bruno ist da wirklich ein Meister.|W]]"
+        ],
+        [
+          "Fressen Biber Holz?",
+          "Nicht direkt. [[Biber ernähren sich von Pflanzen.|N]] [[Sie fressen zum Beispiel Blätter, junge Triebe und Rinde.|N]] [[Bruno bekommt jeden Abend Weidenzweige. Die Rinde nagt er ab, den Rest verbaut er.|X]]"
+        ],
+        [
+          "Wo leben Biber in der Natur?",
+          "[[An Flüssen und Seen.|L]] [[Sie bauen dort Burgen aus Ästen und Schlamm.|Z]]"
+        ],
+        [
+          "Wann ist Bruno denn wach?",
+          "[[Biber sind vor allem in der Dämmerung und nachts aktiv.|Z]] [[Tagsüber schläft Bruno in seiner Burg. Wenn ich morgens komme, finde ich nur noch Holzspäne.|X]]"
+        ],
+        [
+          "Wie sieht ein Biber aus?",
+          "[[Sein Körper ist kräftig|A]] und [[die Beine sind kurz|A]]. [[Das Fell ist braun und sehr dicht.|A]] [[Am Kopf sitzen kleine Ohren und eine stumpfe Schnauze.|A]] [[Bruno sieht ein bisschen aus wie ein dicker Teddy.|V]] [[Ich finde ihn total niedlich.|W]] [[Zwischen den Zehen der Hinterfüße liegen Schwimmhäute.|A]]"
+        ],
+        [
+          "Und was ist das für ein komischer Schwanz?",
+          "[[Der Schwanz ist breit und flach. Er ist kaum behaart und mit Schuppen bedeckt.|A]] Dieser Schwanz heißt auch Kelle. [[Wenn Gefahr droht, klatscht der Biber damit aufs Wasser.|Z]] [[Letzte Woche hat Bruno mich damit ganz nass gespritzt!|X]]"
+        ],
+        [
+          "Kann ein Biber gut tauchen?",
+          "[[Ja, er kann mehrere Minuten unter Wasser bleiben.|Z]] [[Bruno taucht einmal quer durch unseren Teich. Das sind bestimmt 20 Meter.|X]] [[Das finde ich jedes Mal spannend.|W]]"
+        ],
+        [
+          "Wie schwer ist so ein Biber?",
+          "[[Ein erwachsener Biber kann etwa 13 bis 35 Kilogramm wiegen.|M]] [[Bruno wiegt gerade 25 Kilo.|X]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "Triebe",
+          "junge Teile einer Pflanze"
+        ],
+        [
+          "Kelle",
+          "Name für den breiten Biberschwanz"
+        ],
+        [
+          "Schneidezähne",
+          "die vorderen Zähne zum Abbeißen und Nagen"
+        ],
+        [
+          "Burg",
+          "Wohnhöhle des Bibers aus Ästen"
+        ],
+        [
+          "Späne",
+          "kleine, dünne Holzstücke"
+        ]
+      ]
+    },
+    {
+      "id": "breitmaulnashorn",
+      "rolle": "Klassenarbeit Variante 2",
+      "titel": "„Nala badet gern im Schlamm“",
+      "person": "Herr Mensah",
+      "einleitung": "Herr Mensah ist Tierpfleger. Er kümmert sich um die Nashörner.",
+      "foto": "assets/bilder/breitmaulnashorn_platzhalter.jpg",
+      "foto_nachweis": "Foto folgt",
+      "paare": [
+        [
+          "Herr Mensah, warum ist Nala so dreckig?",
+          "[[Sie hat sich gerade im Schlamm gewälzt. Das macht sie jeden Mittag.|X]] [[Der Schlamm schützt die Haut vor Sonne und Insekten.|Z]] [[Für mich ist das der lustigste Moment des Tages.|W]]"
+        ],
+        [
+          "Was für ein Nashorn ist Nala?",
+          "[[Ein Breitmaulnashorn.|T]] [[Es hat sehr breite Lippen.|A]] Damit rupft es das Gras ab, [[fast wie ein Rasenmäher|V]]."
+        ],
+        [
+          "Was frisst ein Breitmaulnashorn?",
+          "[[Es frisst fast nur Gras.|N]] [[Nala bekommt bei uns Heu, jeden Tag einen ganzen Berg.|X]]"
+        ],
+        [
+          "Wo leben Breitmaulnashörner in der Natur?",
+          "[[In Afrika.|L]] [[Sie leben in Savannen mit kurzem Gras.|L]]"
+        ],
+        [
+          "Wie sieht ein Breitmaulnashorn aus?",
+          "[[Der Körper ist groß und massig.|A]] [[Die Haut ist grau und dick.|A]] [[Sie hat fast keine Haare.|A]] [[Im Nacken hat es einen Buckel.|A]] [[Die Beine sind kurz und kräftig.|A]] [[Nala sieht aus wie ein Panzer auf vier Beinen.|V]]"
+        ],
+        [
+          "Kann Nala gut sehen?",
+          "[[Nashörner sehen eher schlecht. Dafür können sie sehr gut hören und riechen.|Z]] [[Wenn ich mit dem Heuwagen komme, dreht Nala schon von Weitem die Ohren zu mir.|X]]"
+        ],
+        [
+          "Und die Hörner?",
+          "[[Auf der Nase trägt es zwei Hörner. Das vordere Horn ist länger als das hintere.|A]] [[Nalas vorderes Horn ist ein bisschen abgebrochen. Sie ist gegen einen Baum gerannt.|X]]"
+        ],
+        [
+          "Wie groß ist so ein Tier?",
+          "[[Kopf und Rumpf sind zusammen etwa 3,40 bis 3,80 Meter lang. Der Schwanz kommt noch dazu.|M]] [[Ein erwachsenes Männchen kann bis zu 3600 Kilogramm wiegen.|M]] [[Nala ist ein Weibchen und etwas leichter.|X]] [[Ich finde sie trotzdem riesig!|W]]"
+        ],
+        [
+          "Wie lange sind Sie schon Nalas Pfleger?",
+          "[[Seit sieben Jahren. Am Anfang hatte ich ein bisschen Angst vor ihr.|X]] [[Heute ist sie für mich das tollste Tier der Welt.|W]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "Savanne",
+          "Grasland mit wenigen Bäumen"
+        ],
+        [
+          "massig",
+          "sehr groß und schwer"
+        ],
+        [
+          "Buckel",
+          "eine Erhöhung im Nacken"
+        ],
+        [
+          "sich wälzen",
+          "sich hin und her rollen"
+        ]
+      ]
+    }
+  ],
+  "foerder": [
+    {
+      "id": "fischotter-f",
+      "rolle": "Förder · Etappe 1–2",
+      "titel": "Otto taucht gern",
+      "person": "Frau Berger",
+      "einleitung": "Frau Berger ist Tierpflegerin. Sie kümmert sich um die Fischotter.",
+      "foto": "materialien/gelingensnachweise/Fischotter_DavePape_Graustufen.jpg",
+      "foto_nachweis": "Foto: Dave Pape · Public Domain",
+      "paare": [
+        [
+          "Wo leben Fischotter?",
+          "[[Fischotter leben an Flüssen und Seen.|L]] [[Unser Otto wohnt im Zoo.|X]]"
+        ],
+        [
+          "Was fressen Fischotter?",
+          "[[Fischotter fressen Fische.|N]] [[Otto frisst am liebsten Forellen.|X]]"
+        ],
+        [
+          "Wie sieht ein Fischotter aus?",
+          "[[Der Körper ist lang.|A]] [[Das Fell ist braun.|A]]"
+        ],
+        [
+          "Was hat er noch?",
+          "[[Er hat kurze Beine.|A]] [[Er hat Schwimmhäute zwischen den Zehen.|A]]"
+        ],
+        [
+          "Wie groß ist ein Fischotter?",
+          "[[Ein Fischotter ist ohne Schwanz etwa 60 bis 90 Zentimeter lang.|M]] [[Otto ist 80 Zentimeter lang.|X]]"
+        ],
+        [
+          "Wie finden Sie Otto?",
+          "[[Otto ist der süßeste Otter der Welt!|W]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "Schwimmhäute",
+          "Haut zwischen den Zehen"
+        ]
+      ]
+    },
+    {
+      "id": "erdmaennchen-f",
+      "rolle": "Förder · Etappe 3",
+      "titel": "Kiki hält Wache",
+      "person": "Herr Yıldız",
+      "einleitung": "Herr Yıldız ist Tierpfleger. Er kümmert sich um die Erdmännchen.",
+      "foto": "assets/bilder/erdmaennchen_graustufen.jpg",
+      "foto_nachweis": "Foto: Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons · Graustufenfassung",
+      "paare": [
+        [
+          "Wo leben Erdmännchen?",
+          "[[Erdmännchen leben in Afrika.|L]] [[Sie wohnen in Gängen unter der Erde.|L]]"
+        ],
+        [
+          "Was fressen Erdmännchen?",
+          "[[Erdmännchen fressen Insekten.|N]] [[Kiki mag Mehlwürmer.|X]]"
+        ],
+        [
+          "Wie sieht ein Erdmännchen aus?",
+          "[[Das Fell ist hellbraun.|A]] [[Um die Augen hat es dunkle Flecken.|A]]"
+        ],
+        [
+          "Was hat es noch?",
+          "[[Es hat eine spitze Schnauze.|A]] [[Es hat lange Krallen.|A]]"
+        ],
+        [
+          "Wie groß ist ein Erdmännchen?",
+          "[[Ein Erdmännchen ist ohne Schwanz etwa 25 bis 29 Zentimeter lang.|M]] [[Kiki ist kleiner.|X]]"
+        ],
+        [
+          "Wie finden Sie Kiki?",
+          "[[Kiki ist das mutigste Tier im Zoo!|W]]"
+        ]
+      ],
+      "woerter": [
+        [
+          "Krallen",
+          "spitze Nägel an den Pfoten"
+        ]
+      ]
+    }
+  ]
+}
