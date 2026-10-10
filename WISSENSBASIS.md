@@ -100,7 +100,7 @@ Nicht übernommen aus der Kolleginnen-PowerPoint: Kamel/Delfin/Koala, acht verbi
 | Probearbeit | Waschbär | Transfer, neues Tier |
 | Klassenarbeit | Biber (Variante 1), Breitmaulnashorn (Variante 2) | Vorschlag: Biber früher Termin, Nashorn später Termin |
 | Projekte | Fischotter, Erdmännchen, Roter Panda | Tierpakete (A5-PDFs) |
-| Beispielaufgabe Training | Angola-Giraffe (Zikomo, Zoo Dortmund) | durchklickbare Beispielaufgabe mit drei Mustertexten (Mindest-/Regel-/Leistungsstandard) und Vorlesen; liegt als `apps/beispielaufgabe-giraffe/index.html` vor (noch eigenständig, nicht aus `inhalt/`); in der Lern-App vorgesehen |
+| Beispielaufgabe Training | Angola-Giraffe (Zikomo, Zoo Dortmund) | durchklickbare Beispielaufgabe mit drei Mustertexten (Mindest-/Regel-/Leistungsstandard) und Vorlesen; eigenständige Seite `apps/beispielaufgabe-giraffe/index.html`; in der Lern-App aus `inhalt/training_giraffe.json` (8 Schritte, Interview-Detektiv, Plan, Mustertexte). Pflegerin: Frau Brandt |
 | Training vor der Klassenarbeit | Elenantilope (Ü1, Kiosk 10), Hirschziegenantilope (Ü2, Kiosk 11) – beide im Zoo Dortmund; auch in der Lern-App (ohne Musterlösung) | `inhalt/training.json`, `tools/build_training.py`: platzsparend A4 Originalgröße (vorn Interview zweispaltig mit Zeilen, hinten Aufgaben/Schreibplan), ≥ 12 pt; Kiosk zeigt Plan mit Zeilen, Musterlösung Mindeststandard, aufklappbar Regelstandard |
 
 Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er ist der Otter (dekoratives Maskottchen spielt in dieser Reihe keine Rolle).
@@ -587,6 +587,7 @@ HTML-Animation (11 Szenen) für den Einstieg in DS 1: Wegekarte mit Spielstein �
 ```
 inhalt/                 Einzige Inhaltsquellen (JSON) – hier ändern, nie in den Ausgaben
   etappe1|2|3.json        Input/Merkblatt, Material, Blätter, Nachweise, Hilfen
+  training_giraffe.json   Beispielaufgabe Angola-Giraffe für die Lern-App
   probearbeit_waschbaer.json, klassenarbeit_biber.json, klassenarbeit_breitmaulnashorn.json
   interviews.json         sechs Interviews (250–350 Wörter) + zwei Förder-Kurzinterviews; [[Stelle|Kürzel]]
   foerder_etappe1|2|3.json, kiosk.json, wahlphase.json, strategiekarten.json
@@ -710,8 +711,7 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 - Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen.
 - Gedruckte Lösungsfassung (Tipps/Lösungen wie im Kiosk) und ggf. Übungskarten-Modus im Kiosk.
 - Unterrichtserprobung steht aus; Zeitbudget nach Erprobung prüfen.
-- Lern-App (`planung/Lernapp_Planung.md`): Grundversion gebaut (Mein Weg, Wissen, 14 Übungen inkl. Training Ü1/Ü2, Buchstabenrätsel, Zuhause); offen: Quiz je Etappe, Silbenrätsel/Suchsel, Giraffe, Schalter „Einfach“. Freigabe für Kinder steuert die Lehrkraft über den QR-Code. Klassenarbeiten sollen später extern gespeichert werden.
-- Angola-Giraffe (`apps/beispielaufgabe-giraffe/`) in Inhaltsdatei überführen und in die Lern-App einbinden; Pflegerin heißt dort wie bei der Elenantilope „Frau Demir“ → neuen Namen wählen.
+- Lern-App (`planung/Lernapp_Planung.md`): Grundversion gebaut (Mein Weg, Wissen, 15 Übungen inkl. Beispielaufgabe Giraffe und Training Ü1/Ü2, Buchstabenrätsel, Zuhause); offen: Quiz je Etappe, Silbenrätsel/Suchsel, Schalter „Einfach“, QR-Zettel. Freigabe für Kinder steuert die Lehrkraft über den QR-Code. Klassenarbeiten sollen später extern gespeichert werden.
 
 ## 17 · Glossar
 

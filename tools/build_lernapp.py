@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "lernapp"
 VORLAGE = ROOT / "tools" / "vorlagen" / "lernapp_vorlage.html"
 MARK = re.compile(r"\[\[([^|\]]+)\|([^\]]+)\]\]")
+BEISPIELE = {"angola-giraffe": "training_giraffe.json"}
 
 
 def j(name):
@@ -117,6 +118,14 @@ def daten() -> dict:
         t = alle[i]
         interviews[i] = {"titel": t["titel"], "einleitung": t["einleitung"], "paare": t["paare"], "woerter": t.get("woerter", [])}
 
+    # Beispielaufgaben (Schritt für Schritt), z. B. Angola-Giraffe
+    beispiele = {}
+    for u in app["uebungen"]:
+        if u["typ"] == "beispiel":
+            b = j(BEISPIELE[u["quelle"]])
+            beispiele[u["quelle"]] = {"id": b["id"], "zootier": b["zootier"], "hinweis": b["hinweis"], "schritte": b["schritte"]}
+            interviews[b["id"]] = {"titel": b["titel"], "einleitung": b["einleitung"], "paare": b["paare"], "woerter": b["woerter"]}
+
     nachweise = ["Fischotter: Dave Pape · Public Domain (Wikimedia Commons).",
                  "Aquarium-Grafik: eigene Zeichnung für diese Reihe."]
 
@@ -128,7 +137,7 @@ def daten() -> dict:
         "wissen": {"etappen": wissen_et, "strategien": strat["karten"],
                    "checkliste": etappen[2]["zusatzseiten"], "woerter": etappen[1]["hilfen"][0]},
         "uebungen": app["uebungen"], "detektiv_rueckmeldung": app["detektiv_rueckmeldung"],
-        "etappen_namen": app["etappen_namen"], "interviews": interviews,
+        "etappen_namen": app["etappen_namen"], "interviews": interviews, "beispiele": beispiele,
         "raetsel": app["raetsel"], "zuhause": app["zuhause"], "nachweise": nachweise,
     }
 
@@ -140,7 +149,7 @@ def pruefe_inhalt(data: dict):
     app = j("lernapp.json")
     # Satzvergleiche nur gegen app-eigene Texte: Material aus den Etappen (Interviews,
     # Merkblätter, Wörterhilfe) darf Sätze mit Nachweisen teilen, eigene Übungen nicht.
-    eigen = json.dumps({k: app[k] for k in ("uebungen", "raetsel", "zuhause", "start", "weg")}, ensure_ascii=False)
+    eigen = json.dumps([{k: app[k] for k in ("uebungen", "raetsel", "zuhause", "start", "weg")}] + [j(f) for f in BEISPIELE.values()], ensure_ascii=False)
 
     # 1 Sperrliste: Namen aus Probearbeit und Klassenarbeiten
     for w in app["sperrliste"]:
@@ -195,8 +204,8 @@ def pruefe_inhalt(data: dict):
                         fehler.append(f"{u['id']}: richtig außerhalb der Optionen: {it['text'][:40]}")
                 elif it["richtig"] not in [o[0] for o in u["optionen"]]:
                     fehler.append(f"{u['id']}: unbekannte Antwort {it['richtig']}")
-        elif u["typ"] == "detektiv":
-            iv = data["interviews"][u["interview"]]
+        elif u["typ"] in ("detektiv", "beispiel"):
+            iv = data["interviews"][u["interview"] if u["typ"] == "detektiv" else data["beispiele"][u["quelle"]]["id"]]
             ks = [k for _q, a in iv["paare"] for _s, k in MARK.findall(a)]
             opt = {o[0] for o in u["optionen"]}
             for k in set(ks) & set(u["kuerzel"]):
@@ -416,6 +425,24 @@ def browsertest(data: dict, shots: Path | None = None):
     print(f"ok: Browsertest 390×844 ({len(data['uebungen'])} Übungen gelöst, Tabs, Rätsel, Speichern, offline, keine Netzanfragen)")
 
 
+def loese_detektiv(pg, u, iv):
+    """Ordnet alle Stellen richtig zu; bei der ersten einmal bewusst falsch."""
+    ks = [k for _q, a in iv["paare"] for _s, k in MARK.findall(a) if k in u["kuerzel"]]
+    if pg.locator(".seg").count() != len(ks):
+        raise RuntimeError("Zahl der Stellen stimmt nicht")
+    for i, sk in enumerate(ks):
+        pg.locator(f".seg[data-s='{i}']").click()
+        ziel = "weg" if sk in "WXVU" else sk
+        if i == 0:
+            falsch = next(o[0] for o in u["optionen"] if o[0] != ziel)
+            pg.locator(f"#sheetBody .opt[data-o='{falsch}']").click()
+            pg.locator("#sfb .fb.no").wait_for(timeout=2000)
+        pg.locator(f"#sheetBody .opt[data-o='{ziel}']").click()
+        if i < len(ks) - 1:
+            pg.locator("#sfb [data-close]").click()
+            pg.wait_for_timeout(30)
+
+
 def spiele(pg, u, data):
     """Spielt eine Übung mit den richtigen Antworten durch."""
     typ = u["typ"]
@@ -428,22 +455,27 @@ def spiele(pg, u, data):
             pg.locator(".fb.ok").wait_for(timeout=2000)
             pg.locator("#weiter").click()
     elif typ == "detektiv":
-        n = pg.locator(".seg").count()
-        # bei der ersten Stelle einmal bewusst falsch, um die Rückmeldung zu prüfen
-        for i in range(n):
-            seg = pg.locator(f".seg[data-s='{i}']")
-            seg.click()
-            idx = i
-            sk = [k for _q, a in data["interviews"][u["interview"]]["paare"] for _s, k in MARK.findall(a) if k in u["kuerzel"]][idx]
-            ziel = "weg" if sk in "WXVU" else sk
-            if i == 0:
-                falsch = next(o[0] for o in u["optionen"] if o[0] != ziel)
-                pg.locator(f"#sheetBody .opt[data-o='{falsch}']").click()
-                pg.locator("#sfb .fb.no").wait_for(timeout=2000)
-            pg.locator(f"#sheetBody .opt[data-o='{ziel}']").click()
-            if i < n - 1:
-                pg.locator("#sfb [data-close]").click()
-                pg.wait_for_timeout(30)
+        loese_detektiv(pg, u, data["interviews"][u["interview"]])
+    elif typ == "beispiel":
+        b = data["beispiele"][u["quelle"]]
+        for st in b["schritte"]:
+            arten = [bl["art"] for bl in st["bloecke"]]
+            pg.locator("h2", has_text=st["titel"]).wait_for(timeout=2000)
+            if "detektiv" in arten:
+                loese_detektiv(pg, u, data["interviews"][b["id"]])
+                pg.locator("#fertig .fb.ok").wait_for(timeout=2000)
+            if "plan" in arten:
+                pg.locator("[data-plan]").click()
+                pg.locator("[data-planall]").click()
+            if "muster" in arten:
+                pg.locator("#muMark").check()
+                for c in range(pg.locator("[data-mu]").count()):
+                    pg.locator("[data-mu]").nth(c).click()
+                    if not pg.locator("#muBox mark.mt").count():
+                        raise RuntimeError("Mustertext ohne Markierung")
+            while pg.locator("[data-reveal]").count():
+                pg.locator("[data-reveal]").first.click()
+            pg.locator("#vor").click()
     elif typ == "satzbau":
         for it in u["items"]:
             for t in it["teile"]:

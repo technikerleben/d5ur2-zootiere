@@ -193,6 +193,20 @@ table.wh{width:100%;border-collapse:collapse;font-size:17px}
 table.wh td{border-top:1px solid var(--line);padding:8px 4px;vertical-align:top}
 table.wh td:first-child{font-weight:700;width:38%}
 .done-card{text-align:center;padding:22px 16px}
+.planteil{margin:10px 0;padding:10px 12px;border-radius:10px;background:var(--sage-ghost);border-left:5px solid var(--sage)}
+.planteil.gestr{background:#EEEDEA;border-left-color:var(--muted)}
+.planteil.gestr li{text-decoration:line-through;text-decoration-color:var(--muted);color:var(--muted)}
+.paar{border-top:1px solid #EFEDE8;padding:12px 0}
+.paar .btn{margin-top:8px}
+.entwurf{font-size:19px;line-height:1.6;background:var(--rust-ghost);border:2px dashed var(--rust);border-radius:12px;padding:12px 14px;margin:10px 0}
+.muster p{line-height:1.7}
+mark.mt{background:var(--sage-pale);color:inherit;border-radius:5px;padding:1px 2px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+mark.mt sup{font-size:11px;font-weight:700;color:#fff;background:var(--sage-dark);border-radius:5px;padding:1px 4px;margin-left:3px;vertical-align:2px}
+mark.mt-T,mark.mt-M{background:var(--slate-pale)}
+mark.mt-T sup,mark.mt-M sup{background:var(--slate)}
+.chip[type=button]{font:inherit;font-weight:700}
+.stepnav{justify-content:space-between;margin-top:20px}
+.stepnav .btn{flex:1}
 .done-card .big{font-size:40px;line-height:1}
 </style>
 </head>
@@ -384,7 +398,7 @@ function viewExercise(id){
   M.innerHTML = '<a class="back" href="#/ueben"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>Alle Übungen</a>'
     + '<h1>' + esc(u.titel) + '</h1><div class="cardhead"><p class="lead" style="flex:1">' + md(u.intro) + '</p>' + sayBtn(u.intro) + '</div><div id="ex"></div>';
   const box = $("#ex");
-  ({auswahl: exAuswahl, detektiv: exDetektiv, satzbau: exSatzbau, fehlerjagd: exFehler, saetze: exSaetze})[u.typ](u, box);
+  ({auswahl: exAuswahl, detektiv: exDetektiv, satzbau: exSatzbau, fehlerjagd: exFehler, saetze: exSaetze, beispiel: exBeispiel})[u.typ](u, box);
 }
 function finish(u, box, extra){
   S.ex[u.id] = 1; save();
@@ -468,7 +482,11 @@ function exDetektiv(u, box){
         $("#sheetBody").querySelectorAll(".opt").forEach(x => x.disabled = true); o.classList.add("ok");
         $("#sfb").innerHTML = '<div class="fb ok" role="status">' + md(D.detektiv_rueckmeldung[sg.k].replace("{zootier}", u.zootier)) + '</div><button class="btn primary block" type="button" data-close>Weiter</button>';
         $("#sfb [data-close]").focus();
-        if (count() === segs.length) { closeSheet(); $("#fertig").innerHTML = ""; finish(u, $("#fertig"), '<p>Du hast alle ' + segs.length + ' Stellen zugeordnet.</p>'); }
+        if (count() === segs.length) {
+          closeSheet();
+          if (u.inline) $("#fertig").innerHTML = '<div class="fb ok" role="status"><b>Geschafft!</b>Du hast alle ' + segs.length + ' Stellen zugeordnet. Weiter geht es mit dem Schreibplan.</div>';
+          else finish(u, $("#fertig"), '<p>Du hast alle ' + segs.length + ' Stellen zugeordnet.</p>');
+        }
       } else {
         o.classList.add("no"); o.disabled = true;
         const tip = tried[n] >= 2 ? '<b>Tipp:</b> ' + md(D.detektiv_rueckmeldung[sg.k].replace(/^Richtig: /, "").replace("{zootier}", u.zootier)) : 'Lies die Stelle noch einmal. Gilt sie für alle Tiere dieser Art?';
@@ -568,6 +586,66 @@ function exSaetze(u, box){
     $("#weiter").addEventListener("click", () => finish(u, box, '<p>' + md(u.fazit) + '</p>'));
     $("#fb").scrollIntoView({block: "nearest"});
   });
+}
+
+/* Beispielaufgabe Schritt für Schritt (Giraffe) */
+function exBeispiel(u, box){
+  const B = D.beispiele[u.quelle];
+  S.bsp = S.bsp || {};
+  let n = Math.min(S.bsp[u.id] || 0, B.schritte.length - 1);
+  const TAGL = {T: "Tiername", M: "Maß", A: "Aussehen", L: "Lebensraum", N: "Nahrung"};
+  function segText(parts, marks){
+    return parts.map(p => typeof p === "string" ? esc(p) : (marks ? '<mark class="mt mt-' + p[1] + '">' + esc(p[0]) + '<sup>' + TAGL[p[1]] + '</sup></mark>' : esc(p[0]))).join("");
+  }
+  function block(b, k){
+    const id = "b" + n + "_" + k;
+    if (b.art === "text") return '<section class="card"><div class="cardhead">' + (b.titel ? '<h3>' + esc(b.titel) + '</h3>' : '<div style="flex:1"></div>') + sayBtn((b.titel ? b.titel + ". " : "") + b.text) + '</div><div>' + md(b.text) + '</div></section>';
+    if (b.art === "liste") { const tag = b.nummeriert ? "ol" : "ul"; return '<section class="card"><div class="cardhead"><h3>' + esc(b.titel) + '</h3>' + sayBtn(b.titel + ". " + (b.text ? b.text + " " : "") + b.punkte.join(" ")) + '</div>' + (b.text ? '<p>' + md(b.text) + '</p>' : "") + '<' + tag + ' class="' + (b.nummeriert ? "steps" : "plain") + '">' + b.punkte.map(x => '<li>' + md(x) + '</li>').join("") + '</' + tag + '></section>'; }
+    if (b.art === "frage") return '<div class="frage"><div class="cardhead"><div style="flex:1"><span class="label">Denk nach</span><div>' + md(b.text) + '</div></div>' + sayBtn(b.text) + '</div></div><button class="btn block" type="button" data-reveal="' + id + '">Antwort aufdecken</button><div class="antwort" id="' + id + '" hidden><span class="label">Gesicherte Antwort</span><div>' + md(b.antwort) + '</div></div>';
+    if (b.art === "interview") {
+      const iv = D.interviews[B.id];
+      const all = iv.titel + ". " + iv.paare.map(p => p[0] + " " + plain(p[1])).join(" ");
+      return '<article class="iv"><div class="cardhead"><h3>' + md(iv.titel) + '</h3>' + sayBtn(all) + '</div><p class="small">' + md(iv.einleitung) + '</p>' + iv.paare.map(p => '<p class="q">' + md(p[0]) + '</p><p class="a">' + esc(plain(p[1])) + '</p>').join("") + '<p class="q">Wörterhilfe</p><p class="a small">' + iv.woerter.map(w => '<b>' + esc(w[0]) + '</b> = ' + esc(w[1])).join("<br>") + '</p><p class="fiktiv">' + esc(B.hinweis) + '</p></article>';
+    }
+    if (b.art === "detektiv") return '<div id="det"></div>';
+    if (b.art === "plan") return '<section class="card"><h3>Vergleiche deinen Plan</h3>' + b.teile.map((t, i) => '<div class="planteil' + (t[0] === "Gestrichen" ? " gestr" : "") + '" id="' + id + "_" + i + '" hidden><span class="label">' + esc(t[0]) + '</span><ul class="plain">' + t[1].map(x => '<li>' + md(x) + '</li>').join("") + '</ul></div>').join("") + '<div class="row"><button class="btn primary" type="button" data-plan="' + id + '" data-max="' + b.teile.length + '">Nächsten Teil aufdecken</button><button class="btn" type="button" data-planall="' + id + '" data-max="' + b.teile.length + '">Alles aufdecken</button></div></section>';
+    if (b.art === "paare") return '<section class="card"><h3>' + esc(b.titel) + '</h3><p>' + md(b.text) + '</p>' + b.paare.map((pp, i) => '<div class="paar"><div><b>' + md(pp[0]) + '</b></div><button class="btn block" type="button" data-reveal="' + id + "_" + i + '">Beispiel zeigen</button><div class="antwort" id="' + id + "_" + i + '" hidden>' + md(pp[1]) + '</div></div>').join("") + '</section>';
+    if (b.art === "muster") {
+      const keys = Object.keys(b.texte);
+      return '<div class="chips" role="tablist">' + keys.map((key, i) => '<button class="chip" type="button" data-mu="' + key + '"' + (i === 0 ? ' aria-current="true"' : "") + '>' + esc(b.texte[key].name) + '</button>').join("") + '</div><label class="check" style="border:0"><input type="checkbox" id="muMark"><span>Angaben markieren</span></label><div id="muBox"></div>';
+    }
+    if (b.art === "entwurf") return '<section class="card"><h3>' + esc(b.titel) + '</h3><p>' + md(b.text) + '</p><div class="entwurf">' + esc(b.entwurf).replace(/\n/g, "<br>") + '</div><button class="btn block" type="button" data-reveal="' + id + '">Lösung aufdecken</button><div class="antwort" id="' + id + '" hidden><ul class="plain">' + b.loesung.map(x => '<li>' + md(x) + '</li>').join("") + '</ul><span class="label">Verbessert</span><div>' + md(b.verbessert) + '</div></div></section>';
+    return "";
+  }
+  function show(){
+    const st = B.schritte[n];
+    S.bsp[u.id] = n; save();
+    let h = '<div class="prog"><span>Schritt ' + (n + 1) + ' von ' + B.schritte.length + '</span><span class="bar"><i style="width:' + Math.round((n + 1) / B.schritte.length * 100) + '%"></i></span></div><h2 style="margin-top:8px">' + esc(st.titel) + '</h2>';
+    h += st.bloecke.map(block).join("");
+    h += '<div class="row stepnav">' + (n > 0 ? '<button class="btn" type="button" id="zur">Zurück</button>' : '') + '<button class="btn primary" type="button" id="vor">' + (n + 1 < B.schritte.length ? "Weiter" : "Fertig") + '</button></div>';
+    box.innerHTML = h;
+    box.querySelectorAll("[data-reveal]").forEach(b => b.addEventListener("click", () => { $("#" + b.dataset.reveal).hidden = false; b.remove(); }));
+    box.querySelectorAll("[data-plan]").forEach(b => b.addEventListener("click", () => {
+      const max = +b.dataset.max; for (let i = 0; i < max; i++) { const el = $("#" + b.dataset.plan + "_" + i); if (el.hidden) { el.hidden = false; if (i === max - 1) { b.remove(); } return; } }
+    }));
+    box.querySelectorAll("[data-planall]").forEach(b => b.addEventListener("click", () => { for (let i = 0; i < +b.dataset.max; i++) $("#" + b.dataset.planall + "_" + i).hidden = false; b.parentNode.remove(); }));
+    const mu = st.bloecke.find(b => b.art === "muster");
+    if (mu) {
+      let cur = Object.keys(mu.texte)[0];
+      const drawMu = () => {
+        const t = mu.texte[cur], marks = $("#muMark").checked;
+        const voll = t.titel + ". " + t.absaetze.map(a => a.map(p => typeof p === "string" ? p : p[0]).join("")).join(" ");
+        $("#muBox").innerHTML = '<article class="card muster"><div class="cardhead"><div style="flex:1"><span class="label">' + esc(t.name) + ' · ' + esc(t.sub) + '</span><h3>' + esc(t.titel) + '</h3></div>' + sayBtn(voll) + '</div>' + t.absaetze.map(a => '<p>' + segText(a, marks) + '</p>').join("") + '</article><section class="card"><h3>Das macht diesen Text aus</h3>' + t.kriterien.map(k => '<span class="label">' + esc(k[0]) + '</span><div>' + md(k[1]) + '</div>').join("") + '<div class="frage" style="margin-top:14px"><span class="label">Nächste Stufe</span><div>' + md(t.weiter) + '</div></div></section>';
+      };
+      box.querySelectorAll("[data-mu]").forEach(c => c.addEventListener("click", () => { cur = c.dataset.mu; box.querySelectorAll("[data-mu]").forEach(x => { if (x === c) x.setAttribute("aria-current", "true"); else x.removeAttribute("aria-current"); }); drawMu(); }));
+      $("#muMark").addEventListener("change", drawMu);
+      drawMu();
+    }
+    if ($("#det")) exDetektiv(Object.assign({}, u, {interview: B.id, zootier: B.zootier, inline: true}), $("#det"));
+    if ($("#zur")) $("#zur").addEventListener("click", () => { n--; show(); box.scrollIntoView({block: "start"}); });
+    $("#vor").addEventListener("click", () => { if (n + 1 < B.schritte.length) { n++; show(); box.scrollIntoView({block: "start"}); } else { S.bsp[u.id] = 0; finish(u, box, '<p>Du kennst jetzt den ganzen Weg vom Interview zum Lexikontext.</p>'); } });
+  }
+  show();
 }
 
 /* ---------- Rätsel ---------- */

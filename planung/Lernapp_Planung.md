@@ -59,7 +59,7 @@ Sofortige Rückmeldung mit Begründung und Verweis („Merkblatt 1, Abschnitt 5�
 **Quiz:** je Etappe 8–10 Fragen, gemischt, beliebig oft. Ende ohne Punktwert: „Das kannst du schon“ und „Schau dir noch einmal an: …“.
 
 **Training (vor der Klassenarbeit)**
-- *Angola-Giraffe:* vollständiger Durchgang (Auftrag, Interview, Markieren, Plan, Sätze, drei Mustertexte Mindest-/Regel-/Leistungsstandard, Fehler finden, Vorlesen). Quelle: `apps/beispielaufgabe-giraffe/index.html` (in `main`).10.2026); wird in `inhalt/training_giraffe.json` überführt.
+- *Angola-Giraffe:* vollständiger Durchgang (Auftrag, Interview, Markieren, Plan, Sätze, drei Mustertexte Mindest-/Regel-/Leistungsstandard, Fehler finden, Vorlesen). **Umgesetzt (10.10.2026)** aus `inhalt/training_giraffe.json`; Pflegerin heißt jetzt Frau Brandt (auch in `apps/beispielaufgabe-giraffe/`).10.2026); wird in `inhalt/training_giraffe.json` überführt.
 - *Elenantilope (Ü1), Hirschziegenantilope (Ü2):* Interview markieren, Plan ordnen, Sätze prüfen; keine Musterlösung in der App.
 
 ## 5 · Buchstabenrätsel (Tab „Rätsel“)
@@ -116,9 +116,8 @@ Gleiche Denkschritte wie in der Reihe, übertragen auf Haustiere, Amsel, Taube, 
 
 **Auslegung „keine Lösungen“:** Die App enthält keine Kiosk-Texte und keine Zeilenbelege. Übungen zum Fischotter berühren aber zwangsläufig dieselben Fakten wie Blatt 1–6 (sie stehen auch im Merkblatt). Erdmännchen und Roter Panda werden in der App nicht markiert oder geplant, damit Blatt 7 nicht vorweggenommen wird.
 
-**Noch offen in der App:** Quiz je Etappe, Silbenrätsel und Suchsel, Giraffe als Beispielaufgabe, Schalter „Einfach“, QR-Zettel.
+**Noch offen in der App:** Quiz je Etappe, Silbenrätsel und Suchsel, Schalter „Einfach“, QR-Zettel.
 
 ## 12 · Offen
 
-- Angola-Giraffe aus `apps/beispielaufgabe-giraffe/index.html` in die Inhaltsdatei überführen. Pflegerin heißt dort „Frau Demir“ wie bei der Elenantilope → für die Giraffe neuen Namen wählen.
 - Elterninfo-Text (Datenschutz, Zweck, keine Pflicht).

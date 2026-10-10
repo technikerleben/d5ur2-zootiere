@@ -1,0 +1,613 @@
+{
+ "_hinweis": "Beispielaufgabe Angola-Giraffe (Training vor der Klassenarbeit) für die Lern-App. Übernommen aus apps/beispielaufgabe-giraffe/index.html (10.10.2026); die Pflegerin heißt hier Frau Brandt, damit sie nicht mit Frau Demir (Elenantilope) verwechselt wird. Markierung [[Stelle|Kürzel]] wie in interviews.json. Mustertexte: Absätze aus Text und [Stelle, Kürzel]. Die Seite in apps/ ist eine eigenständige Fassung und wird nicht aus dieser Datei erzeugt.",
+ "id": "angola-giraffe",
+ "tier": "Die Angola-Giraffe",
+ "zootier": "Zikomo",
+ "person": "Frau Brandt",
+ "titel": "„Zikomo hat eine lange Zunge“",
+ "einleitung": "Frau Brandt ist Tierpflegerin im Zoo Dortmund. Sie kümmert sich um die Giraffen.",
+ "hinweis": "Das Interview ist ausgedacht. Frau Brandt gibt es nicht. Die Angaben über die Angola-Giraffe und über Zikomo stimmen. Quellen: Stadt Dortmund, Newsroom zum Zoo Dortmund (2025, 2026).",
+ "paare": [
+  [
+   "Frau Brandt, wer ist der Riese da hinten?",
+   "[[Das ist Zikomo, unsere Angola-Giraffe.|X]] [[Er ist 2013 hier im Zoo Dortmund geboren.|X]] [[Ehrlich gesagt ist er der netteste Giraffenbulle der Welt!|W]]"
+  ],
+  [
+   "Was ist eine Angola-Giraffe genau?",
+   "[[Die Angola-Giraffe ist eine Giraffe aus dem südlichen Afrika.|T]] [[In der Natur lebt sie in Savannen und offenen Wäldern, zum Beispiel in Namibia und Botswana.|L]]"
+  ],
+  [
+   "Wie groß wird so eine Giraffe?",
+   "[[Erwachsene Männchen werden bis zu 6 Meter groß, vom Boden bis zum Kopf gemessen.|M]] [[Weibchen sind kleiner, etwa 4,5 Meter.|M]] [[Ein Bulle kann bis zu 2000 Kilogramm wiegen.|M]]"
+  ],
+  [
+   "Woran erkennt man eine Angola-Giraffe?",
+   "Am Fell! [[Es ist hell und sandfarben.|A]] [[Darauf sitzen große braune Flecken mit gezackten Rändern.|A]] [[Das sieht aus wie ein riesiges Puzzle.|V]] [[Die Flecken reichen bis weit hinunter an die Beine.|A]]"
+  ],
+  [
+   "Und der Hals?",
+   "[[Der Hals ist sehr lang.|A]] [[Trotzdem hat er nur sieben Halswirbel, genau wie bei uns Menschen.|Z]] [[Auch die Beine sind lang.|A]] [[Ich finde, Zikomo hat den elegantesten Hals im ganzen Zoo.|W]]"
+  ],
+  [
+   "Was sind das für Knubbel auf dem Kopf?",
+   "[[Das sind zwei kurze Hörner.|A]] [[Sie sind mit Haut und Haaren bedeckt.|A]] [[Bullen setzen sie bei Kämpfen ein.|Z]] [[Zikomo lässt sich manchmal zwischen den Hörnern streicheln.|X]]"
+  ],
+  [
+   "Und was hängt da am Schwanz?",
+   "[[Am Ende des Schwanzes sitzt eine Quaste aus langen schwarzen Haaren.|A]] [[Damit verscheuchen Giraffen Fliegen.|Z]]"
+  ],
+  [
+   "Was frisst eine Giraffe?",
+   "[[Giraffen fressen nur Pflanzen.|N]] [[Vor allem zupfen sie Blätter von Bäumen und Sträuchern, auch von dornigen Akazien.|N]] [[Dafür haben sie eine lange Zunge.|A]] [[Sie kann bis zu 50 Zentimeter lang werden und ist dunkelblau bis schwarz.|A]] [[Zikomo frisst am liebsten Weiden- und Haselzweige.|X]]"
+  ],
+  [
+   "Haben Sie noch einen Tipp für uns?",
+   "[[Kommt zur Fütterung!|X]] [[Dann zeigt Zikomo seine lange Zunge.|X]] [[Das ist der schönste Moment des Tages!|W]]"
+  ]
+ ],
+ "woerter": [
+  [
+   "Savanne",
+   "Grasland mit wenigen Bäumen"
+  ],
+  [
+   "Bulle",
+   "ein männliches Tier, hier ein Giraffenmännchen"
+  ],
+  [
+   "Halswirbel",
+   "Knochen im Hals"
+  ],
+  [
+   "Akazie",
+   "ein Baum mit Dornen, der in Afrika wächst"
+  ],
+  [
+   "Quaste",
+   "ein Büschel aus Haaren"
+  ]
+ ],
+ "schritte": [
+  {
+   "titel": "Den Auftrag verstehen",
+   "bloecke": [
+    {
+     "art": "text",
+     "titel": "Dein Auftrag",
+     "text": "Unser Tierlexikon bekommt eine neue Seite. Es fehlt noch ein Text über die Angola-Giraffe. Die Schülerzeitung „Zoo-Reporter“ hat dafür ein Interview im Zoo Dortmund geführt. Schreibe daraus einen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können."
+    },
+    {
+     "art": "liste",
+     "titel": "Das sollst du tun",
+     "nummeriert": true,
+     "punkte": [
+      "Lies das Interview genau.",
+      "Markiere Sachangaben über die Tierart. Streiche Meinungen und Angaben nur über Zikomo.",
+      "Ordne deine Stichwörter im Schreibplan: Überblick · Aussehen · Lebensraum · Nahrung.",
+      "Schreibe einen Text mit Überschrift. Beschreibe mindestens vier äußere Merkmale.",
+      "Prüfe deinen Text mit „Das zählt“ (K1–K6)."
+     ]
+    },
+    {
+     "art": "frage",
+     "text": "Im Interview geht es oft um Zikomo. Schreibst du über Zikomo oder über alle Angola-Giraffen?",
+     "antwort": "Du schreibst über **alle Angola-Giraffen**, also über die Tierart. Ein Lexikon erklärt, wie ein Tier allgemein ist. Was nur für Zikomo gilt, lässt du weg."
+    },
+    {
+     "art": "frage",
+     "text": "Nenne die vier Teile, die in einen Lexikontext gehören.",
+     "antwort": "**Überblick** (Tiername und Maß mit Einheit), **Aussehen** (mindestens vier Merkmale), **Lebensraum** und **Nahrung**. Eine Mindestzahl an Wörtern gibt es nicht."
+    }
+   ]
+  },
+  {
+   "titel": "Das Interview lesen",
+   "bloecke": [
+    {
+     "art": "liste",
+     "titel": "So liest du",
+     "nummeriert": true,
+     "punkte": [
+      "Lies das Interview einmal ganz. Merke dir Wörter, die du nicht verstehst.",
+      "Kläre sie mit der Wörterhilfe oder frage nach. Rate nicht.",
+      "Lies noch einmal mit Suchauftrag: Wie sieht die Giraffe aus? Wo lebt sie? Was frisst sie? Wie groß ist sie?"
+     ]
+    },
+    {
+     "art": "interview"
+    }
+   ]
+  },
+  {
+   "titel": "Markieren und streichen",
+   "bloecke": [
+    {
+     "art": "liste",
+     "titel": "Drei Prüffragen für jeden Satz",
+     "nummeriert": false,
+     "punkte": [
+      "Gilt es für **alle Angola-Giraffen**? Dann ist es eine **Sachangabe**. Du markierst sie.",
+      "Geht es nur um **Zikomo** oder den Zoo? Dann ist es ein **Einzelfall**. Du streichst ihn.",
+      "Sagt jemand, wie er das Tier **findet**? Dann ist es eine **Meinung**. Du streichst sie.",
+      "Bei einem **Vergleich** („wie ein Puzzle“) nimmst du nur die Sachangabe heraus."
+     ]
+    },
+    {
+     "art": "detektiv"
+    }
+   ]
+  },
+  {
+   "titel": "Den Schreibplan machen",
+   "bloecke": [
+    {
+     "art": "text",
+     "titel": "Ordne deine Stichwörter",
+     "text": "Schreibe vier Überschriften: Überblick · Aussehen · Lebensraum · Nahrung. Ordne die markierten Stellen zu. Nimm nur Stichwörter, keine ganzen Sätze. Mache deinen Plan zuerst selbst im Heft. Decke dann Teil für Teil auf."
+    },
+    {
+     "art": "plan",
+     "teile": [
+      [
+       "Überblick",
+       [
+        "Angola-Giraffe: Giraffe aus dem südlichen Afrika",
+        "Männchen bis zu 6 m groß, vom Boden bis zum Kopf",
+        "Weibchen etwa 4,5 m"
+       ]
+      ],
+      [
+       "Aussehen",
+       [
+        "Fell hell, sandfarben",
+        "große braune Flecken, Ränder gezackt",
+        "Flecken bis weit an die Beine",
+        "Hals sehr lang",
+        "Beine lang",
+        "zwei kurze Hörner mit Haut und Haaren",
+        "Quaste aus schwarzen Haaren am Schwanz",
+        "Zunge bis 50 cm, dunkelblau bis schwarz"
+       ]
+      ],
+      [
+       "Lebensraum",
+       [
+        "Savannen und offene Wälder",
+        "zum Beispiel Namibia, Botswana"
+       ]
+      ],
+      [
+       "Nahrung",
+       [
+        "nur Pflanzen",
+        "vor allem Blätter von Bäumen und Sträuchern, auch Akazien"
+       ]
+      ],
+      [
+       "Gestrichen",
+       [
+        "Zikomo, 2013 geboren",
+        "„der netteste Giraffenbulle“",
+        "„wie ein riesiges Puzzle“",
+        "„den elegantesten Hals“",
+        "Zikomo lässt sich streicheln",
+        "Zikomos Lieblingszweige, die Fütterung"
+       ]
+      ]
+     ]
+    },
+    {
+     "art": "frage",
+     "text": "Im Interview stehen drei Zahlen: 6 Meter, 4,5 Meter und 2000 Kilogramm. Was musst du beim Maß beachten?",
+     "antwort": "Ein Maß braucht eine **Einheit** und einen **Bezug**: Für wen gilt es, und was wird gemessen? Richtig ist zum Beispiel: *Erwachsene Männchen werden vom Boden bis zum Kopf bis zu 6 Meter groß.* Falsch wäre: *Die Giraffe ist 6 Meter.* Dann fehlt der Bezug."
+    }
+   ]
+  },
+  {
+   "titel": "Aus Stichwörtern werden Sätze",
+   "bloecke": [
+    {
+     "art": "liste",
+     "titel": "So baust du einen Satz",
+     "nummeriert": true,
+     "punkte": [
+      "Wer oder was? Nenne das Subjekt: *Die Angola-Giraffe*, *Ihr Fell*.",
+      "Setze das Verb im Präsens: *hat, ist, lebt, frisst*.",
+      "Ergänze die Angabe aus dem Plan.",
+      "Prüfe: Großer Anfang? Punkt am Ende?"
+     ]
+    },
+    {
+     "art": "paare",
+     "titel": "Probiere es selbst",
+     "text": "Sprich oder schreibe zuerst deinen Satz. Tippe dann auf „Beispiel zeigen“.",
+     "paare": [
+      [
+       "Fell – hell, sandfarben",
+       "Ihr Fell ist hell und sandfarben."
+      ],
+      [
+       "Flecken – groß, braun, Ränder gezackt",
+       "Darauf sitzen große braune Flecken mit gezackten Rändern."
+      ],
+      [
+       "Männchen – bis 6 m – vom Boden bis zum Kopf",
+       "Erwachsene Männchen werden vom Boden bis zum Kopf bis zu 6 Meter groß."
+      ],
+      [
+       "Interview: „Ich finde, Zikomo hat den elegantesten Hals im ganzen Zoo.“",
+       "Die Angola-Giraffe hat einen sehr langen Hals. (Die Meinung fällt weg. Die Sachangabe steht im Interview direkt davor.)"
+      ],
+      [
+       "Interview: „Das sieht aus wie ein riesiges Puzzle.“",
+       "Du lässt den Vergleich weg. Die Sachangabe steht schon davor: große braune Flecken mit gezackten Rändern."
+      ],
+      [
+       "Giraffen – fressen – Blätter (über eine Giraffe schreiben)",
+       "Die Angola-Giraffe frisst vor allem Blätter. (Eine Giraffe: frisst. Mehrere Giraffen: fressen.)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "titel": "Drei Mustertexte vergleichen",
+   "bloecke": [
+    {
+     "art": "text",
+     "text": "Alle drei Texte sind richtig. Sie zeigen drei Stufen: Mindeststandard, Regelstandard und Leistungsstandard."
+    },
+    {
+     "art": "muster",
+     "texte": {
+      "min": {
+       "name": "Mindeststandard",
+       "sub": "kurz und richtig",
+       "titel": "Die Angola-Giraffe",
+       "absaetze": [
+        [
+         [
+          "Die Angola-Giraffe ist eine Giraffe aus Afrika.",
+          "T"
+         ],
+         " ",
+         [
+          "Männchen werden bis zu 6 Meter groß.",
+          "M"
+         ],
+         " Sie hat ",
+         [
+          "einen langen Hals",
+          "A"
+         ],
+         ". Sie hat ",
+         [
+          "lange Beine",
+          "A"
+         ],
+         ". ",
+         [
+          "Das Fell ist hell.",
+          "A"
+         ],
+         " Es hat ",
+         [
+          "braune Flecken",
+          "A"
+         ],
+         ". Sie hat ",
+         [
+          "zwei kurze Hörner",
+          "A"
+         ],
+         ". Die Angola-Giraffe ",
+         [
+          "lebt in Savannen",
+          "L"
+         ],
+         ". Sie ",
+         [
+          "frisst Blätter",
+          "N"
+         ],
+         "."
+        ]
+       ],
+       "kriterien": [
+        [
+         "K1",
+         "Tiername, Maß mit Einheit (Männchen, 6 Meter), Lebensraum und Nahrung sind da. Nichts über Zikomo."
+        ],
+        [
+         "K2",
+         "Fünf Merkmale: Hals, Beine, helles Fell, braune Flecken, Hörner. Sie sind richtig, aber noch wenig genau."
+        ],
+        [
+         "K3",
+         "Erst der Überblick, dann Aussehen, Lebensraum, Nahrung. Noch keine Absätze."
+        ],
+        [
+         "K4",
+         "Sachlich und im Präsens. Einfache Wörter."
+        ],
+        [
+         "K5",
+         "Kurze, vollständige Sätze. Viele beginnen gleich mit „Sie hat“."
+        ],
+        [
+         "K6",
+         "Satzanfänge und Nomen groß, Punkte gesetzt."
+        ]
+       ],
+       "weiter": "Beschreibe die Merkmale genauer (Farbe, Form, Muster). Verbinde Sätze, die zusammengehören. Mache Absätze."
+      },
+      "reg": {
+       "name": "Regelstandard",
+       "sub": "genau und geordnet",
+       "titel": "Die Angola-Giraffe",
+       "absaetze": [
+        [
+         [
+          "Die Angola-Giraffe ist eine Giraffe aus dem südlichen Afrika.",
+          "T"
+         ],
+         " ",
+         [
+          "Erwachsene Männchen werden vom Boden bis zum Kopf bis zu 6 Meter groß.",
+          "M"
+         ],
+         " ",
+         [
+          "Weibchen sind kleiner.",
+          "M"
+         ]
+        ],
+        [
+         "Die Giraffe hat ",
+         [
+          "einen sehr langen Hals",
+          "A"
+         ],
+         " und ",
+         [
+          "lange Beine",
+          "A"
+         ],
+         ". ",
+         [
+          "Ihr Fell ist hell und sandfarben.",
+          "A"
+         ],
+         " Darauf sitzen ",
+         [
+          "große braune Flecken mit gezackten Rändern",
+          "A"
+         ],
+         ". Auf dem Kopf trägt sie ",
+         [
+          "zwei kurze Hörner, die mit Haut und Haaren bedeckt sind",
+          "A"
+         ],
+         "."
+        ],
+        [
+         "Die Angola-Giraffe ",
+         [
+          "lebt in Savannen und offenen Wäldern, zum Beispiel in Namibia und Botswana",
+          "L"
+         ],
+         ". ",
+         [
+          "Sie frisst nur Pflanzen.",
+          "N"
+         ],
+         " Vor allem ",
+         [
+          "zupft sie Blätter von Bäumen und Sträuchern",
+          "N"
+         ],
+         "."
+        ]
+       ],
+       "kriterien": [
+        [
+         "K1",
+         "Alle Angaben stimmen mit dem Interview. Das Maß hat Einheit und Bezug: Männchen, vom Boden bis zum Kopf."
+        ],
+        [
+         "K2",
+         "Fünf Merkmale, jeweils genau: Körperteil plus Farbe, Form oder Muster („gezackte Ränder“)."
+        ],
+        [
+         "K3",
+         "Drei Absätze: Überblick, Aussehen, Lebensraum und Nahrung."
+        ],
+        [
+         "K4",
+         "Genaue Wörter wie „sandfarben“, „zupft“. Kein Vergleich, keine Meinung."
+        ],
+        [
+         "K5",
+         "Sätze sind verbunden („und“, „Darauf“, „Auf dem Kopf“). Die Satzanfänge wechseln."
+        ],
+        [
+         "K6",
+         "Sicher bei Satzanfängen, Nomen und Punkten."
+        ]
+       ],
+       "weiter": "Wähle Merkmale, an denen man gerade diese Giraffe gut erkennt. Verknüpfe die Angaben noch flüssiger."
+      },
+      "leis": {
+       "name": "Leistungsstandard",
+       "sub": "präzise und flüssig",
+       "titel": "Die Angola-Giraffe",
+       "absaetze": [
+        [
+         [
+          "Die Angola-Giraffe ist eine Giraffe aus dem südlichen Afrika.",
+          "T"
+         ],
+         " ",
+         [
+          "Erwachsene Männchen werden vom Boden bis zum Kopf bis zu 6 Meter groß und können bis zu 2000 Kilogramm wiegen.",
+          "M"
+         ],
+         " ",
+         [
+          "Weibchen erreichen etwa 4,5 Meter.",
+          "M"
+         ]
+        ],
+        [
+         "Am auffälligsten sind ",
+         [
+          "der sehr lange Hals",
+          "A"
+         ],
+         " und ",
+         [
+          "die langen Beine",
+          "A"
+         ],
+         ". ",
+         [
+          "Das helle, sandfarbene Fell",
+          "A"
+         ],
+         " ist mit ",
+         [
+          "großen braunen Flecken bedeckt, deren Ränder gezackt sind",
+          "A"
+         ],
+         ". ",
+         [
+          "Diese Flecken reichen bis weit hinunter an die Beine.",
+          "A"
+         ],
+         " Auf dem Kopf sitzen ",
+         [
+          "zwei kurze Hörner, die mit Haut und Haaren überzogen sind",
+          "A"
+         ],
+         ". Am Ende des Schwanzes hängt ",
+         [
+          "eine Quaste aus langen schwarzen Haaren",
+          "A"
+         ],
+         "."
+        ],
+        [
+         "In der Natur ",
+         [
+          "lebt die Angola-Giraffe in Savannen und offenen Wäldern, etwa in Namibia und Botswana",
+          "L"
+         ],
+         ". ",
+         [
+          "Sie ernährt sich ausschließlich von Pflanzen.",
+          "N"
+         ],
+         " Mit ",
+         [
+          "ihrer bis zu 50 Zentimeter langen, dunkelblauen Zunge",
+          "A"
+         ],
+         " ",
+         [
+          "zupft sie Blätter von Bäumen und Sträuchern, sogar von dornigen Akazien",
+          "N"
+         ],
+         "."
+        ]
+       ],
+       "kriterien": [
+        [
+         "K1",
+         "Alle Angaben sind sicher und stammen aus dem Interview. Zwei Maße, beide mit Einheit und Bezug."
+        ],
+        [
+         "K2",
+         "Viele kennzeichnende Merkmale. Die Flecken bis an die Beine, die Schwanzquaste und die dunkelblaue Zunge machen das Tier gut erkennbar."
+        ],
+        [
+         "K3",
+         "Klarer Weg: Überblick, dann Aussehen vom Auffälligsten zu den Einzelheiten, dann Lebensraum und Nahrung."
+        ],
+        [
+         "K4",
+         "Durchgehend genau und abwechslungsreich: „überzogen“, „ernährt sich ausschließlich“."
+        ],
+        [
+         "K5",
+         "Flüssig verknüpft: „Am auffälligsten“, „Diese Flecken“, „Mit ihrer … Zunge“. Längere Sätze bleiben klar."
+        ],
+        [
+         "K6",
+         "Weitgehend sicher, auch bei schwierigen Wörtern wie „Akazien“."
+        ]
+       ],
+       "weiter": "Prüfe, ob jeder lange Satz noch gut lesbar ist. Ein klarer kurzer Satz ist besser als ein verschachtelter langer."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "titel": "Prüfen und verbessern",
+   "bloecke": [
+    {
+     "art": "entwurf",
+     "titel": "Finde die Fehler",
+     "text": "Ein Kind hat diesen Anfang geschrieben. Finde mindestens vier Stellen, die nicht passen.",
+     "entwurf": "die Angola-Giraffe\nZikomo ist 2013 im Zoo Dortmund geboren. die giraffe hatte einen sehr langen hals Sie ist total elegant. Ihr Fell ist hell.",
+     "loesung": [
+      "**K1:** Der erste Satz gilt nur für Zikomo. Er gehört nicht hinein. Es fehlen Maß, Lebensraum und Nahrung.",
+      "**K4:** „hatte“ steht in der Vergangenheit. Richtig: „hat“.",
+      "**K4:** „total elegant“ ist eine Meinung. Streiche sie.",
+      "**K6:** „die“ am Satzanfang, „giraffe“ und „hals“ schreibt man groß. Nach „hals“ fehlt ein Punkt. Auch die Überschrift beginnt groß."
+     ],
+     "verbessert": "*Die Angola-Giraffe hat einen sehr langen Hals. Ihr Fell ist hell und sandfarben.*"
+    },
+    {
+     "art": "liste",
+     "titel": "So zeigst du die Prüfung (K6)",
+     "nummeriert": false,
+     "punkte": [
+      "Kreise einen Satzanfang ein. Unterstreiche zwei Nomen. Markiere einen Punkt.",
+      "Ein richtiger Satz bleibt, wie er ist. Du begründest nur: „Mein Satz bleibt, weil …“"
+     ]
+    }
+   ]
+  },
+  {
+   "titel": "Deinen nächsten Schritt finden",
+   "bloecke": [
+    {
+     "art": "liste",
+     "titel": "Und du?",
+     "text": "Lege deinen eigenen Text neben die drei Mustertexte. Welchem ähnelt er am meisten? Wähle dann einen Schritt:",
+     "nummeriert": false,
+     "punkte": [
+      "Fehlt noch etwas aus K1? Dann suche Maß, Lebensraum und Nahrung im Interview.",
+      "Hast du weniger als vier Merkmale? Dann übe mit Blatt 4 und Blatt 7.",
+      "Klingen alle Sätze gleich („Sie hat … Sie hat …“)? Dann verbinde zwei Sätze mit „und“ oder beginne anders.",
+      "Ist schon alles da? Dann suche ein Merkmal, an dem man die Angola-Giraffe besonders gut erkennt."
+     ]
+    },
+    {
+     "art": "liste",
+     "titel": "Merke dir den Weg",
+     "nummeriert": true,
+     "punkte": [
+      "Auftrag lesen: Über wen schreibe ich?",
+      "Interview lesen, Wörter klären.",
+      "Sachangaben markieren, Meinungen und Einzelfälle streichen.",
+      "Schreibplan mit vier Überschriften.",
+      "Aus jedem Stichwort einen Satz im Präsens.",
+      "Mit K1 bis K6 prüfen und den Prüfbeleg zeigen."
+     ]
+    }
+   ]
+  }
+ ]
+}
