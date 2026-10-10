@@ -237,6 +237,8 @@ def main():
     out = fitz.open()
     for f in pdfs + [pl]:
         out.insert_pdf(fitz.open(f))
+    zl = {t["id"]: [[k, zeilen_text(z), s] for (k, z), (_, s) in zip(info["stellen"], tags(t))] for t, info, _ in daten}
+    (AUS / "zeilen.json").write_text(json.dumps(zl, ensure_ascii=False, indent=1), encoding="utf-8")
     ziel = AUS / "Interviews_Entwurf_A4.pdf"
     out.save(ziel)
     for f in tmp.iterdir():

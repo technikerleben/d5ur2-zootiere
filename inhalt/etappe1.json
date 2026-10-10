@@ -2,7 +2,7 @@
   "_hinweis": "Einzige Inhaltsquelle für Etappe 1. Input (HTML) und Merkblatt (A4) werden aus 'input' erzeugt und sind dadurch 1:1 gleich. Markup: *kursiv* für Beispielsätze, **fett** für Begriffe.",
   "etappe": 1,
   "titel": "Informationen finden und ordnen",
-  "ziel": "Ich kann ein Tier genau betrachten und Informationen aus Bild und Text ordnen.",
+  "ziel": "Ich kann ein Tier genau betrachten und Sachangaben aus Bild und Interview ordnen.",
   "foto": {
     "datei": "materialien/gelingensnachweise/Fischotter_DavePape_Graustufen.jpg",
     "nachweis": "Foto: Dave Pape · Public Domain",
@@ -42,7 +42,7 @@
       "bloecke": [
         [
           "Dein Ziel",
-          "Du findest genaue Angaben über ein Tier. Eine Beschreibung hilft anderen, sich das Tier vorzustellen."
+          "Genaue Angaben helfen anderen, sich das Tier vorzustellen."
         ],
         [
           "Vergleiche",
@@ -54,7 +54,7 @@
         ],
         [
           "Gesicherte Antwort",
-          "B nennt Körperform, Beinlänge und Fellfarbe. A enthält Meinungen. „schön“ und „toll“ sind keine genauen Merkmale."
+          "B nennt Körperform, Beine und Fellfarbe. „schön“ und „toll“ sind Meinungen, keine Merkmale."
         ]
       ]
     },
@@ -77,37 +77,59 @@
       ]
     },
     {
-      "titel": "Das erfährst du im Text",
+      "titel": "Das erfährst du im Interview",
       "bloecke": [
         [
           "So liest du",
-          "1. Lies den Text einmal. Markiere Wörter, die du nicht verstehst.\n2. Lies den Satz um das Wort noch einmal. Nutze die Wörterhilfe. Frage bei Bedarf ein anderes Kind oder deine Lehrkraft. Rate keine Bedeutung.\n3. Lies mit deinem Suchauftrag weiter. Suchwörter helfen: *lebt, frisst, Zentimeter*. Markiere die passende Textstelle: **L** für Lebensraum, **N** für Nahrung, **M** für Maß.\n4. Notiere die Information als Stichwort unter der passenden Überschrift."
+          "1. Lies das Interview einmal. Markiere Wörter, die du nicht verstehst.\n2. Kläre sie mit der Wörterhilfe oder frage nach. Rate nicht.\n3. Suche mit Suchwörtern: *leben, fressen, Zentimeter*. Markiere **L** (Lebensraum), **N** (Nahrung), **M** (Maß).\n4. Notiere ein Stichwort und die Zeile."
         ],
         [
           "Lies gezielt",
-          "*Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern. Er hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Der Fischotter frisst vor allem Fische, aber auch Frösche und Krebse.*"
+          "**Wie groß ist Otto?**\n*Von der Nase bis zum Schwanzansatz waren es 80 Zentimeter. Fischotter sind meistens 60 bis 90 Zentimeter lang, wenn man den Schwanz nicht mitzählt.*"
         ],
         [
           "Frage",
-          "Wo lebt der Fischotter? Was frisst er? Wie lang sind Kopf und Rumpf? Zählt der Schwanz dazu?"
+          "Wie lang sind Fischotter? Zählt der Schwanz dazu? Für wen gelten die 80 Zentimeter?"
         ],
         [
           "Gesicherte Antwort",
-          "Flüsse und Seen mit geschützten Ufern; vor allem Fische; Kopf und Rumpf etwa 60–90 cm. Der Schwanz zählt nicht dazu. Zeige die Textstellen."
+          "Fischotter sind ohne Schwanz etwa 60–90 cm lang. Die 80 cm gelten nur für Otto."
         ],
         [
           "Mit einem Partner prüfen",
-          "Zeige deine Textstelle. Erkläre, welche Information du gefunden hast. Vergleicht: Passt die Stelle zur Frage? Bei verschiedenen Antworten prüft ihr gemeinsam im Text."
+          "Zeige deine Stelle und nenne die Zeile. Passt sie zur Frage? Bei verschiedenen Antworten prüft ihr gemeinsam."
         ]
       ],
       "umbruch_nach": 1
+    },
+    {
+      "titel": "Was gehört in die Beschreibung?",
+      "bloecke": [
+        [
+          "Im Interview",
+          "Frau Berger erzählt viel. Nicht alles passt in eine Tierbeschreibung."
+        ],
+        [
+          "Drei Prüffragen",
+          "1. Gilt es für **alle Fischotter**? → **Sachangabe**, passt.\n2. Geht es nur um **Otto** oder den Zoo? → **Einzelfall**, passt nicht.\n3. Sagt jemand, wie er das Tier **findet**? → **Meinung**, passt nicht."
+        ],
+        [
+          "Frage",
+          "Ordne zu: *Fischotter fressen Fische.* · *Otto bekommt einen Eimer voll.* · *Er ist der süßeste Otter!*"
+        ],
+        [
+          "Gesicherte Antwort",
+          "Sachangabe: Fische. Einzelfall: Ottos Eimer. Meinung: „der süßeste Otter“. Nur die Sachangabe passt."
+        ]
+      ],
+      "umbruch_nach": 2
     },
     {
       "titel": "Sprachdetektiv",
       "bloecke": [
         [
           "Vier Wortarten",
-          "**Nomen** benennen Tiere, Dinge und mehr: *Otter, Fell*. Du schreibst sie groß.\n**Artikel** begleiten Nomen: *der Otter, das Fell, die Pfote*.\n**Verben** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*.\n**Adjektive** beschreiben Merkmale: *braun, dicht, lang*."
+          "**Nomen** benennen Tiere und Dinge: *Otter, Fell*. Du schreibst sie groß.\n**Artikel** begleiten Nomen: *der Otter, das Fell*.\n**Verben** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*.\n**Adjektive** beschreiben Merkmale: *braun, dicht*."
         ],
         [
           "Wörter zerlegen",
@@ -127,12 +149,8 @@
       "titel": "Informationen ordnen",
       "bloecke": [
         [
-          "So gehst du vor",
-          "Lies den Auftrag. Suche passende Angaben in Bild und Text. Notiere Stichwörter unter Überschriften."
-        ],
-        [
-          "Beispiel: geordnete Sammlung",
-          "**Überblick:** Fischotter; Kopf und Rumpf 60–90 cm, Schwanz zusätzlich\n**Aussehen:** langer Körper; kurze Beine; dunkelbraune Oberseite; lange Tasthaare\n**Lebensraum:** Flüsse und Seen; geschützte Ufer\n**Nahrung:** vor allem Fische"
+          "Beispiel: nur Sachangaben, geordnet",
+          "**Überblick:** Fischotter; ohne Schwanz 60–90 cm\n**Aussehen:** langer, schmaler Körper; kurze Beine; dunkelbraunes Fell oben\n**Lebensraum:** Flüsse und Seen; Ufer mit Verstecken\n**Nahrung:** vor allem Fische; Frösche, Krebse"
         ],
         [
           "Frage",
@@ -140,30 +158,12 @@
         ],
         [
           "Gesicherte Antwort",
-          "Unter Aussehen. Eine genaue Angabe kann im Bild und im Text vorkommen. Zeige, welche Quelle du genutzt hast."
+          "Unter Aussehen. Zeige, ob du die Angabe im Bild oder im Interview gefunden hast."
         ]
       ]
     }
   ],
-  "abschluss": "Bearbeite Blatt 1–4. Vertiefungen sind freiwillig. Danach zeigst du dein Können im Gelingensnachweis. Vier von fünf Zielen reichen für Etappe 2.",
-  "material": {
-    "titel": "Der Fischotter",
-    "text": "Der Fischotter lebt an Flüssen und Seen mit geschützten Ufern. Er hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Sein Kopf ist breit und flach. An der Schnauze sitzen lange Tasthaare. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Der Fischotter frisst vor allem Fische, aber auch Frösche und Krebse.",
-    "woerter": [
-      [
-        "Rumpf",
-        "Körper ohne Kopf, Beine und Schwanz"
-      ],
-      [
-        "Tasthaare",
-        "Haare zum Ertasten"
-      ],
-      [
-        "Ufer",
-        "Rand eines Flusses oder Sees"
-      ]
-    ]
-  },
+  "abschluss": "Bearbeite Blatt 1–4 mit dem Fischotter-Interview. Vertiefungen sind freiwillig. Danach zeigst du dein Können im Gelingensnachweis. Vier von fünf Zielen reichen für Etappe 2.",
   "blaetter": [
     {
       "nr": 1,
@@ -175,12 +175,12 @@
         "Notiere zwei genaue Angaben aus Text B. Erkläre: Warum hilft „toll“ beim Beschreiben wenig?"
       ],
       "sprachdetektiv": "Schreibe den Satz ins Heft: *„Der Fischotter hat einen langen Körper.“* Schreibe **N** über die Nomen und **A** über die Artikel.",
-      "vertiefung": "Ersetze *„Der Fischotter hat schöne Beine“* durch eine genaue Angabe aus dem Material. Erkläre den Unterschied."
+      "vertiefung": "Ersetze *„Der Fischotter hat schöne Beine“* durch eine genaue Angabe aus dem Interview. Erkläre den Unterschied."
     },
     {
       "nr": 2,
       "titel": "Schau genau hin",
-      "brauchst": "Fischotter-Material · Heft · Bleistift",
+      "brauchst": "Fischotter-Foto · Heft · Bleistift",
       "pflicht": [
         "Betrachte das Foto. Notiere im Heft zwei sichtbare Körperteile. Ergänze zu jedem ein genaues Merkmal.",
         "Bilde daraus zwei vollständige Sätze.",
@@ -192,25 +192,26 @@
     },
     {
       "nr": 3,
-      "titel": "Bild oder Text?",
-      "brauchst": "Fischotter-Material · Merkblatt 1 · Heft · Bleistift",
+      "titel": "Im Interview suchen",
+      "brauchst": "Fischotter-Interview · Fischotter-Foto · Merkblatt 1 · Heft",
       "pflicht": [
-        "Lies den Text mit den Leseschritten von Merkblatt 1. Notiere:\na) Wo lebt der Fischotter?\nb) Was frisst er vor allem?\nc) Wie lang sind Kopf und Rumpf? Nenne die Einheit. Zählt der Schwanz mit?",
-        "Markiere die Textstellen im Material: **L** für Lebensraum, **N** für Nahrung, **M** für Maß. Schreibe „Text“ hinter deine Antworten.",
-        "Partnercheck: Zeige einem anderen Kind deine Textstellen. Erkläre, was du gefunden hast. Passt die Stelle zur Frage? Prüft Unterschiede gemeinsam im Text.",
-        "Notiere ein sichtbares Merkmal mit „Bild“. Zeige die Bildstelle. Steht es auch im Text?"
+        "Lies das Interview mit den Leseschritten von Merkblatt 1. Notiere:\na) Wo leben Fischotter?\nb) Was fressen sie vor allem?\nc) Wie lang sind Fischotter ohne Schwanz? Nenne die Einheit.",
+        "Markiere die Stellen im Interview: **L** für Lebensraum, **N** für Nahrung, **M** für Maß. Schreibe die Zeile hinter deine Antwort, zum Beispiel „Z. 12“.",
+        "Im Interview stehen zwei Längen. Welche gilt für alle Fischotter? Welche gilt nur für Otto? Begründe.",
+        "Partnercheck: Zeige einem anderen Kind deine Stellen. Passt die Stelle zur Frage? Prüft Unterschiede gemeinsam.",
+        "Notiere ein sichtbares Merkmal mit „Bild“. Zeige die Bildstelle. Steht es auch im Interview?"
       ],
-      "sprachdetektiv": "Unterstreiche auf deiner Fischotter-Materialseite zwei Verben. Schreibe **V** darüber.",
-      "vertiefung": "*„Der Fischotter auf dem Foto ist genau 80 cm lang.“* Kannst du das belegen? Begründe mit dem Material."
+      "sprachdetektiv": "Unterstreiche im Interview zwei Verben. Schreibe **V** darüber.",
+      "vertiefung": "Suche im Interview zwei Stellen, die nur Otto betreffen. Erkläre, warum sie nicht in eine Tierbeschreibung gehören."
     },
     {
       "nr": 4,
       "titel": "Informationen ordnen",
-      "brauchst": "Fischotter-Material · Heft",
+      "brauchst": "Fischotter-Interview · Heft",
       "pflicht": [
         "Schreibe ins Heft: Überblick · Aussehen · Lebensraum · Nahrung.",
-        "Ordne diese Angaben zu:\n*Fischotter · kurze Beine · Fische · Flüsse und Seen · Kopf und Rumpf: 60–90 cm · dunkelbraune Oberseite · Frösche und Krebse · geschützte Ufer*",
-        "Ergänze den Hinweis zum Schwanz und zwei weitere äußere Merkmale aus dem Text. Hast du vier verschiedene Merkmale?"
+        "Ordne die Angaben zu. Drei Angaben passen nicht in eine Tierbeschreibung. Streiche sie.\n*Fischotter · kurze Beine · Otto bekommt einen Eimer Fisch · Fische · Flüsse und Seen · der süßeste Otter der Welt · ohne Schwanz 60–90 cm · dunkelbraunes Fell oben · Otto ist 80 cm lang · Frösche und Krebse · Ufer mit Verstecken*",
+        "Suche im Interview drei weitere Angaben zum Aussehen. Schreibe die Zeile dazu. Hast du jetzt vier verschiedene Merkmale?"
       ],
       "sprachdetektiv": "Zerlege „Körperlänge“ im Heft in zwei Nomen. Schreibe beide mit Artikel auf. Ergänze den Artikel zu „Körperlänge“.",
       "vertiefung": "Ordne deine Angaben zum Aussehen in einer anderen sinnvollen Reihenfolge. Erkläre deine Wahl."
@@ -229,56 +230,76 @@
       {
         "id": "E1.2",
         "kurz": "Quellen",
-        "kind": "Ich zeige, was ich im Bild und was ich im Text gefunden habe.",
-        "lehrkraft": "ein Bildbeleg und ein Textbeleg richtig zugeordnet und gezeigt",
+        "kind": "Ich zeige, was ich im Bild und was ich im Interview gefunden habe.",
+        "lehrkraft": "je ein Beleg aus Bild und Interview richtig gezeigt",
         "ueben": "Blatt 3"
       },
       {
         "id": "E1.3",
-        "kurz": "Maß",
-        "kind": "Ich gebe die Länge von Kopf und Rumpf mit Einheit an.",
-        "lehrkraft": "Kopf-Rumpf-Länge mit Einheit und ohne mitgerechneten Schwanz richtig angegeben",
+        "kurz": "Maß der Art",
+        "kind": "Ich gebe an, wie lang Fischotter sind – mit Einheit.",
+        "lehrkraft": "60–90 cm ohne Schwanz, mit Einheit; Ottos 80 cm als Einzelfall erkannt",
         "ueben": "Blatt 3"
       },
       {
         "id": "E1.4",
         "kurz": "Lebensraum und Nahrung",
-        "kind": "Ich finde Lebensraum und Nahrung im Text.",
-        "lehrkraft": "Lebensraum und Nahrung dem Text richtig entnommen",
+        "kind": "Ich finde Lebensraum und Nahrung im Interview.",
+        "lehrkraft": "Lebensraum und Nahrung dem Interview richtig entnommen",
         "ueben": "Blatt 3"
       },
       {
         "id": "E1.5",
         "kurz": "Ordnen",
-        "kind": "Ich ordne Angaben unter passende Überschriften.",
-        "lehrkraft": "Angaben unter passenden Überschriften",
+        "kind": "Ich ordne Sachangaben unter passende Überschriften.",
+        "lehrkraft": "Sachangaben passend zugeordnet; keine Meinung, kein Einzelfall",
         "ueben": "Blatt 4"
       }
     ],
     "aufgaben": [
       {
         "titel": "Merkmale und Quellen",
-        "text": "Notiere zwei verschiedene genaue äußere Merkmale: eines aus dem Bild, ein anderes aus dem Text. Kreise auf dem Foto die Bildstelle ein. Unterstreiche im Text die Textstelle.",
+        "text": "Notiere zwei verschiedene äußere Merkmale: eines aus dem Bild, eines aus dem Interview. Kreise die Bildstelle ein. Unterstreiche die Interviewstelle.",
         "feld": "merkmale"
       },
       {
         "titel": "Das Maß",
-        "text": "Notiere die Länge von Kopf und Rumpf mit Einheit. Kreuze an, ob der Schwanz mitgezählt wird.",
+        "text": "Im Interview stehen zwei Längen. Notiere, wie lang Fischotter sind. Kreuze an, für wen die 80 cm gelten.",
         "feld": "mass"
       },
       {
         "titel": "Informationen ordnen",
-        "text": "Notiere unter jeder Überschrift eine richtige Angabe aus dem Text.",
+        "text": "Notiere unter jeder Überschrift eine Sachangabe aus dem Interview.",
         "feld": "ordnen"
       }
     ],
     "varianten": {
       "A": {
-        "text": "Der Fischotter hat einen lang gestreckten Körper und kurze Beine. Sein Fell ist oben dunkelbraun. Er lebt an Flüssen und Seen. Er frisst vor allem Fische, aber auch Frösche und Krebse. Kopf und Rumpf sind zusammen 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu."
+        "text": "**Wo leben Fischotter?** An Flüssen und Seen, gut versteckt am Ufer. **Was frisst Otto?** Einen Eimer Fisch am Tag. Fischotter fressen vor allem Fische, Frösche und Krebse. **Wie sieht er aus?** Der Körper ist lang und schmal, die Beine sind kurz. Er ist der schönste Otter im Zoo! **Wie groß ist Otto?** Otto ist 80 Zentimeter lang. Fischotter sind ohne Schwanz meistens 60 bis 90 Zentimeter lang.",
+        "mass": [
+          "Fischotter sind ohne Schwanz:",
+          "Die 80 Zentimeter gelten für:",
+          "alle Fischotter",
+          "nur Otto"
+        ]
       },
       "B": {
-        "text": "An Flüssen und Seen lebt der Fischotter. Zu seiner Nahrung gehören Fische, Frösche und Krebse. Sein Kopf ist breit und flach. Seine Beine sind kurz. Kopf und Rumpf messen zusammen 60 bis 90 Zentimeter. Der Schwanz wird dabei nicht mitgemessen."
+        "text": "**Was frisst Otto?** Am liebsten Fisch. Fischotter fressen hauptsächlich Fische, Frösche und Krebse. **Wie lang ist Otto?** Wir haben 80 Zentimeter gemessen, ohne Schwanz. Fischotter sind meistens 60 bis 90 Zentimeter lang. **Woran erkennt man einen Fischotter?** Der Kopf ist breit und flach. Ehrlich gesagt ist Otto der süßeste Otter der Welt! **Wo wohnen Fischotter?** An Flüssen und Seen.",
+        "mass": [
+          "Fischotter sind ohne Schwanz:",
+          "Die 80 Zentimeter gelten für:",
+          "alle Fischotter",
+          "nur Otto"
+        ]
       }
     }
-  }
+  },
+  "interviews": [
+    "fischotter"
+  ],
+  "bildseite": {
+    "titel": "Der Fischotter",
+    "hinweis": "Schau genau hin. Was kannst du sicher erkennen? Was ist verdeckt?"
+  },
+  "interview_kopf": "Material zu Blatt 1–4 · Interview"
 }

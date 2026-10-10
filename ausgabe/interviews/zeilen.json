@@ -1,0 +1,923 @@
+{
+ "fischotter": [
+  [
+   "X",
+   "Z. 2–3",
+   "Um halb acht mache ich die Anlage sauber. Danach gibt es Frühstück."
+  ],
+  [
+   "X",
+   "Z. 3",
+   "Unser Otto wartet dann schon am Gitter und pfeift laut."
+  ],
+  [
+   "W",
+   "Z. 4",
+   "Ehrlich gesagt ist er der süßeste Otter der Welt!"
+  ],
+  [
+   "X",
+   "Z. 6",
+   "Otto bekommt jeden Tag einen kleinen Eimer voll."
+  ],
+  [
+   "N",
+   "Z. 7",
+   "fressen Fischotter hauptsächlich Fische"
+  ],
+  [
+   "N",
+   "Z. 7–8",
+   "Sie fangen aber auch Frösche und Krebse."
+  ],
+  [
+   "X",
+   "Z. 8–9",
+   "Gestern hat Otto einen Krebs ganz allein geknackt. Das hat richtig gekracht!"
+  ],
+  [
+   "L",
+   "Z. 11",
+   "An Flüssen und Seen."
+  ],
+  [
+   "L",
+   "Z. 11–12",
+   "Sie brauchen Ufer, an denen sie sich verstecken können"
+  ],
+  [
+   "X",
+   "Z. 13",
+   "Deshalb liegen in unserer Anlage auch so viele alte Wurzeln herum."
+  ],
+  [
+   "T",
+   "Z. 15",
+   "Fischotter gehören zu den Mardern."
+  ],
+  [
+   "A",
+   "Z. 18–19",
+   "Sein Körper ist lang und schmal"
+  ],
+  [
+   "V",
+   "Z. 19",
+   "fast wie ein Torpedo"
+  ],
+  [
+   "A",
+   "Z. 19–20",
+   "Die Beine sind dagegen richtig kurz."
+  ],
+  [
+   "A",
+   "Z. 20",
+   "der Kopf ist breit und flach"
+  ],
+  [
+   "V",
+   "Z. 20–21",
+   "wie ein Brett mit Nase"
+  ],
+  [
+   "A",
+   "Z. 23",
+   "Die sind ganz klein."
+  ],
+  [
+   "Z",
+   "Z. 23–24",
+   "Beim Tauchen kann er sie sogar verschließen, damit kein Wasser hineinläuft."
+  ],
+  [
+   "X",
+   "Z. 26–27",
+   "Letzte Woche haben wir ihn gemessen. Von der Nase bis zum Schwanzansatz waren es 80 Zentimeter."
+  ],
+  [
+   "M",
+   "Z. 28–29",
+   "Fischotter sind meistens 60 bis 90 Zentimeter lang, wenn man den Schwanz nicht mitzählt."
+  ],
+  [
+   "X",
+   "Z. 31–32",
+   "Otto ist kein Kuscheltier. Ich fasse ihn nur an, wenn die Tierärztin kommt."
+  ],
+  [
+   "A",
+   "Z. 32",
+   "Das Fell ist sehr dicht."
+  ],
+  [
+   "A",
+   "Z. 32–33",
+   "Oben ist es dunkelbraun, am Hals ist es heller."
+  ],
+  [
+   "A",
+   "Z. 35",
+   "die langen Tasthaare an der Schnauze"
+  ],
+  [
+   "Z",
+   "Z. 35–36",
+   "Damit spürt er Fische, auch wenn das Wasser trüb ist."
+  ],
+  [
+   "A",
+   "Z. 36–37",
+   "zwischen den Zehen hat er Schwimmhäute"
+  ],
+  [
+   "W",
+   "Z. 37",
+   "Deshalb ist er so ein toller Schwimmer."
+  ],
+  [
+   "X",
+   "Z. 39",
+   "Und kommt Otto bald besuchen!"
+  ]
+ ],
+ "erdmaennchen": [
+  [
+   "Z",
+   "Z. 2",
+   "Erdmännchen leben immer in Gruppen."
+  ],
+  [
+   "W",
+   "Z. 2–3",
+   "Allein wären sie unglücklich, glaube ich."
+  ],
+  [
+   "X",
+   "Z. 3–4",
+   "Unsere Chefin heißt Kiki. Sie ist die Mutigste von allen."
+  ],
+  [
+   "X",
+   "Z. 6",
+   "Sie hält Wache."
+  ],
+  [
+   "Z",
+   "Z. 6–7",
+   "Einer aus der Gruppe stellt sich immer auf die Hinterbeine und schaut sich um."
+  ],
+  [
+   "A",
+   "Z. 7",
+   "Der Schwanz ist lang und schmal"
+  ],
+  [
+   "A",
+   "Z. 8",
+   "die Spitze ist dunkel"
+  ],
+  [
+   "Z",
+   "Z. 8–9",
+   "Wenn ein Greifvogel kommt, pfeift der Wächter, und alle verschwinden im Bau."
+  ],
+  [
+   "L",
+   "Z. 11–12",
+   "leben Erdmännchen im trockenen Gras- und Buschland im Süden von Afrika"
+  ],
+  [
+   "L",
+   "Z. 12–13",
+   "Dort graben sie unterirdische Gänge."
+  ],
+  [
+   "A",
+   "Z. 13–14",
+   "an den Pfoten haben sie lange Krallen"
+  ],
+  [
+   "X",
+   "Z. 14–15",
+   "Letzten Sommer haben unsere einen Tunnel bis unter den Zaun gegraben. Da musste ich ganz schön rennen!"
+  ],
+  [
+   "T",
+   "Z. 17",
+   "Sie gehören zu den Mangusten."
+  ],
+  [
+   "N",
+   "Z. 20",
+   "Vor allem Insekten, also Käfer, Heuschrecken und Larven."
+  ],
+  [
+   "N",
+   "Z. 20–21",
+   "Aber auch Spinnen und kleine Eidechsen."
+  ],
+  [
+   "X",
+   "Z. 21–22",
+   "Bei uns gibt es morgens Mehlwürmer. Die mag Kiki am allerliebsten."
+  ],
+  [
+   "M",
+   "Z. 24–25",
+   "Kopf und Rumpf sind zusammen nur etwa 25 bis 29 Zentimeter lang. Der Schwanz kommt noch dazu."
+  ],
+  [
+   "X",
+   "Z. 25–26",
+   "Kiki ist sogar ein bisschen kleiner. Sie wiegt nicht einmal ein Kilo."
+  ],
+  [
+   "A",
+   "Z. 28",
+   "Ihr Körper ist schlank."
+  ],
+  [
+   "A",
+   "Z. 28",
+   "Das Fell ist hellbraun bis graubraun"
+  ],
+  [
+   "A",
+   "Z. 28–29",
+   "auf dem Rücken haben sie dunklere Streifen"
+  ],
+  [
+   "A",
+   "Z. 29–30",
+   "die spitze Schnauze"
+  ],
+  [
+   "A",
+   "Z. 30",
+   "um die Augen haben sie dunkle Flecken"
+  ],
+  [
+   "V",
+   "Z. 30–31",
+   "Das sieht aus wie eine Sonnenbrille."
+  ],
+  [
+   "W",
+   "Z. 31",
+   "Total cool, oder?"
+  ],
+  [
+   "U",
+   "Z. 33–34",
+   "Man vermutet, dass sie die Augen vor der grellen Sonne schützen. Ganz sicher weiß man das aber nicht."
+  ],
+  [
+   "A",
+   "Z. 34–35",
+   "Die kleinen Ohren können sie beim Graben verschließen."
+  ],
+  [
+   "X",
+   "Z. 37",
+   "Kommt am besten morgens. Dann sonnen sich alle vor dem Bau."
+  ],
+  [
+   "W",
+   "Z. 38",
+   "Das ist der schönste Anblick im ganzen Zoo!"
+  ]
+ ],
+ "roter-panda": [
+  [
+   "X",
+   "Z. 2–3",
+   "Mei schläft oben in der Astgabel. Am Vormittag ist sie meistens faul."
+  ],
+  [
+   "Z",
+   "Z. 3–4",
+   "Rote Pandas sind vor allem in der Dämmerung und nachts unterwegs."
+  ],
+  [
+   "W",
+   "Z. 4",
+   "Da muss man Geduld haben!"
+  ],
+  [
+   "T",
+   "Z. 6",
+   "Der Rote Panda heißt auch Kleiner Panda."
+  ],
+  [
+   "N",
+   "Z. 10",
+   "hauptsächlich Bambus."
+  ],
+  [
+   "N",
+   "Z. 10–11",
+   "Daneben fressen Rote Pandas zum Beispiel Beeren und Eier."
+  ],
+  [
+   "X",
+   "Z. 11–13",
+   "Mei bekommt jeden Morgen frische Bambusstangen und ein paar Weintrauben. Letzte Woche hat sie die Trauben zuerst gefressen und den Bambus liegen lassen."
+  ],
+  [
+   "L",
+   "Z. 15",
+   "In Bergwäldern in Asien, in denen Bambus wächst."
+  ],
+  [
+   "X",
+   "Z. 16–17",
+   "Deshalb haben wir in der Anlage so viele schattige Bäume gepflanzt."
+  ],
+  [
+   "A",
+   "Z. 19",
+   "Am Rücken ist das Fell rötlich braun."
+  ],
+  [
+   "A",
+   "Z. 19–20",
+   "Die Beine und der Bauch sind dunkel bis schwarz."
+  ],
+  [
+   "A",
+   "Z. 20–21",
+   "Im Gesicht hat er helle, fast weiße Bereiche."
+  ],
+  [
+   "A",
+   "Z. 21",
+   "Der Kopf ist rund"
+  ],
+  [
+   "A",
+   "Z. 21–22",
+   "die Ohren sind groß und spitz"
+  ],
+  [
+   "V",
+   "Z. 22",
+   "Mei sieht aus wie ein Kuscheltier."
+  ],
+  [
+   "W",
+   "Z. 22–23",
+   "Ich finde, sie ist das hübscheste Tier hier."
+  ],
+  [
+   "A",
+   "Z. 25",
+   "Der Schwanz ist lang und buschig."
+  ],
+  [
+   "A",
+   "Z. 25–26",
+   "Er hat hellere und dunklere Ringe."
+  ],
+  [
+   "Z",
+   "Z. 26–27",
+   "Beim Klettern helfen ihm der Schwanz und die Krallen."
+  ],
+  [
+   "X",
+   "Z. 27–28",
+   "Im Winter wickelt sich Mei beim Schlafen in ihren Schwanz ein wie in eine Decke."
+  ],
+  [
+   "M",
+   "Z. 30–31",
+   "Kopf und Rumpf sind zusammen etwa 60 Zentimeter lang. Der Schwanz kommt noch dazu."
+  ],
+  [
+   "X",
+   "Z. 31",
+   "Mei ist etwas kleiner, sie ist noch jung."
+  ],
+  [
+   "X",
+   "Z. 33–34",
+   "Kommt am späten Nachmittag. Dann klettert Mei herunter und sucht ihr Futter."
+  ],
+  [
+   "W",
+   "Z. 34",
+   "Das ist jedes Mal ein Erlebnis!"
+  ]
+ ],
+ "waschbaer": [
+  [
+   "X",
+   "Z. 2",
+   "Wegen Rocky! Er öffnet jede Dose und jede Kiste."
+  ],
+  [
+   "Z",
+   "Z. 2–3",
+   "Mit den Vorderpfoten kann ein Waschbär Nahrung geschickt greifen."
+  ],
+  [
+   "A",
+   "Z. 3–4",
+   "An jeder Pfote sitzen fünf Zehen."
+  ],
+  [
+   "W",
+   "Z. 4–5",
+   "Ehrlich, manchmal ist er schlauer als ich."
+  ],
+  [
+   "L",
+   "Z. 7",
+   "Ursprünglich aus Nordamerika."
+  ],
+  [
+   "L",
+   "Z. 7–8",
+   "Sie leben gern in Wäldern mit Gewässern."
+  ],
+  [
+   "L",
+   "Z. 8",
+   "Heute kommen sie aber auch in Städten vor."
+  ],
+  [
+   "X",
+   "Z. 10–11",
+   "Ja. Ein Nachbar von mir hatte neulich einen im Garten. Der hat in der Nacht die ganze Mülltonne ausgeräumt!"
+  ],
+  [
+   "Z",
+   "Z. 11–12",
+   "Waschbären sind vor allem nachts unterwegs."
+  ],
+  [
+   "N",
+   "Z. 14",
+   "Waschbären fressen pflanzliche und tierische Nahrung."
+  ],
+  [
+   "N",
+   "Z. 14–15",
+   "Zum Beispiel Früchte, Nüsse, Insekten und Frösche."
+  ],
+  [
+   "X",
+   "Z. 15–16",
+   "Rocky liebt Weintrauben. Gestern hat er eine ganze Schale leer gemacht."
+  ],
+  [
+   "T",
+   "Z. 18",
+   "Waschbären gehören zu den Kleinbären."
+  ],
+  [
+   "Z",
+   "Z. 18–19",
+   "Oft tasten sie ihr Futter im Wasser ab. Das sieht aus, als würden sie es waschen."
+  ],
+  [
+   "X",
+   "Z. 19–20",
+   "Rocky taucht seine Trauben auch immer in den Wassernapf."
+  ],
+  [
+   "W",
+   "Z. 20–21",
+   "Das ist so lustig!"
+  ],
+  [
+   "A",
+   "Z. 23",
+   "Am Gesicht! Um die Augen liegt eine schwarze Zeichnung."
+  ],
+  [
+   "V",
+   "Z. 23–24",
+   "Die sieht aus wie eine Maske von einem Räuber."
+  ],
+  [
+   "A",
+   "Z. 24–25",
+   "Die Ohren sind abgerundet und haben einen hellen Rand."
+  ],
+  [
+   "A",
+   "Z. 25–26",
+   "Der Körper ist kräftig und wirkt gedrungen."
+  ],
+  [
+   "A",
+   "Z. 26",
+   "Das Fell ist meist graubraun."
+  ],
+  [
+   "A",
+   "Z. 28",
+   "Der ist buschig und hat mehrere dunkle Ringe."
+  ],
+  [
+   "W",
+   "Z. 28–29",
+   "Ich finde, das ist der schönste Schwanz im ganzen Zoo."
+  ],
+  [
+   "M",
+   "Z. 31–32",
+   "Ein erwachsener Waschbär wiegt häufig etwa sechs bis sieben Kilogramm."
+  ],
+  [
+   "X",
+   "Z. 32–33",
+   "Rocky wiegt im Moment acht Kilo. Er hat im Herbst zu viel genascht."
+  ],
+  [
+   "X",
+   "Z. 35",
+   "Gern. Und passt auf eure Brotdosen auf!"
+  ]
+ ],
+ "biber": [
+  [
+   "X",
+   "Z. 2",
+   "Das war Bruno heute Nacht!"
+  ],
+  [
+   "T",
+   "Z. 2",
+   "Biber sind Nagetiere."
+  ],
+  [
+   "A",
+   "Z. 2–3",
+   "Ihre großen Schneidezähne sind vorne orange gefärbt."
+  ],
+  [
+   "W",
+   "Z. 4",
+   "Bruno ist da wirklich ein Meister."
+  ],
+  [
+   "N",
+   "Z. 6",
+   "Biber ernähren sich von Pflanzen."
+  ],
+  [
+   "N",
+   "Z. 6–7",
+   "Sie fressen zum Beispiel Blätter, junge Triebe und Rinde."
+  ],
+  [
+   "X",
+   "Z. 7–8",
+   "Bruno bekommt jeden Abend Weidenzweige. Die Rinde nagt er ab, den Rest verbaut er."
+  ],
+  [
+   "L",
+   "Z. 10",
+   "An Flüssen und Seen."
+  ],
+  [
+   "Z",
+   "Z. 10–11",
+   "Sie bauen dort Burgen aus Ästen und Schlamm."
+  ],
+  [
+   "Z",
+   "Z. 13",
+   "Biber sind vor allem in der Dämmerung und nachts aktiv."
+  ],
+  [
+   "X",
+   "Z. 13–15",
+   "Tagsüber schläft Bruno in seiner Burg. Wenn ich morgens komme, finde ich nur noch Holzspäne."
+  ],
+  [
+   "A",
+   "Z. 17",
+   "Sein Körper ist kräftig"
+  ],
+  [
+   "A",
+   "Z. 17",
+   "die Beine sind kurz"
+  ],
+  [
+   "A",
+   "Z. 17–18",
+   "Das Fell ist braun und sehr dicht."
+  ],
+  [
+   "A",
+   "Z. 18–19",
+   "Am Kopf sitzen kleine Ohren und eine stumpfe Schnauze."
+  ],
+  [
+   "V",
+   "Z. 19",
+   "Bruno sieht ein bisschen aus wie ein dicker Teddy."
+  ],
+  [
+   "W",
+   "Z. 19–20",
+   "Ich finde ihn total niedlich."
+  ],
+  [
+   "A",
+   "Z. 20–21",
+   "Zwischen den Zehen der Hinterfüße liegen Schwimmhäute."
+  ],
+  [
+   "A",
+   "Z. 23–24",
+   "Der Schwanz ist breit und flach. Er ist kaum behaart und mit Schuppen bedeckt."
+  ],
+  [
+   "Z",
+   "Z. 24–25",
+   "Wenn Gefahr droht, klatscht der Biber damit aufs Wasser."
+  ],
+  [
+   "X",
+   "Z. 25–26",
+   "Letzte Woche hat Bruno mich damit ganz nass gespritzt!"
+  ],
+  [
+   "Z",
+   "Z. 28",
+   "Ja, er kann mehrere Minuten unter Wasser bleiben."
+  ],
+  [
+   "X",
+   "Z. 28–29",
+   "Bruno taucht einmal quer durch unseren Teich. Das sind bestimmt 20 Meter."
+  ],
+  [
+   "W",
+   "Z. 29–30",
+   "Das finde ich jedes Mal spannend."
+  ],
+  [
+   "M",
+   "Z. 32",
+   "Ein erwachsener Biber kann etwa 13 bis 35 Kilogramm wiegen."
+  ],
+  [
+   "X",
+   "Z. 33",
+   "Bruno wiegt gerade 25 Kilo."
+  ]
+ ],
+ "breitmaulnashorn": [
+  [
+   "X",
+   "Z. 2–3",
+   "Sie hat sich gerade im Schlamm gewälzt. Das macht sie jeden Mittag."
+  ],
+  [
+   "Z",
+   "Z. 3",
+   "Der Schlamm schützt die Haut vor Sonne und Insekten."
+  ],
+  [
+   "W",
+   "Z. 3–4",
+   "Für mich ist das der lustigste Moment des Tages."
+  ],
+  [
+   "T",
+   "Z. 6",
+   "Ein Breitmaulnashorn."
+  ],
+  [
+   "A",
+   "Z. 6",
+   "Es hat sehr breite Lippen."
+  ],
+  [
+   "V",
+   "Z. 7",
+   "fast wie ein Rasenmäher"
+  ],
+  [
+   "N",
+   "Z. 9",
+   "Es frisst fast nur Gras."
+  ],
+  [
+   "X",
+   "Z. 9–10",
+   "Nala bekommt bei uns Heu, jeden Tag einen ganzen Berg."
+  ],
+  [
+   "L",
+   "Z. 12",
+   "In Afrika."
+  ],
+  [
+   "L",
+   "Z. 12",
+   "Sie leben in Savannen mit kurzem Gras."
+  ],
+  [
+   "A",
+   "Z. 14",
+   "Der Körper ist groß und massig."
+  ],
+  [
+   "A",
+   "Z. 14",
+   "Die Haut ist grau und dick."
+  ],
+  [
+   "A",
+   "Z. 14–15",
+   "Sie hat fast keine Haare."
+  ],
+  [
+   "A",
+   "Z. 15",
+   "Im Nacken hat es einen Buckel."
+  ],
+  [
+   "A",
+   "Z. 15–16",
+   "Die Beine sind kurz und kräftig."
+  ],
+  [
+   "V",
+   "Z. 16",
+   "Nala sieht aus wie ein Panzer auf vier Beinen."
+  ],
+  [
+   "Z",
+   "Z. 18–19",
+   "Nashörner sehen eher schlecht. Dafür können sie sehr gut hören und riechen."
+  ],
+  [
+   "X",
+   "Z. 19–20",
+   "Wenn ich mit dem Heuwagen komme, dreht Nala schon von Weitem die Ohren zu mir."
+  ],
+  [
+   "A",
+   "Z. 22–23",
+   "Auf der Nase trägt es zwei Hörner. Das vordere Horn ist länger als das hintere."
+  ],
+  [
+   "X",
+   "Z. 23–24",
+   "Nalas vorderes Horn ist ein bisschen abgebrochen. Sie ist gegen einen Baum gerannt."
+  ],
+  [
+   "M",
+   "Z. 26–27",
+   "Kopf und Rumpf sind zusammen etwa 3,40 bis 3,80 Meter lang. Der Schwanz kommt noch dazu."
+  ],
+  [
+   "M",
+   "Z. 27–28",
+   "Ein erwachsenes Männchen kann bis zu 3600 Kilogramm wiegen."
+  ],
+  [
+   "X",
+   "Z. 28",
+   "Nala ist ein Weibchen und etwas leichter."
+  ],
+  [
+   "W",
+   "Z. 29",
+   "Ich finde sie trotzdem riesig!"
+  ],
+  [
+   "X",
+   "Z. 31",
+   "Seit sieben Jahren. Am Anfang hatte ich ein bisschen Angst vor ihr."
+  ],
+  [
+   "W",
+   "Z. 32",
+   "Heute ist sie für mich das tollste Tier der Welt."
+  ]
+ ],
+ "fischotter-f": [
+  [
+   "L",
+   "Z. 2",
+   "Fischotter leben an Flüssen und Seen."
+  ],
+  [
+   "X",
+   "Z. 2",
+   "Unser Otto wohnt im Zoo."
+  ],
+  [
+   "N",
+   "Z. 4",
+   "Fischotter fressen Fische."
+  ],
+  [
+   "X",
+   "Z. 4",
+   "Otto frisst am liebsten Forellen."
+  ],
+  [
+   "A",
+   "Z. 6",
+   "Der Körper ist lang."
+  ],
+  [
+   "A",
+   "Z. 6",
+   "Das Fell ist braun."
+  ],
+  [
+   "A",
+   "Z. 8",
+   "Er hat kurze Beine."
+  ],
+  [
+   "A",
+   "Z. 8",
+   "Er hat Schwimmhäute zwischen den Zehen."
+  ],
+  [
+   "M",
+   "Z. 10",
+   "Ein Fischotter ist ohne Schwanz etwa 60 bis 90 Zentimeter lang."
+  ],
+  [
+   "X",
+   "Z. 11",
+   "Otto ist 80 Zentimeter lang."
+  ],
+  [
+   "W",
+   "Z. 13",
+   "Otto ist der süßeste Otter der Welt!"
+  ]
+ ],
+ "erdmaennchen-f": [
+  [
+   "L",
+   "Z. 2",
+   "Erdmännchen leben in Afrika."
+  ],
+  [
+   "L",
+   "Z. 2–3",
+   "Sie wohnen in Gängen unter der Erde."
+  ],
+  [
+   "N",
+   "Z. 5",
+   "Erdmännchen fressen Insekten."
+  ],
+  [
+   "X",
+   "Z. 5",
+   "Kiki mag Mehlwürmer."
+  ],
+  [
+   "A",
+   "Z. 7",
+   "Das Fell ist hellbraun."
+  ],
+  [
+   "A",
+   "Z. 7",
+   "Um die Augen hat es dunkle Flecken."
+  ],
+  [
+   "A",
+   "Z. 9",
+   "Es hat eine spitze Schnauze."
+  ],
+  [
+   "A",
+   "Z. 9",
+   "Es hat lange Krallen."
+  ],
+  [
+   "M",
+   "Z. 11–12",
+   "Ein Erdmännchen ist ohne Schwanz etwa 25 bis 29 Zentimeter lang."
+  ],
+  [
+   "X",
+   "Z. 12",
+   "Kiki ist kleiner."
+  ],
+  [
+   "W",
+   "Z. 14",
+   "Kiki ist das mutigste Tier im Zoo!"
+  ]
+ ]
+}

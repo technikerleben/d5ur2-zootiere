@@ -153,7 +153,7 @@ def merkblatt_render(pg, c: dict, pdf: Path) -> int:
             "font-family:DejaVu Sans,sans-serif;color:#555'><span>%s · Etappe %d</span>"
             "<span>Merkblatt %d · Seite <span class=pageNumber></span>/<span class=totalPages></span></span></div>"
             % (FUSS, c["etappe"], c["etappe"]))
-    for fs in (13.5, 13.0, 12.4):
+    for fs in (13.5, 13.0, 12.4, 12.0):
         pg.set_content(merkblatt_html(c, fs), wait_until="load")
         pg.evaluate("document.fonts.ready")
         pg.pdf(path=str(pdf), prefer_css_page_size=True, print_background=True, display_header_footer=True,
@@ -203,6 +203,7 @@ ol.auf li{margin-bottom:2.5mm;padding-left:1mm}
 .wh{font-size:15pt;margin-top:4mm;padding:3mm 4mm;background:var(--fill);border-radius:2.5mm}.wh>b{display:block;font-size:14pt;letter-spacing:.05em;text-transform:uppercase}
 .cbl{display:flex;gap:2mm;align-items:flex-start}.cbl .cb{flex:0 0 auto;margin-top:1.2mm}
 .mat .cred{font-size:14pt;color:var(--mid);margin:2mm 0 6mm}
+.mat img.gross{height:150mm}
 .mat .txt{font-size:19pt;line-height:1.6;padding:5mm 6mm}
 .mat .hint{font-size:14pt;color:var(--mid);margin-top:3mm}
 """
@@ -266,6 +267,45 @@ def woerter_html(m: dict) -> str:
         return ""
     return "<div class='wh'><b>Wörterhilfe</b>%s</div>" % "".join(
         "<div><b>%s:</b> %s</div>" % (md(w), md(e)) for w, e in m["woerter"])
+
+
+def bildseite(c: dict) -> str:
+    f, bs = c["foto"], c["bildseite"]
+    return (
+        "<div class='page mat'><div class='grow'><div class='meta'>Material · Foto · Etappe %d</div><h1>%s</h1>"
+        "<img class='gross' src='data:image/jpeg;base64,%s' alt='%s'><div class='cred'>%s</div>"
+        "<div class='txt box'>%s</div><div class='hint'>Auf dieser Seite darfst du markieren und einkreisen.</div></div>"
+        "<div class='foot'><span>%s · Etappe %d</span><b>Material</b></div></div>"
+        % (c["etappe"], md(bs["titel"]), b64(ROOT / f["datei"]), html.escape(f["alt"]), html.escape(f["nachweis"]),
+           md(bs["hinweis"]), FUSS, c["etappe"]))
+
+
+def build_materialbasis(pg, c: dict, pdf: Path, ueberlauf: list) -> tuple:
+    """Materialbasis einer Etappe: ggf. Fotoseite, dann die Interviews (mehrseitig, Zeilennummern)."""
+    from build_interviews import QUELLE, render_interview
+    iv = json.loads(QUELLE.read_text(encoding="utf-8"))
+    alle = {t["id"]: t for t in iv["tiere"] + iv["foerder"]}
+    teile = []
+    tmp = pdf.with_suffix(".tmp")
+    tmp.mkdir(exist_ok=True)
+    if c.get("bildseite"):
+        f = tmp / "0.pdf"
+        o = render(pg, doc(bildseite(c), UB_CSS, "Foto"), f)
+        if o:
+            ueberlauf.append("Fotoseite: Überlauf")
+        teile.append(f)
+    for k, i in enumerate(c["interviews"], 1):
+        f = tmp / ("%d.pdf" % k)
+        kopf = c.get("interview_kopf", "Material · Interview · Etappe %s" % c.get("etappe", ""))
+        render_interview(pg, alle[i], iv["rahmen"], iv["hinweis_fiktiv"], kopf, f, kompakt=c.get("kompakt", False))
+        teile.append(f)
+    out = fitz.open()
+    for f in teile:
+        out.insert_pdf(fitz.open(f))
+        f.unlink()
+    tmp.rmdir()
+    out.save(pdf)
+    return font_sizes(pdf)
 
 
 def material_page(c: dict, m: dict) -> str:
@@ -348,10 +388,10 @@ GN_CSS = """
 .namen div{flex:1;border-bottom:1pt solid var(--ink);padding-bottom:1mm}
 .namen div.d{flex:0 0 55mm}
 .matbox{display:flex;gap:5mm;padding:3mm;margin-bottom:3mm}
-.matbox img{width:58mm;height:43mm;object-fit:cover;border-radius:2mm;flex:0 0 auto}
+.matbox img{width:48mm;height:40mm;object-fit:cover;border-radius:2mm;flex:0 0 auto}
 .matbox .t{font-size:14pt;line-height:1.38}
 .matbox .cred{font-size:14pt;color:var(--mid);margin-top:1mm}
-.auf{padding:2.2mm 4mm 2.6mm;margin-bottom:2.6mm}
+.auf{padding:2.2mm 4mm 2.6mm;margin-bottom:2.1mm}
 .auf h2{font-size:16pt;display:flex;gap:3mm;align-items:center;margin-bottom:1mm}
 .auf h2 .n{display:inline-flex;width:8.5mm;height:8.5mm;border-radius:50%;background:var(--ink);color:#fff;font-size:14pt;
   align-items:center;justify-content:center}
@@ -406,6 +446,13 @@ def gn_felder(feld: str, v: dict) -> str:
             "<div class='feld'><span class='lab'>Aus dem Bild:</span><span class='ln'></span></div>"
             "<div class='feld'><span class='lab'>Aus dem Text:</span><span class='ln'></span></div>"
         )
+    if feld == "mass" and v.get("mass"):
+        m = v["mass"]
+        return (
+            "<div class='feld'><span class='lab'>%s</span><span class='ln'></span></div>"
+            "<div class='feld'><span class='lab'>%s</span>"
+            "<span><span class='cb'></span>%s &nbsp; <span class='cb'></span>%s</span></div>"
+            % (md(m[0]), md(m[1]), md(m[2]), md(m[3])))
     if feld == "mass":
         return (
             "<div class='feld'><span class='lab'>Kopf und Rumpf:</span><span class='ln'></span></div>"
@@ -819,8 +866,11 @@ def main(n: int):
         ub = out / f"Uebungsblaetter_Etappe{n}_A4.pdf"
         # zu volle Blätter automatisch dichter setzen (Schrift bleibt mind. 14 pt)
         dicht = {b["nr"]: 0 for b in c["blaetter"]}
-        mats = materialien(c)
+        mats = [] if c.get("interviews") else materialien(c)
         off = len(mats)
+        if c.get("interviews"):
+            mp = out / f"Material_Etappe{n}_A4.pdf"
+            report.append(("Materialbasis", mp, build_materialbasis(pg, c, mp, ueberlauf), MIN_PT["uebung"]))
         zs = c.get("zusatzseiten", [])
         for _ in range(3):
             body = ("".join(material_page(c, m) for m in mats)
