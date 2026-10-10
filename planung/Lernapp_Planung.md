@@ -116,7 +116,7 @@ Gleiche Denkschritte wie in der Reihe, übertragen auf Haustiere, Amsel, Taube, 
 
 **Auslegung „keine Lösungen“:** Die App enthält keine Kiosk-Texte und keine Zeilenbelege. Übungen zum Fischotter berühren aber zwangsläufig dieselben Fakten wie Blatt 1–6 (sie stehen auch im Merkblatt). Erdmännchen und Roter Panda werden in der App nicht markiert oder geplant, damit Blatt 7 nicht vorweggenommen wird.
 
-**Elterninfo (10.10.2026):** wählbar in Deutsch, Ukrainisch, Hocharabisch (von rechts nach links), Türkisch, Englisch und Französisch; Sprachwahl bleibt auf dem Gerät. Jede Fassung endet mit dem KI-Hinweis: App KI-unterstützt programmiert, die meisten Inhalte KI-generiert, von den Lehrkräften geprüft und verantwortet. Die Übersetzungen sind KI-erstellt und sollten von Sprachkundigen gegengelesen werden.
+**Elterninfo (10.10.2026):** wählbar in Deutsch, Ukrainisch, Hocharabisch (von rechts nach links), Türkisch, Englisch und Französisch; Sprachwahl bleibt auf dem Gerät. Jede Fassung endet mit dem KI-Hinweis: App KI-unterstützt programmiert, die meisten Inhalte KI-generiert, von den Lehrkräften geprüft und verantwortet. Über jeder Übersetzung steht in der jeweiligen Sprache, dass sie KI-generiert ist und ungenau sein kann. Gegenlesen durch Sprachkundige bleibt sinnvoll.
 
 **Noch offen in der App:** Quiz je Etappe, Silbenrätsel und Suchsel, Schalter „Einfach“, QR-Zettel.
 

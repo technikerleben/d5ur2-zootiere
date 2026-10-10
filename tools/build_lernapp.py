@@ -234,6 +234,8 @@ def pruefe_inhalt(data: dict):
             fehler.append(f"Elterninfo {x['code']}: Zahl der Absätze passt nicht zu Deutsch")
         if not any(k in x["absaetze"][-1] for k in ("KI", "AI", "IA", "ШІ", "YZ", "الذكاء الاصطناعي")):
             fehler.append(f"Elterninfo {x['code']}: KI-Hinweis fehlt am Ende")
+        if (x["code"] != "de") != bool(x.get("hinweis_uebersetzung")):
+            fehler.append(f"Elterninfo {x['code']}: Hinweis auf KI-Übersetzung fehlt oder ist zu viel")
     for w, _h in data["raetsel"]["woerter"]:
         if not re.fullmatch(r"[A-Za-zÄÖÜäöü]+", w):
             fehler.append(f"Rätselwort mit Sonderzeichen: {w}")
@@ -413,7 +415,7 @@ def browsertest(data: dict, shots: Path | None = None):
         for sp in data["elterninfo"]["sprachen"]:
             pg.locator(f"[data-lang='{sp['code']}']").click()
             box = pg.locator(".elterninfo")
-            if box.get_attribute("lang") != sp["code"] or len(sp["absaetze"]) != box.locator("p").count():
+            if box.get_attribute("lang") != sp["code"] or len(sp["absaetze"]) + bool(sp.get("hinweis_uebersetzung")) != box.locator("p").count():
                 fehler.append(f"Elterninfo {sp['code']}: Text fehlt")
             if box.get_attribute("dir") != ("rtl" if sp.get("rtl") else "ltr"):
                 fehler.append(f"Elterninfo {sp['code']}: Schreibrichtung falsch")
