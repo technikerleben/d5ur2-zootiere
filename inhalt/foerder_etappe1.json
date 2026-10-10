@@ -6,33 +6,65 @@
     "datei": "materialien/gelingensnachweise/Fischotter_DavePape_Graustufen.jpg",
     "nachweis": "Foto: Dave Pape · Public Domain",
     "alt": "Ein Fischotter im Gras. Die Zahlen 1 bis 5 zeigen auf Nase, Auge, Ohr, Tasthaare und Fell.",
-    "punkte": [[1, 28.3, 31.7], [2, 38.6, 26.9], [3, 49.9, 24.6], [4, 45.9, 47.1], [5, 87.5, 42.9]]
+    "punkte": [
+      [
+        1,
+        28.3,
+        31.7
+      ],
+      [
+        2,
+        38.6,
+        26.9
+      ],
+      [
+        3,
+        49.9,
+        24.6
+      ],
+      [
+        4,
+        45.9,
+        47.1
+      ],
+      [
+        5,
+        87.5,
+        42.9
+      ]
+    ]
   },
   "material": {
     "titel": "Der Fischotter",
-    "saetze": [
-      "Der Fischotter lebt am Wasser.",
-      "Er lebt an Flüssen und Seen.",
-      "Sein Körper ist lang.",
-      "Seine Beine sind kurz.",
-      "Sein Fell ist dunkelbraun.",
-      "Sein Kopf ist breit und flach.",
-      "An der Schnauze hat er lange Tasthaare.",
-      "Er frisst vor allem Fische.",
-      "Er frisst auch Frösche und Krebse.",
-      "Kopf und Rumpf sind 60 bis 90 Zentimeter lang.",
-      "Der Schwanz kommt noch dazu."
-    ],
-    "woerter": [["Tasthaare", "Haare zum Ertasten"], ["Rumpf", "Körper ohne Kopf, Beine und Schwanz"]]
+    "woerter": []
   },
   "merkkarte": {
     "titel": "Das hilft dir in Etappe 1",
     "punkte": [
-      ["Genau", "Genaue Wörter sagen, wie das Tier aussieht: *kurz, lang, dunkelbraun, breit*."],
-      ["Nicht genau", "Diese Wörter sind Meinungen: *toll, schön, süß*."],
-      ["Bild", "Auf dem Foto siehst du: Nase, Auge, Ohr, Tasthaare, Fell."],
-      ["Text", "Im Text findest du: Wo lebt das Tier? Was frisst es?"],
-      ["Ordnen", "Aussehen · Lebensraum · Nahrung"]
+      [
+        "Genau",
+        "Genaue Wörter sagen, wie das Tier aussieht: *kurz, lang, dunkelbraun, breit*."
+      ],
+      [
+        "Nicht genau",
+        "Diese Wörter sind Meinungen: *toll, schön, süß*."
+      ],
+      [
+        "Bild",
+        "Auf dem Foto siehst du: Nase, Auge, Ohr, Tasthaare, Fell."
+      ],
+      [
+        "Interview",
+        "Im Interview findest du: Wo leben Fischotter? Was fressen sie?"
+      ],
+      [
+        "Nur Otto?",
+        "Was nur für Otto gilt, gehört nicht in die Beschreibung."
+      ],
+      [
+        "Ordnen",
+        "Aussehen · Lebensraum · Nahrung"
+      ]
     ]
   },
   "blaetter": [
@@ -40,49 +72,267 @@
       "nr": "1F",
       "titel": "Genau oder nicht genau?",
       "aufgaben": [
-        {"typ": "ankreuzen", "auftrag": "Welche Sätze sind genau? Kreuze **2** Sätze an.",
-         "items": [["Der Fischotter ist toll.", false], ["Der Fischotter hat kurze Beine.", true], ["Das Fell ist schön.", false], ["Das Fell ist dunkelbraun.", true]]},
-        {"typ": "sortieren", "auftrag": "Schreibe jedes Wort in die richtige Spalte.",
-         "wortspeicher": ["toll", "kurz", "schön", "dunkelbraun", "lang", "süß"],
-         "spalten": [["genau", ["kurz", "dunkelbraun", "lang"]], ["Meinung", ["toll", "schön", "süß"]]]},
-        {"typ": "ankreuzen", "auftrag": "**Sprachdetektiv:** Nomen schreibst du groß. Kreuze die **3** Nomen an.", "spalten": 2,
-         "items": [["Fischotter", true], ["kurz", false], ["Beine", true], ["Fell", true]]}
+        {
+          "typ": "ankreuzen",
+          "auftrag": "Welche Sätze sind genau? Kreuze **2** Sätze an.",
+          "items": [
+            [
+              "Der Fischotter ist toll.",
+              false
+            ],
+            [
+              "Der Fischotter hat kurze Beine.",
+              true
+            ],
+            [
+              "Das Fell ist schön.",
+              false
+            ],
+            [
+              "Das Fell ist dunkelbraun.",
+              true
+            ]
+          ]
+        },
+        {
+          "typ": "sortieren",
+          "auftrag": "Schreibe jedes Wort in die richtige Spalte.",
+          "wortspeicher": [
+            "toll",
+            "kurz",
+            "schön",
+            "dunkelbraun",
+            "lang",
+            "süß"
+          ],
+          "spalten": [
+            [
+              "genau",
+              [
+                "kurz",
+                "dunkelbraun",
+                "lang"
+              ]
+            ],
+            [
+              "Meinung",
+              [
+                "toll",
+                "schön",
+                "süß"
+              ]
+            ]
+          ]
+        },
+        {
+          "typ": "ankreuzen",
+          "auftrag": "**Info oder Meinung?** Kreuze die **Meinung** an.",
+          "items": [
+            [
+              "Fischotter fressen Fische.",
+              false
+            ],
+            [
+              "Otto ist der süßeste Otter der Welt!",
+              true
+            ],
+            [
+              "Die Beine sind kurz.",
+              false
+            ]
+          ]
+        },
+        {
+          "typ": "ankreuzen",
+          "auftrag": "**Sprachdetektiv:** Nomen schreibst du groß. Kreuze die **3** Nomen an.",
+          "spalten": 2,
+          "items": [
+            [
+              "Fischotter",
+              true
+            ],
+            [
+              "kurz",
+              false
+            ],
+            [
+              "Beine",
+              true
+            ],
+            [
+              "Fell",
+              true
+            ]
+          ]
+        }
       ]
     },
     {
       "nr": "2F",
       "titel": "Was siehst du auf dem Foto?",
       "aufgaben": [
-        {"typ": "bild", "auftrag": "Schau dir das Foto genau an. Die Zahlen zeigen auf Körperteile."},
-        {"typ": "zuordnen", "auftrag": "Welche Zahl gehört zu welchem Wort? Schreibe die Zahl in das Kästchen.",
-         "paare": [["Nase", "1"], ["Auge", "2"], ["Ohr", "3"], ["Tasthaare", "4"], ["Fell", "5"]]},
-        {"typ": "luecke", "auftrag": "Fülle die Lücken. Nutze den Wortspeicher.",
-         "text": "Die Ohren sind {klein}.\nAn der Schnauze sitzen lange {Tasthaare}.",
-         "extra": ["groß"]}
+        {
+          "typ": "bild",
+          "auftrag": "Schau dir das Foto genau an. Die Zahlen zeigen auf Körperteile."
+        },
+        {
+          "typ": "zuordnen",
+          "auftrag": "Welche Zahl gehört zu welchem Wort? Schreibe die Zahl in das Kästchen.",
+          "paare": [
+            [
+              "Nase",
+              "1"
+            ],
+            [
+              "Auge",
+              "2"
+            ],
+            [
+              "Ohr",
+              "3"
+            ],
+            [
+              "Tasthaare",
+              "4"
+            ],
+            [
+              "Fell",
+              "5"
+            ]
+          ]
+        },
+        {
+          "typ": "luecke",
+          "auftrag": "Fülle die Lücken. Nutze den Wortspeicher.",
+          "text": "Die Ohren sind {klein}.\nAn der Schnauze sitzen lange {Tasthaare}.",
+          "extra": [
+            "groß"
+          ]
+        }
       ]
     },
     {
       "nr": "3F",
-      "titel": "Was steht im Text?",
+      "titel": "Was steht im Interview?",
       "aufgaben": [
-        {"typ": "hinweis", "auftrag": "Lies den Text auf der Materialseite. Lies Satz für Satz. Zeige mit dem Finger mit."},
-        {"typ": "luecke", "auftrag": "Fülle die Lücken. Nutze den Wortspeicher.",
-         "text": "Der Fischotter lebt an {Flüssen} und {Seen}.\nEr frisst vor allem {Fische}.\nKopf und Rumpf sind 60 bis 90 {Zentimeter} lang."},
-        {"typ": "ankreuzen", "auftrag": "Zählt der Schwanz bei der Länge mit? Kreuze an.", "spalten": 2,
-         "items": [["ja", false], ["nein", true]]},
-        {"typ": "ankreuzen", "auftrag": "**Sprachdetektiv:** Welche Wörter sind Verben? Kreuze **2** an.", "spalten": 2,
-         "items": [["lebt", true], ["Fische", false], ["frisst", true], ["lang", false]]}
+        {
+          "typ": "hinweis",
+          "auftrag": "Lies das Interview. Lies Satz für Satz. Zeige mit dem Finger mit."
+        },
+        {
+          "typ": "luecke",
+          "auftrag": "Fülle die Lücken. Nutze den Wortspeicher.",
+          "text": "Sie leben an {Flüssen} und {Seen}.\nSie fressen {Fische}, Frösche und Krebse.\nOhne Schwanz sind sie 60 bis 90 {Zentimeter} lang."
+        },
+        {
+          "typ": "zuordnen",
+          "auftrag": "**Wer ist gemeint?** Schreibe die Zahl in das Kästchen.",
+          "optionen": [
+            "alle Fischotter",
+            "nur Otto"
+          ],
+          "paare": [
+            [
+              "Fischotter leben an Flüssen.",
+              "1"
+            ],
+            [
+              "Otto wohnt im Zoo.",
+              "2"
+            ],
+            [
+              "Otto ist 80 Zentimeter lang.",
+              "2"
+            ],
+            [
+              "Fischotter fressen Krebse.",
+              "1"
+            ]
+          ]
+        },
+        {
+          "typ": "ankreuzen",
+          "auftrag": "**Sprachdetektiv:** Welche Wörter sind Verben? Kreuze **2** an.",
+          "spalten": 2,
+          "items": [
+            [
+              "lebt",
+              true
+            ],
+            [
+              "Fische",
+              false
+            ],
+            [
+              "frisst",
+              true
+            ],
+            [
+              "lang",
+              false
+            ]
+          ]
+        }
       ]
     },
     {
       "nr": "4F",
       "titel": "Ordne die Informationen",
       "aufgaben": [
-        {"typ": "sortieren", "auftrag": "Schreibe jedes Wort unter die richtige Überschrift. Streiche das Wort im Wortspeicher durch.",
-         "wortspeicher": ["kurze Beine", "Fische", "Flüsse", "dunkelbraunes Fell", "Seen", "Krebse"],
-         "spalten": [["Aussehen", ["kurze Beine", "dunkelbraunes Fell"]], ["Lebensraum", ["Flüsse", "Seen"]], ["Nahrung", ["Fische", "Krebse"]]]},
-        {"typ": "ankreuzen", "auftrag": "Wohin gehört „langer Körper“? Kreuze an.", "spalten": 3,
-         "items": [["Aussehen", true], ["Lebensraum", false], ["Nahrung", false]]}
+        {
+          "typ": "sortieren",
+          "auftrag": "Schreibe jedes Wort unter die richtige Überschrift. Streiche das Wort im Wortspeicher durch.",
+          "wortspeicher": [
+            "kurze Beine",
+            "Fische",
+            "Flüsse",
+            "dunkelbraunes Fell",
+            "Seen",
+            "Krebse"
+          ],
+          "spalten": [
+            [
+              "Aussehen",
+              [
+                "kurze Beine",
+                "dunkelbraunes Fell"
+              ]
+            ],
+            [
+              "Lebensraum",
+              [
+                "Flüsse",
+                "Seen"
+              ]
+            ],
+            [
+              "Nahrung",
+              [
+                "Fische",
+                "Krebse"
+              ]
+            ]
+          ]
+        },
+        {
+          "typ": "ankreuzen",
+          "auftrag": "Wohin gehört „langer Körper“? Kreuze an.",
+          "spalten": 3,
+          "items": [
+            [
+              "Aussehen",
+              true
+            ],
+            [
+              "Lebensraum",
+              false
+            ],
+            [
+              "Nahrung",
+              false
+            ]
+          ]
+        }
       ]
     }
   ],
@@ -90,22 +340,144 @@
     "titel": "Tierdetektiv",
     "hinweis_lehrkraft": "Vorschlag. Förderziele, Antwortform und Hilfen vorab individuell vereinbaren. 80 % beziehen sich auf die vereinbarte Liste.",
     "ziele": [
-      {"id": "F1.1", "kind": "Ich erkenne genaue Wörter.", "lehrkraft": "zwei genaue Sätze angekreuzt, keine Meinung", "ueben": "Blatt 1F"},
-      {"id": "F1.2", "kind": "Ich benenne Körperteile auf dem Foto.", "lehrkraft": "mindestens drei von vier Zahlen richtig zugeordnet", "ueben": "Blatt 2F"},
-      {"id": "F1.3", "kind": "Ich finde den Lebensraum im Text.", "lehrkraft": "Flüsse und Seen richtig eingesetzt", "ueben": "Blatt 3F"},
-      {"id": "F1.4", "kind": "Ich finde die Nahrung im Text.", "lehrkraft": "Fische richtig eingesetzt", "ueben": "Blatt 3F"},
-      {"id": "F1.5", "kind": "Ich ordne Angaben unter Überschriften.", "lehrkraft": "mindestens fünf von sechs Wörtern richtig sortiert", "ueben": "Blatt 4F"}
+      {
+        "id": "F1.1",
+        "kind": "Ich erkenne genaue Wörter.",
+        "lehrkraft": "zwei genaue Sätze angekreuzt, keine Meinung",
+        "ueben": "Blatt 1F"
+      },
+      {
+        "id": "F1.2",
+        "kind": "Ich benenne Körperteile auf dem Foto.",
+        "lehrkraft": "3 von 4 Zahlen richtig",
+        "ueben": "Blatt 2F"
+      },
+      {
+        "id": "F1.3",
+        "kind": "Ich finde den Lebensraum im Interview.",
+        "lehrkraft": "Flüsse und Seen richtig eingesetzt",
+        "ueben": "Blatt 3F"
+      },
+      {
+        "id": "F1.4",
+        "kind": "Ich finde die Nahrung im Interview.",
+        "lehrkraft": "Fische richtig eingesetzt",
+        "ueben": "Blatt 3F"
+      },
+      {
+        "id": "F1.5",
+        "kind": "Ich ordne Angaben unter Überschriften.",
+        "lehrkraft": "5 von 6 Wörtern richtig sortiert",
+        "ueben": "Blatt 4F"
+      }
     ],
     "aufgaben": [
-      {"typ": "ankreuzen", "auftrag": "Welche Sätze sind genau? Kreuze **2** an.",
-       "items": [["Der Kopf ist breit und flach.", true], ["Der Fischotter ist süß.", false], ["Das Fell ist dunkelbraun.", true], ["Das Tier ist schön.", false]]},
-      {"typ": "zuordnen", "auftrag": "Schreibe die Zahl vom Foto in das Kästchen.",
-       "paare": [["Nase", "1"], ["Ohr", "3"], ["Tasthaare", "4"], ["Auge", "2"]]},
-      {"typ": "luecke", "auftrag": "Fülle die Lücken mit Wörtern aus dem Text.",
-       "text": "Der Fischotter lebt an {Flüssen} und {Seen}.\nEr frisst vor allem {Fische}.", "extra": ["Bäumen"]},
-      {"typ": "sortieren", "auftrag": "Schreibe jedes Wort unter die richtige Überschrift.",
-       "wortspeicher": ["kurze Beine", "Seen", "Krebse", "langer Körper", "Flüsse", "Frösche"],
-       "spalten": [["Aussehen", ["kurze Beine", "langer Körper"]], ["Lebensraum", ["Seen", "Flüsse"]], ["Nahrung", ["Krebse", "Frösche"]]]}
+      {
+        "typ": "ankreuzen",
+        "auftrag": "Welche Sätze sind genau? Kreuze **2** an.",
+        "items": [
+          [
+            "Der Kopf ist breit und flach.",
+            true
+          ],
+          [
+            "Der Fischotter ist süß.",
+            false
+          ],
+          [
+            "Das Fell ist dunkelbraun.",
+            true
+          ],
+          [
+            "Das Tier ist schön.",
+            false
+          ]
+        ]
+      },
+      {
+        "typ": "zuordnen",
+        "auftrag": "**Wer ist gemeint?** Schreibe die Zahl in das Kästchen.",
+        "optionen": [
+          "alle Fischotter",
+          "nur Otto"
+        ],
+        "paare": [
+          [
+            "Otto frisst Forellen.",
+            "2"
+          ],
+          [
+            "Fischotter leben an Seen.",
+            "1"
+          ]
+        ]
+      },
+      {
+        "typ": "zuordnen",
+        "auftrag": "Schreibe die Zahl vom Foto in das Kästchen.",
+        "paare": [
+          [
+            "Nase",
+            "1"
+          ],
+          [
+            "Ohr",
+            "3"
+          ],
+          [
+            "Tasthaare",
+            "4"
+          ],
+          [
+            "Auge",
+            "2"
+          ]
+        ]
+      },
+      {
+        "typ": "luecke",
+        "auftrag": "Fülle die Lücken mit Wörtern aus dem Interview.",
+        "text": "Sie leben an {Flüssen} und {Seen}.\nSie fressen {Fische}.",
+        "extra": [
+          "Bäumen"
+        ]
+      },
+      {
+        "typ": "sortieren",
+        "auftrag": "Schreibe jedes Wort unter die richtige Überschrift.",
+        "wortspeicher": [
+          "kurze Beine",
+          "Seen",
+          "Krebse",
+          "langer Körper",
+          "Flüsse",
+          "Frösche"
+        ],
+        "spalten": [
+          [
+            "Aussehen",
+            [
+              "kurze Beine",
+              "langer Körper"
+            ]
+          ],
+          [
+            "Lebensraum",
+            [
+              "Seen",
+              "Flüsse"
+            ]
+          ],
+          [
+            "Nahrung",
+            [
+              "Krebse",
+              "Frösche"
+            ]
+          ]
+        ]
+      }
     ]
-  }
+  },
+  "interview": "fischotter-f"
 }

@@ -31,35 +31,8 @@
   },
   "material": {
     "titel": "Das Erdmännchen",
-    "saetze": [
-      "Das Erdmännchen lebt in Afrika.",
-      "Es lebt im trockenen Grasland.",
-      "Sein Körper ist schlank.",
-      "Sein Fell ist hellbraun.",
-      "Auf dem Rücken hat es dunkle Streifen.",
-      "Um die Augen hat es dunkle Flecken.",
-      "Sein Schwanz ist lang und schmal.",
-      "An den Pfoten hat es lange Krallen.",
-      "Kopf und Rumpf sind 25 bis 29 Zentimeter lang.",
-      "Der Schwanz kommt noch dazu.",
-      "Es frisst vor allem Insekten.",
-      "Es frisst auch Spinnen."
-    ],
-    "woerter": [
-      [
-        "Krallen",
-        "spitze Nägel an den Zehen"
-      ],
-      [
-        "Insekten",
-        "kleine Tiere wie Käfer und Ameisen"
-      ],
-      [
-        "Rumpf",
-        "Körper ohne Kopf, Beine und Schwanz"
-      ]
-    ],
-    "bildhinweis": "Die Streifen auf dem Rücken siehst du auf dem Foto nicht. Sie stehen im Text."
+    "woerter": [],
+    "bildhinweis": "Die Streifen auf dem Rücken siehst du auf dem Foto nicht. Sie stehen im Interview."
   },
   "merkkarte": {
     "titel": "Das hilft dir in Etappe 3",
@@ -70,11 +43,15 @@
       ],
       [
         "Überblick",
-        "Name und Größe: *Das Erdmännchen ist 25 bis 29 Zentimeter lang.*"
+        "Name und Größe: *Das Erdmännchen ist ohne Schwanz 25 bis 29 Zentimeter lang.*"
       ],
       [
         "Aussehen",
         "Vier Merkmale: Körper, Fell, Schwanz, Krallen …"
+      ],
+      [
+        "Nur Kiki?",
+        "Was nur für Kiki gilt, gehört nicht in die Beschreibung."
       ],
       [
         "Text",
@@ -114,6 +91,32 @@
             [
               "Pfote mit Krallen",
               "4"
+            ]
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "auftrag": "**Wer ist gemeint?** Schreibe die Zahl in das Kästchen.",
+          "optionen": [
+            "alle Erdmännchen",
+            "nur Kiki"
+          ],
+          "paare": [
+            [
+              "Erdmännchen fressen Insekten.",
+              "1"
+            ],
+            [
+              "Kiki mag Mehlwürmer.",
+              "2"
+            ],
+            [
+              "Kiki ist kleiner.",
+              "2"
+            ],
+            [
+              "Erdmännchen leben in Afrika.",
+              "1"
             ]
           ]
         },
@@ -158,8 +161,8 @@
         },
         {
           "typ": "luecke",
-          "auftrag": "Fülle den Überblick aus. Nutze die Materialseite.",
-          "text": "Das {Erdmännchen} ist 25 bis 29 {Zentimeter} lang.\nDer {Schwanz} kommt noch dazu."
+          "auftrag": "Fülle den Überblick aus. Nutze das Interview.",
+          "text": "Ein {Erdmännchen} ist ohne {Schwanz} 25 bis 29 {Zentimeter} lang."
         }
       ]
     },
@@ -194,6 +197,7 @@
             "Mein Text hat eine Überschrift.",
             "Ich nenne vier Merkmale.",
             "Ich nenne Lebensraum und Nahrung.",
+            "Ich schreibe nichts, was nur für Kiki gilt.",
             "Jeder Satz beginnt groß.",
             "Am Ende jedes Satzes steht ein Punkt."
           ]
@@ -224,5 +228,6 @@
         }
       ]
     }
-  ]
+  ],
+  "interview": "erdmaennchen-f"
 }

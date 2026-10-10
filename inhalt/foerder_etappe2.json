@@ -36,27 +36,7 @@
   },
   "material": {
     "titel": "Der Fischotter",
-    "saetze": [
-      "Der Fischotter lebt an Flüssen und Seen.",
-      "Sein Körper ist lang.",
-      "Seine Beine sind kurz.",
-      "Sein Fell ist oben dunkelbraun.",
-      "Sein Kopf ist breit und flach.",
-      "An der Schnauze sitzen lange Tasthaare.",
-      "Zwischen den Zehen hat er Schwimmhäute.",
-      "Im Wasser schwimmt er schnell.",
-      "Er frisst vor allem Fische."
-    ],
-    "woerter": [
-      [
-        "Tasthaare",
-        "Haare zum Ertasten"
-      ],
-      [
-        "Schwimmhäute",
-        "Haut zwischen den Zehen"
-      ]
-    ]
+    "woerter": []
   },
   "merkkarte": {
     "titel": "Das hilft dir in Etappe 2",
@@ -123,6 +103,21 @@
             [
               "lustig",
               false
+            ]
+          ]
+        },
+        {
+          "typ": "ankreuzen",
+          "auftrag": "Frau Berger sagt: „Otto ist der süßeste Otter der Welt!“ **Info oder Meinung?**",
+          "spalten": 2,
+          "items": [
+            [
+              "Info",
+              false
+            ],
+            [
+              "Meinung",
+              true
             ]
           ]
         },
@@ -323,5 +318,6 @@
         ]
       }
     ]
-  }
+  },
+  "interview": "fischotter-f"
 }

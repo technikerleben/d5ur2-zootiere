@@ -15,6 +15,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import pymupdf as fitz  # noqa: E402
 from build_material import FUSS, GN_CSS, UB_CSS, b64, doc, font_sizes, md, render  # noqa: E402
 from playwright.sync_api import sync_playwright  # noqa: E402
 
@@ -177,16 +178,50 @@ def paginate(pg, c: dict, b: dict, css: str) -> str:
     return "".join(out)
 
 
+def iv_tier(c: dict) -> tuple:
+    from build_interviews import QUELLE
+    iv = json.loads(QUELLE.read_text(encoding="utf-8"))
+    return iv, {t["id"]: t for t in iv["foerder"]}[c["interview"]]
+
+
+def iv_zeilen(c: dict) -> list:
+    """Kurzinterview als Zeilen (Frage fett) für den Gelingensnachweis."""
+    from build_interviews import ohne_tags
+    _, t = iv_tier(c)
+    out = []
+    for q, a in t["paare"]:
+        out += ["**%s**" % q, ohne_tags(a)]
+    return out
+
+
 def material_page(c: dict) -> str:
+    """Fotoseite mit Zahlen (für Bildaufgaben); der Text kommt als Kurzinterview auf eigener Seite."""
     m = c["material"]
-    wh = "<div class='wh'><b>Wörterhilfe</b>%s</div>" % "".join("<div><b>%s:</b> %s</div>" % (md(w), md(e)) for w, e in m["woerter"])
     rng = "%s–%s" % (c["blaetter"][0]["nr"], c["blaetter"][-1]["nr"])
     bh = "<div class='bh'>%s</div>" % md(m["bildhinweis"]) if m.get("bildhinweis") else ""
-    return ("<div class='page f fmat'><div class='grow'><div class='ukopf'><div><div class='meta'>Material zu Blatt %s</div><h1>%s</h1></div></div>"
-            "%s<div class='cred'>%s</div>%s<div class='s'>%s</div>%s</div>"
+    return ("<div class='page f fmat'><div class='grow'><div class='ukopf'><div><div class='meta'>Material zu Blatt %s · Foto</div><h1>%s</h1></div></div>"
+            "%s<div class='cred'>%s</div>%s<div class='s'>Die Zahlen zeigen auf Körperteile. Das Interview steht auf der nächsten Seite.</div></div>"
             "<div class='foot'><span>%s · Etappe %d</span><b>Material F</b></div></div>"
-            % (rng, md(m["titel"]), bild_html(c["foto"], "72mm" if len(m["saetze"]) <= 10 else "44mm"), html.escape(c["foto"]["nachweis"]), bh,
-               "".join("<div>%s</div>" % md(s) for s in m["saetze"]), wh, FUSS, c["etappe"]))
+            % (rng, md(m["titel"]), bild_html(c["foto"], "150mm"), html.escape(c["foto"]["nachweis"]), bh, FUSS, c["etappe"]))
+
+
+def build_material_f(pg, c: dict, pdf: Path, fail: list):
+    from build_interviews import render_interview
+    iv, t = iv_tier(c)
+    a, b = pdf.with_name("_a.pdf"), pdf.with_name("_b.pdf")
+    o = render(pg, doc(material_page(c), F_CSS, "Material F"), a)
+    if o:
+        fail.append("Material F: Überlauf %s" % o)
+    rng = "%s–%s" % (c["blaetter"][0]["nr"], c["blaetter"][-1]["nr"])
+    info = render_interview(pg, t, iv["rahmen"], iv["hinweis_fiktiv"], "Material zu Blatt %s · Interview" % rng, b,
+                            fuss_rechts="Material F", kompakt=True)
+    if info["seiten"] > 1:
+        fail.append("Kurzinterview länger als eine Seite")
+    d = fitz.open(a)
+    d.insert_pdf(fitz.open(b))
+    d.save(pdf)
+    a.unlink()
+    b.unlink()
 
 
 def merkkarte_page(c: dict) -> str:
@@ -217,8 +252,8 @@ def gn_pages(c: dict) -> str:
     namen = "<div class='namen'><div>Name:</div><div class='d'>Datum:</div></div>"
     p1 = ("<div class='page f fmat'><div class='grow'>%s%s%s<div class='s'>%s</div></div>"
           "<div class='foot'><span>%s · Etappe %d</span><b>Nachweis %dF · Seite 1</b></div></div>"
-          % (kopf("Gelingensnachweis %d · Material" % e, md(n["titel"])), namen, bild_html(c["foto"], "88mm"),
-             "".join("<div>%s</div>" % md(s) for s in c["material"]["saetze"]), FUSS, e, e))
+          % (kopf("Gelingensnachweis %d · Material" % e, md(n["titel"])), namen, bild_html(c["foto"], "74mm"),
+             "".join("<div>%s</div>" % md(s) for s in iv_zeilen(c)), FUSS, e, e))
     p2 = gn_aufgaben_seiten(c, kopf)
     rows = "".join(
         "<tr><td><span class='id'>%s</span> %s<span class='krit'>Erreicht, wenn: %s</span></td>"
@@ -247,7 +282,8 @@ def main(n: int):
         br = pw.chromium.launch()
         pg = br.new_page()
         fp = out / f"Foerder_Etappe{n}_A4.pdf"
-        body = merkkarte_page(c) + material_page(c) + "".join(paginate(pg, c, b, F_CSS) for b in c["blaetter"])
+        build_material_f(pg, c, out / f"Material_Foerder_Etappe{n}_A4.pdf", fail)
+        body = "".join(paginate(pg, c, b, F_CSS) for b in c["blaetter"]) + merkkarte_page(c)
         o = render(pg, doc(body, F_CSS, f"Förder-Material Etappe {n}"), fp)
         if o:
             fail.append("Fördermaterial: Überlauf %s" % o)

@@ -410,15 +410,15 @@
         ],
         [
           "Was fressen Fischotter?",
-          "[[Fischotter fressen Fische.|N]] [[Otto frisst am liebsten Forellen.|X]]"
+          "[[Fischotter fressen Fische, Frösche und Krebse.|N]] [[Otto frisst am liebsten Forellen.|X]]"
         ],
         [
           "Wie sieht ein Fischotter aus?",
-          "[[Der Körper ist lang.|A]] [[Das Fell ist braun.|A]]"
+          "[[Der Körper ist lang.|A]] [[Das Fell ist dunkelbraun.|A]]"
         ],
         [
-          "Was hat er noch?",
-          "[[Er hat kurze Beine.|A]] [[Er hat Schwimmhäute zwischen den Zehen.|A]]"
+          "Und die Beine und der Kopf?",
+          "[[Die Beine sind kurz.|A]] [[Der Kopf ist breit und flach.|A]]"
         ],
         [
           "Wie groß ist ein Fischotter?",
@@ -431,8 +431,8 @@
       ],
       "woerter": [
         [
-          "Schwimmhäute",
-          "Haut zwischen den Zehen"
+          "Forellen",
+          "eine Art von Fischen"
         ]
       ]
     },
@@ -447,19 +447,19 @@
       "paare": [
         [
           "Wo leben Erdmännchen?",
-          "[[Erdmännchen leben in Afrika.|L]] [[Sie wohnen in Gängen unter der Erde.|L]]"
+          "[[Erdmännchen leben im trockenen Grasland in Afrika.|L]] [[Kiki wohnt im Zoo.|X]]"
         ],
         [
           "Was fressen Erdmännchen?",
-          "[[Erdmännchen fressen Insekten.|N]] [[Kiki mag Mehlwürmer.|X]]"
+          "[[Erdmännchen fressen Insekten und Spinnen.|N]] [[Kiki mag Mehlwürmer.|X]]"
         ],
         [
           "Wie sieht ein Erdmännchen aus?",
-          "[[Das Fell ist hellbraun.|A]] [[Um die Augen hat es dunkle Flecken.|A]]"
+          "[[Das Fell ist hellbraun.|A]] [[Der Körper ist schlank.|A]]"
         ],
         [
           "Was hat es noch?",
-          "[[Es hat eine spitze Schnauze.|A]] [[Es hat lange Krallen.|A]]"
+          "[[Der Schwanz ist lang und schmal.|A]] [[Auf dem Rücken hat es dunkle Streifen.|A]]"
         ],
         [
           "Wie groß ist ein Erdmännchen?",
@@ -472,8 +472,8 @@
       ],
       "woerter": [
         [
-          "Krallen",
-          "spitze Nägel an den Pfoten"
+          "Grasland",
+          "Land mit Gras und wenigen Bäumen"
         ]
       ]
     }
