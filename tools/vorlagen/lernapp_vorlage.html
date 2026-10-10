@@ -193,6 +193,10 @@ table.wh{width:100%;border-collapse:collapse;font-size:17px}
 table.wh td{border-top:1px solid var(--line);padding:8px 4px;vertical-align:top}
 table.wh td:first-child{font-weight:700;width:38%}
 .done-card{text-align:center;padding:22px 16px}
+.sysfont{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Arabic",sans-serif}
+.elterninfo[dir=rtl]{text-align:right;line-height:1.8}
+.elterninfo bdi{white-space:nowrap}
+.chip.sysfont{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .planteil{margin:10px 0;padding:10px 12px;border-radius:10px;background:var(--sage-ghost);border-left:5px solid var(--sage)}
 .planteil.gestr{background:#EEEDEA;border-left-color:var(--muted)}
 .planteil.gestr li{text-decoration:line-through;text-decoration-color:var(--muted);color:var(--muted)}
@@ -709,13 +713,18 @@ function viewZuhause(){
 /* ---------- Info ---------- */
 function viewInfo(){
   const E = D.elterninfo;
-  let h = '<a class="back" href="#/weg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>Zurück</a><h1>' + esc(E.titel) + '</h1><div class="card">' + E.absaetze.map(p => '<p>' + md(p) + '</p>').join("") + '</div>';
+  const L = E.sprachen.find(x => x.code === S.lang) || E.sprachen[0];
+  const sys = !["de", "en", "fr"].includes(L.code);
+  let h = '<a class="back" href="#/weg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>Zurück</a><h1>' + esc(E.titel) + '</h1>';
+  h += '<span class="label">' + esc(E.sprachwahl) + '</span><div class="chips" role="tablist">' + E.sprachen.map(x => '<button class="chip' + (["de", "en", "fr"].includes(x.code) ? "" : " sysfont") + '" type="button" lang="' + x.code + '" data-lang="' + x.code + '"' + (x === L ? ' aria-current="true"' : "") + '>' + esc(x.name) + '</button>').join("") + '</div>';
+  h += '<div class="card elterninfo' + (sys ? " sysfont" : "") + '" lang="' + L.code + '" dir="' + (L.rtl ? "rtl" : "ltr") + '"><h3>' + esc(L.titel) + '</h3>' + L.absaetze.map(p => '<p>' + (L.rtl ? md(p).replace(/«([A-Za-zÄÖÜäöüß ]+)»/g, '«<bdi lang="de">$1</bdi>»') : md(p)) + '</p>').join("") + '</div>';
   h += '<h2>Gespeicherte Daten</h2><div class="card"><p>Häkchen, gelöste Rätsel und dein Schreibplan liegen nur auf diesem Gerät.</p><button class="btn block" type="button" id="reset">Alles löschen</button></div>';
   h += '<h2>Bildnachweise</h2><div class="card small">' + D.nachweise.map(n => '<p>' + esc(n) + '</p>').join("") + '</div><p class="small">' + esc(D.app.untertitel) + ' · Stand ' + esc(D.stand) + '</p>';
   M.innerHTML = h;
+  M.querySelectorAll("[data-lang]").forEach(c => c.addEventListener("click", () => { S.lang = c.dataset.lang; save(); viewInfo(); const t = M.querySelector(".elterninfo"); if (t) t.scrollIntoView({block: "nearest"}); }));
   $("#reset").addEventListener("click", () => {
     if (!confirm("Alle Häkchen, Rätsel und Notizen auf diesem Gerät löschen?")) return;
-    S = {weg:{}, ex:{}, raetsel:{}, plan:{}, check:{}}; try { localStorage.removeItem(KEY); } catch(e) {} rOrder = null;
+    S = {weg:{}, ex:{}, raetsel:{}, plan:{}, check:{}, lang: S.lang}; try { localStorage.removeItem(KEY); } catch(e) {} rOrder = null;
     $("#reset").textContent = "Gelöscht"; $("#reset").disabled = true;
   });
 }

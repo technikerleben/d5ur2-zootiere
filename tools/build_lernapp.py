@@ -226,6 +226,14 @@ def pruefe_inhalt(data: dict):
                     fehler.append(f"{u['id']}: doppelte Wortkarte: {it['teile']}")
         elif u["typ"] != "saetze":
             fehler.append(f"{u['id']}: unbekannter Typ {u['typ']}")
+    sp = data["elterninfo"]["sprachen"]
+    if sp[0]["code"] != "de":
+        fehler.append("Elterninfo: Deutsch muss die erste Sprache sein")
+    for x in sp:
+        if len(x["absaetze"]) not in (len(sp[0]["absaetze"]), len(sp[0]["absaetze"]) + 1):
+            fehler.append(f"Elterninfo {x['code']}: Zahl der Absätze passt nicht zu Deutsch")
+        if not any(k in x["absaetze"][-1] for k in ("KI", "AI", "IA", "ШІ", "YZ", "الذكاء الاصطناعي")):
+            fehler.append(f"Elterninfo {x['code']}: KI-Hinweis fehlt am Ende")
     for w, _h in data["raetsel"]["woerter"]:
         if not re.fullmatch(r"[A-Za-zÄÖÜäöü]+", w):
             fehler.append(f"Rätselwort mit Sonderzeichen: {w}")
@@ -399,6 +407,21 @@ def browsertest(data: dict, shots: Path | None = None):
                 fehler.append(f"Rätsel {wort}: nicht lösbar")
             shot(pg, "raetsel_geloest")
             pg.locator("#next").click()
+
+        # Elterninfo: alle Sprachen, Arabisch von rechts nach links, KI-Hinweis
+        pg.goto(base + "#/info")
+        for sp in data["elterninfo"]["sprachen"]:
+            pg.locator(f"[data-lang='{sp['code']}']").click()
+            box = pg.locator(".elterninfo")
+            if box.get_attribute("lang") != sp["code"] or len(sp["absaetze"]) != box.locator("p").count():
+                fehler.append(f"Elterninfo {sp['code']}: Text fehlt")
+            if box.get_attribute("dir") != ("rtl" if sp.get("rtl") else "ltr"):
+                fehler.append(f"Elterninfo {sp['code']}: Schreibrichtung falsch")
+            overflow(pg, "info_" + sp["code"])
+            shot(pg, "info_" + sp["code"])
+        pg.reload()
+        if pg.locator(".elterninfo").get_attribute("lang") != data["elterninfo"]["sprachen"][-1]["code"]:
+            fehler.append("Elterninfo: Sprachwahl wird nicht gespeichert")
 
         # Zuhause: Plan speichern
         pg.goto(base + "#/zuhause")

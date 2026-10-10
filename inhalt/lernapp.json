@@ -11,13 +11,98 @@
   },
   "elterninfo": {
     "titel": "Für Eltern",
-    "absaetze": [
-      "Diese App begleitet die Deutsch-Reihe „Zootiere“ in Jahrgang 5. Die Kinder lernen, ein Tier mithilfe von Bild und Interview sachlich und geordnet zu beschreiben.",
-      "Die Nutzung ist **freiwillig**. Es gibt keine Noten, keine Punkte und keine Ranglisten.",
-      "**Datenschutz:** Es gibt keine Anmeldung, keine Namen und keine Werbung. Die App sendet keine Daten. Häkchen und Notizen werden nur auf diesem Gerät gespeichert. Mit „Alles löschen“ entfernen Sie sie.",
-      "**Offline:** Nach dem ersten Öffnen funktioniert die App auch ohne Internet. Sie können sie über das Teilen-Menü des Browsers zum Startbildschirm hinzufügen.",
-      "**So können Sie helfen:** Lassen Sie sich von Ihrem Kind ein Tier beschreiben. Fragen Sie nach: „Woher weißt du das? Gilt das für alle Tiere dieser Art?“ Im Bereich „Zuhause“ finden Sie Ideen.",
-      "Die Interviews sind ausgedacht. Die Angaben über die Tiere stimmen."
+    "sprachwahl": "Sprache · Language",
+    "sprachen": [
+      {
+        "code": "de",
+        "name": "Deutsch",
+        "titel": "Für Eltern",
+        "absaetze": [
+          "Diese App begleitet die Deutsch-Reihe „Zootiere“ in Jahrgang 5. Die Kinder lernen, ein Tier mithilfe von Bild und Interview sachlich und geordnet zu beschreiben.",
+          "Die Nutzung ist **freiwillig**. Es gibt keine Noten, keine Punkte und keine Ranglisten.",
+          "**Datenschutz:** Es gibt keine Anmeldung, keine Namen und keine Werbung. Die App sendet keine Daten. Häkchen und Notizen werden nur auf diesem Gerät gespeichert. Mit „Alles löschen“ entfernen Sie sie.",
+          "**Offline:** Nach dem ersten Öffnen funktioniert die App auch ohne Internet. Sie können sie über das Teilen-Menü des Browsers zum Startbildschirm hinzufügen.",
+          "**So können Sie helfen:** Lassen Sie sich von Ihrem Kind ein Tier beschreiben. Fragen Sie nach: „Woher weißt du das? Gilt das für alle Tiere dieser Art?“ Im Bereich „Zuhause“ finden Sie Ideen.",
+          "Die Interviews sind ausgedacht. Die Angaben über die Tiere stimmen.",
+          "**KI-Hinweis:** Diese App wurde mit Unterstützung künstlicher Intelligenz (KI) programmiert. Die meisten Inhalte sind KI-generierte Texte. Sie wurden von den Lehrkräften geprüft und werden von ihnen verantwortet."
+        ]
+      },
+      {
+        "code": "uk",
+        "name": "Українська",
+        "titel": "Для батьків",
+        "absaetze": [
+          "Цей застосунок супроводжує цикл уроків німецької мови «Zootiere» (тварини зоопарку) у 5-му класі. Діти вчаться описувати тварину об'єктивно й послідовно за допомогою зображення та інтерв'ю.",
+          "Сам застосунок німецькою мовою, тому що діти вивчають німецьку. Ця сторінка пояснює його для батьків.",
+          "Користування **добровільне**. Немає оцінок, балів і рейтингів.",
+          "**Захист даних:** Немає реєстрації, імен і реклами. Застосунок не надсилає жодних даних. Позначки й нотатки зберігаються лише на цьому пристрої. Ви можете видалити їх кнопкою «Alles löschen» (видалити все).",
+          "**Офлайн:** Після першого відкриття застосунок працює і без інтернету. Ви можете додати його на головний екран через меню «Поділитися» у браузері.",
+          "**Як ви можете допомогти:** Попросіть дитину описати вам якусь тварину. Запитайте: «Звідки ти це знаєш? Чи це стосується всіх тварин цього виду?» Ідеї ви знайдете в розділі «Zuhause» (вдома).",
+          "Інтерв'ю вигадані. Відомості про тварин правдиві.",
+          "**Примітка щодо ШІ:** Цей застосунок створено за допомогою штучного інтелекту (ШІ). Більшість матеріалів — це тексти, згенеровані ШІ. Їх перевірили вчителі, які несуть за них відповідальність."
+        ]
+      },
+      {
+        "code": "ar",
+        "name": "العربية",
+        "titel": "لأولياء الأمور",
+        "rtl": true,
+        "absaetze": [
+          "يرافق هذا التطبيق وحدة دروس اللغة الألمانية «Zootiere» (حيوانات حديقة الحيوان) في الصف الخامس. يتعلّم الأطفال وصف حيوانٍ وصفًا موضوعيًّا ومرتّبًا بالاستعانة بصورة ومقابلة.",
+          "التطبيق نفسه باللغة الألمانية لأن الأطفال يتعلّمون الألمانية. تشرح هذه الصفحة التطبيق لأولياء الأمور.",
+          "استخدام التطبيق **اختياري**. لا توجد درجات ولا نقاط ولا ترتيب للتلاميذ.",
+          "**حماية البيانات:** لا يوجد تسجيل دخول ولا أسماء ولا إعلانات. لا يرسل التطبيق أي بيانات. تُحفظ العلامات والملاحظات على هذا الجهاز فقط. يمكنكم حذفها بالزر «Alles löschen» (حذف الكل).",
+          "**دون اتصال بالإنترنت:** بعد فتح التطبيق مرة واحدة يعمل أيضًا دون إنترنت. يمكنكم إضافته إلى الشاشة الرئيسية من خلال قائمة المشاركة في المتصفح.",
+          "**كيف يمكنكم المساعدة:** اطلبوا من طفلكم أن يصف لكم حيوانًا، واسألوه: «كيف تعرف ذلك؟ هل ينطبق هذا على جميع الحيوانات من هذا النوع؟» تجدون أفكارًا في قسم «Zuhause» (في البيت).",
+          "المقابلات من نسج الخيال، أما المعلومات عن الحيوانات فهي صحيحة.",
+          "**ملاحظة حول الذكاء الاصطناعي:** بُرمج هذا التطبيق بمساعدة الذكاء الاصطناعي. ومعظم المحتويات نصوص أنتجها الذكاء الاصطناعي، وقد راجعها المعلمون وهم يتحمّلون مسؤوليتها."
+        ]
+      },
+      {
+        "code": "tr",
+        "name": "Türkçe",
+        "titel": "Veliler için",
+        "absaetze": [
+          "Bu uygulama, 5. sınıftaki „Zootiere“ (hayvanat bahçesi hayvanları) Almanca dersi ünitesine eşlik eder. Çocuklar bir resim ve bir röportaj yardımıyla bir hayvanı nesnel ve düzenli bir şekilde betimlemeyi öğrenir.",
+          "Uygulamanın kendisi Almancadır, çünkü çocuklar Almanca öğreniyor. Bu sayfa uygulamayı velilere açıklar.",
+          "Uygulamanın kullanımı **isteğe bağlıdır**. Not, puan veya sıralama yoktur.",
+          "**Veri koruma:** Kayıt, isim veya reklam yoktur. Uygulama hiçbir veri göndermez. İşaretler ve notlar yalnızca bu cihazda kaydedilir. Bunları „Alles löschen“ (hepsini sil) düğmesiyle silebilirsiniz.",
+          "**Çevrimdışı:** İlk açılıştan sonra uygulama internet olmadan da çalışır. Tarayıcınızın paylaş menüsü üzerinden ana ekranınıza ekleyebilirsiniz.",
+          "**Nasıl yardımcı olabilirsiniz:** Çocuğunuzdan size bir hayvanı anlatmasını isteyin. Şöyle sorun: „Bunu nereden biliyorsun? Bu, bu türdeki bütün hayvanlar için geçerli mi?“ „Zuhause“ (evde) bölümünde fikirler bulabilirsiniz.",
+          "Röportajlar uydurmadır. Hayvanlarla ilgili bilgiler doğrudur.",
+          "**Yapay zekâ notu:** Bu uygulama yapay zekâ (YZ) desteğiyle programlanmıştır. İçeriklerin çoğu yapay zekâ tarafından üretilmiş metinlerdir. Bu metinler öğretmenler tarafından kontrol edilmiştir ve sorumluluğu öğretmenlere aittir."
+        ]
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "titel": "For parents",
+        "absaetze": [
+          "This app accompanies the German lessons on „Zootiere“ (zoo animals) in Year 5. The children learn to describe an animal factually and in a clear order, using a picture and an interview.",
+          "The app itself is in German because the children are learning German. This page explains it for parents.",
+          "Using the app is **voluntary**. There are no grades, no points and no rankings.",
+          "**Data protection:** There is no login, no names and no advertising. The app does not send any data. Ticks and notes are stored only on this device. You can remove them with „Alles löschen“ (delete everything).",
+          "**Offline:** Once it has been opened, the app also works without internet. You can add it to your home screen via your browser's share menu.",
+          "**How you can help:** Ask your child to describe an animal to you. Ask: “How do you know that? Is that true for all animals of this kind?” You will find ideas in the „Zuhause“ (at home) section.",
+          "The interviews are made up. The information about the animals is correct.",
+          "**Note on AI:** This app was programmed with the support of artificial intelligence (AI). Most of the content consists of AI-generated texts. They have been checked by the teachers, who are responsible for them."
+        ]
+      },
+      {
+        "code": "fr",
+        "name": "Français",
+        "titel": "Pour les parents",
+        "absaetze": [
+          "Cette application accompagne la séquence d'allemand « Zootiere » (les animaux du zoo) en 5e année (Jahrgang 5). Les enfants apprennent à décrire un animal de manière objective et ordonnée, à l'aide d'une image et d'une interview.",
+          "L'application elle-même est en allemand, car les enfants apprennent l'allemand. Cette page l'explique aux parents.",
+          "L'utilisation est **facultative**. Il n'y a ni notes, ni points, ni classements.",
+          "**Protection des données :** Il n'y a ni inscription, ni noms, ni publicité. L'application n'envoie aucune donnée. Les coches et les notes sont enregistrées uniquement sur cet appareil. Vous pouvez les supprimer avec « Alles löschen » (tout supprimer).",
+          "**Hors ligne :** Après la première ouverture, l'application fonctionne aussi sans internet. Vous pouvez l'ajouter à l'écran d'accueil via le menu de partage du navigateur.",
+          "**Comment vous pouvez aider :** Demandez à votre enfant de vous décrire un animal. Demandez-lui : « Comment le sais-tu ? Est-ce vrai pour tous les animaux de cette espèce ? » Vous trouverez des idées dans la rubrique « Zuhause » (à la maison).",
+          "Les interviews sont inventées. Les informations sur les animaux sont exactes.",
+          "**Remarque sur l'IA :** Cette application a été programmée avec l'aide de l'intelligence artificielle (IA). La plupart des contenus sont des textes générés par l'IA. Ils ont été vérifiés par les enseignants, qui en assument la responsabilité."
+        ]
+      }
     ]
   },
   "weg": {
