@@ -2,7 +2,7 @@
   "_hinweis": "Einzige Inhaltsquelle für Etappe 3. Input (HTML) und Merkblatt (A4) werden aus 'input' erzeugt und sind dadurch 1:1 gleich. Abschluss der Etappe ist die Probearbeit (eigene Datei unter 'pruefung').",
   "etappe": 3,
   "titel": "Eine Tierbeschreibung schreiben und prüfen",
-  "ziel": "Ich kann ein Tier mit Material sachlich, geordnet und verständlich beschreiben.",
+  "ziel": "Ich kann aus einem Interview eine sachliche, geordnete und verständliche Tierbeschreibung schreiben.",
   "abschluss_name": "Probearbeit",
   "pruefung": "inhalt/probearbeit_waschbaer.json",
   "foto": {
@@ -12,25 +12,30 @@
   },
   "input": [
     {
-      "titel": "Vom Material zum Plan",
+      "titel": "Vom Interview zum Plan",
       "bloecke": [
         [
           "Dein Ziel",
-          "Ich kann ein Tier mit Material sachlich, geordnet und verständlich beschreiben."
+          "Ich kann aus einem Interview eine sachliche, geordnete und verständliche Tierbeschreibung schreiben."
+        ],
+        [
+          "Markieren und streichen",
+          "Markiere im Interview Sachangaben über **die Tierart**. Streiche Meinungen, Erlebnisse und Angaben nur über **das Zootier**. Aus einem Vergleich nimmst du nur die Sachangabe."
         ],
         [
           "Ein Plan in Stichwörtern",
-          "**Überblick:** Fischotter; Kopf und Rumpf etwa 60–90 cm, Schwanz zusätzlich\n**Aussehen:** lang gestreckter Körper; kurze Beine; oben dunkelbraunes Fell; breiter, flacher Kopf\n**Lebensraum:** Flüsse und Seen mit geschützten Ufern\n**Nahrung:** vor allem Fische, auch Frösche und Krebse"
+          "**Überblick:** Fischotter; Marder; ohne Schwanz etwa 60–90 cm\n**Aussehen:** langer, schmaler Körper; kurze Beine; oben dunkelbraunes Fell; breiter, flacher Kopf\n**Lebensraum:** Flüsse und Seen; Ufer mit Verstecken\n**Nahrung:** vor allem Fische, auch Frösche und Krebse"
         ],
         [
           "Frage",
-          "Was fehlt bei „60–90“?"
+          "Gehört „Otto ist 80 Zentimeter lang“ in den Plan?"
         ],
         [
           "Gesicherte Antwort",
-          "Einheit und Bezug. Richtig: Kopf und Rumpf etwa 60–90 cm, ohne Schwanz. Prüfe alle Angaben am Material."
+          "Nein. Das gilt nur für Otto. In den Plan gehört das Maß der Art: ohne Schwanz etwa 60–90 cm."
         ]
-      ]
+      ],
+      "umbruch_nach": 2
     },
     {
       "titel": "Aus Stichwörtern wird Text",
@@ -41,7 +46,7 @@
         ],
         [
           "Ein vollständiges Beispiel",
-          "**Der Fischotter**\n*Der Fischotter hat einen lang gestreckten Körper. Kopf und Rumpf sind zusammen etwa 60 bis 90 Zentimeter lang. Der Schwanz kommt noch dazu. Seine Beine sind kurz. Sein Fell ist oben dunkelbraun. Der Kopf ist breit und flach.*\n*Er lebt an Flüssen und Seen mit geschützten Ufern. Er frisst vor allem Fische, aber auch Frösche und Krebse.*"
+          "**Der Fischotter**\n*Der Fischotter gehört zu den Mardern. Er hat einen langen, schmalen Körper. Ohne Schwanz ist er etwa 60 bis 90 Zentimeter lang. Seine Beine sind kurz. Sein Fell ist oben dunkelbraun. Der Kopf ist breit und flach.*\n*Er lebt an Flüssen und Seen. Dort braucht er Ufer mit Verstecken. Er frisst vor allem Fische, aber auch Frösche und Krebse.*"
         ]
       ]
     },
@@ -50,7 +55,7 @@
       "bloecke": [
         [
           "K1 · Informationen",
-          "Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung sind richtig im Text enthalten."
+          "Tiername, Maß der Art mit Einheit und Bezug, Lebensraum und Nahrung sind richtig im Text. Angaben nur über das Zootier gehören nicht hinein."
         ],
         [
           "K2 · Aussehen",
@@ -62,7 +67,7 @@
         ],
         [
           "K4 und K5 · Sprache",
-          "Schreibe sachlich und im Präsens. Nutze genaue Wörter. Verbinde vollständige, verständliche Sätze zu einem Text. Eine Stichwortliste reicht nicht."
+          "Schreibe sachlich und im Präsens, ohne Meinungen aus dem Interview. Nutze genaue Wörter. Verbinde vollständige, verständliche Sätze zu einem Text."
         ]
       ]
     },
@@ -71,7 +76,7 @@
       "bloecke": [
         [
           "K6 · Schreibung",
-          "Prüfe Satzanfänge, Nomen und Satzschlüsse. Vergleiche schwierige Tierwörter mit dem Material.\n**Zeige deine Prüfung:** Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Satzschlusspunkt."
+          "Prüfe Satzanfänge, Nomen und Satzschlüsse. Vergleiche schwierige Tierwörter mit dem Interview.\n**Zeige deine Prüfung:** Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Satzschlusspunkt."
         ],
         [
           "Ein Beispiel prüfen",
@@ -88,70 +93,21 @@
       ]
     }
   ],
-  "abschluss": "Bearbeite die Pflichtaufgaben auf Blatt 7–9. Vertiefungen sind freiwillig. Dein Abschluss ist die Probearbeit, dein letzter Gelingensnachweis. Fünf Ziele: Informationen, vier Merkmale, Aufbau, Sprache, Schreibung mit sichtbarer Prüfung. Vier von fünf = 80 %. Danach bekommst du Feedback für deinen nächsten Schritt.",
-  "materialien": [
-    {
-      "titel": "Das Erdmännchen",
-      "foto": {
-        "datei": "assets/bilder/erdmaennchen_graustufen.jpg",
-        "nachweis": "Foto: Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons · Graustufenfassung",
-        "alt": "Ein Erdmännchen steht aufrecht auf sandigem Boden."
-      },
-      "text": "Das Erdmännchen lebt im trockenen Gras- und Buschland im südlichen Afrika. Es gehört zu den Mangusten. Die Tiere leben in Gruppen und nutzen unterirdische Baue. Ein Erdmännchen hat einen schlanken Körper. Sein Fell ist hellbraun bis graubraun; auf dem Rücken liegen dunklere Streifen. Um die Augen sind dunkle Flecken zu erkennen. Kopf und Rumpf sind zusammen etwa 25 bis 29 Zentimeter lang; der Schwanz kommt noch dazu. Der Schwanz ist lang und schmal. An den Pfoten sitzen lange Krallen, die beim Graben helfen. Es frisst vor allem Insekten, aber auch Spinnen und kleine Eidechsen.",
-      "woerter": [
-        [
-          "Mangusten",
-          "eine Familie von Raubtieren"
-        ],
-        [
-          "Rumpf",
-          "Körper ohne Kopf, Beine und Schwanz"
-        ],
-        [
-          "Bau",
-          "unterirdisches Versteck mit Gängen"
-        ]
-      ]
-    },
-    {
-      "titel": "Der Rote Panda",
-      "foto": {
-        "datei": "assets/bilder/roter-panda_graustufen.jpg",
-        "nachweis": "Foto: Brunswyk · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
-        "alt": "Ein Roter Panda sitzt auf einem Holzsteg und hält Bambus."
-      },
-      "text": "Der Rote Panda wird auch Kleiner Panda genannt. Er lebt in Bergwäldern Asiens, in denen Bambus wächst. Sein Fell ist am Rücken rötlich braun. Beine und Bauch sind dunkel bis schwarz. Im Gesicht hat er helle, fast weiße Bereiche. Kopf und Rumpf sind zusammen etwa 60 Zentimeter lang; der Schwanz kommt noch dazu. Sein langer, buschiger Schwanz hat hellere und dunklere Ringe. Beim Klettern helfen ihm Krallen und der Schwanz. Er frisst hauptsächlich Bambus, daneben zum Beispiel Beeren und Eier. Der Rote Panda ist besonders in der Dämmerung und nachts aktiv.",
-      "woerter": [
-        [
-          "Rumpf",
-          "Körper ohne Kopf, Beine und Schwanz"
-        ],
-        [
-          "Bambus",
-          "eine Pflanze mit festen Halmen"
-        ],
-        [
-          "Dämmerung",
-          "Zeit zwischen Tageslicht und Dunkelheit"
-        ]
-      ],
-      "bildhinweis": "Das Foto ist in Graustufen. Die Fellfarben findest du im Text."
-    }
-  ],
+  "abschluss": "Bearbeite die Pflichtaufgaben auf Blatt 7–9 mit einem Interview. Vertiefungen sind freiwillig. Dein Abschluss ist die Probearbeit, dein letzter Gelingensnachweis. Vier von fünf Zielen = 80 %. Danach bekommst du Feedback für deinen nächsten Schritt.",
   "blaetter": [
     {
       "nr": 7,
       "titel": "Dein Schreibplan",
-      "brauchst": "Merkblatt 3 · Material zum Erdmännchen oder Roten Panda · Heft. Wähle ein Tier. Bleibe auf Blatt 7–9 bei diesem Tier.",
+      "brauchst": "Merkblatt 3 · Interview zum Erdmännchen oder Roten Panda · Heft. Wähle ein Tier. Bleibe auf Blatt 7–9 bei diesem Tier.",
       "teile": [
         {
           "art": "pflicht",
           "titel": "Plane im Heft",
           "aufgaben": [
-            "Lies das Material und betrachte das Foto.",
+            "Lies das Interview zu deinem Tier. Markiere Sachangaben über die Tierart. Streiche Meinungen und Angaben, die nur das Zootier betreffen.",
             "Schreibe diese Überschriften: Überblick · Aussehen · Lebensraum · Nahrung.",
-            "Ordne Stichwörter zu: Tiername, ein Maß mit Einheit und Bezug, vier verschiedene äußere Merkmale, Lebensraum und Nahrung.",
-            "Prüfe deine Angaben. Zeige eine passende Bildstelle und eine Textstelle."
+            "Ordne Stichwörter zu: Tiername, das Maß der Art mit Einheit und Bezug, vier verschiedene äußere Merkmale, Lebensraum und Nahrung. Notiere die Zeile.",
+            "Prüfe jede Angabe: Gilt sie für alle Tiere dieser Art? Zeige eine Bildstelle und eine Interviewstelle."
           ]
         },
         {
@@ -164,7 +120,7 @@
     {
       "nr": 8,
       "titel": "Deine Tierbeschreibung",
-      "brauchst": "deinen Plan von Blatt 7 · das gewählte Tiermaterial · Merkblatt 3 · Heft",
+      "brauchst": "deinen Plan von Blatt 7 · das gewählte Interview · Merkblatt 3 · Heft",
       "teile": [
         {
           "art": "pflicht",
@@ -173,7 +129,7 @@
             "Schreibe eine passende Überschrift.",
             "Schreibe aus deinem Plan einen zusammenhängenden Text. Beginne mit Tiername und Überblick.",
             "Beschreibe vier verschiedene äußere Merkmale. Ergänze Maß mit Einheit und Bezug, Lebensraum und Nahrung.",
-            "Schreibe sachlich, im Präsens und in vollständigen Sätzen. Lies deinen Text einmal leise vor."
+            "Schreibe sachlich, im Präsens und in vollständigen Sätzen. Übernimm keine Meinung und kein Erlebnis aus dem Interview. Lies deinen Text einmal leise vor."
           ]
         },
         {
@@ -186,7 +142,7 @@
     {
       "nr": 9,
       "titel": "Prüfen und verbessern",
-      "brauchst": "deinen Text von Blatt 8 · das Tiermaterial · Checkliste K1–K6 · Rückmeldekarte",
+      "brauchst": "deinen Text von Blatt 8 · das Interview · Checkliste K1–K6 · Rückmeldekarte",
       "teile": [
         {
           "art": "pflicht",
@@ -194,8 +150,8 @@
           "aufgaben": [
             "Prüfe deinen Text im Heft mit K1–K6.",
             "Geh zur Haltestelle. Such dir ein Kind für eine Rückmeldung. Es liest deinen Text und nutzt die Rückmeldekarte. Lass dir die Textstelle zeigen.",
-            "Entscheide mit Material und Checkliste, was du verbesserst. Schreibe nicht den ganzen Text neu. Ist eine Stelle schon richtig? Begründe, warum sie bleibt.",
-            "Zeige die Schreibprüfung: Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt. Vergleiche Tierwörter mit dem Material."
+            "Entscheide mit Interview und Checkliste, was du verbesserst. Schreibe nicht den ganzen Text neu. Ist eine Stelle schon richtig? Begründe, warum sie bleibt.",
+            "Zeige die Schreibprüfung: Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt. Vergleiche Tierwörter mit dem Interview."
           ]
         },
         {
@@ -213,7 +169,7 @@
       "teile": [
         {
           "titel": "K1 · Informationen",
-          "text": "Hast du das Tier benannt? Stimmen Maß, Einheit und Bezug? Stehen Lebensraum und Nahrung im Text? Vergleiche alles mit dem Material."
+          "text": "Hast du das Tier benannt? Stimmen Maß, Einheit und Bezug – für alle Tiere der Art, nicht nur für das Zootier? Stehen Lebensraum und Nahrung im Text? Vergleiche alles mit dem Interview."
         },
         {
           "titel": "K2 · Aussehen",
@@ -231,7 +187,7 @@
       "teile": [
         {
           "titel": "K4 · Sachlich schreiben",
-          "text": "Stehen deine Verben im Präsens? Beschreibst du genau und ohne persönliche Wertungen?"
+          "text": "Stehen deine Verben im Präsens? Beschreibst du genau? Hast du keine Meinung und kein Erlebnis aus dem Interview übernommen?"
         },
         {
           "titel": "K5 · Verständliche Sätze",
@@ -239,7 +195,7 @@
         },
         {
           "titel": "K6 · Schreibung prüfen",
-          "text": "Prüfe große Satzanfänge und Nomen sowie Satzschlusspunkte. Vergleiche schwierige Wörter mit dem Material. Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt als Prüfbeleg."
+          "text": "Prüfe große Satzanfänge und Nomen sowie Satzschlusspunkte. Vergleiche schwierige Wörter mit dem Interview. Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt als Prüfbeleg."
         }
       ]
     }
@@ -261,7 +217,7 @@
         ],
         [
           "So sagst du es",
-          "*Diese Stelle ist genau: …*\n*Hier habe ich eine Frage: …*\n*Prüfe diese Angabe noch einmal im Material: …*"
+          "*Diese Stelle ist genau: …*\n*Hier habe ich eine Frage: …*\n*Prüfe diese Angabe noch einmal im Interview: …*"
         ]
       ],
       "achtung": "Die Rückmeldung ist eine Übung. In der Probearbeit und in der Klassenarbeit arbeitest du allein."
@@ -276,5 +232,10 @@
       "Nimm deinen Text und die Rückmeldekarte mit.",
       "Sprecht leise."
     ]
-  }
+  },
+  "interviews": [
+    "erdmaennchen",
+    "roter-panda"
+  ],
+  "interview_kopf": "Material zu Blatt 7–9 · Interview"
 }
