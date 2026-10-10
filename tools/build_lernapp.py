@@ -365,6 +365,16 @@ def browsertest(data: dict, shots: Path | None = None):
             fehler.append("Hinweis beim Öffnen: Text fehlt")
         shot(pg, "popup")
         pg.locator("#popOk").click()
+        # Rückkehr aus dem Hintergrund nach mehr als 5 Minuten: Hinweis erscheint erneut
+        pg.evaluate("""() => { const real = Date.now; Object.defineProperty(document, 'hidden', {configurable: true, get: () => true});
+            document.dispatchEvent(new Event('visibilitychange'));
+            Date.now = () => real() + 6 * 60 * 1000;
+            Object.defineProperty(document, 'hidden', {configurable: true, get: () => false});
+            document.dispatchEvent(new Event('visibilitychange')); Date.now = real; }""")
+        if not pg.locator("#popup").is_visible():
+            fehler.append("Hinweis erscheint nach Rückkehr aus dem Hintergrund nicht")
+        else:
+            pg.locator("#popOk").click()
         pg.evaluate("navigator.serviceWorker.ready")
         pg.wait_for_timeout(300)
 

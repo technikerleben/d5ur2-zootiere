@@ -745,10 +745,18 @@ function viewInfo(){
   $("#popTitle").textContent = P.titel;
   $("#popText").innerHTML = P.absaetze.map(t => '<p>' + md(t) + '</p>').join("");
   $("#popOk").textContent = P.knopf;
-  el.hidden = false; document.body.style.overflow = "hidden";
-  $("#popOk").focus();
+  function zeigen(){ el.hidden = false; document.body.style.overflow = "hidden"; $("#popOk").focus(); }
   $("#popOk").addEventListener("click", () => { el.hidden = true; document.body.style.overflow = ""; M.focus({preventScroll: true}); });
   el.addEventListener("keydown", e => { if (e.key === "Tab") { e.preventDefault(); $("#popOk").focus(); } });
+  zeigen();
+  /* Handys laden eine App aus dem Hintergrund nicht neu. Darum erscheint der Hinweis
+     auch, wenn die App nach mindestens 5 Minuten wieder in den Vordergrund kommt. */
+  let weg = 0;
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) weg = Date.now();
+    else if (weg && Date.now() - weg >= 5 * 60 * 1000) zeigen();
+  });
+  window.addEventListener("pageshow", e => { if (e.persisted) zeigen(); });
 })();
 
 route();
