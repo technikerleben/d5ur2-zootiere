@@ -11,14 +11,15 @@
     "früher Termin",
     "später Termin"
   ],
-  "situation": "Unser Tiermagazin bekommt eine neue Seite. Es fehlt noch ein Text über den Europäischen Biber. Schreibe diesen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.",
+  "situation": "Unser Tiermagazin bekommt eine neue Seite. Es fehlt noch ein Text über den Europäischen Biber. Die Schülerzeitung hat dafür ein Interview im Zoo geführt. Schreibe daraus einen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.",
   "auftrag": [
-    "Lies den Sachtext und betrachte das Foto.",
+    "Lies das Interview und betrachte das Foto.",
+    "Markiere im Interview Sachangaben über alle Biber. Streiche Meinungen und Angaben, die nur Bruno betreffen.",
     "Ordne Stichwörter in deinem Schreibplan.",
     "Schreibe einen zusammenhängenden Text mit Überschrift.",
-    "Nenne Tiername, ein Maß mit Einheit und Bezug, Lebensraum und Nahrung.",
+    "Nenne Tiername, das Maß der Art mit Einheit und Bezug, Lebensraum und Nahrung.",
     "Beschreibe mindestens vier verschiedene äußere Merkmale.",
-    "Schreibe sachlich, im Präsens und in vollständigen Sätzen.",
+    "Schreibe sachlich, im Präsens und in vollständigen Sätzen. Übernimm keine Meinung aus dem Interview.",
     "Prüfe deinen Text. Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt."
   ],
   "hinweise": [
@@ -33,7 +34,6 @@
       "nachweis": "Foto: Tomas Čekanavičius · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
       "alt": "Ein Biber sitzt am Ufer."
     },
-    "text": "Der Europäische Biber lebt an Flüssen und Seen. Er ist ein Nagetier und ernährt sich von Pflanzen. Er frisst zum Beispiel Blätter, junge Triebe und Rinde. Sein Körper ist kräftig und hat kurze Beine. Das dichte Fell ist braun. Am Kopf sitzen kleine Ohren und eine stumpfe Schnauze. Ein erwachsener Biber kann etwa 13 bis 35 Kilogramm wiegen. Sein breiter, flacher Schwanz ist kaum behaart und mit Schuppen bedeckt. Dieser Schwanz heißt auch Kelle. Zwischen den Zehen der Hinterfüße liegen Schwimmhäute. Die großen Schneidezähne sind auf der Vorderseite orange gefärbt.",
     "woerter": [
       [
         "Triebe",
@@ -51,7 +51,7 @@
     "bildhinweis": "Nutze nur Merkmale, die du wirklich siehst. Gewicht, Lebensraum und Nahrung findest du im Text."
   },
   "plan": {
-    "hinweis": "Notiere nur Stichwörter. Deinen vollständigen Text schreibst du erst auf die Schreibseite.",
+    "hinweis": "Notiere nur Stichwörter aus dem Interview. Deinen vollständigen Text schreibst du erst auf die Schreibseite.",
     "felder": [
       {
         "titel": "Überblick",
@@ -61,7 +61,7 @@
             1
           ],
           [
-            "Maß mit Einheit und Bezug",
+            "Maß der Art mit Einheit",
             1
           ]
         ]
@@ -116,7 +116,7 @@
     "kriterien": [
       [
         "K1 Informationen",
-        "Du nennst Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung. Alles passt zum Material."
+        "Du nennst Tiername, das Maß der Art mit Einheit und Bezug, Lebensraum und Nahrung. Alles stimmt mit dem Interview überein und gilt für alle Biber."
       ],
       [
         "K2 Aussehen",
@@ -128,7 +128,7 @@
       ],
       [
         "K4 Sachlich",
-        "Du schreibst sachlich und im Präsens, ohne persönliche Wertungen."
+        "Du schreibst sachlich und im Präsens. Du übernimmst keine Meinung und kein Erlebnis aus dem Interview."
       ],
       [
         "K5 Verständlich",
@@ -147,7 +147,7 @@
     "bloecke": [
       [
         "Planen",
-        "Lies den Text Satz für Satz. Markiere passende Angaben. Ordne sie unter Überblick, Aussehen, Lebensraum und Nahrung."
+        "Lies das Interview Satz für Satz. Frage bei jeder Angabe: Gilt das für alle Biber? Dann markieren. Geht es nur um Bruno, oder sagt jemand seine Meinung? Dann streichen. Ordne die markierten Angaben unter Überblick, Aussehen, Lebensraum und Nahrung."
       ],
       [
         "Schreiben in dieser Reihenfolge",
@@ -159,7 +159,7 @@
       ],
       [
         "Prüfen",
-        "Stehen alle Verben im Präsens? Beginnt jeder Satz groß? Sind Nomen groß? Steht am Ende ein Punkt? Vergleiche schwierige Tierwörter mit dem Material."
+        "Stehen alle Verben im Präsens? Beginnt jeder Satz groß? Sind Nomen groß? Steht am Ende ein Punkt? Vergleiche schwierige Tierwörter mit dem Interview."
       ]
     ],
     "regeln": "Du darfst dir den Auftrag vorlesen lassen. Deinen Text formulierst du selbst. Keine Partnerhilfe und kein Kontroll-Kiosk während der Arbeit."
@@ -169,7 +169,7 @@
       [
         "K1",
         "Informationen",
-        "Tiername, Gewicht mit Einheit und Bezug, Lebensraum, Nahrung"
+        "Tiername, Gewicht mit Einheit und Bezug, Lebensraum, Nahrung; nur Angaben zur Art"
       ],
       [
         "K2",
@@ -184,7 +184,7 @@
       [
         "K4",
         "Sachlich",
-        "überwiegend sachlich, im Präsens, ohne Wertungen"
+        "sachlich, Präsens; nichts Wertendes oder Erlebtes aus dem Interview"
       ],
       [
         "K5",
@@ -203,5 +203,6 @@
       "Auftrag vorgelesen",
       "Nachteilsausgleich: ________"
     ]
-  }
+  },
+  "interview": "biber"
 }

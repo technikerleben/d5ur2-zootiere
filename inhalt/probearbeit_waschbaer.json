@@ -7,14 +7,15 @@
   "tier": "Waschbär",
   "titel": "Deine Probearbeit: Der Waschbär",
   "arbeitszeit": "Arbeitszeit: ______ Minuten (nennt dir deine Lehrkraft)",
-  "situation": "Unsere Klasse gestaltet ein Tierlexikon. Es fehlt noch ein Text über den Waschbären. Schreibe diesen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.",
+  "situation": "Unsere Klasse gestaltet ein Tierlexikon. Es fehlt noch ein Text über den Waschbären. Die Schülerzeitung hat dafür ein Interview im Zoo geführt. Schreibe daraus einen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.",
   "auftrag": [
-    "Lies den Sachtext und betrachte das Foto.",
+    "Lies das Interview und betrachte das Foto.",
+    "Markiere im Interview Sachangaben über alle Waschbären. Streiche Meinungen und Angaben, die nur Rocky betreffen.",
     "Ordne Stichwörter in deinem Schreibplan.",
     "Schreibe einen zusammenhängenden Text mit Überschrift.",
-    "Nenne Tiername, ein Maß mit Einheit und Bezug, Lebensraum und Nahrung.",
+    "Nenne Tiername, das Maß der Art mit Einheit und Bezug, Lebensraum und Nahrung.",
     "Beschreibe mindestens vier verschiedene äußere Merkmale.",
-    "Schreibe sachlich, im Präsens und in vollständigen Sätzen.",
+    "Schreibe sachlich, im Präsens und in vollständigen Sätzen. Übernimm keine Meinung aus dem Interview.",
     "Prüfe deinen Text. Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt."
   ],
   "hinweise": [
@@ -29,7 +30,6 @@
       "nachweis": "Foto: BS Thurner Hof · CC BY-SA 3.0 · Wikimedia Commons · Graustufenfassung",
       "alt": "Ein Waschbär sitzt am Rand eines Gewässers."
     },
-    "text": "Der Waschbär stammt ursprünglich aus Nordamerika. Er lebt gern in Wäldern mit Gewässern, kommt aber auch in Städten vor. Sein Körper ist kräftig und wirkt gedrungen. Das Fell ist meist graubraun. Um seine Augen liegt eine schwarze Zeichnung, die wie eine Maske aussieht. Der buschige Schwanz hat mehrere dunkle Ringe. Ein erwachsener Waschbär wiegt häufig etwa sechs bis sieben Kilogramm. An jeder Pfote sitzen fünf Zehen. Mit den Vorderpfoten kann er Nahrung geschickt greifen. Er frisst pflanzliche und tierische Nahrung, zum Beispiel Früchte, Nüsse, Insekten und Frösche.",
     "woerter": [
       [
         "gedrungen",
@@ -47,7 +47,7 @@
     "bildhinweis": "Nutze nur Merkmale, die du wirklich siehst. Gewicht, Lebensraum und Nahrung findest du im Text."
   },
   "plan": {
-    "hinweis": "Notiere nur Stichwörter. Deinen vollständigen Text schreibst du erst auf die Schreibseite.",
+    "hinweis": "Notiere nur Stichwörter aus dem Interview. Deinen vollständigen Text schreibst du erst auf die Schreibseite.",
     "felder": [
       {
         "titel": "Überblick",
@@ -57,7 +57,7 @@
             1
           ],
           [
-            "Maß mit Einheit und Bezug",
+            "Maß der Art mit Einheit",
             1
           ]
         ]
@@ -112,7 +112,7 @@
     "kriterien": [
       [
         "K1 Informationen",
-        "Du nennst Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung. Alles passt zum Material."
+        "Du nennst Tiername, das Maß der Art mit Einheit und Bezug, Lebensraum und Nahrung. Alles stimmt mit dem Interview überein und gilt für alle Waschbären."
       ],
       [
         "K2 Aussehen",
@@ -124,7 +124,7 @@
       ],
       [
         "K4 Sachlich",
-        "Du schreibst sachlich und im Präsens, ohne persönliche Wertungen."
+        "Du schreibst sachlich und im Präsens. Du übernimmst keine Meinung und kein Erlebnis aus dem Interview."
       ],
       [
         "K5 Verständlich",
@@ -143,7 +143,7 @@
     "bloecke": [
       [
         "Planen",
-        "Lies den Text Satz für Satz. Markiere passende Angaben. Ordne sie unter Überblick, Aussehen, Lebensraum und Nahrung."
+        "Lies das Interview Satz für Satz. Frage bei jeder Angabe: Gilt das für alle Waschbären? Dann markieren. Geht es nur um Rocky, oder sagt jemand seine Meinung? Dann streichen. Ordne die markierten Angaben unter Überblick, Aussehen, Lebensraum und Nahrung."
       ],
       [
         "Schreiben in dieser Reihenfolge",
@@ -155,7 +155,7 @@
       ],
       [
         "Prüfen",
-        "Stehen alle Verben im Präsens? Beginnt jeder Satz groß? Sind Nomen groß? Steht am Ende ein Punkt? Vergleiche schwierige Tierwörter mit dem Material."
+        "Stehen alle Verben im Präsens? Beginnt jeder Satz groß? Sind Nomen groß? Steht am Ende ein Punkt? Vergleiche schwierige Tierwörter mit dem Interview."
       ]
     ],
     "regeln": "Du darfst dir den Auftrag vorlesen lassen. Deinen Text formulierst du selbst. Keine Partnerhilfe und kein Kontroll-Kiosk während der Arbeit."
@@ -164,7 +164,7 @@
     {
       "id": "E3.1",
       "kind": "Informationen (K1)",
-      "lehrkraft": "Tiername, richtige Maßangabe mit Bezug, Lebensraum und Nahrung enthalten",
+      "lehrkraft": "Tiername, Maß der Art mit Bezug, Lebensraum und Nahrung; nichts nur über Rocky",
       "ueben": "Blatt 7"
     },
     {
@@ -182,7 +182,7 @@
     {
       "id": "E3.4",
       "kind": "Sprache (K4, K5)",
-      "lehrkraft": "zusammenhängender, überwiegend sachlicher Text im Präsens aus überwiegend vollständigen, verständlichen Sätzen",
+      "lehrkraft": "zusammenhängend, überwiegend sachlich, Präsens, vollständige Sätze; keine Meinung aus dem Interview",
       "ueben": "Blatt 8"
     },
     {
@@ -209,5 +209,6 @@
       "früher Termin",
       "später Termin"
     ]
-  }
+  },
+  "interview": "waschbaer"
 }

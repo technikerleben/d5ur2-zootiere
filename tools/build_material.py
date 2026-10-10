@@ -572,9 +572,10 @@ def build_pruefung(pg, p: dict, out: Path, ueberlauf: list):
         + "<h2>Deine Situation</h2><div class='sit'>%s</div>" % md(p["situation"])
         + "<h2>Dein Auftrag</h2><ul class='al'>%s</ul>" % "".join("<li><span class='cb'></span><span>%s</span></li>" % md(a) for a in p["auftrag"])
         + "<div class='hw'>%s<div><b>%s</b></div></div>" % ("".join("<div>%s</div>" % md(h) for h in p["hinweise"]), md(p["ablauf"]))))
-    # 2 Material
+    # 2 Material (Interview: eigene, mehrseitige PDF, wird nach Seite 1 eingefügt)
     m = p["material"]
-    seiten.append(page("pm", kopf(meta, "Material: %s" % md(m["titel"]))
+    if not p.get("interview"):
+      seiten.append(page("pm", kopf(meta, "Material: %s" % md(m["titel"]))
         + "<img src='data:image/jpeg;base64,%s' alt='%s'><div class='cred'>%s</div><div class='bh'>%s</div>"
         % (b64(ROOT / m["foto"]["datei"]), html.escape(m["foto"]["alt"]), html.escape(m["foto"]["nachweis"]), md(m.get("bildhinweis", "")))
         + "<div class='txt box'><b>Sachtext</b><br>%s</div>%s" % (md(m["text"]), woerter_html(m))))
@@ -636,13 +637,30 @@ def build_pruefung(pg, p: dict, out: Path, ueberlauf: list):
           + "<div class='mini'><b>Wahlzeit:</b>%s</div><div class='mini'><b>Klassenarbeit, vereinbarter Termin:</b>%s</div>" % (cbs(r["wahl"]), cbs(r["termin"]))
           + "<div class='sig'><div>Lehrkraft:</div><div>Datum:</div></div>"))
 
-    n = len(seiten)
-    body = "".join(sp.replace("{FOOT}", "<div class='foot'><span>%s · %s</span><b>%s · Seite %d/%d</b></div>"
-                              % (FUSS, md(p["art"]), md(kurz), k, n)) for k, sp in enumerate(seiten, 1))
     pdf = out / ("%s.pdf" % p["datei"])
+    ivpdf, m_iv = None, 0
+    if p.get("interview"):
+        from build_interviews import QUELLE, render_interview
+        iv = json.loads(QUELLE.read_text(encoding="utf-8"))
+        t = {x["id"]: x for x in iv["tiere"]}[p["interview"]]
+        ivpdf = pdf.with_name(pdf.stem + "_iv.pdf")
+        render_interview(pg, t, iv["rahmen"], iv["hinweis_fiktiv"], "%s · Material · Interview" % p["art"], ivpdf,
+                         fuss_rechts="%s · Material" % kurz)
+        m_iv = len(fitz.open(ivpdf))
+    n = len(seiten) + m_iv
+    nr = lambda k: k if k == 1 else k + m_iv
+    body = "".join(sp.replace("{FOOT}", "<div class='foot'><span>%s · %s</span><b>%s · Seite %d/%d</b></div>"
+                              % (FUSS, md(p["art"]), md(kurz), nr(k), n)) for k, sp in enumerate(seiten, 1))
     o = render(pg, doc(body, PR_CSS, p["titel"]), pdf)
     if o:
         ueberlauf.append("%s: Überlauf auf Seite %s" % (p["datei"], o))
+    if ivpdf:
+        d = fitz.open(pdf)
+        d.insert_pdf(fitz.open(ivpdf), start_at=1)
+        d.save(pdf.with_name(pdf.stem + "_neu.pdf"))
+        d.close()
+        pdf.with_name(pdf.stem + "_neu.pdf").replace(pdf)
+        ivpdf.unlink()
     return ("%s (S. 1–%d)" % (kurz, n - 1), pdf, font_sizes(pdf, list(range(n - 1))), MIN_PT["nachweis_aufgaben"])
 
 
