@@ -222,8 +222,8 @@
       {
         "id": "E2.1",
         "kurz": "richtige Angaben",
-        "kind": "Meine Sätze passen zu den Angaben aus dem Interview.",
-        "lehrkraft": "alle vier Aussagen passen zu den vorgegebenen Angaben",
+        "kind": "Meine Sätze passen zum Interview und gelten für alle Fischotter.",
+        "lehrkraft": "alle vier Aussagen stimmen mit dem Interview überein; kein Einzelfall über Otto",
         "ueben": "Blatt 5"
       },
       {
@@ -237,14 +237,14 @@
         "id": "E2.3",
         "kurz": "Verben im Präsens",
         "kind": "Meine Verben stehen im Präsens und passen zum Subjekt.",
-        "lehrkraft": "Verben im Präsens und passend zum Subjekt",
+        "lehrkraft": "Verben im Präsens und passend zum Subjekt (auch bei Vergangenheit im Interview)",
         "ueben": "Blatt 6"
       },
       {
         "id": "E2.4",
         "kurz": "genaue Wörter",
         "kind": "Ich mache aus einer Meinung eine genaue Sachangabe.",
-        "lehrkraft": "Meinung/Vergleich weggelassen und durch die genaue Angabe ersetzt",
+        "lehrkraft": "Meinung weggelassen, genaue Angabe aus dem Interview gefunden und verwendet",
         "ueben": "Blatt 5"
       },
       {
@@ -257,40 +257,76 @@
     ],
     "aufgaben": [
       {
-        "titel": "Drei Sätze",
-        "text": "Die Wortgruppen enthalten richtige Angaben. Schreibe daraus drei vollständige Sätze im Präsens.",
-        "feld": "saetze"
+        "titel": "Aus dem Interview wird ein Sachsatz",
+        "text": "Schreibe für das Tierlexikon je einen sachlichen Satz im Präsens über **den Fischotter**. Die Angaben findest du im Interview.",
+        "feld": "saetze_thema"
       },
       {
         "titel": "Aus einer Meinung wird ein Sachsatz",
-        "text": "Das sagt Frau Berger. Schreibe daraus einen sachlichen Satz über den Fischotter. Nutze die genaue Angabe aus dem Interview.",
+        "text": "Das sagt Frau Berger. Suche im Interview die genaue Angabe. Schreibe daraus einen sachlichen Satz.",
         "feld": "verbessern"
       }
     ],
     "vor_zielen": "Prüfe alle vier Sätze.",
     "varianten": {
       "A": {
-        "wortgruppen": [
-          "der Fischotter – an Flüssen und Seen – leben",
-          "sein Kopf – breit und flach – sein",
-          "er – vor allem Fische – fressen"
+        "einleitung": "„Zoo-Reporter“ im Gespräch mit Frau Berger. Sie ist Tierpflegerin und kümmert sich um Otto.",
+        "interview": [
+          [
+            "Wie geht es Otto heute?",
+            "[[Er ist gerade aus dem Wasser gekommen.|X]] [[Sein Fell ist oben dunkelbraun und am Hals heller.|A]] [[Die Beine sind dagegen richtig kurz.|A]] [[Ehrlich gesagt hat er die süßesten Beine der Welt!|W]]"
+          ],
+          [
+            "Was hat er gestern gefressen?",
+            "[[Gestern hat er drei Fische und einen Krebs gefressen.|X]] [[In der Natur fressen Fischotter vor allem Fische.|N]]"
+          ],
+          [
+            "Wo leben Fischotter?",
+            "[[Sie leben an Flüssen und Seen.|L]] [[Dort brauchen sie Ufer mit Verstecken.|L]]"
+          ],
+          [
+            "Und der Kopf?",
+            "[[Der Kopf ist breit und flach,|A]] [[fast wie ein Brett.|V]]"
+          ]
+        ],
+        "themen": [
+          "zum Lebensraum",
+          "zur Nahrung",
+          "zum Kopf"
         ],
         "verbessern": {
-          "satz": "Ehrlich gesagt hat unser Otto die süßesten Beine der Welt!",
-          "material": "Die Beine sind dagegen richtig kurz.",
-          "label": "Im Interview"
+          "satz": "Ehrlich gesagt hat er die süßesten Beine der Welt!",
+          "material": null
         }
       },
       "B": {
-        "wortgruppen": [
-          "der Fischotter – auch an Seen – leben",
-          "sein Körper – lang gestreckt – sein",
-          "er – auch Frösche – fressen"
+        "einleitung": "„Zoo-Reporter“ im Gespräch mit Frau Berger. Sie ist Tierpflegerin und kümmert sich um Otto.",
+        "interview": [
+          [
+            "Was macht Otto am liebsten?",
+            "[[Er taucht nach Fischen.|X]] [[Fischotter haben dafür Schwimmhäute zwischen den Zehen.|A]] [[Mit den langen Tasthaaren spüren sie Fische auch im trüben Wasser.|A]]"
+          ],
+          [
+            "Was frisst ein Fischotter?",
+            "[[Vor allem Fische. Er frisst aber auch Frösche.|N]] [[Letzte Woche hat Otto sogar eine Ente erschreckt!|X]]"
+          ],
+          [
+            "Wo wohnt er in der Natur?",
+            "[[An Flüssen und Seen mit geschützten Ufern.|L]]"
+          ],
+          [
+            "Wie sieht er aus?",
+            "[[Sein Körper ist lang und schmal.|A]] [[Ich finde, der Kopf ist total toll.|W]] [[Er ist breit und flach.|A]]"
+          ]
+        ],
+        "themen": [
+          "zur Nahrung",
+          "zum Lebensraum",
+          "zu den Zehen"
         ],
         "verbessern": {
-          "satz": "Sein Kopf ist so toll, wie ein Brett mit Nase!",
-          "material": "Der Kopf ist breit und flach.",
-          "label": "Im Interview"
+          "satz": "Ich finde, der Kopf ist total toll.",
+          "material": null
         }
       }
     }

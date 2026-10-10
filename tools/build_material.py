@@ -404,6 +404,22 @@ GN_CSS = """
 .zwei .ln{border-bottom:1pt solid var(--soft);height:9.5mm}
 .wg{margin-top:2mm;font-size:15pt}
 .wn{display:inline-block;width:7mm;font-weight:700}
+.feld .ln.kurz{flex:0 0 22mm}
+.zz{font-size:14pt;color:var(--mid);margin-top:1mm}
+table.eo{width:100%;border-collapse:collapse;font-size:14pt;margin-top:1.5mm}
+table.eo th{font-size:14pt;text-align:center;padding:1mm 2mm;border-bottom:1.5pt solid var(--ink);hyphens:manual;line-height:1.1}
+table.eo td{border-bottom:1pt solid var(--line);padding:1.6mm 2mm}
+table.eo td.c{text-align:center;width:25mm}
+table.eo th{padding:1mm 0}
+.ivbox{padding:2.5mm 4mm 2.5mm 15mm;margin:2mm 0 2.5mm;font-size:15pt;line-height:1.38}
+.ivbox .q{font-weight:700}
+.ivbox .par{margin-bottom:.8mm}.ivbox .par.q{margin-top:1.4mm}
+.ivbox .ln{position:relative;white-space:nowrap}
+.ivbox .ln .nr{position:absolute;left:-11mm;width:8mm;text-align:right;font-size:14pt;color:var(--mid);font-weight:400}
+.ivkopf{display:flex;gap:5mm;align-items:flex-start}
+.ivkopf img{width:52mm;height:36mm;object-fit:cover;border-radius:2mm;flex:0 0 auto}
+.ivkopf .cred{font-size:14pt;color:var(--mid)}
+.fik{font-size:14pt;border:1.5pt dashed var(--ink);border-radius:2mm;padding:1mm 3mm;display:inline-block;margin-top:2mm}
 .zielinfo{font-size:14pt;padding:2.5mm 4mm;background:var(--fill);border-radius:2.5mm}
 .foot{font-size:14pt;color:var(--mid)}
 /* Rückmeldeseite (Lehrkraftteil) */
@@ -435,12 +451,36 @@ def gn_felder(feld: str, v: dict) -> str:
             "<div class='wg'><span class='wn'>%d.</span><em>%s</em></div><div class='feld'><span class='ln'></span></div>"
             "<div class='feld'><span class='ln'></span></div>" % (i, md(w)) for i, w in enumerate(v["wortgruppen"], 1)
         )
+    if feld == "verbessern" and not v["verbessern"].get("material"):
+        return (
+            "<div class='wg'><em>„%s“</em></div>"
+            "<div class='feld'><span class='lab'>Die genaue Angabe steht in Zeile</span><span class='ln kurz'></span></div>"
+            "<div class='feld'><span class='lab'>Dein Satz:</span><span class='ln'></span></div><div class='feld'><span class='ln'></span></div>"
+            % md(v["verbessern"]["satz"]))
     if feld == "verbessern":
         return (
             "<div class='wg'><em>„%s“</em></div><div class='wg'><b>%s:</b> <em>%s</em></div>"
             "<div class='feld'><span class='ln'></span></div><div class='feld'><span class='ln'></span></div>"
             % (md(v["verbessern"]["satz"]), v["verbessern"].get("label", "Material"), md(v["verbessern"]["material"]))
         )
+    if feld == "merkmale_zeile":
+        return (
+            "<div class='feld'><span class='lab'>Aus dem Bild:</span><span class='ln'></span></div>"
+            "<div class='feld'><span class='lab'>Aus dem Interview:</span><span class='ln'></span><span class='lab'>Zeile</span><span class='ln kurz'></span></div>"
+        )
+    if feld == "einordnen":
+        sp = v["einordnen_spalten"]
+        rows = "".join("<tr><td>%s</td>%s</tr>" % (md(t), "<td class='c'><span class='cb'></span></td>" * len(sp)) for t, _ in v["einordnen"])
+        return "<table class='eo'><tr><th></th>%s</tr>%s</table>" % ("".join("<th>%s</th>" % md(x) for x in sp), rows)
+    if feld == "ordnen_zeile":
+        return (
+            "<div class='zwei'><div><div class='h'>Lebensraum</div><div class='ln'></div><div class='zz'>Zeile ____</div></div>"
+            "<div><div class='h'>Nahrung</div><div class='ln'></div><div class='zz'>Zeile ____</div></div></div>"
+        )
+    if feld == "saetze_thema":
+        return "".join(
+            "<div class='wg'><span class='wn'>%d.</span>%s</div><div class='feld'><span class='ln'></span></div>"
+            "<div class='feld'><span class='ln'></span></div>" % (i, md(w)) for i, w in enumerate(v["themen"], 1))
     if feld == "merkmale":
         return (
             "<div class='feld'><span class='lab'>Aus dem Bild:</span><span class='ln'></span></div>"
@@ -478,6 +518,8 @@ def gn_pages(c: dict, var: str) -> str:
         % (e, e, md(n["titel"]), e, var),
         "<div class='namen'><div>Name:</div><div class='d'>Datum:</div></div>",
     ]
+    if v.get("interview"):
+        return gn_pages_interview(c, var, n, e, v, kurz)
     if v.get("text"):
         p1.append(
             "<div class='matbox box'><img src='data:image/jpeg;base64,%s' alt='%s'><div><div class='t'>%s</div><div class='cred'>%s</div></div></div>"
@@ -516,6 +558,63 @@ def gn_pages(c: dict, var: str) -> str:
     )
     return "".join(p1) + p2
 
+
+
+GN_ZEILEN_JS = """<script>
+document.fonts.ready.then(()=>{let n=0;document.querySelectorAll('.ivbox .par').forEach(p=>{const ws=[...p.querySelectorAll('.w')];
+const z=[];let top=null;ws.forEach(w=>{const t=Math.round(w.getBoundingClientRect().top);if(top===null||Math.abs(t-top)>4){z.push([]);top=t;}z[z.length-1].push(w);});
+p.replaceChildren(...z.map(r=>{n+=1;const d=document.createElement('div');d.className='ln';if(n%5===0){const s=document.createElement('span');s.className='nr';s.textContent=n;d.appendChild(s);}
+r.forEach((w,i)=>{if(i)d.appendChild(document.createTextNode(' '));d.appendChild(w);});return d;}));});document.body.dataset.zeilen=n;});
+</script>"""
+
+
+def rueckmeldung_page(c: dict, var: str, seite: int) -> str:
+    n, e = c["nachweis"], c["etappe"]
+    rows = "".join(
+        "<tr><td><span class='id'>%s</span> %s<span class='krit'>Erreicht, wenn: %s</span></td>"
+        "<td class='c'><span class='cb'></span></td><td class='c'><span class='cb'></span></td>"
+        "<td class='u'>%s</td><td class='e'></td></tr>"
+        % (z["id"], md(z["kind"]), md(z["lehrkraft"]), md(z["ueben"]))
+        for z in n["ziele"]
+    )
+    nxt = "Etappe %d" % (e + 1) if e < 3 else "die Wahlzeit"
+    return (
+        "<div class='page rm'><div class='grow'>"
+        "<div class='gkopf'><div><div class='meta'>Rückmeldung der Lehrkraft</div><h1>So weit bist du</h1></div><div class='var'>Nachweis %d%s</div></div>"
+        "<table class='ziele'><tr><th>Ziel</th><th>gezeigt</th><th>noch offen</th><th>Übe mit</th><th>erneut gezeigt am</th></tr>%s</table>"
+        "<div class='ergebnis'><div class='sum box'>Ergebnis<b>___ / 5</b>Ziele gezeigt</div>"
+        "<div class='ent box'><div><span class='cb'></span><b>4 oder 5 Ziele:</b> Du gehst weiter zu %s.</div>"
+        "<div><span class='cb'></span><b>Weniger als 4:</b> Übe die offenen Ziele. Dann zeigst du sie noch einmal.</div>"
+        "<div class='sig'><div>Lehrkraft:</div><div>Datum:</div></div></div></div>"
+        "<div class='fb'><div class='h'>Das gelingt dir schon:</div><div class='ln'></div><div class='ln'></div></div>"
+        "<div class='fb'><div class='h'>Dein nächster Schritt:</div><div class='ln'></div><div class='ln'></div></div>"
+        "</div><div class='foot'><span>%s · Etappe %d</span><b>Nachweis %d%s · Seite %d</b></div></div>"
+        % (e, var, rows, nxt, FUSS, e, e, var, seite)
+    )
+
+
+def gn_pages_interview(c: dict, var: str, n: dict, e: int, v: dict, kurz: str) -> str:
+    """Gelingensnachweis mit Interviewauszug: S. 1 Material (Zeilennummern), S. 2 Aufgaben, S. 3 Rückmeldung."""
+    from build_interviews import wort_spans
+    z = [0]
+    pars = "".join("<div class='par q'>%s</div><div class='par'>%s</div>" % (wort_spans(q, True, z), wort_spans(a, False, z))
+                   for q, a in v["interview"])
+    kopf = lambda h1: ("<div class='gkopf'><div><div class='meta'>Gelingensnachweis %d · Etappe %d</div><h1>%s</h1></div><div class='var'>Nachweis %d%s</div></div>"
+                       % (e, e, h1, e, var))
+    fuss = lambda k: "<div class='foot'><span>%s · Etappe %d</span><b>Nachweis %d%s · Seite %d</b></div>" % (FUSS, e, e, var, k)
+    alle = ["<div class='auf box'><h2><span class='n'>%d</span>%s</h2>%s%s</div>" % (i, md(a["titel"]), md(a["text"]), gn_felder(a["feld"], v))
+            for i, a in enumerate(n["aufgaben"], 1)]
+    k1 = n.get("aufgaben_seite1", 0)
+    auf = "".join(alle[k1:])
+    p1 = ("<div class='page'><div class='grow'>%s<div class='namen'><div>Name:</div><div class='d'>Datum:</div></div>"
+          "<div class='ivkopf'><img src='data:image/jpeg;base64,%s' alt='%s'><div><div class='sit'>%s</div><div class='cred'>%s</div>"
+          "<div class='fik'>Das Interview ist ausgedacht. Die Angaben über das Tier stimmen.</div></div></div>"
+          "<div class='ivbox box'>%s</div>%s</div>%s</div>"
+          % (kopf(md(n["titel"]) + " · Material"), b64(ROOT / c["foto"]["datei"]), html.escape(c["foto"]["alt"]), md(v["einleitung"]),
+             html.escape(c["foto"]["nachweis"]), pars, "".join(alle[:k1]), fuss(1)))
+    p2 = ("<div class='page'><div class='grow'>%s%s<div class='zielinfo'>%s<b>Fünf Ziele:</b> %s. Vier von fünf = 80 %%. Dann gehst du weiter. Es gibt keine Note.</div></div>%s</div>"
+          % (kopf("Deine Aufgaben"), auf, ("<b>%s</b> " % md(n["vor_zielen"])) if n.get("vor_zielen") else "", kurz, fuss(2)))
+    return p1 + p2 + rueckmeldung_page(c, var, 3) + GN_ZEILEN_JS
 
 
 # ---------------------------------------------------------------- Probearbeit / Klassenarbeit (A4)

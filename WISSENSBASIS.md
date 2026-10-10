@@ -120,7 +120,7 @@ Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er i
 | Materialbasis: Interviews | A4, fließend über 1–2 Seiten, Zeilennummern alle 5 Zeilen, Fragen fett, Foto, Wörterhilfe, Hinweis „ausgedacht“ | auf A5 verkleinert (Prüfungen: A4) | 15 pt, nichts unter 14 pt |
 | Druckpakete | `ausgabe/pakete/schueler` (je Etappe, Förder-Etappe, Probearbeit, KA V1/V2: erst Material, dann Blätter) und `ausgabe/pakete/lehrkraft` (Merkblätter + GN als Kopiervorlagen, Zeilenbelege, Strategiekarten, Lernweg, Wahlphase, Inputs) | – | – |
 | Hilfekarten (Wörterhilfe, Rückmeldekarte) | A4 hoch | auf A5 verkleinert | ≥ 14 pt |
-| Gelingensnachweis A/B | A4: S. 1 Aufgaben (Kind schreibt aufs Blatt), S. 2 Rückmeldung der Lehrkraft | A4 Originalgröße | Aufgaben ≥ 14 pt |
+| Gelingensnachweis A/B | A4, 3 Seiten: S. 1 Interviewauszug (Foto, Zeilennummern, ggf. erste Aufgabe), S. 2 Aufgaben (Kind schreibt aufs Blatt, Belege mit Zeile), S. 3 Rückmeldung der Lehrkraft | A4 Originalgröße | Aufgaben ≥ 14 pt |
 | Probearbeit, Klassenarbeit | A4, 7 Seiten (s. Abschnitt 10) | A4 Originalgröße | Kinderseiten ≥ 14 pt |
 | Wahlphase/Projekte | A4 | A4 Originalgröße | ≥ 12 pt |
 | Lernweg | A4, eine Seite | A4 Originalgröße | ≥ 12 pt |
@@ -324,16 +324,18 @@ Rahmen: Die Schülerzeitung „Zoo-Reporter“ war im Zoo und hat mit Tierpflege
 | ID | Kind-Formulierung | erreicht, wenn | Übe mit |
 |---|---|---|---|
 | E1.1 | Ich nenne zwei verschiedene äußere Merkmale genau. | zwei verschiedene äußere Merkmale richtig und genau benannt | Blatt 2 |
-| E1.2 | Ich zeige, was ich im Bild und was ich im Interview gefunden habe. | je ein Beleg aus Bild und Interview richtig gezeigt | Blatt 3 |
+| E1.2 | Ich zeige, was im Bild und was im Interview steht. | je ein Beleg aus Bild und Interview (mit Zeile) | Blatt 3 |
 | E1.3 | Ich gebe an, wie lang Fischotter sind – mit Einheit. | 60–90 cm ohne Schwanz, mit Einheit; Ottos 80 cm als Einzelfall erkannt | Blatt 3 |
-| E1.4 | Ich finde Lebensraum und Nahrung im Interview. | Lebensraum und Nahrung dem Interview richtig entnommen | Blatt 3 |
-| E1.5 | Ich ordne Sachangaben unter passende Überschriften. | Sachangaben passend zugeordnet; keine Meinung, kein Einzelfall | Blatt 4 |
+| E1.4 | Ich finde Lebensraum und Nahrung im Interview. | beides richtig eingeordnet, mit Zeile | Blatt 3–4 |
+| E1.5 | Ich erkenne Sachangabe, Einzelfall und Meinung. | 4 von 5 Aussagen richtig | Blatt 3–4 |
 
-Aufgaben: 1) Merkmale und Quellen: Notiere zwei verschiedene äußere Merkmale: eines aus dem Bild, eines aus dem Interview. Kreise die Bildstelle ein. Unterstreiche die Interviewstelle. · 2) Das Maß: Im Interview stehen zwei Längen. Notiere, wie lang Fischotter sind. Kreuze an, für wen die 80 cm gelten. · 3) Informationen ordnen: Notiere unter jeder Überschrift eine Sachangabe aus dem Interview.
+Aufgaben: 1) Merkmale und Quellen: Notiere zwei verschiedene äußere Merkmale: eines aus dem Bild, eines aus dem Interview. Schreibe die Zeile dazu. · 2) Das Maß: Im Interview stehen zwei Längen. Notiere, wie lang Fischotter sind. Kreuze an, für wen die 80 cm gelten. · 3) Was gehört in die Beschreibung?: Kreuze an: Gilt die Aussage für alle Fischotter (Sachangabe), nur für Otto oder ist sie eine Meinung? · 4) Lebensraum und Nahrung: Notiere unter jeder Überschrift eine Sachangabe aus dem Interview. Schreibe die Zeile dazu.
 
-- Variante A Materialtext: **Wo leben Fischotter?** An Flüssen und Seen, gut versteckt am Ufer. **Was frisst Otto?** Einen Eimer Fisch am Tag. Fischotter fressen vor allem Fische, Frösche und Krebse. **Wie sieht er aus?** Der Körper ist lang und schmal, die Beine sind kurz. Er ist der schönste Otter im Zoo! **Wie groß ist Otto?** Otto ist 80 Zentimeter lang. Fischotter sind ohne Schwanz meistens 60 bis 90 Zentimeter lang.
+- Variante A Interviewauszug (S. 1, Zeilennummern): **Wo leben Fischotter?** [[In der Natur leben Fischotter an Flüssen und Seen. Sie brauchen Ufer mit vielen Verstecken.|L]] [[Unser Otto hat dafür eine Höhle aus alten Wurzeln.|X]] **Was frisst Otto?** [[Jeden Morgen bekommt er einen Eimer Fisch.|X]] [[Fischotter fressen vor allem Fische, aber auch Frösche und Krebse.|N]] **Wie sieht ein Fischotter aus?** [[Sein Körper ist lang und schmal, die Beine sind kurz.|A]] [[Das Fell ist oben dunkelbraun und sehr dicht.|A]] [[Ich finde, Otto hat das schönste Fell im ganzen Zoo!|W]] **Und am Kopf?** [[Der Kopf ist breit und flach.|A]] [[Die Ohren sind ganz klein.|A]] **Wie groß ist Otto?** [[Letzte Woche haben wir ihn gemessen: 80 Zentimeter ohne Schwanz.|X]] [[Fischotter sind meistens 60 bis 90 Zentimeter lang, ohne Schwanz.|M]]
+  - Einordnen (Sachangabe/nur Otto/Meinung): Fischotter fressen vor allem Fische. → Sachangabe; Otto hat eine Höhle aus alten Wurzeln. → nur Otto; Otto hat das schönste Fell im ganzen Zoo. → Meinung; Die Ohren sind ganz klein. → Sachangabe; Jeden Morgen bekommt Otto einen Eimer Fisch. → nur Otto
 
-- Variante B Materialtext: **Was frisst Otto?** Am liebsten Fisch. Fischotter fressen hauptsächlich Fische, Frösche und Krebse. **Wie lang ist Otto?** Wir haben 80 Zentimeter gemessen, ohne Schwanz. Fischotter sind meistens 60 bis 90 Zentimeter lang. **Woran erkennt man einen Fischotter?** Der Kopf ist breit und flach. Ehrlich gesagt ist Otto der süßeste Otter der Welt! **Wo wohnen Fischotter?** An Flüssen und Seen.
+- Variante B Interviewauszug (S. 1, Zeilennummern): **Frau Berger, was macht Otto gerade?** [[Er schwimmt seine Runden. Das macht er jeden Mittag.|X]] [[Zwischen den Zehen hat er Schwimmhäute.|A]] [[Ich finde, er ist der beste Schwimmer der Welt!|W]] **Wo leben Fischotter sonst?** [[An Flüssen und Seen.|L]] [[Am Ufer verstecken sie sich unter Büschen und Wurzeln.|L]] **Was fressen sie?** [[Hauptsächlich Fische. Frösche und Krebse fangen sie auch.|N]] [[Otto mag am liebsten Forellen.|X]] **Woran erkennt man einen Fischotter?** [[An der Schnauze hat er lange Tasthaare.|A]] [[Der Körper ist lang, die Beine sind kurz.|A]] **Wie lang ist Otto?** [[Otto ist 80 Zentimeter lang, ohne Schwanz.|X]] [[Bei Fischottern sind es meistens 60 bis 90 Zentimeter. Der Schwanz kommt noch dazu.|M]]
+  - Einordnen (Sachangabe/nur Otto/Meinung): Fischotter leben an Flüssen und Seen. → Sachangabe; Otto mag am liebsten Forellen. → nur Otto; Otto ist der beste Schwimmer der Welt. → Meinung; An der Schnauze hat er lange Tasthaare. → Sachangabe; Otto schwimmt jeden Mittag seine Runden. → nur Otto
 
 ### Etappe 2 · Sachlich und genau formulieren
 
@@ -401,17 +403,19 @@ Aufgaben: 1) Merkmale und Quellen: Notiere zwei verschiedene äußere Merkmale: 
 
 | ID | Kind-Formulierung | erreicht, wenn | Übe mit |
 |---|---|---|---|
-| E2.1 | Meine Sätze passen zu den Angaben aus dem Interview. | alle vier Aussagen passen zu den vorgegebenen Angaben | Blatt 5 |
+| E2.1 | Meine Sätze passen zum Interview und gelten für alle Fischotter. | alle vier Aussagen stimmen mit dem Interview überein; kein Einzelfall über Otto | Blatt 5 |
 | E2.2 | Ich schreibe vollständige, verständliche Sätze. | alle vier Aussagen als vollständige, verständliche Sätze formuliert | Blatt 6 |
-| E2.3 | Meine Verben stehen im Präsens und passen zum Subjekt. | Verben im Präsens und passend zum Subjekt | Blatt 6 |
-| E2.4 | Ich mache aus einer Meinung eine genaue Sachangabe. | Meinung/Vergleich weggelassen und durch die genaue Angabe ersetzt | Blatt 5 |
+| E2.3 | Meine Verben stehen im Präsens und passen zum Subjekt. | Verben im Präsens und passend zum Subjekt (auch bei Vergangenheit im Interview) | Blatt 6 |
+| E2.4 | Ich mache aus einer Meinung eine genaue Sachangabe. | Meinung weggelassen, genaue Angabe aus dem Interview gefunden und verwendet | Blatt 5 |
 | E2.5 | Ich schreibe Satzanfänge und Nomen groß und setze Punkte. | Satzanfänge und Nomen groß sowie Satzschlusspunkte in den vier Sätzen | Blatt 6 |
 
-Aufgaben: 1) Drei Sätze: Die Wortgruppen enthalten richtige Angaben. Schreibe daraus drei vollständige Sätze im Präsens. · 2) Aus einer Meinung wird ein Sachsatz: Das sagt Frau Berger. Schreibe daraus einen sachlichen Satz über den Fischotter. Nutze die genaue Angabe aus dem Interview.
+Aufgaben: 1) Aus dem Interview wird ein Sachsatz: Schreibe für das Tierlexikon je einen sachlichen Satz im Präsens über **den Fischotter**. Die Angaben findest du im Interview. · 2) Aus einer Meinung wird ein Sachsatz: Das sagt Frau Berger. Suche im Interview die genaue Angabe. Schreibe daraus einen sachlichen Satz.
 
-- Variante A: Wortgruppen der Fischotter – an Flüssen und Seen – leben | sein Kopf – breit und flach – sein | er – vor allem Fische – fressen; verbessern „Ehrlich gesagt hat unser Otto die süßesten Beine der Welt!“ (Material: Die Beine sind dagegen richtig kurz.)
+- Variante A Interviewauszug (S. 1, Zeilennummern): **Wie geht es Otto heute?** [[Er ist gerade aus dem Wasser gekommen.|X]] [[Sein Fell ist oben dunkelbraun und am Hals heller.|A]] [[Die Beine sind dagegen richtig kurz.|A]] [[Ehrlich gesagt hat er die süßesten Beine der Welt!|W]] **Was hat er gestern gefressen?** [[Gestern hat er drei Fische und einen Krebs gefressen.|X]] [[In der Natur fressen Fischotter vor allem Fische.|N]] **Wo leben Fischotter?** [[Sie leben an Flüssen und Seen.|L]] [[Dort brauchen sie Ufer mit Verstecken.|L]] **Und der Kopf?** [[Der Kopf ist breit und flach,|A]] [[fast wie ein Brett.|V]]
+  - Sachsätze zu: zum Lebensraum, zur Nahrung, zum Kopf; Meinung umformen: „Ehrlich gesagt hat er die süßesten Beine der Welt!“
 
-- Variante B: Wortgruppen der Fischotter – auch an Seen – leben | sein Körper – lang gestreckt – sein | er – auch Frösche – fressen; verbessern „Sein Kopf ist so toll, wie ein Brett mit Nase!“ (Material: Der Kopf ist breit und flach.)
+- Variante B Interviewauszug (S. 1, Zeilennummern): **Was macht Otto am liebsten?** [[Er taucht nach Fischen.|X]] [[Fischotter haben dafür Schwimmhäute zwischen den Zehen.|A]] [[Mit den langen Tasthaaren spüren sie Fische auch im trüben Wasser.|A]] **Was frisst ein Fischotter?** [[Vor allem Fische. Er frisst aber auch Frösche.|N]] [[Letzte Woche hat Otto sogar eine Ente erschreckt!|X]] **Wo wohnt er in der Natur?** [[An Flüssen und Seen mit geschützten Ufern.|L]] **Wie sieht er aus?** [[Sein Körper ist lang und schmal.|A]] [[Ich finde, der Kopf ist total toll.|W]] [[Er ist breit und flach.|A]]
+  - Sachsätze zu: zur Nahrung, zum Lebensraum, zu den Zehen; Meinung umformen: „Ich finde, der Kopf ist total toll.“
 
 ### Etappe 3 · Eine Tierbeschreibung schreiben und prüfen
 
@@ -609,7 +613,7 @@ Zwei Kinder; kurze Texte möglich. Gleiche Etappen und Blattnummern mit „F“,
 - **Blatt 2F · Was siehst du auf dem Foto?:** [bild] Schau dir das Foto genau an. Die Zahlen zeigen auf Körperteile. | [zuordnen] Welche Zahl gehört zu welchem Wort? Schreibe die Zahl in das Kästchen. Lösung: Nase=1, Auge=2, Ohr=3, Tasthaare=4, Fell=5 | [luecke] Fülle die Lücken. Nutze den Wortspeicher. Lösung: klein, Tasthaare
 - **Blatt 3F · Was steht im Interview?:** [hinweis] Lies das Interview. Lies Satz für Satz. Zeige mit dem Finger mit. | [luecke] Fülle die Lücken. Nutze den Wortspeicher. Lösung: Flüssen, Seen, Fische, Zentimeter | [zuordnen] **Wer ist gemeint?** Schreibe die Zahl in das Kästchen. Lösung: Fischotter leben an Flüssen.=1, Otto wohnt im Zoo.=2, Otto ist 80 Zentimeter lang.=2, Fischotter fressen Krebse.=1 | [ankreuzen] **Sprachdetektiv:** Welche Wörter sind Verben? Kreuze **2** an. Richtig: lebt, frisst
 - **Blatt 4F · Ordne die Informationen:** [sortieren] Schreibe jedes Wort unter die richtige Überschrift. Streiche das Wort im Wortspeicher durch. Lösung: Aussehen: kurze Beine, dunkelbraunes Fell; Lebensraum: Flüsse, Seen; Nahrung: Fische, Krebse | [ankreuzen] Wohin gehört „langer Körper“? Kreuze an. Richtig: Aussehen
-- **GN1F:** F1.1 Ich erkenne genaue Wörter. (erreicht, wenn zwei genaue Sätze angekreuzt, keine Meinung) · F1.2 Ich benenne Körperteile auf dem Foto. (erreicht, wenn 3 von 4 Zahlen richtig) · F1.3 Ich finde den Lebensraum im Interview. (erreicht, wenn Flüsse und Seen richtig eingesetzt) · F1.4 Ich finde die Nahrung im Interview. (erreicht, wenn Fische richtig eingesetzt) · F1.5 Ich ordne Angaben unter Überschriften. (erreicht, wenn 5 von 6 Wörtern richtig sortiert)
+- **GN1F:** F1.1 Ich erkenne genaue Angaben über alle Fischotter. (erreicht, wenn genaue Sätze angekreuzt; „Wer ist gemeint?“ richtig) · F1.2 Ich benenne Körperteile auf dem Foto. (erreicht, wenn 3 von 4 Zahlen richtig) · F1.3 Ich finde den Lebensraum im Interview. (erreicht, wenn Flüsse und Seen richtig eingesetzt) · F1.4 Ich finde die Nahrung im Interview. (erreicht, wenn Fische richtig eingesetzt) · F1.5 Ich ordne Angaben unter Überschriften. (erreicht, wenn 5 von 6 Wörtern richtig sortiert)
 
 ### Etappe 2F · Sachlich und genau formulieren
 
@@ -618,7 +622,7 @@ Zwei Kinder; kurze Texte möglich. Gleiche Etappen und Blattnummern mit „F“,
 - Bildstellen: 1, 2, 3, 4, 5 (Ein Fischotter im Gras. Die Zahlen 1 bis 5 zeigen auf Nase, Auge, Ohr, Tasthaare und Fell.)
 - **Blatt 5F · Treffende Wörter:** [ankreuzen] Wie ist das Fell oben? Kreuze das **genaue** Wort an. Richtig: dunkelbraun | [ankreuzen] Wie ist der Kopf? Kreuze die **genaue** Angabe an. Richtig: breit und flach | [ankreuzen] Frau Berger sagt: „Otto ist der süßeste Otter der Welt!“ **Info oder Meinung?** Richtig: Meinung | [luecke] Mache den Satz genauer. Nutze den Wortspeicher. Lösung: Fischotter, schwimmt | [zuordnen] Was bedeutet das Wort? Schreibe die Zahl in das Kästchen. Lösung: Tasthaare=1, Schwimmhäute=2
 - **Blatt 6F · Sachliche Sätze:** [ordnen] Bilde einen Satz aus den Wortkarten. Schreibe ihn auf die Linie. Lösung: Seine Beine sind kurz. | [ordnen] Bilde einen Satz aus den Wortkarten. Schreibe ihn auf die Linie. Lösung: Der Fischotter frisst auch Krebse. | [ankreuzen] Welcher Satz steht in der Gegenwart (Präsens)? Kreuze an. Richtig: Der Fischotter lebt am Wasser. | [luecke] Setze das passende Verb ein. Lösung: frisst, fressen | [ankreuzen] Welcher Satz ist richtig geschrieben? Kreuze an. Richtig: Der Fischotter lebt am See.
-- **GN2F:** F2.1 Ich wähle genaue Wörter. (erreicht, wenn genaue Angabe statt Wertung angekreuzt) · F2.2 Ich bilde einen Satz aus Wortkarten. (erreicht, wenn Satz vollständig und in sinnvoller Reihenfolge) · F2.3 Ich wähle das Verb im Präsens. (erreicht, wenn Präsensform richtig gewählt bzw. eingesetzt) · F2.4 Ich erkenne große Anfänge, Nomen und Punkt. (erreicht, wenn richtig geschriebenen Satz angekreuzt) · F2.5 Ich kenne ein Fachwort. (erreicht, wenn Fachwort richtig zugeordnet)
+- **GN2F:** F2.1 Ich wähle genaue Wörter und erkenne eine Meinung. (erreicht, wenn genaues Wort und Meinung richtig angekreuzt) · F2.2 Ich bilde einen Satz aus Wortkarten. (erreicht, wenn Satz vollständig und in sinnvoller Reihenfolge) · F2.3 Ich wähle das Verb im Präsens. (erreicht, wenn Präsensform richtig gewählt bzw. eingesetzt) · F2.4 Ich erkenne große Anfänge, Nomen und Punkt. (erreicht, wenn richtig geschriebenen Satz angekreuzt) · F2.5 Ich kenne ein Fachwort. (erreicht, wenn Fachwort richtig zugeordnet)
 
 ### Etappe 3F · Eine Tierbeschreibung schreiben und prüfen
 

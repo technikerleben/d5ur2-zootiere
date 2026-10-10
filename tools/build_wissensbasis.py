@@ -131,7 +131,7 @@ Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er i
 | Materialbasis: Interviews | A4, fließend über 1–2 Seiten, Zeilennummern alle 5 Zeilen, Fragen fett, Foto, Wörterhilfe, Hinweis „ausgedacht“ | auf A5 verkleinert (Prüfungen: A4) | 15 pt, nichts unter 14 pt |
 | Druckpakete | `ausgabe/pakete/schueler` (je Etappe, Förder-Etappe, Probearbeit, KA V1/V2: erst Material, dann Blätter) und `ausgabe/pakete/lehrkraft` (Merkblätter + GN als Kopiervorlagen, Zeilenbelege, Strategiekarten, Lernweg, Wahlphase, Inputs) | – | – |
 | Hilfekarten (Wörterhilfe, Rückmeldekarte) | A4 hoch | auf A5 verkleinert | ≥ 14 pt |
-| Gelingensnachweis A/B | A4: S. 1 Aufgaben (Kind schreibt aufs Blatt), S. 2 Rückmeldung der Lehrkraft | A4 Originalgröße | Aufgaben ≥ 14 pt |
+| Gelingensnachweis A/B | A4, 3 Seiten: S. 1 Interviewauszug (Foto, Zeilennummern, ggf. erste Aufgabe), S. 2 Aufgaben (Kind schreibt aufs Blatt, Belege mit Zeile), S. 3 Rückmeldung der Lehrkraft | A4 Originalgröße | Aufgaben ≥ 14 pt |
 | Probearbeit, Klassenarbeit | A4, 7 Seiten (s. Abschnitt 10) | A4 Originalgröße | Kinderseiten ≥ 14 pt |
 | Wahlphase/Projekte | A4 | A4 Originalgröße | ≥ 12 pt |
 | Lernweg | A4, eine Seite | A4 Originalgröße | ≥ 12 pt |
@@ -224,6 +224,7 @@ def interviews_text():
 
 
 def etappen():
+    import re as _re
     out = ["\n## 8 · Etappen im Detail ⚙\n", interviews_text()]
     kiosk = j("kiosk.json")["blaetter"]
     for n in (1, 2, 3):
@@ -288,6 +289,12 @@ def etappen():
                 out.append(f"| {z['id']} | {z['kind']} | {z['lehrkraft']} | {z['ueben']} |")
             out.append("\nAufgaben: " + " · ".join(f"{i}) {a['titel']}: {a['text']}" for i, a in enumerate(nw["aufgaben"], 1)))
             for v, c in nw["varianten"].items():
+                if c.get("interview"):
+                    out.append(f"\n- Variante {v} Interviewauszug (S. 1, Zeilennummern): " + " ".join(f"**{q}** {_re.sub(r'\\[\\[(.+?)\\|(\\w)\\]\\]', r'⟦\\1|\\2⟧', a)}" for q, a in c["interview"]))
+                    if c.get("einordnen"):
+                        out.append(f"  - Einordnen (Sachangabe/nur Otto/Meinung): " + "; ".join(f"{t} → {k}" for t, k in c["einordnen"]))
+                    if c.get("themen"):
+                        out.append(f"  - Sachsätze zu: {', '.join(c['themen'])}; Meinung umformen: „{c['verbessern']['satz']}“")
                 if c.get("text"):
                     out.append(f"\n- Variante {v} Materialtext: {c['text']}")
                 if c.get("wortgruppen"):

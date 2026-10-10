@@ -230,8 +230,8 @@
       {
         "id": "E1.2",
         "kurz": "Quellen",
-        "kind": "Ich zeige, was ich im Bild und was ich im Interview gefunden habe.",
-        "lehrkraft": "je ein Beleg aus Bild und Interview richtig gezeigt",
+        "kind": "Ich zeige, was im Bild und was im Interview steht.",
+        "lehrkraft": "je ein Beleg aus Bild und Interview (mit Zeile)",
         "ueben": "Blatt 3"
       },
       {
@@ -245,22 +245,22 @@
         "id": "E1.4",
         "kurz": "Lebensraum und Nahrung",
         "kind": "Ich finde Lebensraum und Nahrung im Interview.",
-        "lehrkraft": "Lebensraum und Nahrung dem Interview richtig entnommen",
-        "ueben": "Blatt 3"
+        "lehrkraft": "beides richtig eingeordnet, mit Zeile",
+        "ueben": "Blatt 3–4"
       },
       {
         "id": "E1.5",
-        "kurz": "Ordnen",
-        "kind": "Ich ordne Sachangaben unter passende Überschriften.",
-        "lehrkraft": "Sachangaben passend zugeordnet; keine Meinung, kein Einzelfall",
-        "ueben": "Blatt 4"
+        "kurz": "Sachangaben erkennen",
+        "kind": "Ich erkenne Sachangabe, Einzelfall und Meinung.",
+        "lehrkraft": "4 von 5 Aussagen richtig",
+        "ueben": "Blatt 3–4"
       }
     ],
     "aufgaben": [
       {
         "titel": "Merkmale und Quellen",
-        "text": "Notiere zwei verschiedene äußere Merkmale: eines aus dem Bild, eines aus dem Interview. Kreise die Bildstelle ein. Unterstreiche die Interviewstelle.",
-        "feld": "merkmale"
+        "text": "Notiere zwei verschiedene äußere Merkmale: eines aus dem Bild, eines aus dem Interview. Schreibe die Zeile dazu.",
+        "feld": "merkmale_zeile"
       },
       {
         "titel": "Das Maß",
@@ -268,31 +268,135 @@
         "feld": "mass"
       },
       {
-        "titel": "Informationen ordnen",
-        "text": "Notiere unter jeder Überschrift eine Sachangabe aus dem Interview.",
-        "feld": "ordnen"
+        "titel": "Was gehört in die Beschreibung?",
+        "text": "Kreuze an: Gilt die Aussage für alle Fischotter (Sachangabe), nur für Otto oder ist sie eine Meinung?",
+        "feld": "einordnen"
+      },
+      {
+        "titel": "Lebensraum und Nahrung",
+        "text": "Notiere unter jeder Überschrift eine Sachangabe aus dem Interview. Schreibe die Zeile dazu.",
+        "feld": "ordnen_zeile"
       }
     ],
     "varianten": {
       "A": {
-        "text": "**Wo leben Fischotter?** An Flüssen und Seen, gut versteckt am Ufer. **Was frisst Otto?** Einen Eimer Fisch am Tag. Fischotter fressen vor allem Fische, Frösche und Krebse. **Wie sieht er aus?** Der Körper ist lang und schmal, die Beine sind kurz. Er ist der schönste Otter im Zoo! **Wie groß ist Otto?** Otto ist 80 Zentimeter lang. Fischotter sind ohne Schwanz meistens 60 bis 90 Zentimeter lang.",
+        "einleitung": "„Zoo-Reporter“ im Gespräch mit Frau Berger. Sie ist Tierpflegerin und kümmert sich um Otto.",
+        "interview": [
+          [
+            "Wo leben Fischotter?",
+            "[[In der Natur leben Fischotter an Flüssen und Seen. Sie brauchen Ufer mit vielen Verstecken.|L]] [[Unser Otto hat dafür eine Höhle aus alten Wurzeln.|X]]"
+          ],
+          [
+            "Was frisst Otto?",
+            "[[Jeden Morgen bekommt er einen Eimer Fisch.|X]] [[Fischotter fressen vor allem Fische, aber auch Frösche und Krebse.|N]]"
+          ],
+          [
+            "Wie sieht ein Fischotter aus?",
+            "[[Sein Körper ist lang und schmal, die Beine sind kurz.|A]] [[Das Fell ist oben dunkelbraun und sehr dicht.|A]] [[Ich finde, Otto hat das schönste Fell im ganzen Zoo!|W]]"
+          ],
+          [
+            "Und am Kopf?",
+            "[[Der Kopf ist breit und flach.|A]] [[Die Ohren sind ganz klein.|A]]"
+          ],
+          [
+            "Wie groß ist Otto?",
+            "[[Letzte Woche haben wir ihn gemessen: 80 Zentimeter ohne Schwanz.|X]] [[Fischotter sind meistens 60 bis 90 Zentimeter lang, ohne Schwanz.|M]]"
+          ]
+        ],
         "mass": [
           "Fischotter sind ohne Schwanz:",
           "Die 80 Zentimeter gelten für:",
           "alle Fischotter",
           "nur Otto"
+        ],
+        "einordnen_spalten": [
+          "Sach­angabe",
+          "nur Otto",
+          "Meinung"
+        ],
+        "einordnen": [
+          [
+            "Fischotter fressen vor allem Fische.",
+            "Sachangabe"
+          ],
+          [
+            "Otto hat eine Höhle aus alten Wurzeln.",
+            "nur Otto"
+          ],
+          [
+            "Otto hat das schönste Fell im ganzen Zoo.",
+            "Meinung"
+          ],
+          [
+            "Die Ohren sind ganz klein.",
+            "Sachangabe"
+          ],
+          [
+            "Jeden Morgen bekommt Otto einen Eimer Fisch.",
+            "nur Otto"
+          ]
         ]
       },
       "B": {
-        "text": "**Was frisst Otto?** Am liebsten Fisch. Fischotter fressen hauptsächlich Fische, Frösche und Krebse. **Wie lang ist Otto?** Wir haben 80 Zentimeter gemessen, ohne Schwanz. Fischotter sind meistens 60 bis 90 Zentimeter lang. **Woran erkennt man einen Fischotter?** Der Kopf ist breit und flach. Ehrlich gesagt ist Otto der süßeste Otter der Welt! **Wo wohnen Fischotter?** An Flüssen und Seen.",
+        "einleitung": "„Zoo-Reporter“ im Gespräch mit Frau Berger. Sie ist Tierpflegerin und kümmert sich um Otto.",
+        "interview": [
+          [
+            "Frau Berger, was macht Otto gerade?",
+            "[[Er schwimmt seine Runden. Das macht er jeden Mittag.|X]] [[Zwischen den Zehen hat er Schwimmhäute.|A]] [[Ich finde, er ist der beste Schwimmer der Welt!|W]]"
+          ],
+          [
+            "Wo leben Fischotter sonst?",
+            "[[An Flüssen und Seen.|L]] [[Am Ufer verstecken sie sich unter Büschen und Wurzeln.|L]]"
+          ],
+          [
+            "Was fressen sie?",
+            "[[Hauptsächlich Fische. Frösche und Krebse fangen sie auch.|N]] [[Otto mag am liebsten Forellen.|X]]"
+          ],
+          [
+            "Woran erkennt man einen Fischotter?",
+            "[[An der Schnauze hat er lange Tasthaare.|A]] [[Der Körper ist lang, die Beine sind kurz.|A]]"
+          ],
+          [
+            "Wie lang ist Otto?",
+            "[[Otto ist 80 Zentimeter lang, ohne Schwanz.|X]] [[Bei Fischottern sind es meistens 60 bis 90 Zentimeter. Der Schwanz kommt noch dazu.|M]]"
+          ]
+        ],
         "mass": [
           "Fischotter sind ohne Schwanz:",
           "Die 80 Zentimeter gelten für:",
           "alle Fischotter",
           "nur Otto"
+        ],
+        "einordnen_spalten": [
+          "Sach­angabe",
+          "nur Otto",
+          "Meinung"
+        ],
+        "einordnen": [
+          [
+            "Fischotter leben an Flüssen und Seen.",
+            "Sachangabe"
+          ],
+          [
+            "Otto mag am liebsten Forellen.",
+            "nur Otto"
+          ],
+          [
+            "Otto ist der beste Schwimmer der Welt.",
+            "Meinung"
+          ],
+          [
+            "An der Schnauze hat er lange Tasthaare.",
+            "Sachangabe"
+          ],
+          [
+            "Otto schwimmt jeden Mittag seine Runden.",
+            "nur Otto"
+          ]
         ]
       }
-    }
+    },
+    "aufgaben_seite1": 1
   },
   "interviews": [
     "fischotter"

@@ -13,8 +13,8 @@ Schülerpakete: immer erst Materialbasis (Foto/Interview), dann Arbeitsblätter.
 | schueler/Probearbeit_Waschbaer_A4.pdf | 8 | A4, Originalgröße |
 | schueler/Klassenarbeit_V1_Biber_A4.pdf | 8 | A4, Originalgröße |
 | schueler/Klassenarbeit_V2_Breitmaulnashorn_A4.pdf | 8 | A4, Originalgröße |
-| lehrkraft/Kopiervorlagen_Etappe1_A4.pdf | 6 | siehe Lehrkraft-Leitfaden |
-| lehrkraft/Kopiervorlagen_Etappe2_A4.pdf | 6 | siehe Lehrkraft-Leitfaden |
+| lehrkraft/Kopiervorlagen_Etappe1_A4.pdf | 8 | siehe Lehrkraft-Leitfaden |
+| lehrkraft/Kopiervorlagen_Etappe2_A4.pdf | 8 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Kopiervorlagen_Etappe3_A4.pdf | 3 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Kopiervorlagen_Foerder_A4.pdf | 8 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Hilfekarten_laminieren_A4.pdf | 2 | siehe Lehrkraft-Leitfaden |

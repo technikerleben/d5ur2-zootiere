@@ -221,8 +221,8 @@
     "ziele": [
       {
         "id": "F2.1",
-        "kind": "Ich wähle genaue Wörter.",
-        "lehrkraft": "genaue Angabe statt Wertung angekreuzt",
+        "kind": "Ich wähle genaue Wörter und erkenne eine Meinung.",
+        "lehrkraft": "genaues Wort und Meinung richtig angekreuzt",
         "ueben": "Blatt 5F"
       },
       {
@@ -267,6 +267,21 @@
           [
             "schön",
             false
+          ]
+        ]
+      },
+      {
+        "typ": "ankreuzen",
+        "auftrag": "Frau Berger sagt: „Otto ist der süßeste Otter der Welt!“ **Info oder Meinung?**",
+        "spalten": 2,
+        "items": [
+          [
+            "Info",
+            false
+          ],
+          [
+            "Meinung",
+            true
           ]
         ]
       },
