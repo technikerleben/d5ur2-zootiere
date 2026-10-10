@@ -1257,5 +1257,13 @@
     "Herr Mensah",
     "Kelle",
     "Schlamm"
-  ]
+  ],
+  "start_hinweis": {
+    "titel": "Wichtig: Dein Handy in der Schule",
+    "absaetze": [
+      "In der Schule ist dein Handy **ausgeschaltet** und bleibt in deiner **Schultasche**.",
+      "Diese App ist zum Lernen **zu Hause**. In der Schule nutzt du sie nicht."
+    ],
+    "knopf": "Verstanden"
+  }
 }

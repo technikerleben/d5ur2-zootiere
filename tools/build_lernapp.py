@@ -138,7 +138,7 @@ def daten() -> dict:
                    "checkliste": etappen[2]["zusatzseiten"], "woerter": etappen[1]["hilfen"][0]},
         "uebungen": app["uebungen"], "detektiv_rueckmeldung": app["detektiv_rueckmeldung"],
         "etappen_namen": app["etappen_namen"], "interviews": interviews, "beispiele": beispiele,
-        "raetsel": app["raetsel"], "zuhause": app["zuhause"], "nachweise": nachweise,
+        "raetsel": app["raetsel"], "zuhause": app["zuhause"], "start_hinweis": app["start_hinweis"], "nachweise": nachweise,
     }
 
 
@@ -360,6 +360,11 @@ def browsertest(data: dict, shots: Path | None = None):
         errs = []
         pg.on("pageerror", lambda e: errs.append(str(e)))
         pg.goto(base)
+        pg.locator("#popup").wait_for(state="visible", timeout=3000)
+        if "Schultasche" not in pg.inner_text("#popup"):
+            fehler.append("Hinweis beim Öffnen: Text fehlt")
+        shot(pg, "popup")
+        pg.locator("#popOk").click()
         pg.evaluate("navigator.serviceWorker.ready")
         pg.wait_for_timeout(300)
 
@@ -379,6 +384,7 @@ def browsertest(data: dict, shots: Path | None = None):
         pg.goto(base + "#/weg")
         pg.locator("input[data-k]").first.check()
         pg.reload()
+        weg_mit_hinweis(pg)
         pg.wait_for_timeout(200)
         if not pg.locator("input[data-k]").first.is_checked():
             fehler.append("Mein Weg: Haken wird nicht gespeichert")
@@ -422,6 +428,7 @@ def browsertest(data: dict, shots: Path | None = None):
             overflow(pg, "info_" + sp["code"])
             shot(pg, "info_" + sp["code"])
         pg.reload()
+        weg_mit_hinweis(pg)
         if pg.locator(".elterninfo").get_attribute("lang") != data["elterninfo"]["sprachen"][-1]["code"]:
             fehler.append("Elterninfo: Sprachwahl wird nicht gespeichert")
 
@@ -429,6 +436,7 @@ def browsertest(data: dict, shots: Path | None = None):
         pg.goto(base + "#/zuhause")
         pg.fill("[data-pf=tier]", "Amsel")
         pg.reload()
+        weg_mit_hinweis(pg)
         if pg.input_value("[data-pf=tier]") != "Amsel":
             fehler.append("Zuhause: Plan wird nicht gespeichert")
 
@@ -448,6 +456,12 @@ def browsertest(data: dict, shots: Path | None = None):
     if fehler:
         raise SystemExit("Lernapp – Browsertest fehlgeschlagen:\n  " + "\n  ".join(fehler))
     print(f"ok: Browsertest 390×844 ({len(data['uebungen'])} Übungen gelöst, Tabs, Rätsel, Speichern, offline, keine Netzanfragen)")
+
+
+def weg_mit_hinweis(pg):
+    """Schließt den Hinweis, der bei jedem Öffnen der App erscheint."""
+    pg.locator("#popup").wait_for(state="visible", timeout=3000)
+    pg.locator("#popOk").click()
 
 
 def loese_detektiv(pg, u, iv):
