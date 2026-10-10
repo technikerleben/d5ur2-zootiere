@@ -34,6 +34,7 @@ SCHUELER = {
     "Probearbeit_Waschbaer_A4.pdf": ["etappe3/Probearbeit_Waschbaer_A4.pdf"],
     "Klassenarbeit_V1_Biber_A4.pdf": ["pruefungen/Klassenarbeit_Biber_A4.pdf"],
     "Klassenarbeit_V2_Breitmaulnashorn_A4.pdf": ["pruefungen/Klassenarbeit_Breitmaulnashorn_A4.pdf"],
+    "Training_Antilopen_A4.pdf": ["training/Training_Antilopen_A4.pdf"],
     "Probearbeit_F_Waschbaer_A4.pdf": ["pruefungen/Probearbeit_F_Waschbaer_A4.pdf"],
     "Klassenarbeit_F_Biber_A4.pdf": ["pruefungen/Klassenarbeit_F_Biber_A4.pdf"],
 }
@@ -55,6 +56,7 @@ HTML = ["etappe1/Input_Etappe1.html", "etappe2/Input_Etappe2.html", "etappe3/Inp
 DRUCK = {
     "Schuelerpaket": "A4-Satz, auf A5 verkleinert drucken (Lernbuddy-Mitte)",
     "Probearbeit": "A4, Originalgröße",
+    "Training": "A4, Originalgröße, beidseitig",
     "Klassenarbeit": "A4, Originalgröße",
 }
 

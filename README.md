@@ -8,6 +8,8 @@ Stand: 08.10.2026. Vier Wochen, acht Doppelstunden, Fischotter als Beispieltier.
 
 **Textbasis sind Interviews** mit Tierpflegerinnen und Tierpflegern (Schülerzeitung „Zoo-Reporter“, ausgedacht, Tierangaben stimmen): sechs Interviews mit 250–350 Wörtern und zwei Förder-Kurzinterviews in `inhalt/interviews.json`. Die Kinder trennen Sachangaben über die Tierart von Meinungen, Erlebnissen und Angaben über das einzelne Zootier und formen daraus einen Sachtext. Entwurf und Zeilenbelege: `python tools/build_interviews.py` → `ausgabe/interviews/`.
 
+**Training vor der Klassenarbeit:** Elenantilope und Hirschziegenantilope (Zoo Dortmund), platzsparend je ein A4-Blatt beidseitig, Musterlösungen Mindest-/Regelstandard im Kontroll-Kiosk (Nummer 10/11): `python tools/build_training.py` (vor `build_kiosk.py`).
+
 **Druckpakete:** `python tools/build_pakete.py` → `ausgabe/pakete/` (plus ZIP).
 - `schueler/`: Schülerpaket Etappe 1–3, Förder-Etappe 1F–3F, Probearbeit, Klassenarbeit V1/V2 – jeweils **erst Materialbasis, dann Arbeitsblätter**, eine PDF pro Paket.
 - `lehrkraft/`: Kopiervorlagen (Merkblätter, Gelingensnachweise, GN-F, Haltestellen-Schild), Hilfekarten zum Laminieren, Zeilenbelege der Interviews, Strategiekarten, Lernweg, Wahlphase, Input-Präsentationen.

@@ -8,6 +8,7 @@ Titel, Etappe und Blattnummern kommen aus inhalt/etappeN.json und werden geprüf
 Aufruf: python tools/build_kiosk.py      (erzeugt und prüft im Browser)
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -29,6 +30,23 @@ def daten() -> dict:
             if key not in k:
                 raise SystemExit(f"Kiosk: Blatt {key} fehlt in inhalt/kiosk.json")
             data[key] = dict(k[key], title=b["titel"], status=f"Etappe {n} · Pflicht + freiwillige Vertiefung")
+    # Training vor der Klassenarbeit (Musterlösungen Mindest- und Regelstandard)
+    tr = json.loads((ROOT / "inhalt" / "training.json").read_text(encoding="utf-8"))
+    zl = json.loads((ROOT / "ausgabe" / "training" / "zeilen_training.json").read_text(encoding="utf-8"))
+    tb = []
+    for u in tr["uebungen"]:
+        z = zl[u["interview"]]
+        def sub(t, z=z):
+            t2 = re.sub(r"\{S(\d+)\}", lambda m: z[m.group(1)], t)
+            return re.sub(r"Z\. (\d+)(?:–(\d+))?–Z\. (\d+)(?:–(\d+))?", lambda m: "Z. %s–%s" % (m.group(1), m.group(4) or m.group(3)), t2)
+        key = str(u["kiosk"])
+        data[key] = {"title": u["tier"], "label": "%s · Nummer %s" % (u["kurz"], key),
+                     "status": "Training vor der Klassenarbeit", "type": "Plan und Musterlösung Mindeststandard",
+                     "tip": sub(u["tip"]),
+                     "solution": "Vergleiche deinen Plan:\n" + sub(u["plan"]) + "\n\nMusterlösung Mindeststandard:\n" + u["mindest"] + "\n\n" + u["mindest_warum"],
+                     "extra": u["regel"] + "\n\n" + u["regel_warum"], "extra_label": "Musterlösung Regelstandard"}
+        tb.append([u["kiosk"], "%s · %s" % (u["kurz"], u["tier"])])
+    etappen.append({"n": "Training", "titel": "vor der Klassenarbeit", "blaetter": tb})
     extra = set(k) - set(data)
     if extra:
         raise SystemExit(f"Kiosk: Blätter ohne Arbeitsblatt: {sorted(extra)}")
@@ -218,11 +236,11 @@ function addDigit(d){if(number.length<2){number+=d;updateDisplay()}}
 function proceedNumber(){const n=Number(number);if(!Number.isInteger(n)||n<1||n>MAX||!DATA[n]){error.textContent="Bitte gib eine Blattnummer von 1 bis "+MAX+" ein.";return}showResult()}
 function showResult(){
  const n=Number(number),item=DATA[n];
- document.getElementById("resultTitle").textContent=`Blatt ${n} – ${item.title}`;
+ document.getElementById("resultTitle").textContent=`${item.label||("Blatt "+n)} – ${item.title}`;
  setChip(document.getElementById("resultMode"));
  document.getElementById("resultType").textContent=item.status+(mode==="tip"?" · Tipp":" · "+item.type);
  document.getElementById("resultText").textContent=mode==="tip"?item.tip:item.solution;
- const extra=document.getElementById("extra");extra.open=false;extra.classList.toggle("hidden",mode!=="solution"||!item.extra);document.getElementById("extraText").textContent=item.extra||"";
+ const extra=document.getElementById("extra");extra.open=false;extra.querySelector("summary").textContent=item.extra_label||"Vertiefung · freiwillig";extra.classList.toggle("hidden",mode!=="solution"||!item.extra);document.getElementById("extraText").textContent=item.extra||"";
  document.getElementById("switchMode").textContent=mode==="tip"?"Lösung ansehen":"Tipp ansehen";
  showScreen("result");document.getElementById("resultTitle").focus();
 }
@@ -247,7 +265,7 @@ if(params.has("mode")&&params.has("blatt")&&DATA[Number(params.get("blatt"))]){m
 def overview(etappen) -> str:
     h = ["<h3>Die Blätter</h3>"]
     for e in etappen:
-        h.append("<div class='et'><b>Etappe %d</b>%s</div>" % (e["n"], "".join(
+        h.append("<div class='et'><b>%s</b>%s</div>" % (("Etappe %d" % e["n"]) if isinstance(e["n"], int) else e["n"], "".join(
             "<div class='bl'><span>%d</span><span>%s</span></div>" % (nr, t) for nr, t in e["blaetter"])))
     return "".join(h)
 
@@ -273,7 +291,8 @@ def check(path: Path, data: dict):
                     t = pg.inner_text("#resultTitle")
                     body = pg.inner_text("#resultText")
                     want = data[n]["tip" if m == "tip" else "solution"]
-                    if t != f"Blatt {n} – {data[n]['title']}" or body.strip() != want.strip():
+                    lab = data[n].get("label", f"Blatt {n}")
+                    if t != f"{lab} – {data[n]['title']}" or body.strip() != want.strip():
                         fails.append(f"{vw} Blatt {n} {m}: falsche Anzeige")
                     if m == "solution" and data[n].get("extra"):
                         if not pg.is_visible("#extra"):
@@ -286,12 +305,13 @@ def check(path: Path, data: dict):
             # Zahlenfeld, Fehler, Wechsel
             pg.evaluate("goHome()")
             pg.click("[data-mode='tip']")
-            pg.click(".key:text-is('1')")
-            pg.click(".key:text-is('0')")
+            pg.click(".key:text-is('9')")
+            pg.click(".key:text-is('9')")
             pg.click("[data-action='show']")
             if "1 bis" not in pg.inner_text("#error"):
-                fails.append("Fehlermeldung bei Blatt 10 fehlt")
-            pg.click("[data-action='backspace']")
+                fails.append("Fehlermeldung bei Blatt 99 fehlt")
+            pg.click("[data-action='clear']")
+            pg.click(".key:text-is('1')")
             pg.click("[data-action='show']")
             if not pg.inner_text("#resultTitle").startswith("Blatt 1 "):
                 fails.append("Zahlenfeld/Löschen fehlerhaft")

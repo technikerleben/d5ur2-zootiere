@@ -110,6 +110,7 @@ Nicht übernommen aus der Kolleginnen-PowerPoint: Kamel/Delfin/Koala, acht verbi
 | Probearbeit | Waschbär | Transfer, neues Tier |
 | Klassenarbeit | Biber (Variante 1), Breitmaulnashorn (Variante 2) | Vorschlag: Biber früher Termin, Nashorn später Termin |
 | Projekte | Fischotter, Erdmännchen, Roter Panda | Tierpakete (A5-PDFs) |
+| Training vor der Klassenarbeit | Elenantilope (Ü1, Kiosk 10), Hirschziegenantilope (Ü2, Kiosk 11) – beide im Zoo Dortmund | `inhalt/training.json`, `tools/build_training.py`: platzsparend A4 Originalgröße (vorn Interview zweispaltig mit Zeilen, hinten Aufgaben/Schreibplan), ≥ 12 pt; Kiosk zeigt Plan mit Zeilen, Musterlösung Mindeststandard, aufklappbar Regelstandard |
 
 Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er ist der Otter (dekoratives Maskottchen spielt in dieser Reihe keine Rolle).
 
@@ -167,6 +168,7 @@ tools/
   build_anleitung.py      anleitung.html (Lehrkraft-Leitfaden, prüft alle Links)
   build_interviews.py     Interviews (Entwurf + Prüfliste/Zeilenbelege, zeilen.json); render_interview() für alle Materialseiten
   build_pruefung_f.py     Probearbeit F / Klassenarbeit F (zieldifferent)
+  build_training.py       Training Antilopen + zeilen_training.json (vor build_kiosk.py ausführen)
   build_pakete.py         Druckpakete Schüler/Lehrkraft + ZIP (ausgabe/pakete)
   build_wissensbasis.py   diese Datei
 ausgabe/                Erzeugte PDFs/HTML (etappe1–3, foerder, pruefungen, wahlphase, strategiekarten, lernweg)

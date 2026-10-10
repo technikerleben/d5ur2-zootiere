@@ -99,6 +99,7 @@ Nicht übernommen aus der Kolleginnen-PowerPoint: Kamel/Delfin/Koala, acht verbi
 | Probearbeit | Waschbär | Transfer, neues Tier |
 | Klassenarbeit | Biber (Variante 1), Breitmaulnashorn (Variante 2) | Vorschlag: Biber früher Termin, Nashorn später Termin |
 | Projekte | Fischotter, Erdmännchen, Roter Panda | Tierpakete (A5-PDFs) |
+| Training vor der Klassenarbeit | Elenantilope (Ü1, Kiosk 10), Hirschziegenantilope (Ü2, Kiosk 11) – beide im Zoo Dortmund | `inhalt/training.json`, `tools/build_training.py`: platzsparend A4 Originalgröße (vorn Interview zweispaltig mit Zeilen, hinten Aufgaben/Schreibplan), ≥ 12 pt; Kiosk zeigt Plan mit Zeilen, Musterlösung Mindeststandard, aufklappbar Regelstandard |
 
 Fachlich: Fischotter ≠ Seeotter (keine Seeotter-Bilder). Klassentier der 5er ist der Otter (dekoratives Maskottchen spielt in dieser Reihe keine Rolle).
 
@@ -219,6 +220,30 @@ Rahmen: Die Schülerzeitung „Zoo-Reporter“ war im Zoo und hat mit Tierpflege
 - **Wie groß ist so ein Tier?** ⟦Kopf und Rumpf sind zusammen etwa 3,40 bis 3,80 Meter lang. Der Schwanz kommt noch dazu.|M⟧ ⟦Ein erwachsenes Männchen kann bis zu 3600 Kilogramm wiegen.|M⟧ ⟦Nala ist ein Weibchen und etwas leichter.|X⟧ ⟦Ich finde sie trotzdem riesig!|W⟧
 - **Wie lange sind Sie schon Nalas Pfleger?** ⟦Seit sieben Jahren. Am Anfang hatte ich ein bisschen Angst vor ihr.|X⟧ ⟦Heute ist sie für mich das tollste Tier der Welt.|W⟧
 - Wörterhilfe: Savanne = Grasland mit wenigen Bäumen; massig = sehr groß und schwer; Buckel = eine Erhöhung im Nacken; sich wälzen = sich hin und her rollen
+
+#### Training vor der Klassenarbeit · Ü1 · „Kito springt über jeden Zaun“ (Frau Demir, `elenantilope`)
+
+- **Frau Demir, ist das da hinten eine Kuh?** Nein, das ist Kito, unser Bulle! ⟦Viele Besucher halten ihn für eine Kuh, weil er so groß ist.|X⟧ ⟦Elenantilopen gehören zu den größten Antilopen der Welt.|T⟧
+- **Wie groß ist so ein Tier?** ⟦Bei einem erwachsenen Männchen sind Kopf und Rumpf zusammen 2,50 bis 3,40 Meter lang. Der Schwanz kommt noch dazu.|M⟧ ⟦Kito wiegt im Moment 780 Kilogramm.|X⟧ ⟦Wir haben ihn letzten Monat auf eine Viehwaage gestellt. Das war ein Abenteuer!|X⟧
+- **Woran erkennt man eine Elenantilope?** ⟦Der Körper ist groß und massig.|A⟧ ⟦Das Fell ist hellbraun bis grau.|A⟧ ⟦An den Seiten hat sie schmale, helle Querstreifen.|A⟧ ⟦Am Hals hängt eine große Hautfalte. Sie heißt Wamme.|A⟧ ⟦Kitos Wamme wackelt beim Laufen hin und her, wie ein Vorhang.|V⟧
+- **Und die Hörner?** ⟦Beide, Männchen und Weibchen, haben Hörner.|A⟧ ⟦Die Hörner sind lang und schraubenförmig gedreht.|A⟧ ⟦Ich finde, Kito hat die schönsten Hörner im ganzen Zoo!|W⟧
+- **Wo leben Elenantilopen in der Natur?** ⟦In Afrika, vor allem im Osten und im Süden.|L⟧ ⟦Sie leben in Savannen und im Buschland.|L⟧ ⟦Bei uns ist es Kito im Winter manchmal zu nass, dann bleibt er lieber im Stall.|X⟧
+- **Was fressen sie?** ⟦Vor allem Blätter, Früchte und Schoten von Büschen und Bäumen.|N⟧ ⟦Gras fressen sie nur, wenn es frisch ist.|N⟧ ⟦Kito bekommt bei uns Heu, Zweige und jeden Tag ein paar Möhren.|X⟧ ⟦Die Möhren liebt er.|X⟧
+- **Stimmt es, dass Elenantilopen gut springen können?** ⟦Ja, junge Tiere springen aus dem Stand über Hindernisse, die so hoch sind wie zwei Menschen.|Z⟧ ⟦Ich glaube, Kito könnte über unseren Zaun springen. Er will aber nicht.|U⟧ ⟦Darüber bin ich ehrlich gesagt sehr froh!|W⟧
+- **Vielen Dank, Frau Demir!** ⟦Gern geschehen. Und besucht Kito bald einmal!|X⟧
+- Wörterhilfe: Bulle = männliches Tier bei Rindern und großen Antilopen; massig = sehr groß und schwer; Wamme = Hautfalte am Hals; Schoten = Hüllen mit Samen, zum Beispiel bei Bohnen
+
+#### Training vor der Klassenarbeit · Ü2 · „Raja ist der Schnellste“ (Herr Lindner, `hirschziegenantilope`)
+
+- **Herr Lindner, warum sind die Tiere so unterschiedlich gefärbt?** ⟦Das schwarze Tier ist Raja, unser Männchen.|X⟧ ⟦Bei Hirschziegenantilopen sehen Männchen und Weibchen ganz verschieden aus.|Z⟧ ⟦Erwachsene Männchen sind auf dem Rücken fast schwarz.|A⟧ ⟦Die Weibchen sind auf dem Rücken hellbraun.|A⟧ ⟦Der Bauch ist bei beiden weiß.|A⟧
+- **Was ist das Weiße um die Augen?** ⟦Um die Augen haben sie einen weißen Ring.|A⟧ ⟦Das sieht aus, als hätte Raja eine Brille auf.|V⟧ ⟦Total witzig, finde ich!|W⟧
+- **Haben alle Tiere Hörner?** ⟦Nein, nur die Männchen.|A⟧ ⟦Die Hörner sind lang und schraubenförmig gewunden.|A⟧ ⟦Sie sind meistens etwa 50 Zentimeter lang.|A⟧ ⟦Rajas Hörner sind sogar ein bisschen länger. Darauf ist er bestimmt stolz.|U⟧
+- **Wie groß ist so eine Antilope?** ⟦Kopf und Rumpf sind zusammen etwa 1,20 Meter lang. Der Schwanz kommt noch dazu.|M⟧ ⟦Sie wiegt ungefähr 40 Kilogramm.|M⟧ ⟦Raja wiegt 38 Kilo. Er ist sehr schlank.|X⟧
+- **Woher kommen Hirschziegenantilopen?** ⟦Aus Indien und Nepal.|L⟧ ⟦Dort leben sie in offenen Steppen und im Grasland.|L⟧ ⟦Ich war vor zwei Jahren in Indien und habe dort eine Herde gesehen. Das war mein schönster Urlaub!|X⟧
+- **Was fressen sie?** ⟦Hauptsächlich Gras.|N⟧ ⟦Manchmal fressen sie auch Blätter und Kräuter.|N⟧ ⟦Bei uns gibt es Heu und frisches Gras. Raja frisst immer zuerst die Kräuter heraus.|X⟧
+- **Leben die Tiere allein?** ⟦Nein, Hirschziegenantilopen leben in Herden.|Z⟧ ⟦Bei uns wohnen Raja und vier Weibchen zusammen. Die Weibchen heißen nach Blumen.|X⟧
+- **Und warum heißt das Interview „Raja ist der Schnellste“?** ⟦Hirschziegenantilopen können sehr schnell rennen, bis zu 80 Kilometer pro Stunde.|Z⟧ ⟦Raja rennt jeden Morgen einmal quer durch die Anlage.|X⟧ ⟦Für mich ist er das schnellste Tier im ganzen Zoo!|W⟧
+- Wörterhilfe: Steppe = weites, trockenes Grasland ohne Wald; gewunden = in Drehungen gebogen; Rumpf = Körper ohne Kopf, Beine und Schwanz; Anlage = Gehege im Zoo
 
 #### Förder · Etappe 1–2 · Otto taucht gern (Frau Berger, `fischotter-f`)
 
@@ -573,6 +598,7 @@ tools/
   build_anleitung.py      anleitung.html (Lehrkraft-Leitfaden, prüft alle Links)
   build_interviews.py     Interviews (Entwurf + Prüfliste/Zeilenbelege, zeilen.json); render_interview() für alle Materialseiten
   build_pruefung_f.py     Probearbeit F / Klassenarbeit F (zieldifferent)
+  build_training.py       Training Antilopen + zeilen_training.json (vor build_kiosk.py ausführen)
   build_pakete.py         Druckpakete Schüler/Lehrkraft + ZIP (ausgabe/pakete)
   build_wissensbasis.py   diese Datei
 ausgabe/                Erzeugte PDFs/HTML (etappe1–3, foerder, pruefungen, wahlphase, strategiekarten, lernweg)

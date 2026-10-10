@@ -1,0 +1,68 @@
+{
+  "_hinweis": "Training zwischen Probearbeit und Klassenarbeit (freiwillig/empfohlen). Platzsparend: A4 Originalgröße, ein Blatt vorn/hinten pro Tier, Schrift mind. 12 pt. Kontrolle über den Kontroll-Kiosk (Nummer = kiosk). {Sn} = Zeile der n-ten markierten Stelle im Interview (wird beim Erzeugen eingesetzt).",
+  "datei": "Training_Antilopen_A4",
+  "situation": "Bald schreibst du die Klassenarbeit. Hier trainierst du noch einmal mit einem neuen Tier. Beide Antilopen kannst du im Zoo Dortmund sehen. Das Interview ist ausgedacht. Die Angaben über das Tier stimmen.",
+  "uebungen": [
+    {
+      "kiosk": 10,
+      "kurz": "Ü1",
+      "tier": "Die Elenantilope",
+      "interview": "elenantilope",
+      "zootier": "Kito",
+      "plural": "Elenantilopen",
+      "tip": "Frage bei jeder Stelle: Gilt das für alle Elenantilopen? Dann unterstreichen. Geht es nur um Kito oder sagt Frau Demir ihre Meinung? Dann streichen. Für dein Maß: Kitos 780 Kilogramm ({S4}) gelten nur für ihn. Suche die Länge, die für erwachsene Männchen gilt.",
+      "plan": "Überblick: Elenantilope; eine der größten Antilopen ({S2}); Männchen: Kopf und Rumpf 2,50–3,40 m, Schwanz zusätzlich ({S3})\nAussehen: großer, massiger Körper; hellbraunes bis graues Fell; schmale, helle Querstreifen an den Seiten ({S6}–{S8}); Wamme am Hals ({S9}); bei Männchen und Weibchen lange, schraubenförmig gedrehte Hörner ({S11}–{S12})\nLebensraum: Osten und Süden Afrikas; Savannen und Buschland ({S14}–{S15})\nNahrung: vor allem Blätter, Früchte und Schoten; frisches Gras nur manchmal ({S17}–{S18})\nGestrichen: Kitos Gewicht und die Waage, Stall, Heu und Möhren (nur Kito); „die schönsten Hörner“ und „sehr froh“ (Meinung); „wie ein Vorhang“ (Vergleich); „könnte über den Zaun springen“ (Vermutung).\nDarf rein, muss aber nicht: Junge Tiere springen sehr hoch ({S21}).",
+      "mindest": "Die Elenantilope\nDie Elenantilope ist eine sehr große Antilope. Bei den Männchen sind Kopf und Rumpf 2,50 bis 3,40 Meter lang. Der Schwanz kommt noch dazu. Der Körper ist groß und massig. Das Fell ist hellbraun bis grau. An den Seiten hat sie helle Streifen. Am Hals hat sie eine Wamme. Sie hat lange Hörner. Die Elenantilope lebt in Afrika in Savannen und im Buschland. Sie frisst Blätter, Früchte und Schoten.",
+      "mindest_warum": "Mindeststandard: Tiername, ein Maß mit Bezug, vier Merkmale, Lebensraum und Nahrung stimmen. Kurze, vollständige Sätze im Präsens, nichts über Kito.",
+      "regel": "Die Elenantilope\nDie Elenantilope gehört zu den größten Antilopen der Welt. Bei einem erwachsenen Männchen sind Kopf und Rumpf zusammen 2,50 bis 3,40 Meter lang, dazu kommt noch der Schwanz.\nIhr Körper ist groß und massig. Das hellbraune bis graue Fell hat an den Seiten schmale, helle Querstreifen. Am Hals hängt eine große Hautfalte, die Wamme. Männchen und Weibchen tragen lange, schraubenförmig gedrehte Hörner.\nElenantilopen leben im Osten und Süden Afrikas in Savannen und im Buschland. Dort fressen sie vor allem Blätter, Früchte und Schoten von Büschen und Bäumen. Frisches Gras fressen sie nur manchmal.",
+      "regel_warum": "Regelstandard: Absätze für Überblick, Aussehen und Lebensraum/Nahrung. Merkmale genau mit Körperteil verbunden, Fachwort „Wamme“ erklärt, Sätze verbunden, abwechslungsreiche Satzanfänge."
+    },
+    {
+      "kiosk": 11,
+      "kurz": "Ü2",
+      "tier": "Die Hirschziegenantilope",
+      "interview": "hirschziegenantilope",
+      "zootier": "Raja",
+      "plural": "Hirschziegenantilopen",
+      "tip": "Achtung: Männchen und Weibchen sehen verschieden aus. Schreibe genau, wer gemeint ist. Rajas 38 Kilo ({S15}) gelten nur für ihn. Das Maß für alle Hirschziegenantilopen steht in {S13}–{S14}.",
+      "plan": "Überblick: Hirschziegenantilope; Kopf und Rumpf etwa 1,20 m, Schwanz zusätzlich; etwa 40 kg ({S13}–{S14})\nAussehen: Männchen auf dem Rücken fast schwarz, Weibchen hellbraun; Bauch weiß ({S3}–{S5}); weißer Ring um die Augen ({S6}); nur Männchen mit Hörnern, lang, schraubenförmig gewunden, etwa 50 cm ({S9}–{S11})\nLebensraum: Indien und Nepal; offene Steppen und Grasland ({S16}–{S17})\nNahrung: hauptsächlich Gras, manchmal Blätter und Kräuter ({S19}–{S20})\nGestrichen: Raja ist das schwarze Tier, wiegt 38 Kilo, rennt jeden Morgen (nur Raja); Urlaub in Indien (Erlebnis); „total witzig“, „das schnellste Tier im Zoo“ (Meinung); „wie eine Brille“ (Vergleich); „bestimmt stolz“ (Vermutung).\nDarf rein, muss aber nicht: leben in Herden ({S22}); bis zu 80 km/h schnell ({S24}).",
+      "mindest": "Die Hirschziegenantilope\nDie Hirschziegenantilope ist etwa 1,20 Meter lang. Der Schwanz kommt noch dazu. Sie wiegt ungefähr 40 Kilogramm. Die Männchen sind auf dem Rücken fast schwarz. Die Weibchen sind auf dem Rücken hellbraun. Der Bauch ist weiß. Um die Augen hat sie einen weißen Ring. Die Männchen haben lange Hörner. Die Hirschziegenantilope lebt in Indien und Nepal im Grasland. Sie frisst vor allem Gras.",
+      "mindest_warum": "Mindeststandard: Tiername, Maß mit Einheit, vier Merkmale, Lebensraum und Nahrung stimmen. Kurze, vollständige Sätze im Präsens, nichts über Raja.",
+      "regel": "Die Hirschziegenantilope\nDie Hirschziegenantilope ist eine Antilope aus Asien. Kopf und Rumpf sind zusammen etwa 1,20 Meter lang, der Schwanz kommt noch dazu. Ein erwachsenes Tier wiegt ungefähr 40 Kilogramm.\nMännchen und Weibchen sehen verschieden aus: Erwachsene Männchen sind auf dem Rücken fast schwarz, die Weibchen hellbraun. Bei beiden sind der Bauch und ein Ring um die Augen weiß. Nur die Männchen tragen Hörner. Diese sind etwa 50 Zentimeter lang und schraubenförmig gewunden.\nHirschziegenantilopen leben in Indien und Nepal in offenen Steppen und im Grasland. Sie fressen hauptsächlich Gras, manchmal auch Blätter und Kräuter.",
+      "regel_warum": "Regelstandard: Absätze, genaue Merkmale mit Körperteil, klare Bezüge (Männchen/Weibchen/beide), verbundene Sätze, Fachwörter „Steppe“ und „gewunden“ richtig genutzt."
+    }
+  ],
+  "aufgaben": [
+    {
+      "titel": "Markieren",
+      "text": "Lies das Interview. **Unterstreiche** Sachangaben über alle Tiere dieser Art. **Streiche** Meinungen, Vermutungen und alles, was nur das Zootier betrifft. Aus einem Vergleich nimmst du nur die Sachangabe."
+    },
+    {
+      "titel": "Schreibplan",
+      "text": "Notiere Stichwörter und die Zeile.",
+      "plan": true
+    },
+    {
+      "titel": "Schreiben",
+      "text": "Schreibe ins Heft eine Tierbeschreibung mit Überschrift: Überblick mit Maß → Aussehen (vier Merkmale) → Lebensraum → Nahrung. Präsens, ganze Sätze, keine Meinung."
+    },
+    {
+      "titel": "Prüfen",
+      "text": "Prüfe mit K1–K6. Kreise einen Satzanfang ein, unterstreiche zwei Nomen, markiere einen Punkt.",
+      "checks": [
+        "K1 Infos",
+        "K2 vier Merkmale",
+        "K3 Aufbau",
+        "K4 sachlich, Präsens",
+        "K5 ganze Sätze",
+        "K6 Schreibung"
+      ]
+    },
+    {
+      "titel": "Vergleichen am Kontroll-Kiosk",
+      "text": "Wähle „Lösung“ und gib die Nummer **{KIOSK}** ein. Vergleiche deinen Plan. Lies dann die Musterlösung **Mindeststandard** und klappe die Musterlösung **Regelstandard** auf. Notiere: Was kann ich noch besser machen?",
+      "linie": true
+    }
+  ],
+  "frei": "Du hast beide Antilopen beschrieben? Schreibe drei Sätze, die Elenantilope und Hirschziegenantilope vergleichen. Nutze *größer als*, *beide*, *nur*."
+}
