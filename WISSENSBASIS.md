@@ -604,7 +604,8 @@ tools/
   build_pruefung_f.py     Probearbeit F / Klassenarbeit F (zieldifferent)
   build_training.py       Training Antilopen + zeilen_training.json (vor build_kiosk.py ausführen)
   build_pakete.py         Druckpakete Schüler/Lehrkraft + ZIP (ausgabe/pakete)
-  build_lernapp.py        Lern-App (lernapp/) mit Sperrlisten-Prüfung und Browsertest 390×844
+  build_lernapp.py        Lern-App (lernapp/) mit Sperrlisten-Prüfung und Browsertest 390×844 (normal und einfache Fassung)
+  build_qrzettel.py       QR-Elternzettel zur Lern-App, A4 Graustufen, regulär + einfach (ausgabe/lernapp/)
   build_wissensbasis.py   diese Datei
 ausgabe/                Erzeugte PDFs/HTML (etappe1–3, foerder, pruefungen, wahlphase, strategiekarten, lernweg)
 apps/kontroll-kiosk/    Kiosk
@@ -712,7 +713,7 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 - Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen.
 - Gedruckte Lösungsfassung (Tipps/Lösungen wie im Kiosk) und ggf. Übungskarten-Modus im Kiosk.
 - Unterrichtserprobung steht aus; Zeitbudget nach Erprobung prüfen.
-- Lern-App (`planung/Lernapp_Planung.md`): Grundversion gebaut (Mein Weg, Wissen, 15 Übungen inkl. Beispielaufgabe Giraffe und Training Ü1/Ü2, Bereich Spiele mit Buchstabenrätsel, Silbenrätsel, Memory, Wörtersuche und „Wer bin ich?“ (Fischotter, Giraffe, Alltagstiere; Erdmännchen/Roter Panda bewusst nicht), Zuhause); offen: Quiz je Etappe, Schalter „Einfach“, QR-Zettel. Freigabe für Kinder steuert die Lehrkraft über den QR-Code. Klassenarbeiten sollen später extern gespeichert werden.
+- Lern-App (`planung/Lernapp_Planung.md`): Grundversion gebaut (Mein Weg, Wissen, 15 Übungen inkl. Beispielaufgabe Giraffe und Training Ü1/Ü2, Bereich Spiele mit Buchstabenrätsel, Silbenrätsel, Memory, Wörtersuche und „Wer bin ich?“ (Fischotter, Giraffe, Alltagstiere; Erdmännchen/Roter Panda bewusst nicht), Zuhause; je Etappe ein Quiz mit 8 von 10 Fragen, Ende ohne Punktwert mit „Das kannst du schon“ / „Schau dir noch einmal an“ nach Merkblatt-Abschnitten). **Einfache Fassung** (Schalter in der Info oder Link `?einfach=1`): Lernweg mit Blättern 1F–9F, GN1F/GN2F, Probearbeit F; F-Merkkarte zuerst; höchstens 5 Karten und 2 Antworten je Übung, Quiz mit 5 Fragen, Fischotter-Kurzinterview im Detektiv, Fehlerjagd nennt die Fehlerzahl. QR-Elternzettel A4 (regulär und einfach) mit acht Schnipseln: `tools/build_qrzettel.py` → `ausgabe/lernapp/`. Freigabe für Kinder steuert die Lehrkraft über den QR-Code. Klassenarbeiten sollen später extern gespeichert werden.
 
 ## 17 · Glossar
 

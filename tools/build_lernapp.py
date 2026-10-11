@@ -47,6 +47,16 @@ def font_css() -> str:
         f = ROOT / "assets" / "fonts" / f"andika-latin-{weight}-{style}.woff2"
         out.append("@font-face{font-family:'Andika';font-weight:%d;font-style:%s;font-display:swap;"
                    "src:url(data:font/woff2;base64,%s) format('woff2');}" % (weight, style, b64(f.read_bytes())))
+    # Elterninfo: Ukrainisch (Andika kyrillisch) und Arabisch (Noto Sans Arabic)
+    for weight in (400, 700):
+        f = ROOT / "assets" / "fonts" / f"andika-cyrillic-{weight}-normal.woff2"
+        out.append("@font-face{font-family:'Andika';font-weight:%d;font-style:normal;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;"
+                   "src:url(data:font/woff2;base64,%s) format('woff2');}" % (weight, b64(f.read_bytes())))
+        f = ROOT / "assets" / "fonts" / f"noto-sans-arabic-arabic-{weight}-normal.woff2"
+        if weight == 700:
+            continue  # Arabisch nur in Normalschrift; Fettdruck erzeugt der Browser
+        out.append("@font-face{font-family:'Noto Sans Arabic';font-weight:%d;font-style:normal;font-display:swap;"
+                   "src:url(data:font/woff2;base64,%s) format('woff2');}" % (weight, b64(f.read_bytes())))
     return "\n".join(out)
 
 
@@ -72,6 +82,7 @@ def daten() -> dict:
     app = j("lernapp.json")
     ivs = j("interviews.json")
     etappen = [j(f"etappe{n}.json") for n in (1, 2, 3)]
+    foerder = [j(f"foerder_etappe{n}.json") for n in (1, 2, 3)]
     wahl = j("wahlphase.json")
     strat = j("strategiekarten.json")
 
@@ -87,7 +98,8 @@ def daten() -> dict:
                 bild = "fischotter"
             abschnitte.append({"titel": a["titel"], "bild": bild, "bloecke": a["bloecke"]})
         wissen_et.append({"etappe": c["etappe"], "titel": c["titel"], "ziel": c["ziel"],
-                          "abschnitte": abschnitte, "abschluss": c["abschluss"]})
+                          "abschnitte": abschnitte, "abschluss": c["abschluss"],
+                          "merkkarte_einfach": foerder[c["etappe"] - 1]["merkkarte"]})
 
     # Lernweg: Etappen aus den Inhaltsdateien, danach Stationen aus lernapp.json
     weg = []
@@ -100,8 +112,12 @@ def daten() -> dict:
             punkte.append(f"Gelingensnachweis {n} · {c['nachweis']['titel']} (4 von 5)")
         else:
             punkte += ["Probearbeit geschrieben (4 von 5)", "Feedback zur Probearbeit bekommen"]
+        # einfache Fassung: Blätter 1F–9F, GN-F, Probearbeit F
+        fc = foerder[n - 1]
+        pf = [f"Input gehört oder Merkkarte {n} gelesen"] + [f"Blatt {b['nr']} · {b['titel']}" for b in fc["blaetter"]]
+        pf += [f"Gelingensnachweis {n}F · {fc['nachweis']['titel']}"] if n < 3 else ["Probearbeit F geschrieben", "Feedback zur Probearbeit bekommen"]
         weg.append({"id": f"e{n}", "titel": f"Etappe {n} · {c['titel']}",
-                    "text": app["weg"]["etappe_text"], "punkte": punkte, "wissen": f"e{n}", "ueben": n})
+                    "text": app["weg"]["etappe_text"], "punkte": punkte, "punkte_einfach": pf, "wissen": f"e{n}", "ueben": n})
     projekte = {p["id"] if "id" in p else p.get("nr"): p["titel"] for p in wahl["projekte"]}
     for s in app["weg"]["stationen"]:
         for pk in s["punkte"]:
@@ -112,7 +128,7 @@ def daten() -> dict:
 
     # Interviews, die Übungen brauchen
     alle = {t["id"]: t for t in ivs["tiere"] + ivs["foerder"]}
-    need = {u["interview"] for u in app["uebungen"] if u["typ"] == "detektiv"}
+    need = {u[k] for u in app["uebungen"] if u["typ"] == "detektiv" for k in ("interview", "interview_einfach") if k in u}
     interviews = {}
     for i in sorted(need):
         t = alle[i]
@@ -138,7 +154,7 @@ def daten() -> dict:
                    "checkliste": etappen[2]["zusatzseiten"], "woerter": etappen[1]["hilfen"][0]},
         "uebungen": app["uebungen"], "detektiv_rueckmeldung": app["detektiv_rueckmeldung"],
         "etappen_namen": app["etappen_namen"], "interviews": interviews, "beispiele": beispiele,
-        "raetsel": app["raetsel"], "zuhause": app["zuhause"], "start_hinweis": app["start_hinweis"], "spiele": app["spiele"], "nachweise": nachweise,
+        "einfach": app["einfach"], "raetsel": app["raetsel"], "zuhause": app["zuhause"], "start_hinweis": app["start_hinweis"], "spiele": app["spiele"], "nachweise": nachweise,
     }
 
 
@@ -149,7 +165,7 @@ def pruefe_inhalt(data: dict):
     app = j("lernapp.json")
     # Satzvergleiche nur gegen app-eigene Texte: Material aus den Etappen (Interviews,
     # Merkblätter, Wörterhilfe) darf Sätze mit Nachweisen teilen, eigene Übungen nicht.
-    eigen = json.dumps([{k: app[k] for k in ("uebungen", "raetsel", "spiele", "zuhause", "start", "weg")}] + [j(f) for f in BEISPIELE.values()], ensure_ascii=False)
+    eigen = json.dumps([{k: app[k] for k in ("uebungen", "raetsel", "spiele", "zuhause", "start", "weg", "einfach")}] + [j(f) for f in BEISPIELE.values()], ensure_ascii=False)
 
     # 1 Sperrliste: Namen aus Probearbeit und Klassenarbeiten
     for w in app["sperrliste"]:
@@ -224,6 +240,16 @@ def pruefe_inhalt(data: dict):
             for it in u["items"]:
                 if len(set(it["teile"])) != len(it["teile"]):
                     fehler.append(f"{u['id']}: doppelte Wortkarte: {it['teile']}")
+        elif u["typ"] == "quiz":
+            titel = {a["titel"] for e in data["wissen"]["etappen"] if e["etappe"] == u["etappe"] for a in e["abschnitte"]}
+            fr = [f["frage"] for f in u["fragen"]]
+            if len(set(fr)) != len(fr) or len(fr) < u["pro_runde"]:
+                fehler.append(f"{u['id']}: Fragen doppelt oder zu wenige")
+            for f in u["fragen"]:
+                if f["thema"] not in titel:
+                    fehler.append(f"{u['id']}: Thema „{f['thema']}“ ist kein Merkblatt-Abschnitt")
+                if not (0 <= f["richtig"] < len(f["optionen"])) or len(set(f["optionen"])) != len(f["optionen"]) or len(f["optionen"]) < 3:
+                    fehler.append(f"{u['id']}: Antworten prüfen: {f['frage'][:40]}")
         elif u["typ"] != "saetze":
             fehler.append(f"{u['id']}: unbekannter Typ {u['typ']}")
     sp = data["elterninfo"]["sprachen"]
@@ -379,7 +405,7 @@ def browsertest(data: dict, shots: Path | None = None):
         pg = ctx.new_page()
         errs = []
         pg.on("pageerror", lambda e: errs.append(str(e)))
-        pg.goto(base)
+        pg.goto(base)  # erster Aufruf: Hinweis wird ausdrücklich geprüft
         pg.locator("#popup").wait_for(state="visible", timeout=3000)
         if "Schultasche" not in pg.inner_text("#popup"):
             fehler.append("Hinweis beim Öffnen: Text fehlt")
@@ -400,18 +426,18 @@ def browsertest(data: dict, shots: Path | None = None):
 
         # Tabs
         for tab in ["weg", "wissen/e1", "wissen/e2", "wissen/e3", "wissen/strategien", "wissen/pruefen", "wissen/woerter", "ueben", "raetsel", "raetsel/silben", "raetsel/memory", "raetsel/suchsel", "raetsel/werbinich", "zuhause", "info"]:
-            pg.goto(base + "#/" + tab)
+            geh(pg, base + "#/" + tab)
             pg.wait_for_timeout(120)
             overflow(pg, tab)
             shot(pg, "tab_" + tab.replace("/", "_"))
         # Merkkarte: Antwort aufdecken
-        pg.goto(base + "#/wissen/e1")
+        geh(pg, base + "#/wissen/e1")
         n = pg.locator("[data-reveal]").count()
         if n != sum(1 for a in data["wissen"]["etappen"][0]["abschnitte"] for b in a["bloecke"] if b[0] == "Gesicherte Antwort"):
             fehler.append("Wissen: Zahl der Antwort-Knöpfe stimmt nicht")
         pg.locator("[data-reveal]").first.click()
         # Lernweg: Haken setzen und behalten
-        pg.goto(base + "#/weg")
+        geh(pg, base + "#/weg")
         pg.locator("input[data-k]").first.check()
         pg.reload()
         weg_mit_hinweis(pg)
@@ -421,7 +447,7 @@ def browsertest(data: dict, shots: Path | None = None):
 
         # Jede Übung durchspielen
         for u in data["uebungen"]:
-            pg.goto(base + "#/ueben/" + u["id"])
+            geh(pg, base + "#/ueben/" + u["id"])
             pg.wait_for_timeout(100)
             overflow(pg, u["id"])
             shot(pg, "ex_" + u["id"] + "_start")
@@ -434,9 +460,34 @@ def browsertest(data: dict, shots: Path | None = None):
                 fehler.append(f"{u['id']}: Abschluss erscheint nicht")
             shot(pg, "ex_" + u["id"] + "_ende")
 
+        # Einfache Fassung: per Link einschalten, Lernweg mit F-Blättern, Übungen kürzer
+        geh(pg, base + "?einfach=1#/weg")
+        if "Blatt 1F" not in pg.inner_text("main") or "Einfache Fassung" not in pg.inner_text("header"):
+            fehler.append("Einfache Fassung: Lernweg ohne F-Blätter oder ohne Kennzeichnung")
+        shot(pg, "einfach_weg")
+        geh(pg, base + "#/wissen/e1")
+        if not pg.locator("details.mehr").count():
+            fehler.append("Einfache Fassung: Merkkarte F fehlt")
+        shot(pg, "einfach_wissen")
+        for u in data["uebungen"]:
+            geh(pg, base + "#/ueben/" + u["id"])
+            pg.wait_for_timeout(80)
+            try:
+                spiele(pg, u, data, einfach=True)
+            except Exception as e:  # noqa: BLE001
+                fehler.append(f"{u['id']} (einfach): nicht lösbar ({e})")
+                continue
+            if not pg.locator(".done-card").count():
+                fehler.append(f"{u['id']} (einfach): Abschluss erscheint nicht")
+            if u["id"] in ("e1-detektiv", "e1-quiz"):
+                shot(pg, "einfach_" + u["id"])
+        geh(pg, base + "?einfach=0#/info")
+        if pg.locator("#einfach").is_checked():
+            fehler.append("Einfache Fassung: ?einfach=0 schaltet nicht aus")
+
         # Rätsel lösen
         spiele_testen(pg, data, fehler, shot)
-        pg.goto(base + "#/raetsel/buchstaben")
+        geh(pg, base + "#/raetsel/buchstaben")
         for _ in range(2):
             hinweis = pg.locator(".card .label + div").first.inner_text()
             wort = next(w for w, h in data["raetsel"]["woerter"] if h.replace("*", "") == hinweis)
@@ -448,7 +499,7 @@ def browsertest(data: dict, shots: Path | None = None):
             pg.locator("#next").click()
 
         # Elterninfo: alle Sprachen, Arabisch von rechts nach links, KI-Hinweis
-        pg.goto(base + "#/info")
+        geh(pg, base + "#/info")
         for sp in data["elterninfo"]["sprachen"]:
             pg.locator(f"[data-lang='{sp['code']}']").click()
             box = pg.locator(".elterninfo")
@@ -464,7 +515,7 @@ def browsertest(data: dict, shots: Path | None = None):
             fehler.append("Elterninfo: Sprachwahl wird nicht gespeichert")
 
         # Zuhause: Plan speichern
-        pg.goto(base + "#/zuhause")
+        geh(pg, base + "#/zuhause")
         pg.fill("[data-pf=tier]", "Amsel")
         pg.reload()
         weg_mit_hinweis(pg)
@@ -473,7 +524,7 @@ def browsertest(data: dict, shots: Path | None = None):
 
         # Offline nach erstem Laden
         ctx.set_offline(True)
-        pg.goto(base + "#/wissen/e2")
+        geh(pg, base + "#/wissen/e2")
         pg.wait_for_timeout(300)
         if "Sachlich" not in pg.inner_text("main"):
             fehler.append("Offline: App lädt nicht")
@@ -486,14 +537,14 @@ def browsertest(data: dict, shots: Path | None = None):
         fehler.append("Netzanfragen nach außen: " + ", ".join(sorted(set(fremd))[:5]))
     if fehler:
         raise SystemExit("Lernapp – Browsertest fehlgeschlagen:\n  " + "\n  ".join(fehler))
-    print(f"ok: Browsertest 390×844 ({len(data['uebungen'])} Übungen und 5 Spiele gelöst, Tabs, Speichern, offline, keine Netzanfragen)")
+    print(f"ok: Browsertest 390×844 ({len(data['uebungen'])} Übungen normal und einfach, 5 Spiele gelöst, Tabs, Speichern, offline, keine Netzanfragen)")
 
 
 def spiele_testen(pg, data, fehler, shot):
     """Spielt Silbenrätsel, Memory, Wörtersuche und Wer bin ich? je einmal durch."""
     sp = data["spiele"]
     # Silbenrätsel: Wörter anhand der Hinweise bauen
-    pg.goto(pg.url.split("#")[0] + "#/raetsel/silben")
+    geh(pg, pg.url.split("#")[0] + "#/raetsel/silben")
     hinweise = pg.locator("ol.hints li").all_inner_texts()
     for h in hinweise:
         silben = next(x for x, hh in sp["silben"]["woerter"] if hh.replace("*", "") == h.strip())
@@ -506,7 +557,7 @@ def spiele_testen(pg, data, fehler, shot):
         fehler.append("Silbenrätsel: Runde endet nicht")
     shot(pg, "spiel_silben")
     # Memory: Paare über data-pair aufdecken
-    pg.goto(pg.url.split("#")[0] + "#/raetsel/memory")
+    geh(pg, pg.url.split("#")[0] + "#/raetsel/memory")
     pg.locator(".mcard").first.wait_for()
     for k in range(sp["memory"]["paare"]):
         for b in pg.locator(f".mcard[data-pair='{k}']").all():
@@ -514,7 +565,7 @@ def spiele_testen(pg, data, fehler, shot):
     pg.locator("#neu").wait_for(timeout=3000)
     shot(pg, "spiel_memory")
     # Wörtersuche: Wörter im Gitter suchen und Anfang/Ende antippen
-    pg.goto(pg.url.split("#")[0] + "#/raetsel/suchsel")
+    geh(pg, pg.url.split("#")[0] + "#/raetsel/suchsel")
     n = sp["suchsel"]["groesse"]
     zellen = pg.locator(".scell").all_inner_texts()
     g = [zellen[r * n:(r + 1) * n] for r in range(n)]
@@ -532,7 +583,7 @@ def spiele_testen(pg, data, fehler, shot):
         fehler.append("Wörtersuche: Runde endet nicht")
     shot(pg, "spiel_suchsel")
     # Wer bin ich?: einmal falsch, dann richtig
-    pg.goto(pg.url.split("#")[0] + "#/raetsel/werbinich")
+    geh(pg, pg.url.split("#")[0] + "#/raetsel/werbinich")
     erster = pg.locator("ol.hints li").first.inner_text()
     tier = next(t for t in sp["werbinich"]["tiere"] if t["hinweise"][0][1] in erster)
     pg.locator(".opt").filter(has_not_text=tier["name"]).first.click()
@@ -542,6 +593,13 @@ def spiele_testen(pg, data, fehler, shot):
     if not pg.locator("#fb .fb.ok").count():
         fehler.append("Wer bin ich?: richtige Antwort wird nicht erkannt")
     shot(pg, "spiel_werbinich")
+
+
+def geh(pg, url):
+    """Öffnet eine Ansicht. Lädt die Seite dabei neu, wird der Hinweis zum Handy geschlossen."""
+    pg.goto(url)
+    if pg.locator("#popup").is_visible():
+        pg.locator("#popOk").click()
 
 
 def weg_mit_hinweis(pg):
@@ -568,19 +626,28 @@ def loese_detektiv(pg, u, iv):
             pg.wait_for_timeout(30)
 
 
-def spiele(pg, u, data):
-    """Spielt eine Übung mit den richtigen Antworten durch."""
+def spiele(pg, u, data, einfach=False):
+    """Spielt eine Übung mit den richtigen Antworten durch (auch in der einfachen Fassung)."""
     typ = u["typ"]
+    E = data["einfach"]
     if typ == "auswahl":
-        for it in u["items"]:
-            if "optionen" in it:
-                pg.locator(".opt").nth(it["richtig"]).click()
-            else:
-                pg.locator(f".opt[data-o='{it['richtig']}']").click()
+        items = u["items"][:E["max_karten"]] if einfach else u["items"]
+        for it in items:
+            if einfach and "optionen" in it and pg.locator(".opt").count() > E["max_optionen"]:
+                raise RuntimeError("zu viele Antworten in der einfachen Fassung")
+            pg.locator(f".opt[data-o='{it['richtig']}']").click()
             pg.locator(".fb.ok").wait_for(timeout=2000)
             pg.locator("#weiter").click()
     elif typ == "detektiv":
-        loese_detektiv(pg, u, data["interviews"][u["interview"]])
+        loese_detektiv(pg, u, data["interviews"][u.get("interview_einfach", u["interview"]) if einfach else u["interview"]])
+    elif typ == "quiz":
+        n = min(len(u["fragen"]), E["quiz_fragen"] if einfach else u["pro_runde"])
+        for _ in range(n):
+            if einfach and pg.locator(".opt").count() != 2:
+                raise RuntimeError("Quiz: in der einfachen Fassung zwei Antworten erwartet")
+            pg.locator(".opt[data-o='0']").click()
+            pg.locator(".fb.ok").wait_for(timeout=2000)
+            pg.locator("#weiter").click()
     elif typ == "beispiel":
         b = data["beispiele"][u["quelle"]]
         for st in b["schritte"]:
@@ -602,7 +669,7 @@ def spiele(pg, u, data):
                 pg.locator("[data-reveal]").first.click()
             pg.locator("#vor").click()
     elif typ == "satzbau":
-        for it in u["items"]:
+        for it in [x for x in u["items"] if not einfach or len(x["teile"]) <= E["satzbau_max_teile"]]:
             for t in it["teile"]:
                 pg.locator(".pool .tile", has_text=re.compile("^" + re.escape(t) + "$")).first.click()
             pg.locator("#pruefen").click()

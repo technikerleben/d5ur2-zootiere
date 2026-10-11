@@ -193,6 +193,9 @@ table.wh{width:100%;border-collapse:collapse;font-size:17px}
 table.wh td{border-top:1px solid var(--line);padding:8px 4px;vertical-align:top}
 table.wh td:first-child{font-weight:700;width:38%}
 .done-card{text-align:center;padding:22px 16px}
+details.mehr>summary{list-style:none;margin:8px 0}
+details.mehr>summary::-webkit-details-marker{display:none}
+details.mehr[open]>summary{display:none}
 .gicon{flex:none;width:48px;height:48px;border-radius:12px;background:var(--slate-ghost);color:var(--slate-dark);display:grid;place-items:center}
 .gicon svg{width:32px;height:32px}
 ol.hints{margin:6px 0 0;padding-left:24px}
@@ -224,7 +227,8 @@ ol.hints.big li{font-size:19px;margin:10px 0}
 .popicon{width:64px;height:64px;margin:0 auto;border-radius:50%;background:var(--rust-ghost);color:var(--rust-dark);display:grid;place-items:center}
 .popicon svg{width:40px;height:40px}
 .popcard .btn{margin-top:8px}
-.sysfont{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Arabic",sans-serif}
+.sysfont{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+[lang=ar]{font-family:"Noto Sans Arabic","Andika",system-ui,sans-serif}
 .elterninfo[dir=rtl]{text-align:right;line-height:1.8}
 .elterninfo bdi{white-space:nowrap}
 .uebers{font-size:16px;font-style:italic;color:var(--rust-dark);background:var(--rust-ghost);border-radius:10px;padding:8px 12px}
@@ -309,7 +313,12 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") closeSheet()
 
 /* ---------- Router ---------- */
 const M = $("#main");
-$("#appTitle").textContent = D.app.titel; $("#appSub").textContent = D.app.untertitel;
+/* Einfache Fassung: per Schalter (Info) oder Link ?einfach=1 / ?einfach=0 */
+try { const q = new URLSearchParams(location.search).get("einfach"); if (q === "1") { S.einfach = true; save(); } else if (q === "0") { S.einfach = false; save(); } } catch(e) {}
+const EINF = () => !!S.einfach;
+const EF = D.einfach;
+function kopf(){ $("#appTitle").textContent = D.app.titel; $("#appSub").textContent = EINF() ? D.app.untertitel.replace(/ · [^·]*$/, "") + " · " + EF.kopf : D.app.untertitel; }
+kopf();
 function route(){
   closeSheet(); if (TTS) speechSynthesis.cancel();
   const p = (location.hash.replace(/^#\/?/, "") || "weg").split("/");
@@ -328,7 +337,7 @@ window.addEventListener("hashchange", route);
 
 /* ---------- Mein Weg ---------- */
 function viewWeg(){
-  const st = D.weg;
+  const st = D.weg.map(s => EINF() && s.punkte_einfach ? Object.assign({}, s, {punkte: s.punkte_einfach, id: "f" + s.id}) : s);
   let next = null;
   for (const s of st) { for (let i = 0; i < s.punkte.length; i++) { if (!S.weg[s.id + ":" + i]) { next = {s, i}; break; } } if (next) break; }
   let h = '<h1>Mein Weg</h1><p class="lead">' + md(D.start.hallo) + '</p>';
@@ -370,6 +379,8 @@ function viewWissen(part){
   const et = D.wissen.etappen.find(e => "e" + e.etappe === part);
   if (et) {
     h += '<p class="lead"><b>' + esc(et.titel) + '</b><br>Ziel: ' + md(et.ziel) + '</p>';
+    const mk = EINF() && et.merkkarte_einfach;
+    if (mk) h += '<section class="card next"><div class="cardhead"><h3>' + esc(mk.titel) + '</h3>' + sayBtn(mk.titel + ". " + mk.punkte.map(x => x[0] + ": " + x[1]).join(". ")) + '</div>' + mk.punkte.map(x => '<span class="label">' + esc(x[0]) + '</span><div>' + md(x[1]) + '</div>').join("") + '</section><details class="mehr"><summary class="btn block">Alle Merkkarten anzeigen</summary>';
     et.abschnitte.forEach((a, ai) => {
       h += '<section class="card"><div class="cardhead"><h3>' + (ai + 1) + ' · ' + esc(a.titel) + '</h3>' + sayBtn(a.titel + ". " + a.bloecke.filter(b => b[0] !== "Gesicherte Antwort").map(b => b[0] + ": " + b[1]).join(". ")) + '</div>';
       if (a.bild) h += figure(a.bild);
@@ -380,6 +391,7 @@ function viewWissen(part){
       });
       h += '</section>';
     });
+    if (mk) h += '</details>';
     h += '<div class="card calm">' + md(et.abschluss) + '</div>';
   } else if (part === "strategien") {
     h += '<p class="lead">Diese Karten legst du in der Schule an deinen Lernbuddy. Hier kannst du sie nachlesen.</p>';
@@ -435,7 +447,7 @@ function viewExercise(id){
   M.innerHTML = '<a class="back" href="#/ueben"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>Alle Übungen</a>'
     + '<h1>' + esc(u.titel) + '</h1><div class="cardhead"><p class="lead" style="flex:1">' + md(u.intro) + '</p>' + sayBtn(u.intro) + '</div><div id="ex"></div>';
   const box = $("#ex");
-  ({auswahl: exAuswahl, detektiv: exDetektiv, satzbau: exSatzbau, fehlerjagd: exFehler, saetze: exSaetze, beispiel: exBeispiel})[u.typ](u, box);
+  ({auswahl: exAuswahl, detektiv: exDetektiv, satzbau: exSatzbau, fehlerjagd: exFehler, saetze: exSaetze, beispiel: exBeispiel, quiz: exQuiz})[u.typ](u, box);
 }
 function finish(u, box, extra){
   S.ex[u.id] = 1; save();
@@ -446,9 +458,15 @@ function finish(u, box, extra){
 
 /* Auswahl: eine Karte nach der anderen */
 function exAuswahl(u, box){
-  const items = u.items.map((it, n) => Object.assign({n}, it));
+  const items = u.items.map((it, n) => Object.assign({n}, it)).slice(0, EINF() ? EF.max_karten : undefined);
   let i = 0; const schwer = [];
-  function opts(it){ return it.optionen ? it.optionen.map((o, k) => [k, o]) : u.optionen; }
+  function opts(it){
+    if (!it.optionen) return u.optionen;
+    const all = it.optionen.map((o, k) => [k, o]);
+    if (!EINF() || all.length <= EF.max_optionen) return all;
+    const falsch = all.filter(o => o[0] !== it.richtig).slice(0, EF.max_optionen - 1);
+    return all.filter(o => o[0] === it.richtig || falsch.includes(o));
+  }
   function lab(it, id){ const o = opts(it).find(x => x[0] === id); return o ? o[1] : id; }
   function show(){
     const it = items[i], os = opts(it);
@@ -479,7 +497,7 @@ function exAuswahl(u, box){
 
 /* Interview-Detektiv */
 function exDetektiv(u, box){
-  const iv = D.interviews[u.interview];
+  const iv = D.interviews[EINF() && u.interview_einfach ? u.interview_einfach : u.interview];
   const segs = []; const tried = {};
   const want = k => (["W", "X", "V", "U"].includes(k) ? "weg" : k);
   let h = '<div class="status"><div class="card"><span id="cnt" style="flex:1"></span><button class="btn ghost" type="button" id="hilfe" style="min-height:44px;padding:6px 12px">Hilfe</button></div></div><article class="iv"><h3>' + md(iv.titel) + '</h3><p class="small">' + md(iv.einleitung) + '</p>';
@@ -535,6 +553,7 @@ function exDetektiv(u, box){
 
 /* Satzbau */
 function exSatzbau(u, box){
+  if (EINF()) u = Object.assign({}, u, {items: u.items.filter(it => it.teile.length <= EF.satzbau_max_teile)});
   let i = 0;
   function show(){
     const it = u.items[i]; let pool = it.teile.map((t, k) => ({t, k}));
@@ -579,7 +598,7 @@ function exFehler(u, box){
     if (endWrong) wrong.add("end");
     const marked = new Set();
     let h = '<div class="prog"><span>Satz ' + (i + 1) + ' von ' + u.items.length + '</span><span class="bar"><i style="width:' + Math.round(i / u.items.length * 100) + '%"></i></span></div><div class="item"><div class="words">'
-      + f.map((w, k) => '<button class="word" type="button" data-w="' + k + '" aria-pressed="false">' + esc(w) + '</button>').join("") + '<button class="word end" type="button" data-w="end" aria-pressed="false">Ende</button></div></div><div id="fb"></div><div class="row" id="ctl"><button class="btn primary" type="button" id="pruefen">Prüfen</button></div>';
+      + f.map((w, k) => '<button class="word" type="button" data-w="' + k + '" aria-pressed="false">' + esc(w) + '</button>').join("") + '<button class="word end" type="button" data-w="end" aria-pressed="false">Ende</button></div></div>' + (EINF() ? '<p class="small"><b>Tipp:</b> ' + (wrong.size ? "In diesem Satz " + (wrong.size === 1 ? "ist 1 Fehler." : "sind " + wrong.size + " Fehler.") : "Dieser Satz ist richtig.") + '</p>' : "") + '<div id="fb"></div><div class="row" id="ctl"><button class="btn primary" type="button" id="pruefen">Prüfen</button></div>';
     box.innerHTML = h;
     box.querySelectorAll("[data-w]").forEach(b => b.addEventListener("click", () => {
       const k = b.dataset.w === "end" ? "end" : +b.dataset.w;
@@ -623,6 +642,38 @@ function exSaetze(u, box){
     $("#weiter").addEventListener("click", () => finish(u, box, '<p>' + md(u.fazit) + '</p>'));
     $("#fb").scrollIntoView({block: "nearest"});
   });
+}
+
+/* Quiz je Etappe: zufällige Fragen, Ende ohne Punktwert */
+function exQuiz(u, box){
+  const n = Math.min(u.fragen.length, EINF() ? EF.quiz_fragen : u.pro_runde);
+  const fragen = shuffle(u.fragen).slice(0, n).map(f => {
+    let os = f.optionen.map((o, k) => [k, o]);
+    if (EINF()) os = [os[0], shuffle(os.slice(1))[0]];
+    return Object.assign({}, f, {os: shuffle(os)});
+  });
+  let i = 0; const gut = {}, schwer = {};
+  function show(){
+    const f = fragen[i];
+    box.innerHTML = '<div class="prog"><span>Frage ' + (i + 1) + ' von ' + n + '</span><span class="bar"><i style="width:' + Math.round(i / n * 100) + '%"></i></span></div><div class="cardhead"><div class="item" style="flex:1">' + md(f.frage) + '</div>' + sayBtn(f.frage + " " + f.os.map(o => o[1]).join(". ")) + '</div><div class="opts">' + f.os.map(o => '<button class="opt" type="button" data-o="' + o[0] + '">' + md(o[1]) + '</button>').join("") + '</div><div id="fb"></div>';
+    box.querySelectorAll(".opt").forEach(b => b.addEventListener("click", () => {
+      const ok = +b.dataset.o === f.richtig;
+      box.querySelectorAll(".opt").forEach(x => { x.disabled = true; if (+x.dataset.o === f.richtig) x.classList.add("ok"); });
+      if (ok) gut[f.thema] = (gut[f.thema] || 0) + 1; else { b.classList.add("no"); schwer[f.thema] = (schwer[f.thema] || 0) + 1; }
+      $("#fb").innerHTML = '<div class="fb ' + (ok ? "ok" : "no") + '" role="status"><b>' + (ok ? "Richtig!" : "Noch nicht.") + '</b>' + md(f.erklaerung) + '</div><button class="btn primary block" type="button" id="weiter">' + (i + 1 < n ? "Nächste Frage" : "Fertig") + '</button>';
+      $("#weiter").addEventListener("click", () => { i++; if (i < n) { show(); box.scrollIntoView({block: "start"}); } else ende(); });
+      $("#weiter").focus({preventScroll: true}); $("#weiter").scrollIntoView({block: "nearest"});
+    }));
+  }
+  function ende(){
+    const kann = Object.keys(gut).filter(t => !schwer[t]), nochmal = Object.keys(schwer);
+    let x = '';
+    if (kann.length) x += '<div class="card" style="text-align:left"><span class="label" style="color:var(--sage-dark)">Das kannst du schon</span><ul class="plain">' + kann.map(t => '<li>' + esc(t) + '</li>').join("") + '</ul></div>';
+    if (nochmal.length) x += '<div class="card calm" style="text-align:left"><span class="label">Schau dir noch einmal an</span><ul class="plain">' + nochmal.map(t => '<li>' + esc(t) + '</li>').join("") + '</ul>' + (typeof u.etappe === "number" ? '<a class="btn block" href="#/wissen/e' + u.etappe + '" style="margin-top:10px">Merkkarten Etappe ' + u.etappe + '</a>' : "") + '</div>';
+    else x += '<p>Alles beim ersten Versuch richtig.</p>';
+    finish(u, box, x);
+  }
+  show();
 }
 
 /* Beispielaufgabe Schritt für Schritt (Giraffe) */
@@ -919,17 +970,19 @@ function viewZuhause(){
 function viewInfo(){
   const E = D.elterninfo;
   const L = E.sprachen.find(x => x.code === S.lang) || E.sprachen[0];
-  const sys = !["de", "en", "fr"].includes(L.code);
+  const sys = L.code === "tr";
   let h = '<a class="back" href="#/weg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>Zurück</a><h1>' + esc(E.titel) + '</h1>';
-  h += '<span class="label">' + esc(E.sprachwahl) + '</span><div class="chips" role="tablist">' + E.sprachen.map(x => '<button class="chip' + (["de", "en", "fr"].includes(x.code) ? "" : " sysfont") + '" type="button" lang="' + x.code + '" data-lang="' + x.code + '"' + (x === L ? ' aria-current="true"' : "") + '>' + esc(x.name) + '</button>').join("") + '</div>';
+  h += '<span class="label">' + esc(E.sprachwahl) + '</span><div class="chips" role="tablist">' + E.sprachen.map(x => '<button class="chip' + (x.code === "tr" ? " sysfont" : "") + '" type="button" lang="' + x.code + '" data-lang="' + x.code + '"' + (x === L ? ' aria-current="true"' : "") + '>' + esc(x.name) + '</button>').join("") + '</div>';
   h += '<div class="card elterninfo' + (sys ? " sysfont" : "") + '" lang="' + L.code + '" dir="' + (L.rtl ? "rtl" : "ltr") + '"><h3>' + esc(L.titel) + '</h3>' + L.absaetze.map(p => '<p>' + (L.rtl ? md(p).replace(/«([A-Za-zÄÖÜäöüß ]+)»/g, '«<bdi lang="de">$1</bdi>»') : md(p)) + '</p>').join("") + (L.hinweis_uebersetzung ? '<p class="uebers">' + esc(L.hinweis_uebersetzung) + '</p>' : "") + '</div>';
+  h += '<h2>' + esc(EF.titel) + '</h2><div class="card"><label class="check" style="border:0"><input type="checkbox" id="einfach"' + (EINF() ? " checked" : "") + '><span><b>' + esc(EF.titel) + ' einschalten</b><br><span class="small">' + md(EF.text) + '</span></span></label></div>';
   h += '<h2>Gespeicherte Daten</h2><div class="card"><p>Häkchen, gelöste Rätsel und dein Schreibplan liegen nur auf diesem Gerät.</p><button class="btn block" type="button" id="reset">Alles löschen</button></div>';
   h += '<h2>Bildnachweise</h2><div class="card small">' + D.nachweise.map(n => '<p>' + esc(n) + '</p>').join("") + '</div><p class="small">' + esc(D.app.untertitel) + ' · Stand ' + esc(D.stand) + '</p>';
   M.innerHTML = h;
+  $("#einfach").addEventListener("change", e => { S.einfach = e.target.checked; save(); kopf(); });
   M.querySelectorAll("[data-lang]").forEach(c => c.addEventListener("click", () => { S.lang = c.dataset.lang; save(); viewInfo(); const t = M.querySelector(".elterninfo"); if (t) t.scrollIntoView({block: "nearest"}); }));
   $("#reset").addEventListener("click", () => {
     if (!confirm("Alle Häkchen, Rätsel und Notizen auf diesem Gerät löschen?")) return;
-    S = {weg:{}, ex:{}, raetsel:{}, plan:{}, check:{}, spiele:{}, lang: S.lang}; try { localStorage.removeItem(KEY); } catch(e) {} rOrder = null;
+    S = {weg:{}, ex:{}, raetsel:{}, plan:{}, check:{}, spiele:{}, lang: S.lang, einfach: S.einfach}; try { localStorage.removeItem(KEY); } catch(e) {} rOrder = null;
     $("#reset").textContent = "Gelöscht"; $("#reset").disabled = true;
   });
 }

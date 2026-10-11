@@ -122,7 +122,13 @@ Gleiche Denkschritte wie in der Reihe, übertragen auf Haustiere, Amsel, Taube, 
 
 **Elterninfo (10.10.2026):** wählbar in Deutsch, Ukrainisch, Hocharabisch (von rechts nach links), Türkisch, Englisch und Französisch; Sprachwahl bleibt auf dem Gerät. Jede Fassung endet mit dem KI-Hinweis: App KI-unterstützt programmiert, die meisten Inhalte KI-generiert, von den Lehrkräften geprüft und verantwortet. Über jeder Übersetzung steht in der jeweiligen Sprache, dass sie KI-generiert ist und ungenau sein kann. Gegenlesen durch Sprachkundige bleibt sinnvoll.
 
-**Noch offen in der App:** Quiz je Etappe, Schalter „Einfach“, QR-Zettel.
+**Quiz je Etappe (11.10.2026):** je 10 Fragen pro Etappe, davon 8 zufällig je Runde, Antworten gemischt. Jede Frage ist einem Merkblatt-Abschnitt zugeordnet (Generator prüft das). Am Ende kein Punktwert, sondern „Das kannst du schon“ und „Schau dir noch einmal an“ mit Link zu den Merkkarten.
+
+**Einfache Fassung (11.10.2026):** Schalter in der Info oder Link `…/lernapp/?einfach=1` (`?einfach=0` schaltet aus); bleibt auf dem Gerät gespeichert, Kopfzeile zeigt „Einfache Fassung“. Lernweg mit 1F–9F, GN1F/GN2F und Probearbeit F; in Wissen zuerst die F-Merkkarte, die ausführlichen Merkkarten aufklappbar; Übungen höchstens 5 Karten und 2 Antworten, Quiz 5 Fragen mit 2 Antworten, Interview-Detektiv mit dem Fischotter-Kurzinterview, Satzbau nur kurze Sätze, Fehlerjagd nennt die Zahl der Fehler.
+
+**QR-Elternzettel (11.10.2026):** `python tools/build_qrzettel.py` → `ausgabe/lernapp/QR_Lernapp_Elternzettel_A4.pdf` und `…_Einfach_A4.pdf`. Seite 1: QR-Code, So geht es, Handy-Regel, Elterninfo, je ein Satz auf Ukrainisch, Arabisch, Türkisch, Englisch, Französisch (als KI-Übersetzung gekennzeichnet). Seite 2: acht QR-Schnipsel zum Einkleben. A4, Graustufen, Originalgröße, ≥ 12 pt; der Generator liest den QR-Code zur Kontrolle.
+
+**Noch offen:** Übersetzungen gegenlesen lassen; Angaben zu den Alltagstieren in „Wer bin ich?“ prüfen.
 
 ## 12 · Offen
 

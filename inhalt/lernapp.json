@@ -3,7 +3,8 @@
   "app": {
     "titel": "Zootiere",
     "kurz": "Zootiere",
-    "untertitel": "Deutsch · Jahrgang 5 · Tiere beschreiben"
+    "untertitel": "Deutsch · Jahrgang 5 · Tiere beschreiben",
+    "adresse": "https://d5ur2-zootiere.vercel.app/lernapp/"
   },
   "start": {
     "hallo": "Hier übst du, wie man ein Tier sachlich beschreibt. Du lernst in deinem Tempo. Die App ersetzt nicht dein Heft und nicht die Blätter in der Schule.",
@@ -385,7 +386,8 @@
           "weg",
           "streichen"
         ]
-      ]
+      ],
+      "interview_einfach": "fischotter-f"
     },
     {
       "id": "e1-wortarten",
@@ -453,6 +455,128 @@
           "text": "*Die Ohren sind klein. **Die** Ohren sind rund.*",
           "richtig": "Ar",
           "erklaerung": "„Die“ begleitet das Nomen „Ohren“. Es ist ein Artikel."
+        }
+      ]
+    },
+    {
+      "id": "e1-quiz",
+      "etappe": 1,
+      "typ": "quiz",
+      "titel": "Quiz zu Etappe 1",
+      "kurz": "Gemischte Fragen, so oft du willst",
+      "pro_runde": 8,
+      "intro": "Beantworte die Fragen. Am Ende siehst du, was du schon kannst und was du noch einmal anschauen kannst.",
+      "siehe": "Merkblatt 1",
+      "fragen": [
+        {
+          "frage": "Welche Beschreibung hilft dir, einen bestimmten Fisch zu finden?",
+          "optionen": [
+            "*Der Fisch hat einen runden Körper mit dunklen Streifen.*",
+            "*Der Fisch ist schön.*",
+            "*Der Fisch schwimmt im Wasser.*"
+          ],
+          "richtig": 0,
+          "erklaerung": "Körperform und Muster sind genaue Merkmale. „schön“ und „schwimmt“ passen zu allen Fischen.",
+          "thema": "Finde den Fisch"
+        },
+        {
+          "frage": "Welches Wort ist eine Meinung?",
+          "optionen": [
+            "toll",
+            "dunkelbraun",
+            "kurz"
+          ],
+          "richtig": 0,
+          "erklaerung": "„toll“ sagt, wie jemand etwas findet. Farbe und Länge kann man prüfen.",
+          "thema": "Genau statt wertend"
+        },
+        {
+          "frage": "Was kannst du auf einem Foto **nicht** sicher erkennen?",
+          "optionen": [
+            "ob das Fell weich ist",
+            "die Farbe des Fells",
+            "wie groß die Ohren sind"
+          ],
+          "richtig": 0,
+          "erklaerung": "Ein Foto zeigt nicht alles. Ob ein Fell weich ist, siehst du nicht.",
+          "thema": "Das zeigt dir das Foto"
+        },
+        {
+          "frage": "Ein Körperteil ist auf dem Foto verdeckt. Was machst du?",
+          "optionen": [
+            "Ich suche die Angabe im Interview.",
+            "Ich denke mir aus, wie es aussieht.",
+            "Ich schreibe, dass das Tier keins hat."
+          ],
+          "richtig": 0,
+          "erklaerung": "Erfinde keine verdeckten Merkmale. Suche sie im Interview.",
+          "thema": "Das zeigt dir das Foto"
+        },
+        {
+          "frage": "Du suchst im Interview, was Fischotter fressen. Welches Suchwort hilft?",
+          "optionen": [
+            "fressen",
+            "leben",
+            "Zentimeter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Mit dem Suchwort „fressen“ findest du die Nahrung schneller.",
+          "thema": "Das erfährst du im Interview"
+        },
+        {
+          "frage": "„Otto ist 80 Zentimeter lang.“ Für wen gilt diese Angabe?",
+          "optionen": [
+            "nur für Otto",
+            "für alle Fischotter",
+            "für alle Tiere im Zoo"
+          ],
+          "richtig": 0,
+          "erklaerung": "Otto ist ein einzelnes Tier. In die Beschreibung gehört das Maß der Art.",
+          "thema": "Das erfährst du im Interview"
+        },
+        {
+          "frage": "Was gehört in eine Tierbeschreibung?",
+          "optionen": [
+            "eine Sachangabe über alle Tiere der Art",
+            "ein Erlebnis mit Otto",
+            "die Meinung der Tierpflegerin"
+          ],
+          "richtig": 0,
+          "erklaerung": "Eine Tierbeschreibung sagt, was für alle Tiere der Art gilt.",
+          "thema": "Was gehört in die Beschreibung?"
+        },
+        {
+          "frage": "„Otto ist der süßeste Otter der Welt!“ Was ist das?",
+          "optionen": [
+            "eine Meinung",
+            "eine Sachangabe",
+            "ein Maß"
+          ],
+          "richtig": 0,
+          "erklaerung": "„der süßeste“ sagt, wie jemand Otto findet. Das streichst du.",
+          "thema": "Was gehört in die Beschreibung?"
+        },
+        {
+          "frage": "*Der Otter schwimmt.* Welche Wortart ist „schwimmt“?",
+          "optionen": [
+            "Verb",
+            "Nomen",
+            "Artikel"
+          ],
+          "richtig": 0,
+          "erklaerung": "„schwimmt“ sagt, was geschieht. Es ist ein Verb.",
+          "thema": "Sprachdetektiv"
+        },
+        {
+          "frage": "Unter welche Überschrift ordnest du „kurze Beine“?",
+          "optionen": [
+            "Aussehen",
+            "Lebensraum",
+            "Nahrung"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Beine sind ein äußeres Merkmal. Sie gehören zum Aussehen.",
+          "thema": "Informationen ordnen"
         }
       ]
     },
@@ -727,6 +851,128 @@
       ]
     },
     {
+      "id": "e2-quiz",
+      "etappe": 2,
+      "typ": "quiz",
+      "titel": "Quiz zu Etappe 2",
+      "kurz": "Gemischte Fragen, so oft du willst",
+      "pro_runde": 8,
+      "intro": "Beantworte die Fragen. Am Ende siehst du, was du schon kannst und was du noch einmal anschauen kannst.",
+      "siehe": "Merkblatt 2",
+      "fragen": [
+        {
+          "frage": "Welche Angabe kannst du überprüfen?",
+          "optionen": [
+            "oben dunkelbraunes Fell",
+            "schönes Fell",
+            "tolles Fell"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Farbe kannst du prüfen. „schön“ und „toll“ sind Meinungen.",
+          "thema": "Genau statt wertend"
+        },
+        {
+          "frage": "*Körper* + *Länge*: Wie heißt das neue Wort mit Artikel?",
+          "optionen": [
+            "die Körperlänge",
+            "der Körperlänge",
+            "das Körperlänge"
+          ],
+          "richtig": 0,
+          "erklaerung": "Das letzte Wort bestimmt den Artikel: die Länge → die Körperlänge.",
+          "thema": "Genau statt wertend"
+        },
+        {
+          "frage": "Du machst aus einer Interview-Stelle einen Sachsatz. Was lässt du weg?",
+          "optionen": [
+            "Vergleiche und Meinungen",
+            "den Namen der Tierart",
+            "das Verb"
+          ],
+          "richtig": 0,
+          "erklaerung": "Vergleiche und Meinungen fallen weg. Die Sachangabe bleibt.",
+          "thema": "Aus Interview-Sprache wird Sachsprache"
+        },
+        {
+          "frage": "Welcher Satz ist sachlich?",
+          "optionen": [
+            "*Der Fischotter hat kurze Beine.*",
+            "*Ich finde seine Beine lustig.*",
+            "*Seine Beine sind wie kleine Stummel.*"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Satz nennt ein Merkmal. Die anderen enthalten eine Meinung oder einen Vergleich.",
+          "thema": "Aus Interview-Sprache wird Sachsprache"
+        },
+        {
+          "frage": "Welche Beschreibung passt nur zu einem Fisch im Aquarium?",
+          "optionen": [
+            "*Der Fisch hat lange Flossen oben und unten.*",
+            "*Der Fisch hat Flossen.*",
+            "*Der Fisch ist bunt.*"
+          ],
+          "richtig": 0,
+          "erklaerung": "Nur Fisch C hat lange Flossen oben und unten. Flossen haben alle Fische.",
+          "thema": "Fische genau beschreiben"
+        },
+        {
+          "frage": "Warum steht eine Tierbeschreibung im Präsens?",
+          "optionen": [
+            "Sie sagt, was allgemein für ein Tier gilt.",
+            "Sie erzählt, was gestern passiert ist.",
+            "Sie klingt dann spannender."
+          ],
+          "richtig": 0,
+          "erklaerung": "Eine Tierbeschreibung sagt, was allgemein gilt. Deshalb steht sie im Präsens.",
+          "thema": "Im Präsens beschreiben"
+        },
+        {
+          "frage": "*Die Otter ___ im Wasser.* Welches Verb passt?",
+          "optionen": [
+            "schwimmen",
+            "schwimmt",
+            "schwammen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Mehrere Otter: „sie schwimmen“. Präsens.",
+          "thema": "Im Präsens beschreiben"
+        },
+        {
+          "frage": "Wie heißt die Grundform von „frisst“?",
+          "optionen": [
+            "fressen",
+            "fraß",
+            "gefressen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Im Wörterbuch steht die Grundform: fressen.",
+          "thema": "Im Präsens beschreiben"
+        },
+        {
+          "frage": "*Der Fischotter an einem See.* Was fehlt?",
+          "optionen": [
+            "das Verb",
+            "der Punkt",
+            "das Nomen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Ohne Verb ist der Satz nicht vollständig: *Der Fischotter lebt an einem See.*",
+          "thema": "Vollständige Sätze"
+        },
+        {
+          "frage": "Was schreibst du groß?",
+          "optionen": [
+            "Satzanfänge und Nomen",
+            "alle Adjektive",
+            "nur die Namen von Tieren"
+          ],
+          "richtig": 0,
+          "erklaerung": "Satzanfänge und Nomen schreibst du groß.",
+          "thema": "Sätze prüfen"
+        }
+      ]
+    },
+    {
       "id": "e3-plan",
       "etappe": 3,
       "typ": "auswahl",
@@ -893,6 +1139,128 @@
         {
           "falsch": "Seine tasthaare sind lang",
           "richtig": "Seine Tasthaare sind lang."
+        }
+      ]
+    },
+    {
+      "id": "e3-quiz",
+      "etappe": 3,
+      "typ": "quiz",
+      "titel": "Quiz zu Etappe 3",
+      "kurz": "Gemischte Fragen, so oft du willst",
+      "pro_runde": 8,
+      "intro": "Beantworte die Fragen. Am Ende siehst du, was du schon kannst und was du noch einmal anschauen kannst.",
+      "siehe": "Merkblatt 3",
+      "fragen": [
+        {
+          "frage": "Welche vier Überschriften hat dein Schreibplan?",
+          "optionen": [
+            "Überblick, Aussehen, Lebensraum, Nahrung",
+            "Anfang, Mitte, Schluss, Meinung",
+            "Name, Alter, Lieblingsfutter, Tierpfleger"
+          ],
+          "richtig": 0,
+          "erklaerung": "Mit diesen vier Überschriften ordnest du die Sachangaben.",
+          "thema": "Vom Interview zum Plan"
+        },
+        {
+          "frage": "Schreibst du im Schreibplan ganze Sätze?",
+          "optionen": [
+            "Nein, Stichwörter reichen.",
+            "Ja, immer ganze Sätze.",
+            "Nein, nur Fragen."
+          ],
+          "richtig": 0,
+          "erklaerung": "Im Plan stehen Stichwörter. Die Sätze schreibst du danach.",
+          "thema": "Vom Interview zum Plan"
+        },
+        {
+          "frage": "Was gehört in den Überblick?",
+          "optionen": [
+            "Tiername und Maß der Art",
+            "das Lieblingsfutter des Zootiers",
+            "der Name der Tierpflegerin"
+          ],
+          "richtig": 0,
+          "erklaerung": "Am Anfang stehen der Tiername und ein Maß, das für die Art gilt.",
+          "thema": "Vom Interview zum Plan"
+        },
+        {
+          "frage": "Was braucht ein Maß in der Tierbeschreibung?",
+          "optionen": [
+            "eine Einheit und einen Bezug",
+            "eine Meinung",
+            "ein Foto"
+          ],
+          "richtig": 0,
+          "erklaerung": "Zum Beispiel: ohne Schwanz etwa 60–90 Zentimeter. Einheit: Zentimeter. Bezug: ohne Schwanz.",
+          "thema": "Vom Interview zum Plan"
+        },
+        {
+          "frage": "Aus dem Stichwort „Fell – oben dunkelbraun“ wird …",
+          "optionen": [
+            "*Das Fell ist oben dunkelbraun.*",
+            "*Fell oben dunkelbraun.*",
+            "*Das Fell war oben dunkelbraun.*"
+          ],
+          "richtig": 0,
+          "erklaerung": "Ein ganzer Satz im Präsens mit großem Anfang und Punkt.",
+          "thema": "Aus Stichwörtern wird Text"
+        },
+        {
+          "frage": "Wie viele verschiedene äußere Merkmale brauchst du für K2?",
+          "optionen": [
+            "vier",
+            "eins",
+            "zehn"
+          ],
+          "richtig": 0,
+          "erklaerung": "K2: mindestens vier verschiedene genaue Merkmale. Dasselbe Merkmal zählt nur einmal.",
+          "thema": "Mit Kriterien prüfen"
+        },
+        {
+          "frage": "Was prüfst du bei K1?",
+          "optionen": [
+            "Tiername, Maß, Lebensraum und Nahrung",
+            "nur die Rechtschreibung",
+            "ob der Text lustig ist"
+          ],
+          "richtig": 0,
+          "erklaerung": "K1 prüft die Informationen. Sie müssen mit dem Interview übereinstimmen.",
+          "thema": "Mit Kriterien prüfen"
+        },
+        {
+          "frage": "*Der Rote Panda ist das süßeste Tier.* Welches Kriterium ist nicht erfüllt?",
+          "optionen": [
+            "K4 · Sachlich schreiben",
+            "K3 · Aufbau",
+            "K6 · Schreibung"
+          ],
+          "richtig": 0,
+          "erklaerung": "„das süßeste“ ist eine Meinung. Das gehört nicht in einen sachlichen Text.",
+          "thema": "Mit Kriterien prüfen"
+        },
+        {
+          "frage": "Wie zeigst du deine Prüfung bei K6?",
+          "optionen": [
+            "einen Satzanfang einkreisen, zwei Nomen unterstreichen, einen Punkt markieren",
+            "den ganzen Text noch einmal abschreiben",
+            "alle Fehler rot durchstreichen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Mit dem Prüfbeleg zeigst du, dass du Satzanfänge, Nomen und Punkte geprüft hast.",
+          "thema": "Prüfen und überarbeiten"
+        },
+        {
+          "frage": "Dein Satz ist schon richtig. Was machst du?",
+          "optionen": [
+            "Er bleibt. Ich begründe: „Mein Satz bleibt, weil …“",
+            "Ich ändere ihn trotzdem.",
+            "Ich streiche ihn."
+          ],
+          "richtig": 0,
+          "erklaerung": "Ein richtiger Satz bleibt, wie er ist.",
+          "thema": "Prüfen und überarbeiten"
         }
       ]
     },
@@ -1667,5 +2035,54 @@
         "Z": "Verhalten"
       }
     }
+  },
+  "einfach": {
+    "titel": "Einfache Fassung",
+    "text": "Kürzere Übungen mit weniger Antworten, ein kurzes Interview und die Blätter mit „F“ im Lernweg.",
+    "an": "Die einfache Fassung ist eingeschaltet.",
+    "kopf": "Einfache Fassung",
+    "max_karten": 5,
+    "max_optionen": 2,
+    "quiz_fragen": 5,
+    "satzbau_max_teile": 4
+  },
+  "qrzettel": {
+    "titel": "Zootiere – die Lern-App für zu Hause",
+    "anrede": "Liebe Eltern,",
+    "schritte": [
+      "Scannen Sie den QR-Code mit der Kamera des Handys.",
+      "Die App öffnet sich im Browser. Eine Installation aus einem App-Store ist nicht nötig.",
+      "Tipp: Über das Teilen-Menü des Browsers „Zum Home-Bildschirm“ wählen. Dann funktioniert die App auch ohne Internet."
+    ],
+    "sprachen": [
+      [
+        "uk",
+        "Інформація для батьків українською: відкрийте застосунок і натисніть {i} угорі праворуч.",
+        "(переклад ШІ)"
+      ],
+      [
+        "ar",
+        "معلومات لأولياء الأمور باللغة العربية: افتحوا التطبيق واضغطوا على {i} في الأعلى.",
+        "(ترجمة بالذكاء الاصطناعي)"
+      ],
+      [
+        "tr",
+        "Veliler için Türkçe bilgi: Uygulamayı açın ve sağ üstteki {i} işaretine dokunun.",
+        "(YZ çevirisi)"
+      ],
+      [
+        "en",
+        "Information for parents in English: open the app and tap {i} at the top right.",
+        "(AI translation)"
+      ],
+      [
+        "fr",
+        "Information pour les parents en français : ouvrez l'application et touchez {i} en haut à droite.",
+        "(traduction IA)"
+      ]
+    ],
+    "sprachen_de": "Die Elterninformation gibt es in der App auch auf Ukrainisch, Arabisch, Türkisch, Englisch und Französisch: oben rechts auf {i} tippen.",
+    "schnipsel": "Zum Ausschneiden und Einkleben ins Heft",
+    "einfach_hinweis": "Einfache Fassung: Dieser Code öffnet die App mit kürzeren Übungen und den Blättern mit „F“."
   }
 }
