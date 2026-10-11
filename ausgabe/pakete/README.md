@@ -23,6 +23,7 @@ Schülerpakete: immer erst Materialbasis (Foto/Interview), dann Arbeitsblätter.
 | lehrkraft/Hilfekarten_laminieren_A4.pdf | 2 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Interviews_Zeilenbelege_A4.pdf | 13 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Strategiekarten_210x99.pdf | 4 | siehe Lehrkraft-Leitfaden |
+| lehrkraft/Lernbuddy_Rechts_Links_A4.pdf | 2 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Lernweg_A4.pdf | 2 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Wahlphase_Projekte_A4.pdf | 4 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Kernpaket_Lehrkraft_A4.pdf | 132 | einseitig als Kopiervorlage; Deckblatt je Abschnitt |

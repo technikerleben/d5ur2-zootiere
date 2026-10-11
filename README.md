@@ -10,6 +10,8 @@ Stand: 08.10.2026. Vier Wochen, acht Doppelstunden, Fischotter als Beispieltier.
 
 **Training vor der Klassenarbeit:** Elenantilope und Hirschziegenantilope (Zoo Dortmund), platzsparend je ein A4-Blatt beidseitig, Musterlösungen Mindest-/Regelstandard im Kontroll-Kiosk (Nummer 10/11): `python tools/build_training.py` (vor `build_kiosk.py`).
 
+**Lernbuddy (neutral):** laminierte A4-Tischvorlage, Rechts- und Linkshänderfassung, freie Mitte 150 × 212 mm für das A5-Blatt: `python tools/build_lernbuddy.py` → `ausgabe/lernbuddy/`.
+
 **Druckpakete:** `python tools/build_pakete.py` → `ausgabe/pakete/` (plus ZIP).
 - `schueler/`: Schülerpaket Etappe 1–3, Förder-Etappe 1F–3F, Probearbeit, Klassenarbeit V1/V2 – jeweils **erst Materialbasis, dann Arbeitsblätter**, eine PDF pro Paket.
 - `lehrkraft/Kernpaket_Lehrkraft_A4.pdf`: **Kernpaket** – alle Druckvorlagen in Unterrichtsreihenfolge (Lernweg, Etappen 1–3 mit Probearbeit, zieldifferente Etappen mit GN und Probearbeit F, Training Antilopen, Klassenarbeiten V1/V2/F, Projekte), je Abschnitt ein Deckblatt (`python tools/build_kernpaket.py`, läuft auch in `build_pakete.py`).

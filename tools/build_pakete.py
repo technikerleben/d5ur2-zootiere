@@ -47,6 +47,7 @@ LEHRKRAFT = {
     "Hilfekarten_laminieren_A4.pdf": ["etappe2/Woerterhilfe_A4.pdf", "etappe3/Rueckmeldekarte_A4.pdf"],
     "Interviews_Zeilenbelege_A4.pdf": ["interviews/Interviews_Pruefliste_A4.pdf"],
     "Strategiekarten_210x99.pdf": ["strategiekarten/Strategiekarten_A4.pdf"],
+    "Lernbuddy_Rechts_Links_A4.pdf": ["lernbuddy/Lernbuddy_beide_A4.pdf"],
     "Lernweg_A4.pdf": ["lernweg/Lernweg_Zootiere_A4.pdf", "lernweg/Lernweg_Zootiere_F_A4.pdf"],
     "Wahlphase_Projekte_A4.pdf": ["wahlphase/Wahlphase_Projekte_A4.pdf"],
 }

@@ -173,6 +173,7 @@ tools/
   build_pruefung_f.py     Probearbeit F / Klassenarbeit F (zieldifferent)
   build_training.py       Training Antilopen + zeilen_training.json (vor build_kiosk.py ausführen)
   build_kernpaket.py      Kernpaket Lehrkraft (alle Druckvorlagen + Deckblätter je Abschnitt)
+  build_lernbuddy.py      neutraler Lernbuddy A4 (Rechts-/Linkshänder; Durchführung auf der Seite der Nicht-Schreibhand)
   build_pakete.py         Druckpakete Schüler/Lehrkraft + ZIP (ausgabe/pakete)
   build_lernapp.py        Lern-App (lernapp/) mit Sperrlisten-Prüfung und Browsertest 390×844
   build_wissensbasis.py   diese Datei
