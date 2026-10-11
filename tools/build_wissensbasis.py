@@ -55,7 +55,7 @@ PRINZIPIEN = """
 - **Klasse:** Jahrgang 5 (in Materialien neutral „Deutsch · Jahrgang 5“, keine Klassenbezeichnung). Zwei Kinder lernen **zieldifferent (Förderschwerpunkt Lernen)**.
 - **Zeit:** 720 Minuten. Schulinterner Lehrplan sieht 20 Stunden vor; gekürzt wurden zusätzliche Recherche, mehrfache Schreibdurchgänge, längere Präsentationen.
 - **Lehrplan:** Unterrichtsvorhaben „Ein Besuch im Zoo – Auf Basis von Material berichten“; Abschlussziel „Tiere sachlich beschreiben (Aufgabentyp 2)“. Digitale Recherche/Präsentation sind **nicht** Teil dieser Reihe (an anderer Stelle der Jahresplanung).
-- **Sprachspur (integriert, keine eigene Grammatik-Etappe):** Wortarten Nomen/Artikel/Verb/Adjektiv, Großschreibung von Nomen, zusammengesetzte Nomen („Wörter zerlegen“, letztes Wort bestimmt den Artikel), Präsens und Subjekt-Verb-Kongruenz, Grundform vs. gebeugte Form, vollständige Sätze, genaue Verben/Adjektive. Quelle: `planung/Sprachspur_Zootiere_Feinplanung.md`.
+- **Sprachspur (integriert, keine eigene Grammatik-Etappe):** Wortarten Nomen/Artikel/Verb/Adjektiv, Großschreibung von Nomen, zusammengesetzte Nomen („Wörter zerlegen“, letztes Wort bestimmt den Artikel; Schulbegriffe zusätzlich: **Kofferwort/Kofferprobe, Kopf-rechts-Regel**), Präsens und Subjekt-Verb-Kongruenz (Subjekt zusätzlich als **Wer-Paket**), Grundform vs. gebeugte Form, vollständige Sätze, genaue Verben/Adjektive. Quelle: `planung/Sprachspur_Zootiere_Feinplanung.md`.
 - **Anforderungen an den Zieltext:** Tiername und Überblick mit **richtiger Maßangabe mit Einheit und Bezug** (z. B. „Kopf und Rumpf … cm, Schwanz zusätzlich“ oder Gewicht), **mindestens vier verschiedene äußere Merkmale**, **Lebensraum**, **Nahrung**; sachlich, Präsens, vollständige Sätze, geordnet (Überblick → Aussehen → Lebensraum → Nahrung). **Keine Mindestwortzahl**; Länge ist kein Qualitätsmerkmal. Steckbrief/Stichwortliste ist Planungshilfe, nicht Zielprodukt.
 - **Materialtreue:** Nur Angaben, die Bild oder Text belegen. Fotos zeigen nicht alles (z. B. Schwimmhäute, Körperlänge, „weiches Fell“). Nichts erfinden, nichts aus Fotos schätzen.
 
@@ -438,6 +438,30 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 | Sprachspur | in die Etappen integrierte Grammatik-/Rechtschreibinhalte |
 | K1–K6 | Textkriterien: Informationen, Aussehen, Aufbau, Sachlich, Verständlich, Schreibung |
 | F-Material | zieldifferentes Material (Förderschwerpunkt Lernen), Blätter 1F–9F |
+
+## 18 · Schulmaterialien zur Sprachanalyse (Abgleich 11.10.2026)
+
+Die HBG-Schulmaterialien werden **nicht verändert**. Die Reihe verweist auf sie und übernimmt ihre Begriffe **zusätzlich** zu den eigenen.
+
+**Kürzel (verbindlich):** Wortarten **N** Nomen · **Art.** Artikel · **V** Verb · **Adj.** Adjektiv. Markierbuchstaben im Interview **A** Aussehen · **L** Lebensraum · **N** Nahrung · **M** Maß. „A“ steht nie für Artikel.
+
+**Schulbegriffe zusätzlich nennen:** Kofferwort/Kofferprobe und Kopf-rechts-Regel (zusammengesetzte Nomen) · Wer-Paket (Subjekt) · Grundform = Infinitiv. Umgesetzt in Merkblatt/Input 1 (Sprachdetektiv: Kürzel, Kopf-rechts-Regel, Kofferwörter), Merkblatt/Input 2 (Wörter zusammensetzen, Subjekt und Verb, Grundform), Blatt 1/2/4, Strategiekarte 6, Kiosk-Tipps zu Blatt 1–4, 6 und 9.
+
+| Schulmaterial | Nutzung in der Reihe |
+|---|---|
+| Lernfächer Wortarten, Teil 1–4 (Artikel, Adjektiv, Nomen, Verb) und Seite Präsens | Nachschlagen beim Sprachdetektiv (Blatt 1–4, 6), Lösungsleiter Stufe 2; Verweis in den Kiosk-Tipps |
+| Merkblatt Wortarten, Wortarten-Plakate A4 | Plakate Artikel/Adjektiv/Nomen/Verb im Raum |
+| FRESCH-Fächer („groß oder klein?“, Kofferprobe), Rechtschreibfächer Seite 1c | Großschreibung (K6), zusammengesetzte Nomen (Blatt 4/5); Verweis im Kiosk zu Blatt 4 und 9 |
+| Spielbretter Präsens 1–2 mit Lösungsblättern | gezieltes Üben bei offenem E2.3, Wahlzeit |
+| Poster „Pakete im Satz“ (Wer-Paket, Verb) | Subjekt-Verb-Kongruenz, Strategiekarte 6; Umstellprobe für abwechslungsreiche Satzanfänge (K5) |
+| AB Kopfverb + dass (nur Kopfverb-Liste) | Signal für Meinung/Vermutung im Interview (finden, glauben, meinen, vermuten) |
+| Wegweiser Zeitformen | Signal: Vergangenheit im Interview meist Erlebnis des Zootiers (X) |
+| Lernfächer Partikel, Pronomen | Interview-Sprache („ganz“, „richtig“), klare Bezüge (K5) |
+| Rechtschreibfächer Zwillinge, s/ss/ß; FRESCH Ableiten | geübte Tierwörter (Fell, Wasser, frisst, Flüsse, Schwimmhäute, gräbt) |
+| nicht für die Reihe | AB Haupt-/Nebensätze, Spielbretter Futur/Imperfekt/Perfekt, Wessen-Anhänger (höchstens freiwillig), übrige Wortarten, Buchstaben-Symbole |
+
+- **Figuren** der Lernfächer (z. B. Nora Nomen) sind Schulmaterial und bleiben dort; auf Reihenblättern genügt ein Verweis, keine Figuren (Regel „keine Maskottchen“).
+- **Probearbeit/Klassenarbeit:** Ob Schulmaterialien (z. B. Fächer) als Hilfe ausliegen, **entscheidet die Lehrkraft individuell**; genutzte Hilfen werden auf der Lehrkraftseite notiert.
 """
 
 

@@ -1,7 +1,7 @@
 # Wissensbasis · Deutsch 5 · Unterrichtsreihe „Zootiere“
 
 > **Zweck:** Vollständige, verbindliche Wissensgrundlage für ein LLM, das an dieser Reihe weiterarbeitet (Material ergänzen, ändern, prüfen, Fragen beantworten).
-> **Stand:** 10.10.2026. Abschnitte mit ⚙ werden aus den Inhaltsdateien `inhalt/*.json` erzeugt (`python tools/build_wissensbasis.py`) und spiegeln den aktuellen Materialstand.
+> **Stand:** 11.10.2026. Abschnitte mit ⚙ werden aus den Inhaltsdateien `inhalt/*.json` erzeugt (`python tools/build_wissensbasis.py`) und spiegeln den aktuellen Materialstand.
 > **Repo:** `technikerleben/d5ur2-zootiere`, Stand in `main` (am 10.10.2026 aus `claude/etappe1-muster` zusammengeführt; Deployment über Vercel). Lehrkraft-Leitfaden: `anleitung.html`.
 
 ## 0 · Kurzfassung in zehn Sätzen
@@ -36,15 +36,16 @@
 - 13 · Kompetenzraster mit vier Standards (Volltext)
 - 14 · Zieldifferentes Material (Förderschwerpunkt Lernen)
 - 15 · Zeitplan der acht Doppelstunden und Druckplan
-- 16 · Offene Punkte (Stand 10.10.2026)
+- 16 · Offene Punkte (Stand 11.10.2026)
 - 17 · Glossar
+- 18 · Schulmaterialien zur Sprachanalyse (Abgleich 11.10.2026)
 
 ## 1 · Rahmen und Lehrplanbezug
 
 - **Klasse:** Jahrgang 5 (in Materialien neutral „Deutsch · Jahrgang 5“, keine Klassenbezeichnung). Zwei Kinder lernen **zieldifferent (Förderschwerpunkt Lernen)**.
 - **Zeit:** 720 Minuten. Schulinterner Lehrplan sieht 20 Stunden vor; gekürzt wurden zusätzliche Recherche, mehrfache Schreibdurchgänge, längere Präsentationen.
 - **Lehrplan:** Unterrichtsvorhaben „Ein Besuch im Zoo – Auf Basis von Material berichten“; Abschlussziel „Tiere sachlich beschreiben (Aufgabentyp 2)“. Digitale Recherche/Präsentation sind **nicht** Teil dieser Reihe (an anderer Stelle der Jahresplanung).
-- **Sprachspur (integriert, keine eigene Grammatik-Etappe):** Wortarten Nomen/Artikel/Verb/Adjektiv, Großschreibung von Nomen, zusammengesetzte Nomen („Wörter zerlegen“, letztes Wort bestimmt den Artikel), Präsens und Subjekt-Verb-Kongruenz, Grundform vs. gebeugte Form, vollständige Sätze, genaue Verben/Adjektive. Quelle: `planung/Sprachspur_Zootiere_Feinplanung.md`.
+- **Sprachspur (integriert, keine eigene Grammatik-Etappe):** Wortarten Nomen/Artikel/Verb/Adjektiv, Großschreibung von Nomen, zusammengesetzte Nomen („Wörter zerlegen“, letztes Wort bestimmt den Artikel; Schulbegriffe zusätzlich: **Kofferwort/Kofferprobe, Kopf-rechts-Regel**), Präsens und Subjekt-Verb-Kongruenz (Subjekt zusätzlich als **Wer-Paket**), Grundform vs. gebeugte Form, vollständige Sätze, genaue Verben/Adjektive. Quelle: `planung/Sprachspur_Zootiere_Feinplanung.md`.
 - **Anforderungen an den Zieltext:** Tiername und Überblick mit **richtiger Maßangabe mit Einheit und Bezug** (z. B. „Kopf und Rumpf … cm, Schwanz zusätzlich“ oder Gewicht), **mindestens vier verschiedene äußere Merkmale**, **Lebensraum**, **Nahrung**; sachlich, Präsens, vollständige Sätze, geordnet (Überblick → Aussehen → Lebensraum → Nahrung). **Keine Mindestwortzahl**; Länge ist kein Qualitätsmerkmal. Steckbrief/Stichwortliste ist Planungshilfe, nicht Zielprodukt.
 - **Materialtreue:** Nur Angaben, die Bild oder Text belegen. Fotos zeigen nicht alles (z. B. Schwimmhäute, Körperlänge, „weiches Fell“). Nichts erfinden, nichts aus Fotos schätzen.
 
@@ -320,10 +321,10 @@ Rahmen: Die Schülerzeitung „Zoo-Reporter“ war im Zoo und hat mit Tierpflege
    - _Frage:_ Ordne zu: *Fischotter fressen Fische.* · *Otto bekommt einen Eimer voll.* · *Er ist der süßeste Otter!*
    - _Gesicherte Antwort:_ Sachangabe: Fische. Einzelfall: Ottos Eimer. Meinung: „der süßeste Otter“. Nur die Sachangabe passt.
 6. **Sprachdetektiv**
-   - _Vier Wortarten:_ **Nomen** benennen Tiere und Dinge: *Otter, Fell*. Du schreibst sie groß. / **Artikel** begleiten Nomen: *der Otter, das Fell*. / **Verben** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*. / **Adjektive** beschreiben Merkmale: *braun, dicht*.
-   - _Wörter zerlegen:_ *der Körper + die Länge = die Körperlänge* / Das letzte Nomen bestimmt den Artikel.
+   - _Vier Wortarten:_ **Nomen (N)** benennen Tiere und Dinge: *Otter, Fell*. Du schreibst sie groß. / **Artikel (Art.)** begleiten Nomen: *der Otter, das Fell*. / **Verben (V)** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*. / **Adjektive (Adj.)** beschreiben Merkmale: *braun, dicht*.
+   - _Wörter zerlegen:_ *der Körper + die Länge = die Körperlänge* / Das letzte Nomen bestimmt den Artikel: **Kopf-rechts-Regel** für **Kofferwörter**.
    - _Frage:_ „Der Otter schwimmt.“ Welche Wortarten findest du?
-   - _Gesicherte Antwort:_ *Der*: Artikel; *Otter*: Nomen; *schwimmt*: Verb.
+   - _Gesicherte Antwort:_ *Der*: Artikel (Art.); *Otter*: Nomen (N); *schwimmt*: Verb (V).
 7. **Informationen ordnen**
    - _Beispiel: nur Sachangaben, geordnet:_ **Überblick:** Fischotter; ohne Schwanz 60–90 cm / **Aussehen:** langer, schmaler Körper; kurze Beine; dunkelbraunes Fell oben / **Lebensraum:** Flüsse und Seen; Ufer mit Verstecken / **Nahrung:** vor allem Fische; Frösche, Krebse
    - _Frage:_ Wohin gehört „breiter, flacher Kopf“?
@@ -338,31 +339,31 @@ Rahmen: Die Schülerzeitung „Zoo-Reporter“ war im Zoo und hat mit Tierpflege
 - **Blatt 1 · Welche Beschreibung hilft?** (Du brauchst: Heft · Merkblatt 1)
   - Lies: A: *Der Fischotter ist toll. Sein Fell ist schön.* / B: *Der Fischotter hat einen langen Körper und kurze Beine. Sein Fell ist oben dunkelbraun.*
   - Pflicht: Schreibe A oder B ins Heft. Welcher Text hilft dir, das Tier vorzustellen? Begründe. | Notiere zwei genaue Angaben aus Text B. Erkläre: Warum hilft „toll“ beim Beschreiben wenig?
-  - Pflicht – Sprachdetektiv: Schreibe den Satz ins Heft: *„Der Fischotter hat einen langen Körper.“* Schreibe **N** über die Nomen und **A** über die Artikel.
+  - Pflicht – Sprachdetektiv: Schreibe den Satz ins Heft: *„Der Fischotter hat einen langen Körper.“* Schreibe **N** über die Nomen und **Art.** über die Artikel.
   - Freiwillige Vertiefung: Ersetze *„Der Fischotter hat schöne Beine“* durch eine genaue Angabe aus dem Interview. Erkläre den Unterschied.
-  - Kiosk-Tipp: Welcher Text sagt dir, wie der Fischotter aussieht? Suche Wörter für Form, Länge und Farbe.
-  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1: Text B hilft. Er nennt Körperform, Beinlänge und Fellfarbe. Text A enthält nur Meinungen. /  / Aufgabe 2 – zwei genaue Angaben, zum Beispiel: langer Körper; kurze Beine; Fell oben dunkelbraun. / „toll“ sagt nur, wie jemand das Tier findet. Damit kannst du dir das Tier nicht vorstellen. /  / Sprachdetektiv: / A (Artikel): Der, einen / N (Nomen): Fischotter, Körper
+  - Kiosk-Tipp: Welcher Text sagt dir, wie der Fischotter aussieht? Suche Wörter für Form, Länge und Farbe. Sprachdetektiv: Lernfächer Wortarten, Teil 1 (Artikel) und Teil 3 (Nomen).
+  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1: Text B hilft. Er nennt Körperform, Beinlänge und Fellfarbe. Text A enthält nur Meinungen. /  / Aufgabe 2 – zwei genaue Angaben, zum Beispiel: langer Körper; kurze Beine; Fell oben dunkelbraun. / „toll“ sagt nur, wie jemand das Tier findet. Damit kannst du dir das Tier nicht vorstellen. /  / Sprachdetektiv: / Art. (Artikel): Der, einen / N (Nomen): Fischotter, Körper
   - Kiosk-Vertiefung: Beispiel: „Der Fischotter hat kurze Beine.“ (Interview, Z. 19–20) / „schön“ ist eine Meinung. „kurz“ kannst du im Interview und am Foto prüfen.
 - **Blatt 2 · Schau genau hin** (Du brauchst: Fischotter-Foto · Heft · Bleistift)
   - Pflicht: Betrachte das Foto. Notiere im Heft zwei sichtbare Körperteile. Ergänze zu jedem ein genaues Merkmal. | Bilde daraus zwei vollständige Sätze. | Zeige einem anderen Kind oder der Lehrkraft beide Bildstellen. Prüfe: Passen deine Sätze zum Foto?
-  - Pflicht – Sprachdetektiv: Markiere in einem deiner Sätze ein Adjektiv mit **Adj**. Schreibe das Nomen dazu, das es genauer beschreibt.
+  - Pflicht – Sprachdetektiv: Markiere in einem deiner Sätze ein Adjektiv mit **Adj.** Schreibe das Nomen dazu, das es genauer beschreibt.
   - Freiwillige Vertiefung: Beschreibe zwei sichtbare Merkmale noch genauer. Prüfe am Foto: Was kannst du sicher sagen? Erfinde keine verdeckten Teile.
   - Achte darauf: Eine Farbe, Form oder Größe macht die Angabe genauer: nicht nur „Ohren“, sondern „kleine Ohren“.
-  - Kiosk-Tipp: Schau auf Kopf und Gesicht. Was siehst du an der Schnauze? Wie groß sind die Ohren?
-  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1 – Beispiele: / Schnauze: lange Tasthaare / Ohren: klein / Kopf: breit und flach /  / Aufgabe 2 – Beispiele: / „An der Schnauze sitzen lange Tasthaare.“ / „Die Ohren sind klein.“ /  / Aufgabe 3: Zeige beide Stellen auf dem Foto. Andere sichtbare Merkmale sind auch richtig. /  / Sprachdetektiv – Beispiel: „lange“ (Adj) beschreibt das Nomen „Tasthaare“.
+  - Kiosk-Tipp: Schau auf Kopf und Gesicht. Was siehst du an der Schnauze? Wie groß sind die Ohren? Sprachdetektiv: Lernfächer Wortarten, Teil 2 (Adjektiv).
+  - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1 – Beispiele: / Schnauze: lange Tasthaare / Ohren: klein / Kopf: breit und flach /  / Aufgabe 2 – Beispiele: / „An der Schnauze sitzen lange Tasthaare.“ / „Die Ohren sind klein.“ /  / Aufgabe 3: Zeige beide Stellen auf dem Foto. Andere sichtbare Merkmale sind auch richtig. /  / Sprachdetektiv – Beispiel: „lange“ (Adj.) beschreibt das Nomen „Tasthaare“.
   - Kiosk-Vertiefung: Beispiel: „An der Schnauze sitzen viele lange Tasthaare. Sie stehen zur Seite ab.“ / Sicher sagen kannst du nur, was du siehst. Schwimmhäute und die ganze Körperlänge erkennst du auf dem Foto nicht.
 - **Blatt 3 · Im Interview suchen** (Du brauchst: Fischotter-Interview · Fischotter-Foto · Merkblatt 1 · Heft)
   - Pflicht: Lies das Interview mit den Leseschritten von Merkblatt 1. Notiere: / a) Wo leben Fischotter? / b) Was fressen sie vor allem? / c) Wie lang sind Fischotter ohne Schwanz? Nenne die Einheit. | Markiere die Stellen im Interview: **L** für Lebensraum, **N** für Nahrung, **M** für Maß. Schreibe die Zeile hinter deine Antwort, zum Beispiel „Z. 12“. | Im Interview stehen zwei Längen. Welche gilt für alle Fischotter? Welche gilt nur für Otto? Begründe. | Partnercheck: Zeige einem anderen Kind deine Stellen. Passt die Stelle zur Frage? Prüft Unterschiede gemeinsam. | Notiere ein sichtbares Merkmal mit „Bild“. Zeige die Bildstelle. Steht es auch im Interview?
   - Pflicht – Sprachdetektiv: Unterstreiche im Interview zwei Verben. Schreibe **V** darüber.
   - Freiwillige Vertiefung: Suche im Interview zwei Stellen, die nur Otto betreffen. Erkläre, warum sie nicht in eine Tierbeschreibung gehören.
-  - Kiosk-Tipp: Nutze die Leseschritte. Suche im Interview die Wörter „leben“, „fressen“ und „Zentimeter“. Lies auch den Satz danach. Die Zeilennummern stehen am Rand.
+  - Kiosk-Tipp: Nutze die Leseschritte. Suche im Interview die Wörter „leben“, „fressen“ und „Zentimeter“. Lies auch den Satz danach. Die Zeilennummern stehen am Rand. Sprachdetektiv: Lernfächer Wortarten, Teil 4 (Verb).
   - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 1: / a) an Flüssen und Seen; Ufer, an denen sie sich verstecken können (Z. 11–12) / b) vor allem Fische, auch Frösche und Krebse (Z. 7–8) / c) etwa 60 bis 90 Zentimeter ohne Schwanz (Z. 28–29) /  / Aufgabe 2: L bei Z. 11–12 · N bei Z. 7–8 · M bei Z. 28–29. /  / Aufgabe 3: „60 bis 90 Zentimeter“ gilt für alle Fischotter. „80 Zentimeter“ gilt nur für Otto (Z. 26–27). Otto wurde gemessen – das ist ein Einzelfall. /  / Aufgabe 4: Habt ihr verschiedene Stellen markiert? Lest die Frage noch einmal und prüft gemeinsam. /  / Aufgabe 5 – Beispiel: „lange Tasthaare (Bild)“. Das steht auch im Interview (Z. 35). Auch richtig: „kleine Ohren (Bild)“ – steht in Z. 23. /  / Sprachdetektiv – Verben, zum Beispiel: mache, gibt, fressen, leben, brauchen, ist, sind.
   - Kiosk-Vertiefung: Zum Beispiel: „Otto wartet am Gitter und pfeift.“ (Z. 3) und „Otto bekommt jeden Tag einen kleinen Eimer voll.“ (Z. 6) / Das gilt nur für Otto im Zoo. Eine Tierbeschreibung erklärt, wie alle Fischotter sind.
 - **Blatt 4 · Informationen ordnen** (Du brauchst: Fischotter-Interview · Heft)
   - Pflicht: Schreibe ins Heft: Überblick · Aussehen · Lebensraum · Nahrung. | Ordne die Angaben zu. Drei Angaben passen nicht in eine Tierbeschreibung. Streiche sie. / *Fischotter · kurze Beine · Otto bekommt einen Eimer Fisch · Fische · Flüsse und Seen · der süßeste Otter der Welt · ohne Schwanz 60–90 cm · dunkelbraunes Fell oben · Otto ist 80 cm lang · Frösche und Krebse · Ufer mit Verstecken* | Suche im Interview drei weitere Angaben zum Aussehen. Schreibe die Zeile dazu. Hast du jetzt vier verschiedene Merkmale?
-  - Pflicht – Sprachdetektiv: Zerlege „Körperlänge“ im Heft in zwei Nomen. Schreibe beide mit Artikel auf. Ergänze den Artikel zu „Körperlänge“.
+  - Pflicht – Sprachdetektiv: Zerlege das Kofferwort „Körperlänge“ im Heft in zwei Nomen. Schreibe beide mit Artikel auf. Ergänze den Artikel zu „Körperlänge“ (Kopf-rechts-Regel).
   - Freiwillige Vertiefung: Ordne deine Angaben zum Aussehen in einer anderen sinnvollen Reihenfolge. Erkläre deine Wahl.
-  - Kiosk-Tipp: Frage bei jeder Angabe zuerst: Gilt das für alle Fischotter? Wenn nicht: streichen. Dann: Aussehen, Wohnort oder Futter? Tiername und Maß gehören zum Überblick.
+  - Kiosk-Tipp: Frage bei jeder Angabe zuerst: Gilt das für alle Fischotter? Wenn nicht: streichen. Dann: Aussehen, Wohnort oder Futter? Tiername und Maß gehören zum Überblick. Sprachdetektiv: Kofferprobe und Kopf-rechts-Regel im FRESCH-Fächer.
   - Kiosk-Lösung (Lösung und Vergleich): Aufgabe 2: / Überblick: Fischotter; ohne Schwanz 60–90 cm / Aussehen: kurze Beine; dunkelbraunes Fell oben / Lebensraum: Flüsse und Seen; Ufer mit Verstecken / Nahrung: Fische; Frösche und Krebse / Gestrichen: „Otto bekommt einen Eimer Fisch“ und „Otto ist 80 cm lang“ (Einzelfall), „der süßeste Otter der Welt“ (Meinung). /  / Aufgabe 3 – zum Beispiel: langer, schmaler Körper (Z. 18–19); breiter, flacher Kopf (Z. 20); kleine Ohren (Z. 23); dichtes Fell (Z. 32); lange Tasthaare (Z. 35); Schwimmhäute zwischen den Zehen (Z. 36–37). /  / Sprachdetektiv: der Körper + die Länge = die Körperlänge
   - Kiosk-Vertiefung: Zum Beispiel von oben nach unten: Kopf, Körper, Beine, Fell. Oder vom großen zum kleinen Merkmal. / Erkläre, warum deine Reihenfolge beim Vorstellen hilft. Mehrere Reihenfolgen sind richtig.
 
@@ -393,7 +394,7 @@ Aufgaben: 1) Merkmale und Quellen: Notiere zwei verschiedene äußere Merkmale: 
 1. **Genau statt wertend**
    - _Sachlich beschreiben:_ Beschreibe überprüfbare Merkmale. „schön“ und „süß“ sagen nur, wie jemand etwas findet. Nutze Angaben aus dem Interview.
    - _Genaue Wörter wählen:_ Nutze genaue Nomen, Verben und Adjektive. / *„Das Tier bewegt sich im Wasser.“* wird genauer: *„Der Fischotter schwimmt im Wasser.“* / *„Sein Fell ist oben dunkelbraun.“* ist ebenfalls genau. Du musst „ist“ nicht immer ersetzen.
-   - _Wörter zusammensetzen:_ Aus *Fell* und *Farbe* wird die *Fellfarbe*. Das letzte Wort bestimmt den Artikel: *die Farbe → die Fellfarbe*. **Fachwörter** benennen etwas genau. Kläre ihre Bedeutung.
+   - _Wörter zusammensetzen:_ Aus *Fell* und *Farbe* wird die *Fellfarbe*. Das letzte Wort bestimmt den Artikel (**Kopf-rechts-Regel**): *die Farbe → die Fellfarbe*. **Fachwörter** benennen etwas genau. Kläre ihre Bedeutung.
    - _Die Wörterhilfe:_ Auf der Wörterhilfe findest du genaue Wörter für Körperteile. Wähle nur Wörter, die zu deinem Tier passen. Prüfe am Bild oder im Interview.
    - _Frage:_ Was ist genauer: „schönes Fell“ oder „oben dunkelbraunes Fell“?
    - _Gesicherte Antwort:_ „oben dunkelbraunes Fell“. Die Farbe ist überprüfbar.
@@ -410,8 +411,8 @@ Aufgaben: 1) Merkmale und Quellen: Notiere zwei verschiedene äußere Merkmale: 
    - _Gesicherte Antwort:_ Zum Beispiel: *„Der Fisch hat lange Flossen oben und unten.“* Das ist Fisch C. Andere genaue Merkmale sind auch richtig.
 4. **Im Präsens beschreiben**
    - _Warum Präsens?:_ Tierbeschreibungen sagen, was allgemein für ein Tier gilt. Deshalb stehen sie meistens im **Präsens**, der Gegenwart: *Der Fischotter lebt an Gewässern.*
-   - _Grundform und gebeugte Form:_ Im Wörterbuch steht die **Grundform**: *leben, fressen, sein*. / Im Satz beugst du das Verb passend: / *leben → er lebt* / *fressen → er frisst* / *sein → sein Fell ist dicht.*
-   - _Subjekt und Verb:_ Das **Subjekt** ist der Satzgegenstand. Frage: Wer oder was schwimmt? / *Der Otter schwimmt. Die Otter schwimmen.*
+   - _Grundform und gebeugte Form:_ Im Wörterbuch steht die **Grundform** (Infinitiv): *leben, fressen, sein*. / Im Satz beugst du das Verb passend: / *leben → er lebt* / *fressen → er frisst* / *sein → sein Fell ist dicht.*
+   - _Subjekt und Verb:_ Das **Subjekt** ist der Satzgegenstand, das **Wer-Paket**. Frage: Wer oder was schwimmt? / *Der Otter schwimmt. Die Otter schwimmen.*
    - _Frage:_ Was ändert sich?
    - _Gesicherte Antwort:_ Bei mehreren Ottern heißt das Verb „schwimmen“ statt „schwimmt“.
 5. **Vollständige Sätze**
@@ -441,7 +442,7 @@ Aufgaben: 1) Merkmale und Quellen: Notiere zwei verschiedene äußere Merkmale: 
   - Pflicht – Verbessern und prüfen: Verbessere: *„der fischotter lebte an schönen ufern“*. / Im Interview: *„Sie brauchen Ufer, an denen sie sich verstecken können.“* Prüfe alle vier Sätze mit Merkblatt 2. Achte auch auf große Satzanfänge und Nomen sowie Punkte.
   - Pflicht – Verben untersuchen: Unterstreiche im Heft die Verben in deinen vier Sätzen. Schreibe zu „frisst“ die Grundform. | Schreibe Satz 2 noch einmal für mehrere Fischotter. Passe das Verb an.
   - Freiwillige Vertiefung – Vertiefung: Verbinde zwei deiner Sätze mit „und“. Erkläre, warum das Präsens zu einer Tierbeschreibung passt.
-  - Kiosk-Tipp: Schreibe immer „Der Fischotter …“ oder „Fischotter …“. Lass „dagegen“, „aber“ und „ganz“ weg, wenn sie nichts Genaues sagen. Das Verb passt zum Subjekt: er frisst, die Beine sind.
+  - Kiosk-Tipp: Schreibe immer „Der Fischotter …“ oder „Fischotter …“. Lass „dagegen“, „aber“ und „ganz“ weg, wenn sie nichts Genaues sagen. Das Verb passt zum Subjekt (Wer-Paket): er frisst, die Beine sind. Hilfe: Lernfächer Wortarten, Teil 4 (Präsens), und Spielbrett Präsens.
   - Kiosk-Lösung (Lösung und Vergleich): 1. Der Fischotter hat kurze Beine. / Seine Beine sind kurz. / 2. Der Fischotter frisst auch Frösche und Krebse. / 3. Der Fischotter hat kleine Ohren. / 4. Der Fischotter lebt an Ufern, an denen er sich verstecken kann. /  / 5. Verben, zum Beispiel: hat, frisst, lebt. Grundform von „frisst“: fressen. / 6. Die Fischotter fressen auch Frösche und Krebse. /  / Andere Reihenfolgen im Satz sind richtig, wenn der Satz vollständig und sachlich ist.
   - Kiosk-Vertiefung: Beispiel: „Der Fischotter hat kurze Beine und frisst auch Krebse.“ / Das Präsens passt, weil die Beschreibung sagt, was allgemein für den Fischotter gilt.
 - **Hilfekarte Wörterhilfe · Genaue Wörter für dein Tier** – Hinweis: Wähle nur Wörter, die zu deinem Tier passen. Prüfe die Angabe am Bild oder im Text. Tabelle: der Kopf: breit, schmal, flach, rund; die Schnauze: lang, kurz, spitz, breit; die Ohren: klein, groß, rund, spitz; das Fell: dicht, glatt, dunkelbraun, graubraun, gestreift, gefleckt; der Körper: lang gestreckt, schlank, kräftig; der Schwanz: lang, kurz, buschig, schmal, geringelt; die Beine / die Pfoten: kurz, lang, kräftig. Fachwörter: die Tasthaare: Haare zum Ertasten / die Schwimmhäute: Haut zwischen den Zehen / die Krallen: spitze Nägel an den Zehen / der Rumpf: Körper ohne Kopf, Beine und Schwanz. Genaue Verben: er lebt · er frisst · er schwimmt · er klettert · er gräbt · er hat · er ist.
@@ -511,7 +512,7 @@ Aufgaben: 1) Aus dem Interview wird ein Sachsatz: Schreibe für das Tierlexikon 
 - **Blatt 9 · Prüfen und verbessern** (Du brauchst: deinen Text von Blatt 8 · das Interview · Checkliste K1–K6 · Rückmeldekarte)
   - Pflicht – Arbeite am Text: Prüfe deinen Text im Heft mit K1–K6. | Geh zur Haltestelle. Such dir ein Kind für eine Rückmeldung. Es liest deinen Text und nutzt die Rückmeldekarte. Lass dir die Textstelle zeigen. | Entscheide mit Interview und Checkliste, was du verbesserst. Schreibe nicht den ganzen Text neu. Ist eine Stelle schon richtig? Begründe, warum sie bleibt. | Zeige die Schreibprüfung: Kreise einen Satzanfang ein, unterstreiche zwei Nomen und markiere einen Punkt. Vergleiche Tierwörter mit dem Interview.
   - Freiwillige Vertiefung – Vertiefung: Zeige eine Stelle vorher und nachher. Erkläre, was durch deine Änderung besser geworden ist.
-  - Kiosk-Tipp: An der Haltestelle hilft dir die Rückmeldekarte. Prüfe danach ein Kriterium nach dem anderen. Lies für K6 jeden Satz einzeln: Beginnt er groß? Steht am Ende ein Punkt?
+  - Kiosk-Tipp: An der Haltestelle hilft dir die Rückmeldekarte. Prüfe danach ein Kriterium nach dem anderen. Lies für K6 jeden Satz einzeln: Beginnt er groß? Steht am Ende ein Punkt? Ist ein Wort ein Nomen? Artikelprobe und Adjektivprobe im FRESCH-Fächer („groß oder klein?“).
   - Kiosk-Lösung (Prüffragen): Deine Verbesserungen hängen von deinem Text ab. Die Rückmeldung an der Haltestelle ist ein Hinweis. Du entscheidest mit Interview und Checkliste, was du änderst. /  / So prüfst du: / K1: Stimmen Tiername, Maß mit Einheit und Bezug, Lebensraum und Nahrung mit dem Interview überein? Gelten sie für alle Tiere der Art? / K2: Zähle vier verschiedene Merkmale. Dasselbe Merkmal zählt nur einmal. / K3: Steht der Überblick am Anfang? Stehen zusammengehörige Angaben zusammen? / K4 und K5: Präsens, sachlich, keine Meinung aus dem Interview, ganze Sätze? / K6: Satzanfang eingekreist, zwei Nomen unterstrichen, Punkt markiert? /  / Ein richtiger Satz bleibt. Begründe: „Mein Satz bleibt, weil …“
   - Kiosk-Vertiefung: Beispiel vorher: „der schwanz ist toll“ / Nachher: „Der Schwanz ist lang und schmal.“ / Besser, weil der Satz groß beginnt, das Nomen groß ist und ein genaues Merkmal statt einer Wertung steht.
 - **Checkliste · Inhalt und Aufbau:** K1 · Informationen: Hast du das Tier benannt? Stimmen Maß, Einheit und Bezug – für alle Tiere der Art, nicht nur für das Zootier? Stehen Lebensraum und Nahrung im Text? Vergleiche alles mit dem Interview. · K2 · Aussehen: Findest du vier verschiedene genaue äußere Merkmale? Zeige sie. „schön“ ist kein genaues Merkmal. · K3 · Aufbau: Stehen Tiername und Überblick am Anfang? Sind zusammengehörige Informationen zusammen?
@@ -563,7 +564,7 @@ Du hast deine Probearbeit geschrieben und Feedback bekommen. Jetzt entscheidest 
 3. **Ordnen unter Überschriften** – Wann: Du sammelst Informationen für einen Plan. Schritte: Schreibe die Überschriften: Überblick · Aussehen · Lebensraum · Nahrung. · Frage bei jeder Angabe: Wohin gehört sie? · Schreibe sie als Stichwort darunter. · Zähle: Hast du vier Merkmale beim Aussehen? Beispiel: *breiter, flacher Kopf* → Aussehen / *Fische* → Nahrung
 4. **Genau statt wertend** – Wann: Du beschreibst, wie ein Tier aussieht. Schritte: Lies dein Wort: Sagt es, wie jemand das Tier findet? · Frage: Kann ich es im Bild sehen oder im Interview lesen? · Ersetze die Wertung durch Form, Farbe oder Größe. · Prüfe die neue Angabe am Interview. Beispiel: nicht: *schönes Fell* / sondern: *oben dunkelbraunes Fell*
 5. **Die Wörterhilfe nutzen** – Wann: Dir fehlt ein genaues Wort. Schritte: Suche den Körperteil in der Wörterhilfe. · Lies die möglichen Wörter. · Wähle nur ein Wort, das zu deinem Tier passt. · Prüfe es am Bild oder im Text. Beispiel: Schwanz: *lang, kurz, buschig, schmal* / Erdmännchen: *lang und schmal*
-6. **Einen Satz bauen** – Wann: Du machst aus Stichwörtern einen Satz. Schritte: Wer oder was? Nenne das Subjekt. · Was tut es oder wie ist es? Setze das Verb im Präsens. · Ergänze die Angabe aus dem Plan. · Prüfe: Großer Anfang? Punkt am Ende? Beispiel: *Kopf – breit, flach* / → *Sein Kopf ist breit und flach.*
+6. **Einen Satz bauen** – Wann: Du machst aus Stichwörtern einen Satz. Schritte: Wer oder was? Nenne das Subjekt (Wer-Paket). · Was tut es oder wie ist es? Setze das Verb im Präsens. · Ergänze die Angabe aus dem Plan. · Prüfe: Großer Anfang? Punkt am Ende? Beispiel: *Kopf – breit, flach* / → *Sein Kopf ist breit und flach.*
 7. **Satzanfang, Nomen, Punkt** – Wann: Du prüfst die Schreibung deines Textes. Schritte: Lies Satz für Satz. Lege ein Lineal unter die Zeile. · Kreise den Satzanfang ein. Ist er groß? · Unterstreiche die Nomen. Sind sie groß? · Markiere das Satzende. Steht ein Punkt? Beispiel: *sein kopf ist flach* / → *Sein Kopf ist flach.*
 8. **Rückmeldung geben** – Wann: Du liest den Text eines anderen Kindes an der Haltestelle. Schritte: Lies den ganzen Text ruhig. · Wähle zwei Fragen von der Rückmeldekarte. · Zeige die passende Textstelle. · Sage es freundlich und genau. Beispiel: *Diese Stelle ist genau: …* / *Prüfe diese Angabe im Material: …*
 9. **Aus dem Interview wird ein Sachtext** – Wann: Du schreibst mit einem Interview als Material. Schritte: Frage bei jeder Angabe: Gilt das für alle Tiere der Art? · Ja: markieren. Nur das Zootier oder eine Meinung: streichen. · Vergleich? Nimm nur die Sachangabe heraus. · Schreibe im Präsens über die Tierart: *Der Fischotter …* Beispiel: *„Otto ist 80 cm lang.“* → streichen / *„Fischotter sind 60 bis 90 cm lang.“* → markieren
@@ -702,7 +703,7 @@ Zwei Kinder; kurze Texte möglich. Gleiche Etappen und Blattnummern mit „F“,
 
 Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 200 Minuten (ungetestet). Bei Zeitkonflikten zuerst freiwillige Ergänzungen kürzen, nicht Schreib-/Überarbeitungsprozess.
 
-## 16 · Offene Punkte (Stand 10.10.2026)
+## 16 · Offene Punkte (Stand 11.10.2026)
 
 - Arbeitszeit der Probearbeit; Arbeitszeit, Punkteverteilung und Notengrenzen der Klassenarbeit.
 - Foto Breitmaulnashorn fehlt (Platzhalter); Biber-Foto vorläufig (Tierpaket, CC BY-SA 3.0). Wunschbild tierdoku.de nicht ladbar und ohne freie Lizenz.
@@ -735,3 +736,27 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 | Sprachspur | in die Etappen integrierte Grammatik-/Rechtschreibinhalte |
 | K1–K6 | Textkriterien: Informationen, Aussehen, Aufbau, Sachlich, Verständlich, Schreibung |
 | F-Material | zieldifferentes Material (Förderschwerpunkt Lernen), Blätter 1F–9F |
+
+## 18 · Schulmaterialien zur Sprachanalyse (Abgleich 11.10.2026)
+
+Die HBG-Schulmaterialien werden **nicht verändert**. Die Reihe verweist auf sie und übernimmt ihre Begriffe **zusätzlich** zu den eigenen.
+
+**Kürzel (verbindlich):** Wortarten **N** Nomen · **Art.** Artikel · **V** Verb · **Adj.** Adjektiv. Markierbuchstaben im Interview **A** Aussehen · **L** Lebensraum · **N** Nahrung · **M** Maß. „A“ steht nie für Artikel.
+
+**Schulbegriffe zusätzlich nennen:** Kofferwort/Kofferprobe und Kopf-rechts-Regel (zusammengesetzte Nomen) · Wer-Paket (Subjekt) · Grundform = Infinitiv. Umgesetzt in Merkblatt/Input 1 (Sprachdetektiv: Kürzel, Kopf-rechts-Regel, Kofferwörter), Merkblatt/Input 2 (Wörter zusammensetzen, Subjekt und Verb, Grundform), Blatt 1/2/4, Strategiekarte 6, Kiosk-Tipps zu Blatt 1–4, 6 und 9.
+
+| Schulmaterial | Nutzung in der Reihe |
+|---|---|
+| Lernfächer Wortarten, Teil 1–4 (Artikel, Adjektiv, Nomen, Verb) und Seite Präsens | Nachschlagen beim Sprachdetektiv (Blatt 1–4, 6), Lösungsleiter Stufe 2; Verweis in den Kiosk-Tipps |
+| Merkblatt Wortarten, Wortarten-Plakate A4 | Plakate Artikel/Adjektiv/Nomen/Verb im Raum |
+| FRESCH-Fächer („groß oder klein?“, Kofferprobe), Rechtschreibfächer Seite 1c | Großschreibung (K6), zusammengesetzte Nomen (Blatt 4/5); Verweis im Kiosk zu Blatt 4 und 9 |
+| Spielbretter Präsens 1–2 mit Lösungsblättern | gezieltes Üben bei offenem E2.3, Wahlzeit |
+| Poster „Pakete im Satz“ (Wer-Paket, Verb) | Subjekt-Verb-Kongruenz, Strategiekarte 6; Umstellprobe für abwechslungsreiche Satzanfänge (K5) |
+| AB Kopfverb + dass (nur Kopfverb-Liste) | Signal für Meinung/Vermutung im Interview (finden, glauben, meinen, vermuten) |
+| Wegweiser Zeitformen | Signal: Vergangenheit im Interview meist Erlebnis des Zootiers (X) |
+| Lernfächer Partikel, Pronomen | Interview-Sprache („ganz“, „richtig“), klare Bezüge (K5) |
+| Rechtschreibfächer Zwillinge, s/ss/ß; FRESCH Ableiten | geübte Tierwörter (Fell, Wasser, frisst, Flüsse, Schwimmhäute, gräbt) |
+| nicht für die Reihe | AB Haupt-/Nebensätze, Spielbretter Futur/Imperfekt/Perfekt, Wessen-Anhänger (höchstens freiwillig), übrige Wortarten, Buchstaben-Symbole |
+
+- **Figuren** der Lernfächer (z. B. Nora Nomen) sind Schulmaterial und bleiben dort; auf Reihenblättern genügt ein Verweis, keine Figuren (Regel „keine Maskottchen“).
+- **Probearbeit/Klassenarbeit:** Ob Schulmaterialien (z. B. Fächer) als Hilfe ausliegen, **entscheidet die Lehrkraft individuell**; genutzte Hilfen werden auf der Lehrkraftseite notiert.
