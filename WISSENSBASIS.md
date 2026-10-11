@@ -543,7 +543,7 @@ Gemeinsamer Aufbau (A4, 7 Seiten; Vorbild: Lernerfolgskontrolle der Reihe Wunsch
 
 - Situation: Unser Tiermagazin bekommt eine neue Seite. Es fehlt noch ein Text über das Breitmaulnashorn. Die Schülerzeitung hat dafür ein Interview im Zoo geführt. Schreibe daraus einen Lexikontext. Andere sollen sich das Tier danach gut vorstellen können.
 - Material: Interview `breitmaulnashorn` (vor dem Auftrag, mit Zeilennummern; Text siehe 8.0)
-- Foto: Foto folgt
+- Foto: Foto: Wikimedia Commons, „Ceratotherium simum (21922261908).jpg“ · Graustufenfassung
 - Bewertungserwartung: K1 Informationen: Tiername, Maß mit Einheit und Bezug (z. B. Kopf und Rumpf 3,40–3,80 m, Schwanz zusätzlich), Lebensraum, Nahrung; nur Angaben zur Art · K2 Aussehen: mindestens vier verschiedene äußere Merkmale richtig (z. B. graue, dicke Haut, zwei Hörner, breite Lippen, kurze, kräftige Beine, Buckel) · K3 Aufbau: Überschrift, Überblick am Anfang, zusammengehörige Angaben gebündelt · K4 Sachlich: sachlich, Präsens; nichts Wertendes oder Erlebtes aus dem Interview · K5 Verständlich: zusammenhängender Text aus überwiegend vollständigen, verständlichen Sätzen; klare Bezüge · K6 Schreibung: Prüfung sichtbar; Satzanfänge, Nomen, Satzschlüsse und geübte Tierwörter überwiegend richtig
 
 
@@ -707,7 +707,7 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 ## 16 · Offene Punkte (Stand 11.10.2026)
 
 - Arbeitszeit der Probearbeit; Arbeitszeit, Punkteverteilung und Notengrenzen der Klassenarbeit.
-- Foto Breitmaulnashorn fehlt (Platzhalter); Biber-Foto vorläufig (Tierpaket, CC BY-SA 3.0). Wunschbild tierdoku.de nicht ladbar und ohne freie Lizenz.
+- Foto Breitmaulnashorn eingebaut (Wikimedia Commons, „Ceratotherium simum (21922261908).jpg“); Urheber und Lizenz im Bildnachweis noch ergänzen; Biber-Foto vorläufig (Tierpaket, CC BY-SA 3.0). Wunschbild tierdoku.de nicht ladbar und ohne freie Lizenz.
 - Probearbeit F (Waschbär) und Klassenarbeit F (Biber) liegen vor (`inhalt/probearbeit_f_waschbaer.json`, `inhalt/klassenarbeit_f_biber.json`, `tools/build_pruefung_f.py`): Kurzinterview → Auftrag → Aufgaben (Info/Meinung, Wer ist gemeint, Plan sortieren, Lückentext-Beschreibung, eigener Satz, Prüfliste) → Rückmeldung F3.1–F3.5 bzw. Bewertung (22 Punkte, Vorschlag). Offen: zieldifferente Bewertung mit Schulvorgaben abstimmen; F-Fassung Nashorn bei Bedarf.
 - Zuordnung Variante ↔ Termin (Vorschlag Biber früh, Nashorn spät).
 - Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen.

@@ -409,7 +409,7 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 ## 16 · Offene Punkte (Stand {stand})
 
 - Arbeitszeit der Probearbeit; Arbeitszeit, Punkteverteilung und Notengrenzen der Klassenarbeit.
-- Foto Breitmaulnashorn fehlt (Platzhalter); Biber-Foto vorläufig (Tierpaket, CC BY-SA 3.0). Wunschbild tierdoku.de nicht ladbar und ohne freie Lizenz.
+- Foto Breitmaulnashorn eingebaut (Wikimedia Commons, „Ceratotherium simum (21922261908).jpg“); Urheber und Lizenz im Bildnachweis noch ergänzen; Biber-Foto vorläufig (Tierpaket, CC BY-SA 3.0). Wunschbild tierdoku.de nicht ladbar und ohne freie Lizenz.
 - Probearbeit F (Waschbär) und Klassenarbeit F (Biber) liegen vor (`inhalt/probearbeit_f_waschbaer.json`, `inhalt/klassenarbeit_f_biber.json`, `tools/build_pruefung_f.py`): Kurzinterview → Auftrag → Aufgaben (Info/Meinung, Wer ist gemeint, Plan sortieren, Lückentext-Beschreibung, eigener Satz, Prüfliste) → Rückmeldung F3.1–F3.5 bzw. Bewertung (22 Punkte, Vorschlag). Offen: zieldifferente Bewertung mit Schulvorgaben abstimmen; F-Fassung Nashorn bei Bedarf.
 - Zuordnung Variante ↔ Termin (Vorschlag Biber früh, Nashorn spät).
 - Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen.

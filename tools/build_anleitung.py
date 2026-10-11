@@ -56,7 +56,7 @@ M = {
     "ka1": ("Klassenarbeit Biber", "ausgabe/pruefungen/Klassenarbeit_Biber_A4.pdf", "a4", "termin",
             "8 Seiten: S. 1–2 Interview, S. 3–7 für das Kind, S. 8 Bewertung · Foto vorläufig"),
     "ka2": ("Klassenarbeit Breitmaulnashorn", "ausgabe/pruefungen/Klassenarbeit_Breitmaulnashorn_A4.pdf", "a4", "termin",
-            "8 Seiten wie Variante 1 · Foto fehlt noch (Platzhalter)"),
+            "8 Seiten wie Variante 1"),
     "training": ("Training vor der Klassenarbeit (Elenantilope, Hirschziegenantilope)", "ausgabe/training/Training_Antilopen_A4.pdf", "a4", "halb",
                  "4 Seiten = 2 Blätter beidseitig: Interview vorn, Aufgaben hinten; Musterlösungen Mindest-/Regelstandard am Kiosk (Nummer 10 und 11)"),
     "probeF": ("Probearbeit F Waschbär", "ausgabe/pruefungen/Probearbeit_F_Waschbaer_A4.pdf", "a4", "f", "7 Seiten: Kurzinterview, Auftrag, 4 Aufgabenseiten, Rückmeldung"),
@@ -154,7 +154,7 @@ SCHRITTE = [
 
 OFFEN = [
     "Arbeitszeit, Punkteverteilung und Notengrenzen der Klassenarbeit; Arbeitszeit der Probearbeit.",
-    "Foto für die Klassenarbeit Breitmaulnashorn fehlt (Platzhalter). Biber-Foto ist vorläufig aus dem Tierpaket.",
+    "Bildnachweis Breitmaulnashorn (Wikimedia Commons) um Urheber und Lizenz ergänzen. Biber-Foto ist vorläufig aus dem Tierpaket.",
     "Klassenarbeit F: Punkte und zieldifferente Bewertung mit den Vorgaben der Schule abstimmen; F-Fassung Breitmaulnashorn bei Bedarf.",
     "Welche Variante an welchem Termin geschrieben wird. Vorschlag: Biber früh, Breitmaulnashorn spät.",
 ]

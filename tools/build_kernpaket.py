@@ -73,7 +73,7 @@ ABSCHNITTE = [
     ("Klassenarbeit", "Doppelstunde 7 (früh) oder 8 (spät)",
      "Zwei Varianten im gleichen Aufbau, dazu die zieldifferente Fassung. Vorschlag: Biber am frühen, Breitmaulnashorn am späten Termin.",
      [("Variante 1: Biber", ["pruefungen/Klassenarbeit_Biber_A4.pdf"], A4, "Kinder am frühen Termin", "S. 1–2 Interview, S. 8 Bewertung"),
-      ("Variante 2: Breitmaulnashorn", ["pruefungen/Klassenarbeit_Breitmaulnashorn_A4.pdf"], A4, "Kinder am späten Termin", "Foto fehlt noch (Platzhalter)"),
+      ("Variante 2: Breitmaulnashorn", ["pruefungen/Klassenarbeit_Breitmaulnashorn_A4.pdf"], A4, "Kinder am späten Termin", "S. 1–2 Interview, S. 8 Bewertung"),
       ("Klassenarbeit F: Biber", ["pruefungen/Klassenarbeit_F_Biber_A4.pdf"], A4, "je F-Kind", "Punkte als Vorschlag; Bewertung nach Schulvorgabe")]),
     ("Projekte in der Wahlzeit", "ab Doppelstunde 6",
      "Übersicht und drei Projekte: P1 Tiermagazin, P2 Tierrätsel, P3 Tiervergleich. Zum Auslegen.",

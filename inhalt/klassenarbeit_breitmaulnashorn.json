@@ -30,9 +30,9 @@
   "material": {
     "titel": "Das Breitmaulnashorn",
     "foto": {
-      "datei": "assets/bilder/breitmaulnashorn_platzhalter.jpg",
-      "nachweis": "Foto folgt",
-      "alt": "Platzhalter für ein Foto des Breitmaulnashorns."
+      "datei": "assets/bilder/breitmaulnashorn_graustufen.jpg",
+      "nachweis": "Foto: Wikimedia Commons, „Ceratotherium simum (21922261908).jpg“ · Graustufenfassung",
+      "alt": "Ein Breitmaulnashorn steht seitlich auf einem Sandweg. Gut zu sehen: zwei Hörner, breites Maul, massiger Körper, kurze Beine."
     },
     "woerter": [
       [
