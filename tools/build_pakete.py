@@ -92,6 +92,12 @@ def main():
     for h in HTML:
         if (A / h).exists():
             shutil.copy(A / h, lk / Path(h).name)
+    # Kernpaket für Lehrkräfte (alle Druckvorlagen mit Deckblättern)
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import build_kernpaket
+    build_kernpaket.OUT = lk / "Kernpaket_Lehrkraft_A4.pdf"
+    build_kernpaket.main()
+    zeilen.append("| lehrkraft/Kernpaket_Lehrkraft_A4.pdf | %d | einseitig als Kopiervorlage; Deckblatt je Abschnitt |" % len(fitz.open(build_kernpaket.OUT)))
     (OUT / "README.md").write_text("\n".join(zeilen) + "\n", encoding="utf-8")
     with zipfile.ZipFile(OUT / "Zootiere_Druckpakete.zip", "w", zipfile.ZIP_DEFLATED) as z:
         for f in sorted(OUT.rglob("*")):

@@ -12,6 +12,7 @@ Stand: 08.10.2026. Vier Wochen, acht Doppelstunden, Fischotter als Beispieltier.
 
 **Druckpakete:** `python tools/build_pakete.py` → `ausgabe/pakete/` (plus ZIP).
 - `schueler/`: Schülerpaket Etappe 1–3, Förder-Etappe 1F–3F, Probearbeit, Klassenarbeit V1/V2 – jeweils **erst Materialbasis, dann Arbeitsblätter**, eine PDF pro Paket.
+- `lehrkraft/Kernpaket_Lehrkraft_A4.pdf`: **Kernpaket** – alle Druckvorlagen in Unterrichtsreihenfolge (Lernweg, Etappen 1–3 mit Probearbeit, zieldifferente Etappen mit GN und Probearbeit F, Training Antilopen, Klassenarbeiten V1/V2/F, Projekte), je Abschnitt ein Deckblatt (`python tools/build_kernpaket.py`, läuft auch in `build_pakete.py`).
 - `lehrkraft/`: Kopiervorlagen (Merkblätter, Gelingensnachweise, GN-F, Haltestellen-Schild), Hilfekarten zum Laminieren, Zeilenbelege der Interviews, Strategiekarten, Lernweg, Wahlphase, Input-Präsentationen.
 
 ## Neue Materialproduktion (ab 08.10.2026)

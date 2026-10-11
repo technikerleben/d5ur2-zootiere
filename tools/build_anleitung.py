@@ -23,6 +23,7 @@ ABS = "https://raw.githack.com/technikerleben/d5ur2-zootiere/%s/" % BRANCH
 M = {
     "animation": ("Ablauf-Animation", "ausgabe/lernweg/Ablauf_Animation.html", "dig", None, ""),
     "kiosk": ("Kontroll-Kiosk", "apps/kontroll-kiosk/index.html", "dig", None, "auf dem Klassenlaptop speichern"),
+    "kern": ("Kernpaket für Lehrkräfte (alle Druckvorlagen mit Deckblättern)", "ausgabe/pakete/lehrkraft/Kernpaket_Lehrkraft_A4.pdf", "dig", None, "132 Seiten, einseitig als Kopiervorlage; je Abschnitt ein Deckblatt mit Seiten, Druckformat und Menge"),
     "zeilen": ("Interviews: Zeilenbelege", "ausgabe/pakete/lehrkraft/Interviews_Zeilenbelege_A4.pdf", "dig", None, "Lehrkraft: jede Textstelle mit Zeile und Einordnung"),
     "zip": ("Alle Druckpakete (ZIP)", "ausgabe/pakete/Zootiere_Druckpakete.zip", "dig", None, "Schülerpakete und Lehrkräfte-Material"),
     "in1": ("Input Etappe 1", "ausgabe/etappe1/Input_Etappe1.html", "dig", None, "Beamer"),
@@ -77,7 +78,7 @@ SCHRITTE = [
          "Termine festlegen: früher Klassenarbeitstermin in Doppelstunde 7, später in Doppelstunde 8. Arbeitszeit und Punkteverteilung festlegen.",
      ],
      "druck": ["lernweg", "lernwegF", "strategie", "schild"],
-     "digital": ["kiosk", "animation", "zip", "zeilen"]},
+     "digital": ["kiosk", "animation", "kern", "zip", "zeilen"]},
     {"id": "ds1", "n": "1", "kurz": "Doppelstunde 1", "titel": "Start und Etappe 1",
      "wann": "Doppelstunde 1",
      "tun": [

@@ -25,3 +25,4 @@ Schülerpakete: immer erst Materialbasis (Foto/Interview), dann Arbeitsblätter.
 | lehrkraft/Strategiekarten_210x99.pdf | 4 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Lernweg_A4.pdf | 2 | siehe Lehrkraft-Leitfaden |
 | lehrkraft/Wahlphase_Projekte_A4.pdf | 4 | siehe Lehrkraft-Leitfaden |
+| lehrkraft/Kernpaket_Lehrkraft_A4.pdf | 132 | einseitig als Kopiervorlage; Deckblatt je Abschnitt |
