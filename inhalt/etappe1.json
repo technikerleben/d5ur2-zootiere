@@ -129,11 +129,11 @@
       "bloecke": [
         [
           "Vier Wortarten",
-          "**Nomen** benennen Tiere und Dinge: *Otter, Fell*. Du schreibst sie groß.\n**Artikel** begleiten Nomen: *der Otter, das Fell*.\n**Verben** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*.\n**Adjektive** beschreiben Merkmale: *braun, dicht*."
+          "**Nomen (N)** benennen Tiere und Dinge: *Otter, Fell*. Du schreibst sie groß.\n**Artikel (Art.)** begleiten Nomen: *der Otter, das Fell*.\n**Verben (V)** sagen, was geschieht oder wie etwas ist: *schwimmt, ist*.\n**Adjektive (Adj.)** beschreiben Merkmale: *braun, dicht*."
         ],
         [
           "Wörter zerlegen",
-          "*der Körper + die Länge = die Körperlänge*\nDas letzte Nomen bestimmt den Artikel."
+          "*der Körper + die Länge = die Körperlänge*\nDas letzte Nomen bestimmt den Artikel: **Kopf-rechts-Regel** für **Kofferwörter**."
         ],
         [
           "Frage",
@@ -141,7 +141,7 @@
         ],
         [
           "Gesicherte Antwort",
-          "*Der*: Artikel; *Otter*: Nomen; *schwimmt*: Verb."
+          "*Der*: Artikel (Art.); *Otter*: Nomen (N); *schwimmt*: Verb (V)."
         ]
       ]
     },
@@ -174,7 +174,7 @@
         "Schreibe A oder B ins Heft. Welcher Text hilft dir, das Tier vorzustellen? Begründe.",
         "Notiere zwei genaue Angaben aus Text B. Erkläre: Warum hilft „toll“ beim Beschreiben wenig?"
       ],
-      "sprachdetektiv": "Schreibe den Satz ins Heft: *„Der Fischotter hat einen langen Körper.“* Schreibe **N** über die Nomen und **A** über die Artikel.",
+      "sprachdetektiv": "Schreibe den Satz ins Heft: *„Der Fischotter hat einen langen Körper.“* Schreibe **N** über die Nomen und **Art.** über die Artikel.",
       "vertiefung": "Ersetze *„Der Fischotter hat schöne Beine“* durch eine genaue Angabe aus dem Interview. Erkläre den Unterschied."
     },
     {
@@ -186,7 +186,7 @@
         "Bilde daraus zwei vollständige Sätze.",
         "Zeige einem anderen Kind oder der Lehrkraft beide Bildstellen. Prüfe: Passen deine Sätze zum Foto?"
       ],
-      "sprachdetektiv": "Markiere in einem deiner Sätze ein Adjektiv mit **Adj**. Schreibe das Nomen dazu, das es genauer beschreibt.",
+      "sprachdetektiv": "Markiere in einem deiner Sätze ein Adjektiv mit **Adj.** Schreibe das Nomen dazu, das es genauer beschreibt.",
       "vertiefung": "Beschreibe zwei sichtbare Merkmale noch genauer. Prüfe am Foto: Was kannst du sicher sagen? Erfinde keine verdeckten Teile.",
       "tipp": "Eine Farbe, Form oder Größe macht die Angabe genauer: nicht nur „Ohren“, sondern „kleine Ohren“."
     },
@@ -213,7 +213,7 @@
         "Ordne die Angaben zu. Drei Angaben passen nicht in eine Tierbeschreibung. Streiche sie.\n*Fischotter · kurze Beine · Otto bekommt einen Eimer Fisch · Fische · Flüsse und Seen · der süßeste Otter der Welt · ohne Schwanz 60–90 cm · dunkelbraunes Fell oben · Otto ist 80 cm lang · Frösche und Krebse · Ufer mit Verstecken*",
         "Suche im Interview drei weitere Angaben zum Aussehen. Schreibe die Zeile dazu. Hast du jetzt vier verschiedene Merkmale?"
       ],
-      "sprachdetektiv": "Zerlege „Körperlänge“ im Heft in zwei Nomen. Schreibe beide mit Artikel auf. Ergänze den Artikel zu „Körperlänge“.",
+      "sprachdetektiv": "Zerlege das Kofferwort „Körperlänge“ im Heft in zwei Nomen. Schreibe beide mit Artikel auf. Ergänze den Artikel zu „Körperlänge“ (Kopf-rechts-Regel).",
       "vertiefung": "Ordne deine Angaben zum Aussehen in einer anderen sinnvollen Reihenfolge. Erkläre deine Wahl."
     }
   ],
