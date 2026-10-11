@@ -1265,5 +1265,407 @@
       "Diese App ist zum Lernen **zu Hause**. In der Schule nutzt du sie nicht."
     ],
     "knopf": "Verstanden"
+  },
+  "spiele": {
+    "intro": "Hier spielst du mit den Fachwörtern und Tieren aus der Reihe. Es gibt keine Punkte für Tempo. Spiel so oft, wie du willst.",
+    "liste": [
+      {
+        "id": "buchstaben",
+        "titel": "Buchstabenrätsel",
+        "kurz": "Buchstaben ordnen"
+      },
+      {
+        "id": "silben",
+        "titel": "Silbenrätsel",
+        "kurz": "Wörter aus Silben bauen"
+      },
+      {
+        "id": "memory",
+        "titel": "Memory",
+        "kurz": "Fachwort und Bedeutung finden"
+      },
+      {
+        "id": "suchsel",
+        "titel": "Wörtersuche",
+        "kurz": "Versteckte Wörter im Gitter"
+      },
+      {
+        "id": "werbinich",
+        "titel": "Wer bin ich?",
+        "kurz": "Ein Tier an Hinweisen erkennen"
+      }
+    ],
+    "silben": {
+      "intro": "Tippe die Silben in der richtigen Reihenfolge an. Der Hinweis hilft dir. Klatschen hilft beim Finden der Silben.",
+      "pro_runde": 4,
+      "woerter": [
+        [
+          [
+            "Tast",
+            "haa",
+            "re"
+          ],
+          "Haare an der Schnauze zum Ertasten"
+        ],
+        [
+          [
+            "Schwimm",
+            "häu",
+            "te"
+          ],
+          "Haut zwischen den Zehen"
+        ],
+        [
+          [
+            "Le",
+            "bens",
+            "raum"
+          ],
+          "Wo lebt ein Tier in der Natur?"
+        ],
+        [
+          [
+            "Nah",
+            "rung"
+          ],
+          "Was frisst ein Tier?"
+        ],
+        [
+          [
+            "Merk",
+            "mal"
+          ],
+          "Daran erkennt man ein Tier."
+        ],
+        [
+          [
+            "Sach",
+            "an",
+            "ga",
+            "be"
+          ],
+          "Sie gilt für alle Tiere einer Art."
+        ],
+        [
+          [
+            "Mei",
+            "nung"
+          ],
+          "Sie sagt, wie jemand etwas findet."
+        ],
+        [
+          [
+            "Prä",
+            "sens"
+          ],
+          "die Zeitform für Tierbeschreibungen"
+        ],
+        [
+          [
+            "Ad",
+            "jek",
+            "tiv"
+          ],
+          "Wortart, die Merkmale beschreibt"
+        ],
+        [
+          [
+            "Ar",
+            "ti",
+            "kel"
+          ],
+          "der, die oder das"
+        ],
+        [
+          [
+            "Ü",
+            "ber",
+            "blick"
+          ],
+          "Er steht am Anfang der Tierbeschreibung."
+        ],
+        [
+          [
+            "Mar",
+            "der"
+          ],
+          "Zu dieser Tierfamilie gehört der Fischotter."
+        ],
+        [
+          [
+            "Bam",
+            "bus"
+          ],
+          "Davon ernährt sich der Rote Panda hauptsächlich."
+        ],
+        [
+          [
+            "Sa",
+            "van",
+            "ne"
+          ],
+          "Grasland mit wenigen Bäumen"
+        ],
+        [
+          [
+            "Däm",
+            "me",
+            "rung"
+          ],
+          "Zeit zwischen Tageslicht und Dunkelheit"
+        ],
+        [
+          [
+            "Grund",
+            "form"
+          ],
+          "So steht ein Verb im Wörterbuch."
+        ],
+        [
+          [
+            "Kral",
+            "len"
+          ],
+          "spitze Nägel an den Zehen"
+        ],
+        [
+          [
+            "Fisch",
+            "ot",
+            "ter"
+          ],
+          "das Beispieltier der Reihe"
+        ],
+        [
+          [
+            "Schnau",
+            "ze"
+          ],
+          "Nase und Mund eines Tieres"
+        ],
+        [
+          [
+            "Gi",
+            "raf",
+            "fe"
+          ],
+          "Tier mit sehr langem Hals"
+        ],
+        [
+          [
+            "An",
+            "ti",
+            "lo",
+            "pe"
+          ],
+          "Kito und Raja aus dem Training gehören zu dieser Tiergruppe."
+        ],
+        [
+          [
+            "Tier",
+            "pfle",
+            "ge",
+            "rin"
+          ],
+          "Sie kümmert sich im Zoo um die Tiere."
+        ]
+      ]
+    },
+    "memory": {
+      "intro": "Decke zwei Karten auf. Findest du ein Fachwort und seine Bedeutung, bleiben beide offen.",
+      "paare": 6
+    },
+    "suchsel": {
+      "intro": "Im Gitter sind Wörter versteckt, von links nach rechts oder von oben nach unten. Tippe auf den ersten und dann auf den letzten Buchstaben.",
+      "groesse": 7,
+      "pro_runde": 5,
+      "woerter": [
+        "NAHRUNG",
+        "MERKMAL",
+        "MEINUNG",
+        "PRÄSENS",
+        "NOMEN",
+        "VERB",
+        "ARTIKEL",
+        "MARDER",
+        "BAMBUS",
+        "SAVANNE",
+        "SUBJEKT",
+        "KRALLEN",
+        "RUMPF",
+        "WAMME",
+        "STEPPE",
+        "FELL",
+        "OHREN",
+        "ZUNGE",
+        "HALS",
+        "SCHWANZ",
+        "KOPF",
+        "BEINE",
+        "FLECKEN"
+      ]
+    },
+    "werbinich": {
+      "intro": "Lies den Hinweis. Weißt du schon, welches Tier gemeint ist? Wenn nicht, hol dir den nächsten Hinweis.",
+      "merke": "Lebensraum und Nahrung passen oft zu vielen Tieren. Ein **genaues äußeres Merkmal** verrät das Tier am schnellsten. Darum braucht deine Tierbeschreibung genaue Merkmale.",
+      "eigenes": "Denk dir selbst ein Rätsel für deine Familie aus: vier Hinweise, das genaueste Merkmal zuletzt.",
+      "tiere": [
+        {
+          "name": "Fischotter",
+          "hinweise": [
+            [
+              "L",
+              "Ich lebe an Flüssen und Seen."
+            ],
+            [
+              "N",
+              "Ich fresse vor allem Fische."
+            ],
+            [
+              "T",
+              "Ich gehöre zu den Mardern."
+            ],
+            [
+              "A",
+              "Ich habe einen breiten, flachen Kopf und lange Tasthaare an der Schnauze."
+            ]
+          ]
+        },
+        {
+          "name": "Angola-Giraffe",
+          "hinweise": [
+            [
+              "L",
+              "Ich lebe in Savannen im südlichen Afrika."
+            ],
+            [
+              "N",
+              "Ich fresse nur Pflanzen, vor allem Blätter."
+            ],
+            [
+              "A",
+              "Meine Zunge kann bis zu 50 Zentimeter lang werden."
+            ],
+            [
+              "A",
+              "Mein helles Fell hat große braune Flecken mit gezackten Rändern."
+            ]
+          ]
+        },
+        {
+          "name": "Eichhörnchen",
+          "hinweise": [
+            [
+              "L",
+              "Ich lebe in Wäldern, Parks und Gärten."
+            ],
+            [
+              "Z",
+              "Ich klettere sehr gut auf Bäume."
+            ],
+            [
+              "A",
+              "Mein Fell ist meistens rotbraun, manchmal fast schwarz. Mein Bauch ist hell."
+            ],
+            [
+              "A",
+              "Ich habe einen langen, buschigen Schwanz und fresse gern Nüsse."
+            ]
+          ]
+        },
+        {
+          "name": "Amsel",
+          "hinweise": [
+            [
+              "L",
+              "Ich lebe oft in Gärten und Parks."
+            ],
+            [
+              "N",
+              "Ich suche am Boden nach Regenwürmern."
+            ],
+            [
+              "T",
+              "Ich bin ein Vogel."
+            ],
+            [
+              "A",
+              "Das Männchen hat schwarze Federn und einen gelben bis orangen Schnabel."
+            ]
+          ]
+        },
+        {
+          "name": "Stockente",
+          "hinweise": [
+            [
+              "L",
+              "Ich lebe an Teichen, Seen und Flüssen."
+            ],
+            [
+              "Z",
+              "Ich kann schwimmen und fliegen."
+            ],
+            [
+              "A",
+              "Zwischen meinen Zehen sind Schwimmhäute."
+            ],
+            [
+              "A",
+              "Das Männchen hat einen grün glänzenden Kopf und einen weißen Ring am Hals."
+            ]
+          ]
+        },
+        {
+          "name": "Igel",
+          "hinweise": [
+            [
+              "Z",
+              "Ich bin vor allem nachts unterwegs."
+            ],
+            [
+              "N",
+              "Ich fresse Käfer, Raupen und Regenwürmer."
+            ],
+            [
+              "Z",
+              "Im Winter halte ich Winterschlaf."
+            ],
+            [
+              "A",
+              "Mein Rücken ist mit vielen spitzen Stacheln bedeckt."
+            ]
+          ]
+        },
+        {
+          "name": "Marienkäfer",
+          "hinweise": [
+            [
+              "T",
+              "Ich bin ein Insekt und habe sechs Beine."
+            ],
+            [
+              "N",
+              "Ich fresse Blattläuse."
+            ],
+            [
+              "M",
+              "Ich bin nur wenige Millimeter groß."
+            ],
+            [
+              "A",
+              "Meine Flügeldecken sind rot und haben schwarze Punkte."
+            ]
+          ]
+        }
+      ],
+      "arten": {
+        "L": "Lebensraum",
+        "N": "Nahrung",
+        "A": "Aussehen",
+        "T": "Überblick",
+        "M": "Maß",
+        "Z": "Verhalten"
+      }
+    }
   }
 }

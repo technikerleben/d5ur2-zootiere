@@ -138,7 +138,7 @@ def daten() -> dict:
                    "checkliste": etappen[2]["zusatzseiten"], "woerter": etappen[1]["hilfen"][0]},
         "uebungen": app["uebungen"], "detektiv_rueckmeldung": app["detektiv_rueckmeldung"],
         "etappen_namen": app["etappen_namen"], "interviews": interviews, "beispiele": beispiele,
-        "raetsel": app["raetsel"], "zuhause": app["zuhause"], "start_hinweis": app["start_hinweis"], "nachweise": nachweise,
+        "raetsel": app["raetsel"], "zuhause": app["zuhause"], "start_hinweis": app["start_hinweis"], "spiele": app["spiele"], "nachweise": nachweise,
     }
 
 
@@ -149,7 +149,7 @@ def pruefe_inhalt(data: dict):
     app = j("lernapp.json")
     # Satzvergleiche nur gegen app-eigene Texte: Material aus den Etappen (Interviews,
     # Merkblätter, Wörterhilfe) darf Sätze mit Nachweisen teilen, eigene Übungen nicht.
-    eigen = json.dumps([{k: app[k] for k in ("uebungen", "raetsel", "zuhause", "start", "weg")}] + [j(f) for f in BEISPIELE.values()], ensure_ascii=False)
+    eigen = json.dumps([{k: app[k] for k in ("uebungen", "raetsel", "spiele", "zuhause", "start", "weg")}] + [j(f) for f in BEISPIELE.values()], ensure_ascii=False)
 
     # 1 Sperrliste: Namen aus Probearbeit und Klassenarbeiten
     for w in app["sperrliste"]:
@@ -236,6 +236,26 @@ def pruefe_inhalt(data: dict):
             fehler.append(f"Elterninfo {x['code']}: KI-Hinweis fehlt am Ende")
         if (x["code"] != "de") != bool(x.get("hinweis_uebersetzung")):
             fehler.append(f"Elterninfo {x['code']}: Hinweis auf KI-Übersetzung fehlt oder ist zu viel")
+    sp_ = data["spiele"]
+    for silben, _h in sp_["silben"]["woerter"]:
+        if not all(re.fullmatch(r"[A-Za-zÄÖÜäöüß]+", x) for x in silben) or len(silben) < 2:
+            fehler.append(f"Silbenrätsel: ungültige Silben {silben}")
+    if len({"".join(x) for x, _ in sp_["silben"]["woerter"]}) != len(sp_["silben"]["woerter"]):
+        fehler.append("Silbenrätsel: Wort doppelt")
+    for w in sp_["suchsel"]["woerter"]:
+        if not re.fullmatch(r"[A-ZÄÖÜ]+", w) or len(w) > sp_["suchsel"]["groesse"]:
+            fehler.append(f"Wörtersuche: Wort passt nicht ins Gitter: {w}")
+    if len(data["raetsel"]["woerter"]) < sp_["memory"]["paare"]:
+        fehler.append("Memory: zu wenige Wortpaare")
+    namen = [t["name"] for t in sp_["werbinich"]["tiere"]]
+    if len(namen) < 4 or len(set(namen)) != len(namen):
+        fehler.append("Wer bin ich?: mindestens vier verschiedene Tiere nötig")
+    for t in sp_["werbinich"]["tiere"]:
+        if len(t["hinweise"]) != 4 or t["hinweise"][-1][0] != "A" or any(h[0] not in sp_["werbinich"]["arten"] for h in t["hinweise"]):
+            fehler.append(f"Wer bin ich? {t['name']}: vier Hinweise, der letzte ein Aussehen-Merkmal")
+    for g in sp_["liste"]:
+        if g["id"] not in ("buchstaben", "silben", "memory", "suchsel", "werbinich"):
+            fehler.append(f"Spiele: unbekanntes Spiel {g['id']}")
     for w, _h in data["raetsel"]["woerter"]:
         if not re.fullmatch(r"[A-Za-zÄÖÜäöü]+", w):
             fehler.append(f"Rätselwort mit Sonderzeichen: {w}")
@@ -379,7 +399,7 @@ def browsertest(data: dict, shots: Path | None = None):
         pg.wait_for_timeout(300)
 
         # Tabs
-        for tab in ["weg", "wissen/e1", "wissen/e2", "wissen/e3", "wissen/strategien", "wissen/pruefen", "wissen/woerter", "ueben", "raetsel", "zuhause", "info"]:
+        for tab in ["weg", "wissen/e1", "wissen/e2", "wissen/e3", "wissen/strategien", "wissen/pruefen", "wissen/woerter", "ueben", "raetsel", "raetsel/silben", "raetsel/memory", "raetsel/suchsel", "raetsel/werbinich", "zuhause", "info"]:
             pg.goto(base + "#/" + tab)
             pg.wait_for_timeout(120)
             overflow(pg, tab)
@@ -415,7 +435,8 @@ def browsertest(data: dict, shots: Path | None = None):
             shot(pg, "ex_" + u["id"] + "_ende")
 
         # Rätsel lösen
-        pg.goto(base + "#/raetsel")
+        spiele_testen(pg, data, fehler, shot)
+        pg.goto(base + "#/raetsel/buchstaben")
         for _ in range(2):
             hinweis = pg.locator(".card .label + div").first.inner_text()
             wort = next(w for w, h in data["raetsel"]["woerter"] if h.replace("*", "") == hinweis)
@@ -465,7 +486,62 @@ def browsertest(data: dict, shots: Path | None = None):
         fehler.append("Netzanfragen nach außen: " + ", ".join(sorted(set(fremd))[:5]))
     if fehler:
         raise SystemExit("Lernapp – Browsertest fehlgeschlagen:\n  " + "\n  ".join(fehler))
-    print(f"ok: Browsertest 390×844 ({len(data['uebungen'])} Übungen gelöst, Tabs, Rätsel, Speichern, offline, keine Netzanfragen)")
+    print(f"ok: Browsertest 390×844 ({len(data['uebungen'])} Übungen und 5 Spiele gelöst, Tabs, Speichern, offline, keine Netzanfragen)")
+
+
+def spiele_testen(pg, data, fehler, shot):
+    """Spielt Silbenrätsel, Memory, Wörtersuche und Wer bin ich? je einmal durch."""
+    sp = data["spiele"]
+    # Silbenrätsel: Wörter anhand der Hinweise bauen
+    pg.goto(pg.url.split("#")[0] + "#/raetsel/silben")
+    hinweise = pg.locator("ol.hints li").all_inner_texts()
+    for h in hinweise:
+        silben = next(x for x, hh in sp["silben"]["woerter"] if hh.replace("*", "") == h.strip())
+        for sil in silben:
+            pg.locator(".pool .tile", has_text=re.compile("^" + re.escape(sil) + "$")).first.click()
+        if not pg.locator("#fb .fb.ok").count():
+            fehler.append(f"Silbenrätsel {''.join(silben)}: nicht lösbar")
+            break
+    if not pg.locator("#neu").count():
+        fehler.append("Silbenrätsel: Runde endet nicht")
+    shot(pg, "spiel_silben")
+    # Memory: Paare über data-pair aufdecken
+    pg.goto(pg.url.split("#")[0] + "#/raetsel/memory")
+    pg.locator(".mcard").first.wait_for()
+    for k in range(sp["memory"]["paare"]):
+        for b in pg.locator(f".mcard[data-pair='{k}']").all():
+            b.click()
+    pg.locator("#neu").wait_for(timeout=3000)
+    shot(pg, "spiel_memory")
+    # Wörtersuche: Wörter im Gitter suchen und Anfang/Ende antippen
+    pg.goto(pg.url.split("#")[0] + "#/raetsel/suchsel")
+    n = sp["suchsel"]["groesse"]
+    zellen = pg.locator(".scell").all_inner_texts()
+    g = [zellen[r * n:(r + 1) * n] for r in range(n)]
+    for w in pg.locator("#wlist span").evaluate_all("els => els.map(e => e.dataset.word)"):
+        L = len(w); ziel = None
+        for r in range(n):
+            for c in range(n):
+                if c + L <= n and "".join(g[r][c:c + L]) == w: ziel = ((r, c), (r, c + L - 1))
+                if r + L <= n and "".join(g[r + i][c] for i in range(L)) == w: ziel = ziel or ((r, c), (r + L - 1, c))
+        if not ziel:
+            fehler.append(f"Wörtersuche: {w} nicht im Gitter"); break
+        for rr, cc in ziel:
+            pg.locator(f".scell[data-r='{rr}'][data-c='{cc}']").click()
+    if not pg.locator("#neu").count():
+        fehler.append("Wörtersuche: Runde endet nicht")
+    shot(pg, "spiel_suchsel")
+    # Wer bin ich?: einmal falsch, dann richtig
+    pg.goto(pg.url.split("#")[0] + "#/raetsel/werbinich")
+    erster = pg.locator("ol.hints li").first.inner_text()
+    tier = next(t for t in sp["werbinich"]["tiere"] if t["hinweise"][0][1] in erster)
+    pg.locator(".opt").filter(has_not_text=tier["name"]).first.click()
+    if pg.locator("ol.hints li").count() != 2:
+        fehler.append("Wer bin ich?: kein neuer Hinweis nach falscher Antwort")
+    pg.locator(f".opt[data-t='{tier['name']}']").click()
+    if not pg.locator("#fb .fb.ok").count():
+        fehler.append("Wer bin ich?: richtige Antwort wird nicht erkannt")
+    shot(pg, "spiel_werbinich")
 
 
 def weg_mit_hinweis(pg):

@@ -414,7 +414,7 @@ Zeitansätze sind Planungswerte, keine individuellen Fristen. Pflichtumfang ca. 
 - Lehrkraft-Cockpit `index.html` zeigt noch Vorfassungen.
 - Gedruckte Lösungsfassung (Tipps/Lösungen wie im Kiosk) und ggf. Übungskarten-Modus im Kiosk.
 - Unterrichtserprobung steht aus; Zeitbudget nach Erprobung prüfen.
-- Lern-App (`planung/Lernapp_Planung.md`): Grundversion gebaut (Mein Weg, Wissen, 15 Übungen inkl. Beispielaufgabe Giraffe und Training Ü1/Ü2, Buchstabenrätsel, Zuhause); offen: Quiz je Etappe, Silbenrätsel/Suchsel, Schalter „Einfach“, QR-Zettel. Freigabe für Kinder steuert die Lehrkraft über den QR-Code. Klassenarbeiten sollen später extern gespeichert werden.
+- Lern-App (`planung/Lernapp_Planung.md`): Grundversion gebaut (Mein Weg, Wissen, 15 Übungen inkl. Beispielaufgabe Giraffe und Training Ü1/Ü2, Bereich Spiele mit Buchstabenrätsel, Silbenrätsel, Memory, Wörtersuche und „Wer bin ich?“ (Fischotter, Giraffe, Alltagstiere; Erdmännchen/Roter Panda bewusst nicht), Zuhause); offen: Quiz je Etappe, Schalter „Einfach“, QR-Zettel. Freigabe für Kinder steuert die Lehrkraft über den QR-Code. Klassenarbeiten sollen später extern gespeichert werden.
 
 ## 17 · Glossar
 
