@@ -1,0 +1,367 @@
+{
+  "_hinweis": "Lineares Arbeitsheft (A4, Originalgröße) für Kinder, denen ein fester Weg hilft. Gleiche Inhalte und Anforderungen wie Blatt 1–9, Nachweise und Probearbeit; Aufträge in Einzelschritte zerlegt. Seitenverweise: {S:marke}. Felder: L1–L8 Linien, Z Linie + Zeile, AB, JN, JNZ, sowie Sonderfelder (siehe tools/build_arbeitsheft.py). Lücke: [__].",
+  "titel": "Mein Arbeitsheft Zootiere",
+  "untertitel": "Ein Zootier sachlich beschreiben",
+
+  "so_arbeitest_du": [
+    ["schritt", "Schritt", "Mache immer nur einen Schritt. Kreuze das Kästchen rechts daneben an, wenn der Schritt erledigt ist. Dann kommt der nächste Schritt."],
+    ["kiosk", "Kiosk", "Am Kontroll-Kiosk tippst du die Nummer ein. **Tipp**, wenn du feststeckst. **Lösung**, wenn das Blatt fertig ist."],
+    ["stopp", "Stopp", "Hör hier auf. Zeige dein Heft der Lehrkraft. Blättere erst weiter, wenn die Lehrkraft unterschrieben hat."],
+    ["merk", "Merkseite", "Hier steht, was du wissen musst. Lies nach, wenn du unsicher bist."],
+    ["material", "Material", "Das Interview und das Foto. Hier darfst du markieren und unterstreichen."]
+  ],
+  "loesungsleiter": ["Lies den Schritt noch einmal.", "Schau auf der Merkseite nach.", "Frage dein Partnerkind.", "Frage die Lehrkraft."],
+  "regeln": [
+    "Du arbeitest die Seiten der Reihe nach.",
+    "Du schreibst alles in dieses Heft.",
+    "Das Kästchen rechts neben einem Schritt kreuzt du an, wenn der Schritt erledigt ist.",
+    "Zusatzaufgaben stehen hinten im Heft. Du machst sie nur, wenn die Lehrkraft sie ankreuzt."
+  ],
+
+  "etappen": {
+    "1": {
+      "start": ["Die Lehrkraft zeigt dir den Input zu Etappe 1.", "Lies danach die Merkseiten 1 (Seite {S:mb1}).", "Bearbeite Blatt 1, 2, 3 und 4.", "Dann kommt der erste Stopp: der Gelingensnachweis 1."],
+      "lernbuddy": "Schreibe dieses Ziel auf deinen Lernbuddy in das Feld „Mein Ziel“."
+    },
+    "2": {
+      "start": ["Die Lehrkraft zeigt dir den Input zu Etappe 2.", "Lies danach die Merkseiten 2 (Seite {S:mb2}).", "Bearbeite Blatt 5 und 6.", "Dann kommt der zweite Stopp: der Gelingensnachweis 2."],
+      "lernbuddy": "Schreibe dieses Ziel auf deinen Lernbuddy in das Feld „Mein Ziel“."
+    },
+    "3": {
+      "start": ["Die Lehrkraft zeigt dir den Input zu Etappe 3.", "Lies danach die Merkseiten 3 (Seite {S:mb3}).", "Bearbeite Blatt 7, 8 und 9. Dein Tier ist das **Erdmännchen**.", "Dann kommt der dritte Stopp: die Probearbeit."],
+      "lernbuddy": "Schreibe dieses Ziel auf deinen Lernbuddy in das Feld „Mein Ziel“."
+    }
+  },
+
+  "blaetter": [
+    {
+      "nr": 1, "etappe": 1, "titel": "Welche Beschreibung hilft?",
+      "brauchst": "dieses Heft · Merkseiten 1 (Seite {S:mb1})",
+      "seiten": [[
+        {"typ": "lies", "titel": "Lies die beiden Texte", "text": "**A:** *Der Fischotter ist toll. Sein Fell ist schön.*\n**B:** *Der Fischotter hat einen langen Körper und kurze Beine. Sein Fell ist oben dunkelbraun.*"},
+        {"typ": "teil", "titel": "Pflicht"},
+        {"typ": "schritt", "t": "Welcher Text hilft dir, das Tier vorzustellen? Kreuze an.", "f": "AB"},
+        {"typ": "schritt", "t": "Begründe. Schreibe einen Satz mit „weil“.", "f": "L2"},
+        {"typ": "schritt", "t": "Schreibe zwei genaue Angaben aus Text B auf.", "f": "N2"},
+        {"typ": "schritt", "t": "Warum hilft „toll“ beim Beschreiben wenig? Schreibe einen Satz.", "f": "L2"},
+        {"typ": "teil", "titel": "Pflicht · Sprachdetektiv"},
+        {"typ": "schritt", "t": "Schreibe diesen Satz ab: *„Der Fischotter hat einen langen Körper.“* Lass über dem Satz Platz.", "f": "H1"},
+        {"typ": "schritt", "t": "Schreibe **N** über die Nomen. **N** heißt hier: Nomen."},
+        {"typ": "schritt", "t": "Schreibe **Art.** über die Artikel."}
+      ]]
+    },
+    {
+      "nr": 2, "etappe": 1, "titel": "Schau genau hin",
+      "brauchst": "dieses Heft · das Foto auf dieser Seite · Bleistift",
+      "seiten": [[
+        {"typ": "foto"},
+        {"typ": "teil", "titel": "Pflicht"},
+        {"typ": "schritt", "t": "Betrachte das Foto."},
+        {"typ": "schritt", "t": "Schreibe zwei Körperteile in die Tabelle, die du auf dem Foto siehst. Ergänze zu jedem ein genaues Merkmal.", "f": "TAB_KOERPER"},
+        {"typ": "tipp", "text": "Eine Farbe, eine Form oder eine Größe macht die Angabe genauer: nicht nur „Ohren“, sondern „kleine Ohren“."}
+      ], [
+        {"typ": "schritt", "t": "Schreibe einen vollständigen Satz zu Körperteil 1.", "f": "L2"},
+        {"typ": "schritt", "t": "Schreibe einen vollständigen Satz zu Körperteil 2.", "f": "L2"},
+        {"typ": "schritt", "t": "Zeige deinem Partnerkind oder der Lehrkraft beide Stellen auf dem Foto."},
+        {"typ": "schritt", "t": "Passen deine beiden Sätze zum Foto? Kreuze an. Bei „nein“: Verbessere den Satz.", "f": "JN"},
+        {"typ": "teil", "titel": "Pflicht · Sprachdetektiv"},
+        {"typ": "schritt", "t": "Suche in einem deiner Sätze ein Adjektiv. Schreibe **Adj.** darüber."},
+        {"typ": "schritt", "t": "Schreibe das Nomen auf, das dieses Adjektiv genauer beschreibt.", "f": "L1"}
+      ]]
+    },
+    {
+      "nr": 3, "etappe": 1, "titel": "Im Interview suchen",
+      "brauchst": "dieses Heft · Interview (Seite {S:iv1}) · Foto (Seite {S:foto1})",
+      "seiten": [[
+        {"typ": "lies", "titel": "So liest du (Leseschritte)", "text": "1. Lies das Interview einmal. Markiere Wörter, die du nicht verstehst.\n2. Kläre sie mit der Wörterhilfe oder frage nach. Rate nicht.\n3. Suche mit Suchwörtern: *leben, fressen, Zentimeter*.\n4. Notiere ein Stichwort und die Zeile."},
+        {"typ": "teil", "titel": "Pflicht"},
+        {"typ": "schritt", "t": "Lies das Interview auf Seite {S:iv1} mit den Leseschritten."},
+        {"typ": "schritt", "t": "Wo leben Fischotter? Schreibe die Antwort und die Zeile auf.", "f": "Z"},
+        {"typ": "schritt", "t": "Was fressen Fischotter vor allem? Schreibe die Antwort und die Zeile auf.", "f": "Z"},
+        {"typ": "schritt", "t": "Wie lang sind Fischotter ohne Schwanz? Schreibe die Zahl mit Einheit und die Zeile auf.", "f": "Z"},
+        {"typ": "schritt", "t": "Schreibe im Interview an den Rand: **L** neben den Lebensraum, **N** neben die Nahrung, **M** neben das Maß. Hier heißt **N**: Nahrung."}
+      ], [
+        {"typ": "schritt", "t": "Im Interview stehen zwei Längen. Schreibe die Länge auf, die für **alle Fischotter** gilt.", "f": "L1"},
+        {"typ": "schritt", "t": "Schreibe die Länge auf, die **nur für Otto** gilt.", "f": "L1"},
+        {"typ": "schritt", "t": "Begründe: Woran erkennst du, dass die zweite Länge nur für Otto gilt? Schreibe einen Satz.", "f": "L2"},
+        {"typ": "schritt", "t": "Partnercheck: Zeige deinem Partnerkind deine drei Stellen im Interview. Ist es nicht da? Dann zeige sie der Lehrkraft."},
+        {"typ": "schritt", "t": "Prüft zusammen: Passt jede Stelle zur Frage? Habt ihr etwas verschieden? Lest die Frage noch einmal und prüft die Stelle im Interview."},
+        {"typ": "schritt", "t": "Schreibe ein Merkmal auf, das du auf dem Foto siehst. Schreibe „(Bild)“ dahinter.", "f": "L1"},
+        {"typ": "schritt", "t": "Zeige diese Stelle auf dem Foto deinem Partnerkind oder der Lehrkraft."},
+        {"typ": "schritt", "t": "Steht dieses Merkmal auch im Interview? Kreuze an.", "f": "JNZ"},
+        {"typ": "teil", "titel": "Pflicht · Sprachdetektiv"},
+        {"typ": "schritt", "t": "Unterstreiche im Interview zwei Verben. Schreibe **V** darüber. **V** heißt: Verb."}
+      ]]
+    },
+    {
+      "nr": 4, "etappe": 1, "titel": "Informationen ordnen",
+      "brauchst": "dieses Heft · Interview (Seite {S:iv1})",
+      "seiten": [[
+        {"typ": "teil", "titel": "Pflicht"},
+        {"typ": "schritt", "t": "Schreibe diese vier Überschriften in die vier Kästen auf Seite {S:plan4}: Überblick · Aussehen · Lebensraum · Nahrung."},
+        {"typ": "speicher", "titel": "Angaben", "woerter": ["Fischotter", "kurze Beine", "Otto bekommt einen Eimer Fisch", "Fische", "Flüsse und Seen", "der süßeste Otter der Welt", "ohne Schwanz 60–90 cm", "dunkelbraunes Fell oben", "Otto ist 80 cm lang", "Frösche und Krebse", "Ufer mit Verstecken"]},
+        {"typ": "schritt", "t": "Drei Angaben passen nicht in eine Tierbeschreibung. Streiche diese drei Angaben oben durch."},
+        {"typ": "schritt", "t": "Schreibe die anderen acht Angaben in den passenden Kasten."},
+        {"typ": "schritt", "t": "Suche im Interview drei weitere Angaben zum Aussehen. Schreibe sie mit Zeile in den Kasten „Aussehen“."},
+        {"typ": "feld", "f": "PLAN4"}
+      ], [
+        {"typ": "schritt", "t": "Zähle die Merkmale im Kasten „Aussehen“. Hast du jetzt mindestens vier verschiedene Merkmale? Bei „nein“: Suche weiter im Interview.", "f": "JN"},
+        {"typ": "teil", "titel": "Pflicht · Sprachdetektiv"},
+        {"typ": "schritt", "t": "„Körperlänge“ ist ein Kofferwort. Zerlege es in zwei Nomen. Schreibe beide mit Artikel auf.", "f": "KOFFER"},
+        {"typ": "schritt", "t": "Welcher Artikel gehört zu „Körperlänge“? Nutze die Kopf-rechts-Regel: Das letzte Nomen bestimmt den Artikel.", "f": "ARTIKEL"}
+      ]]
+    },
+    {
+      "nr": 5, "etappe": 2, "titel": "Treffende Wörter",
+      "brauchst": "dieses Heft · Interview (Seite {S:iv2}) · Wörterhilfe (Seite {S:wh})",
+      "seiten": [[
+        {"typ": "lies", "titel": "Aus dem Interview", "text": "*„Sein Körper ist lang und schmal, fast wie ein Torpedo.“*\n*„Deshalb ist er so ein toller Schwimmer.“*\n**Tasthaare:** Haare zum Ertasten. **Schwimmhäute:** Haut zwischen den Zehen."},
+        {"typ": "teil", "titel": "Pflicht"},
+        {"typ": "schritt", "t": "„schönes Fell“ ist nicht genau. Suche im Interview die genaue Angabe zum Fell. Schreibe sie mit Zeile auf.", "f": "Z"},
+        {"typ": "schritt", "t": "„toller Kopf“ ist nicht genau. Suche im Interview die genaue Angabe zum Kopf. Schreibe sie mit Zeile auf.", "f": "Z"},
+        {"typ": "schritt", "t": "Lies den Torpedo-Satz oben im Kasten. „wie ein Torpedo“ ist ein Vergleich."},
+        {"typ": "schritt", "t": "Schreibe einen sachlichen Satz über den Körper des Fischotters. Lass den Vergleich weg.", "f": "L2"}
+      ], [
+        {"typ": "schritt", "t": "„toller Schwimmer“ ist eine Meinung. Was hat der Fischotter zum Schwimmen? Schreibe einen sachlichen Satz.", "f": "L2"},
+        {"typ": "schritt", "t": "Bilde ein Wort mit Artikel: *Tast + Haare*.", "f": "L1"},
+        {"typ": "schritt", "t": "Erkläre das Wort mit der Wörterhilfe. Schreibe einen Satz.", "f": "L2"},
+        {"typ": "schritt", "t": "Bilde ein Wort mit Artikel: *Schwimm + Häute*.", "f": "L1"},
+        {"typ": "schritt", "t": "Erkläre das Wort mit der Wörterhilfe. Schreibe einen Satz.", "f": "L2"}
+      ]]
+    },
+    {
+      "nr": 6, "etappe": 2, "titel": "Sachliche Sätze",
+      "brauchst": "dieses Heft · Interview (Seite {S:iv2}) · Merkseiten 2 (Seite {S:mb2})",
+      "seiten": [[
+        {"typ": "teil", "titel": "Pflicht · Aus dem Interview wird ein Sachsatz"},
+        {"typ": "text", "text": "Schreibe zu jeder Stelle einen vollständigen, sachlichen Satz im Präsens über den Fischotter."},
+        {"typ": "schritt", "t": "*„Die Beine sind dagegen richtig kurz.“*", "f": "L2"},
+        {"typ": "schritt", "t": "*„Sie fangen aber auch Frösche und Krebse.“*", "f": "L2"},
+        {"typ": "schritt", "t": "*„Die sind ganz klein.“* Gemeint sind die Ohren.", "f": "L2"},
+        {"typ": "teil", "titel": "Pflicht · Verbessern und prüfen"},
+        {"typ": "schritt", "t": "Verbessere diesen Satz: *„der fischotter lebte an schönen ufern“*\nIm Interview steht: *„Sie brauchen Ufer, an denen sie sich verstecken können.“*", "f": "L2"}
+      ], [
+        {"typ": "schritt", "t": "Prüfe deine vier Sätze von Seite {S:b6}. Kreuze für jeden Satz an, was stimmt. Verbessere, was nicht stimmt.", "f": "PRUEF6"},
+        {"typ": "teil", "titel": "Pflicht · Verben untersuchen"},
+        {"typ": "schritt", "t": "Unterstreiche in deinen vier Sätzen die Verben."},
+        {"typ": "schritt", "t": "Schreibe die Grundform von „frisst“ auf.", "f": "L1"},
+        {"typ": "schritt", "t": "Schreibe deinen Satz 2 noch einmal für **mehrere** Fischotter. Passe das Verb an.", "f": "L2"}
+      ]]
+    },
+    {
+      "nr": 7, "etappe": 3, "titel": "Dein Schreibplan",
+      "brauchst": "dieses Heft · Interview zum Erdmännchen (Seite {S:iv3}) · Merkseiten 3 (Seite {S:mb3})",
+      "seiten": [[
+        {"typ": "text", "text": "Dein Tier auf Blatt 7, 8 und 9 ist das **Erdmännchen**."},
+        {"typ": "teil", "titel": "Pflicht · Plane"},
+        {"typ": "schritt", "t": "Lies das Interview zum Erdmännchen auf Seite {S:iv3}."},
+        {"typ": "schritt", "t": "Markiere im Interview alle Sachangaben über **alle** Erdmännchen."},
+        {"typ": "schritt", "t": "Streiche im Interview alle Meinungen durch."},
+        {"typ": "schritt", "t": "Streiche im Interview alle Angaben durch, die nur Kiki oder den Zoo betreffen."},
+        {"typ": "schritt", "t": "Schreibe in deinen Schreibplan (Seite {S:plan7}): den Tiernamen und das Maß der Art mit Einheit und Bezug. Schreibe die Zeile dazu."},
+        {"typ": "schritt", "t": "Schreibe vier verschiedene äußere Merkmale in den Plan. Schreibe die Zeile dazu."},
+        {"typ": "schritt", "t": "Schreibe den Lebensraum und die Nahrung in den Plan. Schreibe die Zeile dazu."},
+        {"typ": "schritt", "t": "Prüfe jede Angabe im Plan: Gilt sie für alle Erdmännchen? Mache dann einen Haken in die Spalte „geprüft“."},
+        {"typ": "schritt", "t": "Zeige der Lehrkraft eine Stelle auf dem Foto (Seite {S:iv3}) und eine Stelle im Interview."}
+      ], [
+        {"typ": "feld", "f": "PLAN7"}
+      ]]
+    },
+    {
+      "nr": 8, "etappe": 3, "titel": "Deine Tierbeschreibung",
+      "brauchst": "dieses Heft · deinen Plan (Seite {S:plan7}) · Interview (Seite {S:iv3}) · Merkseiten 3 (Seite {S:mb3})",
+      "seiten": [[
+        {"typ": "teil", "titel": "Pflicht · Schreibe"},
+        {"typ": "schritt", "t": "Schreibe eine passende Überschrift auf die erste Linie."},
+        {"typ": "schritt", "t": "Beginne mit dem Tiernamen und dem Überblick."},
+        {"typ": "schritt", "t": "Beschreibe vier verschiedene äußere Merkmale."},
+        {"typ": "schritt", "t": "Schreibe das Maß mit Einheit und Bezug, den Lebensraum und die Nahrung."},
+        {"typ": "schritt", "t": "Schreibe sachlich, im Präsens und in vollständigen Sätzen. Schreibe keine Meinung und kein Erlebnis aus dem Interview."},
+        {"typ": "schritt", "t": "Lies deinen Text einmal leise vor."},
+        {"typ": "feld", "f": "TEXT_A"}
+      ], [
+        {"typ": "feld", "f": "TEXT_B"}
+      ]]
+    },
+    {
+      "nr": 9, "etappe": 3, "titel": "Prüfen und verbessern",
+      "brauchst": "dieses Heft · deinen Text (Seite {S:b8}) · Interview (Seite {S:iv3}) · Checkliste K1–K6 (Seite {S:check})",
+      "seiten": [[
+        {"typ": "teil", "titel": "Pflicht · Arbeite an deinem Text"},
+        {"typ": "schritt", "t": "Prüfe deinen Text mit der Checkliste auf Seite {S:check}. Prüfe ein Kriterium nach dem anderen. Kreuze an, was du geprüft hast.", "f": "K16"},
+        {"typ": "schritt", "t": "Geh mit deinem Heft zur Haltestelle. Dein Partnerkind gibt dir dort eine Rückmeldung. Ist es nicht da? Dann wartest du an der Haltestelle auf die Lehrkraft."},
+        {"typ": "schritt", "t": "Dein Partnerkind liest deinen Text. Es nutzt die Rückmeldekarte. Lass dir die Textstelle zeigen."},
+        {"typ": "schritt", "t": "Schreibe auf, was dein Partnerkind dir gesagt hat.", "f": "L2"},
+        {"typ": "schritt", "t": "Entscheide mit Interview und Checkliste: Was verbesserst du? Verbessere ein bis drei Stellen in deinem Text. Schreibe nicht den ganzen Text neu."}
+      ], [
+        {"typ": "schritt", "t": "Ist eine Stelle schon richtig? Begründe, warum sie bleibt. Beginne so: „Mein Satz bleibt, weil …“", "f": "L2"},
+        {"typ": "teil", "titel": "Pflicht · Schreibprüfung zeigen"},
+        {"typ": "schritt", "t": "Kreise in deinem Text einen Satzanfang ein."},
+        {"typ": "schritt", "t": "Unterstreiche in deinem Text zwei Nomen."},
+        {"typ": "schritt", "t": "Markiere in deinem Text einen Punkt am Satzende."},
+        {"typ": "schritt", "t": "Vergleiche die Tierwörter in deinem Text mit dem Interview. Verbessere falsch geschriebene Tierwörter."}
+      ]]
+    }
+  ],
+
+  "stopps": {
+    "gn1": {
+      "nummer": 1, "titel": "Gelingensnachweis 1",
+      "text": ["Du hast Blatt 1, 2, 3 und 4 fertig.", "Zeige dein Heft der Lehrkraft.", "Die Lehrkraft gibt dir den Gelingensnachweis 1. Du schreibst ihn allein. Kein Partnerkind, kein Kiosk."],
+      "uebe": "Blatt __ (Seite __) und Blatt __ (Seite __). Danach: Gelingensnachweis 1 B.",
+      "weiter": "e2"
+    },
+    "gn2": {
+      "nummer": 2, "titel": "Gelingensnachweis 2",
+      "text": ["Du hast Blatt 5 und 6 fertig.", "Zeige dein Heft der Lehrkraft.", "Die Lehrkraft gibt dir den Gelingensnachweis 2. Du schreibst ihn allein. Kein Partnerkind, kein Kiosk."],
+      "uebe": "Blatt __ (Seite __) und Blatt __ (Seite __). Danach: Gelingensnachweis 2 B.",
+      "weiter": "e3"
+    },
+    "pa": {
+      "nummer": 3, "titel": "Probearbeit",
+      "text": ["Du hast Blatt 7, 8 und 9 fertig.", "Zeige dein Heft der Lehrkraft.", "Die Lehrkraft gibt dir die Probearbeit „Der Waschbär“. Du schreibst sie allein. Kein Partnerkind, kein Kiosk. Erlaubt sind die Seite „Das zählt“ und die Hilfeseite in der Probearbeit.", "Die Probearbeit ist ohne Note. Danach bekommst du eine Rückmeldung."],
+      "weiter": "auswertung"
+    },
+    "pu": {
+      "nummer": 4, "titel": "Pflichtübungen zeigen",
+      "text": ["Du hast alle Pflichtübungen fertig, die für dich angekreuzt sind.", "Zeige dein Heft und deine Probearbeit der Lehrkraft.", "Die Lehrkraft prüft deine offenen Ziele noch einmal."],
+      "weiter": "termin"
+    },
+    "ka": {
+      "nummer": 5, "titel": "Klassenarbeit",
+      "text": ["Heute ist dein Termin für die Klassenarbeit.", "Die Lehrkraft gibt dir die Klassenarbeit. Du schreibst sie allein. Kein Partnerkind, kein Kiosk. Erlaubt sind die Seite „Das zählt“ und die Hilfeseite in der Klassenarbeit.", "Gib die Klassenarbeit der Lehrkraft, wenn du fertig bist.", "Danach arbeitest du still weiter am Projekt (Seite {S:projekt})."],
+      "weiter": "ende"
+    }
+  },
+
+  "auswertung": {
+    "titel": "Aus deiner Probearbeit werden Pflichtübungen",
+    "text": ["Die Lehrkraft kreuzt für jedes Ziel an: **gezeigt** oder **noch offen**.", "Für **jedes offene Ziel** machst du eine **Pflichtübung**, auch wenn du 4 von 5 Zielen gezeigt hast. Die Pflichtübung P0 machst du **immer**."],
+    "ziele": [
+      ["E3.1", "Informationen (K1)", "pu1"],
+      ["E3.2", "Aussehen: vier Merkmale (K2)", "pu2"],
+      ["E3.3", "Aufbau (K3)", "pu3"],
+      ["E3.4", "Sprache (K4, K5)", "pu4"],
+      ["E3.5", "Schreibung mit Prüfbeleg (K6)", "pu5"]
+    ]
+  },
+
+  "pflichtuebungen": [
+    {
+      "marke": "pu0", "titel": "Dein nächster Schritt", "ziel": "für alle", "immer": true, "blatt": null,
+      "schritte": [
+        {"t": "Lies, was die Lehrkraft unter „Dein nächster Schritt“ geschrieben hat. Es steht auf der letzten Seite deiner Probearbeit und hier im Kasten."},
+        {"t": "Mache diesen Schritt in deiner Probearbeit. Schreibe mit Bleistift."},
+        {"t": "Schreibe auf, was du geändert hast.", "f": "L3"},
+        {"t": "Zeige die Stelle der Lehrkraft."}
+      ],
+      "lk_feld": "Dein nächster Schritt (schreibt die Lehrkraft):"
+    },
+    {
+      "marke": "pu1", "titel": "Informationen", "ziel": "E3.1 · K1", "blatt": "b7",
+      "schritte": [
+        {"t": "Lege deine Probearbeit neben das Heft. Schlage das Waschbär-Interview auf."},
+        {"t": "Steht der Tiername in deinem Text? Kreuze an.", "f": "JN"},
+        {"t": "Suche im Interview das Maß der Art. Schreibe es mit Einheit, Bezug und Zeile auf.", "f": "Z"},
+        {"t": "Suche im Interview den Lebensraum. Schreibe ihn mit Zeile auf.", "f": "Z"},
+        {"t": "Suche im Interview die Nahrung. Schreibe sie mit Zeile auf.", "f": "Z"},
+        {"t": "Lies deinen Text in der Probearbeit. Steht dort etwas, das nur für Rocky gilt? Streiche es mit Bleistift durch."},
+        {"t": "Welche Angaben fehlen in deinem Text? Schreibe sie hier als ganze Sätze im Präsens.", "f": "L3"}
+      ]
+    },
+    {
+      "marke": "pu2", "titel": "Aussehen: vier Merkmale", "ziel": "E3.2 · K2", "blatt": "b7",
+      "schritte": [
+        {"t": "Lege deine Probearbeit neben das Heft. Schlage das Waschbär-Interview auf."},
+        {"t": "Unterstreiche in deinem Text in der Probearbeit jedes äußere Merkmal."},
+        {"t": "Zähle die verschiedenen Merkmale. Dasselbe Merkmal zählt nur einmal. Schreibe die Zahl auf.", "f": "ZAHL"},
+        {"t": "Suche im Interview Merkmale, bis du vier verschiedene hast. Schreibe sie mit Zeile in die Tabelle.", "f": "TAB_MERKMAL"},
+        {"t": "Prüfe jedes Merkmal: Nennt es Form, Farbe oder Größe? „schön“ zählt nicht."},
+        {"t": "Schreibe für jedes Merkmal, das in deinem Text fehlt, einen ganzen Satz.", "f": "L3"}
+      ]
+    },
+    {
+      "marke": "pu3", "titel": "Aufbau", "ziel": "E3.3 · K3", "blatt": "b8",
+      "schritte": [
+        {"t": "Lege deine Probearbeit neben das Heft. Lies deinen Text."},
+        {"t": "Schreibe über jeden Satz in der Probearbeit einen Buchstaben: **Ü** für Überblick, **A** für Aussehen, **L** für Lebensraum, **N** für Nahrung."},
+        {"t": "Steht der Überblick am Anfang? Kreuze an.", "f": "JN"},
+        {"t": "Stehen alle Sätze mit **A** zusammen? Kreuze an.", "f": "JN"},
+        {"t": "Nummeriere deine Sätze in der richtigen Reihenfolge: Überblick, Aussehen, Lebensraum, Nahrung. Schreibe 1, 2, 3 … an den Rand der Probearbeit."},
+        {"t": "Schreibe den Anfang neu: eine Überschrift und den Überblick mit Tiername und Maß.", "f": "L3"}
+      ]
+    },
+    {
+      "marke": "pu4", "titel": "Sprache", "ziel": "E3.4 · K4 und K5", "blatt": "b8",
+      "schritte": [
+        {"t": "Lege deine Probearbeit neben das Heft. Lies deinen Text."},
+        {"t": "Kreise jede Meinung ein. Signalwörter sind zum Beispiel: *schön, süß, lustig, toll, ich finde*."},
+        {"t": "Kreise jeden Vergleich ein. Signalwörter sind zum Beispiel: *wie, sieht aus wie*."},
+        {"t": "Kreise jedes Erlebnis von Rocky ein."},
+        {"t": "Unterstreiche alle Verben. Stehen sie im Präsens? Kreuze an.", "f": "JN"},
+        {"t": "Schreibe drei Sätze neu: zuerst die eingekreisten Sätze, dann Sätze mit falscher Zeitform, dann unklare Sätze mit „er“, „es“ oder „sein“. Schreibe sachlich, im Präsens und als ganze Sätze.", "f": "L6"}
+      ]
+    },
+    {
+      "marke": "pu5", "titel": "Schreibung mit Prüfbeleg", "ziel": "E3.5 · K6", "blatt": "b9",
+      "schritte": [
+        {"t": "Lege deine Probearbeit neben das Heft. Lege ein Lineal unter die erste Zeile deines Textes."},
+        {"t": "Kreise jeden Satzanfang ein. Ist er groß? Verbessere."},
+        {"t": "Unterstreiche alle Nomen. Sind sie groß? Verbessere."},
+        {"t": "Markiere jedes Satzende. Steht ein Punkt? Verbessere."},
+        {"t": "Vergleiche diese Wörter mit dem Interview: *Waschbär, Vorderpfoten, Nordamerika, graubraun, Kilogramm*."},
+        {"t": "Schreibe jedes falsch geschriebene Wort richtig in die Tabelle.", "f": "TAB_FEHLER"},
+        {"t": "Hast du keinen Fehler gefunden? Dann schreibe: „Mein Text bleibt, weil …“", "f": "L2"}
+      ]
+    }
+  ],
+
+  "termin": {
+    "titel": "Wann schreibst du die Klassenarbeit?",
+    "text": ["Es gibt **zwei Termine** für die Klassenarbeit. Du schreibst sie **einmal**.", "Du entscheidest mit der Lehrkraft, welcher Termin für dich passt.", "Den frühen Termin kannst du nur nehmen, wenn alle Pflichtübungen fertig sind."],
+    "termine": [["Früher Termin", "Doppelstunde 7"], ["Später Termin", "Doppelstunde 8"]],
+    "bis": ["Lies die Merkseiten 3 noch einmal (Seite {S:mb3}).", "Lies die Checkliste K1–K6 noch einmal (Seite {S:check}).", "Arbeite am Projekt (Seite {S:projekt})."],
+    "danach": "Nach der Klassenarbeit arbeitest du am Projekt weiter, bis es fertig ist."
+  },
+
+  "projekt": {
+    "titel": "Zwei Tiere vergleichen",
+    "kennung": "P3",
+    "intro": "Du vergleichst den **Fischotter** und das **Erdmännchen**. Du vergleichst drei Merkmale: **Größe**, **Körper** und **Fell**. Du arbeitest allein.",
+    "material": "Interview Fischotter (Seite {S:iv1}) · Interview Erdmännchen (Seite {S:iv3})",
+    "merkmale": ["Größe", "Körper", "Fell"],
+    "schritte1": [
+      {"t": "Suche im Fischotter-Interview die Größe. Trage sie mit Zeile in die Tabelle ein."},
+      {"t": "Suche im Erdmännchen-Interview die Größe. Trage sie mit Zeile in die Tabelle ein."},
+      {"t": "Suche in beiden Interviews den Körper. Trage beide Angaben mit Zeile ein."},
+      {"t": "Suche in beiden Interviews das Fell. Trage beide Angaben mit Zeile ein."}
+    ],
+    "schritte2": [
+      {"t": "Schreibe einen Vergleichssatz zur **Größe**.", "f": "L2"},
+      {"t": "Schreibe einen Vergleichssatz zum **Körper**.", "f": "L2"},
+      {"t": "Schreibe einen Vergleichssatz zum **Fell**.", "f": "L2"},
+      {"t": "Prüfe jede Angabe in der Tabelle noch einmal im Interview. Mache einen Haken in die Spalte „geprüft“."},
+      {"t": "Welcher Vergleich hilft am besten, die Tiere zu unterscheiden? Kreise diesen Satz ein."},
+      {"t": "Zeige der Lehrkraft dein Projekt."}
+    ],
+    "muster": ["Beim Fischotter ist …, beim Erdmännchen ist …", "Der Fischotter hat …. Das Erdmännchen hat dagegen ….", "Beide Tiere haben …"],
+    "gelingt": ["Du vergleichst drei gleiche Merkmale.", "Die Angaben zu beiden Tieren sind richtig.", "Du schreibst drei verständliche Vergleichssätze."]
+  },
+
+  "zusatz": {
+    "titel": "Zusatzaufgaben",
+    "text": "Du machst eine Zusatzaufgabe nur, wenn die Lehrkraft sie ankreuzt. Die Lösung findest du am Kiosk: Nummer eintippen, „Lösung“ wählen, „Vertiefung“ aufklappen.",
+    "aufgaben": [
+      {"nr": 1, "kiosk": 1, "text": "Ersetze *„Der Fischotter hat schöne Beine“* durch eine genaue Angabe aus dem Interview. Erkläre den Unterschied.", "f": "L3"},
+      {"nr": 2, "kiosk": 2, "text": "Beschreibe zwei sichtbare Merkmale noch genauer. Prüfe am Foto: Was kannst du sicher sagen? Erfinde keine verdeckten Teile.", "f": "L3"},
+      {"nr": 3, "kiosk": 3, "text": "Suche im Interview zwei Stellen, die nur Otto betreffen. Erkläre, warum sie nicht in eine Tierbeschreibung gehören.", "f": "L3"},
+      {"nr": 4, "kiosk": 4, "text": "Ordne deine Angaben zum Aussehen in einer anderen sinnvollen Reihenfolge. Erkläre deine Wahl.", "f": "L3"},
+      {"nr": 5, "kiosk": 5, "text": "Schau dir das Aquarium auf den Merkseiten 2 an. Verbessere: *„Der Fisch ist lustig.“* Nenne ein genaues Merkmal, damit man den Fisch erkennt. Schreibe einen ganzen Satz im Präsens.", "f": "L2"},
+      {"nr": 6, "kiosk": 6, "text": "Verbinde zwei deiner Sätze von Blatt 6 mit „und“. Erkläre, warum das Präsens zu einer Tierbeschreibung passt.", "f": "L3"},
+      {"nr": 7, "kiosk": 7, "text": "Skizziere eine zweite sinnvolle Reihenfolge für deinen Schreibplan. Welche hilft dir besser beim Schreiben? Begründe in einem Satz.", "f": "L3"},
+      {"nr": 8, "kiosk": 8, "text": "Verbessere zwei Satzanfänge oder Bezüge in deinem Text. Zeige: Welches Wort macht jetzt klarer, was gemeint ist?", "f": "L3"},
+      {"nr": 9, "kiosk": 9, "text": "Zeige eine Stelle aus deinem Text vorher und nachher. Erkläre, was durch deine Änderung besser geworden ist.", "f": "L3"},
+      {"nr": 10, "kiosk": null, "text": "Projekt: Erkläre, warum dein Vergleich mehr hilft als eine Wertung wie „süß“.", "f": "L3"}
+    ]
+  }
+}
