@@ -33,7 +33,7 @@ KOPF = """# Wissensbasis · Deutsch 5 · Unterrichtsreihe „Zootiere“
 
 > **Zweck:** Vollständige, verbindliche Wissensgrundlage für ein LLM, das an dieser Reihe weiterarbeitet (Material ergänzen, ändern, prüfen, Fragen beantworten).
 > **Stand:** {stand}. Abschnitte mit ⚙ werden aus den Inhaltsdateien `inhalt/*.json` erzeugt (`python tools/build_wissensbasis.py`) und spiegeln den aktuellen Materialstand.
-> **Repo:** `technikerleben/d5ur2-zootiere`, Stand in `main` (am 10.10.2026 aus `claude/etappe1-muster` zusammengeführt; Deployment über Vercel). Lehrkraft-Leitfaden: `anleitung.html`.
+> **Repo:** `technikerleben/d5ur2-zootiere`, Stand in `main` (am 10.10.2026 aus `claude/etappe1-muster` zusammengeführt; Deployment über Vercel). Lehrkraft-Anleitung: `anleitung.html` (Erklär-App mit Seitenvorschau), Leitfaden mit Links: `leitfaden.html`.
 
 ## 0 · Kurzfassung in zehn Sätzen
 
@@ -168,7 +168,8 @@ tools/
   build_kiosk.py          apps/kontroll-kiosk/index.html (mit Browsertest)
   build_extras.py         Wahlphase, Strategiekarten, Lernweg (regulär + F)
   build_animation.py      ausgabe/lernweg/Ablauf_Animation.html
-  build_anleitung.py      anleitung.html (Lehrkraft-Leitfaden, prüft alle Links)
+  build_anleitung.py      leitfaden.html (Lehrkraft-Leitfaden, prüft alle Links)
+  anleitung_erklaer/      anleitung.html (Erklär-App für Lehrkräfte: Kernpaket-Seiten mit Zoom, Lernbuddy)
   build_interviews.py     Interviews (Entwurf + Prüfliste/Zeilenbelege, zeilen.json); render_interview() für alle Materialseiten
   build_pruefung_f.py     Probearbeit F / Klassenarbeit F (zieldifferent)
   build_training.py       Training Antilopen + zeilen_training.json (vor build_kiosk.py ausführen)

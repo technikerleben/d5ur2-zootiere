@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1c3d5e">
+<title>Die Reihe Zootiere erklärt</title>
+<style>
+/*FONTS*/
+:root{--rot:#a94a1a;--rot-m:#e8833b;--rot-b:#fbd8b9;--rot-g:#fff8f2;--blau-d:#1c3d5e;--blau:#245688;--blau-m:#5f91b7;--blau-b:#bdd4e7;--blau-g:#eff5fa;--mint:#48dccb;--mint-d:#287970;--mint-b:#b6f1ea;--mint-g:#f2fdfb;--text:#2B2B2B;--muted:#6B6B6B;--border:#D9D5CF;--bg:#F5F7F9;--hh:58px;--fh:72px}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{font-family:"Nunito",system-ui,sans-serif;color:var(--text);background:var(--bg);display:flex;flex-direction:column;height:100vh;height:100dvh;overflow:hidden;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;touch-action:manipulation}
+button:focus-visible{outline:3px solid var(--blau-m);outline-offset:2px}
+
+header{height:var(--hh);flex:none;background:var(--blau-d);color:#fff;display:flex;align-items:center;gap:12px;padding:0 max(14px,env(safe-area-inset-right)) 0 max(14px,env(safe-area-inset-left));border-bottom:4px solid var(--mint)}
+.brand{display:flex;align-items:baseline;gap:10px;min-width:0;flex:1}
+.wm{font-family:"Anton",sans-serif;font-size:22px;letter-spacing:.04em;white-space:nowrap}
+.wm b{font-weight:400;color:var(--mint)}
+.htitle{font-weight:700;font-size:16px;opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hb{display:flex;align-items:center;gap:6px;height:40px;padding:0 14px;border-radius:20px;background:rgba(255,255,255,.12);color:#fff;font-weight:700;font-size:15px;white-space:nowrap}
+.hb:hover{background:rgba(255,255,255,.22)}
+.hb .ic{font-size:18px}
+#prog{height:5px;flex:none;background:var(--blau-b)}
+#prog i{display:block;height:100%;background:var(--rot-m);width:0;transition:width .4s}
+
+main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px;padding:18px max(18px,env(safe-area-inset-right)) 12px max(18px,env(safe-area-inset-left))}
+.view{position:relative;overflow:hidden;border-radius:18px;background:#E3E8EE;min-height:0;touch-action:pan-y;cursor:zoom-in}
+.view.isfull{cursor:zoom-out}
+.pw{position:absolute;left:0;top:0;width:1000px;transform-origin:0 0;transition:transform .7s cubic-bezier(.4,.1,.2,1),opacity .18s}
+.pw.fade{opacity:0}
+.sheet{position:relative;width:1000px;overflow:hidden;background:#fff;box-shadow:0 4px 18px rgba(0,0,0,.18);user-select:none;-webkit-user-select:none}
+.sheet>img{display:block;width:100%;height:100%;-webkit-user-drag:none}
+.sheet.hide{display:none}
+.hl{position:absolute;border:4px solid var(--rot-m);border-radius:10px;box-shadow:0 0 0 9999px rgba(20,35,50,.18);pointer-events:none;transition:opacity .4s}
+.hl.off{opacity:0}
+.vbar{position:absolute;inset:auto 10px 10px 10px;display:flex;justify-content:space-between;align-items:flex-end;gap:8px;pointer-events:none}
+.vbar>*{pointer-events:auto}
+.pg{background:rgba(28,61,94,.88);color:#fff;font-weight:700;font-size:14px;padding:5px 11px;border-radius:12px}
+.zb{background:#fff;color:var(--blau-d);font-weight:800;font-size:15px;padding:9px 14px;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.18);display:flex;align-items:center;gap:6px}
+
+.txt{min-height:0;overflow-y:auto;padding:6px 6px 10px;display:flex;flex-direction:column;gap:14px;-webkit-overflow-scrolling:touch}
+.eyebrow{font-weight:800;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--rot)}
+h1{margin:0;font-weight:800;font-size:clamp(26px,3.2vw,38px);line-height:1.15;color:var(--blau-d)}
+.sents{display:flex;flex-direction:column;gap:10px}
+.sents p{margin:0;font-size:clamp(17px,1.75vw,21px);line-height:1.45}
+.box2{border-radius:16px;padding:11px 15px;font-size:clamp(15.5px,1.5vw,18px);line-height:1.45;border:2px solid}
+.box2 .pl{display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px}
+.box2 .pl i{font-style:normal;font-size:19px}
+.b-lb{background:var(--mint-g);border-color:var(--mint-b)}
+.b-lb .pl{color:var(--mint-d)}
+.b-dr{background:#fff;border-color:var(--border)}
+.b-dr .pl{color:var(--muted)}
+.b-tp{background:var(--blau-g);border-color:var(--blau-b)}
+.b-tp .pl{color:var(--blau)}
+.note{font-size:13px;color:var(--muted);line-height:1.4}
+.hint{font-size:14px;color:var(--muted)}
+
+footer{height:var(--fh);flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 max(18px,env(safe-area-inset-right)) env(safe-area-inset-bottom) max(18px,env(safe-area-inset-left));border-top:1px solid var(--border);background:#fff}
+.nav{display:flex;align-items:center;gap:8px;height:52px;padding:0 22px;border-radius:26px;font-weight:800;font-size:18px;background:var(--blau-g);color:var(--blau-d);border:2px solid var(--blau-b);min-width:120px;justify-content:center}
+.nav.nx{background:var(--blau-d);color:#fff;border-color:var(--blau-d)}
+.nav:disabled{opacity:.35;cursor:default}
+.nav .ar{font-size:22px;line-height:1}
+.cnt{font-weight:800;color:var(--muted);font-size:16px;text-align:center;line-height:1.2}
+.cnt small{display:block;font-weight:700;font-size:13px;color:var(--rot)}
+
+.ov{position:fixed;inset:0;z-index:50;background:rgba(28,61,94,.55);display:none;align-items:center;justify-content:center;padding:16px}
+.ov.show{display:flex}
+.box{background:#fff;border-radius:22px;max-width:760px;width:100%;max-height:100%;overflow:auto;padding:24px;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.box h2{margin:0 0 12px;font-size:24px;color:var(--blau-d);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.x{width:42px;height:42px;border-radius:50%;background:var(--blau-g);font-size:22px;flex:none}
+#welcome{background:linear-gradient(160deg,var(--blau-d),var(--blau) 60%,#24b9aa 85%,var(--rot-m))}
+#welcome .box{text-align:center;padding:30px 26px}
+#welcome .wm{color:var(--rot);font-size:30px}
+#welcome .wm b{color:var(--blau-d)}
+#welcome h1{margin:6px 0 4px}
+#welcome .sub{color:var(--muted);font-size:18px;margin-bottom:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 20px}
+.chips span{background:var(--blau-g);border:2px solid var(--blau-b);color:var(--blau-d);font-weight:700;font-size:14px;padding:5px 12px;border-radius:16px}
+.go{display:inline-flex;align-items:center;gap:10px;background:var(--blau-d);color:#fff;font-weight:800;font-size:20px;padding:14px 30px;border-radius:30px}
+.go:hover{background:var(--blau)}
+.toc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px}
+.toc h3{margin:0 0 6px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--rot)}
+.toc .it{display:flex;width:100%;text-align:start;gap:10px;align-items:center;padding:7px 10px;border-radius:12px;font-size:16px;font-weight:700;color:var(--blau-d)}
+.toc .it:hover{background:var(--blau-g)}
+.toc .it.on{background:var(--blau-d);color:#fff}
+.toc .it .n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--blau-b);display:grid;place-items:center;font-size:13px;color:var(--blau-d)}
+.toc .it.on .n{background:#fff}
+
+@media (orientation:portrait),(max-width:760px){
+  main{grid-template-columns:1fr;grid-template-rows:minmax(220px,44%) minmax(0,1fr);gap:12px;padding-top:12px}
+  .htitle{display:none}
+  .hb .tx{display:none}
+  .hb{padding:0 12px}
+  .nav{min-width:0;padding:0 16px;font-size:16px}
+  .toc{grid-template-columns:1fr}
+}
+@media (max-width:420px){.nav .tx{display:none}.nav{width:58px;padding:0}}
+@media (prefers-reduced-motion:reduce){.pw{transition:opacity .18s}}
+
+/*LBCSS*/
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><span class="wm">HBG <b>ZOOTIERE</b></span><span class="htitle">Die Reihe erklärt · für Lehrkräfte</span></div>
+  <button class="hb" id="bToc" aria-haspopup="dialog"><span class="ic">☰</span><span class="tx">Übersicht</span></button>
+</header>
+<div id="prog"><i></i></div>
+<main>
+  <div class="view" id="view">
+    <div class="pw" id="pw">
+<!--SHEETS-->
+      <div class="hl" id="hl"></div>
+    </div>
+    <div class="vbar"><span class="pg" id="pgl"></span><button class="zb" id="bZoom"></button></div>
+  </div>
+  <div class="txt" id="txt" aria-live="polite"></div>
+</main>
+<footer>
+  <button class="nav" id="bPrev"><span class="ar">←</span><span class="tx">Zurück</span></button>
+  <div class="cnt" id="cnt"></div>
+  <button class="nav nx" id="bNext"><span class="tx">Weiter</span><span class="ar">→</span></button>
+</footer>
+
+<div class="ov" id="welcome" role="dialog" aria-modal="true">
+  <div class="box">
+    <div class="wm">HBG <b>ZOOTIERE</b></div>
+    <h1>Die Reihe Zootiere erklärt</h1>
+    <div class="sub">Deutsch · Jahrgang 5 · für Lehrkräfte – Aufbau, Kernmaterialien und Lernbuddy</div>
+    <div class="chips" id="chips"></div>
+    <button class="go" id="bGo">Los geht’s <span>→</span></button>
+    <p class="note" style="margin:18px 0 0">🤖 Texte und Programmierung dieser Seite wurden mit Hilfe von KI (Claude, Anthropic) erstellt. Die Seitenbilder stammen aus dem Kernpaket für Lehrkräfte (Stand 11.10.2026).</p>
+  </div>
+</div>
+<div class="ov" id="tocOv" role="dialog" aria-modal="true">
+  <div class="box"><h2><span>Übersicht</span><button class="x" data-close aria-label="Schließen">✕</button></h2><div class="toc" id="toc"></div></div>
+</div>
+
+<script>
+/*DATA*/
+const B=1000;
+const $=id=>document.getElementById(id);
+const KEY="hbg-zootiere-erklaert";
+let st={i:0,seen:false};
+try{Object.assign(st,JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){}
+if(!(st.i>=0&&st.i<STEPS.length))st.i=0;
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+let full=false, curV=null;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+(function(){const m=location.hash.match(/^#(\d+)/);if(m){st.seen=true;st.i=Math.max(0,Math.min(STEPS.length-1,(+m[1])-1))}})();
+
+const LABEL=v=>v==="lb"?"Lernbuddy":v==="sk"?"Strategiekarte":v.startsWith("in")?"Input Etappe 1":v.startsWith("k")?"Kontroll-Kiosk":"Kernpaket S. "+v.slice(1);
+function sheetOf(v){return document.querySelector(`.sheet[data-v="${v}"]`)}
+function ratioOf(v){return +sheetOf(v).dataset.r}
+
+/* Bereiche in % der Seite */
+const RECTS={};
+function rectOf(s){
+  if(s.z==="full")return "full";
+  if(Array.isArray(s.z))return s.z;
+  if(RECTS[s.id])return RECTS[s.id];
+  const sh=sheetOf(s.v), b=sh.getBoundingClientRect(), k=b.width/B, H=B*ratioOf(s.v);
+  if(!b.width)return "full";
+  let x1=1e9,y1=1e9,x2=-1e9,y2=-1e9;
+  s.z.sel.forEach(p=>{let el=sh.querySelectorAll(p[0])[p[1]];if(el&&p[2])el=el.querySelectorAll(p[2])[p[3]];if(!el)return;
+    const r=el.getBoundingClientRect();x1=Math.min(x1,r.left);y1=Math.min(y1,r.top);x2=Math.max(x2,r.right);y2=Math.max(y2,r.bottom)});
+  if(x1>x2)return "full";
+  const m=6;
+  const r=[((x1-b.left)/k-m)/B*100,((y1-b.top)/k-m)/H*100,((x2-x1)/k+2*m)/B*100,((y2-y1)/k+2*m)/H*100];
+  RECTS[s.id]=r; return r;
+}
+function fit(){
+  const v=$("view").getBoundingClientRect(), s=STEPS[st.i];
+  if(!v.width)return;
+  const H=B*ratioOf(s.v), sr=rectOf(s), isF=full||sr==="full";
+  const r=isF?[0,0,100,100]:sr, pad=14;
+  const rw=r[2]/100*B, rh=r[3]/100*H;
+  const sc=Math.min((v.width-2*pad)/rw,(v.height-2*pad)/rh);
+  const cx=(r[0]+r[2]/2)/100*B, cy=(r[1]+r[3]/2)/100*H;
+  let tx=v.width/2-cx*sc, ty=v.height/2-cy*sc;
+  const iw=B*sc, ih=H*sc;
+  if(iw>v.width)tx=Math.min(0,Math.max(v.width-iw,tx));
+  if(ih>v.height)ty=Math.min(0,Math.max(v.height-ih,ty));
+  $("pw").style.transform=`translate(${tx}px,${ty}px) scale(${sc})`;
+  const hl=$("hl");
+  hl.classList.toggle("off",isF);
+  if(sr!=="full")Object.assign(hl.style,{left:sr[0]/100*B+"px",top:sr[1]/100*H+"px",width:sr[2]/100*B+"px",height:sr[3]/100*H+"px",borderWidth:(3/sc)+"px",borderRadius:(10/sc)+"px"});
+  $("view").classList.toggle("isfull",isF);
+}
+function setSheet(v,instant){
+  const pw=$("pw");
+  if(curV===v){fit();return}
+  const first=curV===null; curV=v;
+  const swap=()=>{pw.style.transition="none";document.querySelectorAll(".sheet").forEach(e=>e.classList.toggle("hide",e.dataset.v!==v));fit();void pw.offsetWidth;pw.style.transition="";pw.classList.remove("fade")};
+  if(first||instant)swap();else{pw.classList.add("fade");setTimeout(swap,180)}
+}
+function box(cls,icon,label,text){return `<div class="box2 ${cls}"><div class="pl"><i>${icon}</i>${label}</div>${esc(text)}</div>`}
+function render(instant){
+  const s=STEPS[st.i];
+  full=false;
+  let h=`<div class="eyebrow">${esc(CH[s.ch])}</div><h1>${esc(s.t)}</h1><div class="sents">`;
+  s.x.forEach(x=>h+=`<p>${esc(x)}</p>`);
+  h+=`</div>`;
+  if(s.b)h+=box("b-lb","🧭","Lernbuddy",s.b);
+  if(s.t2)h+=box("b-tp","💡","Tipp",s.t2);
+  if(s.d)h+=box("b-dr","🖨️","Druck",s.d);
+  if(s.tip)h+=`<div class="hint">👆 ${esc(s.tip)}</div>`;
+  const tx=$("txt"); tx.innerHTML=h; tx.scrollTop=0;
+  $("pgl").textContent=LABEL(s.v);
+  updZoomBtn();
+  setSheet(s.v,instant);
+  $("bPrev").disabled=st.i===0; $("bNext").disabled=st.i===STEPS.length-1;
+  $("cnt").innerHTML=`${st.i+1} von ${STEPS.length}<small>${esc(CH[s.ch])}</small>`;
+  $("prog").firstElementChild.style.width=((st.i+1)/STEPS.length*100)+"%";
+  try{history.replaceState(null,"",`#${st.i+1}`)}catch(e){}
+  save();
+}
+function updZoomBtn(){
+  const s=STEPS[st.i], b=$("bZoom");
+  if(s.z==="full"){b.style.display="none";return}
+  b.style.display=""; b.innerHTML=full?"🔍 Ausschnitt":"📄 Ganze Seite";
+}
+function toggleZoom(){if(STEPS[st.i].z==="full")return;full=!full;updZoomBtn();fit()}
+function go(n){n=Math.max(0,Math.min(STEPS.length-1,n));if(n===st.i)return;st.i=n;render()}
+
+function closeAll(){document.querySelectorAll(".ov").forEach(o=>o.classList.remove("show"))}
+function buildToc(){
+  let h="";
+  CH.forEach((c,ci)=>{const its=STEPS.map((s,i)=>[s,i]).filter(([s])=>s.ch===ci);if(!its.length)return;
+    h+=`<div><h3>${esc(c)}</h3>`+its.map(([s,i])=>`<button class="it${i===st.i?" on":""}" data-i="${i}"><span class="n">${i+1}</span>${esc(s.t)}</button>`).join("")+`</div>`});
+  $("toc").innerHTML=h;
+  $("toc").querySelectorAll("[data-i]").forEach(b=>b.onclick=()=>{closeAll();go(+b.dataset.i)});
+}
+document.querySelectorAll("[data-close]").forEach(b=>b.onclick=closeAll);
+$("tocOv").addEventListener("click",e=>{if(e.target===$("tocOv"))closeAll()});
+$("bToc").onclick=()=>{buildToc();$("tocOv").classList.add("show")};
+$("bPrev").onclick=()=>go(st.i-1);
+$("bNext").onclick=()=>go(st.i+1);
+$("bZoom").onclick=e=>{e.stopPropagation();toggleZoom()};
+$("bGo").onclick=()=>{st.seen=true;save();closeAll()};
+$("chips").innerHTML=CH.map(c=>`<span>${esc(c)}</span>`).join("");
+
+(function(){
+  let x0=null,y0=0,t0=0;const v=$("view");
+  v.addEventListener("pointerdown",e=>{x0=e.clientX;y0=e.clientY;t0=Date.now()});
+  v.addEventListener("pointerup",e=>{
+    if(x0===null)return;const dx=e.clientX-x0,dy=e.clientY-y0;x0=null;
+    if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.3){go(st.i+(dx<0?1:-1));return}
+    if(Math.abs(dx)<10&&Math.abs(dy)<10&&Date.now()-t0<500&&!e.target.closest("button"))toggleZoom();
+  });
+})();
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){closeAll();return}
+  if(document.querySelector(".ov.show"))return;
+  if(e.key==="ArrowRight"||e.key==="PageDown"||e.key===" "){e.preventDefault();go(st.i+1)}
+  else if(e.key==="ArrowLeft"||e.key==="PageUp"){e.preventDefault();go(st.i-1)}
+  else if(e.key==="z"||e.key==="Z")toggleZoom();
+});
+let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(()=>{for(const k in RECTS)delete RECTS[k];fit()},60)});
+render(true);
+if(!st.seen)$("welcome").classList.add("show");
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{for(const k in RECTS)delete RECTS[k];fit()});
+</script>
+</body>
+</html>

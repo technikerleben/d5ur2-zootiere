@@ -2,7 +2,7 @@
 """Lehrkraft-Leitfaden: Aufbau der Reihe und Druckplan mit Links auf alle Materialien.
 
 Aufruf: python tools/build_anleitung.py [artifact-ausgabe.html]
-Ausgabe: anleitung.html (Repo-Wurzel, relative Links)
+Ausgabe: leitfaden.html (Repo-Wurzel, relative Links)
          optional: Fassung mit absoluten Links (für die Veröffentlichung außerhalb des Repos)
 Prüft, dass jede verlinkte Datei existiert.
 """
@@ -408,13 +408,13 @@ html{scroll-behavior:smooth}
 
 def main():
     repo = seite(False)
-    (ROOT / "anleitung.html").write_text(
+    (ROOT / "leitfaden.html").write_text(
         "<!doctype html><html lang='de'><head><meta charset='utf-8'>"
         "<meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'></head><body>"
         + repo + "</body></html>", encoding="utf-8")
     if len(sys.argv) > 1:
         Path(sys.argv[1]).write_text(seite(True), encoding="utf-8")
-    print("ok: anleitung.html, %d Materialien verlinkt" % len(M))
+    print("ok: leitfaden.html, %d Materialien verlinkt" % len(M))
 
 
 if __name__ == "__main__":

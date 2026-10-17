@@ -2,7 +2,7 @@
 
 Stand: 08.10.2026. Vier Wochen, acht Doppelstunden, Fischotter als Beispieltier. Jahrgang 5.
 
-**Für LLMs und Weiterarbeit: [WISSENSBASIS.md](WISSENSBASIS.md)** (Gesamtübersicht, erzeugt mit `python tools/build_wissensbasis.py`). **Für Lehrkräfte: [Leitfaden mit Ablauf, Druckplan und Links](anleitung.html)** (erzeugt mit `python tools/build_anleitung.py`).
+**Für LLMs und Weiterarbeit: [WISSENSBASIS.md](WISSENSBASIS.md)** (Gesamtübersicht, erzeugt mit `python tools/build_wissensbasis.py`). **Für Lehrkräfte: [Die Reihe erklärt – Anleitung mit Seitenvorschau und Lernbuddy](anleitung.html)** (erzeugt mit `python tools/anleitung_erklaer/build.py`) und [Leitfaden mit Ablauf, Druckplan und Links](leitfaden.html) (erzeugt mit `python tools/build_anleitung.py`).
 
 ## Druckpakete und Interviews (ab 10.10.2026)
 
