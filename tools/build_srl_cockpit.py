@@ -1,3 +1,5 @@
+import sys
+sys.exit("build_srl_cockpit.py ist stillgelegt (18.10.2026): index.html ist jetzt nur noch die Verweisseite auf die TaskCards-Pinnwand und darf nicht überschrieben werden.")
 from pathlib import Path
 import html,re,json
 r=Path(__file__).resolve().parents[1]
