@@ -797,6 +797,21 @@
    "path": "tools/generate_tierpakete.mjs",
    "size": 3646,
    "sha": "685693d8d30b3023368f9daaa7b5f6dee25289c5"
+  },
+  {
+   "path": "apps/chaos-im-zoo/LICENSE-Andika.txt",
+   "size": 4529,
+   "sha": "f0a7ff94c3631c05e7b60de2a11e95af30a0bfe7"
+  },
+  {
+   "path": "apps/chaos-im-zoo/README.md",
+   "size": 2196,
+   "sha": "5f2bc08f29d9d469468b73e594d83af012435b80"
+  },
+  {
+   "path": "apps/chaos-im-zoo/index.html",
+   "size": 569245,
+   "sha": "5c7eb91f64520811424fcdf5d1dda299da3d0c20"
   }
  ]
 }
