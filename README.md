@@ -4,6 +4,10 @@ Stand: 08.10.2026. Vier Wochen, acht Doppelstunden, Fischotter als Beispieltier.
 
 **Für LLMs und Weiterarbeit: [WISSENSBASIS.md](WISSENSBASIS.md)** (Gesamtübersicht, erzeugt mit `python tools/build_wissensbasis.py`). **Für Lehrkräfte: [Die Reihe erklärt – Anleitung mit Seitenvorschau und Lernbuddy](anleitung.html)** (erzeugt mit `python tools/anleitung_erklaer/build.py`) und [Leitfaden mit Ablauf, Druckplan und Links](leitfaden.html) (erzeugt mit `python tools/build_anleitung.py`).
 
+## Digitales Spiel für den offenen Start
+
+[**Chaos im Zoo – Spiel starten**](apps/chaos-im-zoo/index.html): drei Tiertafeln reparieren, allein oder zu zweit, etwa fünf Minuten pro Runde. Sachangaben prüfen, genaue Wörter wählen und Sätze ordnen; alternativ gezielt eine Aufgabenart üben. Vorlesefunktion und Tipps, keine Anmeldung oder Speicherung. Vollständig eigenständige HTML-Datei mit eingebetteten Bildern und Schrift. [Einsatz und Quellen](apps/chaos-im-zoo/README.md).
+
 ## Druckpakete und Interviews (ab 10.10.2026)
 
 **Textbasis sind Interviews** mit Tierpflegerinnen und Tierpflegern (Schülerzeitung „Zoo-Reporter“, ausgedacht, Tierangaben stimmen): sechs Interviews mit 250–350 Wörtern und zwei Förder-Kurzinterviews in `inhalt/interviews.json`. Die Kinder trennen Sachangaben über die Tierart von Meinungen, Erlebnissen und Angaben über das einzelne Zootier und formen daraus einen Sachtext. Entwurf und Zeilenbelege: `python tools/build_interviews.py` → `ausgabe/interviews/`.
