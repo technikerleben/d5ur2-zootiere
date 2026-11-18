@@ -1,0 +1,77 @@
+{
+  "_hinweis": "Druckfassung der Lernerfolgskontrolle Wunschbrief, Termin 1 (Vorlage: Fassung 3 vom 08.09.2026, Reihe d5ur1-wunschbriefe). Satz im Zootiere-Stil, 3 Seiten A4: Auftrag + Planung | Schreibbogen + Reflexion | Das zählt + Hilfe.",
+  "datei": "LEK_Wunschbrief_Termin1_A4.pdf",
+  "art": "Lernerfolgskontrolle",
+  "reihe": "Wunschbriefe",
+  "kurz": "Termin 1",
+  "titel": "Dein Wunschbrief",
+  "arbeitszeit": "**Arbeitszeit:** _______ Minuten · Die Lehrkraft trägt die Zeit ein.",
+  "situation": "Die Schulleitung sammelt Wünsche für den Schulalltag. Schreibe ihr einen Brief.",
+  "wunsch": "Dein Wunsch ist: **eine Spieleausleihe.**",
+  "auftrag": [
+    "Schreibe Ort und Datum oben auf den Brief.",
+    "Wähle eine passende Anrede für die Schulleitung.",
+    "Formuliere den vorgegebenen Wunsch klar und freundlich.",
+    "Schreibe mindestens einen weiteren passenden Satz.",
+    "Beende den Brief mit einer Grußformel und deinem Namen.",
+    "Schreibe ganze Sätze und so, dass man deine Schrift lesen kann."
+  ],
+  "zusaetze": "Du kannst einen sachlichen Grund und/oder ein passendes Umfrageergebnis ergänzen. Beides darfst du weglassen.",
+  "umfrage": {
+    "titel": "Beispielumfrage · nur für den freiwilligen Zusatz",
+    "text": "26 Kinder einer Beispielklasse wurden gefragt: „Was wünschst du dir für den Schulalltag?“ Mehrere Antworten waren erlaubt. Die Zahlen sind erfunden.",
+    "zeilen": [["Spieleausleihe", 17], ["Leseecke", 14], ["Sitzplätze", 11], ["Neue Bälle", 8]]
+  },
+  "ablauf": "Arbeite mit Planung → Durchführung → Reflexion.",
+  "planung": {
+    "hinweis": "Notiere Stichwörter. Deinen Brief schreibst du erst auf den Schreibbogen. Die Hilfeseite am Ende darfst du nutzen.",
+    "felder": [
+      "An wen schreibst du?",
+      "Was wünschst du dir?",
+      "Welcher weitere Satz passt zu deinem Wunsch?",
+      "Welche Anrede wählst du?",
+      "Welche Grußformel wählst du?"
+    ],
+    "zusatz_titel": "Nur wenn du Zusätze nutzen möchtest",
+    "zusatz_felder": [
+      "Welchen sachlichen Grund möchtest du nennen? · freiwillig",
+      "Welches passende Umfrageergebnis möchtest du nutzen? · freiwillig"
+    ],
+    "zusatz_hinweis": "Die beiden Zusatzfelder dürfen leer bleiben."
+  },
+  "durchfuehrung": {
+    "hinweis": "Schreibe hier deinen vollständigen Brief. Bei Bedarf bekommst du weiteres Schreibpapier."
+  },
+  "reflexion": "Lies deinen Brief. Prüfe ihn mit „Dein Wunschbrief: Das zählt“. Verbessere nur, was nötig ist. Die Hilfeseite folgt direkt.",
+  "zaehlt": {
+    "ziel": "Du schreibst einen freundlichen und verständlichen Wunschbrief.",
+    "pflicht": [
+      "Du schreibst eine passende Anrede.",
+      "Du sagst klar, was du dir wünschst.",
+      "Du schreibst mindestens einen weiteren Satz zu deinem Wunsch.",
+      "Du beendest den Brief mit einer Grußformel und deinem Namen.",
+      "Du schreibst freundlich.",
+      "Du schreibst verständliche Sätze. Deine Schrift ist lesbar.",
+      "Du schreibst Ort und Datum oben auf deinen Brief."
+    ],
+    "pflicht_hinweis": "Ort und Datum gehören dazu. Wenn du sie vergisst, kannst du das Grundziel trotzdem erreichen. Beim Briefaufbau fehlt dann ein Punkt.",
+    "zusatz": [
+      "Du erklärst, warum dein Wunsch sinnvoll ist.",
+      "Du nennst ein passendes Ergebnis aus der Umfrage."
+    ],
+    "zusatz_hinweis": "Diese beiden Zusätze sind freiwillig. Du kannst für jeden Zusatz bis zu zwei weitere Punkte bekommen.",
+    "bewertung": [
+      "Für einen klaren, vollständigen und gut lesbaren Brief kannst du **18 Grundpunkte** bekommen. Ein kurzer Brief kann alle Grundpunkte bekommen.",
+      "Du musst keine Zahlen nutzen. Du musst deinen Brief auch nicht länger machen, wenn schon alles Wichtige darin steht."
+    ]
+  },
+  "hilfe": {
+    "einleitung": "Diese Seite darfst du bei der Probearbeit und bei der Arbeit nutzen. Dafür werden keine Punkte abgezogen.",
+    "planung": "Kläre: An wen schreibst du? Was wünschst du dir? Welcher weitere Satz passt dazu? Notiere Stichwörter in deinen Schreibplan.",
+    "reihenfolge": ["Ort und Datum", "Anrede", "Dein Wunsch und mindestens ein weiterer passender Satz", "Grußformel", "Dein Name"],
+    "anfang": ["Sehr geehrte Frau …, / Sehr geehrter Herr …,", "Für unsere Schule wünsche ich mir …", "Ich würde mich darüber sehr freuen.", "Freundliche Grüße"],
+    "zusatz": ["Das wäre sinnvoll, weil …", "In der Umfrage wünschen sich … Kinder …"],
+    "reflexion": "Lies deinen Brief. Prüfe die Punkte unter „Das gehört in deinen Brief“. Verbessere eine Stelle, wenn es nötig ist.",
+    "regeln": "Du darfst dir den Auftrag vorlesen lassen. Deinen Brief formulierst du selbst. Während der Arbeit nutzt du keine Hilfe von anderen Kindern und keinen Kiosk."
+  }
+}
