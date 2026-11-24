@@ -340,11 +340,11 @@ Die Schülerzeitung „Zoo-Reporter“ hat dafür Frau Berger interviewt.</div>
     # 10 Mein Plan
     tage = [("Di", "24.11.", "Einzelstunde", "Plan machen", ""),
             ("Mi", "25.11.", "Doppelstunde", "Input: Was wird verlangt?", ""),
-            ("Fr", "27.11.", "Dienstbesprechung", "Lernzeit zu Hause", "haus"),
-            ("Di", "01.12.", "Doppelstunde", "früher Termin", "termin"),
+            ("Fr", "27.11.", "Studientag nach der 4. Stunde", "Lernzeit zu Hause", "haus"),
+            ("Di", "01.12.", "Doppelstunde", "früher Termin oder Lernzeit", "termin"),
             ("Mi", "02.12.", "Sprechtag", "kein Unterricht – zu Hause lernen", "haus"),
             ("Fr", "04.12.", "Doppelstunde Sprache", "Vorbereitung", ""),
-            ("Di", "08.12.", "letzte Möglichkeit", "später Termin", "termin")]
+            ("Di", "08.12.", "letzte Möglichkeit", "später Termin oder Arbeit an Projekten", "termin")]
     karten = "".join(f"<div class='tag {c}'><div class='wt'>{w}</div><div class='dt'>{d}</div>"
                      f"<div class='art'>{a}</div><div class='was'>{x}</div></div>" for w, d, a, x, c in tage)
     KP = "<div class='top'><span class='ph pl'>Planung</span><span class='kick'>Zootiere · Lernerfolgskontrolle</span></div>"
@@ -533,17 +533,19 @@ h1.gross{font-size:92px;margin:30px 0 34px}
 .blk.brauch ul{padding-left:30px}
 .blk.morgen{border:3px solid var(--rust-base);border-radius:16px;padding:14px 22px;background:var(--rust-ghost)}
 .blk.morgen .lab{color:var(--rust-dark)}
-.leiste{display:flex;gap:12px;margin-bottom:22px}
+.leiste{display:flex;gap:12px;margin-bottom:14px}
 .tag{flex:1;border:3px solid var(--slate-base);border-radius:16px;background:#fff;padding:10px 12px;text-align:center}
 .tag .wt{font-size:20px;font-weight:700;color:var(--slate-mid);text-transform:uppercase;letter-spacing:.06em}
 .tag .dt{font-size:34px;font-weight:700;color:var(--slate-dark);line-height:1.1}
 .tag .art{font-size:18px;color:var(--mid);min-height:46px;line-height:1.25;margin-top:4px}
-.tag .was{font-size:19px;font-weight:700;border-radius:10px;padding:4px 6px;margin-top:4px;background:var(--slate-ghost);color:var(--slate-dark)}
+.tag .was{font-size:18px;font-weight:700;border-radius:10px;padding:4px 6px;margin-top:4px;background:var(--slate-ghost);color:var(--slate-dark)}
 .tag.termin{border-color:var(--sage-dark);background:var(--sage-ghost)}
 .tag.termin .was{background:var(--sage-dark);color:#fff}
 .tag.haus{border-style:dashed;border-color:var(--grau);background:var(--grau-pale)}
 .tag.haus .was{background:#fff;color:var(--mid)}
 .plan2{gap:34px}
+.plan2 .denk{font-size:23px;padding:10px 20px}
+.plan2 .spalte{gap:16px}
 .blk.soplan{border:3px solid var(--slate-base);border-radius:16px;padding:12px 22px;background:#fff;font-size:26px}
 .blk.soplan ol{padding-left:30px}
 .blk.soplan .danach{font-size:22px;margin-top:6px;color:var(--sage-dark)}

@@ -18,11 +18,11 @@ TASKCARDS = ("https://schulendortmund.taskcards.app/#/board/86a516d4-8c24-40f8-9
 # (Tag, Datum, Stunde, Hinweis, Art)
 TAGE = [("Di", "24.11.", "Einzelstunde", "Plan machen", ""),
         ("Mi", "25.11.", "Doppelstunde", "Input + Lernzeit", ""),
-        ("Fr", "27.11.", "zu Hause", "Dienstbesprechung", "haus"),
-        ("Di", "01.12.", "Doppelstunde", "früher Termin", "termin"),
+        ("Fr", "27.11.", "zu Hause", "Studientag nach der 4. Stunde", "haus"),
+        ("Di", "01.12.", "Doppelstunde", "früher Termin oder Lernzeit", "termin"),
         ("Mi", "02.12.", "zu Hause", "Sprechtag", "haus"),
         ("Fr", "04.12.", "Sprache", "Vorbereitung", ""),
-        ("Di", "08.12.", "Unterricht", "später Termin", "termin")]
+        ("Di", "08.12.", "Unterricht", "später Termin oder Arbeit an Projekten", "termin")]
 
 GESCHAFFT = ["Etappe 1 (Blatt 1–4)", "Gelingensnachweis 1", "Etappe 2 (Blatt 5–6)", "Gelingensnachweis 2",
              "Etappe 3 (Blatt 7–9)", "Probearbeit", "Feedback zur Probearbeit",
@@ -63,7 +63,7 @@ table{{width:100%;border-collapse:collapse}}
 th{{font-size:14pt;text-align:left;border-bottom:1.5pt solid #000;padding:2pt 5pt}}
 td{{border-bottom:1pt solid #666;padding:3pt 5pt;vertical-align:top;font-size:14pt}}
 td.d{{width:40mm;line-height:1.1}} td.d span{{font-size:14pt}}
-td.h{{width:33mm}}
+td.h{{width:54mm;line-height:1.1}}
 td.z{{height:10.5mm}}
 td.ok{{width:17mm;text-align:center}}
 tr.termin td{{border-top:1.5pt solid #000}}
@@ -86,7 +86,7 @@ tr.haus td{{background-color:#EDEDED}}
 <table class=plan><tr><th>Wann?</th><th>Hinweis</th><th>Das will ich schaffen</th><th>geschafft</th></tr>{zeilen}</table>
 <div class=danach><b>Nach deiner Lernerfolgskontrolle</b> kannst du an eigenen Tierbeschreibungen arbeiten.</div></div>
 
-<div class=zuhause><div>{qr()}</div><div><b>Zu Hause lernen:</b> Am <b>Fr 27.11.</b> (Dienstbesprechung) kannst du zusätzlich zu Hause lernen. Am <b>Mi 02.12.</b> (Sprechtag) findet kein Unterricht statt. Bereite dich mit deinen Unterlagen und der <b>TaskCards-Pinnwand</b> gut vor. Scanne dafür den QR-Code.</div></div>
+<div class=zuhause><div>{qr()}</div><div><b>Zu Hause lernen:</b> Am <b>Fr 27.11.</b> (Studientag nach der 4. Stunde) kannst du zusätzlich zu Hause lernen. Am <b>Mi 02.12.</b> (Sprechtag) findet kein Unterricht statt. Bereite dich mit deinen Unterlagen und der <b>TaskCards-Pinnwand</b> gut vor. Scanne dafür den QR-Code.</div></div>
 </body></html>"""
 
 async def pdf(src, dst):
