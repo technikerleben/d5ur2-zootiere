@@ -17,9 +17,9 @@ TASKCARDS = ("https://schulendortmund.taskcards.app/#/board/86a516d4-8c24-40f8-9
 
 # (Tag, Datum, Stunde, Hinweis, Art)
 TAGE = [("Di", "24.11.", "Einzelstunde", "Plan machen", ""),
-        ("Mi", "25.11.", "Doppelstunde", "früher Termin", "termin"),
+        ("Mi", "25.11.", "Doppelstunde", "Lernzeit", ""),
         ("Fr", "27.11.", "zu Hause", "Dienstbesprechung", "haus"),
-        ("Di", "01.12.", "Doppelstunde", "mittlerer Termin", "termin"),
+        ("Di", "01.12.", "Doppelstunde", "früher Termin", "termin"),
         ("Mi", "02.12.", "zu Hause", "Sprechtag", "haus"),
         ("Fr", "04.12.", "Sprache", "Vorbereitung", ""),
         ("Di", "08.12.", "Unterricht", "später Termin", "termin")]
@@ -74,7 +74,7 @@ tr.haus td{{background-color:#EDEDED}}
 <div class=name>Name: <span></span></div>
 
 <div class=abschnitt><h2>1 · Mein Termin <span style="font-weight:400">– kreuze an:</span></h2>
-<div class=termine><div><span class=box></span><b>früher</b> · Mi 25.11.</div><div><span class=box></span><b>mittlerer</b> · Di 01.12.</div><div><span class=box></span><b>später</b> · Di 08.12.</div></div></div>
+<div class=termine><div><span class=box></span><b>früher Termin</b> · Di 01.12.</div><div><span class=box></span><b>später Termin</b> · Di 08.12.</div></div></div>
 
 <div class=abschnitt><h2>2 · Das habe ich schon geschafft</h2>
 <ul class=grid>{geschafft}</ul>

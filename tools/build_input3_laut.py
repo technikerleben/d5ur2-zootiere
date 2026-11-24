@@ -339,9 +339,9 @@ Die Schülerzeitung „Zoo-Reporter“ hat dafür Frau Berger interviewt.</div>
 
     # 10 Mein Plan
     tage = [("Di", "24.11.", "Einzelstunde", "heute: Plan machen", ""),
-            ("Mi", "25.11.", "Doppelstunde", "früher Termin", "termin"),
+            ("Mi", "25.11.", "Doppelstunde", "Lernzeit", ""),
             ("Fr", "27.11.", "Dienstbesprechung", "Lernzeit zu Hause", "haus"),
-            ("Di", "01.12.", "Doppelstunde", "mittlerer Termin", "termin"),
+            ("Di", "01.12.", "Doppelstunde", "früher Termin", "termin"),
             ("Mi", "02.12.", "Sprechtag", "kein Unterricht – zu Hause lernen", "haus"),
             ("Fr", "04.12.", "Doppelstunde Sprache", "Vorbereitung", ""),
             ("Di", "08.12.", "letzte Möglichkeit", "später Termin", "termin")]
@@ -351,11 +351,11 @@ Die Schülerzeitung „Zoo-Reporter“ hat dafür Frau Berger interviewt.</div>
 <div class='leiste'>{karten}</div>
 <div class='zwei plan2'><div class='spalte'>
 <div class='blk soplan' data-k='1'><span class='lab'>So planst du · Planungszettel</span>
-<ol><li>Wähle deinen Termin: früh, mittel oder spät.</li>
+<ol><li>Wähle deinen Termin: früh oder spät.</li>
 <li>Kreuze an, was du schon geschafft hast.</li>
 <li>Plane <b>rückwärts</b>: Vor deinem Termin sind alle Etappen, die Probearbeit und das Feedback fertig.</li>
 <li>Trage für jede Stunde ein, was du schaffen willst.</li></ol></div>
-{denk("Der frühe Termin ist schon morgen. Den wähle ich nur, wenn ich die Probearbeit geschrieben und Feedback bekommen habe.", 3)}
+{denk("Der frühe Termin ist am 1.12. Den wähle ich nur, wenn ich bis dahin die Probearbeit geschrieben und Feedback bekommen habe.", 3)}
 </div><div class='spalte schmal'>
 <div class='blk zuhause' data-k='2'><div><span class='lab'>Zu Hause lernen</span>Am <b>Fr 27.11.</b> und am <b>Mi 02.12.</b> kannst du dich zu Hause gut vorbereiten: mit deinen Unterlagen und der <b>TaskCards-Pinnwand</b>.</div>
 <div class='qr'>{qr_svg()}</div></div>
