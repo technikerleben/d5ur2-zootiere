@@ -352,13 +352,13 @@ Die Schülerzeitung „Zoo-Reporter“ hat dafür Frau Berger interviewt.</div>
 <div class='zwei plan2'><div class='spalte'>
 <div class='blk soplan' data-k='1'><span class='lab'>So planst du · Planungszettel</span>
 <ol><li>Wähle deinen Termin: früh oder spät.</li>
-<li>Kreuze an, was du schon geschafft hast.</li>
+<li>Kreuze an, was du schon geschafft hast – auch die Übungen im Stil der Lernerfolgskontrolle.</li>
 <li>Plane <b>rückwärts</b>: Vor deinem Termin sind alle Etappen, die Probearbeit und das Feedback fertig.</li>
-<li>Trage für jede Stunde ein, was du schaffen willst.</li></ol></div>
-{denk("Der frühe Termin ist am 1.12. Den wähle ich nur, wenn ich bis dahin die Probearbeit geschrieben und Feedback bekommen habe.", 3)}
+<li>Trage für jede Stunde ein, was du schaffen willst.</li></ol><div class='danach'><b>Nach deiner Lernerfolgskontrolle</b> kannst du an eigenen Tierbeschreibungen arbeiten.</div></div>
 </div><div class='spalte schmal'>
 <div class='blk zuhause' data-k='2'><div><span class='lab'>Zu Hause lernen</span>Am <b>Fr 27.11.</b> und am <b>Mi 02.12.</b> kannst du dich zu Hause gut vorbereiten: mit deinen Unterlagen und der <b>TaskCards-Pinnwand</b>.</div>
 <div class='qr'>{qr_svg()}</div></div>
+{denk("Der frühe Termin ist am 1.12. Den wähle ich nur, wenn ich bis dahin die Probearbeit geschrieben und Feedback bekommen habe.", 3)}
 </div></div>"""))
     return F
 
@@ -528,6 +528,7 @@ h1.gross{font-size:92px;margin:30px 0 34px}
 .plan2{gap:34px}
 .blk.soplan{border:3px solid var(--slate-base);border-radius:16px;padding:12px 22px;background:#fff;font-size:26px}
 .blk.soplan ol{padding-left:30px}
+.blk.soplan .danach{font-size:22px;margin-top:6px;color:var(--sage-dark)}
 .blk.zuhause{display:flex;gap:18px;align-items:center;border:3px dashed var(--grau);border-radius:16px;padding:14px 18px;background:var(--grau-pale);font-size:24px;line-height:1.35}
 .qr{flex:0 0 190px;background:#fff;border-radius:10px;padding:6px}
 .qr svg{width:178px;height:178px;display:block}

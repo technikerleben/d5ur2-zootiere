@@ -25,7 +25,8 @@ TAGE = [("Di", "24.11.", "Einzelstunde", "Plan machen", ""),
         ("Di", "08.12.", "Unterricht", "später Termin", "termin")]
 
 GESCHAFFT = ["Etappe 1 (Blatt 1–4)", "Gelingensnachweis 1", "Etappe 2 (Blatt 5–6)", "Gelingensnachweis 2",
-             "Etappe 3 (Blatt 7–9)", "Probearbeit", "Feedback zur Probearbeit"]
+             "Etappe 3 (Blatt 7–9)", "Probearbeit", "Feedback zur Probearbeit",
+             "Übung 1: Elenantilope", "Übung 2: Hirschziegenantilope"]
 
 def font(w, st, n):
     b = base64.b64encode((ROOT / "assets/fonts" / f"{n}.woff2").read_bytes()).decode()
@@ -46,7 +47,7 @@ def html():
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{font-family:Andika,sans-serif;font-size:15pt;line-height:1.25;color:#000}}
 .kopf{{display:flex;justify-content:space-between;font-size:14pt;border-bottom:1.5pt solid #000;padding-bottom:3pt}}
-h1{{font-size:21pt;margin:5pt 0 4pt}}
+h1{{font-size:20pt;margin:4pt 0 3pt}}
 .name{{font-size:15pt;margin-bottom:8pt}} .name span{{display:inline-block;width:120mm;border-bottom:1pt solid #000}}
 h2{{font-size:16pt;margin:0 0 4pt}}
 .abschnitt{{border:1.5pt solid #000;border-radius:5pt;padding:5pt 9pt;margin-bottom:6pt}}
@@ -56,32 +57,34 @@ h2{{font-size:16pt;margin:0 0 4pt}}
 .grid{{columns:2;column-gap:12pt;list-style:none}}
 .grid li{{margin-bottom:3pt;break-inside:avoid}}
 .tipp{{font-size:14pt;margin-top:3pt}}
+.t1{{font-weight:400;font-size:15pt}}
+.danach{{font-size:14pt;margin-top:4pt}}
 table{{width:100%;border-collapse:collapse}}
 th{{font-size:14pt;text-align:left;border-bottom:1.5pt solid #000;padding:2pt 5pt}}
 td{{border-bottom:1pt solid #666;padding:3pt 5pt;vertical-align:top;font-size:14pt}}
-td.d{{width:40mm}} td.d span{{font-size:14pt}}
+td.d{{width:40mm;line-height:1.1}} td.d span{{font-size:14pt}}
 td.h{{width:33mm}}
-td.z{{height:12.5mm}}
+td.z{{height:10.5mm}}
 td.ok{{width:17mm;text-align:center}}
 tr.termin td{{border-top:1.5pt solid #000}}
 tr.haus td{{background-color:#EDEDED}}
 .zuhause{{display:flex;gap:10pt;align-items:center;border:1.5pt dashed #000;border-radius:5pt;padding:4pt 9pt;font-size:14pt}}
-.zuhause svg{{width:31mm;height:31mm;display:block}}
+.zuhause svg{{width:29mm;height:29mm;display:block}}
 .fuss{{display:flex;justify-content:space-between;font-size:14pt;margin-top:5pt;border-top:1pt solid #000;padding-top:2pt}}
 </style></head><body>
 <div class=kopf><span>Deutsch · Jahrgang 5 · Zootiere</span><span>Planungszettel</span></div>
 <h1>Mein Plan bis zur Lernerfolgskontrolle</h1>
 <div class=name>Name: <span></span></div>
 
-<div class=abschnitt><h2>1 · Mein Termin <span style="font-weight:400">– kreuze an:</span></h2>
-<div class=termine><div><span class=box></span><b>früher Termin</b> · Di 01.12.</div><div><span class=box></span><b>später Termin</b> · Di 08.12.</div></div></div>
+<div class=abschnitt><h2 style="display:flex;gap:16pt;align-items:center;margin:0;white-space:nowrap">1 · Mein Termin: <span class=t1><span class=box></span>früh: Di 01.12.</span><span class=t1><span class=box></span>spät: Di 08.12.</span></h2></div></div>
 
 <div class=abschnitt><h2>2 · Das habe ich schon geschafft</h2>
 <ul class=grid>{geschafft}</ul>
-<div class=tipp><b>Tipp:</b> Plane rückwärts. Vor deinem Termin sind alle Etappen, die Probearbeit und das Feedback fertig.</div></div>
+<div class=tipp>Übung 1 und 2: im Stil der Lernerfolgskontrolle. <b>Tipp:</b> Plane rückwärts. Vor deinem Termin sind alle Etappen, die Probearbeit und das Feedback fertig.</div></div>
 
 <div class=abschnitt><h2>3 · Das will ich schaffen</h2>
-<table><tr><th>Wann?</th><th>Hinweis</th><th>Das will ich schaffen</th><th>geschafft</th></tr>{zeilen}</table></div>
+<table class=plan><tr><th>Wann?</th><th>Hinweis</th><th>Das will ich schaffen</th><th>geschafft</th></tr>{zeilen}</table>
+<div class=danach><b>Nach deiner Lernerfolgskontrolle</b> kannst du an eigenen Tierbeschreibungen arbeiten.</div></div>
 
 <div class=zuhause><div>{qr()}</div><div><b>Zu Hause lernen:</b> Am <b>Fr 27.11.</b> (Dienstbesprechung) kannst du zusätzlich zu Hause lernen. Am <b>Mi 02.12.</b> (Sprechtag) findet kein Unterricht statt. Bereite dich mit deinen Unterlagen und der <b>TaskCards-Pinnwand</b> gut vor. Scanne dafür den QR-Code.</div></div>
 </body></html>"""
