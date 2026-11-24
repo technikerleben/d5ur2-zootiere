@@ -338,8 +338,8 @@ Die Schülerzeitung „Zoo-Reporter“ hat dafür Frau Berger interviewt.</div>
 </div></div>"""))
 
     # 10 Mein Plan
-    tage = [("Di", "24.11.", "Einzelstunde", "heute: Plan machen", ""),
-            ("Mi", "25.11.", "Doppelstunde", "Lernzeit", ""),
+    tage = [("Di", "24.11.", "Einzelstunde", "Plan machen", ""),
+            ("Mi", "25.11.", "Doppelstunde", "Input: Was wird verlangt?", ""),
             ("Fr", "27.11.", "Dienstbesprechung", "Lernzeit zu Hause", "haus"),
             ("Di", "01.12.", "Doppelstunde", "früher Termin", "termin"),
             ("Mi", "02.12.", "Sprechtag", "kein Unterricht – zu Hause lernen", "haus"),
@@ -347,7 +347,19 @@ Die Schülerzeitung „Zoo-Reporter“ hat dafür Frau Berger interviewt.</div>
             ("Di", "08.12.", "letzte Möglichkeit", "später Termin", "termin")]
     karten = "".join(f"<div class='tag {c}'><div class='wt'>{w}</div><div class='dt'>{d}</div>"
                      f"<div class='art'>{a}</div><div class='was'>{x}</div></div>" for w, d, a, x, c in tage)
-    F.append(slide(f"""{KICK}<h1><span class='n'>9</span>Mein Plan bis zur Lernerfolgskontrolle</h1>
+    KP = "<div class='top'><span class='ph pl'>Planung</span><span class='kick'>Zootiere · Lernerfolgskontrolle</span></div>"
+    F.append(slide(f"""{KP}<h1>Heute: Ich plane meinen Weg</h1>
+<div class='zwei'><div class='spalte'>
+<div class='blk intro' data-k='1'><span class='lab'>Darum geht es</span>Bis zur <b>Lernerfolgskontrolle</b> bleiben noch einige Stunden.
+Heute planst du, <b>was du wann schaffen willst</b>.</div>
+<div class='blk brauch' data-k='2'><span class='lab'>Du brauchst</span>
+<ul><li>den <b>Planungszettel</b></li><li>deine <b>Mappe</b> mit dem rosa Zettel (Lernweg)</li></ul></div>
+<div class='blk morgen' data-k='3'><span class='lab'>Morgen</span>Im Input klären wir gemeinsam: <b>Was wird in der Lernerfolgskontrolle verlangt?</b></div>
+</div><div class='spalte'>
+{denk("Ich schaue zuerst nach: Was habe ich schon geschafft? Was fehlt mir noch?", 1)}
+{denk("Dann wähle ich meinen Termin und verteile die offenen Aufgaben auf die Stunden bis dahin.", 2)}
+</div></div>"""))
+    F.append(slide(f"""{KP}<h1>Mein Plan bis zur Lernerfolgskontrolle</h1>
 <div class='leiste'>{karten}</div>
 <div class='zwei plan2'><div class='spalte'>
 <div class='blk soplan' data-k='1'><span class='lab'>So planst du · Planungszettel</span>
@@ -515,6 +527,12 @@ h1.gross{font-size:92px;margin:30px 0 34px}
 .blk.karte{border:3px solid var(--slate-base);border-radius:16px;padding:16px 22px;background:var(--slate-ghost);font-weight:700}
 .blk.jetzt{border:3px solid var(--rust-base);border-radius:16px;padding:16px 22px;background:var(--rust-ghost)}
 .blk.jetzt .lab{color:var(--rust-dark)}
+.ph.pl{background:var(--sage-dark)}
+.blk.intro{border:3px solid var(--slate-base);border-radius:16px;padding:16px 22px;background:var(--slate-ghost)}
+.blk.brauch{border:3px solid var(--slate-pale);border-radius:16px;padding:14px 22px;background:#fff}
+.blk.brauch ul{padding-left:30px}
+.blk.morgen{border:3px solid var(--rust-base);border-radius:16px;padding:14px 22px;background:var(--rust-ghost)}
+.blk.morgen .lab{color:var(--rust-dark)}
 .leiste{display:flex;gap:12px;margin-bottom:22px}
 .tag{flex:1;border:3px solid var(--slate-base);border-radius:16px;background:#fff;padding:10px 12px;text-align:center}
 .tag .wt{font-size:20px;font-weight:700;color:var(--slate-mid);text-transform:uppercase;letter-spacing:.06em}

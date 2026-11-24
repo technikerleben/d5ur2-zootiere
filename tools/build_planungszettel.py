@@ -17,7 +17,7 @@ TASKCARDS = ("https://schulendortmund.taskcards.app/#/board/86a516d4-8c24-40f8-9
 
 # (Tag, Datum, Stunde, Hinweis, Art)
 TAGE = [("Di", "24.11.", "Einzelstunde", "Plan machen", ""),
-        ("Mi", "25.11.", "Doppelstunde", "Lernzeit", ""),
+        ("Mi", "25.11.", "Doppelstunde", "Input + Lernzeit", ""),
         ("Fr", "27.11.", "zu Hause", "Dienstbesprechung", "haus"),
         ("Di", "01.12.", "Doppelstunde", "früher Termin", "termin"),
         ("Mi", "02.12.", "zu Hause", "Sprechtag", "haus"),
