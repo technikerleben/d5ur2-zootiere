@@ -219,6 +219,13 @@ def slide(inhalt, cls="", attr=""):
 # --------------------------------------------------------------------------
 # Folien
 # --------------------------------------------------------------------------
+TASKCARDS = "https://schulendortmund.taskcards.app/#/board/86a516d4-8c24-40f8-9b4e-d3b50587ecbc?token=c62bc016-43cb-4d91-80e5-05c687e62385"
+
+def qr_svg():
+    import qrcode, qrcode.image.svg
+    img = qrcode.make(TASKCARDS, image_factory=qrcode.image.svg.SvgPathImage, border=1)
+    return img.to_string(encoding="unicode")
+
 def folien():
     F = []
     # 1 Titel
@@ -324,13 +331,34 @@ Die Schülerzeitung „Zoo-Reporter“ hat dafür Frau Berger interviewt.</div>
 <div class='schritt' data-k='2'><span class='nr'>2</span><div>Ja: <b>markieren</b>. Nur das Zootier oder eine Meinung: <b>streichen</b>.</div></div>
 <div class='schritt' data-k='3'><span class='nr'>3</span><div>Vergleich? Nimm nur die <b>Sachangabe</b> heraus.</div></div>
 <div class='schritt' data-k='4'><span class='nr'>4</span><div>Ordne unter Überschriften. Schreibe im <b>Präsens</b> über die Tierart: <i>Der Fischotter …</i></div></div>
-<div class='blk termine' data-k='7'><span class='lab'>Lernerfolgskontrolle · Termine</span>
-<div class='tage'><span><b>Mi</b> 25.11.</span><span><b>Di</b> 01.12.</span><span><b>Di</b> 08.12.</span></div>
-<div class='klein2'>Vorher schreibst du die Probearbeit und bekommst Feedback.</div></div>
 </div><div class='spalte'>
 <div class='blk karte' data-k='5'><span class='lab'>Strategiekarte 9</span>Aus dem Interview wird ein Sachtext</div>
 <div class='blk jetzt' data-k='6'><span class='lab'>Jetzt du</span><b>Blatt 7:</b> Wähle das Erdmännchen oder den Roten Panda. Prüfe das Interview so wie ich.</div>
 {denk("Bei deinem Tier denkst du genauso – nur leise im Kopf.", 6)}
+</div></div>"""))
+
+    # 10 Mein Plan
+    tage = [("Di", "24.11.", "Einzelstunde", "heute: Plan machen", ""),
+            ("Mi", "25.11.", "Doppelstunde", "früher Termin", "termin"),
+            ("Fr", "27.11.", "Dienstbesprechung", "Lernzeit zu Hause", "haus"),
+            ("Di", "01.12.", "Doppelstunde", "mittlerer Termin", "termin"),
+            ("Mi", "02.12.", "Sprechtag", "kein Unterricht – zu Hause lernen", "haus"),
+            ("Fr", "04.12.", "Doppelstunde Sprache", "Vorbereitung", ""),
+            ("Di", "08.12.", "letzte Möglichkeit", "später Termin", "termin")]
+    karten = "".join(f"<div class='tag {c}'><div class='wt'>{w}</div><div class='dt'>{d}</div>"
+                     f"<div class='art'>{a}</div><div class='was'>{x}</div></div>" for w, d, a, x, c in tage)
+    F.append(slide(f"""{KICK}<h1><span class='n'>9</span>Mein Plan bis zur Lernerfolgskontrolle</h1>
+<div class='leiste'>{karten}</div>
+<div class='zwei plan2'><div class='spalte'>
+<div class='blk soplan' data-k='1'><span class='lab'>So planst du · Planungszettel</span>
+<ol><li>Wähle deinen Termin: früh, mittel oder spät.</li>
+<li>Kreuze an, was du schon geschafft hast.</li>
+<li>Plane <b>rückwärts</b>: Vor deinem Termin sind alle Etappen, die Probearbeit und das Feedback fertig.</li>
+<li>Trage für jede Stunde ein, was du schaffen willst.</li></ol></div>
+{denk("Der frühe Termin ist schon morgen. Den wähle ich nur, wenn ich die Probearbeit geschrieben und Feedback bekommen habe.", 3)}
+</div><div class='spalte schmal'>
+<div class='blk zuhause' data-k='2'><div><span class='lab'>Zu Hause lernen</span>Am <b>Fr 27.11.</b> und am <b>Mi 02.12.</b> kannst du dich zu Hause gut vorbereiten: mit deinen Unterlagen und der <b>TaskCards-Pinnwand</b>.</div>
+<div class='qr'>{qr_svg()}</div></div>
 </div></div>"""))
     return F
 
@@ -487,6 +515,22 @@ h1.gross{font-size:92px;margin:30px 0 34px}
 .blk.karte{border:3px solid var(--slate-base);border-radius:16px;padding:16px 22px;background:var(--slate-ghost);font-weight:700}
 .blk.jetzt{border:3px solid var(--rust-base);border-radius:16px;padding:16px 22px;background:var(--rust-ghost)}
 .blk.jetzt .lab{color:var(--rust-dark)}
+.leiste{display:flex;gap:12px;margin-bottom:22px}
+.tag{flex:1;border:3px solid var(--slate-base);border-radius:16px;background:#fff;padding:10px 12px;text-align:center}
+.tag .wt{font-size:20px;font-weight:700;color:var(--slate-mid);text-transform:uppercase;letter-spacing:.06em}
+.tag .dt{font-size:34px;font-weight:700;color:var(--slate-dark);line-height:1.1}
+.tag .art{font-size:18px;color:var(--mid);min-height:46px;line-height:1.25;margin-top:4px}
+.tag .was{font-size:19px;font-weight:700;border-radius:10px;padding:4px 6px;margin-top:4px;background:var(--slate-ghost);color:var(--slate-dark)}
+.tag.termin{border-color:var(--sage-dark);background:var(--sage-ghost)}
+.tag.termin .was{background:var(--sage-dark);color:#fff}
+.tag.haus{border-style:dashed;border-color:var(--grau);background:var(--grau-pale)}
+.tag.haus .was{background:#fff;color:var(--mid)}
+.plan2{gap:34px}
+.blk.soplan{border:3px solid var(--slate-base);border-radius:16px;padding:12px 22px;background:#fff;font-size:26px}
+.blk.soplan ol{padding-left:30px}
+.blk.zuhause{display:flex;gap:18px;align-items:center;border:3px dashed var(--grau);border-radius:16px;padding:14px 18px;background:var(--grau-pale);font-size:24px;line-height:1.35}
+.qr{flex:0 0 190px;background:#fff;border-radius:10px;padding:6px}
+.qr svg{width:178px;height:178px;display:block}
 .blk.termine{margin-top:auto;border:3px solid var(--sage-dark);border-radius:16px;padding:14px 22px;background:var(--sage-ghost)}
 .blk.termine .lab{color:var(--sage-dark)}
 .tage{display:flex;gap:14px;margin:6px 0 8px}
